@@ -1,16 +1,17 @@
 import React, { useState } from 'react';
 import { HelpCircle, ChevronRight, Search } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const ContactQuickAnswers: React.FC = () => {
   const [searchTerm, setSearchTerm] = useState('');
 
   const questions = [
-    { q: "How do I book a court?", a: "Book online 24/7 via our portal, call us, or walk in. Online booking shows real-time availability.", link: "Book Online", href: "#" },
+    { q: "How do I book a court?", a: "Book online 24/7 via our portal, call us, or walk in. Online booking shows real-time availability.", link: "Book Online", href: "/rentals" },
     { q: "What membership fits me?", a: "Playing 2+ times/month? Membership saves money. Gold gives access to all sports. Sport-specific options available.", link: "Compare Plans", href: "/memberships" },
-    { q: "Can I tour the facility?", a: "Absolutely. Free tours available daily. Call ahead or mention it in your message to schedule.", link: "Schedule Tour", href: "#" },
-    { q: "Do you offer free trials?", a: "Yes. First-time participants get complimentary trial sessions for most sports. Mention 'free trial'.", link: "Claim Trial", href: "#" },
+    { q: "Can I tour the facility?", a: "Absolutely. Free tours available daily. Call ahead or mention it in your message to schedule.", link: "Schedule Tour", href: "/contact" },
+    { q: "Do you offer free trials?", a: "Yes. First-time participants get complimentary trial sessions for most sports. Mention 'free trial'.", link: "Claim Trial", href: "/contact" },
     { q: "How do I plan an event?", a: "Fill out the contact form selecting 'Event Planning' or call our coordinator for a custom proposal.", link: "Event Details", href: "/events" },
-    { q: "How do I make a complaint?", a: "We take satisfaction seriously. Contact us immediately via phone or form and we will address it promptly.", link: "Contact Mgmt", href: "#" },
+    { q: "How do I make a complaint?", a: "We take satisfaction seriously. Contact us immediately via phone or form and we will address it promptly.", link: "Contact Mgmt", href: "/contact" },
   ];
 
   const filteredQuestions = questions.filter(item => 
@@ -47,9 +48,9 @@ const ContactQuickAnswers: React.FC = () => {
                 <div key={i} className="p-8 rounded-lg bg-white border border-gray-200 hover:border-dfw-navy/30 hover:shadow-lg transition-all duration-300 group cursor-default">
                    <h3 className="font-header font-bold text-dfw-navy text-sm uppercase mb-3 group-hover:text-dfw-red transition-colors">{item.q}</h3>
                    <p className="text-xs text-gray-500 leading-relaxed mb-6">{item.a}</p>
-                   <a href={item.href} className="text-[10px] font-bold text-dfw-navy uppercase tracking-widest flex items-center gap-1 group-hover:gap-2 transition-all border-b border-gray-200 pb-1 w-max group-hover:border-dfw-red">
+                   <Link to={item.href} className="text-[10px] font-bold text-dfw-navy uppercase tracking-widest flex items-center gap-1 group-hover:gap-2 transition-all border-b border-gray-200 pb-1 w-max group-hover:border-dfw-red">
                       {item.link} <ChevronRight size={10} />
-                   </a>
+                   </Link>
                 </div>
              )) : (
                 <div className="col-span-3 text-center text-gray-500 py-12">No matching questions found.</div>

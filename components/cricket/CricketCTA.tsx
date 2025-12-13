@@ -1,6 +1,7 @@
 import React from 'react';
 import { Calendar, Phone, MapPin, PlayCircle } from 'lucide-react';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 const CricketCTA: React.FC = () => {
   return (
@@ -30,15 +31,15 @@ const CricketCTA: React.FC = () => {
             transition={{ delay: 0.2 }}
             className="flex flex-col sm:flex-row justify-center gap-4 mb-12"
           >
-             <button className="px-10 py-5 bg-[#CC0000] text-white font-bold uppercase tracking-widest text-sm rounded-sm hover:bg-red-700 transition-colors shadow-lg">
+             <Link to="/contact" className="px-10 py-5 bg-[#CC0000] text-white font-bold uppercase tracking-widest text-sm rounded-sm hover:bg-red-700 transition-colors shadow-lg">
                 Book Online Now
-             </button>
-             <button className="px-10 py-5 border border-white/20 text-white font-bold uppercase tracking-widest text-sm rounded-sm hover:bg-white hover:text-[#006838] transition-colors flex items-center gap-2 justify-center">
+             </Link>
+             <Link to="/contact" className="px-10 py-5 border border-white/20 text-white font-bold uppercase tracking-widest text-sm rounded-sm hover:bg-white hover:text-[#006838] transition-colors flex items-center gap-2 justify-center">
                 <PlayCircle size={16} /> Schedule Tour
-             </button>
-             <button className="px-10 py-5 bg-white/10 backdrop-blur-md text-white font-bold uppercase tracking-widest text-sm rounded-sm hover:bg-white/20 transition-colors">
+             </Link>
+             <Link to="/memberships" className="px-10 py-5 bg-white/10 backdrop-blur-md text-white font-bold uppercase tracking-widest text-sm rounded-sm hover:bg-white/20 transition-colors">
                 Join Membership
-             </button>
+             </Link>
           </motion.div>
 
           <div className="flex flex-col md:flex-row justify-center items-center gap-8 text-green-100/70 text-xs font-mono uppercase tracking-widest">

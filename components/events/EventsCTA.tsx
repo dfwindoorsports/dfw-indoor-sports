@@ -1,6 +1,7 @@
 import React from 'react';
 import { Calendar, MapPin, Clock, Phone, FileText, Play } from 'lucide-react';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 const EventsCTA: React.FC = () => {
   return (
@@ -54,7 +55,7 @@ const EventsCTA: React.FC = () => {
                   <FileText className="mx-auto text-white mb-4" size={24} />
                   <h3 className="text-white font-bold uppercase text-sm mb-2">2. Custom Proposal</h3>
                   <p className="text-xs text-gray-400 mb-4">Get pricing, options, and recommendations.</p>
-                  <button className="text-dfw-red text-xs font-bold uppercase tracking-widest border-b border-dfw-red pb-1 hover:text-white hover:border-white transition-colors">Request Proposal</button>
+                  <Link to="/contact" className="text-dfw-red text-xs font-bold uppercase tracking-widest border-b border-dfw-red pb-1 hover:text-white hover:border-white transition-colors">Request Proposal</Link>
                </motion.div>
 
                <motion.div 
@@ -66,7 +67,7 @@ const EventsCTA: React.FC = () => {
                   <Play className="mx-auto text-white mb-4" size={24} />
                   <h3 className="text-white font-bold uppercase text-sm mb-2">3. Facility Tour</h3>
                   <p className="text-xs text-gray-400 mb-4">See the space and meet the team in person.</p>
-                  <button className="text-dfw-red text-xs font-bold uppercase tracking-widest border-b border-dfw-red pb-1 hover:text-white hover:border-white transition-colors">Book Tour</button>
+                  <Link to="/contact" className="text-dfw-red text-xs font-bold uppercase tracking-widest border-b border-dfw-red pb-1 hover:text-white hover:border-white transition-colors">Book Tour</Link>
                </motion.div>
             </div>
             

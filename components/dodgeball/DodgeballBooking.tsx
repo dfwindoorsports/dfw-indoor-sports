@@ -1,6 +1,7 @@
 import React from 'react';
 import { MousePointer2, Phone, UserPlus, CreditCard, Calendar } from 'lucide-react';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 const DodgeballBooking: React.FC = () => {
   return (
@@ -31,7 +32,7 @@ const DodgeballBooking: React.FC = () => {
                    <div className="flex gap-2"><Calendar size={14} className="text-violet-500" /> 2. Select Date/Time</div>
                    <div className="flex gap-2"><CreditCard size={14} className="text-violet-500" /> 3. Secure Payment</div>
                 </div>
-                <button className="w-full py-3 bg-[#4C1D95] text-white font-bold uppercase text-xs tracking-widest rounded-sm hover:bg-violet-800 transition-colors">Book Court</button>
+                <Link to="/contact" className="w-full py-3 bg-[#4C1D95] text-white font-bold uppercase text-xs tracking-widest rounded-sm hover:bg-violet-800 transition-colors block text-center">Book Court</Link>
              </motion.div>
 
              {/* Phone */}

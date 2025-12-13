@@ -1,6 +1,7 @@
 import React from 'react';
 import { Check, Star, Users, Clock } from 'lucide-react';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 const BadmintonPricing: React.FC = () => {
   return (
@@ -42,7 +43,7 @@ const BadmintonPricing: React.FC = () => {
                    <li className="flex gap-3 text-sm text-gray-600 dark:text-gray-300"><Check size={16} className="text-blue-600 dark:text-blue-400" /> Singles or Doubles</li>
                    <li className="flex gap-3 text-sm text-gray-600 dark:text-gray-300"><Check size={16} className="text-blue-600 dark:text-blue-400" /> Up to 6 Players</li>
                 </ul>
-                <button className="w-full py-4 border-2 border-[#1E3A8A] dark:border-blue-400 text-[#1E3A8A] dark:text-blue-400 font-bold uppercase text-xs tracking-widest rounded-sm hover:bg-[#1E3A8A] hover:text-white dark:hover:bg-blue-400 dark:hover:text-black transition-colors">Book Court</button>
+                <Link to="/contact" className="w-full py-4 border-2 border-[#1E3A8A] dark:border-blue-400 text-[#1E3A8A] dark:text-blue-400 font-bold uppercase text-xs tracking-widest rounded-sm hover:bg-[#1E3A8A] hover:text-white dark:hover:bg-blue-400 dark:hover:text-black transition-colors block text-center">Book Court</Link>
              </motion.div>
 
              {/* Membership - Highlighted */}
@@ -78,7 +79,7 @@ const BadmintonPricing: React.FC = () => {
                    <li className="flex gap-3 text-sm text-blue-50"><Check size={16} className="text-white" /> 24/7 Facility Access</li>
                    <li className="flex gap-3 text-sm text-blue-50"><Check size={16} className="text-white" /> 10% Pro Shop Discount</li>
                 </ul>
-                <button className="w-full py-4 bg-blue-500 text-white font-bold uppercase text-xs tracking-widest rounded-sm hover:bg-blue-400 transition-colors shadow-lg relative z-10">Start Membership</button>
+                <Link to="/memberships" className="w-full py-4 bg-blue-500 text-white font-bold uppercase text-xs tracking-widest rounded-sm hover:bg-blue-400 transition-colors shadow-lg relative z-10 block text-center">Start Membership</Link>
              </motion.div>
 
              {/* Gold All Sports */}
@@ -106,9 +107,9 @@ const BadmintonPricing: React.FC = () => {
                    <li className="flex gap-3 text-sm text-gray-600 dark:text-gray-300"><Check size={16} className="text-blue-600 dark:text-blue-400" /> Cross-Training Opportunity</li>
                    <li className="flex gap-3 text-sm text-gray-600 dark:text-gray-300"><Check size={16} className="text-blue-600 dark:text-blue-400" /> Bring 2 Guests Monthly Free</li>
                 </ul>
-                <button className="w-full py-4 border-2 border-gray-200 dark:border-white/20 text-gray-600 dark:text-gray-300 font-bold uppercase text-xs tracking-widest rounded-sm hover:border-[#1E3A8A] hover:text-[#1E3A8A] dark:hover:border-blue-400 dark:hover:text-blue-400 transition-colors flex items-center justify-center gap-2">
+                <Link to="/memberships" className="w-full py-4 border-2 border-gray-200 dark:border-white/20 text-gray-600 dark:text-gray-300 font-bold uppercase text-xs tracking-widest rounded-sm hover:border-[#1E3A8A] hover:text-[#1E3A8A] dark:hover:border-blue-400 dark:hover:text-blue-400 transition-colors flex items-center justify-center gap-2">
                    <Users size={16} /> Explore Gold
-                </button>
+                </Link>
              </motion.div>
 
           </div>

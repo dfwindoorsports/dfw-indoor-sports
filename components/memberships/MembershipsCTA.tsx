@@ -1,5 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 const MembershipsCTA: React.FC = () => {
   return (
@@ -38,12 +39,12 @@ const MembershipsCTA: React.FC = () => {
             transition={{ delay: 0.3 }}
             className="flex flex-col sm:flex-row justify-center gap-4"
           >
-             <button className="px-10 py-5 bg-dfw-red text-white font-bold uppercase tracking-widest text-sm rounded-sm hover:bg-red-700 transition-colors shadow-[0_0_30px_rgba(214,40,40,0.4)]">
+             <Link to="/contact" className="px-10 py-5 bg-dfw-red text-white font-bold uppercase tracking-widest text-sm rounded-sm hover:bg-red-700 transition-colors shadow-[0_0_30px_rgba(214,40,40,0.4)]">
                 Join Now Online
-             </button>
-             <button className="px-10 py-5 border border-white/20 text-white font-bold uppercase tracking-widest text-sm rounded-sm hover:bg-white hover:text-dfw-navy transition-colors">
+             </Link>
+             <Link to="/contact" className="px-10 py-5 border border-white/20 text-white font-bold uppercase tracking-widest text-sm rounded-sm hover:bg-white hover:text-dfw-navy transition-colors">
                 Schedule Tour
-             </button>
+             </Link>
           </motion.div>
           <p className="mt-8 text-xs text-gray-500 uppercase tracking-widest">
              Questions? Call (817) 938-0808

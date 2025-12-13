@@ -1,6 +1,7 @@
 import React from 'react';
 import { Calendar, Phone, MapPin, PlayCircle } from 'lucide-react';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 const SoccerCTA: React.FC = () => {
   return (
@@ -30,15 +31,15 @@ const SoccerCTA: React.FC = () => {
             transition={{ delay: 0.2 }}
             className="flex flex-col sm:flex-row justify-center gap-4 mb-12"
           >
-             <button className="px-10 py-5 bg-emerald-500 text-white font-bold uppercase tracking-widest text-sm rounded-sm hover:bg-emerald-600 transition-colors shadow-lg flex items-center justify-center gap-2">
+             <Link to="/contact" className="px-10 py-5 bg-emerald-500 text-white font-bold uppercase tracking-widest text-sm rounded-sm hover:bg-emerald-600 transition-colors shadow-lg flex items-center justify-center gap-2">
                 Book Field Now
-             </button>
-             <button className="px-10 py-5 border border-white/20 text-white font-bold uppercase tracking-widest text-sm rounded-sm hover:bg-white hover:text-[#064E3B] transition-colors flex items-center justify-center gap-2">
+             </Link>
+             <Link to="/contact" className="px-10 py-5 border border-white/20 text-white font-bold uppercase tracking-widest text-sm rounded-sm hover:bg-white hover:text-[#064E3B] transition-colors flex items-center justify-center gap-2">
                 <PlayCircle size={16} /> Tour Facility
-             </button>
-             <button className="px-10 py-5 bg-white/10 backdrop-blur-md text-white font-bold uppercase tracking-widest text-sm rounded-sm hover:bg-white/20 transition-colors">
+             </Link>
+             <Link to="/memberships" className="px-10 py-5 bg-white/10 backdrop-blur-md text-white font-bold uppercase tracking-widest text-sm rounded-sm hover:bg-white/20 transition-colors">
                 Start Membership
-             </button>
+             </Link>
           </motion.div>
 
           <div className="flex flex-col md:flex-row justify-center items-center gap-8 text-emerald-100/70 text-xs font-mono uppercase tracking-widest">

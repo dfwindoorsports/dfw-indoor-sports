@@ -1,6 +1,7 @@
 import React from 'react';
 import { Check } from 'lucide-react';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 const InvestmentLevels: React.FC = () => {
   const itemVariants = {
@@ -37,7 +38,7 @@ const InvestmentLevels: React.FC = () => {
                       <li key={i} className="flex gap-3 text-xs text-gray-600 dark:text-gray-400"><Check size={14} className="text-gray-400 dark:text-gray-500" /> {item}</li>
                    ))}
                 </ul>
-                <button className="w-full py-3 border border-gray-200 dark:border-white/20 text-gray-600 dark:text-gray-300 font-bold uppercase text-[10px] tracking-widest rounded-sm hover:bg-gray-100 dark:hover:bg-white/10 transition-colors">Select Bronze</button>
+                <Link to="/partners#contact-partners" className="w-full py-3 border border-gray-200 dark:border-white/20 text-gray-600 dark:text-gray-300 font-bold uppercase text-[10px] tracking-widest rounded-sm hover:bg-gray-100 dark:hover:bg-white/10 transition-colors block text-center">Select Bronze</Link>
              </motion.div>
 
              {/* Silver */}
@@ -50,7 +51,7 @@ const InvestmentLevels: React.FC = () => {
                       <li key={i} className="flex gap-3 text-xs text-gray-600 dark:text-gray-400"><Check size={14} className="text-dfw-navy dark:text-gray-400" /> {item}</li>
                    ))}
                 </ul>
-                <button className="w-full py-3 border border-gray-200 dark:border-white/20 text-gray-600 dark:text-gray-300 font-bold uppercase text-[10px] tracking-widest rounded-sm hover:bg-gray-100 dark:hover:bg-white/10 transition-colors">Select Silver</button>
+                <Link to="/partners#contact-partners" className="w-full py-3 border border-gray-200 dark:border-white/20 text-gray-600 dark:text-gray-300 font-bold uppercase text-[10px] tracking-widest rounded-sm hover:bg-gray-100 dark:hover:bg-white/10 transition-colors block text-center">Select Silver</Link>
              </motion.div>
 
              {/* Gold - Highlight */}
@@ -69,7 +70,7 @@ const InvestmentLevels: React.FC = () => {
                       <li key={i} className="flex gap-3 text-xs text-gray-300"><Check size={14} className="text-dfw-red" /> {item}</li>
                    ))}
                 </ul>
-                <button className="w-full py-4 bg-dfw-red text-white font-bold uppercase text-[10px] tracking-widest rounded-sm hover:bg-red-600 transition-colors shadow-lg relative z-10">Select Gold</button>
+                <Link to="/partners#contact-partners" className="w-full py-4 bg-dfw-red text-white font-bold uppercase text-[10px] tracking-widest rounded-sm hover:bg-red-600 transition-colors shadow-lg relative z-10 block text-center">Select Gold</Link>
              </motion.div>
 
              {/* Platinum */}
@@ -82,7 +83,7 @@ const InvestmentLevels: React.FC = () => {
                       <li key={i} className="flex gap-3 text-xs text-gray-600 dark:text-gray-400"><Check size={14} className="text-dfw-navy dark:text-gray-400" /> {item}</li>
                    ))}
                 </ul>
-                <button className="w-full py-3 border border-gray-200 dark:border-white/20 text-gray-600 dark:text-gray-300 font-bold uppercase text-[10px] tracking-widest rounded-sm hover:bg-gray-100 dark:hover:bg-white/10 transition-colors">Contact Us</button>
+                <Link to="/partners#contact-partners" className="w-full py-3 border border-gray-200 dark:border-white/20 text-gray-600 dark:text-gray-300 font-bold uppercase text-[10px] tracking-widest rounded-sm hover:bg-gray-100 dark:hover:bg-white/10 transition-colors block text-center">Contact Us</Link>
              </motion.div>
 
           </motion.div>
