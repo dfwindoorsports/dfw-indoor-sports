@@ -58,7 +58,7 @@ const PartnersHero: React.FC = () => {
          >
             <button 
               onClick={() => document.getElementById('contact-partners')?.scrollIntoView({ behavior: 'smooth' })}
-              className="px-6 py-3 bg-white text-dfw-navy font-bold uppercase tracking-widest text-xs rounded-sm hover:bg-blue-50 transition-all shadow-[0_0_30px_rgba(255,255,255,0.1)] flex items-center justify-center gap-3 group"
+              className="px-6 py-3 bg-white text-dfw-navy font-bold uppercase tracking-widest text-xs rounded-sm hover:bg-gray-50 transition-all shadow-[0_0_30px_rgba(255,255,255,0.1)] flex items-center justify-center gap-3 group"
             >
                Partner With Us <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
             </button>

@@ -24,7 +24,7 @@ const HomeHero: React.FC = () => {
           <div className="absolute inset-0 bg-gradient-to-t from-[#020408] via-[#020408]/40 to-transparent mix-blend-multiply"></div>
           <div className="absolute inset-0 bg-gradient-to-r from-[#020408]/90 via-[#020408]/40 to-transparent"></div>
           {/* Subtle warm overlay for human touch */}
-          <div className="absolute inset-0 bg-gradient-to-tr from-dfw-red/10 via-transparent to-blue-500/10 mix-blend-overlay"></div>
+          <div className="absolute inset-0 bg-gradient-to-tr from-dfw-red/10 via-transparent to-dfw-red/5 mix-blend-overlay"></div>
         </div>
 
         {/* Welcoming Glass Widget (AEO Optimized Data Points) */}
