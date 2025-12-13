@@ -26,16 +26,16 @@ const ContactSocial: React.FC = () => {
                    Follow us for daily facility updates, member highlights, tournament photos, and training tips.
                 </p>
                 <div className="flex justify-center md:justify-start gap-4">
-                   <a href="#" className="p-3 bg-white/5 rounded-full hover:bg-dfw-red hover:text-white transition-all group border border-white/10">
+                   <a href="https://instagram.com" target="_blank" rel="noreferrer" className="p-3 bg-white/5 rounded-full hover:bg-dfw-red hover:text-white transition-all group border border-white/10">
                       <Instagram size={20} />
                    </a>
-                   <a href="#" className="p-3 bg-white/5 rounded-full hover:bg-blue-600 hover:text-white transition-all group border border-white/10">
+                   <a href="https://facebook.com" target="_blank" rel="noreferrer" className="p-3 bg-white/5 rounded-full hover:bg-blue-600 hover:text-white transition-all group border border-white/10">
                       <Facebook size={20} />
                    </a>
-                   <a href="#" className="p-3 bg-white/5 rounded-full hover:bg-red-600 hover:text-white transition-all group border border-white/10">
+                   <a href="https://youtube.com" target="_blank" rel="noreferrer" className="p-3 bg-white/5 rounded-full hover:bg-red-600 hover:text-white transition-all group border border-white/10">
                       <Youtube size={20} />
                    </a>
-                   <a href="#" className="p-3 bg-white/5 rounded-full hover:bg-blue-700 hover:text-white transition-all group border border-white/10">
+                   <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="p-3 bg-white/5 rounded-full hover:bg-blue-700 hover:text-white transition-all group border border-white/10">
                       <Linkedin size={20} />
                    </a>
                 </div>

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Target, Wind, ArrowRight } from 'lucide-react';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 const RentalsValue: React.FC = () => {
   return (
@@ -96,9 +97,9 @@ const RentalsValue: React.FC = () => {
             </div>
             
             <div className="mt-12 text-center">
-               <a href="#/memberships" className="inline-flex items-center gap-2 text-white border-b border-dfw-red pb-1 hover:text-dfw-red transition-colors text-sm font-bold uppercase tracking-widest">
+               <Link to="/memberships" className="inline-flex items-center gap-2 text-white border-b border-dfw-red pb-1 hover:text-dfw-red transition-colors text-sm font-bold uppercase tracking-widest">
                   View All Membership Options <ArrowRight size={14} />
-               </a>
+               </Link>
             </div>
          </div>
       </section>

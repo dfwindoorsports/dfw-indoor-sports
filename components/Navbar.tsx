@@ -234,9 +234,9 @@ const Navbar: React.FC = () => {
                       </Link>
                       
                       <div className="flex justify-center gap-8 mt-8 text-[10px] font-bold uppercase tracking-widest text-gray-400 dark:text-gray-500">
-                          <a href="#" className="hover:text-dfw-navy dark:hover:text-white transition-colors">Instagram</a>
-                          <a href="#" className="hover:text-dfw-navy dark:hover:text-white transition-colors">Facebook</a>
-                          <a href="#" className="hover:text-dfw-navy dark:hover:text-white transition-colors">Twitter</a>
+                          <a href="https://instagram.com" target="_blank" rel="noreferrer" className="hover:text-dfw-navy dark:hover:text-white transition-colors">Instagram</a>
+                          <a href="https://facebook.com" target="_blank" rel="noreferrer" className="hover:text-dfw-navy dark:hover:text-white transition-colors">Facebook</a>
+                          <a href="https://twitter.com" target="_blank" rel="noreferrer" className="hover:text-dfw-navy dark:hover:text-white transition-colors">Twitter</a>
                       </div>
                   </motion.div>
               </div>

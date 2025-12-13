@@ -1,5 +1,6 @@
 import React from 'react';
 import { Calendar, MousePointer2, FileText, ChevronRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const ContactCTA: React.FC = () => {
   return (
@@ -24,9 +25,9 @@ const ContactCTA: React.FC = () => {
                 </div>
                 <h3 className="font-header font-bold text-white uppercase text-xl mb-3">New Here?</h3>
                 <p className="text-sm text-gray-400 mb-8 leading-relaxed">Experience the facility firsthand. Meet coaches and see the courts.</p>
-                <a href="#" className="inline-flex items-center gap-2 text-xs text-white font-bold uppercase tracking-widest border-b border-dfw-red pb-1 hover:text-dfw-red transition-colors">
+                <Link to="/contact" className="inline-flex items-center gap-2 text-xs text-white font-bold uppercase tracking-widest border-b border-dfw-red pb-1 hover:text-dfw-red transition-colors">
                    Book Free Tour <ChevronRight size={14} />
-                </a>
+                </Link>
              </div>
 
              {/* Card 2 */}
@@ -37,9 +38,9 @@ const ContactCTA: React.FC = () => {
                 </div>
                 <h3 className="font-header font-bold text-white uppercase text-xl mb-3">Ready to Play?</h3>
                 <p className="text-sm text-gray-400 mb-8 leading-relaxed">Skip the talk. Reserve your court instantly online. 24/7 system.</p>
-                <a href="#" className="inline-flex items-center gap-2 text-xs text-white font-bold uppercase tracking-widest border-b border-green-500 pb-1 hover:text-green-500 transition-colors">
+                <Link to="/rentals" className="inline-flex items-center gap-2 text-xs text-white font-bold uppercase tracking-widest border-b border-green-500 pb-1 hover:text-green-500 transition-colors">
                    Book Online Now <ChevronRight size={14} />
-                </a>
+                </Link>
              </div>
 
              {/* Card 3 */}
@@ -50,9 +51,9 @@ const ContactCTA: React.FC = () => {
                 </div>
                 <h3 className="font-header font-bold text-white uppercase text-xl mb-3">Planning Event?</h3>
                 <p className="text-sm text-gray-400 mb-8 leading-relaxed">Corporate or private. Get a custom proposal within 24 hours.</p>
-                <a href="#" className="inline-flex items-center gap-2 text-xs text-white font-bold uppercase tracking-widest border-b border-blue-500 pb-1 hover:text-blue-500 transition-colors">
+                <Link to="/events" className="inline-flex items-center gap-2 text-xs text-white font-bold uppercase tracking-widest border-b border-blue-500 pb-1 hover:text-blue-500 transition-colors">
                    Request Proposal <ChevronRight size={14} />
-                </a>
+                </Link>
              </div>
 
           </div>

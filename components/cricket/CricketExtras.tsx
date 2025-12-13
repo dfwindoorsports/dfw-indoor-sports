@@ -1,6 +1,7 @@
 import React from 'react';
 import { ShieldCheck, ShoppingBag, Trophy, ArrowRight, Video, Target, Shirt } from 'lucide-react';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 
 const CricketExtras: React.FC = () => {
   return (
@@ -37,7 +38,7 @@ const CricketExtras: React.FC = () => {
                          <p className="text-xs text-green-200">Competitive match scenarios.</p>
                       </div>
                    </div>
-                   <button className="px-8 py-3 bg-[#CC0000] text-white font-bold uppercase text-xs tracking-widest rounded-sm hover:bg-red-700 transition-colors">View Programs</button>
+                   <Link to="/academy" className="px-8 py-3 bg-[#CC0000] text-white font-bold uppercase text-xs tracking-widest rounded-sm hover:bg-red-700 transition-colors inline-block">View Programs</Link>
                 </div>
                 <div className="md:w-1/2 flex justify-center">
                    {/* Placeholder for Coach/Action Image */}
@@ -69,7 +70,7 @@ const CricketExtras: React.FC = () => {
                    <li className="flex items-center gap-3 text-sm font-bold text-gray-700 dark:text-gray-300"><span className="w-1.5 h-1.5 bg-[#CC0000] rounded-full"></span> 10% Member Discount</li>
                    <li className="flex items-center gap-3 text-sm font-bold text-gray-700 dark:text-gray-300"><span className="w-1.5 h-1.5 bg-[#CC0000] rounded-full"></span> Top Brands Stocked</li>
                 </ul>
-                <a href="#" className="flex items-center gap-2 text-[#006838] dark:text-green-400 font-bold uppercase text-xs tracking-widest hover:gap-3 transition-all">Visit Store <ArrowRight size={14} /></a>
+                <Link to="/contact" className="flex items-center gap-2 text-[#006838] dark:text-green-400 font-bold uppercase text-xs tracking-widest hover:gap-3 transition-all">Visit Store <ArrowRight size={14} /></Link>
              </motion.div>
 
              {/* Additional Services */}
