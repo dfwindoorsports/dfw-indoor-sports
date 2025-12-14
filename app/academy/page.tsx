@@ -3,6 +3,7 @@ import { createPageMetadata, generateBreadcrumbSchema } from '@/lib/metadata'
 import AcademyHero from '@/components/academy/AcademyHero'
 import AcademyNarrative from '@/components/academy/AcademyNarrative'
 import AcademyPrograms from '@/components/academy/AcademyPrograms'
+import AcademyCareerPathway from '@/components/academy/AcademyCareerPathway'
 import AcademyCoaching from '@/components/academy/AcademyCoaching'
 import AcademyExcellence from '@/components/academy/AcademyExcellence'
 import AcademyGlobal from '@/components/academy/AcademyGlobal'
@@ -37,6 +38,7 @@ export default function AcademyPage() {
       <AcademyHero />
       <AcademyNarrative />
       <AcademyPrograms />
+      <AcademyCareerPathway />
       <AcademyCoaching />
       <AcademyExcellence />
       <AcademyGlobal />
