@@ -27,12 +27,12 @@ const HomeMarquee: React.FC = () => {
           {SPORTS_ITEMS.map((item, index) => (
              <div key={index} className="flex items-center group">
                <span 
-                 className="mx-8 text-3xl md:text-5xl font-header font-bold uppercase italic tracking-tighter text-transparent transition-all duration-500 group-hover:text-white/20 cursor-default select-none flex items-center gap-4" 
-                 style={{ WebkitTextStroke: '1px rgba(255, 255, 255, 0.15)' }}
+                 className="mx-8 text-3xl md:text-5xl font-header font-bold uppercase italic tracking-tighter text-transparent transition-all duration-500 group-hover:text-white/40 group-hover:drop-shadow-[0_0_20px_rgba(255,255,255,0.5)] cursor-default select-none flex items-center gap-4" 
+                 style={{ WebkitTextStroke: '2px rgba(255, 255, 255, 0.5)' }}
                >
                  {item}
                </span>
-               <div className="mx-4 flex items-center justify-center w-2 h-2 rounded-full bg-dfw-red/50 relative"></div>
+               <div className="mx-4 flex items-center justify-center w-2 h-2 rounded-full bg-dfw-red/70 relative shadow-[0_0_10px_rgba(239,68,68,0.5)]"></div>
              </div>
           ))}
         </div>
@@ -42,12 +42,12 @@ const HomeMarquee: React.FC = () => {
           {SPORTS_ITEMS.map((item, index) => (
              <div key={`dup-${index}`} className="flex items-center group">
                <span 
-                 className="mx-8 text-3xl md:text-5xl font-header font-bold uppercase italic tracking-tighter text-transparent transition-all duration-500 group-hover:text-white/20 cursor-default select-none flex items-center gap-4" 
-                 style={{ WebkitTextStroke: '1px rgba(255, 255, 255, 0.15)' }}
+                 className="mx-8 text-3xl md:text-5xl font-header font-bold uppercase italic tracking-tighter text-transparent transition-all duration-500 group-hover:text-white/40 group-hover:drop-shadow-[0_0_20px_rgba(255,255,255,0.5)] cursor-default select-none flex items-center gap-4" 
+                 style={{ WebkitTextStroke: '2px rgba(255, 255, 255, 0.5)' }}
                >
                  {item}
                </span>
-               <div className="mx-4 flex items-center justify-center w-2 h-2 rounded-full bg-dfw-red/50 relative"></div>
+               <div className="mx-4 flex items-center justify-center w-2 h-2 rounded-full bg-dfw-red/70 relative shadow-[0_0_10px_rgba(239,68,68,0.5)]"></div>
              </div>
           ))}
         </div>
