@@ -4,7 +4,6 @@ const nextConfig = {
   compress: true,
   trailingSlash: false,
   poweredByHeader: false,
-  outputFileTracingRoot: __dirname,
   images: {
     remotePatterns: [
       {
