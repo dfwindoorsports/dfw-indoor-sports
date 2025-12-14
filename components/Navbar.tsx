@@ -173,7 +173,7 @@ export default function Navbar() {
               <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-[0.03] dark:opacity-[0.05]"></div>
 
               <div className="flex flex-col h-full pt-28 px-6 pb-12 overflow-y-auto relative z-10">
-                  
+                
                   <nav className="flex-1 space-y-2">
                       {NAV_ITEMS.map((item, idx) => (
                           <motion.div
@@ -184,15 +184,15 @@ export default function Navbar() {
                               className="border-b border-gray-100 dark:border-white/10 last:border-0"
                           >
                               {item.children ? (
-                                  <div className="py-4">
+                                  <div className="py-3">
                                       <Link 
                                           href={item.href}
                                           onClick={() => setIsOpen(false)}
-                                          className="block font-header font-bold text-2xl text-dfw-navy dark:text-white uppercase mb-4"
+                                          className="block font-header font-bold text-xl text-dfw-navy dark:text-white uppercase mb-2"
                                       >
                                           {item.label}
                                       </Link>
-                                      <div className="pl-4 border-l-2 border-gray-100 dark:border-white/10 space-y-3">
+                                      <div className="pl-4 border-l-2 border-gray-100 dark:border-white/10 space-y-2">
                                           {item.children.map(child => (
                                               <Link 
                                                   key={child.label}
@@ -208,7 +208,7 @@ export default function Navbar() {
                               ) : (
                                   <Link
                                       href={item.href}
-                                      className="block py-4 font-header font-bold text-2xl text-dfw-navy dark:text-white uppercase hover:text-dfw-red transition-colors"
+                                      className="block py-3 font-header font-bold text-xl text-dfw-navy dark:text-white uppercase hover:text-dfw-red transition-colors"
                                       onClick={() => setIsOpen(false)}
                                   >
                                       {item.label}
@@ -222,7 +222,7 @@ export default function Navbar() {
                       initial={{ opacity: 0, y: 20 }}
                       animate={{ opacity: 1, y: 0 }}
                       transition={{ delay: 0.4 }}
-                      className="mt-8 pt-8 border-t border-gray-100 dark:border-white/10" 
+                      className="mt-6 pt-6 border-t border-gray-100 dark:border-white/10" 
                   >
                       <Link
                           href="/contact"
@@ -232,8 +232,8 @@ export default function Navbar() {
                           Get In Touch <ArrowRight size={14} />
                       </Link>
                       
-                      <div className="flex justify-center gap-8 mt-8 text-[10px] font-bold uppercase tracking-widest text-gray-400 dark:text-gray-500">
-                          <a href="https://instagram.com" target="_blank" rel="noreferrer" className="hover:text-dfw-navy dark:hover:text-white transition-colors">Instagram</a>
+                      <div className="flex justify-center gap-8 mt-6 text-[10px] font-bold uppercase tracking-widest text-gray-400 dark:text-gray-500">
+                          <a href="https://instagram.com/dfwindoorsports/" target="_blank" rel="noreferrer" className="hover:text-dfw-navy dark:hover:text-white transition-colors">Instagram</a>
                           <a href="https://facebook.com" target="_blank" rel="noreferrer" className="hover:text-dfw-navy dark:hover:text-white transition-colors">Facebook</a>
                           <a href="https://twitter.com" target="_blank" rel="noreferrer" className="hover:text-dfw-navy dark:hover:text-white transition-colors">Twitter</a>
                       </div>
