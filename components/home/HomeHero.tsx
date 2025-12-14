@@ -1,8 +1,8 @@
 'use client'
 
 import React, { useState, useEffect } from 'react';
-import { ChevronRight, Calendar, Users, Heart, Smile, Play } from 'lucide-react';
-import { motion, useScroll, useTransform, AnimatePresence } from 'framer-motion';
+import { ChevronRight, Smile } from 'lucide-react';
+import { motion, AnimatePresence } from 'framer-motion';
 import Link from 'next/link';
 
 const HomeHero: React.FC = () => {
