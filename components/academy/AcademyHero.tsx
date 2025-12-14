@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 
 const AcademyHero: React.FC = () => {
   return (
-    <div className="relative h-[50vh] min-h-[400px] flex items-center bg-[#050911] overflow-hidden">
+    <div className="relative h-[60vh] min-h-[400px] flex items-center bg-[#050911] overflow-hidden">
       {/* Dynamic Background with Parallax Feel */}
       <motion.div 
         initial={{ scale: 1.1, opacity: 0 }}
@@ -26,7 +26,7 @@ const AcademyHero: React.FC = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.2 }}
-            className="inline-flex items-center gap-3 px-4 py-1.5 rounded-full border border-yellow-500/30 bg-yellow-500/10 backdrop-blur-2xl text-yellow-400 font-mono text-[10px] uppercase tracking-[0.25em] mb-4 hover:bg-yellow-500/20 transition-colors cursor-default"
+            className="inline-flex items-center gap-3 px-4 py-1.5 rounded-full border border-dfw-red/40 bg-dfw-red/10 backdrop-blur-2xl text-dfw-red font-mono text-[10px] uppercase tracking-[0.25em] mb-4 hover:bg-dfw-red/20 transition-colors cursor-default"
          >
             <Star size={12} fill="currentColor" />
             <span>CricKingdom by Rohit Sharma</span>
@@ -39,7 +39,7 @@ const AcademyHero: React.FC = () => {
             className="text-3xl md:text-5xl lg:text-6xl font-header font-bold text-white uppercase tracking-tighter mb-4 leading-[0.9] max-w-5xl drop-shadow-2xl"
          >
            Where Potential <br/>
-           <span className="text-transparent bg-clip-text bg-gradient-to-r from-dfw-red via-orange-400 to-yellow-400">Meets Purpose</span>
+           <span className="text-transparent bg-clip-text bg-gradient-to-r from-dfw-red via-dfw-red to-white">Meets Purpose</span>
          </motion.h1>
          
          <motion.div 

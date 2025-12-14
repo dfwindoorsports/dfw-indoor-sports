@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 
 const EventsHero: React.FC = () => {
   return (
-    <div className="relative h-[50vh] min-h-[400px] flex items-center bg-[#050911] overflow-hidden">
+    <div className="relative h-[60vh] min-h-[400px] flex items-center bg-[#050911] overflow-hidden">
         {/* Dynamic Background */}
         <motion.div 
           initial={{ scale: 1.1, opacity: 0 }}
@@ -39,7 +39,7 @@ const EventsHero: React.FC = () => {
              className="text-3xl md:text-5xl lg:text-6xl font-header font-bold text-white uppercase tracking-tighter mb-4 leading-[0.9] max-w-5xl drop-shadow-2xl"
            >
              Celebrate in <br/>
-             <span className="text-transparent bg-clip-text bg-gradient-to-r from-dfw-red via-red-400 to-orange-500">Motion</span>
+             <span className="text-transparent bg-clip-text bg-gradient-to-r from-dfw-red via-dfw-red to-white">Motion</span>
            </motion.h1>
            
            <motion.p 
