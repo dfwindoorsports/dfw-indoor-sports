@@ -43,16 +43,16 @@ export default function Navbar() {
           isOpen 
             ? 'bg-white dark:bg-dfw-navy border-gray-100 dark:border-white/10' 
             : scrolled 
-              ? 'bg-white/95 dark:bg-dfw-navy/95 backdrop-blur-xl border-gray-200 dark:border-white/10 shadow-md py-2' 
-              : 'bg-white dark:bg-dfw-navy border-gray-100 dark:border-white/10 py-4'
+              ? 'bg-white/95 dark:bg-dfw-navy/95 backdrop-blur-xl border-gray-200 dark:border-white/10 shadow-md' 
+              : 'bg-white dark:bg-dfw-navy border-gray-100 dark:border-white/10'
         }`}
       >
         <div className="container mx-auto px-4 md:px-6 relative z-[110]">
-          <div className="flex justify-between items-center h-10 md:h-14">
+          <div className="flex justify-between items-center h-14 md:h-16">
             
             <div className="flex items-center flex-shrink-0 group cursor-pointer relative z-50">
               <Link href="/" className="flex items-center gap-2 select-none">
-                <img src="/images/dfwlogo.png" alt="DFW Indoor Sports" className="h-8 md:h-12 w-auto" />
+                <img src="/images/dfwlogo.png" alt="DFW Indoor Sports" className="h-10 md:h-12 w-auto" />
               </Link>
             </div>
 
@@ -109,7 +109,17 @@ export default function Navbar() {
                   className="p-2 rounded-full text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-white/10 transition-all"
                   aria-label="Toggle Dark Mode"
                 >
-                  {theme === 'dark' ? <Sun size={16} /> : <Moon size={16} />}
+                  <AnimatePresence mode="wait" initial={false}>
+                    <motion.div
+                      key={theme}
+                      initial={{ rotate: -90, opacity: 0 }}
+                      animate={{ rotate: 0, opacity: 1 }}
+                      exit={{ rotate: 90, opacity: 0 }}
+                      transition={{ duration: 0.2 }}
+                    >
+                      {theme === 'dark' ? <Sun size={16} /> : <Moon size={16} />}
+                    </motion.div>
+                  </AnimatePresence>
                 </button>
 
                 <Link
@@ -122,19 +132,30 @@ export default function Navbar() {
               </div>
             </div>
 
-            <div className="lg:hidden flex items-center gap-4 z-50">
+            <div className="lg:hidden flex items-center gap-3 z-50">
               <button 
-                  onClick={toggleTheme}
-                  className="p-2 rounded-full text-gray-500 dark:text-gray-400"
+                onClick={toggleTheme}
+                className="p-2.5 rounded-full text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-white/10 transition-all"
+                aria-label="Toggle Dark Mode"
               >
-                  {theme === 'dark' ? <Sun size={20} /> : <Moon size={20} />}
+                <AnimatePresence mode="wait" initial={false}>
+                  <motion.div
+                    key={theme}
+                    initial={{ rotate: -90, opacity: 0 }}
+                    animate={{ rotate: 0, opacity: 1 }}
+                    exit={{ rotate: 90, opacity: 0 }}
+                    transition={{ duration: 0.2 }}
+                  >
+                    {theme === 'dark' ? <Sun size={22} /> : <Moon size={22} />}
+                  </motion.div>
+                </AnimatePresence>
               </button>
               <button
                 onClick={() => setIsOpen(!isOpen)}
-                className={`p-2 -mr-2 text-dfw-navy dark:text-white hover:text-dfw-red transition-colors focus:outline-none`}
+                className="p-2.5 -mr-2 text-dfw-navy dark:text-white hover:text-dfw-red transition-colors focus:outline-none"
                 aria-label="Toggle Menu"
               >
-                  {isOpen ? <X size={24} /> : <Menu size={24} />}
+                {isOpen ? <X size={26} /> : <Menu size={26} />}
               </button>
             </div>
           </div>
