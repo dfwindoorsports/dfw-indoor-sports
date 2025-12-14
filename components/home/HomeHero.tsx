@@ -57,7 +57,7 @@ const HomeHero: React.FC = () => {
                     scale: { duration: 2.5, ease: [0.7, 0, 0.3, 1], delay: 0.2 },
                     opacity: { duration: 0.4 } 
                 }}
-                className="text-[15vw] md:text-[12vw] font-black text-white uppercase tracking-tighter select-none whitespace-nowrap cursor-default"
+                className="text-[15vw] md:text-[12vw] font-header font-black text-white uppercase tracking-tighter select-none whitespace-nowrap cursor-default"
                 style={{ lineHeight: 0.8 }}
              >
                 PLAY
