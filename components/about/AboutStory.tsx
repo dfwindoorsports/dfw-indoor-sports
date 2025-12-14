@@ -70,7 +70,7 @@ const AboutStory: React.FC = () => {
              >
                 <div className="relative z-10 h-full min-h-[500px] rounded-sm overflow-hidden shadow-2xl group border border-gray-200 dark:border-white/10">
                    <img 
-                      src="https://images.unsplash.com/photo-1526676037777-05a232554f77?q=80&w=2070&auto=format&fit=crop" 
+                      src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?q=80&w=2070&auto=format&fit=crop" 
                       alt="Community gathering at DFW Indoor Sports" 
                       className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
                    />

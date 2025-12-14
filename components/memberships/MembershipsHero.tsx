@@ -13,7 +13,7 @@ const MembershipsHero: React.FC = () => {
         animate={{ scale: 1, opacity: 0.5 }}
         transition={{ duration: 1.5 }}
         className="absolute inset-0 bg-cover bg-center"
-        style={{ backgroundImage: 'url("https://images.unsplash.com/photo-1626224583764-847890e058f5?q=80&w=2070&auto=format&fit=crop")' }}
+        style={{ backgroundImage: 'url("https://images.unsplash.com/photo-1521537634581-0dced2fee2ef?q=80&w=2070&auto=format&fit=crop")' }}
       ></motion.div>
       
       {/* Cinematic Overlays */}

@@ -86,7 +86,7 @@ const AboutFacilitySpecs: React.FC = () => {
                      transition={{ delay: 0.1 }}
                      className="relative h-64 rounded-sm overflow-hidden group border border-white/10"
                    >
-                      <img src="https://images.unsplash.com/photo-1626224583764-847890e058f5?q=80&w=800&auto=format&fit=crop" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" alt="Badminton" />
+                      <img src="https://images.unsplash.com/photo-1521537634581-0dced2fee2ef?q=80&w=800&auto=format&fit=crop" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" alt="Badminton" />
                       <div className="absolute inset-0 bg-gradient-to-t from-dfw-navy/90 to-transparent"></div>
                       <div className="absolute bottom-6 left-6 text-white">
                          <h3 className="font-header text-2xl uppercase mb-1">Badminton Hall</h3>

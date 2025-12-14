@@ -14,7 +14,7 @@ const AboutHero: React.FC = () => {
            animate={{ scale: 1, opacity: 0.5 }}
            transition={{ duration: 1.5, ease: "easeOut" }}
            className="absolute inset-0 bg-cover bg-center"
-           style={{ backgroundImage: 'url("https://images.unsplash.com/photo-1519766304800-096cdef291c9?q=80&w=2070&auto=format&fit=crop")' }}
+           style={{ backgroundImage: 'url("https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?q=80&w=2070&auto=format&fit=crop")' }}
         ></motion.div>
         <div className="absolute inset-0 bg-gradient-to-r from-[#050911] via-[#050911]/80 to-transparent z-10"></div>
         <div className="absolute inset-0 bg-gradient-to-t from-[#050911] via-transparent to-transparent z-10"></div>

@@ -57,7 +57,7 @@ const AcademyPrograms: React.FC = () => {
              <motion.div variants={itemVariants} className="group bg-white dark:bg-white/5 rounded-lg border border-gray-200 dark:border-white/10 overflow-hidden hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 flex flex-col h-full">
                 <div className="h-48 overflow-hidden relative">
                    <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-md px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-green-600 rounded-sm z-10 shadow-sm flex items-center gap-2"><Star size={10} /> Ages 5-11</div>
-                   <img src="https://images.unsplash.com/photo-1595053826286-2e5968719a0c?q=80&w=800&auto=format&fit=crop" alt="Youth Cricket Training" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+                   <img src="https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?q=80&w=800&auto=format&fit=crop" alt="Youth Cricket Training" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
                    <div className="absolute inset-0 bg-gradient-to-t from-dfw-navy/80 dark:from-black/80 to-transparent opacity-60"></div>
                 </div>
                 <div className="p-6 flex flex-col flex-grow">
@@ -80,7 +80,7 @@ const AcademyPrograms: React.FC = () => {
              <motion.div variants={itemVariants} className="group bg-white dark:bg-white/5 rounded-lg border border-gray-200 dark:border-white/10 overflow-hidden hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 flex flex-col h-full">
                 <div className="h-48 overflow-hidden relative">
                    <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-md px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-blue-600 rounded-sm z-10 shadow-sm flex items-center gap-2"><TrendingUp size={10} /> Ages 12-16</div>
-                   <img src="https://images.unsplash.com/photo-1593341646782-e0b495cffd32?q=80&w=800&auto=format&fit=crop" alt="Junior Cricket Development" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+                   <img src="https://images.unsplash.com/photo-1587280501635-68a0e82cd5ff?q=80&w=800&auto=format&fit=crop" alt="Junior Cricket Development" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
                    <div className="absolute inset-0 bg-gradient-to-t from-dfw-navy/80 dark:from-black/80 to-transparent opacity-60"></div>
                 </div>
                 <div className="p-6 flex flex-col flex-grow">

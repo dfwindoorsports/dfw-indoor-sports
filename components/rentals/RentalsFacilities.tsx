@@ -116,7 +116,7 @@ const RentalsFacilities: React.FC = () => {
                         </Link>
                      </div>
                      <div className="relative min-h-[300px] lg:min-h-full overflow-hidden order-1 lg:order-2">
-                        <img src="https://images.unsplash.com/photo-1626224583764-847890e058f5?q=80&w=800&auto=format&fit=crop" className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" alt="Badminton" />
+                        <img src="https://images.unsplash.com/photo-1521537634581-0dced2fee2ef?q=80&w=800&auto=format&fit=crop" className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" alt="Badminton" />
                         <div className="absolute inset-0 bg-blue-900/10 group-hover:bg-transparent transition-colors"></div>
                      </div>
                   </div>

@@ -9,7 +9,7 @@ const DodgeballHero: React.FC = () => {
       {/* Background Image with Cinematic Zoom */}
       <div 
         className="absolute inset-0 bg-cover bg-center opacity-50 scale-105 animate-zoom-slow mix-blend-luminosity"
-        style={{ backgroundImage: 'url("https://images.unsplash.com/photo-1526676037777-05a232554f77?q=80&w=2070&auto=format&fit=crop")' }}
+        style={{ backgroundImage: 'url("https://images.unsplash.com/photo-1579952363873-27f3bade9f55?q=80&w=2070&auto=format&fit=crop")' }}
       ></div>
       
       {/* Gradient Overlays */}

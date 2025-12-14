@@ -26,7 +26,7 @@ const CricketShowcase: React.FC = () => {
 
              {/* Side Images */}
              <div className="relative rounded-lg overflow-hidden group cursor-pointer">
-                <img src="https://images.unsplash.com/photo-1593341646782-e0b495cffd32?q=80&w=800&auto=format&fit=crop" alt="Bowling Machine" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                <img src="https://images.unsplash.com/photo-1587280501635-68a0e82cd5ff?q=80&w=800&auto=format&fit=crop" alt="Bowling Machine" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
                 <div className="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-black/90 to-transparent">
                    <p className="font-bold uppercase tracking-widest text-xs text-[#CC0000]">Auto-Feed Machines</p>
                 </div>

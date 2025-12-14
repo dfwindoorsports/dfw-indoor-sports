@@ -9,7 +9,7 @@ const InfoSection: React.FC = () => {
       {/* Background Image with Parallax-feel */}
       <div className="absolute top-0 right-0 w-full md:w-[65%] h-full bg-gray-900">
          <img 
-           src="https://images.unsplash.com/photo-1519766304800-096cdef291c9?q=80&w=2070&auto=format&fit=crop" 
+           src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?q=80&w=2070&auto=format&fit=crop" 
            alt="Background" 
            width="2070"
            height="1200"

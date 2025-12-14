@@ -15,7 +15,7 @@ const facilities = [
   { 
     title: 'Badminton Courts', 
     desc: 'Eight BWF-regulation courts with professional flooring, proper ceiling clearance, and shadow-free lighting.',
-    img: 'https://images.unsplash.com/photo-1626224583764-847890e058f5?q=80&w=800&auto=format&fit=crop',
+    img: 'https://images.unsplash.com/photo-1521537634581-0dced2fee2ef?q=80&w=800&auto=format&fit=crop',
     tag: 'BWF Approved'
   },
   { 

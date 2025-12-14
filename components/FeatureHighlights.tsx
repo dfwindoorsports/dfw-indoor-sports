@@ -17,7 +17,7 @@ const highlights = [
     title: 'Pro Gear',
     subtitle: 'Advanced Training Equipment',
     description: 'Access state-of-the-art bowling machines, pitch vision technology, and analytics tools to refine your technique.',
-    img: 'https://images.unsplash.com/photo-1606925797300-0b35e9d17d27?q=80&w=800&auto=format&fit=crop',
+    img: 'https://images.unsplash.com/photo-1612872087720-bb876e2e67d1?q=80&w=800&auto=format&fit=crop',
     icon: Target,
     link: '/cricket-lanes'
   },
@@ -26,7 +26,7 @@ const highlights = [
     title: 'Expert Staff',
     subtitle: 'World-Class Coaching',
     description: 'Train under the guidance of certified professionals and former national players dedicated to your growth.',
-    img: 'https://images.unsplash.com/photo-1526676037777-05a232554f77?q=80&w=800&auto=format&fit=crop',
+    img: 'https://images.unsplash.com/photo-1579952363873-27f3bade9f55?q=80&w=800&auto=format&fit=crop',
     icon: Award,
     link: '/academy/coaches'
   }

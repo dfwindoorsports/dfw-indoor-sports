@@ -21,7 +21,7 @@ const facilities = [
     status: 'Busy',
     capacity: '6 Courts',
     specs: ['BWF Courts', 'Anti-Glare LED', 'Pro Flooring'],
-    img: 'https://images.unsplash.com/photo-1626224583764-847890e058f5?q=80&w=800&auto=format&fit=crop',
+    img: 'https://images.unsplash.com/photo-1521537634581-0dced2fee2ef?q=80&w=800&auto=format&fit=crop',
     className: 'md:col-span-2 md:row-span-1',
     icons: [Wind, Zap]
   },
@@ -43,7 +43,7 @@ const facilities = [
     status: 'Reserved',
     capacity: '4 Lanes',
     specs: ['Auto-Feeders', 'Video Analysis'],
-    img: 'https://images.unsplash.com/photo-1593341646782-e0b495cffd32?q=80&w=800&auto=format&fit=crop',
+    img: 'https://images.unsplash.com/photo-1587280501635-68a0e82cd5ff?q=80&w=800&auto=format&fit=crop',
     className: 'md:col-span-1 md:row-span-1',
     icons: [Cast, Wifi]
   },
@@ -54,7 +54,7 @@ const facilities = [
     status: 'Inquire',
     capacity: '200+ Guests',
     specs: ['Corporate', 'Parties', 'Team Building'],
-    img: 'https://images.unsplash.com/photo-1514525253440-b39345208668?q=80&w=800&auto=format&fit=crop',
+    img: 'https://images.unsplash.com/photo-1505373877841-8d25f7d46678?q=80&w=800&auto=format&fit=crop',
     className: 'md:col-span-2 md:row-span-1',
     icons: [Layout, Wifi, Wind]
   },

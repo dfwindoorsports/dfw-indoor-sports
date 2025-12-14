@@ -9,7 +9,7 @@ const BadmintonHero: React.FC = () => {
       {/* Background Image with Cinematic Zoom and Parallax Feel */}
       <div 
         className="absolute inset-0 bg-cover bg-center opacity-50 scale-105 animate-zoom-slow mix-blend-luminosity"
-        style={{ backgroundImage: 'url("https://images.unsplash.com/photo-1626224583764-847890e058f5?q=80&w=2070&auto=format&fit=crop")' }}
+        style={{ backgroundImage: 'url("https://images.unsplash.com/photo-1521537634581-0dced2fee2ef?q=80&w=2070&auto=format&fit=crop")' }}
       ></div>
       
       {/* Advanced Gradient Overlays for Depth */}

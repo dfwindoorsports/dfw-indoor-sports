@@ -15,7 +15,7 @@ const DodgeballShowcase: React.FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 h-auto md:h-[600px]">
              {/* Main Large Image */}
              <div className="md:col-span-2 md:row-span-2 relative rounded-lg overflow-hidden group cursor-pointer">
-                <img src="https://images.unsplash.com/photo-1526676037777-05a232554f77?q=80&w=2070&auto=format&fit=crop" alt="Main Dodgeball Court" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                <img src="https://images.unsplash.com/photo-1579952363873-27f3bade9f55?q=80&w=2070&auto=format&fit=crop" alt="Main Dodgeball Court" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
                 <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
                    <Maximize2 className="text-white drop-shadow-lg" size={32} />
                 </div>
