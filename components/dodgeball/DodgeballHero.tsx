@@ -28,7 +28,7 @@ const DodgeballHero: React.FC = () => {
             <span className="font-bold">Fun Factor:</span> Maximum Adrenaline
          </div>
          
-         <h1 className="text-3xl md:text-5xl lg:text-6xl font-header font-bold text-white uppercase tracking-tighter mb-4 leading-[0.9] animate-slide-up max-w-5xl drop-shadow-2xl">
+         <h1 className="text-3xl md:text-5xl lg:text-6xl font-header font-bold text-white uppercase tracking-tighter mb-4 leading-[1.1] animate-slide-up max-w-5xl drop-shadow-2xl">
            Dodgeball Court Rental <br/>
            <span className="text-transparent bg-clip-text bg-gradient-to-r from-violet-400 via-fuchsia-300 to-white">Fort Worth</span>
          </h1>

@@ -76,7 +76,7 @@ const HomeHero: React.FC = () => {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.4, duration: 0.8 }}
-              className="text-5xl sm:text-6xl md:text-8xl lg:text-9xl font-header font-bold text-white leading-[0.9] md:leading-[0.85] uppercase tracking-tighter mb-6 md:mb-10 drop-shadow-2xl"
+              className="text-5xl sm:text-6xl md:text-8xl lg:text-9xl font-header font-bold text-white leading-[1.1] md:leading-[1.1] uppercase tracking-tighter mb-6 md:mb-10 drop-shadow-2xl"
             >
               Your Place <br/>
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-gray-200 to-gray-400">To Play.</span>

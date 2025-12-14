@@ -28,7 +28,7 @@ const BadmintonHero: React.FC = () => {
             <span className="font-bold">Live:</span> Courts Available Now
          </div>
          
-         <h1 className="text-3xl md:text-5xl lg:text-6xl font-header font-bold text-white uppercase tracking-tighter mb-4 leading-[0.9] animate-slide-up max-w-5xl drop-shadow-2xl">
+         <h1 className="text-3xl md:text-5xl lg:text-6xl font-header font-bold text-white uppercase tracking-tighter mb-4 leading-[1.1] animate-slide-up max-w-5xl drop-shadow-2xl">
            BWF Standard <br/>
            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-cyan-200 to-white">Badminton</span>
          </h1>

@@ -28,7 +28,7 @@ const SoccerHero: React.FC = () => {
             <span className="font-bold">Status:</span> Open 5 AM - 11 PM Daily
          </div>
          
-         <h1 className="text-3xl md:text-5xl lg:text-6xl font-header font-bold text-white uppercase tracking-tighter mb-4 leading-[0.9] animate-slide-up max-w-5xl drop-shadow-2xl">
+         <h1 className="text-3xl md:text-5xl lg:text-6xl font-header font-bold text-white uppercase tracking-tighter mb-4 leading-[1.1] animate-slide-up max-w-5xl drop-shadow-2xl">
            Indoor Soccer Field Rental <br/>
            <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 via-emerald-200 to-white">Fort Worth</span>
          </h1>

@@ -27,7 +27,7 @@ const ContactHero: React.FC = () => {
               <span className="group-hover:text-white transition-colors">Support Online</span>
            </div>
            
-           <h1 className="text-3xl md:text-5xl lg:text-6xl font-header font-bold text-white uppercase tracking-tighter mb-4 leading-[0.9] animate-slide-up max-w-5xl drop-shadow-2xl">
+           <h1 className="text-3xl md:text-5xl lg:text-6xl font-header font-bold text-white uppercase tracking-tighter mb-4 leading-[1.1] animate-slide-up max-w-5xl drop-shadow-2xl">
              Let's Start A <br/>
              <span className="text-transparent bg-clip-text bg-gradient-to-r from-dfw-red via-dfw-red to-white">Conversation</span>
            </h1>
