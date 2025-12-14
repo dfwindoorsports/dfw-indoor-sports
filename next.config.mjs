@@ -1,5 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  outputFileTracingRoot: '/Users/codex/orchids-projects/DFW-Indoor-Sports-Website',
   reactStrictMode: true,
   compress: true,
   trailingSlash: false,
