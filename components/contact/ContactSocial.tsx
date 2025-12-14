@@ -28,7 +28,7 @@ const ContactSocial: React.FC = () => {
                    Follow us for daily facility updates, member highlights, tournament photos, and training tips.
                 </p>
                 <div className="flex justify-center md:justify-start gap-4">
-                   <a href="https://instagram.com" target="_blank" rel="noreferrer" className="p-3 bg-white/5 rounded-full hover:bg-dfw-red hover:text-white transition-all group border border-white/10">
+                   <a href="https://www.instagram.com/dfwindoorsports" target="_blank" rel="noreferrer" className="p-3 bg-white/5 rounded-full hover:bg-dfw-red hover:text-white transition-all group border border-white/10">
                       <Instagram size={20} />
                    </a>
                    <a href="https://facebook.com" target="_blank" rel="noreferrer" className="p-3 bg-white/5 rounded-full hover:bg-blue-600 hover:text-white transition-all group border border-white/10">

@@ -11,8 +11,15 @@ import { motion, AnimatePresence } from 'framer-motion'
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
+  const [expandedItems, setExpandedItems] = useState<string[]>([])
   const pathname = usePathname()
   const { theme, toggleTheme } = useTheme()
+
+  const toggleExpanded = (label: string) => {
+    setExpandedItems(prev => 
+      prev.includes(label) ? prev.filter(l => l !== label) : [...prev, label]
+    )
+  }
 
   useEffect(() => {
     const handleScroll = () => {
@@ -185,25 +192,49 @@ export default function Navbar() {
                           >
                               {item.children ? (
                                   <div className="py-3">
-                                      <Link 
-                                          href={item.href}
-                                          onClick={() => setIsOpen(false)}
-                                          className="block font-header font-bold text-xl text-dfw-navy dark:text-white uppercase mb-2"
-                                      >
-                                          {item.label}
-                                      </Link>
-                                      <div className="pl-4 border-l-2 border-gray-100 dark:border-white/10 space-y-2">
-                                          {item.children.map(child => (
-                                              <Link 
-                                                  key={child.label}
-                                                  href={child.href}
-                                                  onClick={() => setIsOpen(false)}
-                                                  className="block text-xs font-bold text-gray-500 dark:text-gray-400 uppercase tracking-widest hover:text-dfw-red transition-colors"
-                                              >
-                                                  {child.label}
-                                              </Link>
-                                          ))}
+                                      <div className="flex items-center justify-between mb-2 pr-2">
+                                          <Link 
+                                              href={item.href}
+                                              onClick={() => setIsOpen(false)}
+                                              className="block font-header font-bold text-xl text-dfw-navy dark:text-white uppercase"
+                                          >
+                                              {item.label}
+                                          </Link>
+                                          <button
+                                              onClick={() => toggleExpanded(item.label)}
+                                              className="p-2 text-dfw-navy dark:text-white hover:text-dfw-red transition-colors"
+                                              aria-label={`Toggle ${item.label} menu`}
+                                          >
+                                              <ChevronDown 
+                                                  size={20} 
+                                                  className={`transition-transform duration-200 ${expandedItems.includes(item.label) ? 'rotate-180' : ''}`}
+                                              />
+                                          </button>
                                       </div>
+                                      <AnimatePresence>
+                                          {expandedItems.includes(item.label) && (
+                                              <motion.div
+                                                  initial={{ height: 0, opacity: 0 }}
+                                                  animate={{ height: 'auto', opacity: 1 }}
+                                                  exit={{ height: 0, opacity: 0 }}
+                                                  transition={{ duration: 0.2 }}
+                                                  className="overflow-hidden"
+                                              >
+                                                  <div className="pl-4 border-l-2 border-gray-100 dark:border-white/10 space-y-2 pb-2">
+                                                      {item.children.map(child => (
+                                                          <Link 
+                                                              key={child.label}
+                                                              href={child.href}
+                                                              onClick={() => setIsOpen(false)}
+                                                              className="block text-xs font-bold text-gray-500 dark:text-gray-400 uppercase tracking-widest hover:text-dfw-red transition-colors py-1"
+                                                          >
+                                                              {child.label}
+                                                          </Link>
+                                                      ))}
+                                                  </div>
+                                              </motion.div>
+                                          )}
+                                      </AnimatePresence>
                                   </div>
                               ) : (
                                   <Link
