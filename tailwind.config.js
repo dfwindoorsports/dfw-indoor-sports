@@ -5,6 +5,28 @@ module.exports = {
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
     './components/**/*.{js,ts,jsx,tsx,mdx}',
   ],
+  safelist: [
+    'bg-dfw-red',
+    'bg-blue-600',
+    'bg-green-600',
+    'bg-purple-600',
+    'text-dfw-red',
+    'text-blue-600',
+    'text-green-600',
+    'text-purple-600',
+    'border-dfw-red',
+    'border-blue-600',
+    'border-green-600',
+    'border-purple-600',
+    'bg-dfw-red/10',
+    'bg-blue-600/10',
+    'bg-green-600/10',
+    'bg-purple-600/10',
+    'text-dfw-red',
+    'text-blue-600',
+    'text-green-600',
+    'text-purple-600',
+  ],
   darkMode: 'class',
   theme: {
     extend: {
@@ -65,5 +87,14 @@ module.exports = {
       }
     },
   },
-  plugins: [],
+  plugins: [
+    function({ addUtilities }) {
+      addUtilities({
+        '.mask-linear-fade': {
+          'mask-image': 'linear-gradient(to right, transparent, black 10%, black 90%, transparent)',
+          '-webkit-mask-image': 'linear-gradient(to right, transparent, black 10%, black 90%, transparent)',
+        },
+      })
+    }
+  ],
 }
