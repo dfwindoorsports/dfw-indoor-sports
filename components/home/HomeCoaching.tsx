@@ -27,7 +27,7 @@ const HomeCoaching: React.FC = () => {
                transition={{ duration: 0.6 }}
                className="relative rounded-lg overflow-hidden h-[400px] shadow-2xl group"
              >
-                <img src="https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?q=80&w=2805&auto=format&fit=crop" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" alt="Coaching" />
+                <img src="/images/Prashant_Kamble.avif" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" alt="Prashant Kamble - Head Coach" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent"></div>
                 <div className="absolute bottom-8 left-8 text-white">
                    <div className="flex items-center gap-2 mb-2">
