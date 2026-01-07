@@ -24,6 +24,31 @@ const HomeIntro: React.FC = () => {
    return (
       <section className="relative py-24 md:py-32 bg-white dark:bg-[#020408] transition-colors duration-300 overflow-hidden">
          <div className="container mx-auto px-4 md:px-6 relative z-10">
+
+            {/* Facility Overview Image */}
+            <motion.div
+               initial={{ opacity: 0, y: 20 }}
+               whileInView={{ opacity: 1, y: 0 }}
+               viewport={{ once: true }}
+               className="mb-16"
+            >
+               <div className="relative h-[300px] md:h-[400px] rounded-2xl overflow-hidden shadow-2xl">
+                  <OptimizedImage
+                     src="/images/home/home-intro-facility-overview.webp"
+                     alt="DFW Indoor Sports facility overview showing cricket lanes, badminton courts, and soccer fields"
+                     fill
+                     className="object-cover"
+                     priority
+                  />
+                  {/* Gradient overlay */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-dfw-navy/60 via-transparent to-transparent" />
+                  {/* Caption */}
+                  <div className="absolute bottom-6 left-6 right-6">
+                     <p className="text-white/80 text-xs font-mono uppercase tracking-widest">50,000 sq ft of Premier Sports Facilities</p>
+                  </div>
+               </div>
+            </motion.div>
+
             <div className="flex flex-col lg:flex-row gap-16 lg:gap-24 items-start">
 
                {/* Left Content - Human Connection Focus */}
