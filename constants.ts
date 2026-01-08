@@ -2,8 +2,8 @@ import { Trophy, Users, Star, Calendar, MapPin, Phone, Mail } from 'lucide-react
 
 export const NAV_ITEMS = [
   { label: 'Our Sports', href: '/sports' },
-  { 
-    label: 'Coaching', 
+  {
+    label: 'Coaching',
     href: '/academy',
     children: [
       { label: 'Academy', href: '/academy' },
@@ -11,11 +11,8 @@ export const NAV_ITEMS = [
     ]
   },
   { label: 'Memberships', href: '/memberships' },
-  { label: 'About Us', href: '/about' },
-  { label: 'Partners', href: '/partners' },
-  { label: 'Special Events', href: '/events' },
-  { 
-    label: 'Rentals', 
+  {
+    label: 'Rentals',
     href: '/rentals',
     children: [
       { label: 'Overview', href: '/rentals' },
@@ -24,7 +21,23 @@ export const NAV_ITEMS = [
       { label: 'Soccer Fields', href: '/soccer-fields' },
       { label: 'Dodgeball Courts', href: '/dodgeball-courts' }
     ]
-  }
+  },
+  {
+    label: 'Areas We Serve',
+    href: '/areas-we-serve',
+    children: [
+      { label: 'All Locations', href: '/areas-we-serve' },
+      { label: 'Dallas', href: '/areas-we-serve/dallas' },
+      { label: 'Arlington', href: '/areas-we-serve/arlington' },
+      { label: 'Plano', href: '/areas-we-serve/plano' },
+      { label: 'Irving', href: '/areas-we-serve/irving' },
+      { label: 'Frisco', href: '/areas-we-serve/frisco' }
+    ]
+  },
+  { label: 'Blog', href: '/blog' },
+  { label: 'Special Events', href: '/events' },
+  { label: 'About Us', href: '/about' },
+  { label: 'Partners', href: '/partners' },
 ];
 
 export const MARQUEE_ITEMS = [

@@ -153,9 +153,10 @@ export default function Footer() {
                   { label: 'Home', href: '/' },
                   { label: 'About Us', href: '/about' },
                   { label: 'Academy', href: '/academy' },
-                  { label: 'Coaching', href: '/academy/coaches' },
                   { label: 'Memberships', href: '/memberships' },
                   { label: 'Events', href: '/events' },
+                  { label: 'Blog', href: '/blog' },
+                  { label: 'Areas We Serve', href: '/areas-we-serve' },
                 ].map((link, i) => (
                   <li key={i}>
                     <Link href={link.href} className="group flex items-center gap-2 text-xs md:text-sm text-gray-500 hover:text-white transition-colors py-1 md:py-0">
