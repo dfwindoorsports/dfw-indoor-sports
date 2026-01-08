@@ -24,6 +24,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: '/blog', priority: 0.8, changeFrequency: 'weekly' as const },
     { path: '/blog/indoor-cricket-guide-dfw', priority: 0.7, changeFrequency: 'monthly' as const },
     { path: '/blog/badminton-fitness-benefits', priority: 0.7, changeFrequency: 'monthly' as const },
+    { path: '/blog/indoor-soccer-rules-explained', priority: 0.7, changeFrequency: 'monthly' as const },
+    { path: '/blog/corporate-team-building-dodgeball', priority: 0.7, changeFrequency: 'monthly' as const },
+    { path: '/blog/youth-sports-programs-fort-worth', priority: 0.7, changeFrequency: 'monthly' as const },
+
     // Local SEO: City Landing Pages
     { path: '/areas-we-serve', priority: 0.8, changeFrequency: 'monthly' as const },
     { path: '/areas-we-serve/dallas', priority: 0.7, changeFrequency: 'monthly' as const },
