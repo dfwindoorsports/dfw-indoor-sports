@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import { createPageMetadata, generateBreadcrumbSchema, generateFAQSchema, BUSINESS_INFO } from '@/lib/metadata'
-import { Car, Clock, Phone, DollarSign, Trophy, Users, Award, Shield, Target, Heart, CheckCircle } from 'lucide-react'
+// Icons are now passed as string names to client components
 import CityHero from '@/components/city/CityHero'
 import CityStats from '@/components/city/CityStats'
 import CityFeatures from '@/components/city/CityFeatures'
@@ -92,10 +92,10 @@ export default function FriscoPage() {
 
             <CityStats
                 stats={[
-                    { icon: Car, value: "40 Min", label: "Worth the Drive", sublabel: "Via TX-121" },
-                    { icon: Target, value: "Youth", label: "Programs", sublabel: "Build Champions" },
-                    { icon: Users, value: "Community", label: "North DFW", sublabel: "Find Players" },
-                    { icon: Heart, value: "Family", label: "Focused", sublabel: "Safe & clean" }
+                    { icon: "Car", value: "40 Min", label: "Worth the Drive", sublabel: "Via TX-121" },
+                    { icon: "Target", value: "Youth", label: "Programs", sublabel: "Build Champions" },
+                    { icon: "Users", value: "Community", label: "North DFW", sublabel: "Find Players" },
+                    { icon: "Heart", value: "Family", label: "Focused", sublabel: "Safe & clean" }
                 ]}
             />
 
@@ -106,22 +106,22 @@ export default function FriscoPage() {
                     {
                         title: "Professional Youth Training",
                         description: "Our structured academy programs are worth the weekly commute. We provide the disciplined, high-level coaching that aspiring athletes need to truly improve.",
-                        icon: Target
+                        icon: "Target"
                     },
                     {
                         title: "Olympic-Standard Courts",
                         description: "Don't compromise with multi-purpose gym floors. Our badminton courts have proper BWF-approved synthetic flooring that protects knees and improves game play.",
-                        icon: Trophy
+                        icon: "Trophy"
                     },
                     {
                         title: "North DFW Hub",
                         description: "We've become a central gathering point for the cricket and badminton communities of Frisco, Plano, and McKinney. You'll likely see neighbors here!",
-                        icon: Users
+                        icon: "Users"
                     },
                     {
                         title: "Weekend Destination",
                         description: "Make a day of it. Saturday morning training followed by lunch in nearby Southlake Town Square makes for a perfect family weekend routine.",
-                        icon: Heart
+                        icon: "Heart"
                     }
                 ]}
             />

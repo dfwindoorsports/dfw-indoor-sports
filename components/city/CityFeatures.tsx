@@ -2,12 +2,17 @@
 
 import React from 'react'
 import { motion } from 'framer-motion'
-import { CheckCircle, Trophy, Users, Shield, Target } from 'lucide-react'
+import { CheckCircle, Trophy, Users, Shield, Target, GraduationCap, Car, Clock, Heart, Zap, Star, Home, Building, Plane, Briefcase } from 'lucide-react'
+
+// Icon map to resolve string names to components
+const iconMap = {
+    CheckCircle, Trophy, Users, Shield, Target, GraduationCap, Car, Clock, Heart, Zap, Star, Home, Building, Plane, Briefcase
+}
 
 interface Feature {
     title: string
     description: string
-    icon: any
+    icon: keyof typeof iconMap
 }
 
 interface CityFeaturesProps {
@@ -53,28 +58,31 @@ export default function CityFeatures({ title, description, features }: CityFeatu
                 </div>
 
                 <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-                    {features.map((feature, idx) => (
-                        <motion.div
-                            key={idx}
-                            initial={{ opacity: 0, y: 20 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true }}
-                            transition={{ delay: idx * 0.1 }}
-                            className="bg-white dark:bg-white/5 p-8 rounded-2xl border border-gray-100 dark:border-white/10 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group"
-                        >
-                            <div className="flex items-start gap-4">
-                                <div className="w-12 h-12 rounded-xl bg-dfw-red/10 flex items-center justify-center shrink-0 group-hover:bg-dfw-red transition-colors duration-300">
-                                    <feature.icon className="text-dfw-red group-hover:text-white transition-colors duration-300" size={24} />
+                    {features.map((feature, idx) => {
+                        const IconComponent = iconMap[feature.icon]
+                        return (
+                            <motion.div
+                                key={idx}
+                                initial={{ opacity: 0, y: 20 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                viewport={{ once: true }}
+                                transition={{ delay: idx * 0.1 }}
+                                className="bg-white dark:bg-white/5 p-8 rounded-2xl border border-gray-100 dark:border-white/10 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 group"
+                            >
+                                <div className="flex items-start gap-4">
+                                    <div className="w-12 h-12 rounded-xl bg-dfw-red/10 flex items-center justify-center shrink-0 group-hover:bg-dfw-red transition-colors duration-300">
+                                        {IconComponent && <IconComponent className="text-dfw-red group-hover:text-white transition-colors duration-300" size={24} />}
+                                    </div>
+                                    <div>
+                                        <h3 className="text-xl font-bold text-dfw-navy dark:text-white uppercase mb-3">{feature.title}</h3>
+                                        <p className="text-gray-600 dark:text-gray-400 leading-relaxed text-sm">
+                                            {feature.description}
+                                        </p>
+                                    </div>
                                 </div>
-                                <div>
-                                    <h3 className="text-xl font-bold text-dfw-navy dark:text-white uppercase mb-3">{feature.title}</h3>
-                                    <p className="text-gray-600 dark:text-gray-400 leading-relaxed text-sm">
-                                        {feature.description}
-                                    </p>
-                                </div>
-                            </div>
-                        </motion.div>
-                    ))}
+                            </motion.div>
+                        )
+                    })}
                 </div>
             </div>
         </section>

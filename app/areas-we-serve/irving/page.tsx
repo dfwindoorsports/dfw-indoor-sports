@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import { createPageMetadata, generateBreadcrumbSchema, generateFAQSchema, BUSINESS_INFO } from '@/lib/metadata'
-import { Car, Clock, Phone, DollarSign, Trophy, Users, Award, Shield, Plane, Briefcase, MapPin } from 'lucide-react'
+// Icons are now passed as string names to client components
 import CityHero from '@/components/city/CityHero'
 import CityStats from '@/components/city/CityStats'
 import CityFeatures from '@/components/city/CityFeatures'
@@ -92,10 +92,10 @@ export default function IrvingPage() {
 
             <CityStats
                 stats={[
-                    { icon: Car, value: "15 Min", label: "From Las Colinas", sublabel: "Via TX-114" },
-                    { icon: Plane, value: "Airport", label: "Adjacent", sublabel: "10 Min Drive" },
-                    { icon: Briefcase, value: "Corporate", label: "Events", sublabel: "Team Building" },
-                    { icon: Clock, value: "Late Night", label: "Open til 11 PM", sublabel: "After Work" }
+                    { icon: "Car", value: "15 Min", label: "From Las Colinas", sublabel: "Via TX-114" },
+                    { icon: "Plane", value: "Airport", label: "Adjacent", sublabel: "10 Min Drive" },
+                    { icon: "Briefcase", value: "Corporate", label: "Events", sublabel: "Team Building" },
+                    { icon: "Clock", value: "Late Night", label: "Open til 11 PM", sublabel: "After Work" }
                 ]}
             />
 
@@ -106,22 +106,22 @@ export default function IrvingPage() {
                     {
                         title: "Corporate Team Building",
                         description: "Break out of the boardroom. We organize structured tournaments for Las Colinas companies. Dodgeball, cricket, or soccer—we handle all the logistics.",
-                        icon: Briefcase
+                        icon: "Briefcase"
                     },
                     {
                         title: "Airport Proximity",
                         description: "Located just minutes from DFW Airport, we're the perfect spot for travelers to get a game in, or for colleagues flying in to meet for a fun activity.",
-                        icon: Plane
+                        icon: "Plane"
                     },
                     {
                         title: "Executive Amenities",
                         description: "We understand needing to stay connected. High-speed Wi-Fi, clean showers, and a lounge area make it easy to transition between work and play.",
-                        icon: Shield
+                        icon: "Shield"
                     },
                     {
                         title: "Diverse Sports Options",
                         description: "From the global appeal of cricket and soccer to the intensity of badminton, we offer sports that appeal to DFW's international workforce.",
-                        icon: Trophy
+                        icon: "Trophy"
                     }
                 ]}
             />

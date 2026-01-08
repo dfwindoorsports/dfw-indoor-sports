@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import { createPageMetadata, generateBreadcrumbSchema, generateFAQSchema, BUSINESS_INFO } from '@/lib/metadata'
-import { Car, Clock, Phone, DollarSign, Trophy, Users, Award, Shield, MapPin, GraduationCap } from 'lucide-react'
+import { MapPin } from 'lucide-react'
 import CityHero from '@/components/city/CityHero'
 import CityStats from '@/components/city/CityStats'
 import CityFeatures from '@/components/city/CityFeatures'
@@ -100,10 +100,10 @@ export default function ArlingtonPage() {
 
             <CityStats
                 stats={[
-                    { icon: Car, value: "20 Min", label: "From Arlington", sublabel: "Short Drive" },
-                    { icon: GraduationCap, value: "Student", label: "Discounts", sublabel: "For UTA Students" },
-                    { icon: Users, value: "Groups", label: "Welcome", sublabel: "Team Building" },
-                    { icon: Clock, value: "Daily", label: "5 AM - 11 PM", sublabel: "Year Round" }
+                    { icon: "Car", value: "20 Min", label: "From Arlington", sublabel: "Short Drive" },
+                    { icon: "GraduationCap", value: "Student", label: "Discounts", sublabel: "For UTA Students" },
+                    { icon: "Users", value: "Groups", label: "Welcome", sublabel: "Team Building" },
+                    { icon: "Clock", value: "Daily", label: "5 AM - 11 PM", sublabel: "Year Round" }
                 ]}
             />
 
@@ -114,22 +114,22 @@ export default function ArlingtonPage() {
                     {
                         title: "University & Student Friendly",
                         description: "Just 20 minutes from UTA. We offer a perfect escape for students looking to de-stress with cricket or badminton. Student ID discounts available.",
-                        icon: GraduationCap
+                        icon: "GraduationCap"
                     },
                     {
                         title: "Corporate Events Expert",
                         description: "Arlington is a business hub. We specialize in hosting active team-building events for local companies. Dodgeball tournaments are a favorite for bringing teams together.",
-                        icon: Users
+                        icon: "Users"
                     },
                     {
                         title: "Professional Standards",
                         description: "You're used to world-class venues like AT&T Stadium. We bring that same commitment to quality to recreational sports with our maintained turf and Olympic-standard courts.",
-                        icon: Trophy
+                        icon: "Trophy"
                     },
                     {
                         title: "Beat the Heat",
                         description: "Arlington summers are brutal. Our fully air-conditioned 50,000 sq ft facility lets you play your favorite sports comfortably, no matter the forecast.",
-                        icon: Shield
+                        icon: "Shield"
                     }
                 ]}
             />

@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import { createPageMetadata, generateBreadcrumbSchema, generateFAQSchema, BUSINESS_INFO } from '@/lib/metadata'
-import { Car, Clock, Phone, DollarSign, Trophy, Users, Award, Shield } from 'lucide-react'
+// Icons are now passed as string names to client components
 import CityHero from '@/components/city/CityHero'
 import CityStats from '@/components/city/CityStats'
 import CityFeatures from '@/components/city/CityFeatures'
@@ -121,10 +121,10 @@ export default function DallasPage() {
 
             <CityStats
                 stats={[
-                    { icon: Car, value: "25 Min", label: "From Downtown", sublabel: "Easy Highway Drive" },
-                    { icon: Clock, value: "5 AM - 11 PM", label: "Open Daily", sublabel: "7 Days a Week" },
-                    { icon: DollarSign, value: "$25/hr", label: "Starting Rate", sublabel: "Affordable Play" },
-                    { icon: Phone, value: "(817) 938-0808", label: "Call to Book", sublabel: "Instant Confirmation" }
+                    { icon: "Car", value: "25 Min", label: "From Downtown", sublabel: "Easy Highway Drive" },
+                    { icon: "Clock", value: "5 AM - 11 PM", label: "Open Daily", sublabel: "7 Days a Week" },
+                    { icon: "DollarSign", value: "$25/hr", label: "Starting Rate", sublabel: "Affordable Play" },
+                    { icon: "Phone", value: "(817) 938-0808", label: "Call to Book", sublabel: "Instant Confirmation" }
                 ]}
             />
 
@@ -135,22 +135,22 @@ export default function DallasPage() {
                     {
                         title: "Professional-Grade Facilities",
                         description: "Our 50,000 sq ft facility isn't a converted warehouse—it's purpose-built. Cricket lanes with programmable bowling machines (40-90 mph), Olympic-spec badminton courts, and regulation futsal fields.",
-                        icon: Trophy
+                        icon: "Trophy"
                     },
                     {
                         title: "Active Playing Community",
                         description: "Finding players at your level can be hard. Our community includes 200+ active members from Dallas, Fort Worth, and Arlington. Find competitive leagues or casual rally partners easily.",
-                        icon: Users
+                        icon: "Users"
                     },
                     {
                         title: "Certified Coaching Staff",
                         description: "Our coaching team includes former pros. Whether for you or your kids, get personalized training that actually improves your game—not just generic drills.",
-                        icon: Award
+                        icon: "Star"
                     },
                     {
                         title: "Year-Round Comfort",
                         description: "Texas weather is unpredictable. Our climate-controlled facility maintains a consistent 68-72°F year-round. No more canceled games due to heat or rain.",
-                        icon: Shield
+                        icon: "Shield"
                     }
                 ]}
             />

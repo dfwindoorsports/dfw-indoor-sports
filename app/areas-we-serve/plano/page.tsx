@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import { createPageMetadata, generateBreadcrumbSchema, generateFAQSchema, BUSINESS_INFO } from '@/lib/metadata'
-import { Car, Clock, Phone, DollarSign, Trophy, Users, Award, Shield, MapPin, Heart, Palette } from 'lucide-react'
+// Icons are now passed as string names to client components
 import CityHero from '@/components/city/CityHero'
 import CityStats from '@/components/city/CityStats'
 import CityFeatures from '@/components/city/CityFeatures'
@@ -92,10 +92,10 @@ export default function PlanoPage() {
 
             <CityStats
                 stats={[
-                    { icon: Car, value: "35 Min", label: "Via TX-121", sublabel: "Smooth Drive" },
-                    { icon: Heart, value: "Family", label: "Friendly", sublabel: "Safe Environment" },
-                    { icon: Users, value: "Community", label: "Hub", sublabel: "South Asian Sports" },
-                    { icon: Award, value: "Coaching", label: "Certified", sublabel: "Youth Academy" }
+                    { icon: "Car", value: "35 Min", label: "Via TX-121", sublabel: "Smooth Drive" },
+                    { icon: "Heart", value: "Family", label: "Friendly", sublabel: "Safe Environment" },
+                    { icon: "Users", value: "Community", label: "Hub", sublabel: "South Asian Sports" },
+                    { icon: "Award", value: "Coaching", label: "Certified", sublabel: "Youth Academy" }
                 ]}
             />
 
@@ -106,22 +106,22 @@ export default function PlanoPage() {
                     {
                         title: "Cultural Sports Hub",
                         description: "We understand the passion for cricket and badminton in the South Asian community. Our facility is designed to celebrate these sports with the respect and quality they deserve.",
-                        icon: Users
+                        icon: "Users"
                     },
                     {
                         title: "Youth Development Focus",
                         description: "We don't just offer space; we offer growth. Our academy programs in cricket and badminton are led by experienced coaches who nurture talent from the ground up.",
-                        icon: Award
+                        icon: "Star"
                     },
                     {
                         title: "Premium Family Experience",
                         description: "Clean facilities, comfortable waiting areas, and a respectful atmosphere. We ensure that while the kids train, parents can relax or get a workout in too.",
-                        icon: Heart
+                        icon: "Heart"
                     },
                     {
                         title: "Worth the Drive",
                         description: "Our members say the 35-minute drive from Plano is a small price for the quality of play. No waiting for courts, no wind affecting your shuttlecock.",
-                        icon: Car
+                        icon: "Car"
                     }
                 ]}
             />
