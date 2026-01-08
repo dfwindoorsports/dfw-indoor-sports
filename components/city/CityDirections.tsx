@@ -2,7 +2,7 @@
 
 import React from 'react'
 import { motion } from 'framer-motion'
-import { CheckCircle, MapPin } from 'lucide-react'
+import { ArrowRight, CheckCircle, MapPin } from 'lucide-react'
 import Link from 'next/link'
 
 interface DirectionBlock {
