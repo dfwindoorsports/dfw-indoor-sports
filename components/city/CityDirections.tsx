@@ -1,8 +1,8 @@
 'use client'
 
 import React from 'react'
-import { motion } from 'framer-motion'
-import { ArrowRight, CheckCircle, MapPin } from 'lucide-react'
+import { motion, useInView } from 'framer-motion'
+import { MapPin, ArrowUpRight } from 'lucide-react'
 import Link from 'next/link'
 
 interface DirectionBlock {
@@ -18,60 +18,146 @@ export default function CityDirections({ city, address, googleMapsLink, directio
     googleMapsLink: string
     directions: DirectionBlock[]
 }) {
+    const containerRef = React.useRef(null)
+    const isInView = useInView(containerRef, { once: true, margin: "-50px" })
+
+    const containerVariants = {
+        hidden: { opacity: 0 },
+        visible: {
+            opacity: 1,
+            transition: {
+                staggerChildren: 0.15,
+                delayChildren: 0.2,
+            }
+        }
+    }
+
+    const itemVariants = {
+        hidden: {
+            opacity: 0,
+            x: -30,
+        },
+        visible: {
+            opacity: 1,
+            x: 0,
+            transition: {
+                duration: 0.6,
+                
+            }
+        }
+    }
+
     return (
-        <section className="py-24 bg-gray-50 dark:bg-[#0a111f] relative">
-            <div className="container mx-auto px-4">
+        <section ref={containerRef} className="py-24 sm:py-32 bg-gray-50 dark:bg-[#0a111f] relative overflow-hidden">
+            {/* Background pattern */}
+            <div className="absolute inset-0 bg-grid-dark dark:bg-grid-white pointer-events-none opacity-50" />
+
+            <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
                 <div className="max-w-4xl mx-auto">
+                    {/* Header */}
                     <div className="text-center mb-16">
-                        <h2 className="text-3xl font-header font-bold text-dfw-navy dark:text-white uppercase mb-6">
+                        <motion.span
+                            initial={{ opacity: 0, y: 10 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            className="inline-block text-overline text-dfw-red-500 tracking-luxury mb-4"
+                        >
+                            Getting Here
+                        </motion.span>
+
+                        <motion.h2
+                            initial={{ opacity: 0, y: 20 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ delay: 0.1 }}
+                            className="text-display font-header text-dfw-navy dark:text-white uppercase mb-6"
+                        >
                             Easy Drive from {city}
-                        </h2>
-                        <p className="text-lg text-gray-600 dark:text-gray-400">
-                            Navigate to <span className="text-dfw-navy dark:text-white font-bold">{address}</span>
-                        </p>
+                        </motion.h2>
+
+                        <motion.div
+                            initial={{ opacity: 0, y: 20 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ delay: 0.2 }}
+                            className="inline-flex items-center gap-3 glass-premium px-6 py-3 rounded-full"
+                        >
+                            <MapPin size={16} className="text-dfw-red-400" />
+                            <span className="text-body text-dfw-navy dark:text-white font-medium">{address}</span>
+                        </motion.div>
                     </div>
 
-                    <div className="grid gap-6">
+                    {/* Directions List */}
+                    <motion.div
+                        className="space-y-6"
+                        variants={containerVariants}
+                        initial="hidden"
+                        animate={isInView ? "visible" : "hidden"}
+                    >
                         {directions.map((dir, idx) => (
                             <motion.div
                                 key={idx}
-                                initial={{ opacity: 0, x: -20 }}
-                                whileInView={{ opacity: 1, x: 0 }}
-                                viewport={{ once: true }}
-                                transition={{ delay: idx * 0.1 }}
-                                className="bg-white dark:bg-white/5 border border-gray-100 dark:border-white/10 p-6 md:p-8 rounded-xl hover:border-dfw-red/30 transition-colors"
+                                variants={itemVariants}
+                                className="group relative"
                             >
-                                <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6">
-                                    <h3 className="text-xl font-bold text-dfw-navy dark:text-white flex items-center gap-2">
-                                        <MapPin className="text-dfw-red" size={20} /> {dir.area}
-                                    </h3>
-                                    <div className="flex items-center gap-4 text-sm font-mono text-gray-500">
-                                        <span>{dir.distance}</span>
-                                        <span className="w-1 h-1 bg-gray-300 rounded-full"></span>
-                                        <span>{dir.time}</span>
+                                <div className="relative bg-white dark:bg-white/[0.02] p-8 rounded-3xl border border-gray-100 dark:border-white/[0.06] hover:border-dfw-red-500/30 dark:hover:border-dfw-red-500/30 transition-colors duration-500">
+                                    {/* Header */}
+                                    <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-8">
+                                        <h3 className="text-heading font-header text-dfw-navy dark:text-white flex items-center gap-3">
+                                            <span className="w-10 h-10 rounded-xl bg-dfw-red-500/10 border border-dfw-red-500/20 flex items-center justify-center">
+                                                <MapPin size={18} className="text-dfw-red-500" />
+                                            </span>
+                                            {dir.area}
+                                        </h3>
+
+                                        <div className="flex items-center gap-4">
+                                            <span className="glass-premium px-4 py-2 rounded-lg text-caption font-mono text-dfw-navy dark:text-white">
+                                                {dir.distance}
+                                            </span>
+                                            <span className="glass-premium px-4 py-2 rounded-lg text-caption font-mono text-dfw-red-500 font-medium">
+                                                {dir.time}
+                                            </span>
+                                        </div>
                                     </div>
+
+                                    {/* Steps Timeline */}
+                                    <ol className="relative border-l-2 border-gray-200 dark:border-white/10 ml-5 space-y-4">
+                                        {dir.steps.map((step, sIdx) => (
+                                            <li key={sIdx} className="pl-8 relative">
+                                                {/* Timeline dot */}
+                                                <span className="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-white dark:bg-[#0a111f] border-2 border-gray-300 dark:border-white/20 group-hover:border-dfw-red-500/50 transition-colors duration-500">
+                                                    <span className="absolute inset-1 rounded-full bg-dfw-red-500/50 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+                                                </span>
+
+                                                <span className="text-body text-gray-600 dark:text-gray-400 leading-relaxed">
+                                                    {step}
+                                                </span>
+                                            </li>
+                                        ))}
+                                    </ol>
                                 </div>
-                                <ol className="relative border-l border-gray-200 dark:border-gray-700 ml-3 space-y-6">
-                                    {dir.steps.map((step, sIdx) => (
-                                        <li key={sIdx} className="pl-6 relative">
-                                            <span className="absolute -left-[5px] top-2 w-2.5 h-2.5 rounded-full bg-gray-200 dark:bg-gray-700 ring-4 ring-white dark:ring-[#0a111f]"></span>
-                                            <span className="text-gray-600 dark:text-gray-400 text-sm leading-relaxed block">{step}</span>
-                                        </li>
-                                    ))}
-                                </ol>
                             </motion.div>
                         ))}
-                    </div>
+                    </motion.div>
 
-                    <div className="mt-12 text-center">
+                    {/* Google Maps CTA */}
+                    <motion.div
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ delay: 0.3 }}
+                        className="mt-12 text-center"
+                    >
                         <Link
                             href={googleMapsLink}
                             target="_blank"
-                            className="inline-flex items-center gap-2 px-8 py-4 bg-dfw-navy text-white font-bold uppercase tracking-widest text-sm rounded hover:bg-dfw-red transition-colors duration-300 shadow-lg"
+                            rel="noopener noreferrer"
+                            className="btn-premium group inline-flex items-center gap-3 px-8 py-4 bg-dfw-navy dark:bg-white text-white dark:text-dfw-navy text-overline tracking-luxury rounded-xl shadow-luxury-lg focus-premium"
                         >
-                            Open in Google Maps <ArrowRight size={16} />
+                            Open in Google Maps
+                            <ArrowUpRight size={16} className="group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform duration-300" />
                         </Link>
-                    </div>
+                    </motion.div>
                 </div>
             </div>
         </section>

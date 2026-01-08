@@ -13,7 +13,7 @@ const AboutHero: React.FC = () => {
       <motion.div
         initial={{ scale: 1.1, opacity: 0 }}
         animate={{ scale: 1, opacity: 0.5 }}
-        transition={{ duration: 1.5, ease: "easeOut" }}
+        transition={{ duration: 1.5 }}
         className="absolute inset-0"
       >
         <Image

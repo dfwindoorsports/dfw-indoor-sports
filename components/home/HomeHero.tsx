@@ -17,7 +17,7 @@ const HomeHero: React.FC = () => {
           <motion.div
             initial={{ scale: 1.1, opacity: 0 }}
             animate={{ scale: 1, opacity: 0.5 }}
-            transition={{ duration: 2, ease: "easeOut" }}
+            transition={{ duration: 2 }}
             className="absolute inset-0 bg-cover bg-center"
             style={{
               backgroundImage: 'url("/images/hero/sports-action.webp")',
@@ -36,14 +36,14 @@ const HomeHero: React.FC = () => {
           <motion.div
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 3, ease: "easeOut", delay: 0.5 }}
+            transition={{ duration: 3, delay: 0.5 }}
             className="absolute -top-20 -right-20 w-[400px] h-[400px] rounded-full bg-gradient-radial from-dfw-red/20 via-dfw-red/5 to-transparent blur-3xl"
           />
           {/* Secondary cool orb - bottom left */}
           <motion.div
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 3, ease: "easeOut", delay: 0.8 }}
+            transition={{ duration: 3, delay: 0.8 }}
             className="absolute -bottom-32 -left-32 w-[500px] h-[500px] rounded-full bg-gradient-radial from-blue-500/10 via-blue-500/3 to-transparent blur-3xl"
           />
           {/* Subtle floating accent */}

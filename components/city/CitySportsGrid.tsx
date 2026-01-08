@@ -2,74 +2,137 @@
 
 import React from 'react'
 import { motion } from 'framer-motion'
-import { ArrowRight, CheckCircle } from 'lucide-react'
 import Link from 'next/link'
+import { ArrowRight } from 'lucide-react'
 
-interface SportCardProps {
+interface SportCard {
     name: string
     icon: string
     price: string
-    priceNote?: string
+    priceNote: string
     features: string[]
     link: string
-    delay?: number
 }
 
-const SportCard = ({ name, icon, price, priceNote, features, link, delay = 0 }: SportCardProps) => (
-    <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ delay }}
-        className="group relative bg-[#0a111f] border border-white/10 rounded-xl overflow-hidden hover:border-dfw-red/50 transition-colors duration-300"
-    >
-        <div className="absolute top-0 right-0 p-4 opacity-5 pointer-events-none text-9xl font-header leading-none select-none group-hover:opacity-10 transition-opacity">
-            {name[0]}
-        </div>
+export default function CitySportsGrid({ sports }: { sports: SportCard[] }) {
+    const containerVariants = {
+        hidden: { opacity: 0 },
+        visible: {
+            opacity: 1,
+            transition: {
+                staggerChildren: 0.1,
+                delayChildren: 0.2,
+            }
+        }
+    }
 
-        <div className="p-8 relative z-10 h-full flex flex-col">
-            <div className="flex justify-between items-start mb-6">
-                <div className="w-14 h-14 bg-white/5 rounded-2xl flex items-center justify-center text-3xl group-hover:scale-110 transition-transform duration-300 border border-white/5">
-                    {icon}
-                </div>
-                <div className="text-right">
-                    <div className="text-2xl font-bold text-dfw-red">{price}</div>
-                    <div className="text-[10px] uppercase tracking-wider text-gray-500">{priceNote}</div>
-                </div>
-            </div>
+    const itemVariants = {
+        hidden: {
+            opacity: 0,
+            y: 30,
+            scale: 0.98
+        },
+        visible: {
+            opacity: 1,
+            y: 0,
+            scale: 1,
+            transition: {
+                duration: 0.6,
+                
+            }
+        }
+    }
 
-            <h3 className="text-2xl font-header font-bold text-white uppercase mb-6 group-hover:text-dfw-red transition-colors">{name}</h3>
-
-            <ul className="space-y-3 mb-8 flex-grow">
-                {features.map((feature, i) => (
-                    <li key={i} className="flex items-start gap-3 text-sm text-gray-400">
-                        <CheckCircle className="text-green-500 shrink-0 mt-0.5" size={14} />
-                        <span>{feature}</span>
-                    </li>
-                ))}
-            </ul>
-
-            <Link href={link} className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-white hover:text-dfw-red transition-colors mt-auto">
-                View Details <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
-            </Link>
-        </div>
-    </motion.div>
-)
-
-export default function CitySportsGrid({ sports }: { sports: Omit<SportCardProps, 'delay'>[] }) {
     return (
-        <section className="py-24 bg-[#020408]">
-            <div className="container mx-auto px-4">
-                <div className="max-w-3xl mx-auto text-center mb-16">
-                    <span className="text-dfw-red font-bold uppercase tracking-widest text-xs block mb-4">World Class Facilities</span>
-                    <h2 className="text-3xl md:text-5xl font-header font-bold text-white uppercase">Choose Your Sport</h2>
+        <section className="py-24 sm:py-32 bg-[#020408] relative overflow-hidden">
+            {/* Background accents */}
+            <div className="absolute inset-0 bg-grid-white pointer-events-none opacity-30" />
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-dfw-red-500/5 rounded-full blur-[200px] pointer-events-none" />
+
+            <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                {/* Header */}
+                <div className="text-center mb-16">
+                    <motion.span
+                        initial={{ opacity: 0, y: 10 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        className="inline-block text-overline text-dfw-red-400 tracking-luxury mb-4"
+                    >
+                        What We Offer
+                    </motion.span>
+
+                    <motion.h2
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ delay: 0.1 }}
+                        className="text-display font-header text-white uppercase"
+                    >
+                        Sports & Activities
+                    </motion.h2>
                 </div>
 
-                <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
+                {/* Cards Grid */}
+                <motion.div
+                    className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6"
+                    variants={containerVariants}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true, margin: "-50px" }}
+                >
                     {sports.map((sport, idx) => (
-                        <SportCard key={sport.name} {...sport} delay={idx * 0.1} />
+                        <motion.div key={idx} variants={itemVariants}>
+                            <Link
+                                href={sport.link}
+                                className="group block h-full"
+                            >
+                                <div className="relative h-full glass-premium p-8 rounded-3xl hover-lift overflow-hidden">
+                                    {/* Gradient overlay on hover */}
+                                    <div className="absolute inset-0 bg-gradient-to-b from-dfw-red-500/0 to-dfw-red-500/0 group-hover:from-dfw-red-500/10 group-hover:to-transparent rounded-3xl transition-all duration-500" />
+
+                                    {/* Border glow */}
+                                    <div className="absolute inset-0 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500">
+                                        <div className="absolute inset-0 rounded-3xl border border-dfw-red-500/30" />
+                                    </div>
+
+                                    <div className="relative flex flex-col h-full">
+                                        {/* Icon */}
+                                        <div className="text-5xl mb-6 group-hover:scale-110 transition-transform duration-500">
+                                            {sport.icon}
+                                        </div>
+
+                                        {/* Name */}
+                                        <h3 className="text-heading font-header text-white uppercase mb-4 group-hover:text-dfw-red-400 transition-colors duration-300">
+                                            {sport.name}
+                                        </h3>
+
+                                        {/* Price */}
+                                        <div className="mb-6">
+                                            <span className="text-2xl font-header font-bold text-white">{sport.price}</span>
+                                            <span className="text-caption text-white/50 ml-2">{sport.priceNote}</span>
+                                        </div>
+
+                                        {/* Features */}
+                                        <ul className="space-y-2 mb-8 flex-grow">
+                                            {sport.features.map((feature, fIdx) => (
+                                                <li key={fIdx} className="flex items-center gap-2 text-caption text-white/60">
+                                                    <span className="w-1 h-1 bg-dfw-red-500 rounded-full shrink-0" />
+                                                    {feature}
+                                                </li>
+                                            ))}
+                                        </ul>
+
+                                        {/* CTA */}
+                                        <div className="flex items-center gap-2 text-overline tracking-luxury text-white/70 group-hover:text-dfw-red-400 transition-colors duration-300">
+                                            Learn More
+                                            <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform duration-300" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </Link>
+                        </motion.div>
                     ))}
-                </div>
+                </motion.div>
             </div>
         </section>
     )

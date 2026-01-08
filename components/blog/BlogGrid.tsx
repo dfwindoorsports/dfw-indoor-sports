@@ -1,9 +1,9 @@
 'use client'
 
 import React from 'react'
-import { motion } from 'framer-motion'
+import { motion, useInView } from 'framer-motion'
 import Link from 'next/link'
-import { ArrowRight, Calendar, Clock, Tag } from 'lucide-react'
+import { ArrowRight, Calendar, Clock, Sparkles } from 'lucide-react'
 
 interface BlogPost {
     title: string
@@ -16,101 +16,192 @@ interface BlogPost {
 }
 
 export default function BlogGrid({ posts }: { posts: BlogPost[] }) {
+    const containerRef = React.useRef(null)
+    const isInView = useInView(containerRef, { once: true, margin: "-50px" })
+
     // Featured post is the first one
     const featuredPost = posts.find(p => p.featured) || posts[0]
     const otherPosts = posts.filter(p => p !== featuredPost)
 
+    const containerVariants = {
+        hidden: { opacity: 0 },
+        visible: {
+            opacity: 1,
+            transition: {
+                staggerChildren: 0.1,
+                delayChildren: 0.2,
+            }
+        }
+    }
+
+    const itemVariants = {
+        hidden: {
+            opacity: 0,
+            y: 30,
+            scale: 0.98
+        },
+        visible: {
+            opacity: 1,
+            y: 0,
+            scale: 1,
+            transition: {
+                duration: 0.6
+            }
+        }
+    }
+
     return (
-        <section className="py-20 bg-gray-50 dark:bg-[#0a111f] relative">
-            <div className="absolute inset-0 bg-[url('/textures/cubes.png')] opacity-[0.03] pointer-events-none" />
+        <section ref={containerRef} className="py-24 sm:py-32 bg-gray-50 dark:bg-[#050911] relative overflow-hidden">
+            {/* Background pattern */}
+            <div className="absolute inset-0 bg-grid-dark dark:bg-grid-white pointer-events-none opacity-50" />
 
-            <div className="container mx-auto px-4 relative z-10">
+            {/* Ambient glow */}
+            <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-dfw-red-500/5 rounded-full blur-[150px] pointer-events-none" />
 
-                {/* Featured Post */}
+            <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+
+                {/* ═══════════════════════════════════════════════════════════════
+                    FEATURED POST
+                ═══════════════════════════════════════════════════════════════ */}
                 {featuredPost && (
-                    <div className="mb-20">
-                        <div className="flex items-end justify-between mb-8">
-                            <h2 className="text-2xl font-header font-bold text-dfw-navy dark:text-white uppercase">Featured Article</h2>
+                    <motion.div
+                        className="mb-20"
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                        transition={{ duration: 0.8 }}
+                    >
+                        {/* Section label */}
+                        <div className="flex items-center gap-3 mb-8">
+                            <Sparkles size={16} className="text-dfw-red-400" />
+                            <span className="text-overline text-dfw-red-500 tracking-luxury">Featured Article</span>
                         </div>
-                        <Link href={`/blog/${featuredPost.slug}`} className="group relative block rounded-2xl overflow-hidden shadow-2xl h-[500px]">
-                            {/* Bg Image */}
+
+                        <Link href={`/blog/${featuredPost.slug}`} className="group relative block rounded-3xl overflow-hidden h-[450px] sm:h-[500px] hover-lift">
+                            {/* Background */}
                             <div className="absolute inset-0 bg-dfw-navy">
-                                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent z-10" />
-                                {/* Placeholder Image Pattern */}
-                                <div className="absolute inset-0 opacity-30 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-dfw-red via-dfw-navy to-black" />
+                                {/* Gradient overlay */}
+                                <div className="absolute inset-0 bg-gradient-to-t from-dfw-navy via-dfw-navy/60 to-transparent z-10" />
+                                <div className="absolute inset-0 bg-gradient-to-r from-dfw-navy/80 to-transparent z-10" />
+
+                                {/* Decorative gradient */}
+                                <div className="absolute inset-0 opacity-40 bg-gradient-to-br from-dfw-red-500/30 via-dfw-navy to-blue-600/20" />
+
+                                {/* Animation overlay on hover */}
+                                <div className="absolute inset-0 bg-dfw-red-500/0 group-hover:bg-dfw-red-500/10 transition-colors duration-500 z-10" />
                             </div>
 
-                            <div className="absolute bottom-0 left-0 w-full p-8 md:p-12 z-20">
-                                <div className="flex items-center gap-4 mb-4">
-                                    <span className="bg-dfw-red text-white px-3 py-1 rounded text-xs font-bold uppercase tracking-wider">
+                            {/* Content */}
+                            <div className="absolute bottom-0 left-0 w-full p-8 sm:p-12 z-20">
+                                {/* Meta */}
+                                <div className="flex flex-wrap items-center gap-4 mb-6">
+                                    <span className="px-4 py-1.5 rounded-full bg-dfw-red-500/90 text-white text-overline tracking-luxury">
                                         {featuredPost.category}
                                     </span>
-                                    <span className="text-gray-300 text-xs font-bold uppercase tracking-wide flex items-center gap-2">
-                                        <Clock size={14} /> {featuredPost.readTime}
+                                    <span className="text-overline text-white/70 flex items-center gap-2">
+                                        <Clock size={12} />
+                                        {featuredPost.readTime}
                                     </span>
                                 </div>
 
-                                <h3 className="text-3xl md:text-5xl font-header font-bold text-white mb-4 group-hover:text-dfw-red transition-colors duration-300">
+                                {/* Title */}
+                                <h3 className="text-display text-white mb-4 group-hover:text-dfw-red-300 transition-colors duration-500 text-balance">
                                     {featuredPost.title}
                                 </h3>
 
-                                <p className="text-lg text-gray-300 max-w-2xl mb-8 line-clamp-2">
+                                {/* Excerpt */}
+                                <p className="text-body-lg text-white/60 max-w-2xl mb-8 line-clamp-2">
                                     {featuredPost.excerpt}
                                 </p>
 
-                                <span className="inline-flex items-center gap-2 text-white font-bold uppercase tracking-widest text-sm group-hover:gap-4 transition-all">
-                                    Read Article <ArrowRight size={16} className="text-dfw-red" />
+                                {/* CTA */}
+                                <span className="inline-flex items-center gap-3 text-overline text-white tracking-luxury group-hover:gap-4 transition-all duration-300">
+                                    Read Article
+                                    <ArrowRight size={14} className="text-dfw-red-400" />
                                 </span>
                             </div>
                         </Link>
-                    </div>
+                    </motion.div>
                 )}
 
-                {/* Grid */}
+                {/* ═══════════════════════════════════════════════════════════════
+                    GRID
+                ═══════════════════════════════════════════════════════════════ */}
                 <div>
-                    <div className="flex items-end justify-between mb-8">
-                        <h2 className="text-2xl font-header font-bold text-dfw-navy dark:text-white uppercase">Latest Updates</h2>
-                    </div>
-                    <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    {/* Section label */}
+                    <motion.div
+                        className="flex items-center gap-3 mb-10"
+                        initial={{ opacity: 0, y: 10 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        viewport={{ once: true }}
+                    >
+                        <span className="text-heading font-header text-dfw-navy dark:text-white uppercase">Latest Updates</span>
+                    </motion.div>
+
+                    <motion.div
+                        className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8"
+                        variants={containerVariants}
+                        initial="hidden"
+                        animate={isInView ? "visible" : "hidden"}
+                    >
                         {otherPosts.map((post, idx) => (
-                            <Link
-                                key={idx}
-                                href={`/blog/${post.slug}`}
-                                className="group bg-white dark:bg-white/5 border border-gray-100 dark:border-white/10 rounded-xl overflow-hidden hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col h-full"
-                            >
-                                <div className="h-48 bg-gray-200 dark:bg-white/10 relative overflow-hidden">
-                                    {/* Geometric Pattern Placeholder */}
-                                    <div className="absolute inset-0 bg-gradient-to-br from-dfw-navy/80 to-dfw-red/80 opacity-80" />
-                                    <div className="absolute top-4 left-4">
-                                        <span className="bg-white/20 backdrop-blur-md text-white px-2 py-1 rounded text-[10px] font-bold uppercase tracking-wider">
-                                            {post.category}
-                                        </span>
+                            <motion.div key={idx} variants={itemVariants}>
+                                <Link
+                                    href={`/blog/${post.slug}`}
+                                    className="group block h-full"
+                                >
+                                    <div className="relative h-full bg-white dark:bg-white/[0.02] rounded-2xl border border-gray-100 dark:border-white/[0.06] hover:border-dfw-red-500/30 dark:hover:border-dfw-red-500/30 hover-lift overflow-hidden transition-colors duration-500">
+                                        {/* Image placeholder */}
+                                        <div className="h-48 relative overflow-hidden">
+                                            <div className="absolute inset-0 bg-gradient-to-br from-dfw-navy via-dfw-navy/90 to-dfw-red-500/30" />
+                                            <div className="absolute inset-0 bg-dfw-red-500/0 group-hover:bg-dfw-red-500/20 transition-colors duration-500" />
+
+                                            {/* Category badge */}
+                                            <div className="absolute top-4 left-4">
+                                                <span className="glass-premium px-3 py-1.5 rounded-full text-overline text-white tracking-luxury">
+                                                    {post.category}
+                                                </span>
+                                            </div>
+                                        </div>
+
+                                        {/* Content */}
+                                        <div className="p-6 sm:p-8 flex flex-col flex-grow">
+                                            {/* Meta */}
+                                            <div className="flex items-center gap-3 text-caption text-gray-400 dark:text-white/40 mb-4">
+                                                <span className="flex items-center gap-1.5">
+                                                    <Calendar size={12} />
+                                                    {post.date}
+                                                </span>
+                                                <span className="w-1 h-1 bg-gray-300 dark:bg-white/20 rounded-full" />
+                                                <span className="flex items-center gap-1.5">
+                                                    <Clock size={12} />
+                                                    {post.readTime}
+                                                </span>
+                                            </div>
+
+                                            {/* Title */}
+                                            <h3 className="text-heading font-header text-dfw-navy dark:text-white mb-3 group-hover:text-dfw-red-600 dark:group-hover:text-dfw-red-400 transition-colors duration-300 line-clamp-2">
+                                                {post.title}
+                                            </h3>
+
+                                            {/* Excerpt */}
+                                            <p className="text-body text-gray-500 dark:text-gray-400 leading-relaxed mb-6 line-clamp-3">
+                                                {post.excerpt}
+                                            </p>
+
+                                            {/* CTA */}
+                                            <div className="mt-auto pt-6 border-t border-gray-100 dark:border-white/5 flex items-center justify-between">
+                                                <span className="text-overline tracking-luxury text-dfw-navy dark:text-white group-hover:text-dfw-red-500 transition-colors duration-300">
+                                                    Read Now
+                                                </span>
+                                                <ArrowRight size={14} className="text-gray-400 group-hover:text-dfw-red-500 group-hover:translate-x-1 transition-all duration-300" />
+                                            </div>
+                                        </div>
                                     </div>
-                                </div>
-
-                                <div className="p-6 flex flex-col flex-grow">
-                                    <div className="flex items-center gap-3 text-xs text-gray-400 mb-3 font-mono">
-                                        <span className="flex items-center gap-1"><Calendar size={12} /> {post.date}</span>
-                                        <span className="w-1 h-1 bg-gray-500 rounded-full" />
-                                        <span className="flex items-center gap-1"><Clock size={12} /> {post.readTime}</span>
-                                    </div>
-
-                                    <h3 className="text-xl font-bold text-dfw-navy dark:text-white mb-3 group-hover:text-dfw-red transition-colors line-clamp-2">
-                                        {post.title}
-                                    </h3>
-
-                                    <p className="text-sm text-gray-500 dark:text-gray-400 leading-relaxed mb-6 line-clamp-3">
-                                        {post.excerpt}
-                                    </p>
-
-                                    <div className="mt-auto pt-6 border-t border-gray-100 dark:border-white/5 flex items-center justify-between">
-                                        <span className="text-xs font-bold uppercase tracking-widest text-dfw-navy dark:text-white group-hover:text-dfw-red transition-colors">Read Now</span>
-                                        <ArrowRight size={14} className="text-gray-400 group-hover:text-dfw-red group-hover:translate-x-1 transition-all" />
-                                    </div>
-                                </div>
-                            </Link>
+                                </Link>
+                            </motion.div>
                         ))}
-                    </div>
+                    </motion.div>
                 </div>
             </div>
         </section>
