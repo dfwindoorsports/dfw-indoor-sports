@@ -48,6 +48,14 @@ const planoFaqs = [
         question: 'Do you offer membership discounts for families?',
         answer: 'Yes, our Family Membership ($150/mo) is very popular with Plano residents. It covers parents and kids, making it affordable for the whole family to play together.',
     },
+    {
+        question: 'What are the best times to visit from Plano?',
+        answer: 'Weekend mornings (Saturday 8-11 AM) are ideal—light traffic and fresh energy. Weekday evenings can be busy, but our 5AM opening is perfect for early-bird Plano professionals who want to play before work.',
+    },
+    {
+        question: 'Are there leagues for Plano area players?',
+        answer: 'Yes! We run cricket and badminton leagues with many participants from Plano, Allen, and McKinney. It\'s a great way to meet fellow players from your area and establish regular playing groups.',
+    },
 ]
 
 export default function PlanoPage() {

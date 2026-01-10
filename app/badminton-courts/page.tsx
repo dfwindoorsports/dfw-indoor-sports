@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { createPageMetadata, generateBreadcrumbSchema, generateSportsActivitySchema } from '@/lib/metadata'
+import { createPageMetadata, generateBreadcrumbSchema, generateSportsActivitySchema, generateFAQSchema } from '@/lib/metadata'
 import BadmintonHero from '@/components/badminton/BadmintonHero'
 import BadmintonIntro from '@/components/badminton/BadmintonIntro'
 import BadmintonFeatures from '@/components/badminton/BadmintonFeatures'
@@ -26,6 +26,49 @@ export const metadata: Metadata = createPageMetadata({
   path: '/badminton-courts',
 })
 
+const badmintonFaqs = [
+  {
+    question: 'What type of badminton courts do you have?',
+    answer: 'We have 6 professional BWF-standard badminton courts with proper Olympic-grade flooring, regulation net heights, and tournament-quality lighting. The courts meet international competition standards.',
+  },
+  {
+    question: 'Can I rent badminton rackets and shuttlecocks?',
+    answer: 'Yes! Basic rackets and shuttlecocks are included free with your court rental or open play session. We have rackets for all ages and skill levels. Serious players typically bring their own equipment.',
+  },
+  {
+    question: 'What is the difference between open play and court rental?',
+    answer: 'Open play ($10/person) gives you access to available courts on a rotating basis—great for singles or if you need playing partners. Court rental ($35/hour) reserves a dedicated court for your group, ideal for consistent play or training.',
+  },
+  {
+    question: 'Do you offer badminton coaching?',
+    answer: 'Yes! We have certified badminton coaches offering private lessons, group clinics, and youth programs. Coaching covers footwork, strokes, game strategy, and competitive preparation for all skill levels.',
+  },
+  {
+    question: 'Are your courts suitable for tournaments?',
+    answer: 'Absolutely. Our courts are BWF-standard and regularly host local and regional tournaments. We can accommodate up to 6 simultaneous matches with proper referee stations and spectator areas.',
+  },
+  {
+    question: 'How high are the ceilings?',
+    answer: 'Our badminton hall has 30-foot ceilings—well above the BWF minimum of 9 meters (29.5 ft). This means no restrictions on high clears or lob shots, allowing full competitive play.',
+  },
+  {
+    question: 'Can beginners play at your facility?',
+    answer: 'Definitely! We welcome players of all skill levels. Open play sessions naturally group players by ability, and our staff can provide basic instruction. Beginner coaching packages are also available.',
+  },
+  {
+    question: 'Do you have badminton programs for kids?',
+    answer: 'Yes! Our Academy offers youth badminton programs for ages 6 and up. We have after-school programs, weekend clinics, summer camps, and competitive training for junior players.',
+  },
+  {
+    question: 'What is your cancellation policy for court bookings?',
+    answer: 'Cancellations made 24+ hours before your booking receive a full refund or credit. Cancellations 12-24 hours before receive 50% credit. Less than 12 hours notice forfeits payment.',
+  },
+  {
+    question: 'Can I book courts for a group or team practice?',
+    answer: 'Yes! You can book multiple courts simultaneously for team training or group sessions. We offer discounted rates for recurring weekly bookings. Contact us for team pricing.',
+  },
+]
+
 export default function BadmintonCourtsPage() {
   const breadcrumbSchema = generateBreadcrumbSchema([
     { name: 'Home', url: '/' },
@@ -38,6 +81,8 @@ export default function BadmintonCourtsPage() {
     'BWF-standard professional badminton courts with premium facilities, proper lighting, and professional flooring.'
   )
 
+  const faqSchema = generateFAQSchema(badmintonFaqs)
+
   return (
     <>
       <script
@@ -47,6 +92,10 @@ export default function BadmintonCourtsPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(badmintonSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
       <BadmintonHero />
       <BadmintonIntro />

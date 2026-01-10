@@ -48,6 +48,14 @@ const friscoFaqs = [
         question: 'What are your membership options?',
         answer: 'Monthly memberships start at $70 for unlimited open play access. Family memberships are $150. For Frisco residents who visit even twice monthly, membership is more economical than drop-in rates.',
     },
+    {
+        question: 'Can I make a day trip from Frisco?',
+        answer: 'Absolutely! Many Frisco families combine their visit with lunch at nearby Southlake Town Square or Trophy Club. Saturday mornings work great—arrive around 9 AM, play until noon, then enjoy the area.',
+    },
+    {
+        question: 'Can I store my equipment at the facility?',
+        answer: 'Yes, we offer equipment storage lockers for regular members. This is especially convenient for Frisco players who don\'t want to carry cricket gear on every trip. Ask about locker rental options.',
+    },
 ]
 
 export default function FriscoPage() {

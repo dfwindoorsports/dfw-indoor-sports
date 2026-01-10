@@ -73,20 +73,18 @@ export default function BlogHero({
                 >
                     <motion.div
                         initial={{ scale: 1.1, opacity: 0 }}
-                        animate={{ scale: 1, opacity: 0.45 }}
+                        animate={{ scale: 1, opacity: 0.6 }}
                         transition={{ duration: 2 }}
                         className="absolute inset-0 bg-cover bg-center"
                         style={{ backgroundImage: `url("${image}")` }}
                     />
                 </motion.div>
 
-                {/* Premium Gradient Stack */}
-                <div className="absolute inset-0 bg-gradient-to-t from-[#020408] via-[#020408]/80 to-transparent" />
-                <div className="absolute inset-0 bg-gradient-to-r from-[#020408]/70 via-transparent to-[#020408]/70" />
-                <div className="absolute inset-0 bg-gradient-to-tr from-dfw-red-500/10 via-transparent to-blue-600/5 mix-blend-overlay" />
+                {/* Clean Gradient Overlay - Single layer for clarity */}
+                <div className="absolute inset-0 bg-gradient-to-t from-[#020408] via-[#020408]/50 to-[#020408]/20" />
 
-                {/* Noise texture */}
-                <div className="absolute inset-0 noise-overlay opacity-30" />
+                {/* Subtle noise texture */}
+                <div className="absolute inset-0 noise-overlay opacity-15" />
             </div>
 
             {/* ═══════════════════════════════════════════════════════════════
@@ -185,8 +183,6 @@ export default function BlogHero({
                 </motion.div>
             </motion.div>
 
-            {/* Bottom fade */}
-            <div className="absolute bottom-0 left-0 right-0 h-24 bg-gradient-to-t from-gray-50 dark:from-[#050911] to-transparent z-[5]" />
         </div>
     )
 }

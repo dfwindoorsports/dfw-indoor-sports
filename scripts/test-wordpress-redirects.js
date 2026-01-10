@@ -41,57 +41,75 @@ const WORDPRESS_REDIRECTS = {
   '/hitman': '/events',
 };
 
-function testRedirect(oldPath, expectedNewPath) {
+function testRedirect(oldPath, expectedNewPath, maxRedirects = 5) {
   return new Promise((resolve) => {
     const protocol = USE_HTTPS ? https : http;
     const [hostname, port] = DOMAIN.split(':');
 
-    const options = {
-      method: 'HEAD',
-      hostname: hostname,
-      port: port || (USE_HTTPS ? 443 : 80),
-      path: oldPath,
-      headers: { 'User-Agent': 'SEO-Redirect-Tester/1.0' },
-    };
+    let currentPath = oldPath;
+    let redirectCount = 0;
+    let allPermanent = true;
 
-    const req = protocol.request(options, (res) => {
-      const statusCode = res.statusCode;
-      const location = res.headers.location;
+    function followRedirect() {
+      const options = {
+        method: 'HEAD',
+        hostname: hostname,
+        port: port || (USE_HTTPS ? 443 : 80),
+        path: currentPath,
+        headers: { 'User-Agent': 'SEO-Redirect-Tester/1.0' },
+      };
 
-      let redirectPath = null;
-      if (location) {
-        try {
-          const locationUrl = new URL(location, `${USE_HTTPS ? 'https' : 'http'}://${DOMAIN}`);
-          redirectPath = locationUrl.pathname;
-        } catch (e) {
-          redirectPath = location;
+      const req = protocol.request(options, (res) => {
+        const statusCode = res.statusCode;
+        const location = res.headers.location;
+
+        // Check if this is a permanent redirect
+        const isPermanent = statusCode === 301 || statusCode === 308;
+        if (!isPermanent && (statusCode >= 300 && statusCode < 400)) {
+          allPermanent = false;
         }
-      }
 
-      const isCorrect = redirectPath === expectedNewPath;
-      const isPermanent = statusCode === 301;
+        if (location && redirectCount < maxRedirects) {
+          redirectCount++;
+          try {
+            const locationUrl = new URL(location, `${USE_HTTPS ? 'https' : 'http'}://${DOMAIN}`);
+            currentPath = locationUrl.pathname;
+          } catch (e) {
+            currentPath = location;
+          }
+          // Follow the redirect
+          followRedirect();
+        } else {
+          // Final destination reached (200 OK or no more redirects)
+          const finalPath = currentPath;
+          const isCorrect = finalPath === expectedNewPath;
 
-      resolve({
-        oldPath,
-        expectedNewPath,
-        actualNewPath: redirectPath,
-        statusCode,
-        success: isCorrect && isPermanent,
-        isPermanent,
-        isCorrectPath: isCorrect,
+          resolve({
+            oldPath,
+            expectedNewPath,
+            actualNewPath: finalPath,
+            statusCode,
+            redirectCount,
+            success: isCorrect && allPermanent,
+            isPermanent: allPermanent,
+            isCorrectPath: isCorrect,
+          });
+        }
       });
-    });
 
-    req.on('error', (error) => {
-      resolve({
-        oldPath,
-        expectedNewPath,
-        error: error.message,
-        success: false,
+      req.on('error', (error) => {
+        resolve({
+          oldPath,
+          expectedNewPath,
+          error: error.message,
+          success: false,
+        });
       });
-    });
 
-    req.end();
+      req.end();
+    }
+
+    followRedirect();
   });
 }
 

@@ -48,6 +48,14 @@ const irvingFaqs = [
         question: 'Is there a lounge area or Wi-Fi?',
         answer: 'Yes, we have a comfortable lounge area with high-speed Wi-Fi, so you can catch up on emails before or after your game.',
     },
+    {
+        question: 'What are the best times for after-work play?',
+        answer: 'We\'re open until 11 PM, perfect for Las Colinas professionals. Weekday evenings (6-9 PM) are popular for badminton and soccer. Booking ahead is recommended for peak hours.',
+    },
+    {
+        question: 'Are there food options nearby?',
+        answer: 'Yes! Southlake Town Square is just 10 minutes away with numerous restaurants. We also offer catering for corporate events and can coordinate food for your team gatherings.',
+    },
 ]
 
 export default function IrvingPage() {
