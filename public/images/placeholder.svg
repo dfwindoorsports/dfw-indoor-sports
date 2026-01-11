@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <rect fill="#1a2744" width="800" height="600"/>
+  <g opacity="0.3">
+    <path fill="#CC0000" d="M350 250 L450 250 L450 350 L350 350 Z"/>
+    <circle fill="none" stroke="#CC0000" stroke-width="3" cx="400" cy="300" r="80"/>
+    <path fill="none" stroke="#CC0000" stroke-width="2" d="M340 220 L460 220 L460 380 L340 380 Z"/>
+  </g>
+  <text x="400" y="420" text-anchor="middle" font-family="system-ui, sans-serif" font-size="14" fill="#6b7280" font-weight="500">DFW INDOOR SPORTS</text>
+</svg>

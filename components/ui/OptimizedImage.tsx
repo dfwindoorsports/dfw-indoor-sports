@@ -34,7 +34,7 @@ export function OptimizedImage({
     className = '',
     wrapperClassName = '',
     showShimmer = true,
-    fallbackSrc = '/images/placeholder.png',
+    fallbackSrc = '/images/placeholder.svg',
     priority = false,
     ...props
 }: OptimizedImageProps) {
