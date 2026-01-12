@@ -27,6 +27,17 @@ export default function RootLayout({
       <head>
         <link rel="manifest" href="/manifest.json" />
         <meta name="theme-color" content="#020408" />
+        {/* Fallback for no-JavaScript: make all animated content visible */}
+        <noscript>
+          <style>{`
+            .opacity-0 { opacity: 1 !important; }
+            .animate-slide-up, .animate-fade-in-up, .animate-reveal { 
+              animation: none !important; 
+              opacity: 1 !important; 
+              transform: none !important; 
+            }
+          `}</style>
+        </noscript>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
