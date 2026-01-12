@@ -20,6 +20,9 @@ const nextConfig = {
     formats: ['image/avif', 'image/webp'],
     deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048],
     imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
+    minimumCacheTTL: 31536000, // 1 year cache for optimized images
+    dangerouslyAllowSVG: true,
+    contentDispositionType: 'inline',
   },
   async headers() {
     return [
@@ -59,6 +62,25 @@ const nextConfig = {
       },
       {
         source: '/:path*.ico',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, max-age=31536000, immutable',
+          },
+        ],
+      },
+      // Static image caching
+      {
+        source: '/images/(.*)',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'public, max-age=31536000, immutable',
+          },
+        ],
+      },
+      {
+        source: '/:path*.(webp|avif|png|jpg|jpeg)',
         headers: [
           {
             key: 'Cache-Control',

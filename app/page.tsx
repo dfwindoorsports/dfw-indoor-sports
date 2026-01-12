@@ -1,19 +1,24 @@
 import type { Metadata } from 'next'
+import dynamic from 'next/dynamic'
 import { createPageMetadata, generateFAQSchema, generateBreadcrumbSchema } from '@/lib/metadata'
+
+// Above-the-fold components - loaded immediately
 import HomeHero from '@/components/home/HomeHero'
 import HomeMarquee from '@/components/home/HomeMarquee'
 import HomeIntro from '@/components/home/HomeIntro'
 import HomeFeatures from '@/components/home/HomeFeatures'
-import HomeFacilities from '@/components/home/HomeFacilities'
-import HomePrograms from '@/components/home/HomePrograms'
-import HomeMembership from '@/components/home/HomeMembership'
-import HomeCoaching from '@/components/home/HomeCoaching'
-import HomeEvents from '@/components/home/HomeEvents'
-import HomeTestimonials from '@/components/home/HomeTestimonials'
-import HomeLocation from '@/components/home/HomeLocation'
-import HomeCTAGrid from '@/components/home/HomeCTAGrid'
-import HomeBottom from '@/components/home/HomeBottom'
-import HomeFAQ from '@/components/home/HomeFAQ'
+
+// Below-the-fold components - lazy loaded for faster initial page load
+const HomeFacilities = dynamic(() => import('@/components/home/HomeFacilities'))
+const HomePrograms = dynamic(() => import('@/components/home/HomePrograms'))
+const HomeMembership = dynamic(() => import('@/components/home/HomeMembership'))
+const HomeCoaching = dynamic(() => import('@/components/home/HomeCoaching'))
+const HomeEvents = dynamic(() => import('@/components/home/HomeEvents'))
+const HomeTestimonials = dynamic(() => import('@/components/home/HomeTestimonials'))
+const HomeLocation = dynamic(() => import('@/components/home/HomeLocation'))
+const HomeCTAGrid = dynamic(() => import('@/components/home/HomeCTAGrid'))
+const HomeBottom = dynamic(() => import('@/components/home/HomeBottom'))
+const HomeFAQ = dynamic(() => import('@/components/home/HomeFAQ'))
 
 export const metadata: Metadata = createPageMetadata({
   title: 'Premier Multi-Sport Indoor Facility in Dallas-Fort Worth',
