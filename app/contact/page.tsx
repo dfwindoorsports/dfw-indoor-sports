@@ -14,7 +14,7 @@ import ContactCTA from '@/components/contact/ContactCTA'
 
 export const metadata: Metadata = createPageMetadata({
   title: 'Contact Us | Visit Our Fort Worth Sports Facility',
-  description: 'Contact DFW Indoor Sports - Call (817) 938-0808 or visit us at 16230 Three Wide Drive, Fort Worth, TX 76177. Open 5AM-11PM daily. Schedule a tour or book your court today.',
+  description: 'Contact DFW Indoor Sports - Call (817) 938-0808 or visit us at 16230 Three Wide Drive Suite 200, Fort Worth, TX 76177. Open 5AM-11PM daily. Schedule a tour or book your court today.',
   keywords: [
     'contact DFW Indoor Sports',
     'Fort Worth sports facility location',

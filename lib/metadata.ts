@@ -8,7 +8,7 @@ export const BUSINESS_INFO = {
     'Premier multi-sport indoor facility in Dallas-Fort Worth offering cricket lanes, badminton courts, soccer fields, and dodgeball courts. Professional coaching, memberships, and court rentals.',
   url: 'https://dfwindoorsports.com',
   address: {
-    street: '16230 Three Wide Drive',
+    street: '16230 Three Wide Drive Suite 200',
     city: 'Fort Worth',
     state: 'TX',
     zip: '76177',

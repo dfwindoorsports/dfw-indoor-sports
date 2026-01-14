@@ -173,8 +173,8 @@ export default function ArlingtonPage() {
 
             <CityDirections
                 city="Arlington"
-                address="16230 Three Wide Drive, Fort Worth, TX 76177"
-                googleMapsLink="https://maps.google.com/?q=16230+Three+Wide+Drive+Fort+Worth+TX+76177"
+                address="16230 Three Wide Drive Suite 200, Fort Worth, TX 76177"
+                googleMapsLink="https://maps.google.com/?q=16230+Three+Wide+Drive+Suite+200+Fort+Worth+TX+76177"
                 directions={[
                     {
                         area: "From North Arlington / Entertainment District",

@@ -28,7 +28,7 @@ const HomeLocation: React.FC = () => {
                   <div className="absolute bottom-4 left-4 right-4 flex justify-between items-end">
                      <div>
                         <p className="text-white font-header font-bold uppercase text-lg">Find Us Easily</p>
-                        <p className="text-white/70 text-xs font-mono">16230 Three Wide Dr, Fort Worth</p>
+                        <p className="text-white/70 text-xs font-mono">16230 Three Wide Dr Suite 200, Fort Worth</p>
                      </div>
                      <div className="bg-white/20 backdrop-blur-sm px-3 py-1 rounded text-white text-xs font-bold uppercase">
                         Free Parking

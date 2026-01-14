@@ -91,7 +91,7 @@ export default function AreasWeServePage() {
                         <MapPin className="text-dfw-red" size={24} />
                         <div className="text-left">
                             <p className="font-bold text-dfw-navy dark:text-white">Our Location</p>
-                            <p className="text-gray-500 dark:text-gray-400 text-sm">16230 Three Wide Drive, Fort Worth, TX 76177</p>
+                            <p className="text-gray-500 dark:text-gray-400 text-sm">16230 Three Wide Drive Suite 200, Fort Worth, TX 76177</p>
                         </div>
                         <div className="pl-4 border-l border-gray-200 dark:border-white/10">
                             <Clock className="text-gray-400" size={20} />

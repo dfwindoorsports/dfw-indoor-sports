@@ -55,6 +55,7 @@ const ContactMethods: React.FC = () => {
 
                   <div className="bg-gray-50 p-5 rounded-lg border border-gray-100 text-center mb-8 group-hover:bg-blue-50/50 group-hover:border-blue-100 transition-colors">
                      <span className="block text-xl font-header font-bold text-dfw-navy mb-1">(817) 938-0808</span>
+                     <span className="block text-sm text-gray-500 mb-1">(817) 938-0800</span>
                      <span className="text-[10px] text-gray-400 uppercase tracking-widest font-bold">Mon-Sun 5am-11pm</span>
                   </div>
 
@@ -96,8 +97,8 @@ const ContactMethods: React.FC = () => {
                   <p className="text-sm text-gray-500 mb-8 leading-relaxed h-10">Tour the facility, meet our coaches, or visit the pro shop in person.</p>
 
                   <div className="bg-gray-50 p-5 rounded-lg border border-gray-100 text-center mb-8 group-hover:bg-green-50/50 group-hover:border-green-100 transition-colors">
-                     <span className="block text-sm font-bold text-dfw-navy mb-1">16230 Three Wide Dr</span>
-                     <span className="text-[10px] text-gray-400 uppercase tracking-widest font-bold">Fort Worth, TX</span>
+                     <span className="block text-sm font-bold text-dfw-navy mb-1">16230 Three Wide Dr Suite 200</span>
+                     <span className="text-[10px] text-gray-400 uppercase tracking-widest font-bold">Fort Worth, TX 76177</span>
                   </div>
 
                   <a href="https://maps.google.com/?q=16230+Three+Wide+Drive+Suite+200,+Fort+Worth,+TX+76177" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 text-xs font-bold text-green-600 uppercase tracking-widest group-hover:gap-3 transition-all">

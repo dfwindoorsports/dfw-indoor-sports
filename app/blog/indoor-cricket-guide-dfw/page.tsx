@@ -253,7 +253,7 @@ export default function IndoorCricketGuidePage() {
                                 <div className="grid md:grid-cols-2 gap-6 text-sm">
                                     <div className="space-y-3">
                                         <p className="flex items-center gap-2 text-gray-600 dark:text-gray-400">
-                                            <MapPin size={16} className="text-dfw-red" /> 16230 Three Wide Drive, Fort Worth, TX 76177
+                                            <MapPin size={16} className="text-dfw-red" /> 16230 Three Wide Drive Suite 200, Fort Worth, TX 76177
                                         </p>
                                         <p className="flex items-center gap-2 text-gray-600 dark:text-gray-400">
                                             <Phone size={16} className="text-dfw-red" /> (817) 938-0808

@@ -11,7 +11,7 @@ const faqs = [
     },
     {
         question: 'Where are you located?',
-        answer: 'We are located at 16230 Three Wide Drive, Fort Worth, TX 76177. We\'re easily accessible from Dallas (25 min), Arlington (20 min), Plano (35 min), Irving (25 min), and Frisco (40 min). The facility is right off I-35W with plenty of free parking.',
+        answer: 'We are located at 16230 Three Wide Drive Suite 200, Fort Worth, TX 76177. We\'re easily accessible from Dallas (25 min), Arlington (20 min), Plano (35 min), Irving (25 min), and Frisco (40 min). The facility is right off I-35W with plenty of free parking.',
     },
     {
         question: 'What are your hours of operation?',

@@ -47,10 +47,10 @@ export default function Navbar() {
     <>
       <nav
         className={`sticky top-0 z-[100] w-full transition-all duration-300 border-b ${isOpen
-            ? 'bg-white dark:bg-dfw-navy border-gray-100 dark:border-white/10'
-            : scrolled
-              ? 'bg-white/95 dark:bg-dfw-navy/95 backdrop-blur-xl border-gray-200 dark:border-white/10 shadow-md'
-              : 'bg-white dark:bg-dfw-navy border-gray-100 dark:border-white/10'
+          ? 'bg-white dark:bg-dfw-navy border-gray-100 dark:border-white/10'
+          : scrolled
+            ? 'bg-white/95 dark:bg-dfw-navy/95 backdrop-blur-xl border-gray-200 dark:border-white/10 shadow-md'
+            : 'bg-white dark:bg-dfw-navy border-gray-100 dark:border-white/10'
           }`}
       >
         <div className="container mx-auto px-4 md:px-6 relative z-[110]">
@@ -262,8 +262,8 @@ export default function Navbar() {
 
                   <div className="flex justify-center gap-8 mt-6 text-[10px] font-bold uppercase tracking-widest text-gray-400 dark:text-gray-500">
                     <a href="https://instagram.com/dfwindoorsports/" target="_blank" rel="noreferrer" className="hover:text-dfw-navy dark:hover:text-white transition-colors">Instagram</a>
-                    <a href="https://facebook.com" target="_blank" rel="noreferrer" className="hover:text-dfw-navy dark:hover:text-white transition-colors">Facebook</a>
-                    <a href="https://twitter.com" target="_blank" rel="noreferrer" className="hover:text-dfw-navy dark:hover:text-white transition-colors">Twitter</a>
+                    <a href="https://facebook.com/dfwindoorsports" target="_blank" rel="noreferrer" className="hover:text-dfw-navy dark:hover:text-white transition-colors">Facebook</a>
+                    <a href="https://twitter.com/dfwindoorsports" target="_blank" rel="noreferrer" className="hover:text-dfw-navy dark:hover:text-white transition-colors">Twitter</a>
                   </div>
                 </motion.div>
               </div>

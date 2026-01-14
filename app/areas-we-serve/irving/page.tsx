@@ -173,8 +173,8 @@ export default function IrvingPage() {
 
             <CityDirections
                 city="Irving"
-                address="16230 Three Wide Drive, Fort Worth, TX 76177"
-                googleMapsLink="https://maps.google.com/?q=16230+Three+Wide+Drive+Fort+Worth+TX+76177"
+                address="16230 Three Wide Drive Suite 200, Fort Worth, TX 76177"
+                googleMapsLink="https://maps.google.com/?q=16230+Three+Wide+Drive+Suite+200+Fort+Worth+TX+76177"
                 directions={[
                     {
                         area: "From Las Colinas / Urban Center",

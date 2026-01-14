@@ -20,7 +20,7 @@ describe('BUSINESS_INFO constant', () => {
     it('should have all required fields', () => {
         expect(BUSINESS_INFO.name).toBe('DFW Indoor Sports')
         expect(BUSINESS_INFO.url).toBe('https://dfwindoorsports.com')
-        expect(BUSINESS_INFO.address.street).toBe('16230 Three Wide Drive')
+        expect(BUSINESS_INFO.address.street).toBe('16230 Three Wide Drive Suite 200')
         expect(BUSINESS_INFO.address.city).toBe('Fort Worth')
         expect(BUSINESS_INFO.address.state).toBe('TX')
         expect(BUSINESS_INFO.address.zip).toBe('76177')

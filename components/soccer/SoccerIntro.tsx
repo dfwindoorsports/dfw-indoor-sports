@@ -126,7 +126,7 @@ const SoccerIntro: React.FC = () => {
                            <div className="mt-1 p-2 bg-white/10 rounded group-hover/item:bg-emerald-500 transition-colors"><MapPin size={16} className="text-white" /></div>
                            <div>
                               <span className="block font-bold text-emerald-200 uppercase text-[10px] tracking-widest mb-1">Location</span>
-                              <p className="font-medium">16230 Three Wide Dr, Fort Worth, TX</p>
+                              <p className="font-medium">16230 Three Wide Dr Suite 200, Fort Worth, TX</p>
                            </div>
                         </li>
                         <li className="flex gap-4 items-start group/item">
