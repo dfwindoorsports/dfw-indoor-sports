@@ -39,6 +39,13 @@ export default function RootLayout({
       <head>
         <link rel="manifest" href="/manifest.json" />
         <meta name="theme-color" content="#020408" />
+        {/* Preload critical LCP image for faster paint */}
+        <link
+          rel="preload"
+          as="image"
+          href="/images/hero/sports-action.webp"
+          fetchPriority="high"
+        />
         {/* Fallback for no-JavaScript: make all animated content visible */}
         <noscript>
           <style>{`

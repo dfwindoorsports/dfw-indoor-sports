@@ -16,11 +16,12 @@ const HomeHero: React.FC = () => {
         {/* Dynamic Background with Cinematic Zoom */}
         <div className="absolute inset-0 overflow-hidden bg-dfw-navy">
           {/* LCP Image - Using Next.js Image for optimal loading */}
+          {/* NOTE: opacity starts at 0.5 (not 0) to avoid delaying LCP paint */}
           <motion.div
-            initial={{ scale: 1.1, opacity: 0 }}
-            animate={{ scale: 1, opacity: 0.5 }}
-            transition={{ duration: 2 }}
-            className="absolute inset-0"
+            initial={{ scale: 1.05 }}
+            animate={{ scale: 1 }}
+            transition={{ duration: 1.5 }}
+            className="absolute inset-0 opacity-50"
           >
             <Image
               src="/images/hero/sports-action.webp"
