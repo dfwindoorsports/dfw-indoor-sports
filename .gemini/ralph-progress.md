@@ -1,18 +1,23 @@
 ---
-task: Remove duplicate FAQ sections from homepage and check other pages
-started: 2026-01-14T12:39:00+05:30
+task: Complete SEO audit - fix all issues to achieve 90+ scores
+started: 2026-01-14T12:49:58+05:30
 iteration: 2
-status: completed
+status: in_progress
 ---
 
-## Iteration 1
-- What I did: Searched for FAQ components and "Common Questions" text
-- Result: Found 2 FAQ sections on homepage:
-  - `HomeFAQ` (12 detailed questions)
-  - `HomeBottom` with "Common Questions" (5 basic questions)
+## Iteration 1 - PageSpeed Audit Complete
+**Current Scores (Mobile):**
+- Performance: 71 ❌ (needs 90+)
+- Accessibility: 90 ✅
+- Best Practices: 100 ✅
+- SEO: 92 ✅
 
-## Iteration 2
-- What I did: Removed duplicate "Common Questions" section from HomeBottom
-- Result: HomeBottom now only has News and CTA sections
-- Also verified other pages only have single FAQ components (no dups)
-- Building and deploying changes
+**Issues Found:**
+1. LCP image as CSS background (delays discovery)
+2. 511 KB image optimization needed
+3. Buttons missing aria-labels
+4. "Read More" link not descriptive
+5. Heading sequence issues
+
+## Iteration 2 - Fixing Issues
+- Starting with LCP image fix...

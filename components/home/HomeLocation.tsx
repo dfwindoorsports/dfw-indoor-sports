@@ -53,7 +53,7 @@ const HomeLocation: React.FC = () => {
                   </p>
 
                   <div className="bg-gray-50 dark:bg-[#0A111F] p-6 rounded-lg border border-gray-200 dark:border-white/10 mb-8 transition-colors">
-                     <h4 className="font-bold text-dfw-navy dark:text-white uppercase text-sm mb-4 flex items-center gap-2"><Car size={16} className="text-dfw-red" /> Drive Times</h4>
+                     <h3 className="font-bold text-dfw-navy dark:text-white uppercase text-sm mb-4 flex items-center gap-2"><Car size={16} className="text-dfw-red" aria-hidden="true" /> Drive Times</h3>
                      <div className="grid grid-cols-2 gap-4 text-sm text-gray-600 dark:text-gray-400">
                         <div className="flex justify-between border-b border-gray-200 dark:border-white/10 pb-2"><span>Fort Worth</span> <span>10-15m</span></div>
                         <div className="flex justify-between border-b border-gray-200 dark:border-white/10 pb-2"><span>Arlington</span> <span>15-20m</span></div>

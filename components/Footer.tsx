@@ -217,6 +217,7 @@ export default function Footer() {
                   <button
                     type="submit"
                     disabled={status === 'loading'}
+                    aria-label="Subscribe to newsletter"
                     className={`absolute right-1 p-1.5 rounded-sm transition-all shadow-md active:scale-95 disabled:opacity-50 ${status === 'success' ? 'bg-green-600 text-white' :
                       status === 'error' ? 'bg-red-600 text-white' :
                         'bg-dfw-red hover:bg-red-600 text-white'

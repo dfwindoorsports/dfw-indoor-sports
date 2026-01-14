@@ -4,6 +4,7 @@ import React from 'react';
 import { ChevronRight, Calendar, Users, Heart, Smile } from 'lucide-react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
+import Image from 'next/image';
 {/* Physics Animation Removed */ }
 
 const HomeHero: React.FC = () => {
@@ -14,15 +15,24 @@ const HomeHero: React.FC = () => {
 
         {/* Dynamic Background with Cinematic Zoom */}
         <div className="absolute inset-0 overflow-hidden bg-dfw-navy">
+          {/* LCP Image - Using Next.js Image for optimal loading */}
           <motion.div
             initial={{ scale: 1.1, opacity: 0 }}
             animate={{ scale: 1, opacity: 0.5 }}
             transition={{ duration: 2 }}
-            className="absolute inset-0 bg-cover bg-center"
-            style={{
-              backgroundImage: 'url("/images/hero/sports-action.webp")',
-            }}
-          ></motion.div>
+            className="absolute inset-0"
+          >
+            <Image
+              src="/images/hero/sports-action.webp"
+              alt="Indoor sports action at DFW Indoor Sports facility"
+              fill
+              priority
+              fetchPriority="high"
+              sizes="100vw"
+              className="object-cover object-center"
+              quality={85}
+            />
+          </motion.div>
           {/* Multi-layer gradients for depth - Warmer tones mixed in */}
           <div className="absolute inset-0 bg-gradient-to-t from-[#020408] via-[#020408]/40 to-transparent mix-blend-multiply"></div>
           <div className="absolute inset-0 bg-gradient-to-r from-[#020408]/90 via-[#020408]/40 to-transparent"></div>
