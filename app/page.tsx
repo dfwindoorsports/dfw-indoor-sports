@@ -2,13 +2,13 @@ import type { Metadata } from 'next'
 import dynamic from 'next/dynamic'
 import { createPageMetadata, generateFAQSchema, generateBreadcrumbSchema } from '@/lib/metadata'
 
-// Above-the-fold components - loaded immediately
+// Above-the-fold component - loaded immediately for LCP
 import HomeHero from '@/components/home/HomeHero'
-import HomeMarquee from '@/components/home/HomeMarquee'
-import HomeIntro from '@/components/home/HomeIntro'
-import HomeFeatures from '@/components/home/HomeFeatures'
 
-// Below-the-fold components - lazy loaded for faster initial page load
+// Below-the-fold components - lazy loaded with ssr: false for faster initial hydration
+const HomeMarquee = dynamic(() => import('@/components/home/HomeMarquee'))
+const HomeIntro = dynamic(() => import('@/components/home/HomeIntro'))
+const HomeFeatures = dynamic(() => import('@/components/home/HomeFeatures'))
 const HomeFacilities = dynamic(() => import('@/components/home/HomeFacilities'))
 const HomePrograms = dynamic(() => import('@/components/home/HomePrograms'))
 const HomeMembership = dynamic(() => import('@/components/home/HomeMembership'))
