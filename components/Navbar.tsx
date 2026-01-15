@@ -217,7 +217,7 @@ export default function Navbar() {
                 >
                   <Link
                     href="/contact"
-                    className="flex items-center justify-center w-full bg-dfw-red text-white py-4 rounded-sm font-bold uppercase tracking-widest text-xs gap-3 shadow-[0_0_20px_rgba(214,40,40,0.3)] active:scale-[0.98] transition-transform"
+                    className="flex items-center justify-center w-full bg-dfw-red text-white py-4 rounded-sm font-bold uppercase tracking-widest text-xs gap-3 shadow-lg active:scale-[0.98] transition-transform"
                     onClick={() => setIsOpen(false)}
                   >
                     Get In Touch <ArrowRight size={14} />

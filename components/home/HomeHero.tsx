@@ -32,11 +32,9 @@ const HomeHero: React.FC = () => {
           <div className="absolute inset-0 bg-gradient-to-tr from-dfw-red/10 via-transparent to-dfw-red/5 mix-blend-overlay"></div>
         </div>
 
-        {/* Premium Ambient Luminosity - CSS animations for orbs */}
-        <div className="absolute inset-0 pointer-events-none overflow-hidden z-[5]" aria-hidden="true">
-          <div className="absolute -top-20 -right-20 w-[400px] h-[400px] rounded-full bg-gradient-radial from-dfw-red/20 via-dfw-red/5 to-transparent blur-3xl animate-fade-in-delay" />
-          <div className="absolute -bottom-32 -left-32 w-[500px] h-[500px] rounded-full bg-gradient-radial from-blue-500/10 via-blue-500/3 to-transparent blur-3xl animate-fade-in-delay-2" />
-          <div className="absolute top-1/3 right-1/4 w-32 h-32 rounded-full bg-white/5 blur-2xl hidden lg:block animate-float" />
+        {/* Subtle vignette for depth - cleaner local business look */}
+        <div className="absolute inset-0 pointer-events-none z-[5]" aria-hidden="true">
+          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/20" />
         </div>
 
         {/* Business Hours Badge - Simple, local business style */}

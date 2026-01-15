@@ -33,11 +33,7 @@ const HomeIntro: React.FC = () => {
             className="opacity-30 dark:opacity-40"
          />
 
-         {/* Premium Ambient Depth - Sophisticated gradient orbs */}
-         <div className="absolute inset-0 pointer-events-none overflow-hidden z-[2]" aria-hidden="true">
-            <div className="absolute -top-40 -right-40 w-[600px] h-[600px] rounded-full bg-gradient-radial from-dfw-red/8 via-dfw-red/2 to-transparent blur-3xl dark:from-dfw-red/15 dark:via-dfw-red/5" />
-            <div className="absolute -bottom-40 -left-40 w-[500px] h-[500px] rounded-full bg-gradient-radial from-blue-500/5 via-blue-500/1 to-transparent blur-3xl dark:from-blue-500/10" />
-         </div>
+         {/* Clean background - professional local business style */}
 
          <div className="container mx-auto px-4 md:px-6 relative z-10">
 
