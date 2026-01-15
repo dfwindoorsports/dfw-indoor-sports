@@ -39,25 +39,10 @@ const HomeHero: React.FC = () => {
           <div className="absolute top-1/3 right-1/4 w-32 h-32 rounded-full bg-white/5 blur-2xl hidden lg:block animate-float" />
         </div>
 
-        {/* Welcoming Glass Widget - CSS animation */}
-        <div className="absolute top-24 right-4 md:top-32 md:right-16 z-30 hidden lg:flex flex-col gap-2 perspective-1000 animate-slide-in-right">
-          <div className="p-5 rounded-lg flex items-center gap-6 bg-white/10 border border-white/20 shadow-lg backdrop-blur-md ring-1 ring-white/10 transform hover:rotate-y-2 transition-transform duration-500">
-            <div>
-              <span className="text-[10px] text-gray-300 font-sans font-bold uppercase tracking-widest mb-1 block">Facility Status</span>
-              <span className="flex items-center gap-2 text-white font-bold text-sm">
-                <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse"></span> Open & Welcoming
-              </span>
-            </div>
-            <div className="h-8 w-[1px] bg-white/20"></div>
-            <div>
-              <span className="text-[10px] text-gray-300 font-sans font-bold uppercase tracking-widest mb-1 block">Atmosphere</span>
-              <span className="text-white font-bold text-sm">Comfortable 72°F</span>
-            </div>
-            <div className="h-8 w-[1px] bg-white/20"></div>
-            <div>
-              <span className="text-[10px] text-gray-300 font-sans font-bold uppercase tracking-widest mb-1 block">Community</span>
-              <span className="text-white font-bold text-sm">Active Now</span>
-            </div>
+        {/* Business Hours Badge - Simple, local business style */}
+        <div className="absolute top-24 right-4 md:top-32 md:right-16 z-30 hidden lg:flex animate-slide-in-right">
+          <div className="px-5 py-3 rounded-lg bg-white/10 border border-white/20 backdrop-blur-md">
+            <span className="text-white font-bold text-sm">Open Daily 5AM - 11PM</span>
           </div>
         </div>
 

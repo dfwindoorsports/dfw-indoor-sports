@@ -123,22 +123,20 @@ const HomeIntro: React.FC = () => {
                   viewport={{ once: true }}
                   transition={{ duration: 0.6 }}
                >
-                  {/* Structured Data Container for Answer Engines */}
-                  <div className="bg-dfw-navy dark:bg-[#0A111F] border border-white/10 dark:border-white/5 p-8 md:p-10 rounded-2xl shadow-2xl relative overflow-hidden text-white group hover:shadow-dfw-red/10 transition-shadow">
-                     {/* Decorative */}
-                     <div className="absolute top-0 right-0 w-40 h-40 bg-dfw-red/10 rounded-full blur-[60px] pointer-events-none"></div>
-                     <div className="absolute bottom-0 left-0 w-40 h-40 bg-blue-500/10 rounded-full blur-[60px] pointer-events-none"></div>
-
-                     <h3 className="text-2xl font-header font-bold uppercase tracking-wider mb-8 border-b border-white/10 pb-4 relative z-10">
-                        At A Glance
+                  {/* Simple Info Card - Traditional local business style */}
+                  <div className="bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-700 p-8 md:p-10 rounded-xl shadow-lg">
+                     <h3 className="text-2xl font-header font-bold text-dfw-navy dark:text-white uppercase tracking-wider mb-8 border-b border-gray-200 dark:border-gray-700 pb-4">
+                        Quick Info
                      </h3>
 
-                     <ul className="space-y-6 relative z-10">
+                     <ul className="space-y-6">
                         <li className="flex gap-4 items-center">
-                           <div className="w-8 h-8 bg-white/10 rounded-full flex items-center justify-center"><Users size={14} className="text-white" /></div>
+                           <div className="w-10 h-10 bg-dfw-red/10 dark:bg-dfw-red/20 rounded-full flex items-center justify-center">
+                              <Users size={18} className="text-dfw-red" />
+                           </div>
                            <div>
-                              <span className="block text-[10px] font-bold text-gray-400 uppercase tracking-widest mb-0.5">Core Sports</span>
-                              <p className="text-sm font-medium leading-snug">
+                              <span className="block text-xs font-bold text-gray-500 dark:text-gray-400 uppercase tracking-widest mb-0.5">Sports We Offer</span>
+                              <p className="text-sm font-medium text-dfw-navy dark:text-white leading-snug">
                                  <Link href="/cricket-lanes" className="hover:text-dfw-red transition-colors">Cricket</Link>,{' '}
                                  <Link href="/badminton-courts" className="hover:text-dfw-red transition-colors">Badminton</Link>,{' '}
                                  <Link href="/soccer-fields" className="hover:text-dfw-red transition-colors">Soccer</Link>,{' '}
@@ -147,24 +145,30 @@ const HomeIntro: React.FC = () => {
                            </div>
                         </li>
                         <li className="flex gap-4 items-center">
-                           <div className="w-8 h-8 bg-white/10 rounded-full flex items-center justify-center"><MapPin size={14} className="text-white" /></div>
+                           <div className="w-10 h-10 bg-blue-50 dark:bg-blue-900/20 rounded-full flex items-center justify-center">
+                              <MapPin size={18} className="text-blue-600 dark:text-blue-400" />
+                           </div>
                            <div>
-                              <span className="block text-[10px] font-bold text-gray-400 uppercase tracking-widest mb-0.5">Location</span>
-                              <p className="text-sm font-medium leading-snug">16230 Three Wide Dr Suite 200, Fort Worth</p>
+                              <span className="block text-xs font-bold text-gray-500 dark:text-gray-400 uppercase tracking-widest mb-0.5">Our Location</span>
+                              <p className="text-sm font-medium text-dfw-navy dark:text-white leading-snug">16230 Three Wide Dr Suite 200, Fort Worth</p>
                            </div>
                         </li>
                         <li className="flex gap-4 items-center">
-                           <div className="w-8 h-8 bg-white/10 rounded-full flex items-center justify-center"><DollarSign size={14} className="text-white" /></div>
+                           <div className="w-10 h-10 bg-green-50 dark:bg-green-900/20 rounded-full flex items-center justify-center">
+                              <DollarSign size={18} className="text-green-600 dark:text-green-400" />
+                           </div>
                            <div>
-                              <span className="block text-[10px] font-bold text-gray-400 uppercase tracking-widest mb-0.5">Access</span>
-                              <p className="text-sm font-medium leading-snug">Drop-in from $25/hr, Members from $70/mo</p>
+                              <span className="block text-xs font-bold text-gray-500 dark:text-gray-400 uppercase tracking-widest mb-0.5">Pricing</span>
+                              <p className="text-sm font-medium text-dfw-navy dark:text-white leading-snug">Drop-in from $25/hr, Members from $70/mo</p>
                            </div>
                         </li>
                         <li className="flex gap-4 items-center">
-                           <div className="w-8 h-8 bg-white/10 rounded-full flex items-center justify-center"><Clock size={14} className="text-white" /></div>
+                           <div className="w-10 h-10 bg-amber-50 dark:bg-amber-900/20 rounded-full flex items-center justify-center">
+                              <Clock size={18} className="text-amber-600 dark:text-amber-400" />
+                           </div>
                            <div>
-                              <span className="block text-[10px] font-bold text-gray-400 uppercase tracking-widest mb-0.5">Operating Hours</span>
-                              <p className="text-sm font-medium leading-snug">5 AM - 11 PM daily</p>
+                              <span className="block text-xs font-bold text-gray-500 dark:text-gray-400 uppercase tracking-widest mb-0.5">Hours</span>
+                              <p className="text-sm font-medium text-dfw-navy dark:text-white leading-snug">Open Daily 5 AM - 11 PM</p>
                            </div>
                         </li>
                      </ul>

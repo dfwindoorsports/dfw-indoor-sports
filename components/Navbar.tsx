@@ -1,11 +1,10 @@
 'use client'
 
 import React, { useState, useEffect } from 'react'
-import { ArrowRight, ChevronRight, ChevronDown, Menu, X, Moon, Sun } from 'lucide-react'
+import { ArrowRight, ChevronRight, ChevronDown, Menu, X } from 'lucide-react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { NAV_ITEMS } from '@/constants'
-import { useTheme } from '@/context/ThemeContext'
 import { motion, AnimatePresence } from 'framer-motion'
 
 export default function Navbar() {
@@ -13,7 +12,6 @@ export default function Navbar() {
   const [scrolled, setScrolled] = useState(false)
   const [expandedItems, setExpandedItems] = useState<string[]>([])
   const pathname = usePathname()
-  const { theme, toggleTheme } = useTheme()
 
   const toggleExpanded = (label: string) => {
     setExpandedItems(prev =>
@@ -108,24 +106,6 @@ export default function Navbar() {
               </div>
 
               <div className="pl-6 border-l border-gray-200 dark:border-white/10 flex items-center gap-4">
-                <button
-                  onClick={toggleTheme}
-                  className="p-2 rounded-full text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-white/10 transition-all"
-                  aria-label="Toggle Dark Mode"
-                >
-                  <AnimatePresence mode="wait" initial={false}>
-                    <motion.div
-                      key={theme}
-                      initial={{ rotate: -90, opacity: 0 }}
-                      animate={{ rotate: 0, opacity: 1 }}
-                      exit={{ rotate: 90, opacity: 0 }}
-                      transition={{ duration: 0.2 }}
-                    >
-                      {theme === 'dark' ? <Sun size={16} /> : <Moon size={16} />}
-                    </motion.div>
-                  </AnimatePresence>
-                </button>
-
                 <Link
                   href="/contact"
                   className="group relative inline-flex items-center gap-2 px-5 py-2.5 bg-dfw-navy dark:bg-white dark:text-dfw-navy text-white text-[10px] font-bold uppercase tracking-widest rounded-sm overflow-hidden transition-all hover:bg-dfw-red dark:hover:bg-gray-200 shadow-md"
@@ -137,23 +117,6 @@ export default function Navbar() {
             </div>
 
             <div className="lg:hidden flex items-center gap-3 z-50">
-              <button
-                onClick={toggleTheme}
-                className="p-2.5 rounded-full text-gray-600 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-white/10 transition-all"
-                aria-label="Toggle Dark Mode"
-              >
-                <AnimatePresence mode="wait" initial={false}>
-                  <motion.div
-                    key={theme}
-                    initial={{ rotate: -90, opacity: 0 }}
-                    animate={{ rotate: 0, opacity: 1 }}
-                    exit={{ rotate: 90, opacity: 0 }}
-                    transition={{ duration: 0.2 }}
-                  >
-                    {theme === 'dark' ? <Sun size={22} /> : <Moon size={22} />}
-                  </motion.div>
-                </AnimatePresence>
-              </button>
               <button
                 onClick={() => setIsOpen(!isOpen)}
                 className="p-2.5 -mr-2 text-dfw-navy dark:text-white hover:text-dfw-red transition-colors focus:outline-none"

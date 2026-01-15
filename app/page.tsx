@@ -6,7 +6,6 @@ import { createPageMetadata, generateFAQSchema, generateBreadcrumbSchema } from 
 import HomeHero from '@/components/home/HomeHero'
 
 // Below-the-fold components - lazy loaded with ssr: false for faster initial hydration
-const HomeMarquee = dynamic(() => import('@/components/home/HomeMarquee'))
 const HomeIntro = dynamic(() => import('@/components/home/HomeIntro'))
 const HomeFeatures = dynamic(() => import('@/components/home/HomeFeatures'))
 const HomeFacilities = dynamic(() => import('@/components/home/HomeFacilities'))
@@ -104,7 +103,6 @@ export default function HomePage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
       <HomeHero />
-      <HomeMarquee />
       <HomeIntro />
       <HomeFeatures />
       <HomeFacilities />
