@@ -59,7 +59,7 @@ const EventsCorporate: React.FC = () => {
                >
                   <span className="text-blue-500 font-mono text-xs font-bold uppercase tracking-widest mb-4 block">Corporate Solutions</span>
                   <h2 className="text-4xl md:text-5xl font-header font-bold text-white uppercase leading-none">
-                     Team Building <br /> That Actually <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-blue-200">Works</span>
+                     Team Building <br /> That Actually <span className="text-blue-400">Works</span>
                   </h2>
                </motion.div>
                <motion.div

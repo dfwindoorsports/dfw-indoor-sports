@@ -51,7 +51,7 @@ const BadmintonIntro: React.FC = () => {
                      <span className="text-blue-900 dark:text-blue-400 font-mono text-xs font-bold uppercase tracking-widest">Precision Engineered</span>
                   </div>
                   <h2 className="text-4xl md:text-6xl font-header font-bold text-[#1E3A8A] dark:text-white uppercase leading-[0.9] mb-8">
-                     The Perfect <br /> <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-500">Flight Path</span>
+                     The Perfect <br /> <span className="text-blue-600 dark:text-blue-400">Flight Path</span>
                   </h2>
 
                   <div className="prose prose-lg text-gray-600 dark:text-gray-400 leading-relaxed mb-10 font-light">

@@ -69,7 +69,7 @@ const Hero: React.FC = () => {
             {/* Headline with 3D shadow */}
             <h1 className="text-5xl sm:text-6xl md:text-8xl lg:text-9xl font-header font-bold text-white leading-[1.1] md:leading-[1.1] uppercase tracking-tighter mb-6 md:mb-10 opacity-0 animate-slide-up drop-shadow-2xl" style={{ animationDelay: '0.2s' }}>
               Beyond <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-gray-300 to-gray-500" style={{ WebkitTextStroke: '0px' }}>Boundaries</span>
+              <span className="text-white" style={{ WebkitTextStroke: '0px' }}>Boundaries</span>
             </h1>
 
             {/* Description & Buttons */}

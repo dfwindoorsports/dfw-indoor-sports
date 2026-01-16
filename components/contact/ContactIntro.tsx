@@ -35,7 +35,7 @@ const ContactIntro: React.FC = () => {
                      <span className="text-dfw-navy font-mono text-xs font-bold uppercase tracking-widest">Real People, Real Support</span>
                   </div>
                   <h2 className="text-4xl md:text-5xl font-header font-bold text-dfw-navy uppercase mb-8 leading-[0.95]">
-                     We're Here to <br /> <span className="text-transparent bg-clip-text bg-gradient-to-r from-dfw-navy to-gray-500">Solve, Not Stall.</span>
+                     We're Here to <br /> <span className="text-dfw-navy">Solve, Not Stall.</span>
                   </h2>
                   <div className="prose prose-lg text-gray-600 leading-relaxed mb-10 font-light">
                      <p>

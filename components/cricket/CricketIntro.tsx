@@ -51,7 +51,7 @@ const CricketIntro: React.FC = () => {
                      <span className="text-[#006838] font-mono text-xs font-bold uppercase tracking-widest">Professional Standards</span>
                   </div>
                   <h2 className="text-4xl md:text-6xl font-header font-bold text-[#006838] dark:text-white uppercase leading-[0.9] mb-8">
-                     Fort Worth's Premier <br /> <span className="text-transparent bg-clip-text bg-gradient-to-r from-green-600 to-emerald-400">Indoor Hub</span>
+                     Fort Worth's Premier <br /> <span className="text-green-600 dark:text-green-400">Indoor Hub</span>
                   </h2>
 
                   <div className="prose prose-lg text-gray-600 dark:text-gray-400 leading-relaxed mb-10 font-light">

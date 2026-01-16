@@ -46,7 +46,7 @@ const AboutHero: React.FC = () => {
           className="text-3xl md:text-5xl lg:text-6xl font-header font-bold text-white uppercase tracking-tighter mb-4 leading-[1.1] max-w-5xl drop-shadow-2xl"
         >
           Where Athletes Find <br />
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-500">Home, Community,</span> <br />
+          <span className="text-white">Home, Community,</span> <br />
           <span className="text-dfw-red">And Championship.</span>
         </motion.h1>
 

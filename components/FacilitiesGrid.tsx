@@ -98,7 +98,7 @@ const FacilitiesGrid: React.FC = () => {
             </div>
 
             <h2 className="text-4xl sm:text-5xl md:text-7xl font-header font-bold text-dfw-navy uppercase leading-[0.9] tracking-tight mb-4 md:mb-6">
-              Built for <span className="text-transparent bg-clip-text bg-gradient-to-r from-dfw-red to-red-800">Glory</span>
+              Built for <span className="text-dfw-red">Glory</span>
             </h2>
 
             <div className="flex flex-col md:flex-row gap-4 md:gap-8 md:items-center">

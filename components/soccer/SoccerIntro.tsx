@@ -51,7 +51,7 @@ const SoccerIntro: React.FC = () => {
                      <span className="text-emerald-900 dark:text-emerald-400 font-mono text-xs font-bold uppercase tracking-widest">The Texas Challenge</span>
                   </div>
                   <h2 className="text-3xl md:text-5xl font-header font-bold text-[#064E3B] dark:text-white uppercase leading-[0.95] mb-8">
-                     Why Indoor Soccer Training <br /> <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-600 to-teal-500">Transforms Players</span>
+                     Why Indoor Soccer Training <br /> <span className="text-emerald-600 dark:text-emerald-400">Transforms Players</span>
                   </h2>
 
                   <div className="prose prose-lg text-gray-600 dark:text-gray-400 leading-relaxed mb-10 font-light">

@@ -49,7 +49,7 @@ const HomeMembership: React.FC = () => {
                >
                   <span className="text-dfw-red font-mono text-xs font-bold uppercase tracking-widest mb-4 block">Join The Family</span>
                   <h2 className="text-4xl md:text-6xl font-header font-bold text-white uppercase leading-none mb-6">
-                     Make It Your <br /> <span className="text-transparent bg-clip-text bg-gradient-to-r from-dfw-red to-orange-500">Home Base</span>
+                     Make It Your <br /> <span className="text-dfw-red">Home Base</span>
                   </h2>
                   <p className="text-gray-400 text-lg mb-8 leading-relaxed max-w-lg font-light">
                      Playing regularly? Membership isn't just about saving money (though you'll save a lot). It's about removing barriers. No counting hours, no hesitation—just come and play whenever the inspiration strikes.

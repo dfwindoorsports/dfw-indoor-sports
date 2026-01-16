@@ -25,7 +25,7 @@ const WaiverHero: React.FC = () => {
 
         <h1 className="text-3xl md:text-5xl font-header font-bold text-white uppercase tracking-tighter mb-4 leading-[1.1] animate-slide-up max-w-4xl drop-shadow-2xl">
           Release & Waiver <br />
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-gray-200 via-gray-400 to-gray-600">Of Liability</span>
+          <span className="text-white">Of Liability</span>
         </h1>
 
         <p className="max-w-2xl text-gray-400 text-sm md:text-base font-light leading-relaxed border-l-2 border-dfw-red pl-6 animate-slide-up mb-6">

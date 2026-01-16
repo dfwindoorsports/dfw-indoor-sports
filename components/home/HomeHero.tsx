@@ -57,7 +57,7 @@ const HomeHero: React.FC = () => {
             {/* Headline - starts visible for LCP, animates in */}
             <h1 className="text-5xl sm:text-6xl md:text-8xl lg:text-9xl font-header font-bold text-white leading-[1.1] md:leading-[1.1] uppercase tracking-tighter mb-6 md:mb-10 drop-shadow-2xl animate-slide-up-delay">
               Your Place <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-gray-200 to-gray-400">To Play.</span>
+              <span className="text-white">To Play.</span>
             </h1>
 
             {/* Description & Buttons */}

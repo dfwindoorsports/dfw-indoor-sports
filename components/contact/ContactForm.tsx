@@ -58,7 +58,7 @@ const ContactForm: React.FC = () => {
 
                {/* Left: The Form */}
                <div className="lg:col-span-7">
-                  <span className="text-dfw-red font-mono text-xs font-bold uppercase tracking-widest mb-4 block animate-pulse">24/7 Support</span>
+                  <span className="text-dfw-red font-mono text-xs font-bold uppercase tracking-widest mb-4 block">24/7 Support</span>
                   <h2 className="text-4xl md:text-5xl font-header font-bold text-white uppercase mb-8">Send A Message</h2>
                   <p className="text-gray-400 mb-10 text-lg font-light max-w-lg">
                      Fill out the form below and our team will route your inquiry to the right department immediately.

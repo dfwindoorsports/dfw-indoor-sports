@@ -49,7 +49,7 @@ export default function CityHero({ city, distance, heroImage = '/images/hero/spo
                     className="text-3xl md:text-5xl lg:text-6xl font-header font-bold text-white uppercase tracking-tighter mb-4 leading-[1.1] max-w-5xl drop-shadow-2xl"
                 >
                     Indoor Sports <br />
-                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-dfw-red via-dfw-red to-white">Near {city}</span>
+                    <span className="text-white">Near {city}</span>
                 </motion.h1>
 
                 <motion.div

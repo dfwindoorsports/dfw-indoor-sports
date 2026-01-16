@@ -37,7 +37,7 @@ const InfoSection: React.FC = () => {
             <div className="relative z-10 mt-6 md:mt-0">
               <h2 className="text-4xl md:text-7xl font-header font-bold text-dfw-navy uppercase leading-[0.9] md:leading-[0.85] mb-6 md:mb-10 tracking-tight drop-shadow-sm">
                 Defining <br />
-                <span className="text-transparent bg-clip-text bg-gradient-to-r from-dfw-red to-red-900">Sports Culture</span>
+                <span className="text-dfw-red">Sports Culture</span>
               </h2>
 
               <div className="flex flex-col md:flex-row gap-8 md:gap-12">

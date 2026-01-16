@@ -74,7 +74,7 @@ const HomeIntro: React.FC = () => {
                >
                   <motion.span variants={itemVariants} className="text-dfw-red font-mono text-xs font-bold uppercase tracking-widest mb-4 block">Our Philosophy</motion.span>
                   <motion.h2 variants={itemVariants} className="text-4xl md:text-5xl lg:text-6xl font-header font-bold text-dfw-navy dark:text-white uppercase leading-[0.95] mb-8">
-                     A Place Where <br /> Everyone <span className="text-transparent bg-clip-text bg-gradient-to-r from-dfw-navy to-gray-500 dark:from-white dark:to-gray-400">Belongs</span>
+                     A Place Where <br /> Everyone <span className="text-dfw-navy dark:text-white">Belongs</span>
                   </motion.h2>
 
                   <motion.div variants={itemVariants} className="prose prose-lg text-gray-600 dark:text-gray-400 leading-relaxed mb-10">

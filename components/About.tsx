@@ -23,7 +23,7 @@ const About: React.FC = () => {
                </span>
                <h1 className="text-5xl md:text-8xl font-header font-bold text-white uppercase tracking-tight mb-6 md:mb-8 leading-none animate-slide-up" style={{ animationDelay: '0.1s' }}>
                   Built for the <br />
-                  <span className="text-transparent bg-clip-text bg-gradient-to-r from-dfw-red to-orange-500">Love of Sport</span>
+                  <span className="text-dfw-red">Love of Sport</span>
                </h1>
                <p className="max-w-2xl mx-auto text-gray-400 text-lg md:text-xl font-light leading-relaxed animate-slide-up" style={{ animationDelay: '0.2s' }}>
                   We are redefining the indoor sports experience in DFW. A sanctuary for athletes, a hub for community, and a stage for champions.

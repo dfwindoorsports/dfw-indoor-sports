@@ -51,7 +51,7 @@ const DodgeballIntro: React.FC = () => {
                      <span className="text-violet-900 dark:text-violet-400 font-mono text-xs font-bold uppercase tracking-widest">Exercise Disguised As Fun</span>
                   </div>
                   <h2 className="text-3xl md:text-5xl font-header font-bold text-[#4C1D95] dark:text-white uppercase leading-[0.95] mb-8">
-                     DFW's Secret <br /> <span className="text-transparent bg-clip-text bg-gradient-to-r from-violet-600 to-fuchsia-500">Fitness Weapon</span>
+                     DFW's Secret <br /> <span className="text-violet-600 dark:text-violet-400">Fitness Weapon</span>
                   </h2>
 
                   <div className="prose prose-lg text-gray-600 dark:text-gray-400 leading-relaxed mb-10 font-light">
