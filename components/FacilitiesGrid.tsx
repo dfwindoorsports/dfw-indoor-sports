@@ -151,7 +151,7 @@ const FacilitiesGrid: React.FC = () => {
                   </span>
                   {item.priority && (
                     <span className="font-mono text-[9px] font-bold text-dfw-red bg-dfw-red/10 backdrop-blur-md border border-dfw-red/20 px-2 py-1 rounded-sm uppercase tracking-widest flex items-center gap-1">
-                      <span className="w-1 h-1 bg-dfw-red rounded-full animate-pulse"></span> Featured
+                      <span className="w-1 h-1 bg-dfw-red rounded-full"></span> Featured
                     </span>
                   )}
                 </div>

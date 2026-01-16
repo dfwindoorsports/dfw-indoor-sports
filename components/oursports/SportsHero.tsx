@@ -26,9 +26,9 @@ const SportsHero: React.FC = () => {
                initial={{ opacity: 0, y: 20 }}
                animate={{ opacity: 1, y: 0 }}
                transition={{ delay: 0.2 }}
-               className="inline-flex items-center gap-3 px-4 py-1.5 rounded-full border border-white/10 bg-white/5 backdrop-blur-2xl text-dfw-red font-mono text-[10px] uppercase tracking-[0.25em] mb-4 hover:bg-white/10 transition-colors cursor-default shadow-[0_0_20px_rgba(214,40,40,0.2)]"
+               className="inline-flex items-center gap-3 px-4 py-1.5 rounded-full bg-gray-800 text-dfw-red font-mono text-[10px] uppercase tracking-[0.25em] mb-4 cursor-default"
             >
-               <span className="w-1.5 h-1.5 rounded-full bg-dfw-red animate-pulse"></span>
+               <span className="w-1.5 h-1.5 rounded-full bg-dfw-red"></span>
                Fort Worth's Active Hub
             </motion.div>
 
@@ -75,7 +75,7 @@ const SportsHero: React.FC = () => {
                   onClick={() => document.getElementById('sports-showcase')?.scrollIntoView({ behavior: 'smooth' })}
                   className="group relative px-6 py-3 bg-dfw-red text-white font-bold uppercase tracking-widest text-xs rounded-sm overflow-hidden shadow-[0_0_40px_rgba(214,40,40,0.4)] transition-all hover:shadow-[0_0_60px_rgba(214,40,40,0.6)] hover:-translate-y-1"
                >
-                  <div className="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:animate-shine"></div>
+
                   <span className="relative flex items-center gap-3">Find Your Sport <ChevronRight size={14} /></span>
                </button>
                <button className="px-6 py-3 border border-white/20 bg-white/5 backdrop-blur-md text-white font-bold uppercase tracking-widest text-xs rounded-sm hover:bg-white hover:text-dfw-navy transition-all flex items-center gap-3">

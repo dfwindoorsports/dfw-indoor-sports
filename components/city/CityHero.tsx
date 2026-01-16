@@ -86,7 +86,7 @@ export default function CityHero({ city, distance, heroImage = '/images/hero/spo
                         href="/rentals"
                         className="group relative px-6 py-3 bg-dfw-red text-white font-bold uppercase tracking-widest text-xs rounded-sm overflow-hidden shadow-[0_0_40px_rgba(214,40,40,0.4)] transition-all hover:shadow-[0_0_60px_rgba(214,40,40,0.6)] hover:-translate-y-1"
                     >
-                        <div className="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:animate-shine" />
+
                         <span className="relative flex items-center gap-3">Book a Court <ChevronRight size={14} /></span>
                     </Link>
                     <Link

@@ -19,12 +19,9 @@ const SoccerHero: React.FC = () => {
 
          <div className="container mx-auto px-4 md:px-6 relative z-20 pt-10">
 
-            {/* Live Availability Ticker - Glassmorphism */}
-            <div className="inline-flex items-center gap-3 px-4 py-1.5 rounded-full border border-emerald-500/30 bg-emerald-900/40 backdrop-blur-xl text-emerald-100 font-mono text-[10px] uppercase tracking-[0.25em] mb-4 animate-fade-in-up hover:bg-emerald-900/60 transition-colors cursor-default shadow-[0_0_20px_rgba(16,185,129,0.2)]">
-               <span className="relative flex h-2 w-2">
-                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
-                  <span className="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
-               </span>
+            {/* Status Badge */}
+            <div className="inline-flex items-center gap-3 px-4 py-1.5 rounded-full bg-emerald-800 text-emerald-100 font-mono text-[10px] uppercase tracking-[0.25em] mb-4 animate-fade-in-up cursor-default">
+               <span className="w-2 h-2 rounded-full bg-emerald-400"></span>
                <span className="font-bold">Status:</span> Open 5 AM - 11 PM Daily
             </div>
 
@@ -42,7 +39,7 @@ const SoccerHero: React.FC = () => {
             {/* 3 Prominent CTAs */}
             <div className="flex flex-row flex-wrap gap-3 animate-slide-up" style={{ animationDelay: '0.2s' }}>
                <button className="group relative px-6 py-3 bg-emerald-600 text-white font-bold uppercase tracking-widest text-xs rounded-sm overflow-hidden shadow-[0_0_40px_rgba(5,150,105,0.4)] transition-all hover:shadow-[0_0_60px_rgba(5,150,105,0.6)] hover:-translate-y-1">
-                  <div className="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:animate-shine"></div>
+
                   <span className="relative flex items-center gap-3">Book Field Now <ChevronRight size={14} /></span>
                </button>
                <button

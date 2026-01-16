@@ -183,7 +183,7 @@ const ContactForm: React.FC = () => {
                            disabled={status === 'submitting'}
                            className="group relative w-full md:w-auto px-10 py-4 bg-dfw-red text-white font-bold uppercase tracking-widest text-xs rounded-sm overflow-hidden shadow-[0_0_20px_rgba(214,40,40,0.4)] transition-all hover:shadow-[0_0_40px_rgba(214,40,40,0.6)] hover:-translate-y-1 disabled:opacity-50 disabled:cursor-not-allowed"
                         >
-                           <div className="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:animate-shine"></div>
+
                            <span className="relative flex items-center justify-center gap-3">
                               {status === 'submitting' ? <Loader2 size={14} className="animate-spin" /> : <><Send size={14} /> Send Inquiry</>}
                            </span>

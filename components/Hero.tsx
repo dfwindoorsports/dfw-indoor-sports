@@ -31,7 +31,7 @@ const Hero: React.FC = () => {
           <div className="p-5 rounded-lg flex items-center gap-6 animate-fade-in-up bg-white/5 border border-white/10 shadow-[0_8px_32px_0_rgba(0,0,0,0.36)] backdrop-blur-2xl ring-1 ring-white/10 transform hover:rotate-y-2 transition-transform duration-500">
             <div className="flex flex-col">
               <span className="text-[9px] text-gray-400 font-mono uppercase tracking-widest mb-1.5 flex items-center gap-1">
-                <span className="w-1 h-1 bg-green-500 rounded-sm animate-pulse"></span> Status
+                <span className="w-1 h-1 bg-green-500 rounded-sm"></span> Status
               </span>
               <div className="flex items-center gap-2">
                 <span className="text-white font-bold text-sm tracking-wide font-header">LIVE NOW</span>
@@ -62,7 +62,7 @@ const Hero: React.FC = () => {
             {/* Tagline */}
             <div className="flex items-center gap-4 mb-6 md:mb-8 opacity-0 animate-slide-up" style={{ animationDelay: '0.1s' }}>
               <div className="px-4 py-1.5 md:px-5 md:py-2 border border-dfw-red/30 bg-gradient-to-r from-dfw-red/20 to-transparent text-dfw-red text-[9px] md:text-[10px] font-bold uppercase tracking-[0.2em] rounded-sm flex items-center gap-2 backdrop-blur-md shadow-lg shadow-dfw-red/10">
-                <span className="w-1.5 h-1.5 bg-dfw-red rounded-sm animate-pulse"></span> Ft. Worth, Texas
+                <span className="w-1.5 h-1.5 bg-dfw-red rounded-sm"></span> Ft. Worth, Texas
               </div>
             </div>
 
@@ -80,7 +80,7 @@ const Hero: React.FC = () => {
 
               <div className="flex flex-row flex-wrap gap-4 md:gap-5 w-full sm:w-auto">
                 <button className="group relative w-full sm:w-auto px-8 md:px-10 py-4 md:py-5 bg-dfw-red text-white text-sm font-bold uppercase tracking-widest overflow-hidden rounded-sm shadow-[0_10px_40px_-10px_rgba(214,40,40,0.6)] hover:shadow-[0_20px_60px_-10px_rgba(214,40,40,0.8)] hover:-translate-y-1 transition-all duration-300 text-center flex justify-center items-center">
-                  <div className="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/40 to-transparent -translate-x-full group-hover:animate-shine"></div>
+
                   <span className="relative z-10 flex items-center gap-3">
                     Book A Court <ChevronRight size={18} className="group-hover:translate-x-1 transition-transform" />
                   </span>

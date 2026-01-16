@@ -14,7 +14,7 @@ const About: React.FC = () => {
             <div className="absolute inset-0 bg-gradient-to-br from-dfw-navy via-black to-dfw-red/20 opacity-90"></div>
 
             {/* Animated Orbs */}
-            <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-blue-500/10 rounded-full blur-[100px] animate-pulse-slow"></div>
+            <div className="absolute top-1/4 right-1/4 w-96 h-96 bg-blue-500/10 rounded-full blur-[100px]"></div>
             <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-dfw-red/5 rounded-full blur-[120px]"></div>
 
             <div className="container mx-auto px-4 md:px-6 relative z-10 text-center">

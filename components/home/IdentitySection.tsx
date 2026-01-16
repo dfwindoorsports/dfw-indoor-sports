@@ -44,7 +44,7 @@ const IdentitySection: React.FC = () => {
             {/* Bottom Metadata & Line */}
             <div className="mt-20 md:mt-32 w-full flex flex-col items-center gap-8">
                <div className="w-full max-w-xs md:max-w-md h-[1px] bg-gradient-to-r from-transparent via-white/20 to-transparent relative overflow-hidden">
-                  <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-transparent via-white to-transparent -translate-x-full group-hover:animate-shine opacity-50"></div>
+
                </div>
 
                <div className="flex flex-col md:flex-row gap-6 md:gap-12 text-center">

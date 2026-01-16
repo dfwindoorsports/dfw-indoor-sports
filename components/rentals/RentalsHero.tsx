@@ -28,7 +28,7 @@ const RentalsHero: React.FC = () => {
           transition={{ delay: 0.2 }}
           className="inline-flex items-center gap-3 px-4 py-1.5 rounded-full border border-white/10 bg-white/5 backdrop-blur-2xl text-white/90 font-mono text-[10px] uppercase tracking-[0.3em] mb-4 hover:bg-white/10 transition-colors cursor-default shadow-lg"
         >
-          <span className="w-1.5 h-1.5 rounded-full bg-dfw-red shadow-[0_0_10px_#D62828] animate-pulse"></span>
+          <span className="w-1.5 h-1.5 rounded-full bg-dfw-red"></span>
           72°F Climate Controlled
         </motion.div>
 

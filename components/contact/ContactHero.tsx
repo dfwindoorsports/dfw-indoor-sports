@@ -18,13 +18,10 @@ const ContactHero: React.FC = () => {
       <div className="absolute inset-0 bg-[url('/textures/carbon-fibre.png')] opacity-20 mix-blend-overlay z-10"></div>
 
       <div className="container mx-auto px-4 md:px-6 relative z-20 pt-10">
-        {/* Live Status Badge */}
-        <div className="inline-flex items-center gap-3 px-4 py-2 rounded-full border border-white/10 bg-white/5 backdrop-blur-md text-green-400 font-mono text-[10px] uppercase tracking-[0.25em] mb-4 animate-fade-in-up hover:bg-white/10 transition-colors cursor-default shadow-lg group">
-          <span className="relative flex h-2 w-2">
-            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
-            <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
-          </span>
-          <span className="group-hover:text-white transition-colors">Support Online</span>
+        {/* Status Badge */}
+        <div className="inline-flex items-center gap-3 px-4 py-2 rounded-full bg-gray-800 text-green-400 font-mono text-[10px] uppercase tracking-[0.25em] mb-4 animate-fade-in-up cursor-default">
+          <span className="w-2 h-2 rounded-full bg-green-500"></span>
+          <span>Support Online</span>
         </div>
 
         <h1 className="text-3xl md:text-5xl lg:text-6xl font-header font-bold text-white uppercase tracking-tighter mb-4 leading-[1.1] animate-slide-up max-w-5xl drop-shadow-2xl">
