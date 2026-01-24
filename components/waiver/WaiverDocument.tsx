@@ -1,7 +1,7 @@
 'use client'
 
 import React, { useState } from 'react';
-import { CheckSquare, Square, AlertCircle, Calendar, User, Upload, CheckCircle2, Loader2, FileCheck, Printer, ArrowRight } from 'lucide-react';
+import { AlertCircle, Upload, CheckCircle2, Loader2, FileCheck, Printer, ArrowRight } from 'lucide-react';
 import Link from 'next/link';
 
 const WaiverDocument: React.FC = () => {
@@ -10,8 +10,16 @@ const WaiverDocument: React.FC = () => {
    const [isMinor, setIsMinor] = useState(false);
    const [firstName, setFirstName] = useState('');
    const [lastName, setLastName] = useState('');
+   const [dateOfBirth, setDateOfBirth] = useState('');
+   const [phone, setPhone] = useState('');
+   const [email, setEmail] = useState('');
+   const [emergencyContact, setEmergencyContact] = useState('');
+   const [emergencyPhone, setEmergencyPhone] = useState('');
+   const [parentName, setParentName] = useState('');
+   const [parentSignature, setParentSignature] = useState('');
    const [isSubmitting, setIsSubmitting] = useState(false);
    const [isSubmitted, setIsSubmitted] = useState(false);
+   const [errorMessage, setErrorMessage] = useState('');
 
    // Auto-fill date
    const today = new Date().toLocaleDateString('en-US', {
@@ -25,17 +33,45 @@ const WaiverDocument: React.FC = () => {
       if (!agreed || signature.length < 3) return;
 
       setIsSubmitting(true);
+      setErrorMessage('');
 
-      // Simulate API call/processing time
-      await new Promise(resolve => setTimeout(resolve, 2000));
+      try {
+         const response = await fetch('/api/waiver', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+               participantName: `${firstName} ${lastName}`,
+               dateOfBirth,
+               email,
+               phone,
+               emergencyContact,
+               emergencyPhone,
+               signature,
+               signatureDate: today,
+               agreedToTerms: agreed,
+               isMinor,
+               parentName: isMinor ? parentName : undefined,
+               parentSignature: isMinor ? parentSignature : undefined,
+            }),
+         });
 
-      setIsSubmitting(false);
-      setIsSubmitted(true);
+         const data = await response.json();
 
-      // Ensure view is centered on success message
-      setTimeout(() => {
-         document.getElementById('waiver-form')?.scrollIntoView({ behavior: 'smooth', block: 'center' });
-      }, 100);
+         if (!response.ok) {
+            throw new Error(data.error || 'Failed to submit waiver');
+         }
+
+         setIsSubmitted(true);
+
+         // Ensure view is centered on success message
+         setTimeout(() => {
+            document.getElementById('waiver-form')?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+         }, 100);
+      } catch (error) {
+         setErrorMessage(error instanceof Error ? error.message : 'Something went wrong. Please try again.');
+      } finally {
+         setIsSubmitting(false);
+      }
    };
 
    return (
@@ -207,16 +243,16 @@ const WaiverDocument: React.FC = () => {
                            <div>
                               <label className="block text-xs font-bold text-gray-500 uppercase tracking-widest mb-2">Date of Birth *</label>
                               <div className="relative">
-                                 <input type="date" required className="w-full p-3 rounded-sm border border-gray-300 focus:outline-none focus:border-dfw-navy focus:ring-1 focus:ring-dfw-navy bg-white transition-all text-gray-600" />
+                                 <input type="date" required value={dateOfBirth} onChange={(e) => setDateOfBirth(e.target.value)} className="w-full p-3 rounded-sm border border-gray-300 focus:outline-none focus:border-dfw-navy focus:ring-1 focus:ring-dfw-navy bg-white transition-all text-gray-600" />
                               </div>
                            </div>
                            <div>
                               <label className="block text-xs font-bold text-gray-500 uppercase tracking-widest mb-2">Phone Number *</label>
-                              <input type="tel" required className="w-full p-3 rounded-sm border border-gray-300 focus:outline-none focus:border-dfw-navy focus:ring-1 focus:ring-dfw-navy bg-white transition-all" />
+                              <input type="tel" required value={phone} onChange={(e) => setPhone(e.target.value)} className="w-full p-3 rounded-sm border border-gray-300 focus:outline-none focus:border-dfw-navy focus:ring-1 focus:ring-dfw-navy bg-white transition-all" />
                            </div>
                            <div className="md:col-span-2">
                               <label className="block text-xs font-bold text-gray-500 uppercase tracking-widest mb-2">Email Address *</label>
-                              <input type="email" required className="w-full p-3 rounded-sm border border-gray-300 focus:outline-none focus:border-dfw-navy focus:ring-1 focus:ring-dfw-navy bg-white transition-all" />
+                              <input type="email" required value={email} onChange={(e) => setEmail(e.target.value)} className="w-full p-3 rounded-sm border border-gray-300 focus:outline-none focus:border-dfw-navy focus:ring-1 focus:ring-dfw-navy bg-white transition-all" />
                            </div>
                            <div className="md:col-span-2">
                               <label className="block text-xs font-bold text-gray-500 uppercase tracking-widest mb-2">Address</label>
@@ -230,11 +266,11 @@ const WaiverDocument: React.FC = () => {
                            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                               <div>
                                  <label className="block text-xs font-bold text-gray-500 uppercase tracking-widest mb-2">Contact Name *</label>
-                                 <input type="text" required className="w-full p-3 rounded-sm border border-gray-300 focus:outline-none focus:border-dfw-navy focus:ring-1 focus:ring-dfw-navy bg-white transition-all" />
+                                 <input type="text" required value={emergencyContact} onChange={(e) => setEmergencyContact(e.target.value)} className="w-full p-3 rounded-sm border border-gray-300 focus:outline-none focus:border-dfw-navy focus:ring-1 focus:ring-dfw-navy bg-white transition-all" />
                               </div>
                               <div>
                                  <label className="block text-xs font-bold text-gray-500 uppercase tracking-widest mb-2">Contact Phone *</label>
-                                 <input type="tel" required className="w-full p-3 rounded-sm border border-gray-300 focus:outline-none focus:border-dfw-navy focus:ring-1 focus:ring-dfw-navy bg-white transition-all" />
+                                 <input type="tel" required value={emergencyPhone} onChange={(e) => setEmergencyPhone(e.target.value)} className="w-full p-3 rounded-sm border border-gray-300 focus:outline-none focus:border-dfw-navy focus:ring-1 focus:ring-dfw-navy bg-white transition-all" />
                               </div>
                            </div>
                         </div>
@@ -312,6 +348,13 @@ const WaiverDocument: React.FC = () => {
                               </div>
                            </div>
                         </div>
+
+                        {/* Error message */}
+                        {errorMessage && (
+                           <div className="bg-red-100 border border-red-300 p-4 rounded text-red-700 text-sm">
+                              {errorMessage}
+                           </div>
+                        )}
 
                         <button
                            type="submit"
