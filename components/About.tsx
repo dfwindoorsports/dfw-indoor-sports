@@ -62,7 +62,7 @@ const About: React.FC = () => {
                            DFW Indoor Sports was born from a simple observation: the Dallas-Fort Worth area needed a world-class indoor facility that didn't compromise on quality. We wanted to create a space where the turf is always green, the lighting is broadcast-quality, and the community feels like family.
                         </p>
                         <p>
-                           Whether you're a professional cricketer looking to fine-tune your yorkers with our PitchVision technology, or a weekend warrior gathering friends for badminton, we treat every player with the same level of respect and dedication.
+                           Whether you're a professional cricketer looking to fine-tune your technique with our video analysis technology, or a weekend warrior gathering friends for badminton, we treat every player with the same level of respect and dedication.
                         </p>
                      </div>
 
@@ -70,12 +70,12 @@ const About: React.FC = () => {
                         <div className="flex flex-col gap-2">
                            <Flag className="text-dfw-red mb-2" size={24} />
                            <h4 className="font-bold text-dfw-navy uppercase text-sm tracking-wider">Our Mission</h4>
-                           <p className="text-xs text-gray-500">To inspire athletic excellence and community connection through superior facilities.</p>
+                           <p className="text-xs text-gray-500">To empower and unite athletes of all ages and skills through top-tier indoor sports facilities and coaching in the Dallas-Fort Worth area, fostering growth, passion, and community.</p>
                         </div>
                         <div className="flex flex-col gap-2">
                            <Globe className="text-dfw-red mb-2" size={24} />
                            <h4 className="font-bold text-dfw-navy uppercase text-sm tracking-wider">Our Vision</h4>
-                           <p className="text-xs text-gray-500">To be the premier destination for indoor sports in Texas and beyond.</p>
+                           <p className="text-xs text-gray-500">To be the premier destination for indoor sports in DFW, inspiring excellence, innovation, and a lifelong love for sports among individuals and teams.</p>
                         </div>
                      </div>
                   </div>

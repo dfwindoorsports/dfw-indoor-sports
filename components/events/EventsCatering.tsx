@@ -48,10 +48,10 @@ const EventsCatering: React.FC = () => {
                
                <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
                   {[
-                     { title: "Pizza Package", price: "$8/pp", items: "2 Slices + Drink", icon: Pizza },
-                     { title: "Game Day", price: "$15/pp", items: "Pizza, Wings, Sides", icon: Utensils },
-                     { title: "Premium", price: "$25/pp", items: "Entrees, Sides, Dessert", icon: Wine },
-                     { title: "Snacks", price: "$5/pp", items: "Chips, Fruit, Drinks", icon: Coffee },
+                     { title: "Pizza Package", price: "Contact Us", items: "2 Slices + Drink", icon: Pizza },
+                     { title: "Game Day", price: "Contact Us", items: "Pizza, Wings, Sides", icon: Utensils },
+                     { title: "Premium", price: "Contact Us", items: "Entrees, Sides, Dessert", icon: Wine },
+                     { title: "Snacks", price: "Contact Us", items: "Chips, Fruit, Drinks", icon: Coffee },
                   ].map((menu, i) => (
                      <motion.div 
                         key={i} 

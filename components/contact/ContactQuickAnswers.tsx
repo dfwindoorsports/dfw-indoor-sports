@@ -8,10 +8,10 @@ const ContactQuickAnswers: React.FC = () => {
   const [searchTerm, setSearchTerm] = useState('');
 
   const questions = [
-    { q: "How do I book a court?", a: "Book online 24/7 via our portal, call us, or walk in. Online booking shows real-time availability.", link: "Book Online", href: "/rentals" },
-    { q: "What membership fits me?", a: "Playing 2+ times/month? Membership saves money. Gold gives access to all sports. Sport-specific options available.", link: "Compare Plans", href: "/memberships" },
+    { q: "How do I book a court?", a: "Book online 24/7 via our portal, call us, or walk in. Online booking shows real-time availability.", link: "Book Online", href: "https://book.runswiftapp.com/facilities/dfw-indoor-sports/rentals" },
+    { q: "What membership fits me?", a: "Playing 2+ times/month? Membership saves money. Gold gives unlimited cricket + badminton access. Sport-specific options available.", link: "Compare Plans", href: "/memberships" },
     { q: "Can I tour the facility?", a: "Absolutely. Free tours available daily. Call ahead or mention it in your message to schedule.", link: "Schedule Tour", href: "/contact" },
-    { q: "Do you offer free trials?", a: "Yes. First-time participants get complimentary trial sessions for most sports. Mention 'free trial'.", link: "Claim Trial", href: "/contact" },
+    { q: "Do you offer free trials?", a: "Contact us about introductory sessions. We welcome new visitors to tour and experience our facility.", link: "Get in Touch", href: "/contact" },
     { q: "How do I plan an event?", a: "Fill out the contact form selecting 'Event Planning' or call our coordinator for a custom proposal.", link: "Event Details", href: "/events" },
     { q: "How do I make a complaint?", a: "We take satisfaction seriously. Contact us immediately via phone or form and we will address it promptly.", link: "Contact Mgmt", href: "/contact" },
   ];

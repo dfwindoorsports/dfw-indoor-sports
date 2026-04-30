@@ -25,7 +25,7 @@ const highlights = [
     id: '03',
     title: 'Expert Staff',
     subtitle: 'World-Class Coaching',
-    description: 'Train under the guidance of certified professionals and former national players dedicated to your growth.',
+    description: 'Train under the guidance of Cricket Australia Level 2 and ICC-certified coaches dedicated to your growth.',
     img: '/images/facilities/dodgeball-courts.webp',
     icon: Award,
     link: '/academy/coaches'

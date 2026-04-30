@@ -1,7 +1,7 @@
 'use client'
 
 import React, { useState } from 'react';
-import { Instagram, Facebook, Youtube, Linkedin, Check } from 'lucide-react';
+import { Instagram, Facebook, Video, Linkedin, Check } from 'lucide-react';
 
 const ContactSocial: React.FC = () => {
   const [email, setEmail] = useState('');
@@ -35,7 +35,7 @@ const ContactSocial: React.FC = () => {
                       <Facebook size={20} />
                    </a>
                    <a href="https://youtube.com" target="_blank" rel="noreferrer" className="p-3 bg-white/5 rounded-full hover:bg-red-600 hover:text-white transition-all group border border-white/10">
-                      <Youtube size={20} />
+                      <Video size={20} />
                    </a>
                    <a href="https://linkedin.com" target="_blank" rel="noreferrer" className="p-3 bg-white/5 rounded-full hover:bg-blue-700 hover:text-white transition-all group border border-white/10">
                       <Linkedin size={20} />

@@ -56,6 +56,11 @@ const TopBar: React.FC = () => {
                         <Mail size={10} className="text-gray-500 group-hover:text-dfw-red transition-colors" />
                         <span>Support</span>
                      </a>
+                     <div className="w-[1px] h-3 bg-white/10"></div>
+                     <a href="https://store.dfwindoorsports.com" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 hover:text-white transition-colors group">
+                        <span className="text-dfw-red">★</span>
+                        <span>ProShop</span>
+                     </a>
                   </div>
                </div>
             </div>

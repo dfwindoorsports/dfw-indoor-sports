@@ -80,7 +80,7 @@ const CricketIntro: React.FC = () => {
                            <Video size={16} className="text-green-600 group-hover:scale-110 transition-transform" /> Tech Enabled
                         </h4>
                         <p className="text-xs text-gray-600 dark:text-gray-400 leading-relaxed">
-                           PitchVision integration and video analysis stations available in select lanes.
+                           Video analysis technology available to capture and review your technique.
                         </p>
                      </div>
                   </div>
@@ -109,8 +109,8 @@ const CricketIntro: React.FC = () => {
                            <div className="mt-1 p-2 bg-white/10 rounded group-hover/item:bg-green-500 transition-colors"><DollarSign size={16} className="text-white" /></div>
                            <div>
                               <span className="block font-bold text-green-200 uppercase text-[10px] tracking-widest mb-1">Pricing</span>
-                              <p className="font-medium">$40/hr (Peak) | $35/hr (Off-Peak)</p>
-                              <p className="text-xs text-gray-300 mt-1">Unlimited membership $109/mo</p>
+                              <p className="font-medium">View rates on RunSwift</p>
+                              <p className="text-xs text-gray-300 mt-1">Cricket Unlimited \/mo | GOLD \/mo</p>
                            </div>
                         </li>
                         <li className="flex gap-4 items-start group/item">
@@ -137,9 +137,9 @@ const CricketIntro: React.FC = () => {
                         </li>
                      </ul>
 
-                     <button className="w-full mt-10 py-4 bg-[#CC0000] text-white font-bold uppercase text-xs tracking-widest rounded-sm hover:bg-red-700 transition-colors shadow-lg relative z-10 flex items-center justify-center gap-2 group/btn">
+                     <a href="https://book.runswiftapp.com/facilities/dfw-indoor-sports/rentals" target="_blank" rel="noopener noreferrer" className="w-full mt-10 py-4 bg-[#CC0000] text-white font-bold uppercase text-xs tracking-widest rounded-sm hover:bg-red-700 transition-colors shadow-lg relative z-10 flex items-center justify-center gap-2 group/btn">
                         Book Lane Now <ArrowRight size={14} className="group-hover/btn:translate-x-1 transition-transform" />
-                     </button>
+                     </a>
                   </div>
                </motion.div>
             </div>

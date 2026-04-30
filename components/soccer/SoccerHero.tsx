@@ -32,16 +32,16 @@ const SoccerHero: React.FC = () => {
 
             <div className="flex flex-col md:flex-row items-start gap-4 mb-6 animate-slide-up" style={{ animationDelay: '0.1s' }}>
                <p className="max-w-2xl text-gray-200 text-base md:text-lg font-light leading-relaxed border-l-2 border-emerald-500 pl-6 backdrop-blur-sm">
-                  Reserve professional indoor soccer fields with climate-controlled comfort. Small-sided games on FIFA-approved artificial turf.
+                  Reserve professional indoor soccer fields with climate-controlled comfort. Small-sided games on professional indoor artificial turf.
                </p>
             </div>
 
             {/* 3 Prominent CTAs */}
             <div className="flex flex-row flex-wrap gap-3 animate-slide-up" style={{ animationDelay: '0.2s' }}>
-               <button className="group relative px-6 py-3 bg-emerald-600 text-white font-bold uppercase tracking-widest text-xs rounded-sm overflow-hidden shadow-[0_0_40px_rgba(5,150,105,0.4)] transition-all hover:shadow-[0_0_60px_rgba(5,150,105,0.6)] hover:-translate-y-1">
+               <a href="https://book.runswiftapp.com/facilities/dfw-indoor-sports/rentals" target="_blank" rel="noopener noreferrer" className="group relative px-6 py-3 bg-emerald-600 text-white font-bold uppercase tracking-widest text-xs rounded-sm overflow-hidden shadow-[0_0_40px_rgba(5,150,105,0.4)] transition-all hover:shadow-[0_0_60px_rgba(5,150,105,0.6)] hover:-translate-y-1">
 
                   <span className="relative flex items-center gap-3">Book Field Now <ChevronRight size={14} /></span>
-               </button>
+               </a>
                <button
                   onClick={() => document.getElementById('booking-process')?.scrollIntoView({ behavior: 'smooth' })}
                   className="px-6 py-3 bg-white text-[#064E3B] font-bold uppercase tracking-widest text-xs rounded-sm hover:bg-gray-100 transition-all shadow-lg flex items-center gap-2"

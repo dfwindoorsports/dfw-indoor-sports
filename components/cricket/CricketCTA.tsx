@@ -33,9 +33,9 @@ const CricketCTA: React.FC = () => {
                transition={{ delay: 0.2 }}
                className="flex flex-col sm:flex-row justify-center gap-4 mb-12"
             >
-               <Link href="/contact" className="px-10 py-5 bg-[#CC0000] text-white font-bold uppercase tracking-widest text-sm rounded-sm hover:bg-red-700 transition-colors shadow-lg">
+               <a href="https://book.runswiftapp.com/facilities/dfw-indoor-sports/rentals" target="_blank" rel="noopener noreferrer" className="px-10 py-5 bg-[#CC0000] text-white font-bold uppercase tracking-widest text-sm rounded-sm hover:bg-red-700 transition-colors shadow-lg">
                   Book Online Now
-               </Link>
+               </a>
                <Link href="/contact" className="px-10 py-5 border border-white/20 text-white font-bold uppercase tracking-widest text-sm rounded-sm hover:bg-white hover:text-[#006838] transition-colors flex items-center gap-2 justify-center">
                   <PlayCircle size={16} /> Schedule Tour
                </Link>

@@ -68,7 +68,7 @@ const ParallaxCTA: React.FC = () => {
                      </h3>
 
                      <p className="text-gray-400 font-light mb-8 md:mb-10 max-w-sm text-sm md:text-base">
-                        Train with national-level coaches and elevate your career. Structured programs for all ages.
+                        Train with CA and ICC-certified coaches and elevate your game. Structured programs for all ages.
                      </p>
 
                      <div className="flex items-center gap-2 text-white font-bold uppercase tracking-widest text-[10px] md:text-xs group-hover:text-yellow-400 transition-colors border-b border-transparent group-hover:border-yellow-400 pb-1 w-max">

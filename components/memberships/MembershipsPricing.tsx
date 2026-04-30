@@ -33,7 +33,7 @@ const MembershipsPricing: React.FC = () => {
                   <div className="absolute inset-0 bg-gradient-to-t from-dfw-navy/80 via-dfw-navy/40 to-transparent" />
                   <div className="absolute bottom-6 left-6 right-6 text-center">
                      <p className="text-white font-header font-bold text-2xl md:text-3xl uppercase">Unlimited Access. Maximum Value.</p>
-                     <p className="text-white/70 text-xs font-mono uppercase tracking-widest mt-1">Play More, Pay Less • 4 Sports Included</p>
+                     <p className="text-white/70 text-xs font-mono uppercase tracking-widest mt-1">Play More, Pay Less • Cricket + Badminton Included</p>
                   </div>
                </div>
             </motion.div>
@@ -54,9 +54,9 @@ const MembershipsPricing: React.FC = () => {
                      6-Months <span className="text-green-500 text-[10px] ml-1">(Best Value)</span>
                   </span>
                </div>
-            </div>
+             </div>
 
-            {/* Grid */}
+             {/* Grid */}
             <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6 items-start">
 
                {/* Card 1: Badminton */}
@@ -82,7 +82,7 @@ const MembershipsPricing: React.FC = () => {
 
                   <ul className="space-y-4 mb-8 min-h-[180px]">
                      {[
-                        "Unlimited Court Access", "No Hourly Fees", "Priority Booking", "24/7 Access", "10% Pro Shop Discount"
+                        "Unlimited Court Access", "No Hourly Fees", "No Additional Court Fees", "Open Daily 5AM-11PM", "10% Pro Shop Discount"
                      ].map((feat, i) => (
                         <li key={i} className="flex items-start gap-3 text-sm text-gray-600 dark:text-gray-300">
                            <Check size={16} className="text-blue-500 mt-0.5 shrink-0" />
@@ -91,9 +91,9 @@ const MembershipsPricing: React.FC = () => {
                      ))}
                   </ul>
 
-                  <button className="w-full py-3 border border-dfw-navy dark:border-white/20 text-dfw-navy dark:text-white font-bold uppercase text-xs tracking-widest rounded-sm hover:bg-dfw-navy hover:text-white dark:hover:bg-white dark:hover:text-dfw-navy transition-colors">
+                  <a href="https://book.runswiftapp.com/facilities/dfw-indoor-sports/memberships" target="_blank" rel="noopener noreferrer" className="w-full py-3 border border-dfw-navy dark:border-white/20 text-dfw-navy dark:text-white font-bold uppercase text-xs tracking-widest rounded-sm hover:bg-dfw-navy hover:text-white dark:hover:bg-white dark:hover:text-dfw-navy transition-colors block text-center">
                      Select Plan
-                  </button>
+                  </a>
                </motion.div>
 
                {/* Card 2: GOLD (Highlighted) */}
@@ -111,7 +111,7 @@ const MembershipsPricing: React.FC = () => {
 
                   <div className="relative z-10">
                      <h3 className="text-2xl font-header font-bold text-white uppercase mb-2">Gold Membership</h3>
-                     <p className="text-xs font-mono text-dfw-red uppercase tracking-widest mb-6">All 4 Sports Included</p>
+                     <p className="text-xs font-mono text-dfw-red uppercase tracking-widest mb-6">Cricket + Badminton Included</p>
 
                      <div className="mb-6 h-16">
                         <span className="text-5xl font-header font-bold text-white animate-fade-in-up key-{billingCycle}">
@@ -125,13 +125,13 @@ const MembershipsPricing: React.FC = () => {
 
                      <div className="p-3 bg-white/5 rounded-lg border border-white/10 mb-6 backdrop-blur-sm">
                         <p className="text-xs text-gray-300 leading-relaxed">
-                           <strong className="text-white">Includes:</strong> Unlimited Cricket, Badminton, Soccer & Dodgeball.
+                           <strong className="text-white">Includes:</strong> Unlimited Cricket Lanes & Badminton Courts.
                         </p>
                      </div>
 
                      <ul className="space-y-4 mb-8 min-h-[180px]">
                         {[
-                           "Unlimited Access to 4 Sports", "Bowling Machine Included", "Priority Booking (14 Days)", "20% League Discount", "Guest Passes Included"
+                           "Unlimited Cricket + Badminton", "Bowling Machine Included", "10% Store Discount", "10% Academy Discount", "Bowling Machine Included"
                         ].map((feat, i) => (
                            <li key={i} className="flex items-start gap-3 text-sm text-gray-300">
                               <Check size={16} className="text-dfw-red mt-0.5 shrink-0" />
@@ -140,9 +140,9 @@ const MembershipsPricing: React.FC = () => {
                         ))}
                      </ul>
 
-                     <button className="w-full py-4 bg-dfw-red text-white font-bold uppercase text-xs tracking-widest rounded-sm hover:bg-red-600 transition-colors shadow-lg">
+                     <a href="https://book.runswiftapp.com/facilities/dfw-indoor-sports/memberships?membershipId=3671" target="_blank" rel="noopener noreferrer" className="w-full py-4 bg-dfw-red text-white font-bold uppercase text-xs tracking-widest rounded-sm hover:bg-red-600 transition-colors shadow-lg block text-center">
                         Get Gold Access
-                     </button>
+                     </a>
                   </div>
                </motion.div>
 
@@ -170,7 +170,7 @@ const MembershipsPricing: React.FC = () => {
 
                   <ul className="space-y-4 mb-8 min-h-[180px]">
                      {[
-                        "Unlimited Lane Access", "Bowling Machine Included", "Priority Booking", "Video Analysis Allowed", "10% Academy Discount"
+                        "Unlimited Lane Access", "Bowling Machine Included", "No Additional Court Fees", "Video Analysis Allowed", "10% Academy Discount"
                      ].map((feat, i) => (
                         <li key={i} className="flex items-start gap-3 text-sm text-gray-600 dark:text-gray-300">
                            <Check size={16} className="text-dfw-navy dark:text-gray-400 mt-0.5 shrink-0" />
@@ -208,7 +208,7 @@ const MembershipsPricing: React.FC = () => {
 
                   <ul className="space-y-4 mb-8 min-h-[180px]">
                      {[
-                        "Covers 2 Adults + 2 Kids", "Access to ALL 4 Sports", "Simultaneous Use", "Bowling Machine Included", "10% Coaching Discount"
+                        "Covers 2 Adults + 2 Kids", "Unlimited Cricket + Badminton", "Simultaneous Use", "Bowling Machine Included", "10% Coaching Discount"
                      ].map((feat, i) => (
                         <li key={i} className="flex items-start gap-3 text-sm text-gray-600 dark:text-gray-300">
                            <Check size={16} className="text-green-600 mt-0.5 shrink-0" />
@@ -217,11 +217,20 @@ const MembershipsPricing: React.FC = () => {
                      ))}
                   </ul>
 
-                  <button className="w-full py-3 border border-dfw-navy dark:border-white/20 text-dfw-navy dark:text-white font-bold uppercase text-xs tracking-widest rounded-sm hover:bg-dfw-navy hover:text-white dark:hover:bg-white dark:hover:text-dfw-navy transition-colors">
+                  <a href="https://book.runswiftapp.com/facilities/dfw-indoor-sports/memberships?membershipId=3675" target="_blank" rel="noopener noreferrer" className="w-full py-3 border border-dfw-navy dark:border-white/20 text-dfw-navy dark:text-white font-bold uppercase text-xs tracking-widest rounded-sm hover:bg-dfw-navy hover:text-white dark:hover:bg-white dark:hover:text-dfw-navy transition-colors block text-center">
                      Select Plan
-                  </button>
+                  </a>
                </motion.div>
 
+            </div>
+
+            {/* Fine Print — matches official site */}
+            <div className="mt-12 max-w-3xl mx-auto text-center space-y-2">
+               <p className="text-xs text-gray-500 dark:text-gray-400">• No additional Court/Lane fees for reserving</p>
+               <p className="text-xs text-gray-500 dark:text-gray-400">• There is a one-time registration fee for all members of $20</p>
+               <p className="text-xs text-gray-500 dark:text-gray-400">• All prices are before sales tax</p>
+               <p className="text-xs text-gray-500 dark:text-gray-400">• Registration fee is a one-time fee and is not refundable upon account cancellation</p>
+               <p className="text-xs text-red-400/80 dark:text-red-400/60 font-medium">• Using other members' ID to enter the facility is treated as fraud and will result in a fine of $250. Additionally, membership can be terminated permanently.</p>
             </div>
          </div>
       </section>

@@ -72,7 +72,7 @@ const CricketExtras: React.FC = () => {
                    <li className="flex items-center gap-3 text-sm font-bold text-gray-700 dark:text-gray-300"><span className="w-1.5 h-1.5 bg-[#CC0000] rounded-full"></span> 10% Member Discount</li>
                    <li className="flex items-center gap-3 text-sm font-bold text-gray-700 dark:text-gray-300"><span className="w-1.5 h-1.5 bg-[#CC0000] rounded-full"></span> Top Brands Stocked</li>
                 </ul>
-                <Link href="/contact" className="flex items-center gap-2 text-[#006838] dark:text-green-400 font-bold uppercase text-xs tracking-widest hover:gap-3 transition-all">Visit Store <ArrowRight size={14} /></Link>
+                <a href="https://store.dfwindoorsports.com" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 text-[#006838] dark:text-green-400 font-bold uppercase text-xs tracking-widest hover:gap-3 transition-all">Visit Store <ArrowRight size={14} /></a>
              </motion.div>
 
              {/* Additional Services */}
@@ -102,7 +102,7 @@ const CricketExtras: React.FC = () => {
                       <h4 className="font-bold text-[#006838] dark:text-white text-sm uppercase mb-1 flex items-center gap-2">
                          <Shirt size={14} className="text-[#CC0000]" /> Birthday Parties
                       </h4>
-                      <p className="text-xs text-gray-500 dark:text-gray-400">Cricket-themed parties with coaching and games. From $299.</p>
+                      <p className="text-xs text-gray-500 dark:text-gray-400">Cricket-themed parties with coaching and games. Contact us for party pricing.</p>
                    </div>
                 </div>
              </motion.div>

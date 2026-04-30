@@ -33,10 +33,10 @@ const RentalsPricing: React.FC = () => {
                   </thead>
                   <tbody className="text-sm text-gray-600 dark:text-gray-300 divide-y divide-gray-100 dark:divide-white/5 bg-white dark:bg-[#0A111F]">
                      {[
-                        { name: "Cricket Lanes", rate: "$40/hour", off: "$35/hour", equip: "Bowling machine, balls, protective gear" },
-                        { name: "Badminton Courts", rate: "$25/hour", off: "$20/hour", equip: "Nets, posts, court equipment" },
-                        { name: "Soccer Fields", rate: "$60/hour", off: "$50/hour", equip: "Balls, cones, goals, training aids" },
-                        { name: "Dodgeball Courts", rate: "$35/hour", off: "$30/hour", equip: "All balls, safety equipment" }
+                        { name: "Cricket Lanes", rate: "View Rates", off: "Book Online", equip: "Bowling machine, balls, protective gear" },
+                        { name: "Badminton Courts", rate: "View Rates", off: "Book Online", equip: "Nets, posts, court equipment" },
+                        { name: "Soccer Fields", rate: "View Rates", off: "Book Online", equip: "Balls, cones, goals, training aids" },
+                        { name: "Dodgeball Courts", rate: "View Rates", off: "Book Online", equip: "All balls, safety equipment" }
                      ].map((row, i) => (
                         <tr key={i} className="hover:bg-gray-50 dark:hover:bg-white/5 transition-colors">
                            <td className="p-5 font-bold text-dfw-navy dark:text-white">{row.name}</td>

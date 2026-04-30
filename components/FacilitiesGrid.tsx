@@ -8,7 +8,7 @@ const facilities = [
     subtitle: 'International Standard',
     status: 'Active',
     capacity: '22 Players',
-    specs: ['70m Boundaries', 'PitchVision™', 'Hybrid Turf'],
+    specs: ['70m Boundaries', 'Video Analysis', 'Turf'],
     img: '/images/facilities/cricket-lanes.webp',
     className: 'md:col-span-2 md:row-span-2',
     priority: true,
@@ -26,12 +26,12 @@ const facilities = [
     icons: [Wind, Zap]
   },
   {
-    title: 'FIFA Turf',
+    title: 'Pro Turf',
     id: '03',
     subtitle: '5-a-side',
     status: 'Open',
     capacity: '10 Players',
-    specs: ['FIFA Grade', 'Shock Pad'],
+    specs: ['Pro Grade', 'Shock Pad'],
     img: '/images/facilities/soccer-fields.webp',
     className: 'md:col-span-1 md:row-span-1',
     icons: [Activity]
@@ -41,7 +41,7 @@ const facilities = [
     id: '04',
     subtitle: 'Automated',
     status: 'Reserved',
-    capacity: '4 Lanes',
+    capacity: '6 Lanes',
     specs: ['Auto-Feeders', 'Video Analysis'],
     img: '/images/facilities/bowling-machine.webp',
     className: 'md:col-span-1 md:row-span-1',
@@ -103,7 +103,7 @@ const FacilitiesGrid: React.FC = () => {
 
             <div className="flex flex-col md:flex-row gap-4 md:gap-8 md:items-center">
               <p className="text-gray-500 font-medium leading-relaxed max-w-lg text-sm border-l border-gray-200 pl-4 md:pl-6">
-                50,000 sq ft of precision-engineered sports environments. From hybrid turf technology to BWF-approved flooring, every detail is calibrated for peak performance.
+                50,000 sq ft of precision-engineered sports environments. From professional turf technology to BWF-approved flooring, every detail is calibrated for peak performance.
               </p>
 
               {/* Micro Stat */}
@@ -115,12 +115,12 @@ const FacilitiesGrid: React.FC = () => {
           </div>
 
           <div className="hidden md:block">
-            <button className="group relative flex items-center gap-4 text-dfw-navy font-bold uppercase tracking-widest text-xs py-3 px-6 border border-gray-200 hover:border-dfw-navy transition-all duration-300 rounded-sm overflow-hidden">
+            <a href="/sports" className="group relative flex items-center gap-4 text-dfw-navy font-bold uppercase tracking-widest text-xs py-3 px-6 border border-gray-200 hover:border-dfw-navy transition-all duration-300 rounded-sm overflow-hidden">
               <span className="relative z-10 flex items-center gap-2">
                 View All Spaces <ArrowUpRight className="group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" size={14} />
               </span>
               <div className="absolute bottom-0 left-0 w-full h-[2px] bg-dfw-navy scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
-            </button>
+            </a>
           </div>
         </div>
 
@@ -181,9 +181,9 @@ const FacilitiesGrid: React.FC = () => {
                   <div className={`overflow-hidden transition-all duration-500 ease-in-out ${item.isContact ? 'max-h-20 opacity-100 mt-4' : 'max-h-20 md:max-h-0 opacity-100 md:opacity-0 group-hover:max-h-40 group-hover:opacity-100 mt-3 md:mt-0 group-hover:mt-4'}`}>
 
                     {item.isContact ? (
-                      <button className="w-full bg-white hover:bg-dfw-red text-dfw-navy hover:text-white py-3 px-4 rounded-sm text-[10px] font-bold uppercase tracking-widest transition-all shadow-lg flex items-center justify-between group/btn">
+                      <a href="/contact" className="w-full bg-white hover:bg-dfw-red text-dfw-navy hover:text-white py-3 px-4 rounded-sm text-[10px] font-bold uppercase tracking-widest transition-all shadow-lg flex items-center justify-between group/btn">
                         Book Tour <ArrowUpRight size={14} className="group-hover/btn:translate-x-1 group-hover/btn:-translate-y-1 transition-transform" />
-                      </button>
+                      </a>
                     ) : (
                       <div className="space-y-3 border-t border-white/10 pt-3">
                         <div className="flex justify-between items-center text-[10px] font-mono text-gray-400 uppercase tracking-wider">
@@ -220,9 +220,9 @@ const FacilitiesGrid: React.FC = () => {
 
         {/* Mobile View All Button */}
         <div className="md:hidden mt-6">
-          <button className="w-full flex items-center justify-center gap-2 px-6 py-4 border border-gray-200 text-dfw-navy font-bold uppercase text-xs tracking-widest bg-white rounded-sm shadow-sm">
+          <a href="/sports" className="w-full flex items-center justify-center gap-2 px-6 py-4 border border-gray-200 text-dfw-navy font-bold uppercase text-xs tracking-widest bg-white rounded-sm shadow-sm">
             View All Spaces <ArrowRight size={14} />
-          </button>
+          </a>
         </div>
       </div>
     </section>

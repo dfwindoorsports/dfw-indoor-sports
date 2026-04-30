@@ -65,9 +65,9 @@ const RentalsCTA: React.FC = () => {
                transition={{ delay: 0.3 }}
                className="flex flex-col sm:flex-row justify-center gap-4"
             >
-               <Link href="/contact" className="px-10 py-5 bg-dfw-red text-white font-bold uppercase tracking-widest text-sm rounded-sm hover:bg-red-700 transition-colors shadow-[0_0_30px_rgba(214,40,40,0.4)] flex items-center justify-center gap-2">
+               <a href="https://book.runswiftapp.com/facilities/dfw-indoor-sports/rentals" target="_blank" rel="noopener noreferrer" className="px-10 py-5 bg-dfw-red text-white font-bold uppercase tracking-widest text-sm rounded-sm hover:bg-red-700 transition-colors shadow-[0_0_30px_rgba(214,40,40,0.4)] flex items-center justify-center gap-2">
                   <MousePointer2 size={16} /> Book Online Now
-               </Link>
+               </a>
                <a href="tel:8179380808" className="px-10 py-5 border border-white/20 text-white font-bold uppercase tracking-widest text-sm rounded-sm hover:bg-white hover:text-dfw-navy transition-colors flex items-center justify-center gap-2">
                   <Phone size={16} /> Call (817) 938-0808
                </a>

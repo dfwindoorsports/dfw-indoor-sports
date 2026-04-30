@@ -30,7 +30,7 @@ const friscoFaqs = [
     },
     {
         question: 'Is the drive from Frisco worth it?',
-        answer: 'Many Frisco families think so! Our purpose-built facility offers amenities that local gyms can\'t match: programmable bowling machines for cricket, Olympic-spec badminton courts with proper 30+ ft ceiling height, and a dedicated indoor soccer field. The drive becomes routine after a few visits.',
+        answer: 'Many Frisco families think so! Our purpose-built facility offers amenities that local gyms can\'t match: programmable bowling machines for cricket, tournament-standard badminton courts with proper 30+ ft ceiling height, and a dedicated indoor soccer field. The drive becomes routine after a few visits.',
     },
     {
         question: 'Do you have programs for Frisco youth?',
@@ -42,11 +42,11 @@ const friscoFaqs = [
     },
     {
         question: 'What sports do you offer?',
-        answer: 'We offer cricket (3 professional lanes with bowling machines), badminton (6 Olympic-spec courts), indoor soccer (full futsal field), and dodgeball. All equipment is provided.',
+        answer: 'We offer cricket (6 professional lanes with bowling machines), badminton (6 tournament-standard courts), indoor soccer (full futsal field), and dodgeball. All equipment is provided.',
     },
     {
         question: 'What are your membership options?',
-        answer: 'Monthly memberships start at $70 for unlimited open play access. Family memberships are $150. For Frisco residents who visit even twice monthly, membership is more economical than drop-in rates.',
+        answer: 'Monthly memberships start at \ for badminton and \ for GOLD (cricket + badminton). Family Gold membership is \/mo. Rental rates available on our booking platform.',
     },
     {
         question: 'Can I make a day trip from Frisco?',
@@ -74,7 +74,7 @@ export default function FriscoPage() {
         description: 'Premier indoor sports facility serving Frisco, Texas with professional cricket lanes, badminton courts, soccer fields, and dodgeball.',
         url: `${BUSINESS_INFO.url}/areas-we-serve/frisco`,
         telephone: BUSINESS_INFO.contact.phone,
-        priceRange: '$25-$150',
+        priceRange: 'Contact for Rates',
         address: {
             '@type': 'PostalAddress',
             streetAddress: BUSINESS_INFO.address.street,
@@ -117,7 +117,7 @@ export default function FriscoPage() {
                         icon: "Target"
                     },
                     {
-                        title: "Olympic-Standard Courts",
+                        title: "Tournament-Standard Courts",
                         description: "Don't compromise with multi-purpose gym floors. Our badminton courts have proper BWF-approved synthetic flooring that protects knees and improves game play.",
                         icon: "Trophy"
                     },
@@ -139,7 +139,7 @@ export default function FriscoPage() {
                     {
                         name: "Cricket",
                         icon: "🏏",
-                        price: "$25/hr",
+                        price: "View Rates",
                         priceNote: "lane rental",
                         features: ["Private lanes", "Bowling machines", "Kit storage available"],
                         link: "/cricket-lanes"
@@ -147,7 +147,7 @@ export default function FriscoPage() {
                     {
                         name: "Badminton",
                         icon: "🏸",
-                        price: "$10/person",
+                        price: "View Rates",
                         priceNote: "drop-in",
                         features: ["6 Courts", "High ceiling", "Yonex shuttles"],
                         link: "/badminton-courts"
@@ -155,7 +155,7 @@ export default function FriscoPage() {
                     {
                         name: "Birthday Parties",
                         icon: "🎂",
-                        price: "$250+",
+                        price: "Contact Us",
                         priceNote: "package",
                         features: ["2 hours event", "Dodgeball/Soccer", "Party room"],
                         link: "/contact"

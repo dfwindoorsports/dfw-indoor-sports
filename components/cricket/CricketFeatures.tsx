@@ -15,7 +15,7 @@ const features = [
   {
     icon: Zap,
     title: "Bowling Machines Included",
-    desc: "Normally $15-20 extra elsewhere - included FREE. Variable speed (40-90 mph), programmable line/length.",
+    desc: "Included FREE with every lane rental. Variable speed (40-90 mph), programmable line/length.",
     detail: "Tech: 40-90mph Swing/Spin"
   },
   {
@@ -28,12 +28,12 @@ const features = [
     icon: Video,
     title: "Video Analysis",
     desc: "Recording stations at each lane. Tablet/phone mounting, multiple angle capability, and slow-motion playback.",
-    detail: "Tech: PitchVision Integration"
+    detail: "Tech: Video Analysis Technology"
   },
   {
     icon: Calendar,
     title: "Flexible Booking",
-    desc: "Book online 24/7. Real-time availability, instant confirmation. Reserve up to 30 days in advance.",
+    desc: "Book online 24/7. Real-time availability, instant confirmation. Check real-time availability.",
     detail: "System: Instant Online"
   },
   {
@@ -69,7 +69,7 @@ const CricketFeatures: React.FC = () => {
             <div className="absolute inset-0 bg-gradient-to-t from-[#006838]/70 via-transparent to-transparent" />
             <div className="absolute bottom-6 left-6 right-6 text-center">
               <p className="text-white font-header font-bold text-xl md:text-2xl uppercase">Professional Equipment Included</p>
-              <p className="text-white/70 text-xs font-mono uppercase tracking-widest mt-1">40-90mph Bowling Machines • PitchVision Analysis</p>
+              <p className="text-white/70 text-xs font-mono uppercase tracking-widest mt-1">40-90mph Bowling Machines • Video Analysis</p>
             </div>
           </div>
         </motion.div>

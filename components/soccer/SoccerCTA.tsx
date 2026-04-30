@@ -33,9 +33,9 @@ const SoccerCTA: React.FC = () => {
                transition={{ delay: 0.2 }}
                className="flex flex-col sm:flex-row justify-center gap-4 mb-12"
             >
-               <Link href="/contact" className="px-10 py-5 bg-emerald-500 text-white font-bold uppercase tracking-widest text-sm rounded-sm hover:bg-emerald-600 transition-colors shadow-lg flex items-center justify-center gap-2">
+               <a href="https://book.runswiftapp.com/facilities/dfw-indoor-sports/rentals" target="_blank" rel="noopener noreferrer" className="px-10 py-5 bg-emerald-500 text-white font-bold uppercase tracking-widest text-sm rounded-sm hover:bg-emerald-600 transition-colors shadow-lg flex items-center justify-center gap-2">
                   Book Field Now
-               </Link>
+               </a>
                <Link href="/contact" className="px-10 py-5 border border-white/20 text-white font-bold uppercase tracking-widest text-sm rounded-sm hover:bg-white hover:text-[#064E3B] transition-colors flex items-center justify-center gap-2">
                   <PlayCircle size={16} /> Tour Facility
                </Link>

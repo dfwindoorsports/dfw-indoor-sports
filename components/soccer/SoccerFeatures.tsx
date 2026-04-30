@@ -7,7 +7,7 @@ import { motion } from 'framer-motion';
 const features = [
   {
     icon: Layers,
-    title: "FIFA-Approved Turf",
+    title: "Professional Turf",
     desc: "Professional-grade artificial turf providing consistent ball roll, proper traction, and a cushioned base reducing impact injuries.",
     detail: "Quality matters enormously for safety."
   },
@@ -38,7 +38,7 @@ const features = [
   {
     icon: Clock,
     title: "Extended Hours",
-    desc: "Open 5 AM - 11 PM daily. Train before work, after school, or late night. Member 24/7 access available.",
+    desc: "Open 5 AM - 11 PM daily. Train before work, after school, or late night. Open 5AM-11PM daily.",
     detail: "Train on your schedule."
   }
 ];

@@ -43,9 +43,9 @@ const RentalsIntro: React.FC = () => {
                      <h3 className="font-bold text-dfw-navy dark:text-white uppercase text-sm mb-4 relative z-10">Rental Quick Facts</h3>
                      <ul className="space-y-3 text-sm text-gray-600 dark:text-gray-400 relative z-10">
                         <li className="flex gap-3"><span className="font-bold text-dfw-red min-w-[100px]">Sports:</span> Cricket, Badminton, Soccer, Dodgeball</li>
-                        <li className="flex gap-3"><span className="font-bold text-dfw-red min-w-[100px]">Pricing:</span> Starting from $20/hour</li>
+                        <li className="flex gap-3"><span className="font-bold text-dfw-red min-w-[100px]">Pricing:</span> Check RunSwift for rates</li>
                         <li className="flex gap-3"><span className="font-bold text-dfw-red min-w-[100px]">Included:</span> Facility access, Pro Equipment (Machines/Nets), Climate Control</li>
-                        <li className="flex gap-3"><span className="font-bold text-dfw-red min-w-[100px]">Booking:</span> Up to 30 days in advance via website</li>
+                        <li className="flex gap-3"><span className="font-bold text-dfw-red min-w-[100px]">Booking:</span> Online via RunSwift</li>
                      </ul>
                   </div>
                </motion.div>
@@ -85,7 +85,7 @@ const RentalsIntro: React.FC = () => {
                         </div>
                         <h3 className="text-xl font-header font-bold text-dfw-navy dark:text-white uppercase mb-2">Flexible Booking</h3>
                         <p className="text-sm text-gray-500 dark:text-gray-400 leading-relaxed">
-                           Reserve courts online 24/7 with instant confirmation. Real-time availability eliminates phone tag. Book up to 30 days in advance.
+                           Reserve courts online 24/7 with instant confirmation. Real-time availability eliminates phone tag. Check real-time availability.
                         </p>
                      </div>
                   </div>

@@ -47,7 +47,7 @@ const ServiceCards: React.FC = () => {
 
               <h3 className="text-2xl md:text-3xl font-header font-bold text-dfw-navy uppercase mb-4 md:mb-5 tracking-wide leading-tight group-hover:text-dfw-red transition-colors">Training</h3>
               <p className="text-gray-500 text-sm leading-relaxed mb-8 md:mb-10 font-medium pr-4 border-l-2 border-gray-100 pl-4">
-                One-on-one sessions with national level coaches. Master your technique with data-driven feedback and video analysis.
+                One-on-one sessions with Cricket Australia and ICC-certified coaches. Master your technique with data-driven feedback and video analysis.
               </p>
 
               <div className="flex flex-col gap-3">

@@ -53,23 +53,23 @@ const SoccerPricing: React.FC = () => {
                   className="bg-white dark:bg-white/5 rounded-xl border border-gray-200 dark:border-white/10 p-8 hover:shadow-2xl transition-all duration-300 relative group flex flex-col"
                >
                   <div className="mb-4">
-                     <h3 className="text-xl font-header font-bold text-gray-900 dark:text-white uppercase">Hourly Rental</h3>
+                     <h3 className="text-xl font-header font-bold text-gray-900 dark:text-white uppercase">Field Rental</h3>
                      <p className="text-xs font-mono text-gray-400 uppercase tracking-widest mt-1">Pay Per Session</p>
                   </div>
                   <div className="mb-8 pb-8 border-b border-gray-100 dark:border-white/10">
                      <div className="flex items-baseline gap-1">
-                        <span className="text-5xl font-header font-bold text-[#064E3B] dark:text-emerald-400">$60</span>
+                        <span className="text-5xl font-header font-bold text-[#064E3B] dark:text-emerald-400">View Rates</span>
                         <span className="text-sm text-gray-500 dark:text-gray-400 font-medium">/hr</span>
                      </div>
-                     <p className="text-xs text-gray-400 mt-2 flex items-center gap-1"><Clock size={12} /> $50/hr Off-Peak (M-F 9am-4pm)</p>
+                     <p className="text-xs text-gray-400 mt-2 flex items-center gap-1"><Clock size={12} /> Check RunSwift for real-time pricing</p>
                   </div>
                   <ul className="space-y-4 mb-8 flex-grow">
                      <li className="flex gap-3 text-sm text-gray-600 dark:text-gray-300"><Check size={16} className="text-emerald-600 dark:text-emerald-400" /> 1 Indoor Field</li>
-                     <li className="flex gap-3 text-sm text-gray-600 dark:text-gray-300"><Check size={16} className="text-emerald-600 dark:text-emerald-400" /> FIFA Artificial Turf</li>
+                     <li className="flex gap-3 text-sm text-gray-600 dark:text-gray-300"><Check size={16} className="text-emerald-600 dark:text-emerald-400" /> Professional Artificial Turf</li>
                      <li className="flex gap-3 text-sm text-gray-600 dark:text-gray-300"><Check size={16} className="text-emerald-600 dark:text-emerald-400" /> Goal Systems Included</li>
                      <li className="flex gap-3 text-sm text-gray-600 dark:text-gray-300"><Check size={16} className="text-emerald-600 dark:text-emerald-400" /> Up to 16 Players</li>
                   </ul>
-                  <Link href="/contact" className="w-full py-4 border-2 border-[#064E3B] dark:border-emerald-400 text-[#064E3B] dark:text-emerald-400 font-bold uppercase text-xs tracking-widest rounded-sm hover:bg-[#064E3B] hover:text-white dark:hover:bg-emerald-400 dark:hover:text-black transition-colors block text-center">Book Field Now</Link>
+                  <a href="https://book.runswiftapp.com/facilities/dfw-indoor-sports/rentals" target="_blank" rel="noopener noreferrer" className="w-full py-4 border-2 border-[#064E3B] dark:border-emerald-400 text-[#064E3B] dark:text-emerald-400 font-bold uppercase text-xs tracking-widest rounded-sm hover:bg-[#064E3B] hover:text-white dark:hover:bg-emerald-400 dark:hover:text-black transition-colors block text-center">Book Field Now</a>
                </motion.div>
 
                {/* Membership - Highlighted */}
@@ -85,7 +85,7 @@ const SoccerPricing: React.FC = () => {
 
                   <div className="mb-4 relative z-10">
                      <h3 className="text-2xl font-header font-bold text-white uppercase">Gold Membership</h3>
-                     <p className="text-xs font-mono text-emerald-300 uppercase tracking-widest mt-1">Unlimited All Sports</p>
+                     <p className="text-xs font-mono text-emerald-300 uppercase tracking-widest mt-1">Cricket + Badminton</p>
                   </div>
                   <div className="mb-8 pb-8 border-b border-emerald-800 dark:border-white/10 relative z-10">
                      <div className="flex items-baseline gap-1">
@@ -96,14 +96,14 @@ const SoccerPricing: React.FC = () => {
                   </div>
 
                   <div className="bg-white/10 p-3 rounded mb-6 border border-white/10 relative z-10">
-                     <p className="text-xs text-emerald-100 font-bold flex items-center gap-2"><Star size={12} className="text-yellow-400" /> Save $371/mo if playing 2x weekly</p>
+                     <p className="text-xs text-emerald-100 font-bold flex items-center gap-2"><Star size={12} className="text-yellow-400" /> Includes unlimited Cricket + Badminton access</p>
                   </div>
 
                   <ul className="space-y-4 mb-8 flex-grow relative z-10">
                      <li className="flex gap-3 text-sm text-emerald-50"><Check size={16} className="text-white" /> <strong className="text-white">UNLIMITED</strong> Field Bookings</li>
-                     <li className="flex gap-3 text-sm text-emerald-50"><Check size={16} className="text-white" /> Access to ALL 4 Sports</li>
-                     <li className="flex gap-3 text-sm text-emerald-50"><Check size={16} className="text-white" /> 24/7 Facility Access</li>
-                     <li className="flex gap-3 text-sm text-emerald-50"><Check size={16} className="text-white" /> 10% Pro Shop & Coaching Discount</li>
+                     <li className="flex gap-3 text-sm text-emerald-50"><Check size={16} className="text-white" /> Unlimited Cricket + Badminton</li>
+                     <li className="flex gap-3 text-sm text-emerald-50"><Check size={16} className="text-white" /> Open Daily 5AM - 11PM</li>
+                     <li className="flex gap-3 text-sm text-emerald-50"><Check size={16} className="text-white" /> 10% Store & Academy Discount</li>
                   </ul>
                   <Link href="/memberships" className="w-full py-4 bg-emerald-500 text-white font-bold uppercase text-xs tracking-widest rounded-sm hover:bg-emerald-400 transition-colors shadow-lg relative z-10 block text-center">Explore Gold Membership</Link>
                </motion.div>
@@ -118,20 +118,20 @@ const SoccerPricing: React.FC = () => {
                >
                   <div className="mb-4">
                      <h3 className="text-xl font-header font-bold text-gray-900 dark:text-white uppercase">Team Packages</h3>
-                     <p className="text-xs font-mono text-gray-400 uppercase tracking-widest mt-1">Weekly Practice Block</p>
+                     <p className="text-xs font-mono text-gray-400 uppercase tracking-widest mt-1">For Teams & Groups</p>
                   </div>
                   <div className="mb-8 pb-8 border-b border-gray-100 dark:border-white/10">
                      <div className="flex items-baseline gap-1">
-                        <span className="text-5xl font-header font-bold text-[#064E3B] dark:text-emerald-400">$800</span>
-                        <span className="text-sm text-gray-500 dark:text-gray-400 font-medium">/season</span>
+                        <span className="text-5xl font-header font-bold text-[#064E3B] dark:text-emerald-400">Contact Us</span>
+                        <span className="text-sm text-gray-500 dark:text-gray-400 font-medium"></span>
                      </div>
-                     <p className="text-xs text-gray-400 mt-2">~ $50/session (16 hours total)</p>
+                     <p className="text-xs text-gray-400 mt-2">Custom pricing for regular bookings</p>
                   </div>
                   <ul className="space-y-4 mb-8 flex-grow">
-                     <li className="flex gap-3 text-sm text-gray-600 dark:text-gray-300"><Check size={16} className="text-emerald-600 dark:text-emerald-400" /> 8-Week Commitment</li>
+                     <li className="flex gap-3 text-sm text-gray-600 dark:text-gray-300"><Check size={16} className="text-emerald-600 dark:text-emerald-400" /> Flexible Scheduling</li>
                      <li className="flex gap-3 text-sm text-gray-600 dark:text-gray-300"><Check size={16} className="text-emerald-600 dark:text-emerald-400" /> Guaranteed Weekly Slot</li>
-                     <li className="flex gap-3 text-sm text-gray-600 dark:text-gray-300"><Check size={16} className="text-emerald-600 dark:text-emerald-400" /> Priority Rescheduling</li>
-                     <li className="flex gap-3 text-sm text-gray-600 dark:text-gray-300"><Check size={16} className="text-emerald-600 dark:text-emerald-400" /> Equipment Storage Option</li>
+                     <li className="flex gap-3 text-sm text-gray-600 dark:text-gray-300"><Check size={16} className="text-emerald-600 dark:text-emerald-400" /> Goals & Equipment Included</li>
+                     <li className="flex gap-3 text-sm text-gray-600 dark:text-gray-300"><Check size={16} className="text-emerald-600 dark:text-emerald-400" /> Professional Artificial Turf</li>
                   </ul>
                   <Link href="/contact" className="w-full py-4 border-2 border-gray-200 dark:border-white/20 text-gray-600 dark:text-gray-300 font-bold uppercase text-xs tracking-widest rounded-sm hover:border-[#064E3B] hover:text-[#064E3B] dark:hover:border-emerald-400 dark:hover:text-emerald-400 transition-colors flex items-center justify-center gap-2">
                      <Users size={16} /> Request Team Quote
@@ -145,8 +145,8 @@ const SoccerPricing: React.FC = () => {
                <div>
                   <h4 className="text-xl font-header font-bold text-[#064E3B] dark:text-white uppercase mb-2">League & Tournament Pricing</h4>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm text-gray-600 dark:text-gray-400">
-                     <p><strong className="text-gray-900 dark:text-white">Leagues:</strong> $150-200 per season (8-10 weeks). Includes matches, field time, playoffs.</p>
-                     <p><strong className="text-gray-900 dark:text-white">Tournaments:</strong> $350 Full Day (8 hrs) | $200 Half Day (4 hrs). Ideal for showcases.</p>
+                     <p><strong className="text-gray-900 dark:text-white">Leagues:</strong> Contact us for current season pricing and availability.</p>
+                     <p><strong className="text-gray-900 dark:text-white">Tournaments:</strong> Contact us for tournament pricing and booking details.</p>
                   </div>
                </div>
                <Link href="/events" className="px-8 py-3 bg-white dark:bg-white/10 border border-gray-300 dark:border-white/20 text-gray-700 dark:text-white font-bold uppercase text-xs tracking-widest rounded-sm hover:border-[#064E3B] hover:text-[#064E3B] dark:hover:bg-white dark:hover:text-[#064E3B] transition-colors whitespace-nowrap flex items-center gap-2">

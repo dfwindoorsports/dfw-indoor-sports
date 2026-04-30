@@ -37,9 +37,9 @@ const AcademyCTA: React.FC = () => {
                transition={{ delay: 0.3 }}
                className="flex flex-col sm:flex-row justify-center gap-6"
             >
-               <Link href="/contact" className="px-10 py-5 bg-dfw-red text-white font-bold uppercase tracking-widest text-xs rounded-sm hover:bg-red-700 transition-colors shadow-[0_0_30px_rgba(214,40,40,0.3)] hover:shadow-[0_0_50px_rgba(214,40,40,0.5)] transform hover:-translate-y-1">
-                  Book Free Trial Session
-               </Link>
+                <a href="https://ams-app.skonnect.io/player/register?center__code=C-A144&sport=1" target="_blank" rel="noopener noreferrer" className="px-10 py-5 bg-dfw-red text-white font-bold uppercase tracking-widest text-xs rounded-sm hover:bg-red-700 transition-colors shadow-[0_0_30px_rgba(214,40,40,0.3)] hover:shadow-[0_0_50px_rgba(214,40,40,0.5)] transform hover:-translate-y-1">
+                   Register for Academy
+                </a>
                <Link href="/contact" className="px-10 py-5 border border-white/20 text-white font-bold uppercase tracking-widest text-xs rounded-sm hover:bg-white hover:text-dfw-navy transition-colors">
                   Contact Academy
                </Link>

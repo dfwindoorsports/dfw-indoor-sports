@@ -38,7 +38,7 @@ const SoccerPrograms: React.FC = () => {
                    Technical training for ages 6-17. Fundamentals (6-9), Skill Building (10-13), Advanced Tactics (14-17).
                 </p>
                 <div className="text-sm font-bold text-emerald-700 border-t border-gray-200 pt-4 flex justify-between items-center">
-                   <span>$120-150 / 8 Wks</span>
+                   <span>Contact for Pricing</span>
                    <span className="text-[10px] uppercase tracking-wider text-gray-400">Weekly</span>
                 </div>
              </div>
@@ -53,7 +53,7 @@ const SoccerPrograms: React.FC = () => {
                    One-on-one instruction. Technical skills, position training (striker/mid/defender), speed/agility.
                 </p>
                 <div className="text-sm font-bold text-emerald-700 border-t border-gray-200 pt-4 flex justify-between items-center">
-                   <span>$60-80 / Hour</span>
+                   <span>Contact for Pricing</span>
                    <span className="text-[10px] uppercase tracking-wider text-gray-400">Certified</span>
                 </div>
              </div>

@@ -74,7 +74,7 @@ export default function IrvingPage() {
         description: 'Convenient indoor sports facility for Irving and Las Colinas professionals. Specializing in corporate team building, cricket, badminton, and soccer just minutes from DFW Airport.',
         url: `${BUSINESS_INFO.url}/areas-we-serve/irving`,
         telephone: BUSINESS_INFO.contact.phone,
-        priceRange: '$25-$150',
+        priceRange: 'Contact for Rates',
         address: {
             '@type': 'PostalAddress',
             streetAddress: BUSINESS_INFO.address.street,
@@ -147,7 +147,7 @@ export default function IrvingPage() {
                     {
                         name: "Badminton",
                         icon: "🏸",
-                        price: "$10/person",
+                        price: "View Rates",
                         priceNote: "drop-in",
                         features: ["After-work focus", "Shower facilities", "Racket rentals"],
                         link: "/badminton-courts"
@@ -155,7 +155,7 @@ export default function IrvingPage() {
                     {
                         name: "Cricket",
                         icon: "🏏",
-                        price: "$25/hr",
+                        price: "View Rates",
                         priceNote: "lane rental",
                         features: ["Corporate leagues", "Pro equipment", "Team training"],
                         link: "/cricket-lanes"
@@ -163,7 +163,7 @@ export default function IrvingPage() {
                     {
                         name: "Soccer",
                         icon: "⚽",
-                        price: "$100/hr",
+                        price: "Contact Us",
                         priceNote: "field rental",
                         features: ["5-a-side", "Futsal goals", "League play"],
                         link: "/soccer-fields"

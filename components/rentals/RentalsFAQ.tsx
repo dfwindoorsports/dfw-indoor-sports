@@ -62,7 +62,7 @@ const RentalsFAQ: React.FC = () => {
                         { q: "What happens if I'm late?", a: "We hold your booking for 15 minutes. After that, it may be released to walk-ins. No refunds for missed time." },
                         { q: "Is equipment provided?", a: "Yes. Cricket includes bowling machines. Badminton includes nets. Bring your own personal gear (bats, rackets)." },
                         { q: "Can I extend my session?", a: "If the court is available, yes. Just pay the difference at the desk. During peak times, extensions may not be possible." },
-                        { q: "How far in advance can I book?", a: "You can book up to 30 days in advance. Peak times fill up 1-2 weeks ahead." },
+                        { q: "How far in advance can I book?", a: "Book online through RunSwift for real-time availability. Peak times fill up quickly—we recommend booking early." },
                         { q: "Can I bring spectators?", a: "Yes, family and friends are welcome to watch from designated areas." }
                      ].map((item, idx) => (
                         <motion.details 

@@ -32,9 +32,9 @@ const sportsData = [
     id: "soccer",
     title: "Indoor Soccer",
     subtitle: "The Beautiful Game, Year-Round",
-    desc: "Forget the rainouts and the heat. Our FIFA-grade turf offers a fast, consistent surface for technical development and high-energy 5-a-side matches.",
+    desc: "Forget the rainouts and the heat. Our professional artificial turf offers a fast, consistent surface for technical development and high-energy 5-a-side matches.",
     image: "/images/hero/soccer-hero.webp",
-    features: ["FIFA-Approved Turf", "Wall-Rebound Systems", "Climate Controlled"],
+    features: ["Professional Turf", "Wall-Rebound Systems", "Climate Controlled"],
     programs: ["Youth Development", "Adult Rec Leagues", "Team Rentals"],
     link: "/soccer-fields",
     color: "green-600"

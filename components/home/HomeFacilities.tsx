@@ -14,7 +14,7 @@ const facilities = [
   },
   { 
     title: 'Badminton Courts', 
-    desc: 'Eight BWF-regulation courts with professional flooring, proper ceiling clearance, and shadow-free lighting.',
+    desc: 'Six BWF-regulation courts with professional flooring, proper ceiling clearance, and shadow-free lighting.',
     img: '/images/hero/badminton-hero.webp',
     tag: 'BWF Approved'
   },
@@ -22,7 +22,7 @@ const facilities = [
     title: 'Soccer Fields', 
     desc: 'Climate-controlled indoor turf maintaining consistent playing surface and professional goal systems.',
     img: '/images/hero/soccer-hero.webp',
-    tag: 'FIFA Turf'
+    tag: 'Pro Turf'
   },
   { 
     title: 'Member Amenities', 

@@ -41,9 +41,9 @@ const CricketShowcase: React.FC = () => {
           </div>
 
           <div className="text-center mt-12">
-             <button className="px-8 py-4 border border-white/20 text-white font-bold uppercase tracking-widest text-xs rounded-sm hover:bg-white hover:text-[#006838] transition-all flex items-center gap-3 mx-auto group">
-                <Camera size={16} className="group-hover:text-[#006838] transition-colors" /> Schedule In-Person Tour
-             </button>
+              <a href="/contact" className="px-8 py-4 border border-white/20 text-white font-bold uppercase tracking-widest text-xs rounded-sm hover:bg-white hover:text-[#006838] transition-all flex items-center gap-3 mx-auto group">
+                 <Camera size={16} className="group-hover:text-[#006838] transition-colors" /> Schedule In-Person Tour
+              </a>
           </div>
        </div>
     </section>

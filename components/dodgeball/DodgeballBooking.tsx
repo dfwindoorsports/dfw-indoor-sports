@@ -27,14 +27,14 @@ const DodgeballBooking: React.FC = () => {
                   </div>
                   <h3 className="text-xl font-header font-bold text-[#4C1D95] dark:text-white uppercase mb-4">1. Online Booking</h3>
                   <p className="text-xs text-gray-500 dark:text-gray-400 mb-6 leading-relaxed">
-                     Instant Confirmation. Book 24/7. Best for hourly rentals. Reserve up to 30 days in advance.
+                     Instant Confirmation. Book 24/7. Best for hourly rentals. Check real-time availability.
                   </p>
                   <div className="text-left text-xs text-gray-500 dark:text-gray-400 space-y-2 mb-8 bg-white dark:bg-white/5 p-4 rounded border border-gray-100 dark:border-white/5">
                      <div className="flex gap-2"><UserPlus size={14} className="text-violet-500" /> 1. Create Profile</div>
                      <div className="flex gap-2"><Calendar size={14} className="text-violet-500" /> 2. Select Date/Time</div>
                      <div className="flex gap-2"><CreditCard size={14} className="text-violet-500" /> 3. Secure Payment</div>
                   </div>
-                  <Link href="/contact" className="w-full py-3 bg-[#4C1D95] text-white font-bold uppercase text-xs tracking-widest rounded-sm hover:bg-violet-800 transition-colors block text-center">Book Court</Link>
+                  <a href="https://book.runswiftapp.com/facilities/dfw-indoor-sports/rentals" target="_blank" rel="noopener noreferrer" className="w-full py-3 bg-[#4C1D95] text-white font-bold uppercase text-xs tracking-widest rounded-sm hover:bg-violet-800 transition-colors block text-center">Book Court</a>
                </motion.div>
 
                {/* Phone */}

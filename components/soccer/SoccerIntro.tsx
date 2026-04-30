@@ -23,14 +23,14 @@ const SoccerIntro: React.FC = () => {
                <div className="relative h-[250px] md:h-[350px] rounded-2xl overflow-hidden shadow-2xl">
                   <OptimizedImage
                      src="/images/soccer/soccer-intro-field-overview.webp"
-                     alt="Indoor 5-a-side soccer field with FIFA-approved turf at DFW Indoor Sports"
+                     alt="Indoor 5-a-side soccer field with professional artificial turf at DFW Indoor Sports"
                      fill
                      className="object-cover"
                      priority
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#064E3B]/80 via-transparent to-transparent" />
                   <div className="absolute bottom-6 left-6 right-6">
-                     <p className="text-white font-header font-bold text-xl md:text-2xl uppercase">FIFA-Approved Indoor Turf</p>
+                     <p className="text-white font-header font-bold text-xl md:text-2xl uppercase">Professional Indoor Turf</p>
                      <p className="text-white/70 text-xs font-mono uppercase tracking-widest mt-1">Climate-Controlled • Year-Round Play</p>
                   </div>
                </div>
@@ -62,7 +62,7 @@ const SoccerIntro: React.FC = () => {
                         "Indoor soccer eliminates every obstacle while providing advantages impossible outdoors."
                      </p>
                      <p>
-                        Our climate-controlled facility maintains <strong className="text-[#064E3B] dark:text-emerald-400">perfect 72°F conditions</strong> enabling year-round consistent training. FIFA-approved artificial turf delivers reliable ball roll and player traction regardless of weather. Small-sided game formats (5v5, 6v6, 7v7) maximize touches on ball—critical for technical development.
+                        Our climate-controlled facility maintains <strong className="text-[#064E3B] dark:text-emerald-400">perfect 72°F conditions</strong> enabling year-round consistent training. professional artificial turf delivers reliable ball roll and player traction regardless of weather. Small-sided game formats (5v5, 6v6, 7v7) maximize touches on ball—critical for technical development.
                      </p>
                   </div>
 
@@ -104,22 +104,22 @@ const SoccerIntro: React.FC = () => {
                            <div className="mt-1 p-2 bg-white/10 rounded group-hover/item:bg-emerald-500 transition-colors"><DollarSign size={16} className="text-white" /></div>
                            <div>
                               <span className="block font-bold text-emerald-200 uppercase text-[10px] tracking-widest mb-1">Pricing</span>
-                              <p className="font-medium">$60/hr Standard | $50/hr Off-Peak</p>
-                              <p className="text-xs text-gray-400 mt-1">Unlimited membership from $109/month</p>
+                              <p className="font-medium">View rates on RunSwift</p>
+                              <p className="text-xs text-gray-400 mt-1">GOLD membership (Cricket + Badminton) \/mo</p>
                            </div>
                         </li>
                         <li className="flex gap-4 items-start group/item">
                            <div className="mt-1 p-2 bg-white/10 rounded group-hover/item:bg-emerald-500 transition-colors"><CheckCircle2 size={16} className="text-white" /></div>
                            <div>
                               <span className="block font-bold text-emerald-200 uppercase text-[10px] tracking-widest mb-1">Field Size</span>
-                              <p className="font-medium">Configurable for 5v5, 6v6, 7v7 formats</p>
+                              <p className="font-medium">Indoor soccer field</p>
                            </div>
                         </li>
                         <li className="flex gap-4 items-start group/item">
                            <div className="mt-1 p-2 bg-white/10 rounded group-hover/item:bg-emerald-500 transition-colors"><Shield size={16} className="text-white" /></div>
                            <div>
                               <span className="block font-bold text-emerald-200 uppercase text-[10px] tracking-widest mb-1">Surface</span>
-                              <p className="font-medium">FIFA-approved artificial turf</p>
+                              <p className="font-medium">professional artificial turf</p>
                            </div>
                         </li>
                         <li className="flex gap-4 items-start group/item">
@@ -138,12 +138,12 @@ const SoccerIntro: React.FC = () => {
                         </li>
                      </ul>
 
-                     <button
-                        onClick={() => document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' })}
+                     <a
+                        href="https://book.runswiftapp.com/facilities/dfw-indoor-sports/rentals" target="_blank" rel="noopener noreferrer"
                         className="w-full mt-10 py-4 bg-emerald-500 text-white font-bold uppercase text-xs tracking-widest rounded-sm hover:bg-emerald-400 transition-colors shadow-lg relative z-10 flex items-center justify-center gap-2 group/btn"
                      >
                         Book Field Now <ArrowRight size={14} className="group-hover/btn:translate-x-1 transition-transform" />
-                     </button>
+                     </a>
                   </div>
                </motion.div>
             </div>

@@ -35,15 +35,15 @@ const MembershipsValue: React.FC = () => {
                 <div className="space-y-3 mb-6 pb-6 border-b border-gray-100 dark:border-white/10">
                    <div className="flex justify-between text-sm text-gray-500 dark:text-gray-400">
                       <span>Lane Rental (12x/mo)</span>
-                      <span>$480</span>
+                      <span>—</span>
                    </div>
                    <div className="flex justify-between text-sm text-gray-500 dark:text-gray-400">
                       <span>Bowling Machine</span>
-                      <span>$180</span>
+                      <span>—</span>
                    </div>
                    <div className="flex justify-between font-bold text-dfw-navy dark:text-white pt-2">
                       <span>Monthly Drop-In Cost</span>
-                      <span>$660</span>
+                      <span>—</span>
                    </div>
                 </div>
                 <div className="bg-green-50 dark:bg-green-900/20 p-4 rounded-sm border border-green-100 dark:border-green-900/30">
@@ -51,7 +51,7 @@ const MembershipsValue: React.FC = () => {
                       <span className="font-bold text-dfw-navy dark:text-white text-sm">Cricket Unlimited</span>
                       <span className="font-header font-bold text-2xl text-green-600 dark:text-green-400">$129</span>
                    </div>
-                   <p className="text-xs text-green-700 dark:text-green-400 font-bold uppercase tracking-wide">Save $531 / Month</p>
+                   <p className="text-xs text-green-700 dark:text-green-400 font-bold uppercase tracking-wide">Significant Monthly Savings</p>
                 </div>
              </motion.div>
 
@@ -71,15 +71,15 @@ const MembershipsValue: React.FC = () => {
                 <div className="space-y-3 mb-6 pb-6 border-b border-gray-100 dark:border-white/10">
                    <div className="flex justify-between text-sm text-gray-500 dark:text-gray-400">
                       <span>Court Rental (18 hrs)</span>
-                      <span>$450</span>
+                      <span>—</span>
                    </div>
                    <div className="flex justify-between text-sm text-gray-500 dark:text-gray-400">
                       <span>Guest Fees</span>
-                      <span>$30</span>
+                      <span>—</span>
                    </div>
                    <div className="flex justify-between font-bold text-dfw-navy dark:text-white pt-2">
                       <span>Monthly Drop-In Cost</span>
-                      <span>$480</span>
+                      <span>—</span>
                    </div>
                 </div>
                 <div className="bg-blue-50 dark:bg-blue-900/20 p-4 rounded-sm border border-blue-100 dark:border-blue-900/30">
@@ -87,7 +87,7 @@ const MembershipsValue: React.FC = () => {
                       <span className="font-bold text-dfw-navy dark:text-white text-sm">Badminton Membership</span>
                       <span className="font-header font-bold text-2xl text-blue-600 dark:text-blue-400">$70</span>
                    </div>
-                   <p className="text-xs text-blue-700 dark:text-blue-400 font-bold uppercase tracking-wide">Save $410 / Month</p>
+                   <p className="text-xs text-blue-700 dark:text-blue-400 font-bold uppercase tracking-wide">Significant Monthly Savings</p>
                 </div>
              </motion.div>
 
@@ -107,15 +107,15 @@ const MembershipsValue: React.FC = () => {
                 <div className="space-y-3 mb-6 pb-6 border-b border-gray-100 dark:border-white/10">
                    <div className="flex justify-between text-sm text-gray-500 dark:text-gray-400">
                       <span>Family Cricket (4 hrs)</span>
-                      <span>$160</span>
+                      <span>—</span>
                    </div>
                    <div className="flex justify-between text-sm text-gray-500 dark:text-gray-400">
                       <span>Badminton (4 hrs)</span>
-                      <span>$100</span>
+                      <span>—</span>
                    </div>
                    <div className="flex justify-between font-bold text-dfw-navy dark:text-white pt-2">
                       <span>Monthly Drop-In Cost</span>
-                      <span>$500+</span>
+                      <span>—</span>
                    </div>
                 </div>
                 <div className="bg-yellow-50 dark:bg-yellow-900/20 p-4 rounded-sm border border-yellow-100 dark:border-yellow-900/30">
@@ -123,7 +123,7 @@ const MembershipsValue: React.FC = () => {
                       <span className="font-bold text-dfw-navy dark:text-white text-sm">Family Gold</span>
                       <span className="font-header font-bold text-2xl text-yellow-600 dark:text-yellow-400">$129</span>
                    </div>
-                   <p className="text-xs text-yellow-700 dark:text-yellow-400 font-bold uppercase tracking-wide">Save $371 / Month</p>
+                   <p className="text-xs text-yellow-700 dark:text-yellow-400 font-bold uppercase tracking-wide">Significant Monthly Savings</p>
                 </div>
              </motion.div>
           </div>

@@ -15,7 +15,7 @@ const ContactTeam: React.FC = () => {
                 { title: "General Inquiries", email: "info@dfwindoorsports.com", desc: "Basic questions & lost/found" },
                 { title: "Membership Services", email: "memberships@dfwindoorsports.com", desc: "Billing, freezing, or upgrading" },
                 { title: "Event Planning", email: "events@dfwindoorsports.com", desc: "Corporate bookings & birthdays" },
-                { title: "Academy & Coaching", email: "coaching@dfwindoorsports.com", desc: "CricKingdom programs & schedules" },
+                { title: "Academy & Coaching", email: "info@dfwindoorsports.com", desc: "CricKingdom programs & schedules" },
                 { title: "Court Reservations", email: "bookings@dfwindoorsports.com", desc: "Rental modifications & team blocks" },
                 { title: "Management", email: "feedback@dfwindoorsports.com", desc: "Feedback, partnerships & complaints" },
              ].map((dept, i) => (

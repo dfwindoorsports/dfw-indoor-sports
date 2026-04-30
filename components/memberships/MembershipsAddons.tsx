@@ -13,10 +13,13 @@ const MembershipsAddons: React.FC = () => {
                    <span className="font-bold text-dfw-red">$49/mo</span>
                 </div>
                 <p className="text-xs text-gray-500 dark:text-gray-400 mb-4">Extend full membership benefits to your partner. Requires active primary membership.</p>
-                <ul className="text-xs text-gray-400 dark:text-gray-500 space-y-2">
+                <ul className="text-xs text-gray-400 dark:text-gray-500 space-y-2 mb-4">
                    <li className="flex gap-2"><Check size={12} className="text-green-500" /> Full Unlimited Access</li>
-                   <li className="flex gap-2"><Check size={12} className="text-green-500" /> Independent Keycard</li>
+                   <li className="flex gap-2"><Check size={12} className="text-green-500" /> Same Benefits as Primary</li>
                 </ul>
+                <a href="https://book.runswiftapp.com/facilities/dfw-indoor-sports/memberships?membershipId=1443" target="_blank" rel="noopener noreferrer" className="block w-full text-center py-2 text-xs font-bold uppercase tracking-widest border border-gray-200 dark:border-white/10 text-dfw-navy dark:text-white rounded-sm hover:bg-dfw-navy hover:text-white dark:hover:bg-white dark:hover:text-dfw-navy transition-colors">
+                   Get Add-On
+                </a>
              </div>
              <div className="bg-white dark:bg-white/5 p-6 rounded-lg border border-gray-100 dark:border-white/10 shadow-sm transition-colors">
                 <div className="flex justify-between items-start mb-4">
@@ -24,10 +27,13 @@ const MembershipsAddons: React.FC = () => {
                    <span className="font-bold text-dfw-red">$20/mo</span>
                 </div>
                 <p className="text-xs text-gray-500 dark:text-gray-400 mb-4">Per additional child (beyond 2 in Family plan, or added to Gold). Unlimited access.</p>
-                <ul className="text-xs text-gray-400 dark:text-gray-500 space-y-2">
-                   <li className="flex gap-2"><Check size={12} className="text-green-500" /> All Sports Access</li>
+                <ul className="text-xs text-gray-400 dark:text-gray-500 space-y-2 mb-4">
+                   <li className="flex gap-2"><Check size={12} className="text-green-500" /> Cricket + Badminton Access</li>
                    <li className="flex gap-2"><Check size={12} className="text-green-500" /> Youth Program Access</li>
                 </ul>
+                <a href="https://book.runswiftapp.com/facilities/dfw-indoor-sports/memberships?membershipId=1444" target="_blank" rel="noopener noreferrer" className="block w-full text-center py-2 text-xs font-bold uppercase tracking-widest border border-gray-200 dark:border-white/10 text-dfw-navy dark:text-white rounded-sm hover:bg-dfw-navy hover:text-white dark:hover:bg-white dark:hover:text-dfw-navy transition-colors">
+                   Get Add-On
+                </a>
              </div>
              <div className="bg-white dark:bg-white/5 p-6 rounded-lg border border-gray-100 dark:border-white/10 shadow-sm transition-colors">
                 <div className="flex justify-between items-start mb-4">
@@ -35,10 +41,13 @@ const MembershipsAddons: React.FC = () => {
                    <span className="font-bold text-dfw-red">$15/day</span>
                 </div>
                 <p className="text-xs text-gray-500 dark:text-gray-400 mb-4">Bring a friend to play. Valid for full day access to member's included sports.</p>
-                <ul className="text-xs text-gray-400 dark:text-gray-500 space-y-2">
+                <ul className="text-xs text-gray-400 dark:text-gray-500 space-y-2 mb-4">
                    <li className="flex gap-2"><Check size={12} className="text-green-500" /> Facility Access</li>
                    <li className="flex gap-2"><Check size={12} className="text-green-500" /> Must Accompany Member</li>
                 </ul>
+                <a href="https://book.runswiftapp.com/facilities/dfw-indoor-sports/memberships?membershipId=1445" target="_blank" rel="noopener noreferrer" className="block w-full text-center py-2 text-xs font-bold uppercase tracking-widest border border-gray-200 dark:border-white/10 text-dfw-navy dark:text-white rounded-sm hover:bg-dfw-navy hover:text-white dark:hover:bg-white dark:hover:text-dfw-navy transition-colors">
+                   Get Day Pass
+                </a>
              </div>
           </div>
        </div>

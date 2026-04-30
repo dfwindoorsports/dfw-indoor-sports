@@ -126,7 +126,7 @@ const CoachesProfiles: React.FC = () => {
                       </div>
                       <div className="prose prose-lg text-gray-500 dark:text-gray-400 mb-10 leading-relaxed font-light">
                          <p>
-                            With over 15 years of experience across India, Singapore, Japan, and the USA, Prem brings a truly global perspective as Director of Coaching Operations. He ensures coaching quality across all programs and specializes in team tactics, pace bowling mechanics, and long-term athlete development pathways.
+                             With over 15 years of experience across India, Singapore, Japan, and the USA, Prem brings a truly global perspective as Director of Coaching Operations. He ensures coaching quality across all programs and specializes in team tactics, pace bowling mechanics, and long-term athlete development pathways.
                          </p>
                       </div>
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-8 border-t border-gray-200 dark:border-white/10 pt-8">
@@ -154,7 +154,7 @@ const CoachesProfiles: React.FC = () => {
                          <img src="/images/Prem_Ahire.avif" alt="Prem Ahire" className="w-full h-full object-cover filter grayscale contrast-125 group-hover:grayscale-0 transition-all duration-700 ease-in-out" />
                          <div className="absolute bottom-0 left-0 w-full p-6 bg-gradient-to-t from-black/95 via-black/70 to-transparent z-20 text-white">
                             <div className="flex justify-between items-end border-b border-white/20 pb-4 mb-4">
-                               <div><h3 className="text-3xl font-header font-bold uppercase tracking-wide">Prem Ahire</h3><p className="text-blue-400 font-mono text-xs uppercase tracking-widest">Director of Operations</p></div>
+                               <div><h3 className="text-3xl font-header font-bold uppercase tracking-wide">Prem Ahire</h3><p className="text-blue-400 font-mono text-xs uppercase tracking-widest">Director of Coaching Operations</p></div>
                             </div>
                             <div className="grid grid-cols-2 gap-4 text-xs font-mono text-gray-300">
                                <div><span className="block text-gray-500 uppercase text-[9px]">Focus</span>Strategy</div>
@@ -182,7 +182,7 @@ const CoachesProfiles: React.FC = () => {
                          <img src="/images/Anjan_Medicherla.avif" alt="Anjan Medicherla" className="w-full h-full object-cover filter grayscale contrast-125 group-hover:grayscale-0 transition-all duration-700 ease-in-out" />
                          <div className="absolute bottom-0 left-0 w-full p-6 bg-gradient-to-t from-black/95 via-black/70 to-transparent z-20 text-white">
                             <div className="flex justify-between items-end border-b border-white/20 pb-4 mb-4">
-                               <div><h3 className="text-3xl font-header font-bold uppercase tracking-wide">Anjan Medicherla</h3><p className="text-green-400 font-mono text-xs uppercase tracking-widest">Community Lead</p></div>
+                               <div><h3 className="text-3xl font-header font-bold uppercase tracking-wide">Anjan Medicherla</h3><p className="text-green-400 font-mono text-xs uppercase tracking-widest">CricKingdom Dallas Academy Mentor</p></div>
                                <div className="px-2 py-1 border border-white/30 rounded text-[10px] font-bold tracking-widest">ICC LEVEL 2</div>
                             </div>
                             <div className="grid grid-cols-2 gap-4 text-xs font-mono text-gray-300">

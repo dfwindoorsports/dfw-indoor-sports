@@ -75,20 +75,20 @@ const Hero: React.FC = () => {
             {/* Description & Buttons */}
             <div className="flex flex-col lg:flex-row items-start lg:items-center gap-8 md:gap-20 opacity-0 animate-slide-up" style={{ animationDelay: '0.4s' }}>
               <p className="text-base md:text-xl text-gray-300 font-light max-w-xl leading-relaxed border-l-2 border-dfw-red pl-6 md:pl-8 backdrop-blur-sm">
-                50,000 sq ft of pure adrenaline. Engineered for professional cricket, badminton, and soccer. Welcome to the future of indoor sports.
+                50,000 sq ft of pure adrenaline. Engineered for professional cricket, badminton, soccer, dodgeball, volleyball, pickleball, and baseball. Welcome to the future of indoor sports.
               </p>
 
               <div className="flex flex-row flex-wrap gap-4 md:gap-5 w-full sm:w-auto">
-                <button className="group relative w-full sm:w-auto px-8 md:px-10 py-4 md:py-5 bg-dfw-red text-white text-sm font-bold uppercase tracking-widest overflow-hidden rounded-sm shadow-[0_10px_40px_-10px_rgba(214,40,40,0.6)] hover:shadow-[0_20px_60px_-10px_rgba(214,40,40,0.8)] hover:-translate-y-1 transition-all duration-300 text-center flex justify-center items-center">
+                <a href="https://book.runswiftapp.com/facilities/dfw-indoor-sports/rentals" target="_blank" rel="noopener noreferrer" className="group relative w-full sm:w-auto px-8 md:px-10 py-4 md:py-5 bg-dfw-red text-white text-sm font-bold uppercase tracking-widest overflow-hidden rounded-sm shadow-[0_10px_40px_-10px_rgba(214,40,40,0.6)] hover:shadow-[0_20px_60px_-10px_rgba(214,40,40,0.8)] hover:-translate-y-1 transition-all duration-300 text-center flex justify-center items-center">
 
                   <span className="relative z-10 flex items-center gap-3">
                     Book A Court <ChevronRight size={18} className="group-hover:translate-x-1 transition-transform" />
                   </span>
-                </button>
+                </a>
 
-                <button className="w-full sm:w-auto px-8 md:px-10 py-4 md:py-5 border border-white/20 hover:bg-white hover:text-dfw-navy text-white text-sm font-bold uppercase tracking-widest transition-all rounded-sm backdrop-blur-md hover:shadow-lg hover:-translate-y-1 text-center">
+                <a href="/academy" className="w-full sm:w-auto px-8 md:px-10 py-4 md:py-5 border border-white/20 hover:bg-white hover:text-dfw-navy text-white text-sm font-bold uppercase tracking-widest transition-all rounded-sm backdrop-blur-md hover:shadow-lg hover:-translate-y-1 text-center block">
                   View Academy
-                </button>
+                </a>
               </div>
             </div>
 
@@ -98,7 +98,7 @@ const Hero: React.FC = () => {
                 { icon: Trophy, text: "Championship Grade" },
                 { icon: Users, text: "Elite Coaching" },
                 { icon: Star, text: "Pro Facilities" },
-                { icon: Zap, text: "24/7 Access" }
+                { icon: Zap, text: "Open 18hrs Daily" }
               ].map((item, idx) => (
                 <div key={idx} className="flex items-center gap-3 md:gap-4 text-gray-400 group cursor-default hover:text-white transition-colors duration-500">
                   <div className="p-2 md:p-3 bg-white/5 rounded-lg border border-white/5 group-hover:border-dfw-red/50 group-hover:bg-dfw-red/20 group-hover:text-dfw-red transition-all duration-300 shadow-inner">

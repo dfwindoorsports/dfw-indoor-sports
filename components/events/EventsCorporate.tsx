@@ -96,7 +96,7 @@ const EventsCorporate: React.FC = () => {
                   <p className="text-gray-400 text-xs leading-relaxed mb-4 h-12">
                      Half-day multi-sport tournament. Professional refereeing, brackets, and trophies.
                   </p>
-                  <div className="text-sm font-bold text-white">From $799</div>
+                  <div className="text-sm font-bold text-white">Contact for Pricing</div>
                </motion.div>
 
                {/* Executive */}
@@ -112,7 +112,7 @@ const EventsCorporate: React.FC = () => {
                   <p className="text-gray-400 text-xs leading-relaxed mb-4 h-12">
                      Morning boardroom access, catered lunch, and afternoon competition.
                   </p>
-                  <div className="text-sm font-bold text-white">From $1,499</div>
+                  <div className="text-sm font-bold text-white">Contact for Pricing</div>
                </motion.div>
 
                {/* Department Social */}
@@ -128,7 +128,7 @@ const EventsCorporate: React.FC = () => {
                   <p className="text-gray-400 text-xs leading-relaxed mb-4 h-12">
                      Casual recreational play with food and drinks. Stress-free fun.
                   </p>
-                  <div className="text-sm font-bold text-white">From $599</div>
+                  <div className="text-sm font-bold text-white">Contact for Pricing</div>
                </motion.div>
 
                {/* Sales Incentive */}
@@ -144,7 +144,7 @@ const EventsCorporate: React.FC = () => {
                   <p className="text-gray-400 text-xs leading-relaxed mb-4 h-12">
                      High-energy competition with performance-based brackets and prizes.
                   </p>
-                  <div className="text-sm font-bold text-white">From $899</div>
+                  <div className="text-sm font-bold text-white">Contact for Pricing</div>
                </motion.div>
 
             </motion.div>

@@ -53,15 +53,15 @@ const BadmintonPricing: React.FC = () => {
                   className="bg-white dark:bg-white/5 rounded-xl border border-gray-200 dark:border-white/10 p-8 hover:shadow-2xl transition-all duration-300 relative group flex flex-col"
                >
                   <div className="mb-4">
-                     <h3 className="text-xl font-header font-bold text-gray-900 dark:text-white uppercase">Hourly Court</h3>
+                     <h3 className="text-xl font-header font-bold text-gray-900 dark:text-white uppercase">Court Rental</h3>
                      <p className="text-xs font-mono text-gray-400 uppercase tracking-widest mt-1">Pay Per Session</p>
                   </div>
                   <div className="mb-8 pb-8 border-b border-gray-100 dark:border-white/10">
                      <div className="flex items-baseline gap-1">
-                        <span className="text-5xl font-header font-bold text-[#1E3A8A] dark:text-blue-400">$25</span>
+                        <span className="text-5xl font-header font-bold text-[#1E3A8A] dark:text-blue-400">View Rates</span>
                         <span className="text-sm text-gray-500 dark:text-gray-400 font-medium">/hr</span>
                      </div>
-                     <p className="text-xs text-gray-400 mt-2 flex items-center gap-1"><Clock size={12} /> $20/hr Off-Peak (M-F 9am-4pm)</p>
+                     <p className="text-xs text-gray-400 mt-2 flex items-center gap-1"><Clock size={12} /> Check RunSwift for real-time pricing</p>
                   </div>
                   <ul className="space-y-4 mb-8 flex-grow">
                      <li className="flex gap-3 text-sm text-gray-600 dark:text-gray-300"><Check size={16} className="text-blue-600 dark:text-blue-400" /> 1 BWF Professional Court</li>
@@ -69,7 +69,7 @@ const BadmintonPricing: React.FC = () => {
                      <li className="flex gap-3 text-sm text-gray-600 dark:text-gray-300"><Check size={16} className="text-blue-600 dark:text-blue-400" /> Singles or Doubles</li>
                      <li className="flex gap-3 text-sm text-gray-600 dark:text-gray-300"><Check size={16} className="text-blue-600 dark:text-blue-400" /> Up to 6 Players</li>
                   </ul>
-                  <Link href="/contact" className="w-full py-4 border-2 border-[#1E3A8A] dark:border-blue-400 text-[#1E3A8A] dark:text-blue-400 font-bold uppercase text-xs tracking-widest rounded-sm hover:bg-[#1E3A8A] hover:text-white dark:hover:bg-blue-400 dark:hover:text-black transition-colors block text-center">Book Court</Link>
+                  <a href="https://book.runswiftapp.com/facilities/dfw-indoor-sports/rentals" target="_blank" rel="noopener noreferrer" className="w-full py-4 border-2 border-[#1E3A8A] dark:border-blue-400 text-[#1E3A8A] dark:text-blue-400 font-bold uppercase text-xs tracking-widest rounded-sm hover:bg-[#1E3A8A] hover:text-white dark:hover:bg-blue-400 dark:hover:text-black transition-colors block text-center">Book Court</a>
                </motion.div>
 
                {/* Membership - Highlighted */}
@@ -84,7 +84,7 @@ const BadmintonPricing: React.FC = () => {
                   <div className="absolute inset-0 bg-[url('/textures/carbon-fibre.png')] opacity-10 mix-blend-overlay"></div>
 
                   <div className="mb-4 relative z-10">
-                     <h3 className="text-2xl font-header font-bold text-white uppercase">Unlimited</h3>
+                     <h3 className="text-2xl font-header font-bold text-white uppercase">Badminton Unlimited</h3>
                      <p className="text-xs font-mono text-blue-300 uppercase tracking-widest mt-1">Monthly Membership</p>
                   </div>
                   <div className="mb-8 pb-8 border-b border-blue-800 dark:border-white/10 relative z-10">
@@ -92,23 +92,23 @@ const BadmintonPricing: React.FC = () => {
                         <span className="text-6xl font-header font-bold text-white">$70</span>
                         <span className="text-sm text-blue-200 font-medium">/mo</span>
                      </div>
-                     <p className="text-xs text-blue-300/80 mt-2">With 6-month commitment</p>
+                     <p className="text-xs text-blue-300/80 mt-2">Half-yearly commitment price</p>
                   </div>
 
                   <div className="bg-white/10 p-3 rounded mb-6 border border-white/10 relative z-10">
-                     <p className="text-xs text-blue-100 font-bold flex items-center gap-2"><Star size={12} className="text-yellow-400" /> Save $230/mo if playing 3x weekly</p>
+                     <p className="text-xs text-blue-100 font-bold flex items-center gap-2"><Star size={12} className="text-yellow-400" /> Monthly subscription: \/mo</p>
                   </div>
 
                   <ul className="space-y-4 mb-8 flex-grow relative z-10">
                      <li className="flex gap-3 text-sm text-blue-50"><Check size={16} className="text-white" /> <strong className="text-white">UNLIMITED</strong> Court Bookings</li>
-                     <li className="flex gap-3 text-sm text-blue-50"><Check size={16} className="text-white" /> Priority Booking Window</li>
-                     <li className="flex gap-3 text-sm text-blue-50"><Check size={16} className="text-white" /> 24/7 Facility Access</li>
+                     <li className="flex gap-3 text-sm text-blue-50"><Check size={16} className="text-white" /> Unlimited Hours of Badminton</li>
+                     <li className="flex gap-3 text-sm text-blue-50"><Check size={16} className="text-white" /> Open Daily 5AM - 11PM</li>
                      <li className="flex gap-3 text-sm text-blue-50"><Check size={16} className="text-white" /> 10% Pro Shop Discount</li>
                   </ul>
                   <Link href="/memberships" className="w-full py-4 bg-blue-500 text-white font-bold uppercase text-xs tracking-widest rounded-sm hover:bg-blue-400 transition-colors shadow-lg relative z-10 block text-center">Start Membership</Link>
                </motion.div>
 
-               {/* Gold All Sports */}
+               {/* Gold Cricket + Badminton */}
                <motion.div
                   initial={{ opacity: 0, y: 30 }}
                   whileInView={{ opacity: 1, y: 0 }}
@@ -125,13 +125,13 @@ const BadmintonPricing: React.FC = () => {
                         <span className="text-5xl font-header font-bold text-[#1E3A8A] dark:text-blue-400">$109</span>
                         <span className="text-sm text-gray-500 dark:text-gray-400 font-medium">/mo</span>
                      </div>
-                     <p className="text-xs text-gray-400 mt-2">Includes Cricket, Soccer & Dodgeball</p>
+                     <p className="text-xs text-gray-400 mt-2">Cricket + Badminton combined</p>
                   </div>
                   <ul className="space-y-4 mb-8 flex-grow">
-                     <li className="flex gap-3 text-sm text-gray-600 dark:text-gray-300"><Check size={16} className="text-blue-600 dark:text-blue-400" /> <strong className="text-[#1E3A8A] dark:text-white">Unlimited</strong> Badminton</li>
-                     <li className="flex gap-3 text-sm text-gray-600 dark:text-gray-300"><Check size={16} className="text-blue-600 dark:text-blue-400" /> Unlimited Cricket, Soccer, Dodgeball</li>
-                     <li className="flex gap-3 text-sm text-gray-600 dark:text-gray-300"><Check size={16} className="text-blue-600 dark:text-blue-400" /> Cross-Training Opportunity</li>
-                     <li className="flex gap-3 text-sm text-gray-600 dark:text-gray-300"><Check size={16} className="text-blue-600 dark:text-blue-400" /> Bring 2 Guests Monthly Free</li>
+                     <li className="flex gap-3 text-sm text-gray-600 dark:text-gray-300"><Check size={16} className="text-blue-600 dark:text-blue-400" /> <strong className="text-[#1E3A8A] dark:text-white">Badminton Unlimited</strong> Badminton</li>
+                     <li className="flex gap-3 text-sm text-gray-600 dark:text-gray-300"><Check size={16} className="text-blue-600 dark:text-blue-400" /> Unlimited Cricket Lanes</li>
+                     <li className="flex gap-3 text-sm text-gray-600 dark:text-gray-300"><Check size={16} className="text-blue-600 dark:text-blue-400" /> 10% Store Merchandise Discount</li>
+                     <li className="flex gap-3 text-sm text-gray-600 dark:text-gray-300"><Check size={16} className="text-blue-600 dark:text-blue-400" /> 10% Academy Coaching Discount</li>
                   </ul>
                   <Link href="/memberships" className="w-full py-4 border-2 border-gray-200 dark:border-white/20 text-gray-600 dark:text-gray-300 font-bold uppercase text-xs tracking-widest rounded-sm hover:border-[#1E3A8A] hover:text-[#1E3A8A] dark:hover:border-blue-400 dark:hover:text-blue-400 transition-colors flex items-center justify-center gap-2">
                      <Users size={16} /> Explore Gold

@@ -50,10 +50,10 @@ const CricketHero: React.FC = () => {
 
             {/* 3 Prominent CTAs */}
             <div className="flex flex-row flex-wrap gap-3 animate-slide-up" style={{ animationDelay: '0.2s' }}>
-               <button className="group relative px-6 py-3 bg-[#CC0000] text-white font-bold uppercase tracking-widest text-xs rounded-sm overflow-hidden shadow-[0_0_40px_rgba(204,0,0,0.4)] transition-all hover:shadow-[0_0_60px_rgba(204,0,0,0.6)] hover:-translate-y-1">
+               <a href="https://book.runswiftapp.com/facilities/dfw-indoor-sports/rentals" target="_blank" rel="noopener noreferrer" className="group relative px-6 py-3 bg-[#CC0000] text-white font-bold uppercase tracking-widest text-xs rounded-sm overflow-hidden shadow-[0_0_40px_rgba(204,0,0,0.4)] transition-all hover:shadow-[0_0_60px_rgba(204,0,0,0.6)] hover:-translate-y-1">
 
                   <span className="relative flex items-center gap-3">Book Lane Now <ChevronRight size={14} /></span>
-               </button>
+               </a>
                <button
                   onClick={() => document.getElementById('showcase')?.scrollIntoView({ behavior: 'smooth' })}
                   className="px-6 py-3 bg-white text-[#006838] font-bold uppercase tracking-widest text-xs rounded-sm hover:bg-gray-100 transition-all shadow-lg flex items-center gap-2"

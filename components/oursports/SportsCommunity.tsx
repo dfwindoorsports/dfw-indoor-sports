@@ -23,7 +23,7 @@ const SportsCommunity: React.FC = () => {
                    We know athletes don't always stick to just one thing. Sometimes you want to bat, sometimes you want to dodge.
                 </p>
                 <p className="text-gray-500 dark:text-gray-400 text-lg mb-8">
-                   Our <strong>Gold Membership ($109/mo)</strong> isn't just a pass; it's a key to the entire facility. Unlimited access to all four sports means you never have to choose.
+                   Our <strong>Gold Membership ($109/mo)</strong> isn't just a pass; it's a key to the entire facility. Unlimited access to cricket and badminton means you never have to choose.
                 </p>
                 <div className="bg-white dark:bg-white/5 p-6 rounded-lg shadow-sm border border-gray-200 dark:border-white/10 mb-8">
                    <div className="flex justify-between items-end border-b border-gray-100 dark:border-white/10 pb-4 mb-4">
@@ -32,7 +32,7 @@ const SportsCommunity: React.FC = () => {
                          <p className="font-bold text-gray-700 dark:text-gray-200">2 Sports / 2x Week</p>
                       </div>
                       <div className="text-right">
-                         <span className="text-2xl font-bold text-gray-400 line-through">$260</span>
+                         <span className="text-2xl font-bold text-gray-400 line-through">Hourly</span>
                       </div>
                    </div>
                    <div className="flex justify-between items-end">

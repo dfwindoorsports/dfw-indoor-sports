@@ -10,7 +10,7 @@ import CityTestimonial from '@/components/city/CityTestimonial'
 
 export const metadata: Metadata = createPageMetadata({
     title: 'Indoor Sports Near Dallas TX | Cricket, Badminton, Soccer Courts | 25 Min Drive',
-    description: 'Looking for indoor sports near Dallas? DFW Indoor Sports offers professional cricket lanes, badminton courts, soccer fields & dodgeball just 25 minutes away. Open 5AM-11PM. Drop-in from $25, memberships from $70/mo. Book online or call (817) 938-0808.',
+    description: 'Looking for indoor sports near Dallas? DFW Indoor Sports offers professional cricket lanes, badminton courts, soccer fields & dodgeball just 25 minutes away. Open 5AM-11PM. Memberships from \/mo. Check RunSwift for rental rates. Book online or call (817) 938-0808.',
     keywords: [
         'indoor sports near Dallas',
         'Dallas cricket facility',
@@ -33,11 +33,11 @@ const dallasFaqs = [
     },
     {
         question: 'What sports can Dallas residents play at DFW Indoor Sports?',
-        answer: 'We offer four main sports: Cricket (3 professional lanes with bowling machines), Badminton (6 Olympic-grade courts), Indoor Soccer/Futsal (full-size indoor field), and Dodgeball (dedicated courts). All facilities are climate-controlled and available year-round.',
+        answer: 'We offer seven sports: Cricket (professional lanes with bowling machines), Badminton (BWF-standard courts), Indoor Soccer/Futsal (indoor field), Dodgeball (dedicated regulation courts), plus Volleyball, Pickleball, and Baseball. All facilities are climate-controlled and available year-round.',
     },
     {
         question: 'How much does it cost to play?',
-        answer: 'Drop-in rates start at $25 per hour for court rental. Monthly memberships start at $70 for adult open play access, with family memberships available at $150. Members get unlimited access during open hours plus priority booking.',
+        answer: 'Court rental rates are available on our booking platform. Monthly memberships start at \ for badminton and \ for GOLD (cricket + badminton). Family memberships available at \/mo. Book online through RunSwift or call us.',
     },
     {
         question: 'Do I need to bring my own equipment?',
@@ -77,7 +77,7 @@ export default function DallasPage() {
         description: 'Premier indoor sports facility serving Dallas, Texas residents with professional cricket lanes, badminton courts, soccer fields, and dodgeball courts. Located just 25 minutes from downtown Dallas.',
         url: `${BUSINESS_INFO.url}/areas-we-serve/dallas`,
         telephone: BUSINESS_INFO.contact.phone,
-        priceRange: '$25-$150',
+        priceRange: 'Contact for Rates',
         address: {
             '@type': 'PostalAddress',
             streetAddress: BUSINESS_INFO.address.street,
@@ -123,7 +123,7 @@ export default function DallasPage() {
                 stats={[
                     { icon: "Car", value: "25 Min", label: "From Downtown", sublabel: "Easy Highway Drive" },
                     { icon: "Clock", value: "5 AM - 11 PM", label: "Open Daily", sublabel: "7 Days a Week" },
-                    { icon: "DollarSign", value: "$25/hr", label: "Starting Rate", sublabel: "Affordable Play" },
+                    { icon: "DollarSign", value: "View Rates", label: "Rental Rates", sublabel: "Book Online" },
                     { icon: "Phone", value: "(817) 938-0808", label: "Call to Book", sublabel: "Instant Confirmation" }
                 ]}
             />
@@ -134,7 +134,7 @@ export default function DallasPage() {
                 features={[
                     {
                         title: "Professional-Grade Facilities",
-                        description: "Our 50,000 sq ft facility isn't a converted warehouse—it's purpose-built. Cricket lanes with programmable bowling machines (40-90 mph), Olympic-spec badminton courts, and regulation futsal fields.",
+                        description: "Our 50,000 sq ft facility isn't a converted warehouse—it's purpose-built. Cricket lanes with programmable bowling machines (40-90 mph), tournament-standard badminton courts, and regulation futsal fields.",
                         icon: "Trophy"
                     },
                     {
@@ -160,23 +160,23 @@ export default function DallasPage() {
                     {
                         name: "Cricket",
                         icon: "🏏",
-                        price: "$25/hr",
+                        price: "View Rates",
                         priceNote: "per lane",
-                        features: ["3 professional lanes", "Bowling machines", "Gear included"],
+                        features: ["6 professional lanes", "Bowling machines", "Gear included"],
                         link: "/cricket-lanes"
                     },
                     {
                         name: "Badminton",
                         icon: "🏸",
-                        price: "$10/person",
+                        price: "View Rates",
                         priceNote: "open play",
-                        features: ["6 Olympic courts", "30ft ceilings", "Professional flooring"],
+                        features: ["6 tournament-standard courts", "30ft ceilings", "Professional flooring"],
                         link: "/badminton-courts"
                     },
                     {
                         name: "Soccer",
                         icon: "⚽",
-                        price: "$100/hr",
+                        price: "Contact Us",
                         priceNote: "field rental",
                         features: ["Full futsal field", "Premium turf", "Leagues available"],
                         link: "/soccer-fields"

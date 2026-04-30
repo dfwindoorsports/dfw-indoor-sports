@@ -74,7 +74,7 @@ export default function ArlingtonPage() {
         description: 'Top-rated indoor sports complex serving Arlington, Texas. Featuring cricket, badminton, soccer, and corporate events tailored for Arlington residents and businesses.',
         url: `${BUSINESS_INFO.url}/areas-we-serve/arlington`,
         telephone: BUSINESS_INFO.contact.phone,
-        priceRange: '$25-$150',
+        priceRange: 'Contact for Rates',
         address: {
             '@type': 'PostalAddress',
             streetAddress: BUSINESS_INFO.address.street,
@@ -123,7 +123,7 @@ export default function ArlingtonPage() {
                     },
                     {
                         title: "Professional Standards",
-                        description: "You're used to world-class venues like AT&T Stadium. We bring that same commitment to quality to recreational sports with our maintained turf and Olympic-standard courts.",
+                        description: "You're used to world-class venues like AT&T Stadium. We bring that same commitment to quality to recreational sports with our maintained turf and tournament-standard courts.",
                         icon: "Trophy"
                     },
                     {
@@ -139,7 +139,7 @@ export default function ArlingtonPage() {
                     {
                         name: "Cricket",
                         icon: "🏏",
-                        price: "$25/hr",
+                        price: "View Rates",
                         priceNote: "lane rental",
                         features: ["Bola bowling machines", "Full run-up area", "Video analysis ready"],
                         link: "/cricket-lanes"
@@ -147,7 +147,7 @@ export default function ArlingtonPage() {
                     {
                         name: "Badminton",
                         icon: "🏸",
-                        price: "$10/drop-in",
+                        price: "View Rates",
                         priceNote: "per person",
                         features: ["BWF standard flooring", "Glare-free lighting", "Club nights"],
                         link: "/badminton-courts"
@@ -155,7 +155,7 @@ export default function ArlingtonPage() {
                     {
                         name: "Indoor Soccer",
                         icon: "⚽",
-                        price: "$100/hr",
+                        price: "Contact Us",
                         priceNote: "full field",
                         features: ["High-quality turf", "Futsal goals", "League play"],
                         link: "/soccer-fields"

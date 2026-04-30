@@ -34,7 +34,7 @@ const InvestmentLevels: React.FC = () => {
              {/* Bronze */}
              <motion.div variants={itemVariants} className="bg-white dark:bg-white/5 p-8 rounded-lg border border-gray-200 dark:border-white/10 shadow-sm hover:border-dfw-navy dark:hover:border-white/30 transition-all relative group h-min">
                 <h3 className="font-header font-bold text-xl text-dfw-navy dark:text-white uppercase mb-2">Bronze</h3>
-                <div className="text-3xl font-bold text-gray-700 dark:text-gray-200 mb-6">$500<span className="text-xs font-normal text-gray-400 ml-1">/mo</span></div>
+                <div className="text-3xl font-bold text-gray-700 dark:text-gray-200 mb-6">Contact<span className="text-xs font-normal text-gray-400 ml-1">/mo</span></div>
                 <ul className="space-y-4 mb-8">
                    {["Homepage Logo", "Sponsor Page Profile", "Social Media (2x)", "Newsletter Banner"].map((item, i) => (
                       <li key={i} className="flex gap-3 text-xs text-gray-600 dark:text-gray-400"><Check size={14} className="text-gray-400 dark:text-gray-500" /> {item}</li>
@@ -46,7 +46,7 @@ const InvestmentLevels: React.FC = () => {
              {/* Silver */}
              <motion.div variants={itemVariants} className="bg-white dark:bg-white/5 p-8 rounded-lg border border-gray-200 dark:border-white/10 shadow-sm hover:border-dfw-navy dark:hover:border-white/30 transition-all relative group h-min">
                 <h3 className="font-header font-bold text-xl text-dfw-navy dark:text-white uppercase mb-2">Silver</h3>
-                <div className="text-3xl font-bold text-gray-700 dark:text-gray-200 mb-6">$1,000<span className="text-xs font-normal text-gray-400 ml-1">/mo</span></div>
+                <div className="text-3xl font-bold text-gray-700 dark:text-gray-200 mb-6">Contact<span className="text-xs font-normal text-gray-400 ml-1">/mo</span></div>
                 <ul className="space-y-4 mb-8">
                    <li className="flex gap-3 text-xs text-gray-900 dark:text-white font-bold"><Check size={14} className="text-dfw-navy dark:text-white" /> All Bronze Benefits</li>
                    {["1 Field/Court Board", "Marketing Screen Ad", "T-Shirt Logo (1 Prog)"].map((item, i) => (
@@ -62,7 +62,7 @@ const InvestmentLevels: React.FC = () => {
                 <div className="absolute inset-0 bg-[url('/textures/carbon-fibre.png')] opacity-20 mix-blend-overlay"></div>
                 
                 <h3 className="font-header font-bold text-2xl text-white uppercase mb-2 relative z-10">Gold</h3>
-                <div className="text-4xl font-bold text-white mb-6 relative z-10">$2,500<span className="text-xs font-normal text-gray-400 ml-1">/mo</span></div>
+                <div className="text-4xl font-bold text-white mb-6 relative z-10">Contact<span className="text-xs font-normal text-gray-400 ml-1">/mo</span></div>
                 
                 <div className="h-px w-full bg-white/10 mb-6 relative z-10"></div>
 
@@ -78,7 +78,7 @@ const InvestmentLevels: React.FC = () => {
              {/* Platinum */}
              <motion.div variants={itemVariants} className="bg-white dark:bg-white/5 p-8 rounded-lg border border-gray-200 dark:border-white/10 shadow-sm hover:border-dfw-navy dark:hover:border-white/30 transition-all relative group h-min">
                 <h3 className="font-header font-bold text-xl text-dfw-navy dark:text-white uppercase mb-2">Platinum</h3>
-                <div className="text-3xl font-bold text-gray-700 dark:text-gray-200 mb-6">$5,000+<span className="text-xs font-normal text-gray-400 ml-1">/mo</span></div>
+                <div className="text-3xl font-bold text-gray-700 dark:text-gray-200 mb-6">Contact<span className="text-xs font-normal text-gray-400 ml-1">/mo</span></div>
                 <ul className="space-y-4 mb-8">
                    <li className="flex gap-3 text-xs text-gray-900 dark:text-white font-bold"><Check size={14} className="text-dfw-navy dark:text-white" /> All Gold Benefits</li>
                    {["Category Exclusivity", "Naming Rights", "5 VIP Memberships", "Private Facility Event"].map((item, i) => (

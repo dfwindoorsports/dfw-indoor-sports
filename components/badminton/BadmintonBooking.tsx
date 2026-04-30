@@ -27,14 +27,14 @@ const BadmintonBooking: React.FC = () => {
                   </div>
                   <h3 className="text-xl font-header font-bold text-[#1E3A8A] dark:text-white uppercase mb-4">1. Book Online</h3>
                   <p className="text-xs text-gray-500 dark:text-gray-400 mb-6 leading-relaxed">
-                     Recommended. Real-time availability. Book up to 30 days in advance. Instant confirmation.
+                     Recommended. Real-time availability. Real-time availability. Instant confirmation.
                   </p>
                   <div className="text-left text-xs text-gray-500 dark:text-gray-400 space-y-2 mb-8 bg-white dark:bg-white/5 p-4 rounded border border-gray-100 dark:border-white/5">
                      <div className="flex gap-2"><UserPlus size={14} className="text-blue-500" /> 1. Create Profile</div>
                      <div className="flex gap-2"><Calendar size={14} className="text-blue-500" /> 2. Select Time</div>
                      <div className="flex gap-2"><CreditCard size={14} className="text-blue-500" /> 3. Instant Confirm</div>
                   </div>
-                  <Link href="/contact" className="w-full py-3 bg-[#1E3A8A] text-white font-bold uppercase text-xs tracking-widest rounded-sm hover:bg-blue-800 transition-colors block text-center">Reserve Court</Link>
+                  <a href="https://book.runswiftapp.com/facilities/dfw-indoor-sports/rentals" target="_blank" rel="noopener noreferrer" className="w-full py-3 bg-[#1E3A8A] text-white font-bold uppercase text-xs tracking-widest rounded-sm hover:bg-blue-800 transition-colors block text-center">Reserve Court</a>
                </motion.div>
 
                {/* Phone */}

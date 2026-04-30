@@ -33,9 +33,9 @@ const BadmintonCTA: React.FC = () => {
                transition={{ delay: 0.2 }}
                className="flex flex-col sm:flex-row justify-center gap-4 mb-12"
             >
-               <Link href="/contact" className="px-10 py-5 bg-blue-500 text-white font-bold uppercase tracking-widest text-sm rounded-sm hover:bg-blue-600 transition-colors shadow-lg">
-                  Reserve Court
-               </Link>
+                <a href="https://book.runswiftapp.com/facilities/dfw-indoor-sports/rentals" target="_blank" rel="noopener noreferrer" className="px-10 py-5 bg-blue-500 text-white font-bold uppercase tracking-widest text-sm rounded-sm hover:bg-blue-600 transition-colors shadow-lg">
+                   Reserve Court
+                </a>
                <Link href="/contact" className="px-10 py-5 border border-white/20 text-white font-bold uppercase tracking-widest text-sm rounded-sm hover:bg-white hover:text-[#1E3A8A] transition-colors">
                   Schedule Tour
                </Link>

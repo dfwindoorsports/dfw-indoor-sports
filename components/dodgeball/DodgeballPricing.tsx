@@ -41,10 +41,10 @@ const DodgeballPricing: React.FC = () => {
                 
                 <div className="mb-8 pb-8 border-b border-gray-100 dark:border-white/10">
                    <div className="flex items-baseline gap-1">
-                      <span className="text-5xl font-header font-bold text-[#4C1D95] dark:text-violet-400">$35</span>
+                      <span className="text-5xl font-header font-bold text-[#4C1D95] dark:text-violet-400">View Rates</span>
                       <span className="text-sm text-gray-500 dark:text-gray-400 font-medium">/hr</span>
                    </div>
-                   <p className="text-xs text-gray-400 mt-2">$30/hr Off-Peak (M-F 9am-4pm)</p>
+                   <p className="text-xs text-gray-400 mt-2">Check RunSwift for real-time pricing</p>
                 </div>
 
                 <ul className="space-y-4 mb-8 flex-grow">
@@ -54,7 +54,7 @@ const DodgeballPricing: React.FC = () => {
                    <li className="flex gap-3 text-sm text-gray-600 dark:text-gray-300"><Check size={16} className="text-violet-600 dark:text-violet-400" /> Spectator Seating</li>
                 </ul>
 
-                <Link href="/contact" className="w-full py-4 bg-[#4C1D95] text-white font-bold uppercase text-xs tracking-widest rounded-sm hover:bg-violet-800 transition-colors block text-center">Book Court</Link>
+                <a href="https://book.runswiftapp.com/facilities/dfw-indoor-sports/rentals" target="_blank" rel="noopener noreferrer" className="w-full py-4 bg-[#4C1D95] text-white font-bold uppercase text-xs tracking-widest rounded-sm hover:bg-violet-800 transition-colors block text-center">Book Court</a>
              </motion.div>
 
              {/* League */}
@@ -78,10 +78,10 @@ const DodgeballPricing: React.FC = () => {
                 
                 <div className="mb-8 pb-8 border-b border-gray-100 dark:border-white/10">
                    <div className="flex items-baseline gap-1">
-                      <span className="text-5xl font-header font-bold text-[#4C1D95] dark:text-violet-400">$150</span>
+                      <span className="text-5xl font-header font-bold text-[#4C1D95] dark:text-violet-400">Contact Us</span>
                       <span className="text-sm text-gray-500 dark:text-gray-400 font-medium">/player</span>
                    </div>
-                   <p className="text-xs text-gray-400 mt-2">Includes Jersey & Referee Fees</p>
+                   <p className="text-xs text-gray-400 mt-2">Contact us for current league pricing</p>
                 </div>
 
                 <ul className="space-y-4 mb-8 flex-grow">
@@ -91,7 +91,7 @@ const DodgeballPricing: React.FC = () => {
                    <li className="flex gap-3 text-sm text-gray-600 dark:text-gray-300"><Check size={16} className="text-orange-500" /> Team or Individual Sign-up</li>
                 </ul>
 
-                <Link href="/contact" className="w-full py-4 border-2 border-[#4C1D95] dark:border-violet-400 text-[#4C1D95] dark:text-violet-400 font-bold uppercase text-xs tracking-widest rounded-sm hover:bg-[#4C1D95] hover:text-white dark:hover:bg-violet-400 dark:hover:text-black transition-colors block text-center">Join League</Link>
+                <a href="https://book.runswiftapp.com/facilities/dfw-indoor-sports/rentals" target="_blank" rel="noopener noreferrer" className="w-full py-4 border-2 border-[#4C1D95] dark:border-violet-400 text-[#4C1D95] dark:text-violet-400 font-bold uppercase text-xs tracking-widest rounded-sm hover:bg-[#4C1D95] hover:text-white dark:hover:bg-violet-400 dark:hover:text-black transition-colors block text-center">Join League</a>
              </motion.div>
 
           </div>

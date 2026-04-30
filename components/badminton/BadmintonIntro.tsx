@@ -109,7 +109,7 @@ const BadmintonIntro: React.FC = () => {
                            <div className="mt-1 p-2 bg-white/10 rounded group-hover/item:bg-blue-500 transition-colors"><DollarSign size={16} className="text-white" /></div>
                            <div>
                               <span className="block font-bold text-blue-200 uppercase text-[10px] tracking-widest mb-1">Court Rates</span>
-                              <p className="font-medium">$25/hr (Peak) | $20/hr (Off-Peak)</p>
+                              <p className="font-medium">View rates on RunSwift</p>
                               <p className="text-xs text-gray-300 mt-1">Unlimited membership $70/mo</p>
                            </div>
                         </li>

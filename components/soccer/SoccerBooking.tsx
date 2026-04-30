@@ -27,14 +27,14 @@ const SoccerBooking: React.FC = () => {
                   </div>
                   <h3 className="text-xl font-header font-bold text-[#064E3B] dark:text-white uppercase mb-4">1. Online Booking</h3>
                   <p className="text-xs text-gray-500 dark:text-gray-400 mb-6 leading-relaxed">
-                     Instant Confirmation. Book 24/7. Real-time field availability. Reserve up to 30 days in advance.
+                     Instant Confirmation. Book 24/7. Real-time field availability. Check real-time availability.
                   </p>
                   <div className="text-left text-xs text-gray-500 dark:text-gray-400 space-y-2 mb-8 bg-white dark:bg-white/5 p-4 rounded border border-gray-100 dark:border-white/5">
                      <div className="flex gap-2"><UserPlus size={14} className="text-emerald-500" /> 1. Select Date & Slot</div>
                      <div className="flex gap-2"><Calendar size={14} className="text-emerald-500" /> 2. Choose Duration</div>
                      <div className="flex gap-2"><CreditCard size={14} className="text-emerald-500" /> 3. Complete Payment</div>
                   </div>
-                  <Link href="/contact" className="w-full py-3 bg-[#064E3B] text-white font-bold uppercase text-xs tracking-widest rounded-sm hover:bg-emerald-700 transition-colors block text-center">Book Field Online</Link>
+                  <a href="https://book.runswiftapp.com/facilities/dfw-indoor-sports/rentals" target="_blank" rel="noopener noreferrer" className="w-full py-3 bg-[#064E3B] text-white font-bold uppercase text-xs tracking-widest rounded-sm hover:bg-emerald-700 transition-colors block text-center">Book Field Online</a>
                </motion.div>
 
                {/* Phone */}

@@ -76,7 +76,7 @@ const MembershipsHero: React.FC = () => {
                className="mt-6 flex flex-wrap gap-4 text-xs font-mono text-gray-400"
             >
                <span className="flex items-center gap-2"><CheckCircle2 size={14} className="text-green-500" /> Unlimited Access</span>
-               <span className="flex items-center gap-2"><CheckCircle2 size={14} className="text-green-500" /> Priority Booking</span>
+               <span className="flex items-center gap-2"><CheckCircle2 size={14} className="text-green-500" /> No Court/Lane Fees</span>
                <span className="flex items-center gap-2"><CheckCircle2 size={14} className="text-green-500" /> Member-Only Events</span>
             </motion.div>
          </div>

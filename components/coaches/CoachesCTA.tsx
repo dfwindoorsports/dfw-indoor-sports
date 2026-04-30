@@ -43,12 +43,12 @@ const CoachesCTA: React.FC = () => {
           transition={{ delay: 0.3 }}
           className="flex flex-col sm:flex-row justify-center gap-6"
         >
-          <button className="px-10 py-5 bg-dfw-red text-white font-bold uppercase tracking-widest text-xs rounded-sm hover:bg-white hover:text-dfw-navy transition-all duration-300 shadow-[0_0_40px_-10px_rgba(214,40,40,0.5)]">
+          <a href="https://ams-app.skonnect.io/player/register?center__code=C-A144&sport=1" target="_blank" rel="noopener noreferrer" className="px-10 py-5 bg-dfw-red text-white font-bold uppercase tracking-widest text-xs rounded-sm hover:bg-white hover:text-dfw-navy transition-all duration-300 shadow-[0_0_40px_-10px_rgba(214,40,40,0.5)]">
             Schedule Consultation
-          </button>
-          <button className="px-10 py-5 bg-transparent border border-white/20 text-white font-bold uppercase tracking-widest text-xs rounded-sm hover:bg-white/5 transition-all">
+          </a>
+          <a href="/contact" className="px-10 py-5 bg-transparent border border-white/20 text-white font-bold uppercase tracking-widest text-xs rounded-sm hover:bg-white/5 transition-all">
             Download Prospectus
-          </button>
+          </a>
         </motion.div>
       </div>
     </section>

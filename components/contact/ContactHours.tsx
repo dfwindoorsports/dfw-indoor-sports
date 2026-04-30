@@ -35,7 +35,7 @@ const ContactHours: React.FC = () => {
                       </div>
                       <div className="flex justify-between items-center text-sm pt-2">
                          <span className="text-gray-900 font-bold uppercase text-xs tracking-wider">Member Access</span>
-                         <span className="font-bold text-white bg-green-600 px-3 py-1 rounded-full text-xs">24/7 Keycard</span>
+                         <span className="font-bold text-white bg-green-600 px-3 py-1 rounded-full text-xs">Open Daily</span>
                       </div>
                    </div>
                 </div>

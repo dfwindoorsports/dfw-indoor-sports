@@ -33,7 +33,7 @@ const BadmintonComparison: React.FC = () => {
                          { feat: "Airflow", us: "Laminar (No Draft)", them: "Turbulent" },
                          { feat: "Net Tension", us: "Pro Standard", them: "Sagging / Loose" },
                          { feat: "Booking", us: "Online Instant", them: "Phone / Walk-in" },
-                         { feat: "Access", us: "24/7 Member Access", them: "Limited Hours" }
+                         { feat: "Access", us: "Daily 5AM-11PM", them: "Limited Hours" }
                       ].map((row, i) => (
                          <tr key={i} className="hover:bg-gray-50 dark:hover:bg-white/5 transition-colors">
                             <td className="p-5 md:p-6 font-bold text-[#1E3A8A] dark:text-blue-400 text-sm">{row.feat}</td>

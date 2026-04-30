@@ -15,7 +15,7 @@ const RentalsFacilities: React.FC = () => {
                viewport={{ once: true }}
                className="text-center mb-16"
             >
-               <span className="text-dfw-red font-mono text-xs font-bold uppercase tracking-widest mb-3 block">Four Sports. World Class.</span>
+               <span className="text-dfw-red font-mono text-xs font-bold uppercase tracking-widest mb-3 block">Seven Sports. World Class.</span>
                <h2 className="text-4xl md:text-5xl font-header font-bold text-dfw-navy dark:text-white uppercase mb-6">Choose Your Arena</h2>
                <p className="text-gray-500 dark:text-gray-400 max-w-2xl mx-auto">Engineered surfaces, professional dimensions, and stadium-quality lighting.</p>
             </motion.div>
@@ -42,7 +42,7 @@ const RentalsFacilities: React.FC = () => {
                               <p className="text-sm font-mono text-gray-400 uppercase tracking-widest">International Standard</p>
                            </div>
                            <div className="text-right">
-                              <span className="block text-3xl font-bold text-dfw-red">$40<span className="text-sm text-gray-400 font-normal">/hr</span></span>
+                              <span className="block text-3xl font-bold text-dfw-red">View<span className="text-sm text-gray-400 font-normal"> Rates</span></span>
                            </div>
                         </div>
                         
@@ -88,7 +88,7 @@ const RentalsFacilities: React.FC = () => {
                               <p className="text-sm font-mono text-gray-400 uppercase tracking-widest">BWF Regulation</p>
                            </div>
                            <div className="text-right">
-                              <span className="block text-3xl font-bold text-blue-600 dark:text-blue-400">$25<span className="text-sm text-gray-400 font-normal">/hr</span></span>
+                              <span className="block text-3xl font-bold text-blue-600 dark:text-blue-400">View<span className="text-sm text-gray-400 font-normal"> Rates</span></span>
                            </div>
                         </div>
                         
@@ -134,12 +134,12 @@ const RentalsFacilities: React.FC = () => {
                   >
                      <div className="flex justify-between items-start mb-4">
                         <div className="p-2 bg-green-50 dark:bg-green-900/30 text-green-600 dark:text-green-400 rounded-md group-hover:bg-green-600 group-hover:text-white transition-colors"><Activity size={24} /></div>
-                        <span className="font-bold text-dfw-navy dark:text-white">$60<span className="text-xs font-normal text-gray-400">/hr</span></span>
+                        <span className="font-bold text-dfw-navy dark:text-white">View<span className="text-xs font-normal text-gray-400"> Rates</span></span>
                      </div>
                      <h4 className="font-header font-bold text-xl text-dfw-navy dark:text-white uppercase mb-2">Indoor Soccer</h4>
-                     <p className="text-sm text-gray-500 dark:text-gray-400 mb-4 h-16 leading-relaxed">FIFA-approved artificial turf. Configurable for 5v5, 6v6, or 7v7. Perfect for team training or small-sided games.</p>
+                     <p className="text-sm text-gray-500 dark:text-gray-400 mb-4 h-16 leading-relaxed">professional artificial turf. Configurable for 5v5, 6v6, or 7v7. Perfect for team training or small-sided games.</p>
                      <ul className="text-xs font-bold text-gray-400 space-y-2 mb-6">
-                        <li className="flex items-center gap-2"><CheckCircle2 size={12} className="text-green-500" /> FIFA Turf Surface</li>
+                        <li className="flex items-center gap-2"><CheckCircle2 size={12} className="text-green-500" /> Professional Turf Surface</li>
                         <li className="flex items-center gap-2"><CheckCircle2 size={12} className="text-green-500" /> Regulation Goals</li>
                      </ul>
                      <Link href="/soccer-fields" className="block w-full py-2 border border-gray-200 dark:border-white/20 text-gray-600 dark:text-gray-300 font-bold uppercase text-[10px] tracking-widest rounded-sm hover:bg-green-600 hover:text-white hover:border-green-600 transition-colors text-center">Check Availability</Link>
@@ -155,7 +155,7 @@ const RentalsFacilities: React.FC = () => {
                   >
                      <div className="flex justify-between items-start mb-4">
                         <div className="p-2 bg-purple-50 dark:bg-purple-900/30 text-purple-600 dark:text-purple-400 rounded-md"><Users size={24} /></div>
-                        <span className="font-bold text-dfw-navy dark:text-white">$35<span className="text-xs font-normal text-gray-400">/hr</span></span>
+                        <span className="font-bold text-dfw-navy dark:text-white">View<span className="text-xs font-normal text-gray-400"> Rates</span></span>
                      </div>
                      <h4 className="font-header font-bold text-xl text-dfw-navy dark:text-white uppercase mb-2">Dodgeball</h4>
                      <p className="text-sm text-gray-500 dark:text-gray-400 mb-4 h-16 leading-relaxed">The ultimate group activity. Regulation courts with center lines. We provide all balls and safety gear for instant fun.</p>

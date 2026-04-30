@@ -72,7 +72,7 @@ const HomeEvents: React.FC = () => {
                      </div>
                      <h3 className="text-xl font-header font-bold text-dfw-navy dark:text-white uppercase mb-3">Birthday Parties</h3>
                      <p className="text-sm text-gray-500 dark:text-gray-400 mb-6 leading-relaxed">
-                        Sports-themed parties kids remember. Cricket, Dodgeball, or Multi-sport packages from $299. We handle the chaos.
+                        Sports-themed parties kids remember. Cricket, Dodgeball, or Multi-sport packages available. Contact us for pricing. We handle the chaos.
                      </p>
                      <span className="text-purple-600 dark:text-purple-400 font-bold text-xs uppercase tracking-widest border-b border-purple-200 dark:border-purple-800 pb-1">View Packages</span>
                   </motion.div>

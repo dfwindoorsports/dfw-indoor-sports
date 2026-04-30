@@ -45,7 +45,7 @@ const soccerFaqs = [
   },
   {
     question: 'Can I book the field for team practice?',
-    answer: 'Absolutely! Field rental is $100/hour for the full field. Many teams book recurring weekly slots for practice. We offer discounted rates for regular bookings—contact us for team pricing.',
+    answer: 'Absolutely! Check RunSwift for current field rental rates and availability. Many teams book recurring weekly slots for practice. Contact us for team pricing and recurring booking options.',
   },
   {
     question: 'What footwear is required?',

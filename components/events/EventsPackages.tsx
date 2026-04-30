@@ -71,7 +71,7 @@ const EventsPackages: React.FC = () => {
                   <div className="absolute top-0 left-0 w-full h-1 bg-gray-200 dark:bg-white/20 group-hover:bg-blue-500 transition-colors"></div>
                   <h3 className="text-xl font-header font-bold text-dfw-navy dark:text-white uppercase mb-2">Basic Sports</h3>
                   <div className="flex items-baseline gap-1 mb-6">
-                     <span className="text-4xl font-header font-bold text-dfw-navy dark:text-white">$299</span>
+                     <span className="text-4xl font-header font-bold text-dfw-navy dark:text-white">Contact Us</span>
                      <span className="text-xs text-gray-400 font-bold uppercase">/ 12 Kids</span>
                   </div>
 
@@ -102,7 +102,7 @@ const EventsPackages: React.FC = () => {
 
                   <h3 className="text-xl font-header font-bold text-white uppercase mb-2 relative z-10">Deluxe Multi-Sport</h3>
                   <div className="flex items-baseline gap-1 mb-6 relative z-10">
-                     <span className="text-4xl font-header font-bold text-white">$449</span>
+                     <span className="text-4xl font-header font-bold text-white">Contact Us</span>
                      <span className="text-xs text-gray-400 font-bold uppercase">/ 15 Kids</span>
                   </div>
 
@@ -131,7 +131,7 @@ const EventsPackages: React.FC = () => {
                   <div className="absolute top-0 left-0 w-full h-1 bg-gray-200 dark:bg-white/20 group-hover:bg-green-500 transition-colors"></div>
                   <h3 className="text-xl font-header font-bold text-dfw-navy dark:text-white uppercase mb-2">Ultimate Bash</h3>
                   <div className="flex items-baseline gap-1 mb-6">
-                     <span className="text-4xl font-header font-bold text-dfw-navy dark:text-white">$649</span>
+                     <span className="text-4xl font-header font-bold text-dfw-navy dark:text-white">Contact Us</span>
                      <span className="text-xs text-gray-400 font-bold uppercase">/ 20 Kids</span>
                   </div>
 
@@ -160,19 +160,19 @@ const EventsPackages: React.FC = () => {
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-16 text-center">
                <div className="bg-white dark:bg-white/5 p-4 rounded border border-gray-100 dark:border-white/10">
                   <p className="text-[10px] font-bold uppercase text-gray-400 mb-1">Extra Kid</p>
-                  <p className="text-dfw-navy dark:text-white font-bold">$15-25 <span className="text-xs font-normal">/ child</span></p>
+                  <p className="text-dfw-navy dark:text-white font-bold">Contact <span className="text-xs font-normal">/ child</span></p>
                </div>
                <div className="bg-white dark:bg-white/5 p-4 rounded border border-gray-100 dark:border-white/10">
                   <p className="text-[10px] font-bold uppercase text-gray-400 mb-1">Extra Time</p>
-                  <p className="text-dfw-navy dark:text-white font-bold">$75-100 <span className="text-xs font-normal">/ 30 min</span></p>
+                  <p className="text-dfw-navy dark:text-white font-bold">Contact <span className="text-xs font-normal">/ 30 min</span></p>
                </div>
                <div className="bg-white dark:bg-white/5 p-4 rounded border border-gray-100 dark:border-white/10">
                   <p className="text-[10px] font-bold uppercase text-gray-400 mb-1">Goody Bags</p>
-                  <p className="text-dfw-navy dark:text-white font-bold">$10 <span className="text-xs font-normal">/ child</span></p>
+                  <p className="text-dfw-navy dark:text-white font-bold">Contact <span className="text-xs font-normal">/ child</span></p>
                </div>
                <div className="bg-white dark:bg-white/5 p-4 rounded border border-gray-100 dark:border-white/10">
                   <p className="text-[10px] font-bold uppercase text-gray-400 mb-1">Photography</p>
-                  <p className="text-dfw-navy dark:text-white font-bold">$150 <span className="text-xs font-normal">/ session</span></p>
+                  <p className="text-dfw-navy dark:text-white font-bold">Contact <span className="text-xs font-normal">/ session</span></p>
                </div>
             </div>
          </div>

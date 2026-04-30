@@ -29,7 +29,7 @@ export const metadata: Metadata = createPageMetadata({
 const badmintonFaqs = [
   {
     question: 'What type of badminton courts do you have?',
-    answer: 'We have 6 professional BWF-standard badminton courts with proper Olympic-grade flooring, regulation net heights, and tournament-quality lighting. The courts meet international competition standards.',
+    answer: 'We have 6 professional BWF-standard badminton courts with proper tournament-standard flooring, regulation net heights, and tournament-quality lighting. The courts meet international competition standards.',
   },
   {
     question: 'Can I rent badminton rackets and shuttlecocks?',
@@ -37,7 +37,7 @@ const badmintonFaqs = [
   },
   {
     question: 'What is the difference between open play and court rental?',
-    answer: 'Open play ($10/person) gives you access to available courts on a rotating basis—great for singles or if you need playing partners. Court rental ($35/hour) reserves a dedicated court for your group, ideal for consistent play or training.',
+    answer: 'Open play gives you access to available courts on a rotating basis—great for singles or if you need playing partners. Court rental reserves a dedicated court for your group, ideal for consistent play or training. Check RunSwift for current rates.',
   },
   {
     question: 'Do you offer badminton coaching?',

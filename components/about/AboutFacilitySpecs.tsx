@@ -49,7 +49,7 @@ const AboutFacilitySpecs: React.FC = () => {
                         Designed for <br /> Performance, <br /> Built for <span className="text-dfw-red">Comfort.</span>
                      </h2>
                      <p className="text-gray-500 dark:text-gray-400 leading-relaxed text-sm mb-8 border-l-2 border-gray-200 dark:border-white/10 pl-4">
-                        50,000 square feet of purpose-built athletic excellence. From hybrid turf technology to medical-grade padding, every detail is calibrated for safety and performance.
+                        50,000 square feet of purpose-built athletic excellence. From professional turf technology to professional safety padding, every detail is calibrated for safety and performance.
                      </p>
 
                      <div className="space-y-4">
@@ -68,7 +68,7 @@ const AboutFacilitySpecs: React.FC = () => {
                            </div>
                            <div>
                               <p className="font-bold text-dfw-navy dark:text-white uppercase text-xs">Pro Lighting</p>
-                              <p className="text-xs text-gray-400">1000 Lux LED / Anti-Glare</p>
+                              <p className="text-xs text-gray-400">500 Lux LED / Anti-Glare</p>
                            </div>
                         </div>
                         <div className="flex items-center gap-4 group">
@@ -77,7 +77,7 @@ const AboutFacilitySpecs: React.FC = () => {
                            </div>
                            <div>
                               <p className="font-bold text-dfw-navy dark:text-white uppercase text-xs">Connected</p>
-                              <p className="text-xs text-gray-400">High-speed WiFi & PitchVision™</p>
+                              <p className="text-xs text-gray-400">High-speed WiFi & Video Analysis</p>
                            </div>
                         </div>
                      </div>
@@ -114,7 +114,7 @@ const AboutFacilitySpecs: React.FC = () => {
                         <div className="absolute inset-0 bg-gradient-to-t from-dfw-navy/90 to-transparent"></div>
                         <div className="absolute bottom-6 left-6 text-white">
                            <h3 className="font-header text-2xl uppercase mb-1">Badminton Hall</h3>
-                           <p className="text-xs font-mono text-gray-300">8 Courts // Pro Floor</p>
+                           <p className="text-xs font-mono text-gray-300">6 Courts // Pro Floor</p>
                         </div>
                      </motion.div>
 

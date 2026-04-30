@@ -71,13 +71,13 @@ const AcademyHero: React.FC = () => {
                transition={{ delay: 0.8 }}
                className="flex flex-row flex-wrap gap-4 mt-6"
             >
-               <button className="group relative px-6 py-3 bg-dfw-red text-white font-bold uppercase tracking-widest text-xs rounded-sm overflow-hidden shadow-[0_0_40px_rgba(214,40,40,0.4)] transition-all hover:shadow-[0_0_60px_rgba(214,40,40,0.6)] hover:-translate-y-1">
+               <a href="https://ams-app.skonnect.io/player/register?center__code=C-A144&sport=1" target="_blank" rel="noopener noreferrer" className="group relative px-6 py-3 bg-dfw-red text-white font-bold uppercase tracking-widest text-xs rounded-sm overflow-hidden shadow-[0_0_40px_rgba(214,40,40,0.4)] transition-all hover:shadow-[0_0_60px_rgba(214,40,40,0.6)] hover:-translate-y-1 inline-flex">
 
-                  <span className="relative flex items-center gap-3">Book Free Assessment <ChevronRight size={14} /></span>
-               </button>
-               <button className="px-6 py-3 border border-white/20 bg-white/5 backdrop-blur-md text-white font-bold uppercase tracking-widest text-xs rounded-sm hover:bg-white hover:text-dfw-navy transition-all flex items-center gap-3">
-                  <PlayCircle size={14} /> Watch Our Story
-               </button>
+                  <span className="relative flex items-center gap-3">Register Now <ChevronRight size={14} /></span>
+               </a>
+               <a href="/contact" className="px-6 py-3 border border-white/20 bg-white/5 backdrop-blur-md text-white font-bold uppercase tracking-widest text-xs rounded-sm hover:bg-white hover:text-dfw-navy transition-all flex items-center gap-3 inline-flex">
+                  <PlayCircle size={14} /> Contact Academy
+               </a>
             </motion.div>
          </div>
       </div>

@@ -156,6 +156,7 @@ export default function Footer() {
                   { label: 'Memberships', href: '/memberships' },
                   { label: 'Events', href: '/events' },
                   { label: 'Blog', href: '/blog' },
+                  { label: 'Partners', href: '/partners' },
                   { label: 'Areas We Serve', href: '/areas-we-serve' },
                 ].map((link, i) => (
                   <li key={i}>
@@ -190,6 +191,14 @@ export default function Footer() {
                     </Link>
                   </li>
                 ))}
+                <li>
+                  <a href="https://store.dfwindoorsports.com" target="_blank" rel="noopener noreferrer" className="group flex items-center gap-2 text-xs md:text-sm text-gray-500 hover:text-white transition-colors py-1 md:py-0">
+                    <span className="w-1 h-1 rounded-full bg-white/20 group-hover:bg-dfw-red transition-colors"></span>
+                    <span className="relative group-hover:translate-x-1 transition-transform">
+                      ProShop ↗
+                    </span>
+                  </a>
+                </li>
               </ul>
             </motion.div>
           </div>

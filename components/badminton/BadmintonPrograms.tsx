@@ -21,7 +21,7 @@ const BadmintonPrograms: React.FC = () => {
                 <h3 className="font-bold text-[#1E3A8A] text-lg uppercase mb-2">Recreational Leagues</h3>
                 <p className="text-xs text-gray-500 mb-6 h-12 leading-relaxed">Social doubles with rotating partners. Emphasis on fun and meeting people.</p>
                 <div className="text-sm font-bold text-blue-700 border-t border-gray-200 pt-4 flex justify-between items-center">
-                   <span>$120 / Season</span>
+                   <span>Contact for Pricing</span>
                    <span className="text-[10px] uppercase tracking-wider text-gray-400">Waitlist Open</span>
                 </div>
              </div>
@@ -47,7 +47,7 @@ const BadmintonPrograms: React.FC = () => {
                 <h3 className="font-bold text-[#1E3A8A] text-lg uppercase mb-2">Private Coaching</h3>
                 <p className="text-xs text-gray-500 mb-6 h-12 leading-relaxed">1-on-1 instruction. Improve grip, footwork, and smash technique.</p>
                 <div className="text-sm font-bold text-blue-700 border-t border-gray-200 pt-4 flex justify-between items-center">
-                   <span>From $50 / Hr</span>
+                   <span>Contact for Pricing</span>
                    <span className="text-[10px] uppercase tracking-wider text-gray-400">By Appt</span>
                 </div>
              </div>
@@ -60,7 +60,7 @@ const BadmintonPrograms: React.FC = () => {
                 <h3 className="font-bold text-[#1E3A8A] text-lg uppercase mb-2">Youth Programs</h3>
                 <p className="text-xs text-gray-500 mb-6 h-12 leading-relaxed">After-school clinics for ages 7-17. Build coordination and confidence.</p>
                 <div className="text-sm font-bold text-blue-700 border-t border-gray-200 pt-4 flex justify-between items-center">
-                   <span>$120 / Session</span>
+                   <span>Contact for Pricing</span>
                    <span className="text-[10px] uppercase tracking-wider text-gray-400">Seasonal</span>
                 </div>
              </div>

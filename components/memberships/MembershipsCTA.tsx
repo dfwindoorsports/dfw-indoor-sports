@@ -31,7 +31,7 @@ const MembershipsCTA: React.FC = () => {
                transition={{ delay: 0.2 }}
                className="text-gray-400 text-lg font-light mb-10 max-w-2xl mx-auto"
             >
-               Lock in current rates for 12 months. $20 Registration Fee waived for new sign-ups this week.
+               Lock in current rates for 12 months. Limited time offer for new members.
                <br />Risk-free 30-day guarantee on all new memberships.
             </motion.p>
 
@@ -41,9 +41,9 @@ const MembershipsCTA: React.FC = () => {
                transition={{ delay: 0.3 }}
                className="flex flex-col sm:flex-row justify-center gap-4"
             >
-               <Link href="/contact" className="px-10 py-5 bg-dfw-red text-white font-bold uppercase tracking-widest text-sm rounded-sm hover:bg-red-700 transition-colors shadow-[0_0_30px_rgba(214,40,40,0.4)]">
+               <a href="https://book.runswiftapp.com/facilities/dfw-indoor-sports/memberships" target="_blank" rel="noopener noreferrer" className="px-10 py-5 bg-dfw-red text-white font-bold uppercase tracking-widest text-sm rounded-sm hover:bg-red-700 transition-colors shadow-[0_0_30px_rgba(214,40,40,0.4)]">
                   Join Now Online
-               </Link>
+               </a>
                <Link href="/contact" className="px-10 py-5 border border-white/20 text-white font-bold uppercase tracking-widest text-sm rounded-sm hover:bg-white hover:text-dfw-navy transition-colors">
                   Schedule Tour
                </Link>

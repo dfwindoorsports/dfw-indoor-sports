@@ -30,7 +30,7 @@ const planoFaqs = [
     },
     {
         question: 'Why do Plano residents drive to Fort Worth for indoor sports?',
-        answer: 'Quality and Availability. While Plano has facilities, they are often overcrowded or lack specific amenities like programmable cricket bowing machines or Olympic-spec badminton flooring. We offer a spacious, premium experience.',
+        answer: 'Quality and Availability. While Plano has facilities, they are often overcrowded or lack specific amenities like programmable cricket bowing machines or tournament-standard badminton flooring. We offer a spacious, premium experience.',
     },
     {
         question: 'Do you have youth programs for kids from Plano?',
@@ -46,7 +46,7 @@ const planoFaqs = [
     },
     {
         question: 'Do you offer membership discounts for families?',
-        answer: 'Yes, our Family Membership ($150/mo) is very popular with Plano residents. It covers parents and kids, making it affordable for the whole family to play together.',
+        answer: 'Yes, our Family GOLD Membership (\/mo) is very popular with Plano residents. It covers parents and kids, making it affordable for the whole family to play together.',
     },
     {
         question: 'What are the best times to visit from Plano?',
@@ -74,7 +74,7 @@ export default function PlanoPage() {
         description: 'Premier indoor sports destination for Plano families. Specializing in youth cricket and badminton development programs. A safe, high-quality environment for sports and community.',
         url: `${BUSINESS_INFO.url}/areas-we-serve/plano`,
         telephone: BUSINESS_INFO.contact.phone,
-        priceRange: '$25-$150',
+        priceRange: 'Contact for Rates',
         address: {
             '@type': 'PostalAddress',
             streetAddress: BUSINESS_INFO.address.street,
@@ -139,7 +139,7 @@ export default function PlanoPage() {
                     {
                         name: "Cricket",
                         icon: "🏏",
-                        price: "$25/hr",
+                        price: "View Rates",
                         priceNote: "lane rental",
                         features: ["Pro bowling machines", "Youth coaching", "Tournament hosting"],
                         link: "/cricket-lanes"
@@ -147,7 +147,7 @@ export default function PlanoPage() {
                     {
                         name: "Badminton",
                         icon: "🏸",
-                        price: "$10/person",
+                        price: "View Rates",
                         priceNote: "drop-in",
                         features: ["6 Synthetic courts", "Coaching available", "Shoe rentals"],
                         link: "/badminton-courts"

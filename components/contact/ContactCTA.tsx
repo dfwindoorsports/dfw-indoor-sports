@@ -38,9 +38,9 @@ const ContactCTA: React.FC = () => {
                   </div>
                   <h3 className="font-header font-bold text-white uppercase text-xl mb-3">Ready to Play?</h3>
                   <p className="text-sm text-gray-400 mb-8 leading-relaxed">Skip the talk. Reserve your court instantly online. 24/7 system.</p>
-                  <Link href="/rentals" className="inline-flex items-center gap-2 text-xs text-white font-bold uppercase tracking-widest border-b border-green-500 pb-1 hover:text-green-500 transition-colors">
+                  <a href="https://book.runswiftapp.com/facilities/dfw-indoor-sports/rentals" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 text-xs text-white font-bold uppercase tracking-widest border-b border-green-500 pb-1 hover:text-green-500 transition-colors">
                      Book Online Now <ChevronRight size={14} />
-                  </Link>
+                  </a>
                </div>
 
                {/* Card 3 */}

@@ -130,10 +130,10 @@ const PartnersCTA: React.FC = () => {
                         <div className="relative group">
                            <select id="level" value={formData.level} onChange={handleChange} className="w-full border-b border-gray-300 dark:border-white/20 py-2 text-sm text-gray-500 dark:text-gray-400 focus:outline-none focus:border-dfw-red bg-transparent cursor-pointer dark:bg-[#0A111F]">
                               <option>Interested Level...</option>
-                              <option>Bronze ($500/mo)</option>
-                              <option>Silver ($1,000/mo)</option>
-                              <option>Gold ($2,500/mo)</option>
-                              <option>Platinum ($5,000+/mo)</option>
+                              <option>Bronze</option>
+                              <option>Silver</option>
+                              <option>Gold</option>
+                              <option>Platinum</option>
                               <option>Custom / Not Sure</option>
                            </select>
                         </div>

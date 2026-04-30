@@ -34,7 +34,7 @@ const CricketBooking: React.FC = () => {
                      <div className="flex gap-2"><Calendar size={14} className="text-[#CC0000]" /> 2. Select Slot</div>
                      <div className="flex gap-2"><CreditCard size={14} className="text-[#CC0000]" /> 3. Secure Payment</div>
                   </div>
-                  <Link href="/contact" className="w-full py-3 bg-[#CC0000] text-white font-bold uppercase text-xs tracking-widest rounded-sm hover:bg-red-700 transition-colors block text-center">Book Now</Link>
+                  <a href="https://book.runswiftapp.com/facilities/dfw-indoor-sports/rentals" target="_blank" rel="noopener noreferrer" className="w-full py-3 bg-[#CC0000] text-white font-bold uppercase text-xs tracking-widest rounded-sm hover:bg-red-700 transition-colors block text-center">Book Now</a>
                </motion.div>
 
                {/* Phone */}

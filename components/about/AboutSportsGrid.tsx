@@ -15,7 +15,7 @@ const AboutSportsGrid: React.FC = () => {
             className="text-center max-w-3xl mx-auto mb-16"
           >
              <span className="text-dfw-red font-mono text-xs font-bold uppercase tracking-widest mb-3 block">Multi-Discipline Ecosystem</span>
-             <h2 className="text-4xl md:text-5xl font-header font-bold text-dfw-navy dark:text-white uppercase mb-6">Four Sports. One Community.</h2>
+             <h2 className="text-4xl md:text-5xl font-header font-bold text-dfw-navy dark:text-white uppercase mb-6">Seven Sports. One Community.</h2>
              <p className="text-gray-500 dark:text-gray-400">Specialization without compromise. We embrace four key disciplines with professional focus.</p>
           </motion.div>
 
@@ -23,7 +23,7 @@ const AboutSportsGrid: React.FC = () => {
              {[
                 { title: "Cricket", sub: "Flagship", desc: "6 Pro Lanes, Bowling Machines, CricKingdom Academy.", icon: Target, featured: true },
                 { title: "Badminton", sub: "BWF Approved", desc: "8 Pro Courts, Anti-glare lighting, Tournament ready.", icon: Zap },
-                { title: "Soccer", sub: "FIFA Turf", desc: "Indoor turf fields for small-sided games and skills.", icon: Activity },
+                { title: "Soccer", sub: "Pro Turf", desc: "Indoor turf fields for small-sided games and skills.", icon: Activity },
                 { title: "Dodgeball", sub: "Corporate", desc: "Organized leagues and team building events.", icon: Users },
              ].map((sport, i) => (
                 <motion.div 

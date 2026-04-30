@@ -194,7 +194,7 @@ export default function IndoorCricketGuidePage() {
                             <div className="grid md:grid-cols-3 gap-6 mb-6">
                                 <div className="bg-gray-50 dark:bg-white/5 p-6 rounded-xl text-center">
                                     <p className="font-bold text-xl text-dfw-navy dark:text-white mb-2">Drop-In</p>
-                                    <p className="text-3xl font-bold text-dfw-red mb-2">$25-40</p>
+                                    <p className="text-3xl font-bold text-dfw-red mb-2">View Rates</p>
                                     <p className="text-sm text-gray-500">per hour / per lane</p>
                                 </div>
                                 <div className="bg-gray-50 dark:bg-white/5 p-6 rounded-xl text-center border-2 border-dfw-red/20">
@@ -204,7 +204,7 @@ export default function IndoorCricketGuidePage() {
                                 </div>
                                 <div className="bg-gray-50 dark:bg-white/5 p-6 rounded-xl text-center">
                                     <p className="font-bold text-xl text-dfw-navy dark:text-white mb-2">Coaching</p>
-                                    <p className="text-3xl font-bold text-dfw-red mb-2">$50-100</p>
+                                    <p className="text-3xl font-bold text-dfw-red mb-2">View Rates</p>
                                     <p className="text-sm text-gray-500">per hour / 1-on-1</p>
                                 </div>
                             </div>
@@ -265,7 +265,7 @@ export default function IndoorCricketGuidePage() {
                                     <div>
                                         <p className="font-bold text-dfw-navy dark:text-white mb-2">Key Features:</p>
                                         <ul className="space-y-1 text-gray-600 dark:text-gray-400">
-                                            <li className="flex items-center gap-2"><CheckCircle size={14} className="text-green-500" /> 3 professional cricket lanes</li>
+                                            <li className="flex items-center gap-2"><CheckCircle size={14} className="text-green-500" /> 6 professional cricket lanes</li>
                                             <li className="flex items-center gap-2"><CheckCircle size={14} className="text-green-500" /> Bowling machines included FREE</li>
                                         </ul>
                                     </div>

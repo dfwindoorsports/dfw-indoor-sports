@@ -25,8 +25,8 @@ const MembershipsComparison: React.FC = () => {
                       { feature: "Bowling Machine", bad: "N/A", cric: "Included", gold: "Included", fam: "Included" },
                       { feature: "Members Covered", bad: "1 Adult", cric: "1 Adult", gold: "1 Adult", fam: "2 Adults + 2 Kids" },
                       { feature: "Coaching Discount", bad: "---", cric: "10%", gold: "10%", fam: "10% / Student" },
-                      { feature: "24/7 Access", bad: "Yes", cric: "Yes", gold: "Yes", fam: "Yes" },
-                      { feature: "Priority Booking", bad: "Yes", cric: "Yes", gold: "Yes", fam: "Yes" },
+                      { feature: "Daily 5AM-11PM", bad: "Yes", cric: "Yes", gold: "Yes", fam: "Yes" },
+                      { feature: "No Court/Lane Fees", bad: "Yes", cric: "Yes", gold: "Yes", fam: "Yes" },
                    ].map((row, i) => (
                       <tr key={i} className={`hover:bg-gray-50 dark:hover:bg-white/5 transition-colors ${i % 2 === 0 ? 'bg-white dark:bg-[#050911]' : 'bg-[#FAFAFA] dark:bg-[#0A111F]'}`}>
                          <td className="p-4 font-medium text-gray-700 dark:text-gray-300 border-b border-gray-100 dark:border-white/5">{row.feature}</td>

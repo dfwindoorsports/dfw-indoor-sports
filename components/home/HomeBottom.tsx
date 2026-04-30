@@ -70,7 +70,7 @@ const HomeBottom: React.FC = () => {
                   <span>✓ Intl Standard Facilities</span>
                   <span>✓ Certified Coaches</span>
                   <span>✓ 500+ Active Members</span>
-                  <span>✓ 4 Sports</span>
+                  <span>✓ 7 Sports</span>
                </div>
             </div>
          </section>

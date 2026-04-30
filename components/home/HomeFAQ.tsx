@@ -7,7 +7,7 @@ import { useState } from 'react'
 const faqs = [
     {
         question: 'What sports do you offer at DFW Indoor Sports?',
-        answer: 'We offer four main sports: Indoor Cricket (3 professional lanes with bowling machines), Badminton (6 Olympic-grade BWF-standard courts), Indoor Soccer/Futsal (full-size climate-controlled turf field), and Dodgeball (dedicated courts with foam safety balls). All facilities are purpose-built and tournament-ready.',
+        answer: 'We offer seven sports: Indoor Cricket (professional lanes with bowling machines), Badminton (BWF-standard courts), Indoor Soccer/Futsal (climate-controlled turf field), Dodgeball (dedicated regulation courts), plus Volleyball, Pickleball, and Baseball. All facilities are purpose-built to professional standards.',
     },
     {
         question: 'Where are you located?',
@@ -27,11 +27,11 @@ const faqs = [
     },
     {
         question: 'Is there parking available?',
-        answer: 'Yes, we have a large free parking lot with over 100 spaces. Parking is never an issue, even during peak weekend hours. The lot is well-lit and secure.',
+        answer: 'Yes, we have a large free parking lot available for all visitors. Parking is never an issue.',
     },
     {
         question: 'How much does it cost to play?',
-        answer: 'Drop-in rates start at $25/hour for cricket lanes, $10/person for badminton open play, and $100/hour for soccer field rental. Monthly memberships start at $70 and offer unlimited access plus priority booking. Check our Memberships page for full pricing details.',
+        answer: 'Rental rates are available on our online booking platform. Monthly memberships start at \ for badminton and \ for GOLD (cricket + badminton). Family Gold membership is \/mo. Check our Memberships page for full pricing details or book through RunSwift.',
     },
     {
         question: 'Can I try before committing to a membership?',
@@ -47,11 +47,11 @@ const faqs = [
     },
     {
         question: 'Can I host a birthday party or corporate event here?',
-        answer: 'Absolutely! We offer birthday party packages starting at $299 and corporate team-building events for groups of all sizes. Our events include dedicated court time, equipment, and optional food/beverage packages. Contact us to customize your event.',
+        answer: 'Absolutely! We offer birthday parties, corporate events, and tournament hosting. Our events include customizable sports activities, dedicated party spaces, and catering options. Contact us to plan your event.',
     },
     {
         question: 'Do you offer coaching or lessons?',
-        answer: 'Yes, we have professional certified coaches on staff for cricket and badminton. We offer private 1-on-1 lessons, group clinics, and structured Academy programs. Our coaches include former national-level players with extensive teaching experience.',
+        answer: 'Yes, we have professional certified coaches on staff for cricket and badminton. We offer private 1-on-1 lessons, group clinics, and structured Academy programs. Our coaching team includes Cricket Australia Level 2 and ICC-certified professionals with international experience.',
     },
 ]
 

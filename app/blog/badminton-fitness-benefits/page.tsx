@@ -177,7 +177,7 @@ export default function BadmintonFitnessBenefitsPage() {
                             <div className="bg-gradient-to-br from-dfw-navy to-gray-800 text-white p-6 rounded-xl">
                                 <div className="text-3xl font-bold text-dfw-red mb-2">Step 2</div>
                                 <h3 className="font-bold uppercase mb-2">Book a Court</h3>
-                                <p className="text-sm text-gray-300">Drop-in rates start at $10/person. Or try a membership for unlimited access.</p>
+                                <p className="text-sm text-gray-300">Check RunSwift for current rates. Or try a membership for unlimited access.</p>
                             </div>
                             <div className="bg-gradient-to-br from-dfw-navy to-gray-800 text-white p-6 rounded-xl">
                                 <div className="text-3xl font-bold text-dfw-red mb-2">Step 3</div>

@@ -1,8 +1,7 @@
 /* Note: Inter and Oswald fonts are now loaded via next/font in layout.tsx for better performance */
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+@config "../tailwind.config.js";
 
 /* ═══════════════════════════════════════════════════════════════════════════
    PREMIUM DESIGN SYSTEM — DFW Indoor Sports

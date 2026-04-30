@@ -104,8 +104,8 @@ const DodgeballIntro: React.FC = () => {
                            <div className="mt-1 p-2 bg-white/10 rounded group-hover/item:bg-violet-500 transition-colors"><DollarSign size={16} className="text-white" /></div>
                            <div>
                               <span className="block font-bold text-violet-200 uppercase text-[10px] tracking-widest mb-1">Pricing</span>
-                              <p className="font-medium">$35/hr Standard | $30/hr Off-Peak</p>
-                              <p className="text-xs text-gray-400 mt-1">Party packages from $299</p>
+                              <p className="font-medium">View rates on RunSwift</p>
+                              <p className="text-xs text-gray-400 mt-1">Party packages available</p>
                            </div>
                         </li>
                         <li className="flex gap-4 items-start group/item">

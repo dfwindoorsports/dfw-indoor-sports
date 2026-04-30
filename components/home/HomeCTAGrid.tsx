@@ -31,7 +31,7 @@ const HomeCTAGrid: React.FC = () => {
                 <p className="text-gray-400 text-sm mb-8 leading-relaxed h-16">Start with a free introduction. See the facility and meet the staff with no obligation.</p>
                 <div className="flex flex-col gap-4">
                    <Link href="/contact" className="w-full flex items-center justify-center py-3 bg-white text-dfw-navy font-bold uppercase text-xs rounded-sm hover:bg-gray-200 transition-colors">Schedule Free Tour</Link>
-                   <Link href="/contact" className="w-full flex items-center justify-center py-3 border border-white/20 text-white font-bold uppercase text-xs rounded-sm hover:bg-white/10 transition-colors">Book Free Trial</Link>
+                   <Link href="/contact" className="w-full flex items-center justify-center py-3 border border-white/20 text-white font-bold uppercase text-xs rounded-sm hover:bg-white/10 transition-colors">Contact Us</Link>
                 </div>
              </motion.div>
 

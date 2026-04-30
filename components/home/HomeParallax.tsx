@@ -36,12 +36,12 @@ const HomeParallax: React.FC = () => {
                         From casual matches to professional training sessions, our courts are ready. Book your slot in seconds.
                      </p>
 
-                     <button className="group flex items-center gap-4 md:gap-6 text-white font-header font-bold uppercase tracking-wider text-sm hover:text-dfw-red transition-colors w-full md:w-auto justify-start">
+                     <a href="https://book.runswiftapp.com/facilities/dfw-indoor-sports/rentals" target="_blank" rel="noopener noreferrer" className="group flex items-center gap-4 md:gap-6 text-white font-header font-bold uppercase tracking-wider text-sm hover:text-dfw-red transition-colors w-full md:w-auto justify-start">
                         <span className="w-12 h-12 md:w-16 md:h-16 flex items-center justify-center bg-dfw-red text-white rounded-md group-hover:scale-110 transition-transform shadow-[0_0_30px_rgba(214,40,40,0.4)]">
                            <ArrowRight size={20} className="md:w-6 md:h-6" />
                         </span>
                         Reserve Now
-                     </button>
+                     </a>
                   </div>
                </div>
 
@@ -68,7 +68,7 @@ const HomeParallax: React.FC = () => {
                      </h3>
 
                      <p className="text-gray-400 font-light mb-8 md:mb-10 max-w-sm text-sm md:text-base">
-                        Train with national-level coaches and elevate your career. Structured programs for all ages.
+                        Train with CA and ICC-certified coaches and elevate your game. Structured programs for all ages.
                      </p>
 
                      <div className="flex items-center gap-2 text-white font-bold uppercase tracking-widest text-[10px] md:text-xs group-hover:text-yellow-400 transition-colors border-b border-transparent group-hover:border-yellow-400 pb-1 w-max">

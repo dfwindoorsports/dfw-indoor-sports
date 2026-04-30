@@ -155,7 +155,7 @@ const HomeIntro: React.FC = () => {
                            </div>
                            <div>
                               <span className="block text-xs font-bold text-gray-500 dark:text-gray-400 uppercase tracking-widest mb-0.5">Pricing</span>
-                              <p className="text-sm font-medium text-dfw-navy dark:text-white leading-snug">Drop-in from $25/hr, Members from $70/mo</p>
+                              <p className="text-sm font-medium text-dfw-navy dark:text-white leading-snug">Members from \/mo. Book rentals online.</p>
                            </div>
                         </li>
                         <li className="flex gap-4 items-center">

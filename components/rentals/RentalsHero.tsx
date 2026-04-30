@@ -48,7 +48,7 @@ const RentalsHero: React.FC = () => {
           transition={{ delay: 0.6 }}
           className="max-w-xl text-gray-300 text-base md:text-lg font-light leading-relaxed border-l-2 border-dfw-red pl-6 mb-6 backdrop-blur-sm"
         >
-          World-class cricket lanes, professional badminton courts, and FIFA-standard soccer fields. For the hour, it's all yours.
+          World-class cricket lanes, professional badminton courts, and professional soccer fields. For the hour, it's all yours.
         </motion.p>
 
         <motion.div
@@ -57,12 +57,14 @@ const RentalsHero: React.FC = () => {
           transition={{ delay: 0.8 }}
           className="flex flex-row flex-wrap gap-3"
         >
-          <button
-            onClick={() => document.getElementById('facilities')?.scrollIntoView({ behavior: 'smooth' })}
+          <a
+            href="https://book.runswiftapp.com/facilities/dfw-indoor-sports/rentals"
+            target="_blank"
+            rel="noopener noreferrer"
             className="px-6 py-3 bg-white text-dfw-navy font-bold uppercase tracking-widest text-xs rounded-sm hover:bg-gray-100 transition-all shadow-[0_0_30px_rgba(255,255,255,0.2)] flex items-center gap-3 group"
           >
             Book Your Court <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
-          </button>
+          </a>
           <button
             onClick={() => document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' })}
             className="px-6 py-3 border border-white/20 bg-white/5 backdrop-blur-md text-white font-bold uppercase tracking-widest text-xs rounded-sm hover:bg-white hover:text-dfw-navy transition-all flex items-center gap-3"

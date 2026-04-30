@@ -56,9 +56,9 @@ const HomeMembership: React.FC = () => {
                   </p>
                   <div className="flex flex-col gap-4 mb-10">
                      {[
-                        "Unlimited Access to 4 Sports",
-                        "Priority Booking for Your Favorite Times",
-                        "24/7 Access to Train on Your Schedule"
+                        "Unlimited Cricket + Badminton",
+                        "No Additional Court/Lane Fees",
+                        "Open Daily 5AM-11PM for Training"
                      ].map((item, i) => (
                         <div key={i} className="flex items-center gap-3">
                            <div className="w-6 h-6 rounded-full bg-green-500/20 text-green-500 flex items-center justify-center"><Check size={14} strokeWidth={3} /></div>

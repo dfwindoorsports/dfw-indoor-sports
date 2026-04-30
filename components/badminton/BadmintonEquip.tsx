@@ -23,11 +23,11 @@ const BadmintonEquip: React.FC = () => {
                   <div className="space-y-6 bg-white p-6 rounded-lg border border-gray-200 shadow-sm">
                      <div className="flex justify-between border-b border-gray-100 pb-3">
                         <span className="font-bold text-gray-700 text-sm">Racket Rental</span>
-                        <span className="text-blue-600 font-bold">$5 <span className="text-xs text-gray-400 font-normal">/ session</span></span>
+                        <span className="text-blue-600 font-bold">Free <span className="text-xs text-gray-400 font-normal">/ session</span></span>
                      </div>
                      <div className="flex justify-between border-b border-gray-100 pb-3">
                         <span className="font-bold text-gray-700 text-sm">Feather Shuttles (Tube)</span>
-                        <span className="text-blue-600 font-bold">$25-35</span>
+                        <span className="text-blue-600 font-bold">Contact Store</span>
                      </div>
                      <div className="flex justify-between border-b border-gray-100 pb-3">
                         <span className="font-bold text-gray-700 text-sm">Synthetic Shuttles (Tube)</span>
@@ -35,7 +35,7 @@ const BadmintonEquip: React.FC = () => {
                      </div>
                      <div className="flex justify-between border-b border-gray-100 pb-3">
                         <span className="font-bold text-gray-700 text-sm">Restringing Service</span>
-                        <span className="text-blue-600 font-bold">$20 <span className="text-xs text-gray-400 font-normal">+ string cost</span></span>
+                        <span className="text-blue-600 font-bold">Contact <span className="text-xs text-gray-400 font-normal">+ string cost</span></span>
                      </div>
                   </div>
 

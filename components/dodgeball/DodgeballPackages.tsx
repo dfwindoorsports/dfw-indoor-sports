@@ -41,9 +41,9 @@ const DodgeballPackages: React.FC = () => {
 
                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
                   {[
-                     { name: "Basic", price: "$299", kids: "12", time: "2 Hrs", features: ["1.5 Hrs Game Time", "1 Coach", "Party Room (30m)"] },
-                     { name: "Deluxe", price: "$449", kids: "15", time: "2.5 Hrs", features: ["2 Hrs Multi-Sport", "2 Coaches", "Pizza Lunch", "Decorations", "Medals"], highlight: true },
-                     { name: "Ultimate", price: "$649", kids: "20", time: "3 Hrs", features: ["3 Hrs Game Time", "3 Coaches", "Premium Catering", "Photos", "Custom Jersey"] }
+                     { name: "Basic", price: "Contact Us", kids: "12", time: "2 Hrs", features: ["1.5 Hrs Game Time", "1 Coach", "Party Room (30m)"] },
+                     { name: "Deluxe", price: "Contact Us", kids: "15", time: "2.5 Hrs", features: ["2 Hrs Multi-Sport", "2 Coaches", "Pizza Lunch", "Decorations", "Medals"], highlight: true },
+                     { name: "Ultimate", price: "Contact Us", kids: "20", time: "3 Hrs", features: ["3 Hrs Game Time", "3 Coaches", "Premium Catering", "Photos", "Custom Jersey"] }
                   ].map((pkg, i) => (
                      <motion.div
                         key={i}
@@ -94,7 +94,7 @@ const DodgeballPackages: React.FC = () => {
                            <div className="p-2 bg-white/10 rounded"><Users size={20} /></div>
                            <h4 className="font-bold text-lg uppercase">Standard</h4>
                         </div>
-                        <p className="text-3xl font-bold mb-2">$599</p>
+                        <p className="text-3xl font-bold mb-2">Contact Us</p>
                         <p className="text-xs text-gray-300 mb-6">15-30 Employees | 2-3 Hours</p>
                         <ul className="space-y-2 text-sm text-gray-300 mb-8">
                            <li>• Organized Tournaments</li>
@@ -109,7 +109,7 @@ const DodgeballPackages: React.FC = () => {
                            <div className="p-2 bg-orange-500 rounded text-white"><Briefcase size={20} /></div>
                            <h4 className="font-bold text-lg uppercase">Premium</h4>
                         </div>
-                        <p className="text-3xl font-bold mb-2">$899</p>
+                        <p className="text-3xl font-bold mb-2">Contact Us</p>
                         <p className="text-xs text-gray-300 mb-6">20-50 Employees | Half Day</p>
                         <ul className="space-y-2 text-sm text-gray-300 mb-8">
                            <li>• Championship Brackets</li>
@@ -125,7 +125,7 @@ const DodgeballPackages: React.FC = () => {
                            <div className="p-2 bg-white/10 rounded"><Star size={20} /></div>
                            <h4 className="font-bold text-lg uppercase">Executive</h4>
                         </div>
-                        <p className="text-3xl font-bold mb-2">$1,499</p>
+                        <p className="text-3xl font-bold mb-2">Contact Us</p>
                         <p className="text-xs text-gray-300 mb-6">10-25 Execs | Full Day</p>
                         <ul className="space-y-2 text-sm text-gray-300 mb-8">
                            <li>• Morning Meeting Room</li>

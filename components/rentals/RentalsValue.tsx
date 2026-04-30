@@ -62,7 +62,7 @@ const RentalsValue: React.FC = () => {
                      <div className="flex justify-between items-end">
                         <div>
                            <p className="text-xs text-gray-400 uppercase tracking-widest mb-1">Drop-In (2x / Week)</p>
-                           <p className="text-2xl font-mono text-gray-500 line-through">$640<span className="text-xs">/mo</span></p>
+                           <p className="text-2xl font-mono text-gray-500 line-through">Hourly<span className="text-xs">/mo</span></p>
                         </div>
                         <div className="text-right">
                            <p className="text-xs text-dfw-red uppercase tracking-widest mb-1 font-bold">Gold Member</p>
@@ -78,7 +78,7 @@ const RentalsValue: React.FC = () => {
                         ></motion.div>
                      </div>
                      <p className="text-center text-green-400 font-bold uppercase text-xs tracking-widest">
-                        You Save $531 / Month ($6,372 / Year)
+                        Significant monthly savings vs hourly rates
                      </p>
                   </div>
                </motion.div>
@@ -99,7 +99,7 @@ const RentalsValue: React.FC = () => {
                      <div className="flex justify-between items-end">
                         <div>
                            <p className="text-xs text-gray-400 uppercase tracking-widest mb-1">Drop-In (2x / Month)</p>
-                           <p className="text-4xl font-mono text-white font-bold">$75<span className="text-xs font-normal text-gray-400">/mo</span></p>
+                           <p className="text-4xl font-mono text-white font-bold">View<span className="text-xs font-normal text-gray-400">/mo</span></p>
                         </div>
                         <div className="text-right">
                            <p className="text-xs text-blue-500 uppercase tracking-widest mb-1 font-bold">Membership</p>

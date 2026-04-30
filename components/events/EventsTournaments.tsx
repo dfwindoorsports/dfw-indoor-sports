@@ -87,13 +87,13 @@ const EventsTournaments: React.FC = () => {
                               <td className="p-4 font-bold text-dfw-navy dark:text-white">Local League</td>
                               <td className="p-4 text-gray-500 dark:text-gray-400 text-xs">Up to 8</td>
                               <td className="p-4 text-gray-500 dark:text-gray-400 text-xs">1 Day</td>
-                              <td className="p-4 font-bold text-dfw-navy dark:text-white text-right">$1,200</td>
+                              <td className="p-4 font-bold text-dfw-navy dark:text-white text-right">Contact Us</td>
                            </tr>
                            <tr>
                               <td className="p-4 font-bold text-dfw-navy dark:text-white">Regional Champ</td>
                               <td className="p-4 text-gray-500 dark:text-gray-400 text-xs">12-16</td>
                               <td className="p-4 text-gray-500 dark:text-gray-400 text-xs">1-2 Days</td>
-                              <td className="p-4 font-bold text-dfw-navy dark:text-white text-right">$2,500</td>
+                              <td className="p-4 font-bold text-dfw-navy dark:text-white text-right">Contact Us</td>
                            </tr>
                            <tr>
                               <td className="p-4 font-bold text-dfw-navy dark:text-white">Multi-Day Series</td>

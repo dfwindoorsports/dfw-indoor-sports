@@ -20,7 +20,7 @@ const BadmintonShowcase: React.FC = () => {
                    <Maximize2 className="text-white drop-shadow-lg" size={32} />
                 </div>
                 <div className="absolute bottom-0 left-0 w-full p-6 bg-gradient-to-t from-black/90 to-transparent">
-                   <p className="font-bold uppercase tracking-widest text-sm flex items-center gap-2"><MapPin size={14} className="text-blue-400" /> Main Hall (8 Courts)</p>
+                   <p className="font-bold uppercase tracking-widest text-sm flex items-center gap-2"><MapPin size={14} className="text-blue-400" /> Main Hall (6 Courts)</p>
                 </div>
              </div>
 

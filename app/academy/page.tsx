@@ -38,7 +38,7 @@ const academyFaqs = [
   },
   {
     question: 'How much does coaching cost?',
-    answer: 'Private lessons start at $60/hour. Group programs range from $150-250/month depending on the program and frequency. We also offer package discounts for multi-session purchases.',
+    answer: 'Contact CricKingdom Academy for current coaching rates. We offer individual and group programs at various levels. Register through Skonnect for details on available programs and pricing.',
   },
   {
     question: 'How long are the training programs?',
@@ -58,7 +58,7 @@ const academyFaqs = [
   },
   {
     question: 'Are your coaches certified?',
-    answer: 'Yes! Our coaches include former national-level players, certified coaching professionals, and experienced instructors with backgrounds in competitive play. All undergo background checks.',
+    answer: 'Yes! Our coaches include Cricket Australia Level 2 and ICC-certified professionals with international experience and backgrounds in competitive play. All undergo background checks.',
   },
   {
     question: 'Do you prepare kids for competitive tournaments?',

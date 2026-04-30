@@ -6,7 +6,7 @@ const features = [
    { icon: Zap, title: "Machines Included", desc: "Variable speed (40-90 mph) bowling machines included FREE. Face 100+ deliveries/hr." },
    { icon: Thermometer, title: "Climate Controlled", desc: "Perfect 72°F year-round. Train through Texas summer heat without interruption." },
    { icon: Video, title: "Video Analysis", desc: "Recording stations at every lane. Tablet mounts for self-analysis or coach review." },
-   { icon: Calendar, title: "Flexible Booking", desc: "Book online 24/7. Real-time availability. Reserve up to 30 days in advance." },
+   { icon: Calendar, title: "Flexible Booking", desc: "Book online 24/7. Real-time availability. Check real-time availability." },
    { icon: ShieldCheck, title: "Gear Provided", desc: "We provide balls, helmets, pads, and gloves. Personal bat recommended but rentals available." }
 ];
 
@@ -51,7 +51,7 @@ const CricketOverview: React.FC = () => {
                            <div className="mt-1"><DollarSign size={16} className="text-red-500" /></div>
                            <div>
                               <span className="block font-bold text-green-100 uppercase text-[10px] tracking-widest mb-1">Pricing</span>
-                              <p>$40/hr (Peak) | $35/hr (Off-Peak)</p>
+                              <p>View rates on RunSwift</p>
                            </div>
                         </li>
                         <li className="flex gap-4 items-start">
@@ -77,9 +77,9 @@ const CricketOverview: React.FC = () => {
                         </li>
                      </ul>
 
-                     <button className="w-full mt-8 py-3 bg-red-600 text-white font-bold uppercase text-xs tracking-widest rounded-sm hover:bg-red-700 transition-colors shadow-lg relative z-10">
-                        Check Availability
-                     </button>
+                      <a href="https://book.runswiftapp.com/facilities/dfw-indoor-sports/rentals" target="_blank" rel="noopener noreferrer" className="w-full mt-8 py-3 bg-red-600 text-white font-bold uppercase text-xs tracking-widest rounded-sm hover:bg-red-700 transition-colors shadow-lg relative z-10 block text-center">
+                         Check Availability
+                      </a>
                   </div>
                </div>
             </div>

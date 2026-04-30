@@ -21,7 +21,7 @@ const HomeFAQ = dynamic(() => import('@/components/home/HomeFAQ'))
 
 export const metadata: Metadata = createPageMetadata({
   title: 'Premier Multi-Sport Indoor Facility in Dallas-Fort Worth',
-  description: 'DFW Indoor Sports - State-of-the-art indoor cricket lanes, badminton courts, soccer fields, and dodgeball courts. Professional coaching, memberships, and court rentals in Fort Worth, TX. Open 5AM-11PM daily.',
+  description: 'DFW Indoor Sports - State-of-the-art indoor cricket lanes, badminton courts, soccer fields, dodgeball courts, plus volleyball, pickleball, and baseball facilities. Professional coaching, memberships, and court rentals in Fort Worth, TX. Open 5AM-11PM daily.',
   keywords: [
     'indoor sports Dallas Fort Worth',
     'multi-sport facility DFW',
@@ -38,7 +38,7 @@ export const metadata: Metadata = createPageMetadata({
 const homeFaqs = [
   {
     question: 'What sports do you offer at DFW Indoor Sports?',
-    answer: 'We offer four main sports: Indoor Cricket (3 professional lanes with bowling machines), Badminton (6 Olympic-grade BWF-standard courts), Indoor Soccer/Futsal (full-size climate-controlled turf field), and Dodgeball (dedicated courts with foam safety balls). All facilities are purpose-built and tournament-ready.',
+    answer: 'We offer seven sports: Indoor Cricket (professional lanes with bowling machines), Badminton (BWF-standard courts), Indoor Soccer/Futsal (climate-controlled turf field), Dodgeball (dedicated regulation courts), plus Volleyball, Pickleball, and Baseball. All facilities are purpose-built to meet professional standards.',
   },
   {
     question: 'Where are you located?',
@@ -62,7 +62,7 @@ const homeFaqs = [
   },
   {
     question: 'How much does it cost to play?',
-    answer: 'Drop-in rates start at $25/hour for cricket lanes, $10/person for badminton open play, and $100/hour for soccer field rental. Monthly memberships start at $70 and offer unlimited access plus priority booking. Check our Memberships page for full pricing details.',
+    answer: 'Rental rates are available on our online booking platform. Monthly memberships start at \ for badminton and \ for GOLD (cricket + badminton). Family Gold membership is \/mo. Check our Memberships page for full pricing details or book through RunSwift.',
   },
   {
     question: 'Can I try before committing to a membership?',
@@ -74,15 +74,15 @@ const homeFaqs = [
   },
   {
     question: 'Do you have programs for kids?',
-    answer: 'Yes! Our Academy offers programs for ages 6 and up in cricket and badminton. We have seasonal camps, after-school programs, weekend clinics, and private coaching. Our certified coaches work with all skill levels from beginners to competitive players.',
+    answer: 'Yes! Our cricket academy, CricKingdom (by Rohit Sharma), offers structured training programs for all ages and skill levels. Our certified coaches include Cricket Australia Level 2 and ICC-certified professionals. Register through Skonnect for coaching programs.',
   },
   {
     question: 'Can I host a birthday party or corporate event here?',
-    answer: 'Absolutely! We offer birthday party packages starting at $299 and corporate team-building events for groups of all sizes. Our events include dedicated court time, equipment, and optional food/beverage packages. Contact us to customize your event.',
+    answer: 'Absolutely! We offer birthday parties, corporate events, and tournament hosting. Our events include customizable sports activities, dedicated party spaces, and catering options. Contact us to plan your event.',
   },
   {
     question: 'Do you offer coaching or lessons?',
-    answer: 'Yes, we have professional certified coaches on staff for cricket and badminton. We offer private 1-on-1 lessons, group clinics, and structured Academy programs. Our coaches include former national-level players with extensive teaching experience.',
+    answer: 'Yes, our cricket coaching is delivered through CricKingdom academy. Our coaching team includes Prashant Kamble (Cricket Australia Level 2), Prem Ahire (Director of Coaching Operations), and Anjan Medicherla (ICC-certified mentor). We offer structured training programs.',
   },
 ]
 

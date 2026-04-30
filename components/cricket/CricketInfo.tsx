@@ -25,9 +25,9 @@ const CricketInfo: React.FC = () => {
                 ))}
              </div>
              <div className="text-center mt-12">
-                <button className="px-8 py-3 bg-[#006838] text-white font-bold uppercase text-xs tracking-widest rounded-sm hover:bg-[#00502a] transition-colors shadow-lg">
-                   Book Online Now
-                </button>
+                 <a href="https://book.runswiftapp.com/facilities/dfw-indoor-sports/rentals" target="_blank" rel="noopener noreferrer" className="px-8 py-3 bg-[#006838] text-white font-bold uppercase text-xs tracking-widest rounded-sm hover:bg-[#00502a] transition-colors shadow-lg inline-block">
+                    Book Online Now
+                 </a>
              </div>
           </div>
 
@@ -70,9 +70,9 @@ const CricketInfo: React.FC = () => {
                          Elite Pathways
                       </div>
                    </div>
-                   <button className="mt-8 flex items-center gap-2 text-xs font-bold uppercase tracking-widest border-b border-white/30 pb-1 hover:text-green-200 hover:border-green-200 transition-all">
-                      View Academy Programs <ArrowRight size={14} />
-                   </button>
+                    <a href="/academy" className="mt-8 flex items-center gap-2 text-xs font-bold uppercase tracking-widest border-b border-white/30 pb-1 hover:text-green-200 hover:border-green-200 transition-all">
+                       View Academy Programs <ArrowRight size={14} />
+                    </a>
                 </div>
              </div>
           </div>

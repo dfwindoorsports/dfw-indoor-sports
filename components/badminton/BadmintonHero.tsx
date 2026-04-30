@@ -32,7 +32,7 @@ const BadmintonHero: React.FC = () => {
 
             <div className="flex flex-col md:flex-row items-start gap-4 mb-6 animate-slide-up" style={{ animationDelay: '0.1s' }}>
                <p className="max-w-xl text-gray-200 text-base md:text-lg font-light leading-relaxed border-l-2 border-blue-500 pl-6 backdrop-blur-sm">
-                  Experience the precision of Olympic-grade flooring and 30ft+ ceilings. Shadow-free lighting and draft-controlled AC for perfect shuttlecock flight.
+                  Experience the precision of tournament-standard flooring and 30ft+ ceilings. Shadow-free lighting and draft-controlled AC for perfect shuttlecock flight.
                </p>
 
                {/* Micro Stats */}
