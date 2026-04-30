@@ -8,17 +8,17 @@ import ParallaxCTA from './ParallaxCTA';
 import ServiceCards from './ServiceCards';
 
 const Home: React.FC = () => {
- return (
- <>
- <Hero />
- <Marquee />
- <FacilitiesGrid />
- <InfoSection />
- <FeatureHighlights />
- <ParallaxCTA />
- <ServiceCards />
- </>
- );
+  return (
+    <>
+      <Hero />
+      <Marquee />
+      <FacilitiesGrid />
+      <InfoSection />
+      <FeatureHighlights />
+      <ParallaxCTA />
+      <ServiceCards />
+    </>
+  );
 };
 
 export default Home;
