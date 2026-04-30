@@ -104,12 +104,16 @@ export default function HomePage() {
       />
       <HomeHero />
       <HomeIntro />
+      <div className="sport-divider" />
       <HomeFeatures />
       <HomeFacilities />
+      <div className="sport-divider" />
       <HomePrograms />
       <HomeMembership />
+      <div className="sport-divider" />
       <HomeCoaching />
       <HomeEvents />
+      <div className="sport-divider" />
       <HomeTestimonials />
       <HomeLocation />
       <HomeFAQ />

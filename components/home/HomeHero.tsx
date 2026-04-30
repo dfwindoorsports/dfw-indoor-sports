@@ -47,17 +47,20 @@ const HomeHero: React.FC = () => {
         {/* Main Content - CSS animations for faster paint */}
         <div className="relative z-10 container mx-auto px-4 md:px-6 h-full flex flex-col justify-center pt-16 md:pt-16">
           <div className="max-w-5xl">
+            {/* Energy accent line */}
+            <div className="w-20 h-[3px] bg-gradient-to-r from-dfw-red to-dfw-red/0 mb-8 animate-slide-up"></div>
+
             {/* Tagline */}
             <div className="flex items-center gap-4 mb-6 md:mb-8 animate-slide-up">
-              <div className="px-4 py-1.5 md:px-5 md:py-2 border border-white/20 bg-white/10 text-white text-[10px] md:text-xs font-bold uppercase tracking-[0.2em] rounded-full flex items-center gap-2 backdrop-blur-md">
-                <span className="text-dfw-red">♥</span> Made for Fort Worth
+              <div className="px-4 py-1.5 md:px-5 md:py-2 border border-dfw-red/40 bg-dfw-red/10 text-white text-[10px] md:text-xs font-bold uppercase tracking-[0.2em] rounded-full flex items-center gap-2 backdrop-blur-md">
+                <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse"></span> Now Open — Fort Worth, TX
               </div>
             </div>
 
             {/* Headline - starts visible for LCP, animates in */}
-            <h1 className="text-5xl sm:text-6xl md:text-8xl lg:text-9xl font-header font-bold text-white leading-[1.1] md:leading-[1.1] uppercase tracking-tighter mb-6 md:mb-10 drop-shadow-2xl animate-slide-up-delay">
+            <h1 className="text-5xl sm:text-6xl md:text-8xl lg:text-9xl font-header font-bold text-white leading-[0.95] md:leading-[0.95] uppercase tracking-tighter mb-6 md:mb-10 drop-shadow-2xl animate-slide-up-delay">
               Your Place <br />
-              <span className="text-white">To Play.</span>
+              <span className="text-stroke-red text-transparent">To Play.</span>
             </h1>
 
             {/* Description & Buttons */}
@@ -67,14 +70,13 @@ const HomeHero: React.FC = () => {
               </p>
 
               <div className="flex flex-row gap-4 md:gap-5 w-full sm:w-auto">
-                <a href="https://book.runswiftapp.com/facilities/dfw-indoor-sports/rentals" target="_blank" rel="noopener noreferrer" className="group relative whitespace-nowrap px-6 md:px-10 py-4 md:py-5 bg-dfw-red text-white text-sm font-bold uppercase tracking-widest overflow-hidden rounded-sm shadow-lg hover:shadow-dfw-red/40 hover:-translate-y-1 transition-all duration-300 text-center flex justify-center items-center">
-
+                <a href="https://book.runswiftapp.com/facilities/dfw-indoor-sports/rentals" target="_blank" rel="noopener noreferrer" className="btn-sport whitespace-nowrap px-6 md:px-10 py-4 md:py-5 text-sm rounded-sm text-center flex justify-center items-center">
                   <span className="relative z-10 flex items-center gap-3">
                     Book Your Court <ChevronRight size={18} className="group-hover:translate-x-1 transition-transform" aria-hidden="true" />
                   </span>
                 </a>
 
-                <Link href="/memberships" className="whitespace-nowrap px-6 md:px-10 py-4 md:py-5 border border-white/20 hover:bg-white hover:text-dfw-navy text-white text-sm font-bold uppercase tracking-widest transition-all rounded-sm backdrop-blur-md hover:shadow-lg hover:-translate-y-1 text-center flex items-center justify-center gap-3">
+                <Link href="/memberships" className="btn-sport-ghost whitespace-nowrap px-6 md:px-10 py-4 md:py-5 text-sm rounded-sm text-center flex items-center justify-center gap-3">
                   <Smile size={16} aria-hidden="true" /> Join the Family
                 </Link>
               </div>

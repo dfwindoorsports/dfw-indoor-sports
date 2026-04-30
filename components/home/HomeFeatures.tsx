@@ -74,7 +74,7 @@ const HomeFeatures: React.FC = () => {
    ];
 
    return (
-      <section className="bg-gray-50 dark:bg-[#050911] transition-colors duration-300 py-24 md:py-32 relative overflow-hidden">
+      <section className="bg-[#050911] transition-colors duration-300 py-24 md:py-32 relative overflow-hidden">
          {/* Texture */}
          <div className="absolute inset-0 bg-[url('/textures/cubes.png')] opacity-[0.03] dark:opacity-[0.05]"></div>
 
@@ -84,7 +84,7 @@ const HomeFeatures: React.FC = () => {
                className="text-center max-w-3xl mx-auto mb-20"
             >
                <span className="text-dfw-red font-mono text-xs font-bold uppercase tracking-widest mb-4 block">Find Your Passion</span>
-               <h2 className="text-4xl md:text-5xl font-header font-bold text-dfw-navy dark:text-white uppercase leading-tight">
+               <h2 className="text-4xl md:text-5xl font-header font-bold text-white uppercase leading-tight">
                   Our Sports
                </h2>
                <p className="text-gray-500 dark:text-gray-400 mt-4 text-lg font-light">
@@ -105,7 +105,7 @@ const HomeFeatures: React.FC = () => {
                      <motion.div
                         key={sport.name}
                         variants={cardVariants}
-                        className="group relative bg-white dark:bg-white/5 rounded-xl border border-gray-100 dark:border-white/10 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 overflow-hidden h-[400px]"
+                        className="group relative bg-white/5 rounded-xl border border-white/10 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 overflow-hidden h-[400px]"
                      >
                         {/* Background Image */}
                         <div className="absolute inset-0">

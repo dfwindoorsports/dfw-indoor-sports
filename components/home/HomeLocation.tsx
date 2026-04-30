@@ -7,7 +7,7 @@ import { OptimizedImage } from '@/components/ui/OptimizedImage';
 
 const HomeLocation: React.FC = () => {
    return (
-      <section className="bg-white dark:bg-[#020408] py-24 border-b border-gray-100 dark:border-white/5 transition-colors duration-300">
+      <section className="bg-[#0A111F] dark:bg-[#020408] py-24 border-b border-white/5 transition-colors duration-300">
          <div className="container mx-auto px-4 md:px-6">
 
             {/* Building Exterior Image - Wayfinding */}
@@ -39,16 +39,16 @@ const HomeLocation: React.FC = () => {
                   className="lg:w-1/2"
                >
                   <span className="text-dfw-red font-mono text-xs font-bold uppercase tracking-widest mb-4 block">Central Location</span>
-                  <h2 className="text-4xl md:text-5xl font-header font-bold text-dfw-navy dark:text-white uppercase mb-6">
+                  <h2 className="text-4xl md:text-5xl font-header font-bold text-white uppercase mb-6">
                      Serving All of DFW
                   </h2>
-                  <p className="text-gray-500 dark:text-gray-400 text-lg mb-8 leading-relaxed">
+                  <p className="text-gray-400 text-lg mb-8 leading-relaxed">
                      Strategically located in Fort Worth with easy highway access. Our members drive from Plano, Frisco, and Dallas because the facility quality makes the trip worthwhile.
                   </p>
 
                   <div className="bg-gray-50 dark:bg-[#0A111F] p-6 rounded-lg border border-gray-200 dark:border-white/10 mb-8 transition-colors">
-                     <h3 className="font-bold text-dfw-navy dark:text-white uppercase text-sm mb-4 flex items-center gap-2"><Car size={16} className="text-dfw-red" aria-hidden="true" /> Drive Times</h3>
-                     <div className="grid grid-cols-2 gap-4 text-sm text-gray-600 dark:text-gray-400">
+                     <h3 className="font-bold text-white uppercase text-sm mb-4 flex items-center gap-2"><Car size={16} className="text-dfw-red" aria-hidden="true" /> Drive Times</h3>
+                     <div className="grid grid-cols-2 gap-4 text-sm text-gray-400">
                         <div className="flex justify-between border-b border-gray-200 dark:border-white/10 pb-2"><span>Fort Worth</span> <span>10-15m</span></div>
                         <div className="flex justify-between border-b border-gray-200 dark:border-white/10 pb-2"><span>Arlington</span> <span>15-20m</span></div>
                         <div className="flex justify-between border-b border-gray-200 dark:border-white/10 pb-2"><span>Southlake</span> <span>15-25m</span></div>

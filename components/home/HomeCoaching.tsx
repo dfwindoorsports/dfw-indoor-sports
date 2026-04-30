@@ -7,13 +7,13 @@ import Link from 'next/link';
 
 const HomeCoaching: React.FC = () => {
   return (
-    <section className="py-24 bg-white dark:bg-[#020408] transition-colors duration-300">
+    <section className="py-24 bg-[#0A111F] dark:bg-[#020408] transition-colors duration-300">
        <div className="container mx-auto px-4 md:px-6">
           <motion.div 
             className="text-center mb-16"
           >
-             <h2 className="text-3xl md:text-5xl font-header font-bold text-dfw-navy dark:text-white uppercase mb-6">Learn From The Best</h2>
-             <p className="text-gray-500 dark:text-gray-400 max-w-2xl mx-auto">International expertise. Certified professionals. Results driven.</p>
+             <h2 className="text-3xl md:text-5xl font-header font-bold text-white uppercase mb-6">Learn From The Best</h2>
+             <p className="text-gray-400 max-w-2xl mx-auto">International expertise. Certified professionals. Results driven.</p>
           </motion.div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -38,8 +38,8 @@ const HomeCoaching: React.FC = () => {
                className="space-y-8"
              >
                 <div>
-                   <h3 className="text-2xl font-header font-bold text-dfw-navy dark:text-white uppercase mb-4">World Class Standards</h3>
-                   <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
+                   <h3 className="text-2xl font-header font-bold text-white uppercase mb-4">World Class Standards</h3>
+                   <p className="text-gray-400 leading-relaxed">
                       We partner with Rohit Sharma's CricKingdom to bring international cricket expertise to DFW. Our coaches hold Cricket Australia and ICC Level 2 certifications, ensuring you receive instruction that meets global high-performance standards.
                    </p>
                 </div>
@@ -52,7 +52,7 @@ const HomeCoaching: React.FC = () => {
                       { val: "Age 6+", lbl: "To Elite" }
                    ].map((item, i) => (
                       <div key={i} className="p-4 bg-gray-50 dark:bg-[#0A111F] rounded border border-gray-100 dark:border-white/10 transition-colors">
-                         <div className="text-2xl font-bold text-dfw-navy dark:text-white mb-1">{item.val}</div>
+                         <div className="text-2xl font-bold text-white mb-1">{item.val}</div>
                          <div className="text-[10px] uppercase font-bold text-gray-400 tracking-widest">{item.lbl}</div>
                       </div>
                    ))}

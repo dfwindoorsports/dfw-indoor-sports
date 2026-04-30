@@ -49,10 +49,11 @@ const HomeFacilities: React.FC = () => {
   };
 
   return (
-    <section className="bg-dfw-navy dark:bg-black py-24 md:py-32 relative overflow-hidden transition-colors duration-300">
+    <section className="bg-dfw-navy dark:bg-black py-24 md:py-32 relative overflow-hidden transition-colors duration-300 section-glow-top">
       
       {/* Background Micro-Detail */}
       <div className="absolute inset-0 bg-[url('/textures/stardust.png')] opacity-10"></div>
+      <div className="absolute inset-0 bg-athletic-grid"></div>
       <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-white/5 to-transparent pointer-events-none"></div>
 
       <div className="container mx-auto px-4 md:px-6 relative z-10">
@@ -68,7 +69,7 @@ const HomeFacilities: React.FC = () => {
           <motion.div 
             className="hidden md:block"
           >
-             <Link href="/contact" className="flex items-center gap-3 px-6 py-3 border border-white/20 text-white font-bold uppercase text-xs tracking-widest hover:bg-white hover:text-dfw-navy transition-all rounded-sm">
+             <Link href="/contact" className="btn-sport-ghost flex items-center gap-3 px-6 py-3 text-xs tracking-widest rounded-sm">
                 Schedule Free Facility Tour <ArrowRight size={14} />
              </Link>
           </motion.div>

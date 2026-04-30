@@ -63,7 +63,7 @@ export default function HomeFAQ() {
     }
 
     return (
-        <section className="py-24 bg-gray-50">
+        <section className="py-24 bg-[#050911]">
             <div className="container mx-auto px-4">
                 <div className="max-w-4xl mx-auto">
                     {/* Header */}
@@ -77,7 +77,7 @@ export default function HomeFAQ() {
                         <h2 className="text-4xl md:text-5xl font-header font-bold text-gray-900 uppercase mb-4">
                             Frequently Asked Questions
                         </h2>
-                        <p className="text-gray-600 text-lg max-w-2xl mx-auto">
+                        <p className="text-gray-400 text-lg max-w-2xl mx-auto">
                             Everything you need to know about DFW Indoor Sports. Can&apos;t find what you&apos;re looking for? Call us at (817) 938-0808.
                         </p>
                     </motion.div>
@@ -91,7 +91,7 @@ export default function HomeFAQ() {
                             >
                                 <button
                                     onClick={() => toggleFAQ(index)}
-                                    className="w-full bg-white border border-gray-200 rounded-lg p-5 text-left hover:border-dfw-red/30 transition-colors group"
+                                    className="w-full bg-white/5 border border-white/10 rounded-lg p-5 text-left hover:border-dfw-red/30 text-white transition-colors group"
                                 >
                                     <div className="flex items-center justify-between gap-4">
                                         <h3 className="font-bold text-gray-900 group-hover:text-dfw-red transition-colors">
@@ -101,7 +101,7 @@ export default function HomeFAQ() {
                                             {openIndex === index ? (
                                                 <Minus className="w-4 h-4 text-dfw-red" />
                                             ) : (
-                                                <Plus className="w-4 h-4 text-gray-600 group-hover:text-dfw-red" />
+                                                <Plus className="w-4 h-4 text-gray-400 group-hover:text-dfw-red" />
                                             )}
                                         </span>
                                     </div>
@@ -110,7 +110,7 @@ export default function HomeFAQ() {
                                             
                                             animate={{ opacity: 1, height: 'auto' }}
                                             exit={{ opacity: 0, height: 0 }}
-                                            className="text-gray-600 mt-4 text-sm leading-relaxed pr-12"
+                                            className="text-gray-400 mt-4 text-sm leading-relaxed pr-12"
                                         >
                                             {faq.answer}
                                         </motion.p>
@@ -125,7 +125,7 @@ export default function HomeFAQ() {
                         transition={{ duration: 0.5, delay: 0.3 }}
                         className="text-center mt-12"
                     >
-                        <p className="text-gray-600 mb-4">Still have questions?</p>
+                        <p className="text-gray-400 mb-4">Still have questions?</p>
                         <a
                             href="/contact"
                             className="inline-flex items-center gap-2 px-6 py-3 bg-dfw-red text-white font-bold uppercase text-sm tracking-wider rounded-sm hover:bg-red-700 transition-colors"
