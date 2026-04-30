@@ -15,18 +15,15 @@ const InvestmentLevels: React.FC = () => {
     <section className="py-24 bg-gray-50 dark:bg-[#0A111F] border-t border-gray-200 dark:border-white/5 transition-colors duration-300">
        <div className="container mx-auto px-4 md:px-6">
           <motion.h2 
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
             className="text-3xl font-header font-bold text-dfw-navy dark:text-white uppercase mb-12 text-center"
           >
             Investment Levels
           </motion.h2>
           
           <motion.div 
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
+            
+            
+            
             transition={{ staggerChildren: 0.1 }}
             className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 items-end"
           >

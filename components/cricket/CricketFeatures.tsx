@@ -54,9 +54,6 @@ const CricketFeatures: React.FC = () => {
 
         {/* Bowling Machine Showcase Image */}
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
           className="mb-12"
         >
           <div className="relative h-[200px] md:h-[280px] rounded-2xl overflow-hidden shadow-xl max-w-4xl mx-auto">
@@ -75,9 +72,6 @@ const CricketFeatures: React.FC = () => {
         </motion.div>
 
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
           className="text-center max-w-3xl mx-auto mb-16"
         >
           <span className="text-[#CC0000] font-mono text-xs font-bold uppercase tracking-widest mb-3 block">Technical Specifications</span>
@@ -91,9 +85,6 @@ const CricketFeatures: React.FC = () => {
           {features.map((feat, idx) => (
             <motion.div
               key={idx}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
               transition={{ delay: idx * 0.1 }}
               className="bg-white dark:bg-white/5 p-8 rounded-lg border border-gray-200 dark:border-white/10 hover:border-green-500/50 dark:hover:border-green-500/50 hover:shadow-xl transition-all duration-500 group relative overflow-hidden h-full flex flex-col"
             >

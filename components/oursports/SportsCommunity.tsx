@@ -12,9 +12,6 @@ const SportsCommunity: React.FC = () => {
           
           <div className="flex flex-col lg:flex-row gap-16">
              <motion.div 
-               initial={{ opacity: 0, x: -30 }}
-               whileInView={{ opacity: 1, x: 0 }}
-               viewport={{ once: true }}
                className="lg:w-1/2"
              >
                 <span className="text-dfw-red font-mono text-xs font-bold uppercase tracking-widest mb-4 block">The "Gold" Standard</span>
@@ -52,9 +49,6 @@ const SportsCommunity: React.FC = () => {
              <div className="lg:w-1/2">
                 <div className="grid grid-cols-1 gap-6">
                    <motion.div 
-                     initial={{ opacity: 0, x: 30 }}
-                     whileInView={{ opacity: 1, x: 0 }}
-                     viewport={{ once: true }}
                      className="flex gap-6 p-6 bg-white dark:bg-white/5 rounded-lg shadow-sm border border-gray-100 dark:border-white/10 hover:-translate-y-1 transition-transform cursor-default"
                    >
                       <div className="w-12 h-12 bg-green-50 dark:bg-green-900/30 text-green-600 dark:text-green-400 rounded-full flex items-center justify-center shrink-0">
@@ -68,9 +62,6 @@ const SportsCommunity: React.FC = () => {
                       </div>
                    </motion.div>
                    <motion.div 
-                     initial={{ opacity: 0, x: 30 }}
-                     whileInView={{ opacity: 1, x: 0 }}
-                     viewport={{ once: true }}
                      transition={{ delay: 0.1 }}
                      className="flex gap-6 p-6 bg-white dark:bg-white/5 rounded-lg shadow-sm border border-gray-100 dark:border-white/10 hover:-translate-y-1 transition-transform cursor-default"
                    >
@@ -85,9 +76,6 @@ const SportsCommunity: React.FC = () => {
                       </div>
                    </motion.div>
                    <motion.div 
-                     initial={{ opacity: 0, x: 30 }}
-                     whileInView={{ opacity: 1, x: 0 }}
-                     viewport={{ once: true }}
                      transition={{ delay: 0.2 }}
                      className="flex gap-6 p-6 bg-white dark:bg-white/5 rounded-lg shadow-sm border border-gray-100 dark:border-white/10 hover:-translate-y-1 transition-transform cursor-default"
                    >

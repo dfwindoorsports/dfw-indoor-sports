@@ -9,9 +9,6 @@ const CoachesFAQ: React.FC = () => {
     <section className="py-24 bg-white dark:bg-[#020408] transition-colors duration-300">
        <div className="container mx-auto px-4 md:px-6 max-w-4xl">
           <motion.div 
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
             className="text-center mb-16"
           >
              <h2 className="text-3xl md:text-5xl font-header font-bold text-dfw-navy dark:text-white uppercase mb-6">Coaching FAQ</h2>
@@ -29,9 +26,6 @@ const CoachesFAQ: React.FC = () => {
              ].map((item, idx) => (
                 <motion.details 
                   key={idx} 
-                  initial={{ opacity: 0, y: 10 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
                   transition={{ delay: idx * 0.05 }}
                   className="group py-6 cursor-pointer"
                 >

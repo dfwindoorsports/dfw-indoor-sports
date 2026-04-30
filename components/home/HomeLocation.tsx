@@ -12,9 +12,6 @@ const HomeLocation: React.FC = () => {
 
             {/* Building Exterior Image - Wayfinding */}
             <motion.div
-               initial={{ opacity: 0, y: 20 }}
-               whileInView={{ opacity: 1, y: 0 }}
-               viewport={{ once: true }}
                className="mb-12"
             >
                <div className="relative h-[200px] md:h-[250px] rounded-2xl overflow-hidden shadow-xl">
@@ -39,9 +36,6 @@ const HomeLocation: React.FC = () => {
 
             <div className="flex flex-col lg:flex-row gap-12 items-center">
                <motion.div
-                  initial={{ opacity: 0, x: -30 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true }}
                   className="lg:w-1/2"
                >
                   <span className="text-dfw-red font-mono text-xs font-bold uppercase tracking-widest mb-4 block">Central Location</span>
@@ -68,9 +62,6 @@ const HomeLocation: React.FC = () => {
                </motion.div>
 
                <motion.div
-                  initial={{ opacity: 0, x: 30 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true }}
                   className="lg:w-1/2 h-[400px] w-full rounded-lg relative overflow-hidden shadow-inner group"
                >
                   <iframe

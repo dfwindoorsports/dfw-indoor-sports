@@ -12,9 +12,6 @@ const MembershipsIntro: React.FC = () => {
              
              {/* Left: The Narrative */}
              <motion.div 
-               initial={{ opacity: 0, x: -30 }}
-               whileInView={{ opacity: 1, x: 0 }}
-               viewport={{ once: true }}
                transition={{ duration: 0.6 }}
                className="lg:w-3/5"
              >
@@ -59,9 +56,6 @@ const MembershipsIntro: React.FC = () => {
 
              {/* Right: Quick Facts Box (AEO Optimized) */}
              <motion.div 
-               initial={{ opacity: 0, x: 30 }}
-               whileInView={{ opacity: 1, x: 0 }}
-               viewport={{ once: true }}
                transition={{ duration: 0.6 }}
                className="lg:w-2/5 w-full"
              >

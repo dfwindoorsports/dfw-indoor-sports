@@ -12,9 +12,6 @@ const EventsCatering: React.FC = () => {
             {/* Custom Events Grid */}
             <div className="mb-24">
                <motion.div 
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
                   className="text-center mb-12"
                >
                   <h2 className="text-3xl font-header font-bold text-dfw-navy dark:text-white uppercase tracking-wide mb-4">Custom Experiences</h2>
@@ -55,9 +52,6 @@ const EventsCatering: React.FC = () => {
                   ].map((menu, i) => (
                      <motion.div 
                         key={i} 
-                        initial={{ opacity: 0, y: 20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
                         transition={{ delay: i * 0.1 }}
                         className="border border-gray-100 dark:border-white/10 p-6 rounded-sm hover:shadow-lg hover:border-dfw-red/20 transition-all text-center group cursor-default bg-white dark:bg-white/5"
                      >

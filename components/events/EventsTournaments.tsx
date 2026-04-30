@@ -10,9 +10,6 @@ const EventsTournaments: React.FC = () => {
          <div className="container mx-auto px-4 md:px-6">
             <div className="flex flex-col lg:flex-row gap-16">
                <motion.div 
-                 initial={{ opacity: 0, x: -20 }}
-                 whileInView={{ opacity: 1, x: 0 }}
-                 viewport={{ once: true }}
                  className="lg:w-1/3"
                >
                   <div className="inline-flex items-center gap-2 mb-4">
@@ -47,9 +44,6 @@ const EventsTournaments: React.FC = () => {
                </motion.div>
 
                <motion.div 
-                 initial={{ opacity: 0, x: 20 }}
-                 whileInView={{ opacity: 1, x: 0 }}
-                 viewport={{ once: true }}
                  className="lg:w-2/3"
                >
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">

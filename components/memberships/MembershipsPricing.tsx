@@ -18,9 +18,6 @@ const MembershipsPricing: React.FC = () => {
 
             {/* Member Usage Banner */}
             <motion.div
-               initial={{ opacity: 0, y: 20 }}
-               whileInView={{ opacity: 1, y: 0 }}
-               viewport={{ once: true }}
                className="mb-12"
             >
                <div className="relative h-[200px] md:h-[280px] rounded-2xl overflow-hidden shadow-xl max-w-4xl mx-auto">
@@ -61,9 +58,6 @@ const MembershipsPricing: React.FC = () => {
 
                {/* Card 1: Badminton */}
                <motion.div
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
                   className="bg-white dark:bg-[#0A111F] rounded-lg border border-gray-200 dark:border-white/10 p-8 shadow-sm hover:shadow-xl transition-all duration-300 relative group overflow-hidden"
                >
                   <div className="absolute top-0 left-0 w-full h-1 bg-gray-200 dark:bg-white/20 group-hover:bg-blue-500 transition-colors"></div>
@@ -98,9 +92,6 @@ const MembershipsPricing: React.FC = () => {
 
                {/* Card 2: GOLD (Highlighted) */}
                <motion.div
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
                   transition={{ delay: 0.1 }}
                   className="bg-dfw-navy dark:bg-[#0A111F] rounded-lg border border-dfw-navy dark:border-dfw-red/30 p-8 shadow-2xl relative group overflow-hidden xl:-mt-8 xl:mb-8 transform xl:scale-105 z-10 dark:shadow-[0_0_40px_rgba(214,40,40,0.15)]"
                >
@@ -148,9 +139,6 @@ const MembershipsPricing: React.FC = () => {
 
                {/* Card 3: Cricket Unlimited */}
                <motion.div
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
                   transition={{ delay: 0.2 }}
                   className="bg-white dark:bg-[#0A111F] rounded-lg border border-gray-200 dark:border-white/10 p-8 shadow-sm hover:shadow-xl transition-all duration-300 relative group overflow-hidden"
                >
@@ -186,9 +174,6 @@ const MembershipsPricing: React.FC = () => {
 
                {/* Card 4: Family */}
                <motion.div
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
                   transition={{ delay: 0.3 }}
                   className="bg-white dark:bg-[#0A111F] rounded-lg border border-gray-200 dark:border-white/10 p-8 shadow-sm hover:shadow-xl transition-all duration-300 relative group overflow-hidden"
                >

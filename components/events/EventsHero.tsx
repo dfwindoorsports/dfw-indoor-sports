@@ -23,7 +23,7 @@ const EventsHero: React.FC = () => {
       <div className="container mx-auto px-4 md:px-6 relative z-20 pt-10">
         {/* Trust Badge */}
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
+          
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2 }}
           className="inline-flex items-center gap-3 px-4 py-1.5 rounded-full border border-white/10 bg-white/5 backdrop-blur-2xl text-white/90 font-mono text-[10px] uppercase tracking-[0.3em] mb-4 hover:bg-white/10 transition-colors cursor-default shadow-lg"
@@ -33,7 +33,7 @@ const EventsHero: React.FC = () => {
         </motion.div>
 
         <motion.h1
-          initial={{ opacity: 0, y: 30 }}
+          
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.4, duration: 0.8 }}
           className="text-3xl md:text-5xl lg:text-6xl font-header font-bold text-white uppercase tracking-tighter mb-4 leading-[1.1] max-w-5xl drop-shadow-2xl"
@@ -43,7 +43,7 @@ const EventsHero: React.FC = () => {
         </motion.h1>
 
         <motion.p
-          initial={{ opacity: 0, y: 30 }}
+          
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.6 }}
           className="max-w-xl text-gray-300 text-base md:text-lg font-light leading-relaxed border-l-2 border-dfw-red pl-6 mb-6 backdrop-blur-sm"
@@ -52,7 +52,7 @@ const EventsHero: React.FC = () => {
         </motion.p>
 
         <motion.div
-          initial={{ opacity: 0 }}
+          
           animate={{ opacity: 1 }}
           transition={{ delay: 0.8 }}
           className="flex flex-row flex-wrap gap-3"
@@ -73,7 +73,7 @@ const EventsHero: React.FC = () => {
 
         {/* Trust Indicators */}
         <motion.div
-          initial={{ opacity: 0 }}
+          
           animate={{ opacity: 1 }}
           transition={{ delay: 1 }}
           className="mt-6 flex flex-wrap gap-4 text-xs font-mono text-gray-400"

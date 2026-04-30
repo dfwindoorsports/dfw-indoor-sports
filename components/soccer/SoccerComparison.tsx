@@ -61,9 +61,6 @@ const SoccerComparison: React.FC = () => {
                 ].map((t, i) => (
                    <motion.div 
                      key={i} 
-                     initial={{ opacity: 0, y: 20 }}
-                     whileInView={{ opacity: 1, y: 0 }}
-                     viewport={{ once: true }}
                      transition={{ delay: i * 0.1 }}
                      className="bg-white dark:bg-white/5 p-8 rounded-lg border border-gray-100 dark:border-white/10 shadow-sm hover:shadow-xl transition-all duration-300 relative group h-full flex flex-col"
                    >

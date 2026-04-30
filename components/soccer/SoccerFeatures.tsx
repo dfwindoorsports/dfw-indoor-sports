@@ -51,9 +51,6 @@ const SoccerFeatures: React.FC = () => {
       
       <div className="container mx-auto px-4 md:px-6 relative z-10">
         <motion.div 
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
           className="text-center max-w-3xl mx-auto mb-16"
         >
            <span className="text-emerald-600 font-mono text-xs font-bold uppercase tracking-widest mb-3 block">Infrastructure</span>
@@ -67,9 +64,6 @@ const SoccerFeatures: React.FC = () => {
           {features.map((feat, idx) => (
             <motion.div 
               key={idx} 
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
               transition={{ delay: idx * 0.1 }}
               className="bg-white dark:bg-white/5 p-8 rounded-lg border border-gray-200 dark:border-white/10 hover:border-emerald-500/50 dark:hover:border-emerald-500/50 hover:shadow-xl transition-all duration-500 group relative overflow-hidden h-full flex flex-col"
             >

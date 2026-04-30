@@ -20,9 +20,6 @@ export default function CityTestimonial({ quote, author, location }: Testimonial
                 <div className="max-w-3xl mx-auto text-center">
                     {/* Stars */}
                     <motion.div
-                        initial={{ opacity: 0, y: 10 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
                         className="flex justify-center gap-1 mb-6"
                     >
                         {[...Array(5)].map((_, i) => (
@@ -32,9 +29,6 @@ export default function CityTestimonial({ quote, author, location }: Testimonial
 
                     {/* Quote */}
                     <motion.blockquote
-                        initial={{ opacity: 0, y: 20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
                         transition={{ delay: 0.1 }}
                     >
                         <p className="text-xl md:text-2xl lg:text-3xl text-white leading-relaxed mb-8 font-light">
@@ -44,9 +38,6 @@ export default function CityTestimonial({ quote, author, location }: Testimonial
 
                     {/* Author */}
                     <motion.div
-                        initial={{ opacity: 0, y: 20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
                         transition={{ delay: 0.2 }}
                         className="flex flex-col items-center gap-1"
                     >

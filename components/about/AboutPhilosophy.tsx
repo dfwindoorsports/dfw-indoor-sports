@@ -13,9 +13,6 @@ const AboutPhilosophy: React.FC = () => {
 
             {/* Team Photo Banner */}
             <motion.div
-               initial={{ opacity: 0, y: 20 }}
-               whileInView={{ opacity: 1, y: 0 }}
-               viewport={{ once: true }}
                className="mb-16"
             >
                <div className="relative h-[220px] md:h-[300px] rounded-2xl overflow-hidden shadow-xl max-w-4xl mx-auto border border-white/10">
@@ -35,9 +32,6 @@ const AboutPhilosophy: React.FC = () => {
 
             <div className="flex flex-col lg:flex-row gap-16 items-center">
                <motion.div
-                  initial={{ opacity: 0, x: -30 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true }}
                   className="lg:w-1/2"
                >
                   <span className="text-dfw-red font-mono text-xs font-bold uppercase tracking-widest mb-4 block">Development Methodology</span>
@@ -74,9 +68,6 @@ const AboutPhilosophy: React.FC = () => {
                </motion.div>
 
                <motion.div
-                  initial={{ opacity: 0, x: 30 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true }}
                   transition={{ duration: 0.6 }}
                   className="lg:w-1/2 relative w-full"
                >

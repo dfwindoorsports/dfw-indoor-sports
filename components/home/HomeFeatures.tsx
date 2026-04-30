@@ -81,9 +81,6 @@ const HomeFeatures: React.FC = () => {
          <div className="container mx-auto px-4 md:px-6 relative z-10">
 
             <motion.div
-               initial={{ opacity: 0, y: 20 }}
-               whileInView={{ opacity: 1, y: 0 }}
-               viewport={{ once: true }}
                className="text-center max-w-3xl mx-auto mb-20"
             >
                <span className="text-dfw-red font-mono text-xs font-bold uppercase tracking-widest mb-4 block">Find Your Passion</span>
@@ -97,9 +94,9 @@ const HomeFeatures: React.FC = () => {
 
             <motion.div
                variants={containerVariants}
-               initial="hidden"
-               whileInView="visible"
-               viewport={{ once: true, margin: "-50px" }}
+               
+               
+               
                className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"
             >
                {sports.map((sport, index) => {

@@ -30,9 +30,6 @@ const AcademyPrograms: React.FC = () => {
 
             {/* Kids Training Banner Image */}
             <motion.div
-               initial={{ opacity: 0, y: 20 }}
-               whileInView={{ opacity: 1, y: 0 }}
-               viewport={{ once: true }}
                className="mb-12"
             >
                <div className="relative h-[200px] md:h-[280px] rounded-2xl overflow-hidden shadow-xl max-w-5xl mx-auto">
@@ -51,9 +48,6 @@ const AcademyPrograms: React.FC = () => {
             </motion.div>
 
             <motion.div
-               initial={{ opacity: 0, y: 20 }}
-               whileInView={{ opacity: 1, y: 0 }}
-               viewport={{ once: true }}
                className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6"
             >
                <div className="max-w-2xl">
@@ -72,9 +66,9 @@ const AcademyPrograms: React.FC = () => {
 
             <motion.div
                variants={containerVariants}
-               initial="hidden"
-               whileInView="visible"
-               viewport={{ once: true, margin: "-50px" }}
+               
+               
+               
                className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"
             >
                {/* Program 1: Foundation */}

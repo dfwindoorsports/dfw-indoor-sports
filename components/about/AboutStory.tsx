@@ -12,9 +12,6 @@ const AboutStory: React.FC = () => {
              
              {/* Left: The Problem & Vision */}
              <motion.div 
-               initial={{ opacity: 0, x: -30 }}
-               whileInView={{ opacity: 1, x: 0 }}
-               viewport={{ once: true }}
                transition={{ duration: 0.6 }}
                className="lg:col-span-7"
              >
@@ -62,9 +59,6 @@ const AboutStory: React.FC = () => {
 
              {/* Right: Founder Badge & Image */}
              <motion.div 
-               initial={{ opacity: 0, x: 30 }}
-               whileInView={{ opacity: 1, x: 0 }}
-               viewport={{ once: true }}
                transition={{ duration: 0.6 }}
                className="lg:col-span-5 relative"
              >

@@ -30,9 +30,6 @@ const PartnersIntro: React.FC = () => {
 
             {/* Partner Signage Image Banner */}
             <motion.div
-               initial={{ opacity: 0, y: 20 }}
-               whileInView={{ opacity: 1, y: 0 }}
-               viewport={{ once: true }}
                className="mb-16"
             >
                <div className="relative h-[200px] md:h-[280px] rounded-2xl overflow-hidden shadow-xl max-w-4xl mx-auto">
@@ -54,9 +51,6 @@ const PartnersIntro: React.FC = () => {
 
                {/* Left: Narrative */}
                <motion.div
-                  initial={{ opacity: 0, x: -30 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true }}
                   transition={{ duration: 0.6 }}
                   className="lg:w-1/2"
                >
@@ -84,9 +78,9 @@ const PartnersIntro: React.FC = () => {
                <div className="lg:w-1/2 w-full">
                   <motion.div
                      variants={containerVariants}
-                     initial="hidden"
-                     whileInView="visible"
-                     viewport={{ once: true }}
+                     
+                     
+                     
                      className="grid grid-cols-1 md:grid-cols-2 gap-6"
                   >
                      {/* Card 1 */}

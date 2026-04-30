@@ -12,9 +12,6 @@ const CoachesProfiles: React.FC = () => {
        
        <div className="container mx-auto px-4 md:px-6 relative z-10">
           <motion.div 
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
             className="mb-24 md:mb-32 max-w-3xl"
           >
              <span className="text-dfw-red font-mono text-xs font-bold uppercase tracking-widest mb-4 block">The Faculty</span>
@@ -30,9 +27,6 @@ const CoachesProfiles: React.FC = () => {
              
              {/* === Profile 01: Prashant === */}
              <motion.div 
-               initial={{ opacity: 0, y: 50 }}
-               whileInView={{ opacity: 1, y: 0 }}
-               viewport={{ once: true, margin: "-100px" }}
                transition={{ duration: 0.8 }}
                className="group relative"
              >
@@ -104,9 +98,6 @@ const CoachesProfiles: React.FC = () => {
 
              {/* === Profile 02: Prem === */}
              <motion.div 
-               initial={{ opacity: 0, y: 50 }}
-               whileInView={{ opacity: 1, y: 0 }}
-               viewport={{ once: true, margin: "-100px" }}
                transition={{ duration: 0.8 }}
                className="group relative"
              >
@@ -168,9 +159,6 @@ const CoachesProfiles: React.FC = () => {
 
              {/* === Profile 03: Anjan === */}
              <motion.div 
-               initial={{ opacity: 0, y: 50 }}
-               whileInView={{ opacity: 1, y: 0 }}
-               viewport={{ once: true, margin: "-100px" }}
                transition={{ duration: 0.8 }}
                className="group relative"
              >

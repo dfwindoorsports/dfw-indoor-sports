@@ -58,9 +58,6 @@ const HomeFacilities: React.FC = () => {
       <div className="container mx-auto px-4 md:px-6 relative z-10">
         <div className="flex flex-col md:flex-row justify-between items-end mb-16">
           <motion.div 
-            initial={{ opacity: 0, x: -20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
             className="max-w-2xl"
           >
             <span className="text-dfw-red font-mono text-xs font-bold uppercase tracking-widest mb-4 block">Infrastructure</span>
@@ -69,9 +66,6 @@ const HomeFacilities: React.FC = () => {
             </h2>
           </motion.div>
           <motion.div 
-            initial={{ opacity: 0, x: 20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
             className="hidden md:block"
           >
              <Link href="/contact" className="flex items-center gap-3 px-6 py-3 border border-white/20 text-white font-bold uppercase text-xs tracking-widest hover:bg-white hover:text-dfw-navy transition-all rounded-sm">
@@ -82,9 +76,9 @@ const HomeFacilities: React.FC = () => {
 
         <motion.div 
           variants={containerVariants}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, margin: "-50px" }}
+          
+          
+          
           className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"
         >
           {facilities.map((item, index) => (

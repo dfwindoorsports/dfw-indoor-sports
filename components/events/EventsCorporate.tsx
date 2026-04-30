@@ -30,9 +30,6 @@ const EventsCorporate: React.FC = () => {
 
             {/* Corporate Events Image Banner */}
             <motion.div
-               initial={{ opacity: 0, y: 20 }}
-               whileInView={{ opacity: 1, y: 0 }}
-               viewport={{ once: true }}
                className="mb-12"
             >
                <div className="relative h-[220px] md:h-[300px] rounded-2xl overflow-hidden shadow-xl max-w-5xl mx-auto border border-white/10">
@@ -52,9 +49,6 @@ const EventsCorporate: React.FC = () => {
 
             <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
                <motion.div
-                  initial={{ opacity: 0, x: -20 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true }}
                   className="max-w-2xl"
                >
                   <span className="text-blue-500 font-mono text-xs font-bold uppercase tracking-widest mb-4 block">Corporate Solutions</span>
@@ -63,9 +57,6 @@ const EventsCorporate: React.FC = () => {
                   </h2>
                </motion.div>
                <motion.div
-                  initial={{ opacity: 0, x: 20 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true }}
                   className="hidden md:block"
                >
                   <p className="text-gray-400 text-sm max-w-md text-right">
@@ -77,9 +68,9 @@ const EventsCorporate: React.FC = () => {
 
             <motion.div
                variants={containerVariants}
-               initial="hidden"
-               whileInView="visible"
-               viewport={{ once: true }}
+               
+               
+               
                className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16"
             >
 

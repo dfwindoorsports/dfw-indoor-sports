@@ -68,9 +68,6 @@ export default function BlogGrid({ posts }: { posts: BlogPost[] }) {
                     {featuredPost && (
                         <motion.div
                             className="mb-20"
-                            initial={{ opacity: 0, y: 30 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true }}
                             transition={{ duration: 0.8 }}
                         >
                             {/* Section label */}
@@ -133,9 +130,6 @@ export default function BlogGrid({ posts }: { posts: BlogPost[] }) {
                         {/* Section label */}
                         <motion.div
                             className="flex items-center gap-3 mb-10"
-                            initial={{ opacity: 0, y: 10 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true }}
                         >
                             <span className="text-heading font-header text-dfw-navy dark:text-white uppercase">Latest Updates</span>
                         </motion.div>
@@ -143,7 +137,7 @@ export default function BlogGrid({ posts }: { posts: BlogPost[] }) {
                         <motion.div
                             className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8"
                             variants={containerVariants}
-                            initial="hidden"
+                            
                             animate={isInView ? "visible" : "hidden"}
                         >
                             {otherPosts.map((post, idx) => (

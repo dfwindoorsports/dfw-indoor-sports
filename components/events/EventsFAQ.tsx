@@ -22,9 +22,6 @@ const EventsFAQ: React.FC = () => {
                ].map((item, idx) => (
                   <motion.details 
                      key={idx} 
-                     initial={{ opacity: 0, y: 10 }}
-                     whileInView={{ opacity: 1, y: 0 }}
-                     viewport={{ once: true }}
                      transition={{ delay: idx * 0.05 }}
                      className="group bg-white dark:bg-white/5 rounded-sm border border-gray-200 dark:border-white/10 overflow-hidden transition-all duration-300 open:shadow-md"
                   >

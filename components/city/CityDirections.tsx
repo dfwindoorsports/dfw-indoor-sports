@@ -28,18 +28,12 @@ export default function CityDirections({ city, address, googleMapsLink, directio
                     {/* Header */}
                     <div className="text-center mb-12">
                         <motion.span
-                            initial={{ opacity: 0, y: 10 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true }}
                             className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-dfw-red/40 bg-dfw-red/10 backdrop-blur-2xl text-dfw-red font-mono text-[10px] uppercase tracking-[0.25em] mb-4"
                         >
                             Getting Here
                         </motion.span>
 
                         <motion.h2
-                            initial={{ opacity: 0, y: 20 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true }}
                             transition={{ delay: 0.1 }}
                             className="text-2xl md:text-4xl font-header font-bold text-dfw-navy dark:text-white uppercase tracking-tighter mb-4"
                         >
@@ -47,9 +41,6 @@ export default function CityDirections({ city, address, googleMapsLink, directio
                         </motion.h2>
 
                         <motion.div
-                            initial={{ opacity: 0, y: 20 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true }}
                             transition={{ delay: 0.2 }}
                             className="inline-flex items-center gap-3 px-4 py-2 bg-white/5 backdrop-blur-md border border-white/10 rounded-full"
                         >
@@ -63,9 +54,6 @@ export default function CityDirections({ city, address, googleMapsLink, directio
                         {directions.map((dir, idx) => (
                             <motion.div
                                 key={idx}
-                                initial={{ opacity: 0, y: 20 }}
-                                whileInView={{ opacity: 1, y: 0 }}
-                                viewport={{ once: true }}
                                 transition={{ delay: idx * 0.1 }}
                                 className="group"
                             >
@@ -107,9 +95,6 @@ export default function CityDirections({ city, address, googleMapsLink, directio
 
                     {/* Google Maps CTA */}
                     <motion.div
-                        initial={{ opacity: 0, y: 20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
                         transition={{ delay: 0.3 }}
                         className="mt-10 text-center"
                     >

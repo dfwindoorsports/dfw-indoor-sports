@@ -34,26 +34,17 @@ const AcademyCareerPathway: React.FC = () => {
 
             <div className="text-center mb-20 max-w-3xl mx-auto">
                <motion.div
-                  initial={{ opacity: 0, y: -10 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
                   className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-dfw-red/10 text-dfw-red text-[10px] font-bold uppercase tracking-widest mb-4"
                >
                   <Target size={12} />
                   Roadmap to Excellence
                </motion.div>
                <motion.h2
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
                   className="text-4xl md:text-5xl font-header font-bold text-dfw-navy dark:text-white uppercase leading-none mb-6"
                >
                   Career <span className="text-dfw-red">Pathway</span>
                </motion.h2>
                <motion.p
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
                   transition={{ delay: 0.1 }}
                   className="text-gray-500 dark:text-gray-400 text-lg"
                >
@@ -64,9 +55,9 @@ const AcademyCareerPathway: React.FC = () => {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 mb-24">
                {/* Player Pathway */}
                <motion.div
-                  initial="hidden"
-                  whileInView="visible"
-                  viewport={{ once: true }}
+                  
+                  
+                  
                   variants={containerVariants}
                   className="space-y-8 relative"
                >
@@ -145,9 +136,9 @@ const AcademyCareerPathway: React.FC = () => {
 
                {/* Coaches Pathway */}
                <motion.div
-                  initial="hidden"
-                  whileInView="visible"
-                  viewport={{ once: true }}
+                  
+                  
+                  
                   variants={containerVariants}
                   className="space-y-8"
                >
@@ -195,9 +186,9 @@ const AcademyCareerPathway: React.FC = () => {
 
             {/* Detailed Breakdown */}
             <motion.div
-               initial="hidden"
-               whileInView="visible"
-               viewport={{ once: true }}
+               
+               
+               
                variants={containerVariants}
                className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"
             >

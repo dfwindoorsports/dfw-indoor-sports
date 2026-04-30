@@ -24,18 +24,12 @@ export default function CitySportsGrid({ sports }: { sports: SportCard[] }) {
                 {/* Header */}
                 <div className="text-center mb-12">
                     <motion.span
-                        initial={{ opacity: 0, y: 10 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
                         className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-white/10 bg-white/5 backdrop-blur-2xl text-white/90 font-mono text-[10px] uppercase tracking-[0.25em] mb-4"
                     >
                         What We Offer
                     </motion.span>
 
                     <motion.h2
-                        initial={{ opacity: 0, y: 20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
                         transition={{ delay: 0.1 }}
                         className="text-2xl md:text-4xl font-header font-bold text-white uppercase tracking-tighter"
                     >
@@ -48,9 +42,6 @@ export default function CitySportsGrid({ sports }: { sports: SportCard[] }) {
                     {sports.map((sport, idx) => (
                         <motion.div
                             key={idx}
-                            initial={{ opacity: 0, y: 20 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true }}
                             transition={{ delay: idx * 0.1 }}
                         >
                             <Link

@@ -22,16 +22,11 @@ const RentalsCTA: React.FC = () => {
          
          <div className="container mx-auto px-4 md:px-6 relative z-10">
             <motion.h2 
-               initial={{ opacity: 0, y: 20 }}
-               whileInView={{ opacity: 1, y: 0 }}
-               viewport={{ once: true }}
                className="text-4xl md:text-6xl font-header font-bold text-white uppercase mb-6"
             >
                Ready to <span className="text-dfw-red">Play?</span>
             </motion.h2>
             <motion.p 
-               initial={{ opacity: 0 }}
-               whileInView={{ opacity: 1 }}
                transition={{ delay: 0.2 }}
                className="text-gray-400 text-lg font-light mb-10 max-w-2xl mx-auto"
             >
@@ -60,8 +55,6 @@ const RentalsCTA: React.FC = () => {
             </div>
             
             <motion.div 
-               initial={{ opacity: 0, y: 20 }}
-               whileInView={{ opacity: 1, y: 0 }}
                transition={{ delay: 0.3 }}
                className="flex flex-col sm:flex-row justify-center gap-4"
             >

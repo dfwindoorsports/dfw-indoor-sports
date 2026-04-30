@@ -12,9 +12,6 @@ const MembershipsGuide: React.FC = () => {
 
             {/* Family Membership Image Banner */}
             <motion.div
-               initial={{ opacity: 0, y: 20 }}
-               whileInView={{ opacity: 1, y: 0 }}
-               viewport={{ once: true }}
                className="mb-12"
             >
                <div className="relative h-[200px] md:h-[280px] rounded-2xl overflow-hidden shadow-xl max-w-4xl mx-auto border border-white/10">

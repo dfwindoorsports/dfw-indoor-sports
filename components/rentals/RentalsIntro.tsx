@@ -12,9 +12,6 @@ const RentalsIntro: React.FC = () => {
                
                {/* Left: The Narrative */}
                <motion.div 
-                 initial={{ opacity: 0, x: -30 }}
-                 whileInView={{ opacity: 1, x: 0 }}
-                 viewport={{ once: true }}
                  transition={{ duration: 0.6 }}
                  className="lg:w-1/2"
                >
@@ -52,9 +49,6 @@ const RentalsIntro: React.FC = () => {
 
                {/* Right: Feature Highlights */}
                <motion.div 
-                 initial={{ opacity: 0, x: 30 }}
-                 whileInView={{ opacity: 1, x: 0 }}
-                 viewport={{ once: true }}
                  transition={{ duration: 0.6 }}
                  className="lg:w-1/2 relative"
                >

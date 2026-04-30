@@ -40,9 +40,6 @@ const HomeTestimonials: React.FC = () => {
 
          <div className="container mx-auto px-4 md:px-6 relative z-10">
             <motion.div
-               initial={{ opacity: 0, y: 20 }}
-               whileInView={{ opacity: 1, y: 0 }}
-               viewport={{ once: true }}
                className="text-center mb-16"
             >
                <span className="inline-flex items-center gap-2 bg-white/10 px-3 py-1 rounded-full text-xs font-bold text-white uppercase tracking-widest mb-6 backdrop-blur-sm">
@@ -55,9 +52,6 @@ const HomeTestimonials: React.FC = () => {
                {testimonials.map((t, i) => (
                   <motion.div
                      key={i}
-                     initial={{ opacity: 0, y: 30 }}
-                     whileInView={{ opacity: 1, y: 0 }}
-                     viewport={{ once: true }}
                      transition={{ delay: i * 0.1 }}
                      className="bg-white/5 border border-white/10 p-8 rounded-2xl backdrop-blur-sm relative group hover:bg-white/10 transition-colors"
                   >

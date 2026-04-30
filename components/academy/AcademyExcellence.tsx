@@ -26,9 +26,6 @@ const AcademyExcellence: React.FC = () => {
        
        <div className="container mx-auto px-4 md:px-6 relative z-10">
           <motion.div 
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
             className="text-center mb-16"
           >
              <span className="text-dfw-red font-mono text-xs font-bold uppercase tracking-widest mb-3 block">High Performance Lab</span>
@@ -37,9 +34,9 @@ const AcademyExcellence: React.FC = () => {
 
           <motion.div 
             variants={containerVariants}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "-50px" }}
+            
+            
+            
             className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
           >
              {[

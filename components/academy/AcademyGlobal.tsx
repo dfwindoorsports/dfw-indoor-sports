@@ -8,17 +8,11 @@ const AcademyGlobal: React.FC = () => {
       <section className="bg-white dark:bg-[#020408] py-24 border-b border-gray-100 dark:border-white/5 transition-colors duration-300">
          <div className="container mx-auto px-4 md:px-6 text-center">
             <motion.h2
-               initial={{ opacity: 0, y: 20 }}
-               whileInView={{ opacity: 1, y: 0 }}
-               viewport={{ once: true }}
                className="text-3xl font-header font-bold text-dfw-navy dark:text-white uppercase mb-10"
             >
                Global Footprint
             </motion.h2>
             <motion.p
-               initial={{ opacity: 0, y: 20 }}
-               whileInView={{ opacity: 1, y: 0 }}
-               viewport={{ once: true }}
                transition={{ delay: 0.1 }}
                className="text-gray-500 dark:text-gray-400 max-w-2xl mx-auto mb-12"
             >
@@ -28,9 +22,6 @@ const AcademyGlobal: React.FC = () => {
                {['United States', 'Singapore', 'Japan', 'India', 'Bangladesh'].map((country, i) => (
                   <motion.div
                      key={country}
-                     initial={{ opacity: 0, scale: 0.8 }}
-                     whileInView={{ opacity: 1, scale: 1 }}
-                     viewport={{ once: true }}
                      transition={{ delay: i * 0.1 }}
                      className="group relative"
                   >

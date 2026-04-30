@@ -31,18 +31,12 @@ export default function CityFeatures({ title, description, features }: CityFeatu
                 {/* Header */}
                 <div className="max-w-3xl mx-auto text-center mb-12">
                     <motion.span
-                        initial={{ opacity: 0, y: 10 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
                         className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-dfw-red/40 bg-dfw-red/10 backdrop-blur-2xl text-dfw-red font-mono text-[10px] uppercase tracking-[0.25em] mb-4"
                     >
                         Why Choose Us
                     </motion.span>
 
                     <motion.h2
-                        initial={{ opacity: 0, y: 20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
                         transition={{ delay: 0.1 }}
                         className="text-2xl md:text-4xl font-header font-bold text-dfw-navy dark:text-white uppercase tracking-tighter mb-4"
                     >
@@ -50,9 +44,6 @@ export default function CityFeatures({ title, description, features }: CityFeatu
                     </motion.h2>
 
                     <motion.p
-                        initial={{ opacity: 0, y: 20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
                         transition={{ delay: 0.2 }}
                         className="text-base md:text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto"
                     >
@@ -68,9 +59,6 @@ export default function CityFeatures({ title, description, features }: CityFeatu
                         return (
                             <motion.div
                                 key={idx}
-                                initial={{ opacity: 0, y: 20 }}
-                                whileInView={{ opacity: 1, y: 0 }}
-                                viewport={{ once: true }}
                                 transition={{ delay: idx * 0.1 }}
                                 className="group"
                             >

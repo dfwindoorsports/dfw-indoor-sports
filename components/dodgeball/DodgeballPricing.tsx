@@ -10,9 +10,6 @@ const DodgeballPricing: React.FC = () => {
     <section className="py-24 bg-white dark:bg-[#020408] transition-colors duration-300" id="pricing">
        <div className="container mx-auto px-4 md:px-6">
           <motion.div 
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
             className="text-center max-w-3xl mx-auto mb-16"
           >
              <h2 className="text-4xl md:text-5xl font-header font-bold text-[#4C1D95] dark:text-white uppercase mb-6">Court Rental & Leagues</h2>
@@ -23,9 +20,6 @@ const DodgeballPricing: React.FC = () => {
              
              {/* Hourly Rental */}
              <motion.div 
-               initial={{ opacity: 0, y: 30 }}
-               whileInView={{ opacity: 1, y: 0 }}
-               viewport={{ once: true }}
                className="bg-white dark:bg-white/5 rounded-xl border border-gray-200 dark:border-white/10 p-8 hover:shadow-2xl transition-all duration-300 group relative overflow-hidden flex flex-col"
              >
                 <div className="absolute top-0 left-0 w-full h-1 bg-violet-600"></div>
@@ -59,9 +53,6 @@ const DodgeballPricing: React.FC = () => {
 
              {/* League */}
              <motion.div 
-               initial={{ opacity: 0, y: 30 }}
-               whileInView={{ opacity: 1, y: 0 }}
-               viewport={{ once: true }}
                transition={{ delay: 0.1 }}
                className="bg-white dark:bg-white/5 rounded-xl border border-gray-200 dark:border-white/10 p-8 hover:shadow-2xl transition-all duration-300 group relative overflow-hidden flex flex-col"
              >

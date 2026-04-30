@@ -24,9 +24,6 @@ const AboutValues: React.FC = () => {
     <section className="py-24 bg-gray-50 dark:bg-[#050911] border-y border-gray-200 dark:border-white/5 transition-colors duration-300" id="values">
        <div className="container mx-auto px-4 md:px-6">
           <motion.div 
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
             className="text-center max-w-3xl mx-auto mb-16"
           >
              <span className="text-dfw-red font-mono text-xs font-bold uppercase tracking-widest mb-3 block">Guiding Principles</span>
@@ -36,9 +33,9 @@ const AboutValues: React.FC = () => {
 
           <motion.div 
             variants={containerVariants}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, margin: "-50px" }}
+            
+            
+            
             className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
           >
              {[

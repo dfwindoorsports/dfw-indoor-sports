@@ -12,9 +12,6 @@ const DodgeballPackages: React.FC = () => {
 
             {/* Dodgeball Group Party Image */}
             <motion.div
-               initial={{ opacity: 0, y: 20 }}
-               whileInView={{ opacity: 1, y: 0 }}
-               viewport={{ once: true }}
                className="mb-12"
             >
                <div className="relative h-[220px] md:h-[300px] rounded-2xl overflow-hidden shadow-xl max-w-5xl mx-auto">
@@ -47,9 +44,6 @@ const DodgeballPackages: React.FC = () => {
                   ].map((pkg, i) => (
                      <motion.div
                         key={i}
-                        initial={{ opacity: 0, y: 20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
                         transition={{ delay: i * 0.1 }}
                         className={`bg-white dark:bg-white/5 rounded-lg p-8 border transition-all duration-300 relative overflow-hidden group ${pkg.highlight ? 'border-orange-500 shadow-xl transform md:-translate-y-4' : 'border-gray-200 dark:border-white/10 shadow-sm hover:shadow-md'}`}
                      >

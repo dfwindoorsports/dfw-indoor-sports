@@ -1,7 +1,7 @@
 'use client'
 
-import React, { useRef } from 'react'
-import { motion, useScroll, useTransform, useSpring } from 'framer-motion'
+import React from 'react'
+import { motion } from 'framer-motion'
 import Link from 'next/link'
 import { Calendar, Clock, User, ChevronLeft, Tag, Share2 } from 'lucide-react'
 
@@ -24,19 +24,7 @@ export default function BlogHero({
     author = "DFW Indoor Sports Team",
     image = "/images/hero/sports-action.webp"
 }: BlogHeroProps) {
-    const containerRef = useRef<HTMLDivElement>(null)
-    const { scrollYProgress } = useScroll({
-        target: containerRef,
-        offset: ["start start", "end start"]
-    })
 
-    // Parallax transforms
-    const backgroundY = useTransform(scrollYProgress, [0, 1], ['0%', '20%'])
-    const backgroundScale = useTransform(scrollYProgress, [0, 1], [1, 1.1])
-    const contentOpacity = useTransform(scrollYProgress, [0, 0.5], [1, 0])
-
-    // Smooth spring
-    const smoothOpacity = useSpring(contentOpacity, { stiffness: 100, damping: 30 })
 
     // Stagger animation config
     const staggerContainer = {
@@ -61,15 +49,14 @@ export default function BlogHero({
     }
 
     return (
-        <div ref={containerRef} className="relative w-full h-[70vh] min-h-[600px] bg-[#020408] overflow-hidden flex items-end">
+        <div className="relative w-full h-[70vh] min-h-[600px] bg-[#020408] overflow-hidden flex items-end">
             {/* ═══════════════════════════════════════════════════════════════
                 BACKGROUND LAYERS
             ═══════════════════════════════════════════════════════════════ */}
             <div className="absolute inset-0 z-0">
                 {/* Parallax Background Image */}
-                <motion.div
-                    style={{ y: backgroundY, scale: backgroundScale }}
-                    className="absolute inset-0 w-full h-[120%] -top-[10%]"
+                <div
+                    className="absolute inset-0 w-full h-full"
                 >
                     <motion.div
                         initial={{ scale: 1.1, opacity: 0 }}
@@ -78,7 +65,7 @@ export default function BlogHero({
                         className="absolute inset-0 bg-cover bg-center"
                         style={{ backgroundImage: `url("${image}")` }}
                     />
-                </motion.div>
+                </div>
 
                 {/* Clean Gradient Overlay - Single layer for clarity */}
                 <div className="absolute inset-0 bg-gradient-to-t from-[#020408] via-[#020408]/50 to-[#020408]/20" />
@@ -91,7 +78,7 @@ export default function BlogHero({
                 BACK LINK
             ═══════════════════════════════════════════════════════════════ */}
             <motion.div
-                initial={{ opacity: 0, x: -20 }}
+                
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ delay: 0.2 }}
                 className="absolute top-24 left-4 sm:left-8 lg:left-12 z-20"
@@ -108,14 +95,13 @@ export default function BlogHero({
             {/* ═══════════════════════════════════════════════════════════════
                 MAIN CONTENT
             ═══════════════════════════════════════════════════════════════ */}
-            <motion.div
-                style={{ opacity: smoothOpacity }}
+            <div
                 className="relative z-10 container mx-auto px-4 sm:px-6 lg:px-8 pb-16"
             >
                 <motion.div
                     className="max-w-4xl"
                     variants={staggerContainer}
-                    initial="hidden"
+                    
                     animate="visible"
                 >
                     {/* Meta Badges */}
@@ -181,7 +167,7 @@ export default function BlogHero({
                         </button>
                     </motion.div>
                 </motion.div>
-            </motion.div>
+            </div>
 
         </div>
     )

@@ -12,9 +12,6 @@ const CoachesPhilosophy: React.FC = () => {
 
          <div className="container mx-auto px-4 md:px-6 relative z-10">
             <motion.div
-               initial={{ opacity: 0, y: 20 }}
-               whileInView={{ opacity: 1, y: 0 }}
-               viewport={{ once: true }}
                className="flex flex-col md:flex-row justify-between items-end mb-16 gap-8"
             >
                <div className="max-w-2xl">
@@ -33,9 +30,6 @@ const CoachesPhilosophy: React.FC = () => {
                ].map((item, i) => (
                   <motion.div
                      key={i}
-                     initial={{ opacity: 0, y: 20 }}
-                     whileInView={{ opacity: 1, y: 0 }}
-                     viewport={{ once: true }}
                      transition={{ delay: i * 0.1 }}
                      className="bg-white/5 backdrop-blur-sm border border-white/10 p-8 rounded-sm hover:border-dfw-red/50 hover:bg-white/10 transition-all duration-300 group relative overflow-hidden"
                   >

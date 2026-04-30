@@ -56,9 +56,6 @@ const PartnersCTA: React.FC = () => {
             <div className="flex flex-col lg:flex-row gap-16 items-center">
 
                <motion.div
-                  initial={{ opacity: 0, x: -30 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true }}
                   className="lg:w-1/2 text-center lg:text-left"
                >
                   <span className="text-dfw-red font-mono text-xs font-bold uppercase tracking-widest mb-4 block">Take The Next Step</span>
@@ -85,9 +82,6 @@ const PartnersCTA: React.FC = () => {
                </motion.div>
 
                <motion.div
-                  initial={{ opacity: 0, x: 30 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true }}
                   className="lg:w-1/2 w-full"
                >
                   {isSubmitted ? (

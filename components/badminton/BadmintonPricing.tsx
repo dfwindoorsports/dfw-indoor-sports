@@ -13,9 +13,6 @@ const BadmintonPricing: React.FC = () => {
 
             {/* Badminton Doubles Match Image */}
             <motion.div
-               initial={{ opacity: 0, y: 20 }}
-               whileInView={{ opacity: 1, y: 0 }}
-               viewport={{ once: true }}
                className="mb-12"
             >
                <div className="relative h-[200px] md:h-[280px] rounded-2xl overflow-hidden shadow-xl max-w-4xl mx-auto">
@@ -34,9 +31,6 @@ const BadmintonPricing: React.FC = () => {
             </motion.div>
 
             <motion.div
-               initial={{ opacity: 0, y: 20 }}
-               whileInView={{ opacity: 1, y: 0 }}
-               viewport={{ once: true }}
                className="text-center max-w-3xl mx-auto mb-16"
             >
                <h2 className="text-4xl md:text-5xl font-header font-bold text-[#1E3A8A] dark:text-white uppercase mb-6">Court Rental Rates</h2>
@@ -47,9 +41,6 @@ const BadmintonPricing: React.FC = () => {
 
                {/* Hourly */}
                <motion.div
-                  initial={{ opacity: 0, y: 30 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
                   className="bg-white dark:bg-white/5 rounded-xl border border-gray-200 dark:border-white/10 p-8 hover:shadow-2xl transition-all duration-300 relative group flex flex-col"
                >
                   <div className="mb-4">
@@ -74,9 +65,6 @@ const BadmintonPricing: React.FC = () => {
 
                {/* Membership - Highlighted */}
                <motion.div
-                  initial={{ opacity: 0, y: 30 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
                   transition={{ delay: 0.1 }}
                   className="bg-[#1E3A8A] dark:bg-[#0A111F] rounded-xl border border-[#1E3A8A] dark:border-blue-500/30 p-8 shadow-2xl relative transform md:-translate-y-6 flex flex-col z-10 dark:shadow-[0_0_40px_rgba(37,99,235,0.15)]"
                >
@@ -110,9 +98,6 @@ const BadmintonPricing: React.FC = () => {
 
                {/* Gold Cricket + Badminton */}
                <motion.div
-                  initial={{ opacity: 0, y: 30 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
                   transition={{ delay: 0.2 }}
                   className="bg-white dark:bg-white/5 rounded-xl border border-gray-200 dark:border-white/10 p-8 hover:shadow-2xl transition-all duration-300 relative group flex flex-col"
                >

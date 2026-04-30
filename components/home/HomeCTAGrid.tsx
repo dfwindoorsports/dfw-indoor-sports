@@ -9,9 +9,6 @@ const HomeCTAGrid: React.FC = () => {
     <section className="py-24 bg-[#050911] text-white border-t border-white/5">
        <div className="container mx-auto px-4 md:px-6">
           <motion.div 
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
             className="text-center mb-16"
           >
              <h2 className="text-3xl md:text-5xl font-header font-bold uppercase mb-4">Choose Your Path</h2>
@@ -22,9 +19,6 @@ const HomeCTAGrid: React.FC = () => {
              
              {/* New Visitor */}
              <motion.div 
-                initial={{ opacity: 0 }} 
-                whileInView={{ opacity: 1 }} 
-                viewport={{ once: true }} 
                 className="bg-[#050911] p-8 hover:bg-white/5 transition-colors group"
              >
                 <h3 className="text-xl font-header font-bold uppercase mb-4 text-white group-hover:text-dfw-red transition-colors">New Here?</h3>
@@ -37,9 +31,6 @@ const HomeCTAGrid: React.FC = () => {
 
              {/* Regular Training */}
              <motion.div 
-                initial={{ opacity: 0 }} 
-                whileInView={{ opacity: 1 }} 
-                viewport={{ once: true }} 
                 transition={{ delay: 0.1 }}
                 className="bg-[#050911] p-8 hover:bg-white/5 transition-colors group"
              >
@@ -53,9 +44,6 @@ const HomeCTAGrid: React.FC = () => {
 
              {/* Immediate Play */}
              <motion.div 
-                initial={{ opacity: 0 }} 
-                whileInView={{ opacity: 1 }} 
-                viewport={{ once: true }} 
                 transition={{ delay: 0.2 }}
                 className="bg-[#050911] p-8 hover:bg-white/5 transition-colors group"
              >

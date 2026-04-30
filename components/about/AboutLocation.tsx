@@ -10,9 +10,6 @@ const AboutLocation: React.FC = () => {
        <div className="container mx-auto px-4 md:px-6">
            <div className="flex flex-col lg:flex-row gap-12 items-center">
               <motion.div 
-                initial={{ opacity: 0, x: -20 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
                 className="lg:w-1/2"
               >
                  <span className="text-dfw-red font-mono text-xs font-bold uppercase tracking-widest mb-4 block">Central Hub</span>
@@ -40,9 +37,6 @@ const AboutLocation: React.FC = () => {
               </motion.div>
 
               <motion.div 
-                initial={{ opacity: 0, x: 20 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
                 className="lg:w-1/2 h-[400px] w-full rounded-lg relative overflow-hidden shadow-inner group border border-gray-300 dark:border-white/10"
               >
                  <iframe

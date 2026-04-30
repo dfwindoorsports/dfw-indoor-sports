@@ -13,9 +13,6 @@ const SportsGuide: React.FC = () => {
           {/* Comparison Section */}
           <div className="mb-24">
              <motion.div 
-               initial={{ opacity: 0, y: 20 }}
-               whileInView={{ opacity: 1, y: 0 }}
-               viewport={{ once: true }}
                className="text-center max-w-3xl mx-auto mb-16"
              >
                 <span className="text-dfw-red font-mono text-xs font-bold uppercase tracking-widest mb-3 block">Selection Guide</span>
@@ -26,9 +23,6 @@ const SportsGuide: React.FC = () => {
              <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                 {/* Kids */}
                 <motion.div 
-                  initial={{ opacity: 0, y: 30 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
                   className="bg-gray-50 dark:bg-[#0A111F] p-8 rounded-lg border border-gray-100 dark:border-white/10 hover:shadow-lg transition-all"
                 >
                    <h3 className="font-header font-bold text-xl text-dfw-navy dark:text-white uppercase mb-4 flex items-center gap-2">
@@ -52,9 +46,6 @@ const SportsGuide: React.FC = () => {
 
                 {/* Adults - Rec */}
                 <motion.div 
-                  initial={{ opacity: 0, y: 30 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
                   transition={{ delay: 0.1 }}
                   className="bg-gray-50 dark:bg-[#0A111F] p-8 rounded-lg border border-gray-100 dark:border-white/10 hover:shadow-lg transition-all"
                 >
@@ -79,9 +70,6 @@ const SportsGuide: React.FC = () => {
 
                 {/* Competitors */}
                 <motion.div 
-                  initial={{ opacity: 0, y: 30 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
                   transition={{ delay: 0.2 }}
                   className="bg-gray-50 dark:bg-[#0A111F] p-8 rounded-lg border border-gray-100 dark:border-white/10 hover:shadow-lg transition-all"
                 >
@@ -108,9 +96,6 @@ const SportsGuide: React.FC = () => {
 
           {/* Getting Started */}
           <motion.div 
-            initial={{ opacity: 0, scale: 0.95 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true }}
             className="bg-dfw-navy dark:bg-[#0A111F] border border-white/10 rounded-2xl p-12 text-white relative overflow-hidden"
           >
              <div className="absolute inset-0 bg-[url('/textures/stardust.png')] opacity-10"></div>

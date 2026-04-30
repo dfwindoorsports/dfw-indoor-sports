@@ -12,9 +12,6 @@ const AcademyCoaching: React.FC = () => {
          <div className="container mx-auto px-4 md:px-6 relative z-10">
             <div className="flex flex-col lg:flex-row gap-16 items-center">
                <motion.div
-                  initial={{ opacity: 0, x: -30 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true }}
                   className="lg:w-1/2"
                >
                   <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-white/10 bg-white/5 backdrop-blur-md text-gray-400 font-mono text-[10px] uppercase tracking-[0.25em] mb-6">
@@ -32,8 +29,6 @@ const AcademyCoaching: React.FC = () => {
                   </p>
 
                   <motion.div
-                     initial={{ opacity: 0, y: 20 }}
-                     whileInView={{ opacity: 1, y: 0 }}
                      transition={{ delay: 0.2 }}
                      className="space-y-6"
                   >
@@ -65,9 +60,6 @@ const AcademyCoaching: React.FC = () => {
                </motion.div>
 
                <motion.div
-                  initial={{ opacity: 0, x: 30 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true }}
                   transition={{ duration: 0.8 }}
                   className="lg:w-1/2 relative"
                >

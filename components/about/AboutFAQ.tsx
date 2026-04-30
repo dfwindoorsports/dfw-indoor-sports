@@ -9,9 +9,6 @@ const AboutFAQ: React.FC = () => {
     <section className="bg-white dark:bg-[#020408] py-24 border-t border-gray-200 dark:border-white/5 transition-colors duration-300">
        <div className="container mx-auto px-4 md:px-6 max-w-4xl">
           <motion.h2 
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
             className="text-3xl md:text-5xl font-header font-bold text-dfw-navy dark:text-white uppercase mb-12 text-center"
           >
             Common Questions
@@ -28,9 +25,6 @@ const AboutFAQ: React.FC = () => {
              ].map((item, idx) => (
                 <motion.details 
                   key={idx} 
-                  initial={{ opacity: 0, y: 10 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
                   transition={{ delay: idx * 0.05 }}
                   className="group bg-gray-50 dark:bg-white/5 rounded-sm border border-gray-200 dark:border-white/10 overflow-hidden transition-all duration-300 open:shadow-md"
                 >

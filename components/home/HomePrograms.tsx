@@ -28,9 +28,6 @@ const HomePrograms: React.FC = () => {
 
             {/* Section Banner with Dodgeball Action Image */}
             <motion.div
-               initial={{ opacity: 0, y: 20 }}
-               whileInView={{ opacity: 1, y: 0 }}
-               viewport={{ once: true }}
                className="mb-12"
             >
                <div className="relative h-[200px] md:h-[280px] rounded-2xl overflow-hidden shadow-xl max-w-5xl mx-auto">
@@ -50,9 +47,6 @@ const HomePrograms: React.FC = () => {
             </motion.div>
 
             <motion.div
-               initial={{ opacity: 0, y: 20 }}
-               whileInView={{ opacity: 1, y: 0 }}
-               viewport={{ once: true }}
                className="text-center mb-12 max-w-3xl mx-auto"
             >
                <p className="text-gray-500 dark:text-gray-400">From beginners to champions, finding your level is the first step.</p>
@@ -60,9 +54,9 @@ const HomePrograms: React.FC = () => {
 
             <motion.div
                variants={containerVariants}
-               initial="hidden"
-               whileInView="visible"
-               viewport={{ once: true, margin: "-50px" }}
+               
+               
+               
                className="grid grid-cols-1 md:grid-cols-3 gap-8"
             >
 

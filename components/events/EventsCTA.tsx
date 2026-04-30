@@ -13,22 +13,16 @@ const EventsCTA: React.FC = () => {
 
          <div className="container mx-auto px-4 md:px-6 relative z-10">
             <motion.span
-               initial={{ opacity: 0 }}
-               whileInView={{ opacity: 1 }}
                className="text-dfw-red font-mono text-xs font-bold uppercase tracking-widest mb-4 block"
             >
                Event Special
             </motion.span>
             <motion.h2
-               initial={{ opacity: 0, y: 20 }}
-               whileInView={{ opacity: 1, y: 0 }}
                className="text-4xl md:text-6xl font-header font-bold text-white uppercase mb-6"
             >
                Let's Plan Your <span className="text-dfw-red">Event</span>
             </motion.h2>
             <motion.p
-               initial={{ opacity: 0 }}
-               whileInView={{ opacity: 1 }}
                transition={{ delay: 0.2 }}
                className="text-gray-400 text-lg font-light mb-12 max-w-2xl mx-auto"
             >
@@ -37,8 +31,6 @@ const EventsCTA: React.FC = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto mb-16">
                <motion.div
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.1 }}
                   className="bg-white/5 border border-white/10 p-6 rounded-lg hover:bg-white/10 transition-colors"
                >
@@ -49,8 +41,6 @@ const EventsCTA: React.FC = () => {
                </motion.div>
 
                <motion.div
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.2 }}
                   className="bg-white/5 border border-white/10 p-6 rounded-lg hover:bg-white/10 transition-colors"
                >
@@ -61,8 +51,6 @@ const EventsCTA: React.FC = () => {
                </motion.div>
 
                <motion.div
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.3 }}
                   className="bg-white/5 border border-white/10 p-6 rounded-lg hover:bg-white/10 transition-colors"
                >

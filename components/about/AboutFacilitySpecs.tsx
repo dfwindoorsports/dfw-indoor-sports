@@ -13,9 +13,6 @@ const AboutFacilitySpecs: React.FC = () => {
 
             {/* Facility Collage Banner */}
             <motion.div
-               initial={{ opacity: 0, y: 20 }}
-               whileInView={{ opacity: 1, y: 0 }}
-               viewport={{ once: true }}
                className="mb-16"
             >
                <div className="relative h-[200px] md:h-[300px] rounded-2xl overflow-hidden shadow-xl">
@@ -37,9 +34,6 @@ const AboutFacilitySpecs: React.FC = () => {
                {/* Left: Sticky Text */}
                <div className="md:w-1/3 md:sticky md:top-32">
                   <motion.div
-                     initial={{ opacity: 0, x: -20 }}
-                     whileInView={{ opacity: 1, x: 0 }}
-                     viewport={{ once: true }}
                   >
                      <div className="inline-flex items-center gap-2 mb-4">
                         <Building2 size={16} className="text-dfw-red" />
@@ -89,9 +83,6 @@ const AboutFacilitySpecs: React.FC = () => {
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                      {/* Cricket */}
                      <motion.div
-                        initial={{ opacity: 0, y: 20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
                         className="md:col-span-2 relative h-64 rounded-sm overflow-hidden group border border-white/10"
                      >
                         <img src="/images/facilities/cricket-lanes.webp" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" alt="Cricket" />
@@ -104,9 +95,6 @@ const AboutFacilitySpecs: React.FC = () => {
 
                      {/* Badminton */}
                      <motion.div
-                        initial={{ opacity: 0, y: 20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
                         transition={{ delay: 0.1 }}
                         className="relative h-64 rounded-sm overflow-hidden group border border-white/10"
                      >
@@ -120,9 +108,6 @@ const AboutFacilitySpecs: React.FC = () => {
 
                      {/* Lounge */}
                      <motion.div
-                        initial={{ opacity: 0, y: 20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
                         transition={{ delay: 0.2 }}
                         className="relative h-64 rounded-sm overflow-hidden group border border-white/10"
                      >

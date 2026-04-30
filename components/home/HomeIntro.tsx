@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { Sun, Heart, Users, MapPin, Clock, DollarSign } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { OptimizedImage } from '@/components/ui/OptimizedImage';
-import SportsParallaxLayer from '@/components/animations/SportsParallaxLayer';
+
 
 const HomeIntro: React.FC = () => {
    const containerVariants = {
@@ -25,13 +25,7 @@ const HomeIntro: React.FC = () => {
 
    return (
       <section className="relative py-24 md:py-32 bg-white dark:bg-[#020408] transition-colors duration-300 overflow-hidden">
-         {/* 🏏 GSAP-Powered Sports Parallax Layer */}
-         <SportsParallaxLayer
-            elementCount={5}
-            sports={['cricket', 'shuttlecock', 'soccer']}
-            zIndex={1}
-            className="opacity-30 dark:opacity-40"
-         />
+
 
          {/* Clean background - professional local business style */}
 
@@ -39,9 +33,6 @@ const HomeIntro: React.FC = () => {
 
             {/* Facility Overview Image */}
             <motion.div
-               initial={{ opacity: 0, y: 20 }}
-               whileInView={{ opacity: 1, y: 0 }}
-               viewport={{ once: true }}
                className="mb-16"
             >
                <div className="relative h-[300px] md:h-[400px] rounded-2xl overflow-hidden shadow-2xl">
@@ -67,9 +58,6 @@ const HomeIntro: React.FC = () => {
                {/* Left Content - Human Connection Focus */}
                <motion.div
                   className="lg:w-3/5"
-                  initial="hidden"
-                  whileInView="visible"
-                  viewport={{ once: true, margin: "-100px" }}
                   variants={containerVariants}
                >
                   <motion.span variants={itemVariants} className="text-dfw-red font-mono text-xs font-bold uppercase tracking-widest mb-4 block">Our Philosophy</motion.span>
@@ -114,9 +102,6 @@ const HomeIntro: React.FC = () => {
                {/* Right: Quick Answer Box (AEO Optimized) */}
                <motion.div
                   className="lg:w-2/5 w-full"
-                  initial={{ opacity: 0, x: 20 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true }}
                   transition={{ duration: 0.6 }}
                >
                   {/* Simple Info Card - Traditional local business style */}

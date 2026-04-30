@@ -10,9 +10,6 @@ const RentalsFacilities: React.FC = () => {
     <section className="py-24 bg-gray-50 dark:bg-[#0A111F] border-y border-gray-200 dark:border-white/5 transition-colors duration-300" id="facilities">
          <div className="container mx-auto px-4 md:px-6">
             <motion.div 
-               initial={{ opacity: 0, y: 20 }}
-               whileInView={{ opacity: 1, y: 0 }}
-               viewport={{ once: true }}
                className="text-center mb-16"
             >
                <span className="text-dfw-red font-mono text-xs font-bold uppercase tracking-widest mb-3 block">Seven Sports. World Class.</span>
@@ -24,9 +21,6 @@ const RentalsFacilities: React.FC = () => {
                
                {/* Sport 1: Cricket */}
                <motion.div 
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
                   className="bg-white dark:bg-white/5 rounded-lg border border-gray-200 dark:border-white/10 overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 group"
                >
                   <div className="grid grid-cols-1 lg:grid-cols-2">
@@ -74,9 +68,6 @@ const RentalsFacilities: React.FC = () => {
 
                {/* Sport 2: Badminton */}
                <motion.div 
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
                   transition={{ delay: 0.1 }}
                   className="bg-white dark:bg-white/5 rounded-lg border border-gray-200 dark:border-white/10 overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 group"
                >
@@ -126,9 +117,6 @@ const RentalsFacilities: React.FC = () => {
                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 pt-8">
                   {/* Soccer */}
                   <motion.div 
-                     initial={{ opacity: 0, y: 20 }}
-                     whileInView={{ opacity: 1, y: 0 }}
-                     viewport={{ once: true }}
                      transition={{ delay: 0.2 }}
                      className="bg-white dark:bg-white/5 p-6 rounded-lg border border-gray-100 dark:border-white/10 hover:border-green-600 transition-all group"
                   >
@@ -147,9 +135,6 @@ const RentalsFacilities: React.FC = () => {
 
                   {/* Dodgeball */}
                   <motion.div 
-                     initial={{ opacity: 0, y: 20 }}
-                     whileInView={{ opacity: 1, y: 0 }}
-                     viewport={{ once: true }}
                      transition={{ delay: 0.4 }}
                      className="bg-white dark:bg-white/5 p-6 rounded-lg border border-gray-100 dark:border-white/10 hover:border-purple-600 transition-all group"
                   >

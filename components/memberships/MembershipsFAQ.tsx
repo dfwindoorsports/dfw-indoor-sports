@@ -9,9 +9,6 @@ const MembershipsFAQ: React.FC = () => {
     <section className="py-24 bg-white dark:bg-[#020408] transition-colors duration-300">
        <div className="container mx-auto px-4 md:px-6 max-w-3xl">
           <motion.h2 
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
             className="text-3xl font-header font-bold text-dfw-navy dark:text-white uppercase mb-12 text-center"
           >
             Membership FAQ

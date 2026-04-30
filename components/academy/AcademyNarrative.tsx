@@ -11,9 +11,6 @@ const AcademyNarrative: React.FC = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
              
              <motion.div 
-               initial={{ opacity: 0, x: -50 }}
-               whileInView={{ opacity: 1, x: 0 }}
-               viewport={{ once: true }}
                transition={{ duration: 0.7 }}
                className="relative order-2 lg:order-1"
              >
@@ -45,9 +42,6 @@ const AcademyNarrative: React.FC = () => {
              </motion.div>
 
              <motion.div 
-               initial={{ opacity: 0, x: 50 }}
-               whileInView={{ opacity: 1, x: 0 }}
-               viewport={{ once: true }}
                transition={{ duration: 0.7 }}
                className="order-1 lg:order-2"
              >
@@ -75,9 +69,6 @@ const AcademyNarrative: React.FC = () => {
                    ].map((item, i) => (
                       <motion.div 
                         key={i} 
-                        initial={{ opacity: 0, y: 10 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
                         transition={{ delay: i * 0.1 }}
                         className="flex items-start gap-4 p-4 rounded-lg bg-gray-50 dark:bg-[#0A111F] border border-gray-100 dark:border-white/5 hover:border-dfw-red/20 transition-colors group cursor-default"
                       >

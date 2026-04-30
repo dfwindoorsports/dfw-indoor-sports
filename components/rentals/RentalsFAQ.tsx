@@ -12,9 +12,6 @@ const RentalsFAQ: React.FC = () => {
                
                {/* Left: Policies */}
                <motion.div 
-                  initial={{ opacity: 0, x: -30 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true }}
                   className="lg:col-span-5"
                >
                   <h3 className="font-header font-bold text-dfw-navy dark:text-white uppercase text-2xl mb-8">Booking Policies</h3>
@@ -48,9 +45,6 @@ const RentalsFAQ: React.FC = () => {
 
                {/* Right: FAQ Accordion */}
                <motion.div 
-                  initial={{ opacity: 0, x: 30 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true }}
                   transition={{ delay: 0.1 }}
                   className="lg:col-span-7"
                >
@@ -67,9 +61,6 @@ const RentalsFAQ: React.FC = () => {
                      ].map((item, idx) => (
                         <motion.details 
                            key={idx} 
-                           initial={{ opacity: 0, y: 10 }}
-                           whileInView={{ opacity: 1, y: 0 }}
-                           viewport={{ once: true }}
                            transition={{ delay: idx * 0.05 }}
                            className="group bg-gray-50 dark:bg-white/5 rounded-sm border border-gray-100 dark:border-white/10 overflow-hidden transition-all duration-300 open:shadow-md"
                         >

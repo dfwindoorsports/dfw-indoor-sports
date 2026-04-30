@@ -23,7 +23,7 @@ const AcademyHero: React.FC = () => {
 
          <div className="container mx-auto px-4 md:px-6 relative z-20 pt-10">
             <motion.div
-               initial={{ opacity: 0, y: 20 }}
+               
                animate={{ opacity: 1, y: 0 }}
                transition={{ delay: 0.2 }}
                className="inline-flex items-center gap-3 px-4 py-1.5 rounded-full border border-dfw-red/40 bg-dfw-red/10 backdrop-blur-2xl text-dfw-red font-mono text-[10px] uppercase tracking-[0.25em] mb-4 hover:bg-dfw-red/20 transition-colors cursor-default"
@@ -33,7 +33,7 @@ const AcademyHero: React.FC = () => {
             </motion.div>
 
             <motion.h1
-               initial={{ opacity: 0, y: 30 }}
+               
                animate={{ opacity: 1, y: 0 }}
                transition={{ delay: 0.4, duration: 0.8 }}
                className="text-3xl md:text-5xl lg:text-6xl font-header font-bold text-white uppercase tracking-tighter mb-4 leading-[1.1] max-w-5xl drop-shadow-2xl"
@@ -43,7 +43,7 @@ const AcademyHero: React.FC = () => {
             </motion.h1>
 
             <motion.div
-               initial={{ opacity: 0, y: 30 }}
+               
                animate={{ opacity: 1, y: 0 }}
                transition={{ delay: 0.6 }}
                className="flex flex-col md:flex-row items-start md:items-center gap-4"
@@ -66,7 +66,7 @@ const AcademyHero: React.FC = () => {
             </motion.div>
 
             <motion.div
-               initial={{ opacity: 0 }}
+               
                animate={{ opacity: 1 }}
                transition={{ delay: 0.8 }}
                className="flex flex-row flex-wrap gap-4 mt-6"

@@ -9,9 +9,6 @@ const MembershipsValue: React.FC = () => {
     <section className="py-24 bg-gray-50 dark:bg-[#0A111F] border-y border-gray-200 dark:border-white/5 transition-colors duration-300">
        <div className="container mx-auto px-4 md:px-6">
           <motion.div 
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
             className="text-center mb-16"
           >
              <span className="text-dfw-red font-mono text-xs font-bold uppercase tracking-widest mb-3 block">ROI Analysis</span>
@@ -22,9 +19,6 @@ const MembershipsValue: React.FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto">
              {/* Cricket Scenario */}
              <motion.div 
-               initial={{ opacity: 0, y: 30 }}
-               whileInView={{ opacity: 1, y: 0 }}
-               viewport={{ once: true }}
                className="bg-white dark:bg-white/5 p-8 rounded-lg border border-gray-200 dark:border-white/10 hover:shadow-lg transition-all duration-300"
              >
                 <div className="flex items-center gap-3 mb-6">
@@ -57,9 +51,6 @@ const MembershipsValue: React.FC = () => {
 
              {/* Badminton Scenario */}
              <motion.div 
-               initial={{ opacity: 0, y: 30 }}
-               whileInView={{ opacity: 1, y: 0 }}
-               viewport={{ once: true }}
                transition={{ delay: 0.1 }}
                className="bg-white dark:bg-white/5 p-8 rounded-lg border border-gray-200 dark:border-white/10 hover:shadow-lg transition-all duration-300"
              >
@@ -93,9 +84,6 @@ const MembershipsValue: React.FC = () => {
 
              {/* Family Scenario */}
              <motion.div 
-               initial={{ opacity: 0, y: 30 }}
-               whileInView={{ opacity: 1, y: 0 }}
-               viewport={{ once: true }}
                transition={{ delay: 0.2 }}
                className="bg-white dark:bg-white/5 p-8 rounded-lg border border-gray-200 dark:border-white/10 hover:shadow-lg transition-all duration-300"
              >

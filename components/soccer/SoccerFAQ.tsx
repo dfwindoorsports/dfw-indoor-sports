@@ -9,9 +9,6 @@ const SoccerFAQ: React.FC = () => {
     <section className="py-24 bg-white dark:bg-[#020408] border-t border-gray-100 dark:border-white/5 transition-colors duration-300">
        <div className="container mx-auto px-4 md:px-6 max-w-3xl">
           <motion.h2 
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
             className="text-3xl font-header font-bold text-[#064E3B] dark:text-white uppercase mb-12 text-center"
           >
             Soccer Field Rental FAQ
@@ -34,9 +31,6 @@ const SoccerFAQ: React.FC = () => {
              ].map((item, idx) => (
                 <motion.details 
                   key={idx} 
-                  initial={{ opacity: 0, y: 10 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
                   transition={{ delay: idx * 0.05 }}
                   className="group py-6 cursor-pointer"
                 >

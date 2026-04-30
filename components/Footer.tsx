@@ -86,9 +86,9 @@ export default function Footer() {
 
         <motion.div
           variants={containerVariants}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
+          
+          
+          
           className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 mb-16"
         >
 
@@ -282,9 +282,9 @@ export default function Footer() {
 
         <motion.div
           variants={itemVariants}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true }}
+          
+          
+          
           className="border-t border-white/5 pt-8 flex flex-col-reverse md:flex-row justify-between items-center gap-6"
         >
           <div className="flex flex-col md:flex-row items-center gap-4">

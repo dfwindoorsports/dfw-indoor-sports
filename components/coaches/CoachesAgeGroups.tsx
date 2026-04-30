@@ -9,9 +9,6 @@ const CoachesAgeGroups: React.FC = () => {
     <section className="py-24 bg-gray-50 dark:bg-[#0A111F] transition-colors duration-300">
        <div className="container mx-auto px-4 md:px-6">
           <motion.div 
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
             className="text-center mb-16"
           >
              <h2 className="text-3xl md:text-5xl font-header font-bold text-dfw-navy dark:text-white uppercase mb-6">Coaching for Every Stage</h2>
@@ -21,9 +18,6 @@ const CoachesAgeGroups: React.FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
              {/* Youth */}
              <motion.div 
-               initial={{ opacity: 0, y: 30 }}
-               whileInView={{ opacity: 1, y: 0 }}
-               viewport={{ once: true }}
                className="bg-white dark:bg-white/5 p-8 rounded-sm shadow-sm border border-gray-200 dark:border-white/10 hover:border-dfw-navy dark:hover:border-white/30 transition-colors group"
              >
                 <div className="w-12 h-12 bg-green-100 dark:bg-green-900/30 text-green-600 dark:text-green-400 rounded-full flex items-center justify-center mb-6 group-hover:bg-green-600 group-hover:text-white transition-colors">
@@ -41,9 +35,6 @@ const CoachesAgeGroups: React.FC = () => {
 
              {/* Junior */}
              <motion.div 
-               initial={{ opacity: 0, y: 30 }}
-               whileInView={{ opacity: 1, y: 0 }}
-               viewport={{ once: true }}
                transition={{ delay: 0.1 }}
                className="bg-white dark:bg-white/5 p-8 rounded-sm shadow-sm border border-gray-200 dark:border-white/10 hover:border-dfw-navy dark:hover:border-white/30 transition-colors group"
              >
@@ -62,9 +53,6 @@ const CoachesAgeGroups: React.FC = () => {
 
              {/* Adult */}
              <motion.div 
-               initial={{ opacity: 0, y: 30 }}
-               whileInView={{ opacity: 1, y: 0 }}
-               viewport={{ once: true }}
                transition={{ delay: 0.2 }}
                className="bg-white dark:bg-white/5 p-8 rounded-sm shadow-sm border border-gray-200 dark:border-white/10 hover:border-dfw-navy dark:hover:border-white/30 transition-colors group"
              >

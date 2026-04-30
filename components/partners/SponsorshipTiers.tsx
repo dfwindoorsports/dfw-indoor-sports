@@ -54,7 +54,7 @@ const SponsorshipTiers: React.FC = () => {
                 {activeTab === 'digital' && (
                    <motion.div 
                      key="digital"
-                     initial={{ opacity: 0, y: 20 }}
+                     
                      animate={{ opacity: 1, y: 0 }}
                      exit={{ opacity: 0, y: -20 }}
                      transition={{ duration: 0.4 }}
@@ -88,7 +88,7 @@ const SponsorshipTiers: React.FC = () => {
                 {activeTab === 'onsite' && (
                    <motion.div 
                      key="onsite"
-                     initial={{ opacity: 0, y: 20 }}
+                     
                      animate={{ opacity: 1, y: 0 }}
                      exit={{ opacity: 0, y: -20 }}
                      transition={{ duration: 0.4 }}
@@ -123,7 +123,7 @@ const SponsorshipTiers: React.FC = () => {
                 {activeTab === 'full' && (
                    <motion.div 
                      key="full"
-                     initial={{ opacity: 0, y: 20 }}
+                     
                      animate={{ opacity: 1, y: 0 }}
                      exit={{ opacity: 0, y: -20 }}
                      transition={{ duration: 0.4 }}

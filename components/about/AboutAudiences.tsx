@@ -14,9 +14,6 @@ const AboutAudiences: React.FC = () => {
     <section className="py-24 bg-white dark:bg-[#020408] border-y border-gray-100 dark:border-white/5 transition-colors duration-300">
        <div className="container mx-auto px-4 md:px-6">
           <motion.div 
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
             className="text-center mb-16"
           >
              <h2 className="text-4xl font-header font-bold text-dfw-navy dark:text-white uppercase mb-4">Athletes at Every Stage</h2>
@@ -24,9 +21,9 @@ const AboutAudiences: React.FC = () => {
           </motion.div>
 
           <motion.div 
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true }}
+            
+            
+            
             transition={{ staggerChildren: 0.1 }}
             className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-6"
           >

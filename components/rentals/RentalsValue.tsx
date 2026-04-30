@@ -14,9 +14,6 @@ const RentalsValue: React.FC = () => {
 
             {/* Happy Renters Image Banner */}
             <motion.div
-               initial={{ opacity: 0, y: 20 }}
-               whileInView={{ opacity: 1, y: 0 }}
-               viewport={{ once: true }}
                className="mb-12"
             >
                <div className="relative h-[200px] md:h-[280px] rounded-2xl overflow-hidden shadow-xl max-w-4xl mx-auto border border-white/10">
@@ -35,9 +32,6 @@ const RentalsValue: React.FC = () => {
             </motion.div>
 
             <motion.div
-               initial={{ opacity: 0, y: 20 }}
-               whileInView={{ opacity: 1, y: 0 }}
-               viewport={{ once: true }}
                className="text-center mb-16"
             >
                <span className="text-dfw-red font-mono text-xs font-bold uppercase tracking-widest mb-3 block">Value Analysis</span>
@@ -49,9 +43,6 @@ const RentalsValue: React.FC = () => {
 
                {/* Scenario 1: Cricket */}
                <motion.div
-                  initial={{ opacity: 0, x: -30 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true }}
                   className="bg-white/5 border border-white/10 rounded-lg p-8 hover:bg-white/10 transition-colors"
                >
                   <div className="flex items-center gap-3 mb-6">
@@ -70,12 +61,10 @@ const RentalsValue: React.FC = () => {
                         </div>
                      </div>
                      <div className="h-2 bg-gray-700 rounded-full overflow-hidden">
-                        <motion.div
-                           initial={{ width: 0 }}
-                           whileInView={{ width: "83%" }}
-                           transition={{ duration: 1, delay: 0.5 }}
+                        <div
+                           style={{ width: '60%' }}
                            className="h-full bg-green-500"
-                        ></motion.div>
+                        ></div>
                      </div>
                      <p className="text-center text-green-400 font-bold uppercase text-xs tracking-widest">
                         Significant monthly savings vs hourly rates
@@ -85,9 +74,6 @@ const RentalsValue: React.FC = () => {
 
                {/* Scenario 2: Badminton */}
                <motion.div
-                  initial={{ opacity: 0, x: 30 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true }}
                   transition={{ delay: 0.1 }}
                   className="bg-white/5 border border-white/10 rounded-lg p-8 hover:bg-white/10 transition-colors"
                >
@@ -107,12 +93,10 @@ const RentalsValue: React.FC = () => {
                         </div>
                      </div>
                      <div className="h-2 bg-gray-700 rounded-full overflow-hidden">
-                        <motion.div
-                           initial={{ width: 0 }}
-                           whileInView={{ width: "10%" }}
-                           transition={{ duration: 1, delay: 0.5 }}
+                        <div
+                           style={{ width: '40%' }}
                            className="h-full bg-blue-500"
-                        ></motion.div>
+                        ></div>
                      </div>
                      <p className="text-center text-blue-400 font-bold uppercase text-xs tracking-widest">
                         Stick to Drop-In (Break Even)

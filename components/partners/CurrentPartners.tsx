@@ -9,18 +9,12 @@ const CurrentPartners: React.FC = () => {
     <section className="py-20 bg-[#FAFAFA] dark:bg-[#0A111F] border-y border-gray-200 dark:border-white/5 transition-colors duration-300">
        <div className="container mx-auto px-4 md:px-6 text-center">
           <motion.div 
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
           >
              <span className="text-dfw-red font-mono text-xs font-bold uppercase tracking-widest mb-6 block">Our Network</span>
              <h2 className="text-3xl font-header font-bold text-dfw-navy dark:text-white uppercase mb-16 tracking-wide">Proud to Partner With</h2>
           </motion.div>
           
           <motion.div 
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
             transition={{ staggerChildren: 0.1 }}
             className="grid grid-cols-2 md:grid-cols-4 gap-12 items-center"
           >
@@ -82,9 +76,6 @@ const CurrentPartners: React.FC = () => {
           </motion.div>
           
           <motion.div 
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
             transition={{ delay: 0.4 }}
             className="mt-16 pt-16 border-t border-gray-200 dark:border-white/10"
           >

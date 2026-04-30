@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 const CoachesStats: React.FC = () => {
   return (
     <motion.div 
-      initial={{ opacity: 0, y: 20 }}
+      
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay: 1 }}
       className="bg-white dark:bg-[#0A111F] border-b border-gray-200 dark:border-white/10 relative z-30 lg:-mt-20 mx-4 md:mx-auto max-w-7xl rounded-lg shadow-2xl transition-colors duration-300"

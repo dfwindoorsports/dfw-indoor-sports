@@ -16,9 +16,6 @@ const HomeMembership: React.FC = () => {
 
             {/* Happy Members Image - Social Proof */}
             <motion.div
-               initial={{ opacity: 0, y: 20 }}
-               whileInView={{ opacity: 1, y: 0 }}
-               viewport={{ once: true }}
                className="mb-16"
             >
                <div className="relative h-[200px] md:h-[280px] rounded-2xl overflow-hidden shadow-2xl max-w-4xl mx-auto">
@@ -42,9 +39,6 @@ const HomeMembership: React.FC = () => {
 
                {/* Left Text */}
                <motion.div
-                  initial={{ opacity: 0, x: -30 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true }}
                   className="lg:w-1/2"
                >
                   <span className="text-dfw-red font-mono text-xs font-bold uppercase tracking-widest mb-4 block">Join The Family</span>
@@ -76,9 +70,6 @@ const HomeMembership: React.FC = () => {
 
                   {/* Gold Card */}
                   <motion.div
-                     initial={{ opacity: 0, y: 30 }}
-                     whileInView={{ opacity: 1, y: 0 }}
-                     viewport={{ once: true }}
                      transition={{ delay: 0.2 }}
                      className="bg-gradient-to-br from-dfw-red to-red-800 p-8 rounded-2xl shadow-2xl relative overflow-hidden group transform md:-translate-y-6 border border-white/10"
                   >
@@ -94,9 +85,6 @@ const HomeMembership: React.FC = () => {
 
                   {/* Family Card */}
                   <motion.div
-                     initial={{ opacity: 0, y: 30 }}
-                     whileInView={{ opacity: 1, y: 0 }}
-                     viewport={{ once: true }}
                      transition={{ delay: 0.4 }}
                      className="bg-white/10 backdrop-blur-md p-8 rounded-2xl border border-white/10 hover:bg-white/15 transition-colors group"
                   >

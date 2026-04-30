@@ -9,9 +9,6 @@ const CoachesCredentials: React.FC = () => {
        <div className="container mx-auto px-4 md:px-6">
           <div className="flex flex-col lg:flex-row gap-16 items-center">
              <motion.div 
-               initial={{ opacity: 0, x: -30 }}
-               whileInView={{ opacity: 1, x: 0 }}
-               viewport={{ once: true }}
                className="lg:w-1/2"
              >
                 <h2 className="text-3xl md:text-4xl font-header font-bold text-dfw-navy dark:text-white uppercase mb-6">Understanding Certifications</h2>
@@ -34,9 +31,6 @@ const CoachesCredentials: React.FC = () => {
                 </div>
              </motion.div>
              <motion.div 
-               initial={{ opacity: 0, x: 30 }}
-               whileInView={{ opacity: 1, x: 0 }}
-               viewport={{ once: true }}
                transition={{ duration: 0.6 }}
                className="lg:w-1/2 relative"
              >

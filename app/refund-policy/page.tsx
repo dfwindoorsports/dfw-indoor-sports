@@ -31,7 +31,7 @@ export default function RefundPolicyPage() {
             <div className="absolute inset-0 bg-[url('/textures/carbon-fibre.png')] opacity-20"></div>
             <div className="absolute inset-0 bg-gradient-to-b from-transparent to-[#020408]/90"></div>
             <motion.div
-               initial={{ opacity: 0, y: 30 }}
+               
                animate={{ opacity: 1, y: 0 }}
                transition={{ duration: 0.8 }}
                className="container mx-auto px-4 md:px-6 relative z-10 text-center"
@@ -53,7 +53,7 @@ export default function RefundPolicyPage() {
          <div className="container mx-auto px-4 md:px-6 py-16">
             <div className="flex flex-col lg:flex-row gap-12">
                <motion.div
-                  initial={{ opacity: 0, x: -20 }}
+                  
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ delay: 0.2, duration: 0.6 }}
                   className="lg:w-1/4"
@@ -86,9 +86,9 @@ export default function RefundPolicyPage() {
 
                <motion.div
                   variants={containerVariants}
-                  initial="hidden"
-                  whileInView="visible"
-                  viewport={{ once: true, margin: "-100px" }}
+                  
+                  
+                  
                   className="lg:w-3/4"
                >
 

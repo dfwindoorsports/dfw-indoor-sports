@@ -68,9 +68,6 @@ export default function HomeFAQ() {
                 <div className="max-w-4xl mx-auto">
                     {/* Header */}
                     <motion.div
-                        initial={{ opacity: 0, y: 20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
                         transition={{ duration: 0.5 }}
                         className="text-center mb-16"
                     >
@@ -90,9 +87,6 @@ export default function HomeFAQ() {
                         {faqs.map((faq, index) => (
                             <motion.div
                                 key={index}
-                                initial={{ opacity: 0, y: 10 }}
-                                whileInView={{ opacity: 1, y: 0 }}
-                                viewport={{ once: true }}
                                 transition={{ duration: 0.3, delay: index * 0.05 }}
                             >
                                 <button
@@ -113,7 +107,7 @@ export default function HomeFAQ() {
                                     </div>
                                     {openIndex === index && (
                                         <motion.p
-                                            initial={{ opacity: 0, height: 0 }}
+                                            
                                             animate={{ opacity: 1, height: 'auto' }}
                                             exit={{ opacity: 0, height: 0 }}
                                             className="text-gray-600 mt-4 text-sm leading-relaxed pr-12"
@@ -128,9 +122,6 @@ export default function HomeFAQ() {
 
                     {/* CTA */}
                     <motion.div
-                        initial={{ opacity: 0, y: 20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        viewport={{ once: true }}
                         transition={{ duration: 0.5, delay: 0.3 }}
                         className="text-center mt-12"
                     >

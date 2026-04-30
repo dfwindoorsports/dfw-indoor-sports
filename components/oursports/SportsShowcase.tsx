@@ -58,9 +58,6 @@ const SportsShowcase: React.FC = () => {
        {sportsData.map((sport, index) => (
           <motion.div 
             key={sport.id} 
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-50px" }}
             transition={{ duration: 0.6 }}
             className={`py-24 ${index % 2 !== 0 ? 'bg-white dark:bg-[#020408]' : 'bg-gray-50 dark:bg-[#0A111F]'} transition-colors duration-300`}
           >

@@ -17,9 +17,6 @@ const CricketBooking: React.FC = () => {
 
                {/* Online */}
                <motion.div
-                  initial={{ opacity: 0, y: 30 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
                   className="bg-gray-50 dark:bg-white/5 p-8 rounded-lg border border-gray-100 dark:border-white/10 hover:shadow-lg transition-all text-center group"
                >
                   <div className="w-16 h-16 bg-[#006838] dark:bg-green-600 text-white rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg group-hover:scale-110 transition-transform">
@@ -39,9 +36,6 @@ const CricketBooking: React.FC = () => {
 
                {/* Phone */}
                <motion.div
-                  initial={{ opacity: 0, y: 30 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
                   transition={{ delay: 0.1 }}
                   className="bg-gray-50 dark:bg-white/5 p-8 rounded-lg border border-gray-100 dark:border-white/10 hover:shadow-lg transition-all text-center group"
                >
@@ -61,9 +55,6 @@ const CricketBooking: React.FC = () => {
 
                {/* Walk-In */}
                <motion.div
-                  initial={{ opacity: 0, y: 30 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
                   transition={{ delay: 0.2 }}
                   className="bg-gray-50 dark:bg-white/5 p-8 rounded-lg border border-gray-100 dark:border-white/10 hover:shadow-lg transition-all text-center group"
                >

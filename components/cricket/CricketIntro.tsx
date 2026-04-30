@@ -15,9 +15,6 @@ const CricketIntro: React.FC = () => {
 
             {/* Cricket Lanes Overview Image */}
             <motion.div
-               initial={{ opacity: 0, y: 20 }}
-               whileInView={{ opacity: 1, y: 0 }}
-               viewport={{ once: true }}
                className="mb-16"
             >
                <div className="relative h-[250px] md:h-[350px] rounded-2xl overflow-hidden shadow-2xl">
@@ -40,9 +37,6 @@ const CricketIntro: React.FC = () => {
 
                {/* Left: Introduction Narrative */}
                <motion.div
-                  initial={{ opacity: 0, x: -30 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true }}
                   transition={{ duration: 0.6 }}
                   className="lg:w-3/5"
                >
@@ -88,9 +82,6 @@ const CricketIntro: React.FC = () => {
 
                {/* Right: Quick Answer Box (AEO Optimized) */}
                <motion.div
-                  initial={{ opacity: 0, x: 30 }}
-                  whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true }}
                   transition={{ duration: 0.6 }}
                   className="lg:w-2/5 w-full"
                >

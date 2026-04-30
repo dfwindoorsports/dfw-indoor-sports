@@ -12,9 +12,6 @@ const CricketExtras: React.FC = () => {
           
           {/* Academy */}
           <motion.div 
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
             className="bg-[#006838] rounded-2xl overflow-hidden relative mb-24 text-white shadow-2xl"
           >
              <div className="absolute inset-0 bg-[url('/textures/carbon-fibre.png')] opacity-20 mix-blend-overlay"></div>
@@ -56,9 +53,6 @@ const CricketExtras: React.FC = () => {
              
              {/* Pro Shop */}
              <motion.div 
-               initial={{ opacity: 0, x: -30 }}
-               whileInView={{ opacity: 1, x: 0 }}
-               viewport={{ once: true }}
              >
                 <div className="flex items-center gap-3 mb-6">
                    <div className="p-3 bg-gray-100 dark:bg-white/10 rounded-full text-[#006838] dark:text-green-400"><ShoppingBag size={24} /></div>
@@ -77,9 +71,6 @@ const CricketExtras: React.FC = () => {
 
              {/* Additional Services */}
              <motion.div 
-               initial={{ opacity: 0, x: 30 }}
-               whileInView={{ opacity: 1, x: 0 }}
-               viewport={{ once: true }}
              >
                 <div className="flex items-center gap-3 mb-6">
                    <div className="p-3 bg-gray-100 dark:bg-white/10 rounded-full text-[#006838] dark:text-green-400"><Trophy size={24} /></div>

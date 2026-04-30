@@ -145,7 +145,7 @@ export default function Navbar() {
                   {NAV_ITEMS.map((item, idx) => (
                     <motion.div
                       key={item.label}
-                      initial={{ opacity: 0, x: 20 }}
+                      
                       animate={{ opacity: 1, x: 0 }}
                       transition={{ delay: idx * 0.05 + 0.2 }}
                       className="border-b border-gray-100 dark:border-white/10 last:border-0"
@@ -210,7 +210,7 @@ export default function Navbar() {
                 </nav>
 
                 <motion.div
-                  initial={{ opacity: 0, y: 20 }}
+                  
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.4 }}
                   className="mt-6 pt-6 border-t border-gray-100 dark:border-white/10"

@@ -13,17 +13,11 @@ const AcademyCTA: React.FC = () => {
 
          <div className="container mx-auto px-4 md:px-6 relative z-10">
             <motion.h2
-               initial={{ opacity: 0, y: 20 }}
-               whileInView={{ opacity: 1, y: 0 }}
-               viewport={{ once: true }}
                className="text-4xl md:text-7xl font-header font-bold text-white uppercase mb-8 tracking-tight"
             >
                Start Your <span className="text-dfw-red">Legacy</span>
             </motion.h2>
             <motion.p
-               initial={{ opacity: 0 }}
-               whileInView={{ opacity: 1 }}
-               viewport={{ once: true }}
                transition={{ delay: 0.2 }}
                className="text-gray-400 text-lg font-light mb-12 max-w-2xl mx-auto leading-relaxed"
             >
@@ -31,9 +25,6 @@ const AcademyCTA: React.FC = () => {
             </motion.p>
 
             <motion.div
-               initial={{ opacity: 0, y: 20 }}
-               whileInView={{ opacity: 1, y: 0 }}
-               viewport={{ once: true }}
                transition={{ delay: 0.3 }}
                className="flex flex-col sm:flex-row justify-center gap-6"
             >

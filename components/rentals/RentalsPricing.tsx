@@ -8,18 +8,12 @@ const RentalsPricing: React.FC = () => {
     <section className="py-24 bg-white dark:bg-[#020408] relative transition-colors duration-300" id="pricing">
          <div className="container mx-auto px-4 md:px-6">
             <motion.h2 
-               initial={{ opacity: 0, y: 20 }}
-               whileInView={{ opacity: 1, y: 0 }}
-               viewport={{ once: true }}
                className="text-3xl font-header font-bold text-dfw-navy dark:text-white uppercase mb-12 text-center"
             >
                Transparent Pricing
             </motion.h2>
             
             <motion.div 
-               initial={{ opacity: 0, y: 30 }}
-               whileInView={{ opacity: 1, y: 0 }}
-               viewport={{ once: true }}
                className="overflow-x-auto rounded-lg shadow-sm border border-gray-200 dark:border-white/10"
             >
                <table className="w-full min-w-[800px] border-collapse">

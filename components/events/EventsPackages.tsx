@@ -27,9 +27,6 @@ const EventsPackages: React.FC = () => {
 
             {/* Kids Party Image Banner */}
             <motion.div
-               initial={{ opacity: 0, y: 20 }}
-               whileInView={{ opacity: 1, y: 0 }}
-               viewport={{ once: true }}
                className="mb-12"
             >
                <div className="relative h-[220px] md:h-[300px] rounded-2xl overflow-hidden shadow-xl max-w-5xl mx-auto">
@@ -48,9 +45,6 @@ const EventsPackages: React.FC = () => {
             </motion.div>
 
             <motion.div
-               initial={{ opacity: 0, y: 20 }}
-               whileInView={{ opacity: 1, y: 0 }}
-               viewport={{ once: true }}
                className="text-center mb-16"
             >
                <span className="text-dfw-red font-mono text-xs font-bold uppercase tracking-widest mb-3 block">Kids & Adults</span>
@@ -60,9 +54,9 @@ const EventsPackages: React.FC = () => {
 
             <motion.div
                variants={containerVariants}
-               initial="hidden"
-               whileInView="visible"
-               viewport={{ once: true }}
+               
+               
+               
                className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto items-start mb-16"
             >
 

@@ -9,9 +9,6 @@ const AboutSportsGrid: React.FC = () => {
     <section className="bg-white dark:bg-[#020408] py-24 border-b border-gray-100 dark:border-white/5 relative overflow-hidden transition-colors duration-300">
        <div className="container mx-auto px-4 md:px-6 relative z-10">
           <motion.div 
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
             className="text-center max-w-3xl mx-auto mb-16"
           >
              <span className="text-dfw-red font-mono text-xs font-bold uppercase tracking-widest mb-3 block">Multi-Discipline Ecosystem</span>
@@ -28,9 +25,6 @@ const AboutSportsGrid: React.FC = () => {
              ].map((sport, i) => (
                 <motion.div 
                   key={i} 
-                  initial={{ opacity: 0, y: 20 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
                   transition={{ delay: i * 0.05 }}
                   className={`p-6 rounded-sm border transition-all duration-300 group cursor-default relative overflow-hidden ${
                      sport.featured 
