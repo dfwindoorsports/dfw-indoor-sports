@@ -5,83 +5,83 @@ import { ChevronRight, PlayCircle, Star } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const AcademyHero: React.FC = () => {
-   return (
-      <div className="relative h-[60vh] min-h-[400px] flex items-center bg-[#050911] overflow-hidden">
-         {/* Dynamic Background with Parallax Feel */}
-         <motion.div
-            initial={{ scale: 1.1, opacity: 0 }}
-            animate={{ scale: 1, opacity: 0.5 }}
-            transition={{ duration: 1.5 }}
-            className="absolute inset-0 bg-cover bg-center"
-            style={{ backgroundImage: 'url("/images/hero/cricket-hero.webp")' }}
-         ></motion.div>
+ return (
+ <div className="relative h-[60vh] min-h-[400px] flex items-center bg-[#050911] overflow-hidden">
+ {/* Dynamic Background with Parallax Feel */}
+ <motion.div
+ initial={{ scale: 1.1, opacity: 0 }}
+ animate={{ scale: 1, opacity: 0.5 }}
+ transition={{ duration: 1.5 }}
+ className="absolute inset-0 bg-cover bg-center"
+ style={{ backgroundImage: 'url("/images/hero/cricket-hero.webp")' }}
+ ></motion.div>
 
-         {/* Advanced Gradient Overlays */}
-         <div className="absolute inset-0 bg-gradient-to-r from-[#050911] via-[#050911]/80 to-transparent z-10"></div>
-         <div className="absolute inset-0 bg-gradient-to-t from-[#050911] via-transparent to-transparent z-10"></div>
-         <div className="absolute inset-0 bg-[url('/textures/carbon-fibre.png')] opacity-20 mix-blend-overlay z-10"></div>
+ {/* Advanced Gradient Overlays */}
+ <div className="absolute inset-0 bg-gradient-to-r from-[#050911] via-[#050911]/80 to-transparent z-10"></div>
+ <div className="absolute inset-0 bg-gradient-to-t from-[#050911] via-transparent to-transparent z-10"></div>
+ <div className="absolute inset-0 bg-[url('/textures/carbon-fibre.png')] opacity-20 mix-blend-overlay z-10"></div>
 
-         <div className="container mx-auto px-4 md:px-6 relative z-20 pt-10">
-            <motion.div
-               
-               animate={{ opacity: 1, y: 0 }}
-               transition={{ delay: 0.2 }}
-               className="inline-flex items-center gap-3 px-4 py-1.5 rounded-full border border-dfw-red/40 bg-dfw-red/10 backdrop-blur-2xl text-dfw-red font-mono text-[10px] uppercase tracking-[0.25em] mb-4 hover:bg-dfw-red/20 transition-colors cursor-default"
-            >
-               <Star size={12} fill="currentColor" />
-               <span>CricKingdom by Rohit Sharma</span>
-            </motion.div>
+ <div className="container mx-auto px-4 md:px-6 relative z-20 pt-10">
+ <motion.div
+ 
+ animate={{ opacity: 1, y: 0 }}
+ transition={{ delay: 0.2 }}
+ className="inline-flex items-center gap-3 px-4 py-1.5 rounded-full border border-dfw-red/40 bg-dfw-red/10 backdrop-blur-2xl text-dfw-red font-mono text-[10px] uppercase tracking-[0.25em] mb-4 hover:bg-dfw-red/20 transition-colors cursor-default"
+ >
+ <Star size={12} fill="currentColor" />
+ <span>CricKingdom by Rohit Sharma</span>
+ </motion.div>
 
-            <motion.h1
-               
-               animate={{ opacity: 1, y: 0 }}
-               transition={{ delay: 0.4, duration: 0.8 }}
-               className="text-3xl md:text-5xl lg:text-6xl font-header font-bold text-white uppercase tracking-tighter mb-4 leading-[1.1] max-w-5xl drop-shadow-2xl"
-            >
-               Where Potential <br />
-               <span className="text-white">Meets Purpose</span>
-            </motion.h1>
+ <motion.h1
+ 
+ animate={{ opacity: 1, y: 0 }}
+ transition={{ delay: 0.4, duration: 0.8 }}
+ className="text-3xl md:text-5xl lg:text-6xl font-header font-bold text-white uppercase tracking-tighter mb-4 leading-[1.1] max-w-5xl drop-shadow-2xl"
+ >
+ Where Potential <br />
+ <span className="text-white">Meets Purpose</span>
+ </motion.h1>
 
-            <motion.div
-               
-               animate={{ opacity: 1, y: 0 }}
-               transition={{ delay: 0.6 }}
-               className="flex flex-col md:flex-row items-start md:items-center gap-4"
-            >
-               <p className="max-w-xl text-gray-300 text-base md:text-lg font-light leading-relaxed border-l-2 border-dfw-red pl-6 backdrop-blur-sm">
-                  We don't just teach cricket; we build character. Through world-class mentorship and a supportive community, we guide every athlete.
-               </p>
+ <motion.div
+ 
+ animate={{ opacity: 1, y: 0 }}
+ transition={{ delay: 0.6 }}
+ className="flex flex-col md:flex-row items-start md:items-center gap-4"
+ >
+ <p className="max-w-xl text-gray-300 text-base md:text-lg font-light leading-relaxed border-l-2 border-dfw-red pl-6 backdrop-blur-sm">
+ We don't just teach cricket; we build character. Through world-class mentorship and a supportive community, we guide every athlete.
+ </p>
 
-               {/* Human-Centric Micro Stats */}
-               <div className="hidden md:flex gap-6 border-l border-white/10 pl-6">
-                  <div>
-                     <div className="text-xl font-header font-bold text-white">1:6</div>
-                     <div className="text-[10px] text-gray-500 uppercase tracking-widest font-mono">Personal Attention</div>
-                  </div>
-                  <div>
-                     <div className="text-xl font-header font-bold text-white">Age 5+</div>
-                     <div className="text-[10px] text-gray-500 uppercase tracking-widest font-mono">To Elite Level</div>
-                  </div>
-               </div>
-            </motion.div>
+ {/* Human-Centric Micro Stats */}
+ <div className="hidden md:flex gap-6 border-l border-white/10 pl-6">
+ <div>
+ <div className="text-xl font-header font-bold text-white">1:6</div>
+ <div className="text-[10px] text-gray-500 uppercase tracking-widest font-mono">Personal Attention</div>
+ </div>
+ <div>
+ <div className="text-xl font-header font-bold text-white">Age 5+</div>
+ <div className="text-[10px] text-gray-500 uppercase tracking-widest font-mono">To Elite Level</div>
+ </div>
+ </div>
+ </motion.div>
 
-            <motion.div
-               
-               animate={{ opacity: 1 }}
-               transition={{ delay: 0.8 }}
-               className="flex flex-row flex-wrap gap-4 mt-6"
-            >
-               <a href="https://ams-app.skonnect.io/player/register?center__code=C-A144&sport=1" target="_blank" rel="noopener noreferrer" className="group relative px-6 py-3 bg-dfw-red text-white font-bold uppercase tracking-widest text-xs rounded-sm overflow-hidden shadow-[0_0_40px_rgba(214,40,40,0.4)] transition-all hover:shadow-[0_0_60px_rgba(214,40,40,0.6)] hover:-translate-y-1 inline-flex">
+ <motion.div
+ 
+ animate={{ opacity: 1 }}
+ transition={{ delay: 0.8 }}
+ className="flex flex-row flex-wrap gap-4 mt-6"
+ >
+ <a href="https://ams-app.skonnect.io/player/register?center__code=C-A144&sport=1" target="_blank" rel="noopener noreferrer" className="group relative px-6 py-3 bg-dfw-red text-white font-bold uppercase tracking-widest text-xs rounded-sm overflow-hidden shadow-[0_0_40px_rgba(214,40,40,0.4)] transition-all hover:shadow-[0_0_60px_rgba(214,40,40,0.6)] hover:-translate-y-1 inline-flex">
 
-                  <span className="relative flex items-center gap-3">Register Now <ChevronRight size={14} /></span>
-               </a>
-               <a href="/contact" className="px-6 py-3 border border-white/20 bg-white/5 backdrop-blur-md text-white font-bold uppercase tracking-widest text-xs rounded-sm hover:bg-white hover:text-dfw-navy transition-all flex items-center gap-3 inline-flex">
-                  <PlayCircle size={14} /> Contact Academy
-               </a>
-            </motion.div>
-         </div>
-      </div>
-   );
+ <span className="relative flex items-center gap-3">Register Now <ChevronRight size={14} /></span>
+ </a>
+ <a href="/contact" className="px-6 py-3 border border-white/20 bg-white/5 backdrop-blur-md text-white font-bold uppercase tracking-widest text-xs rounded-sm hover:bg-white hover:text-dfw-navy transition-all flex items-center gap-3 inline-flex">
+ <PlayCircle size={14} /> Contact Academy
+ </a>
+ </motion.div>
+ </div>
+ </div>
+ );
 };
 
 export default AcademyHero;

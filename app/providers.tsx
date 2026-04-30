@@ -7,5 +7,5 @@ import { ThemeProvider } from '@/context/ThemeContext'
  * Only this component needs 'use client' - children can be server components.
  */
 export default function Providers({ children }: { children: React.ReactNode }) {
-    return <ThemeProvider>{children}</ThemeProvider>
+ return <ThemeProvider>{children}</ThemeProvider>
 }

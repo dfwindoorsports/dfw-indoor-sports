@@ -6,109 +6,109 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 const HomeHero: React.FC = () => {
-  return (
-    <div className="relative w-full h-[85vh] md:h-screen min-h-[500px] md:min-h-[700px] bg-[#020408] pb-6">
-      {/* Container for rounded effect with Deep Physical Shadow */}
-      <div className="relative h-full w-full overflow-hidden rounded-b-2xl md:rounded-b-[3rem] shadow-[0_40px_80px_-20px_rgba(10,17,31,0.6)] z-20">
+ return (
+ <div className="relative w-full h-[85vh] md:h-screen min-h-[500px] md:min-h-[700px] bg-[#020408] pb-6">
+ {/* Container for rounded effect with Deep Physical Shadow */}
+ <div className="relative h-full w-full overflow-hidden rounded-b-2xl md:rounded-b-[3rem] shadow-[0_40px_80px_-20px_rgba(10,17,31,0.6)] z-20">
 
-        {/* Dynamic Background - CSS animation for LCP performance */}
-        <div className="absolute inset-0 overflow-hidden bg-dfw-navy">
-          {/* LCP Image - Using CSS animation instead of JS for faster paint */}
-          <div className="absolute inset-0 opacity-50 animate-hero-zoom">
-            <Image
-              src="/images/hero/sports-action.webp"
-              alt="Indoor sports action at DFW Indoor Sports facility"
-              fill
-              priority
-              fetchPriority="high"
-              sizes="100vw"
-              className="object-cover object-center"
-              quality={85}
-            />
-          </div>
-          {/* Multi-layer gradients for depth */}
-          <div className="absolute inset-0 bg-gradient-to-t from-[#020408] via-[#020408]/40 to-transparent mix-blend-multiply"></div>
-          <div className="absolute inset-0 bg-gradient-to-r from-[#020408]/90 via-[#020408]/40 to-transparent"></div>
-          <div className="absolute inset-0 bg-gradient-to-tr from-dfw-red/10 via-transparent to-dfw-red/5 mix-blend-overlay"></div>
-        </div>
+ {/* Dynamic Background - CSS animation for LCP performance */}
+ <div className="absolute inset-0 overflow-hidden bg-dfw-navy">
+ {/* LCP Image - Using CSS animation instead of JS for faster paint */}
+ <div className="absolute inset-0 opacity-50 animate-hero-zoom">
+ <Image
+ src="/images/hero/sports-action.webp"
+ alt="Indoor sports action at DFW Indoor Sports facility"
+ fill
+ priority
+ fetchPriority="high"
+ sizes="100vw"
+ className="object-cover object-center"
+ quality={85}
+ />
+ </div>
+ {/* Multi-layer gradients for depth */}
+ <div className="absolute inset-0 bg-gradient-to-t from-[#020408] via-[#020408]/40 to-transparent mix-blend-multiply"></div>
+ <div className="absolute inset-0 bg-gradient-to-r from-[#020408]/90 via-[#020408]/40 to-transparent"></div>
+ <div className="absolute inset-0 bg-gradient-to-tr from-dfw-red/10 via-transparent to-dfw-red/5 mix-blend-overlay"></div>
+ </div>
 
-        {/* Subtle vignette for depth - cleaner local business look */}
-        <div className="absolute inset-0 pointer-events-none z-[5]" aria-hidden="true">
-          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/20" />
-        </div>
+ {/* Subtle vignette for depth - cleaner local business look */}
+ <div className="absolute inset-0 pointer-events-none z-[5]" aria-hidden="true">
+ <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black/20" />
+ </div>
 
-        {/* Business Hours Badge - Simple, local business style */}
-        <div className="absolute top-24 right-4 md:top-32 md:right-16 z-30 hidden lg:flex animate-slide-in-right">
-          <div className="px-5 py-3 rounded-lg bg-white/10 border border-white/20 backdrop-blur-md">
-            <span className="text-white font-bold text-sm">Open Daily 5AM - 11PM</span>
-          </div>
-        </div>
+ {/* Business Hours Badge - Simple, local business style */}
+ <div className="absolute top-24 right-4 md:top-32 md:right-16 z-30 hidden lg:flex animate-slide-in-right">
+ <div className="px-5 py-3 rounded-lg bg-white/10 border border-white/20 backdrop-blur-md">
+ <span className="text-white font-bold text-sm">Open Daily 5AM - 11PM</span>
+ </div>
+ </div>
 
-        {/* Main Content - CSS animations for faster paint */}
-        <div className="relative z-10 container mx-auto px-4 md:px-6 h-full flex flex-col justify-center pt-16 md:pt-16">
-          <div className="max-w-5xl">
-            {/* Energy accent line */}
-            <div className="w-20 h-[3px] bg-gradient-to-r from-dfw-red to-dfw-red/0 mb-8 animate-slide-up"></div>
+ {/* Main Content - CSS animations for faster paint */}
+ <div className="relative z-10 container mx-auto px-4 md:px-6 h-full flex flex-col justify-center pt-16 md:pt-16">
+ <div className="max-w-5xl">
+ {/* Energy accent line */}
+ <div className="w-20 h-[3px] bg-gradient-to-r from-dfw-red to-dfw-red/0 mb-8 animate-slide-up"></div>
 
-            {/* Tagline */}
-            <div className="flex items-center gap-4 mb-6 md:mb-8 animate-slide-up">
-              <div className="px-4 py-1.5 md:px-5 md:py-2 border border-dfw-red/40 bg-dfw-red/10 text-white text-[10px] md:text-xs font-bold uppercase tracking-[0.2em] rounded-full flex items-center gap-2 backdrop-blur-md">
-                <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse"></span> Now Open — Fort Worth, TX
-              </div>
-            </div>
+ {/* Tagline */}
+ <div className="flex items-center gap-4 mb-6 md:mb-8 animate-slide-up">
+ <div className="px-4 py-1.5 md:px-5 md:py-2 border border-dfw-red/40 bg-dfw-red/10 text-white text-[10px] md:text-xs font-bold uppercase tracking-[0.2em] rounded-full flex items-center gap-2 backdrop-blur-md">
+ <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse"></span> Now Open — Fort Worth, TX
+ </div>
+ </div>
 
-            {/* Headline - starts visible for LCP, animates in */}
-            <h1 className="text-5xl sm:text-6xl md:text-8xl lg:text-9xl font-header font-bold text-white leading-[0.95] md:leading-[0.95] uppercase tracking-tighter mb-6 md:mb-10 drop-shadow-2xl animate-slide-up-delay">
-              Your Place <br />
-              <span className="text-stroke-red text-transparent">To Play.</span>
-            </h1>
+ {/* Headline - starts visible for LCP, animates in */}
+ <h1 className="text-5xl sm:text-6xl md:text-8xl lg:text-9xl font-header font-bold text-white leading-[0.95] md:leading-[0.95] uppercase tracking-tighter mb-6 md:mb-10 drop-shadow-2xl animate-slide-up-delay">
+ Your Place <br />
+ <span className="text-stroke-red text-transparent">To Play.</span>
+ </h1>
 
-            {/* Description & Buttons */}
-            <div className="flex flex-col lg:flex-row items-start lg:items-center gap-8 md:gap-20 animate-slide-up-delay-2">
-              <p className="text-base md:text-xl text-gray-200 font-light max-w-xl leading-relaxed border-l-2 border-dfw-red pl-6 md:pl-8 backdrop-blur-sm">
-                More than a facility, we're a community. Whether you're picking up a racket for the first time or chasing a championship, you have a home here in North Texas.
-              </p>
+ {/* Description & Buttons */}
+ <div className="flex flex-col lg:flex-row items-start lg:items-center gap-8 md:gap-20 animate-slide-up-delay-2">
+ <p className="text-base md:text-xl text-gray-200 font-light max-w-xl leading-relaxed border-l-2 border-dfw-red pl-6 md:pl-8 backdrop-blur-sm">
+ More than a facility, we're a community. Whether you're picking up a racket for the first time or chasing a championship, you have a home here in North Texas.
+ </p>
 
-              <div className="flex flex-row gap-4 md:gap-5 w-full sm:w-auto">
-                <a href="https://book.runswiftapp.com/facilities/dfw-indoor-sports/rentals" target="_blank" rel="noopener noreferrer" className="btn-sport whitespace-nowrap px-6 md:px-10 py-4 md:py-5 text-sm rounded-sm text-center flex justify-center items-center">
-                  <span className="relative z-10 flex items-center gap-3">
-                    Book Your Court <ChevronRight size={18} className="group-hover:translate-x-1 transition-transform" aria-hidden="true" />
-                  </span>
-                </a>
+ <div className="flex flex-row gap-4 md:gap-5 w-full sm:w-auto">
+ <a href="https://book.runswiftapp.com/facilities/dfw-indoor-sports/rentals" target="_blank" rel="noopener noreferrer" className="btn-sport whitespace-nowrap px-6 md:px-10 py-4 md:py-5 text-sm rounded-sm text-center flex justify-center items-center">
+ <span className="relative z-10 flex items-center gap-3">
+ Book Your Court <ChevronRight size={18} className="group-hover:translate-x-1 transition-transform" aria-hidden="true" />
+ </span>
+ </a>
 
-                <Link href="/memberships" className="btn-sport-ghost whitespace-nowrap px-6 md:px-10 py-4 md:py-5 text-sm rounded-sm text-center flex items-center justify-center gap-3">
-                  <Smile size={16} aria-hidden="true" /> Join the Family
-                </Link>
-              </div>
-            </div>
+ <Link href="/memberships" className="btn-sport-ghost whitespace-nowrap px-6 md:px-10 py-4 md:py-5 text-sm rounded-sm text-center flex items-center justify-center gap-3">
+ <Smile size={16} aria-hidden="true" /> Join the Family
+ </Link>
+ </div>
+ </div>
 
-            {/* Feature Strip */}
-            <div className="mt-12 md:mt-24 pt-8 md:pt-10 border-t border-white/10 grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 animate-fade-in-delay-3">
-              {[
-                { icon: Heart, text: "Passion Driven" },
-                { icon: Users, text: "Friendly Staff" },
-                { icon: Smile, text: "Beginner Friendly" },
-                { icon: Calendar, text: "Open Daily" }
-              ].map((item, idx) => (
-                <div key={idx} className="flex items-center gap-3 md:gap-4 text-gray-300 group cursor-default hover:text-white transition-colors duration-500">
-                  <div className="p-2 md:p-3 bg-white/5 rounded-full border border-white/10 group-hover:border-dfw-red/50 group-hover:bg-dfw-red/20 group-hover:text-dfw-red transition-all duration-300">
-                    <item.icon className="shrink-0 transition-colors" size={16} aria-hidden="true" />
-                  </div>
-                  <span className="text-[10px] md:text-xs font-bold uppercase tracking-widest leading-tight">{item.text}</span>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
+ {/* Feature Strip */}
+ <div className="mt-12 md:mt-24 pt-8 md:pt-10 border-t border-white/10 grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 animate-fade-in-delay-3">
+ {[
+ { icon: Heart, text:"Passion Driven" },
+ { icon: Users, text:"Friendly Staff" },
+ { icon: Smile, text:"Beginner Friendly" },
+ { icon: Calendar, text:"Open Daily" }
+ ].map((item, idx) => (
+ <div key={idx} className="flex items-center gap-3 md:gap-4 text-gray-300 group cursor-default hover:text-white transition-colors duration-500">
+ <div className="p-2 md:p-3 bg-white/5 rounded-full border border-white/10 group-hover:border-dfw-red/50 group-hover:bg-dfw-red/20 group-hover:text-dfw-red transition-all duration-300">
+ <item.icon className="shrink-0 transition-colors" size={16} aria-hidden="true" />
+ </div>
+ <span className="text-[10px] md:text-xs font-bold uppercase tracking-widest leading-tight">{item.text}</span>
+ </div>
+ ))}
+ </div>
+ </div>
+ </div>
 
-        {/* Scroll Indicator */}
-        <div className="absolute bottom-4 md:bottom-6 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 animate-bounce opacity-60 hidden md:flex">
-          <span className="text-[10px] text-white/50 uppercase tracking-widest">Explore</span>
-          <div className="w-[1px] h-12 bg-gradient-to-b from-white to-transparent"></div>
-        </div>
-      </div>
-    </div>
-  );
+ {/* Scroll Indicator */}
+ <div className="absolute bottom-4 md:bottom-6 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 animate-bounce opacity-60 hidden md:flex">
+ <span className="text-[10px] text-white/50 uppercase tracking-widest">Explore</span>
+ <div className="w-[1px] h-12 bg-gradient-to-b from-white to-transparent"></div>
+ </div>
+ </div>
+ </div>
+ );
 };
 
 export default HomeHero;
