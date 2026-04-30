@@ -35,9 +35,9 @@ const RentalsFacilities: React.FC = () => {
                               <h3 className="text-3xl font-header font-bold text-dfw-navy dark:text-white uppercase mb-2">Cricket Lanes</h3>
                               <p className="text-sm font-mono text-gray-400 uppercase tracking-widest">International Standard</p>
                            </div>
-                           <div className="text-right">
-                              <span className="block text-3xl font-bold text-dfw-red">View<span className="text-sm text-gray-400 font-normal"> Rates</span></span>
-                           </div>
+                            <Link href="https://book.runswiftapp.com/facilities/dfw-indoor-sports/rentals" target="_blank" rel="noopener noreferrer" className="text-right hover:opacity-80 transition-opacity">
+                               <span className="block text-3xl font-bold text-dfw-red">View<span className="text-sm text-gray-400 font-normal"> Rates</span></span>
+                            </Link>
                         </div>
                         
                         <p className="text-gray-600 dark:text-gray-300 mb-8 leading-relaxed">
@@ -78,9 +78,9 @@ const RentalsFacilities: React.FC = () => {
                               <h3 className="text-3xl font-header font-bold text-dfw-navy dark:text-white uppercase mb-2">Badminton Courts</h3>
                               <p className="text-sm font-mono text-gray-400 uppercase tracking-widest">BWF Regulation</p>
                            </div>
-                           <div className="text-right">
-                              <span className="block text-3xl font-bold text-blue-600 dark:text-blue-400">View<span className="text-sm text-gray-400 font-normal"> Rates</span></span>
-                           </div>
+                            <Link href="https://book.runswiftapp.com/facilities/dfw-indoor-sports/rentals" target="_blank" rel="noopener noreferrer" className="text-right hover:opacity-80 transition-opacity">
+                               <span className="block text-3xl font-bold text-blue-600 dark:text-blue-400">View<span className="text-sm text-gray-400 font-normal"> Rates</span></span>
+                            </Link>
                         </div>
                         
                         <p className="text-gray-600 dark:text-gray-300 mb-8 leading-relaxed">
