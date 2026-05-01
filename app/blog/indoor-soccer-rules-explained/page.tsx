@@ -33,7 +33,7 @@ export default function IndoorSoccerRulesPage() {
     })
 
     return (
-        <article className="bg-white dark:bg-[#020408] min-h-screen transition-colors duration-300">
+        <article className="bg-white min-h-screen transition-colors duration-300">
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
 
@@ -48,8 +48,8 @@ export default function IndoorSoccerRulesPage() {
 
             <div className="py-16">
                 <div className="container mx-auto px-4 max-w-4xl">
-                    <div className="prose prose-lg dark:prose-invert max-w-none">
-                        <p className="text-gray-600 dark:text-gray-400 text-lg leading-relaxed mb-8">
+                    <div className="prose prose-lg max-w-none">
+                        <p className="text-gray-600 text-lg leading-relaxed mb-8">
                             Indoor soccer is faster, higher-scoring, and more intense than the outdoor game. If you're joining a league at DFW Indoor Sports, understanding these differences is crucial.
                         </p>
 
@@ -63,32 +63,32 @@ export default function IndoorSoccerRulesPage() {
                                     </tr>
                                 </thead>
                                 <tbody className="text-sm">
-                                    <tr className="border-b border-gray-200 dark:border-white/10">
-                                        <td className="p-4 font-bold text-dfw-navy dark:text-white">Field</td>
-                                        <td className="p-4 text-gray-600 dark:text-gray-400">Smaller, enclosed by walls</td>
-                                        <td className="p-4 text-gray-600 dark:text-gray-400">Large, open field</td>
+                                    <tr className="border-b border-gray-200">
+                                        <td className="p-4 font-bold text-dfw-navy">Field</td>
+                                        <td className="p-4 text-gray-600">Smaller, enclosed by walls</td>
+                                        <td className="p-4 text-gray-600">Large, open field</td>
                                     </tr>
-                                    <tr className="border-b border-gray-200 dark:border-white/10">
-                                        <td className="p-4 font-bold text-dfw-navy dark:text-white">Players</td>
-                                        <td className="p-4 text-gray-600 dark:text-gray-400">5v5 or 6v6</td>
-                                        <td className="p-4 text-gray-600 dark:text-gray-400">11v11</td>
+                                    <tr className="border-b border-gray-200">
+                                        <td className="p-4 font-bold text-dfw-navy">Players</td>
+                                        <td className="p-4 text-gray-600">5v5 or 6v6</td>
+                                        <td className="p-4 text-gray-600">11v11</td>
                                     </tr>
-                                    <tr className="border-b border-gray-200 dark:border-white/10">
-                                        <td className="p-4 font-bold text-dfw-navy dark:text-white">Offside</td>
-                                        <td className="p-4 text-gray-600 dark:text-gray-400">No offside rule</td>
-                                        <td className="p-4 text-gray-600 dark:text-gray-400">Offside enforced</td>
+                                    <tr className="border-b border-gray-200">
+                                        <td className="p-4 font-bold text-dfw-navy">Offside</td>
+                                        <td className="p-4 text-gray-600">No offside rule</td>
+                                        <td className="p-4 text-gray-600">Offside enforced</td>
                                     </tr>
-                                    <tr className="border-b border-gray-200 dark:border-white/10">
-                                        <td className="p-4 font-bold text-dfw-navy dark:text-white">Subs</td>
-                                        <td className="p-4 text-gray-600 dark:text-gray-400">Unlimited, on the fly</td>
-                                        <td className="p-4 text-gray-600 dark:text-gray-400">Limited, play stoppage</td>
+                                    <tr className="border-b border-gray-200">
+                                        <td className="p-4 font-bold text-dfw-navy">Subs</td>
+                                        <td className="p-4 text-gray-600">Unlimited, on the fly</td>
+                                        <td className="p-4 text-gray-600">Limited, play stoppage</td>
                                     </tr>
                                 </tbody>
                             </table>
                         </div>
 
-                        <h3 className="text-2xl font-bold text-dfw-navy dark:text-white mb-4">Playing off the Walls</h3>
-                        <p className="text-gray-600 dark:text-gray-400 mb-6">
+                        <h3 className="text-2xl font-bold text-dfw-navy mb-4">Playing off the Walls</h3>
+                        <p className="text-gray-600 mb-6">
                             The most distinct feature of indoor soccer is the walls. You can use them to pass to yourself, get around defenders, or keep the ball in play. The ball is only "out" if it goes <em>over</em> the wall or hits the ceiling netting.
                         </p>
 

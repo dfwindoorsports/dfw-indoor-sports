@@ -41,8 +41,8 @@ const BadmintonShowcase: React.FC = () => {
           </div>
 
           <div className="text-center mt-12">
-             <button className="px-8 py-4 border border-white/20 text-white font-bold uppercase tracking-widest text-xs rounded-sm hover:bg-white hover:text-[#1E3A8A] transition-all flex items-center gap-3 mx-auto group">
-                <Camera size={16} className="group-hover:text-[#1E3A8A] transition-colors" /> Schedule In-Person Tour
+             <button className="px-8 py-4 border border-white/20 text-white font-bold uppercase tracking-widest text-xs rounded-sm hover:bg-white hover:text-badminton transition-all flex items-center gap-3 mx-auto group">
+                <Camera size={16} className="group-hover:text-badminton transition-colors" /> Schedule In-Person Tour
              </button>
           </div>
        </div>

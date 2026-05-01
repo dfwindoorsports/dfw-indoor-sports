@@ -49,7 +49,7 @@ const HomeFacilities: React.FC = () => {
   };
 
   return (
-    <section className="bg-dfw-navy dark:bg-black py-24 md:py-32 relative overflow-hidden transition-colors duration-300">
+    <section className="bg-dfw-navy py-24 md:py-32 relative overflow-hidden transition-colors duration-300">
       
       {/* Background Micro-Detail */}
       <div className="absolute inset-0 bg-[url('/textures/stardust.png')] opacity-10"></div>
@@ -85,7 +85,7 @@ const HomeFacilities: React.FC = () => {
             <motion.div 
               key={index} 
               variants={itemVariants}
-              className="group relative h-[400px] md:h-[500px] overflow-hidden rounded-sm border border-white/10"
+              className="group relative h-[400px] md:h-[500px] overflow-hidden rounded-lg border border-white/10"
             >
               <div 
                 className="absolute inset-0 bg-cover bg-center transition-transform duration-[1.5s] ease-[cubic-bezier(0.25,0.1,0.25,1)] group-hover:scale-110 grayscale-[30%] group-hover:grayscale-0"

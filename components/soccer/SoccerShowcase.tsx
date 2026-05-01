@@ -41,8 +41,8 @@ const SoccerShowcase: React.FC = () => {
           </div>
 
           <div className="text-center mt-12">
-              <a href="/contact" className="px-8 py-4 border border-white/20 text-white font-bold uppercase tracking-widest text-xs rounded-sm hover:bg-white hover:text-[#064E3B] transition-all flex items-center gap-3 mx-auto group">
-                 <Camera size={16} className="group-hover:text-[#064E3B] transition-colors" /> Schedule In-Person Tour
+              <a href="/contact" className="px-8 py-4 border border-white/20 text-white font-bold uppercase tracking-widest text-xs rounded-sm hover:bg-white hover:text-soccer transition-all flex items-center gap-3 mx-auto group">
+                 <Camera size={16} className="group-hover:text-soccer transition-colors" /> Schedule In-Person Tour
               </a>
           </div>
        </div>

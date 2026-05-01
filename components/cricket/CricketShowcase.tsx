@@ -20,7 +20,7 @@ const CricketShowcase: React.FC = () => {
                    <Maximize2 className="text-white drop-shadow-lg" size={32} />
                 </div>
                 <div className="absolute bottom-0 left-0 w-full p-6 bg-gradient-to-t from-black/90 to-transparent">
-                   <p className="font-bold uppercase tracking-widest text-sm flex items-center gap-2"><MapPin size={14} className="text-[#CC0000]" /> Main Arena (6 Lanes)</p>
+                   <p className="font-bold uppercase tracking-widest text-sm flex items-center gap-2"><MapPin size={14} className="text-dfw-red-700" /> Main Arena (6 Lanes)</p>
                 </div>
              </div>
 
@@ -28,7 +28,7 @@ const CricketShowcase: React.FC = () => {
              <div className="relative rounded-lg overflow-hidden group cursor-pointer">
                 <img src="/images/facilities/bowling-machine.webp" alt="Bowling Machine" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
                 <div className="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-black/90 to-transparent">
-                   <p className="font-bold uppercase tracking-widest text-xs text-[#CC0000]">Auto-Feed Machines</p>
+                   <p className="font-bold uppercase tracking-widest text-xs text-dfw-red-700">Auto-Feed Machines</p>
                 </div>
              </div>
              
@@ -41,8 +41,8 @@ const CricketShowcase: React.FC = () => {
           </div>
 
           <div className="text-center mt-12">
-              <a href="/contact" className="px-8 py-4 border border-white/20 text-white font-bold uppercase tracking-widest text-xs rounded-sm hover:bg-white hover:text-[#006838] transition-all flex items-center gap-3 mx-auto group">
-                 <Camera size={16} className="group-hover:text-[#006838] transition-colors" /> Schedule In-Person Tour
+              <a href="/contact" className="px-8 py-4 border border-white/20 text-white font-bold uppercase tracking-widest text-xs rounded-sm hover:bg-white hover:text-cricket transition-all flex items-center gap-3 mx-auto group">
+                 <Camera size={16} className="group-hover:text-cricket transition-colors" /> Schedule In-Person Tour
               </a>
           </div>
        </div>

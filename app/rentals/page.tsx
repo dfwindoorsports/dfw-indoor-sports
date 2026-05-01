@@ -71,7 +71,7 @@ export default function RentalsPage() {
   const faqSchema = generateFAQSchema(rentalsFaqs)
 
   return (
-    <div className="bg-[#FAFAFA] dark:bg-[#020408] min-h-screen font-sans selection:bg-dfw-red selection:text-white transition-colors duration-300">
+    <div className="bg-[#FAFAFA] min-h-screen font-sans selection:bg-dfw-red selection:text-white transition-colors duration-300">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}

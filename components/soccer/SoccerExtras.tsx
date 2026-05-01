@@ -10,8 +10,8 @@ const SoccerExtras: React.FC = () => {
              {/* Pro Shop */}
              <div>
                 <div className="flex items-center gap-3 mb-6">
-                   <div className="p-3 bg-emerald-50 rounded-full text-[#064E3B]"><ShoppingBag size={24} /></div>
-                   <h3 className="text-2xl font-header font-bold text-[#064E3B] uppercase">On-Site Pro Shop</h3>
+                   <div className="p-3 bg-emerald-50 rounded-full text-soccer"><ShoppingBag size={24} /></div>
+                   <h3 className="text-2xl font-header font-bold text-soccer uppercase">On-Site Pro Shop</h3>
                 </div>
                 <p className="text-gray-500 mb-6 leading-relaxed text-sm">
                    Soccer equipment and apparel from leading brands.
@@ -42,30 +42,30 @@ const SoccerExtras: React.FC = () => {
              {/* Additional Services */}
              <div>
                 <div className="flex items-center gap-3 mb-6">
-                   <div className="p-3 bg-emerald-50 rounded-full text-[#064E3B]"><Trophy size={24} /></div>
-                   <h3 className="text-2xl font-header font-bold text-[#064E3B] uppercase">Complete Experience</h3>
+                   <div className="p-3 bg-emerald-50 rounded-full text-soccer"><Trophy size={24} /></div>
+                   <h3 className="text-2xl font-header font-bold text-soccer uppercase">Complete Experience</h3>
                 </div>
                 <div className="space-y-4">
                    <div className="p-4 bg-gray-50 rounded border border-gray-100 hover:border-emerald-200 transition-colors group">
-                      <h4 className="font-bold text-[#064E3B] text-sm uppercase mb-1 flex items-center gap-2">
+                      <h4 className="font-bold text-soccer text-sm uppercase mb-1 flex items-center gap-2">
                          <Trophy size={14} className="text-emerald-500" /> Tournament Hosting
                       </h4>
                       <p className="text-xs text-gray-500">Multi-field setup, professional coordination, referee services available.</p>
                    </div>
                    <div className="p-4 bg-gray-50 rounded border border-gray-100 hover:border-emerald-200 transition-colors group">
-                      <h4 className="font-bold text-[#064E3B] text-sm uppercase mb-1 flex items-center gap-2">
+                      <h4 className="font-bold text-soccer text-sm uppercase mb-1 flex items-center gap-2">
                          <Briefcase size={14} className="text-emerald-500" /> Corporate Team Building
                       </h4>
                       <p className="text-xs text-gray-500">Soccer-based team building for companies. Fun, active, builds camaraderie.</p>
                    </div>
                    <div className="p-4 bg-gray-50 rounded border border-gray-100 hover:border-emerald-200 transition-colors group">
-                      <h4 className="font-bold text-[#064E3B] text-sm uppercase mb-1 flex items-center gap-2">
+                      <h4 className="font-bold text-soccer text-sm uppercase mb-1 flex items-center gap-2">
                          <Activity size={14} className="text-emerald-500" /> Skills Assessments
                       </h4>
                       <p className="text-xs text-gray-500">Professional player evaluation identifying strengths and areas for improvement.</p>
                    </div>
                    <div className="p-4 bg-gray-50 rounded border border-gray-100 hover:border-emerald-200 transition-colors group">
-                      <h4 className="font-bold text-[#064E3B] text-sm uppercase mb-1 flex items-center gap-2">
+                      <h4 className="font-bold text-soccer text-sm uppercase mb-1 flex items-center gap-2">
                          <Goal size={14} className="text-emerald-500" /> Goalkeeper Clinics
                       </h4>
                       <p className="text-xs text-gray-500">Specialized training for keepers. Position-specific techniques.</p>

@@ -74,7 +74,7 @@ export default function EventsPage() {
   const faqSchema = generateFAQSchema(eventsFaqs)
 
   return (
-    <div className="bg-white dark:bg-[#020408] min-h-screen font-sans selection:bg-dfw-red selection:text-white transition-colors duration-300">
+    <div className="bg-white min-h-screen font-sans selection:bg-dfw-red selection:text-white transition-colors duration-300">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}

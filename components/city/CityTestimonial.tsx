@@ -51,7 +51,7 @@ export default function CityTestimonial({ quote, author, location }: Testimonial
                         <div className="text-sm font-bold text-white uppercase tracking-wider">
                             {author}
                         </div>
-                        <div className="text-[10px] text-gray-500 uppercase tracking-widest font-mono">
+                        <div className="text-[10px] font-medium text-gray-500 uppercase tracking-widest font-mono">
                             {location}
                         </div>
                     </motion.div>

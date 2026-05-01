@@ -76,7 +76,7 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className={`${inter.variable} ${oswald.variable} font-sans min-h-screen bg-[#FAFAFA] dark:bg-[#020408] text-gray-900 dark:text-gray-100 antialiased`}>
+      <body className={`${inter.variable} ${oswald.variable} font-sans min-h-screen bg-[#FAFAFA] text-gray-900 antialiased`}>
         <div aria-live="polite" aria-atomic="true" className="sr-only" id="announcements"></div>
         <ClientLayout>{children}</ClientLayout>
       </body>

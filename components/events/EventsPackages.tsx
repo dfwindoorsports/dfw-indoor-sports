@@ -22,7 +22,7 @@ const EventsPackages: React.FC = () => {
    };
 
    return (
-      <section className="py-24 bg-gray-50 dark:bg-[#0A111F] border-y border-gray-200 dark:border-white/5 transition-colors duration-300" id="packages">
+      <section className="py-24 bg-gray-50 border-y border-gray-200 transition-colors duration-300" id="packages">
          <div className="container mx-auto px-4 md:px-6">
 
             {/* Kids Party Image Banner */}
@@ -48,8 +48,8 @@ const EventsPackages: React.FC = () => {
                className="text-center mb-16"
             >
                <span className="text-dfw-red font-mono text-xs font-bold uppercase tracking-widest mb-3 block">Kids & Adults</span>
-               <h2 className="text-4xl md:text-5xl font-header font-bold text-dfw-navy dark:text-white uppercase mb-6">Birthday Packages</h2>
-               <p className="text-gray-500 dark:text-gray-400 max-w-2xl mx-auto">The best gift is an experience. Choose from Cricket, Dodgeball, Soccer, and more.</p>
+               <h2 className="text-4xl md:text-5xl font-header font-bold text-dfw-navy uppercase mb-6">Birthday Packages</h2>
+               <p className="text-gray-500 max-w-2xl mx-auto">The best gift is an experience. Choose from Cricket, Dodgeball, Soccer, and more.</p>
             </motion.div>
 
             <motion.div
@@ -61,36 +61,36 @@ const EventsPackages: React.FC = () => {
             >
 
                {/* Basic Package */}
-               <motion.div variants={itemVariants} className="bg-white dark:bg-white/5 rounded-lg border border-gray-200 dark:border-white/10 p-8 hover:shadow-xl transition-all duration-300 relative group overflow-hidden">
-                  <div className="absolute top-0 left-0 w-full h-1 bg-gray-200 dark:bg-white/20 group-hover:bg-blue-500 transition-colors"></div>
-                  <h3 className="text-xl font-header font-bold text-dfw-navy dark:text-white uppercase mb-2">Basic Sports</h3>
+               <motion.div variants={itemVariants} className="bg-white rounded-lg border border-gray-200 p-8 hover:shadow-xl transition-all duration-300 relative group overflow-hidden">
+                  <div className="absolute top-0 left-0 w-full h-1 bg-gray-200 group-hover:bg-blue-500 transition-colors"></div>
+                  <h3 className="text-xl font-header font-bold text-dfw-navy uppercase mb-2">Basic Sports</h3>
                   <div className="flex items-baseline gap-1 mb-6">
-                     <span className="text-4xl font-header font-bold text-dfw-navy dark:text-white">Contact Us</span>
+                     <span className="text-4xl font-header font-bold text-dfw-navy">Contact Us</span>
                      <span className="text-xs text-gray-400 font-bold uppercase">/ 12 Kids</span>
                   </div>
 
                   <div className="space-y-4 mb-8">
-                     <div className="flex items-center gap-3 text-sm text-gray-600 dark:text-gray-300">
+                     <div className="flex items-center gap-3 text-sm text-gray-600">
                         <Clock size={16} className="text-blue-500" /> 2 Hours Total
                      </div>
-                     <div className="flex items-center gap-3 text-sm text-gray-600 dark:text-gray-300">
+                     <div className="flex items-center gap-3 text-sm text-gray-600">
                         <Trophy size={16} className="text-blue-500" /> 1.5 Hrs Activities (1 Sport)
                      </div>
-                     <div className="flex items-center gap-3 text-sm text-gray-600 dark:text-gray-300">
+                     <div className="flex items-center gap-3 text-sm text-gray-600">
                         <Users size={16} className="text-blue-500" /> 1 Professional Coach
                      </div>
-                     <div className="flex items-center gap-3 text-sm text-gray-600 dark:text-gray-300">
+                     <div className="flex items-center gap-3 text-sm text-gray-600">
                         <PartyPopper size={16} className="text-blue-500" /> 30 Min Party Room
                      </div>
                   </div>
-                  <div className="pt-4 border-t border-gray-100 dark:border-white/10 text-xs text-gray-400 italic mb-6">
+                  <div className="pt-4 border-t border-gray-100 text-xs text-gray-400 italic mb-6">
                      *Bring your own food, cake & decor
                   </div>
-                  <button className="w-full py-3 border border-dfw-navy dark:border-white/20 text-dfw-navy dark:text-white font-bold uppercase text-xs tracking-widest rounded-sm hover:bg-dfw-navy hover:text-white dark:hover:bg-white dark:hover:text-dfw-navy transition-colors">Select Basic</button>
+                  <button className="w-full py-3 border border-dfw-navy text-dfw-navy font-bold uppercase text-xs tracking-widest rounded-sm hover:bg-dfw-navy hover:text-white transition-colors">Select Basic</button>
                </motion.div>
 
                {/* Deluxe Package - Featured */}
-               <motion.div variants={itemVariants} className="bg-dfw-navy dark:bg-black rounded-lg border border-dfw-navy dark:border-white/20 p-8 shadow-2xl relative group overflow-hidden transform md:-translate-y-4 z-10">
+               <motion.div variants={itemVariants} className="bg-dfw-navy rounded-lg border border-dfw-navy p-8 shadow-2xl relative group overflow-hidden transform md:-translate-y-4 z-10">
                   <div className="absolute top-0 right-0 bg-dfw-red text-white text-[10px] font-bold uppercase px-3 py-1 rounded-bl-lg">Most Popular</div>
                   <div className="absolute inset-0 bg-[url('/textures/carbon-fibre.png')] opacity-20 mix-blend-overlay"></div>
 
@@ -121,52 +121,52 @@ const EventsPackages: React.FC = () => {
                </motion.div>
 
                {/* Ultimate Package */}
-               <motion.div variants={itemVariants} className="bg-white dark:bg-white/5 rounded-lg border border-gray-200 dark:border-white/10 p-8 hover:shadow-xl transition-all duration-300 relative group overflow-hidden">
-                  <div className="absolute top-0 left-0 w-full h-1 bg-gray-200 dark:bg-white/20 group-hover:bg-green-500 transition-colors"></div>
-                  <h3 className="text-xl font-header font-bold text-dfw-navy dark:text-white uppercase mb-2">Ultimate Bash</h3>
+               <motion.div variants={itemVariants} className="bg-white rounded-lg border border-gray-200 p-8 hover:shadow-xl transition-all duration-300 relative group overflow-hidden">
+                  <div className="absolute top-0 left-0 w-full h-1 bg-gray-200 group-hover:bg-green-500 transition-colors"></div>
+                  <h3 className="text-xl font-header font-bold text-dfw-navy uppercase mb-2">Ultimate Bash</h3>
                   <div className="flex items-baseline gap-1 mb-6">
-                     <span className="text-4xl font-header font-bold text-dfw-navy dark:text-white">Contact Us</span>
+                     <span className="text-4xl font-header font-bold text-dfw-navy">Contact Us</span>
                      <span className="text-xs text-gray-400 font-bold uppercase">/ 20 Kids</span>
                   </div>
 
                   <div className="space-y-4 mb-8">
-                     <div className="flex items-center gap-3 text-sm text-gray-600 dark:text-gray-300">
+                     <div className="flex items-center gap-3 text-sm text-gray-600">
                         <Clock size={16} className="text-green-500" /> 3 Hours Total
                      </div>
-                     <div className="flex items-center gap-3 text-sm text-gray-600 dark:text-gray-300">
+                     <div className="flex items-center gap-3 text-sm text-gray-600">
                         <Trophy size={16} className="text-green-500" /> 2.5 Hrs (4-5 Sports)
                      </div>
-                     <div className="flex items-center gap-3 text-sm text-gray-600 dark:text-gray-300">
+                     <div className="flex items-center gap-3 text-sm text-gray-600">
                         <Users size={16} className="text-green-500" /> 3 Professional Coaches
                      </div>
-                     <div className="flex items-center gap-3 text-sm text-gray-600 dark:text-gray-300">
+                     <div className="flex items-center gap-3 text-sm text-gray-600">
                         <Utensils size={16} className="text-green-500" /> Premium Catering
                      </div>
-                     <div className="flex items-center gap-3 text-sm text-gray-600 dark:text-gray-300">
+                     <div className="flex items-center gap-3 text-sm text-gray-600">
                         <Camera size={16} className="text-green-500" /> Photography & Custom Jersey
                      </div>
                   </div>
-                  <button className="w-full py-3 border border-dfw-navy dark:border-white/20 text-dfw-navy dark:text-white font-bold uppercase text-xs tracking-widest rounded-sm hover:bg-dfw-navy hover:text-white dark:hover:bg-white dark:hover:text-dfw-navy transition-colors">Select Ultimate</button>
+                  <button className="w-full py-3 border border-dfw-navy text-dfw-navy font-bold uppercase text-xs tracking-widest rounded-sm hover:bg-dfw-navy hover:text-white transition-colors">Select Ultimate</button>
                </motion.div>
             </motion.div>
 
             {/* Extras Section - Semantic List */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-16 text-center">
-               <div className="bg-white dark:bg-white/5 p-4 rounded border border-gray-100 dark:border-white/10">
+               <div className="bg-white p-4 rounded border border-gray-100">
                   <p className="text-[10px] font-bold uppercase text-gray-400 mb-1">Extra Kid</p>
-                  <p className="text-dfw-navy dark:text-white font-bold">Contact <span className="text-xs font-normal">/ child</span></p>
+                  <p className="text-dfw-navy font-bold">Contact <span className="text-xs font-normal">/ child</span></p>
                </div>
-               <div className="bg-white dark:bg-white/5 p-4 rounded border border-gray-100 dark:border-white/10">
+               <div className="bg-white p-4 rounded border border-gray-100">
                   <p className="text-[10px] font-bold uppercase text-gray-400 mb-1">Extra Time</p>
-                  <p className="text-dfw-navy dark:text-white font-bold">Contact <span className="text-xs font-normal">/ 30 min</span></p>
+                  <p className="text-dfw-navy font-bold">Contact <span className="text-xs font-normal">/ 30 min</span></p>
                </div>
-               <div className="bg-white dark:bg-white/5 p-4 rounded border border-gray-100 dark:border-white/10">
+               <div className="bg-white p-4 rounded border border-gray-100">
                   <p className="text-[10px] font-bold uppercase text-gray-400 mb-1">Goody Bags</p>
-                  <p className="text-dfw-navy dark:text-white font-bold">Contact <span className="text-xs font-normal">/ child</span></p>
+                  <p className="text-dfw-navy font-bold">Contact <span className="text-xs font-normal">/ child</span></p>
                </div>
-               <div className="bg-white dark:bg-white/5 p-4 rounded border border-gray-100 dark:border-white/10">
+               <div className="bg-white p-4 rounded border border-gray-100">
                   <p className="text-[10px] font-bold uppercase text-gray-400 mb-1">Photography</p>
-                  <p className="text-dfw-navy dark:text-white font-bold">Contact <span className="text-xs font-normal">/ session</span></p>
+                  <p className="text-dfw-navy font-bold">Contact <span className="text-xs font-normal">/ session</span></p>
                </div>
             </div>
          </div>

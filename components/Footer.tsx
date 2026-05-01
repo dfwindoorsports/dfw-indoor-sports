@@ -254,7 +254,7 @@ export default function Footer() {
                 />
                 {/* Status message */}
                 {message && (
-                  <p className={`text-[10px] mt-2 ${status === 'success' ? 'text-green-400' : 'text-red-400'}`}>
+                  <p className={`text-[10px] font-medium mt-2 ${status === 'success' ? 'text-green-400' : 'text-red-400'}`}>
                     {message}
                   </p>
                 )}
@@ -288,11 +288,11 @@ export default function Footer() {
           className="border-t border-white/5 pt-8 flex flex-col-reverse md:flex-row justify-between items-center gap-6"
         >
           <div className="flex flex-col md:flex-row items-center gap-4">
-            <p className="text-[10px] font-mono text-gray-600 uppercase tracking-widest text-center md:text-left">
+            <p className="text-[10px] font-medium font-mono text-gray-600 uppercase tracking-widest text-center md:text-left">
               © {new Date().getFullYear()} DFW Indoor Sports.
             </p>
             <span className="hidden md:block text-gray-800">|</span>
-            <p className="text-[10px] font-mono text-gray-600 uppercase tracking-widest text-center md:text-left">
+            <p className="text-[10px] font-medium font-mono text-gray-600 uppercase tracking-widest text-center md:text-left">
               Built for Athletes.
             </p>
           </div>
@@ -305,7 +305,7 @@ export default function Footer() {
                     item === 'Privacy Policy' ? '/privacy' :
                       item === 'Terms of Service' ? '/terms' : '#'
               return (
-                <Link key={i} href={path} className="text-[10px] font-mono text-gray-500 hover:text-white uppercase tracking-widest transition-colors relative group">
+                <Link key={i} href={path} className="text-[10px] font-medium font-mono text-gray-500 hover:text-white uppercase tracking-widest transition-colors relative group">
                   {item}
                   <span className="absolute -bottom-1 left-0 w-0 h-[1px] bg-white transition-all duration-300 group-hover:w-full opacity-30"></span>
                 </Link>

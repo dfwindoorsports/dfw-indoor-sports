@@ -20,18 +20,18 @@ const PartnersProcess: React.FC = () => {
   };
 
   return (
-    <section className="py-24 bg-white dark:bg-[#020408] transition-colors duration-300">
+    <section className="py-24 bg-white transition-colors duration-300">
        <div className="container mx-auto px-4 md:px-6">
           <motion.div 
             className="text-center mb-16"
           >
-             <h2 className="text-3xl font-header font-bold text-dfw-navy dark:text-white uppercase mb-4">How It Works</h2>
-             <p className="text-gray-500 dark:text-gray-400">Four simple steps to launching your partnership.</p>
+             <h2 className="text-3xl font-header font-bold text-dfw-navy uppercase mb-4">How It Works</h2>
+             <p className="text-gray-500">Four simple steps to launching your partnership.</p>
           </motion.div>
 
           <div className="relative max-w-6xl mx-auto">
              {/* Connector Line - Desktop */}
-             <div className="hidden md:block absolute top-[26px] left-0 w-full h-[2px] bg-gray-100 dark:bg-white/10 -z-10"></div>
+             <div className="hidden md:block absolute top-[26px] left-0 w-full h-[2px] bg-gray-100 -z-10"></div>
 
              <motion.div 
                variants={containerVariants}
@@ -48,13 +48,13 @@ const PartnersProcess: React.FC = () => {
                 ].map((item, i) => (
                    <motion.div variants={itemVariants} key={i} className="flex flex-col items-center text-center group">
                       {/* Step Circle */}
-                      <div className="w-14 h-14 bg-white dark:bg-[#0A111F] border-2 border-gray-100 dark:border-white/20 rounded-full flex items-center justify-center font-bold font-header text-xl text-dfw-navy dark:text-white mb-6 group-hover:border-dfw-red group-hover:text-dfw-red transition-all duration-300 shadow-sm relative z-10">
+                      <div className="w-14 h-14 bg-white border-2 border-gray-100 rounded-full flex items-center justify-center font-bold font-header text-xl text-dfw-navy mb-6 group-hover:border-dfw-red group-hover:text-dfw-red transition-all duration-300 shadow-sm relative z-10">
                          {item.step}
                       </div>
                       
-                      <div className="bg-white dark:bg-white/5 p-6 border border-gray-100 dark:border-white/10 rounded-lg shadow-sm hover:shadow-lg transition-all w-full h-full">
-                         <h4 className="font-bold text-dfw-navy dark:text-white uppercase mb-3 text-sm">{item.title}</h4>
-                         <p className="text-xs text-gray-500 dark:text-gray-400 leading-relaxed">{item.desc}</p>
+                      <div className="bg-white p-6 border border-gray-100 rounded-lg shadow-sm hover:shadow-lg transition-all w-full h-full">
+                         <h4 className="font-bold text-dfw-navy uppercase mb-3 text-sm">{item.title}</h4>
+                         <p className="text-xs text-gray-500 leading-relaxed">{item.desc}</p>
                       </div>
                    </motion.div>
                 ))}

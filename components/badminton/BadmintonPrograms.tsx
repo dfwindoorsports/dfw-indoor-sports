@@ -7,7 +7,7 @@ const BadmintonPrograms: React.FC = () => {
        <div className="container mx-auto px-4 md:px-6">
           <div className="text-center mb-16">
              <span className="text-blue-600 font-mono text-xs font-bold uppercase tracking-widest mb-3 block">Community</span>
-             <h2 className="text-4xl md:text-5xl font-header font-bold text-[#1E3A8A] uppercase mb-6">More Than Just a Court</h2>
+             <h2 className="text-4xl md:text-5xl font-header font-bold text-badminton uppercase mb-6">More Than Just a Court</h2>
              <p className="text-gray-500">Join our thriving badminton community through leagues, training, and social play.</p>
           </div>
 
@@ -18,11 +18,11 @@ const BadmintonPrograms: React.FC = () => {
                 <div className="w-14 h-14 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mb-6 group-hover:bg-blue-600 group-hover:text-white transition-colors">
                    <Trophy size={24} />
                 </div>
-                <h3 className="font-bold text-[#1E3A8A] text-lg uppercase mb-2">Recreational Leagues</h3>
+                <h3 className="font-bold text-badminton text-lg uppercase mb-2">Recreational Leagues</h3>
                 <p className="text-xs text-gray-500 mb-6 h-12 leading-relaxed">Social doubles with rotating partners. Emphasis on fun and meeting people.</p>
                 <div className="text-sm font-bold text-blue-700 border-t border-gray-200 pt-4 flex justify-between items-center">
                    <span>Contact for Pricing</span>
-                   <span className="text-[10px] uppercase tracking-wider text-gray-400">Waitlist Open</span>
+                   <span className="text-[10px] font-medium uppercase tracking-wider text-gray-400">Waitlist Open</span>
                 </div>
              </div>
 
@@ -31,11 +31,11 @@ const BadmintonPrograms: React.FC = () => {
                 <div className="w-14 h-14 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mb-6 group-hover:bg-blue-600 group-hover:text-white transition-colors">
                    <Users size={24} />
                 </div>
-                <h3 className="font-bold text-[#1E3A8A] text-lg uppercase mb-2">Drop-In Play</h3>
+                <h3 className="font-bold text-badminton text-lg uppercase mb-2">Drop-In Play</h3>
                 <p className="text-xs text-gray-500 mb-6 h-12 leading-relaxed">Organized social sessions. We match you with partners. Tue/Thu/Sat.</p>
                 <div className="text-sm font-bold text-blue-700 border-t border-gray-200 pt-4 flex justify-between items-center">
                    <span>Free for Members</span>
-                   <span className="text-[10px] uppercase tracking-wider text-gray-400">Weekly</span>
+                   <span className="text-[10px] font-medium uppercase tracking-wider text-gray-400">Weekly</span>
                 </div>
              </div>
 
@@ -44,11 +44,11 @@ const BadmintonPrograms: React.FC = () => {
                 <div className="w-14 h-14 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mb-6 group-hover:bg-blue-600 group-hover:text-white transition-colors">
                    <Zap size={24} />
                 </div>
-                <h3 className="font-bold text-[#1E3A8A] text-lg uppercase mb-2">Private Coaching</h3>
+                <h3 className="font-bold text-badminton text-lg uppercase mb-2">Private Coaching</h3>
                 <p className="text-xs text-gray-500 mb-6 h-12 leading-relaxed">1-on-1 instruction. Improve grip, footwork, and smash technique.</p>
                 <div className="text-sm font-bold text-blue-700 border-t border-gray-200 pt-4 flex justify-between items-center">
                    <span>Contact for Pricing</span>
-                   <span className="text-[10px] uppercase tracking-wider text-gray-400">By Appt</span>
+                   <span className="text-[10px] font-medium uppercase tracking-wider text-gray-400">By Appt</span>
                 </div>
              </div>
 
@@ -57,11 +57,11 @@ const BadmintonPrograms: React.FC = () => {
                 <div className="w-14 h-14 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mb-6 group-hover:bg-blue-600 group-hover:text-white transition-colors">
                    <UserPlus size={24} />
                 </div>
-                <h3 className="font-bold text-[#1E3A8A] text-lg uppercase mb-2">Youth Programs</h3>
+                <h3 className="font-bold text-badminton text-lg uppercase mb-2">Youth Programs</h3>
                 <p className="text-xs text-gray-500 mb-6 h-12 leading-relaxed">After-school clinics for ages 7-17. Build coordination and confidence.</p>
                 <div className="text-sm font-bold text-blue-700 border-t border-gray-200 pt-4 flex justify-between items-center">
                    <span>Contact for Pricing</span>
-                   <span className="text-[10px] uppercase tracking-wider text-gray-400">Seasonal</span>
+                   <span className="text-[10px] font-medium uppercase tracking-wider text-gray-400">Seasonal</span>
                 </div>
              </div>
 

@@ -62,7 +62,7 @@ export default function AreasWeServePage() {
     ])
 
     return (
-        <div className="bg-white dark:bg-[#020408] min-h-screen transition-colors duration-300">
+        <div className="bg-white min-h-screen transition-colors duration-300">
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
@@ -85,20 +85,20 @@ export default function AreasWeServePage() {
             </section>
 
             {/* Facility Location Highlight */}
-            <section className="py-16 bg-gray-50 dark:bg-[#0a111f]">
+            <section className="py-16 bg-gray-50">
                 <div className="container mx-auto px-4 text-center">
-                    <div className="inline-flex items-center gap-4 bg-white dark:bg-white/5 px-6 py-4 rounded-lg shadow-md">
+                    <div className="inline-flex items-center gap-4 bg-white px-6 py-4 rounded-lg shadow-md">
                         <MapPin className="text-dfw-red" size={24} />
                         <div className="text-left">
-                            <p className="font-bold text-dfw-navy dark:text-white">Our Location</p>
-                            <p className="text-gray-500 dark:text-gray-400 text-sm">16230 Three Wide Drive Suite 200, Fort Worth, TX 76177</p>
+                            <p className="font-bold text-dfw-navy">Our Location</p>
+                            <p className="text-gray-500 text-sm">16230 Three Wide Drive Suite 200, Fort Worth, TX 76177</p>
                         </div>
-                        <div className="pl-4 border-l border-gray-200 dark:border-white/10">
+                        <div className="pl-4 border-l border-gray-200">
                             <Clock className="text-gray-400" size={20} />
                         </div>
                         <div className="text-left">
-                            <p className="font-bold text-dfw-navy dark:text-white">Open Daily</p>
-                            <p className="text-gray-500 dark:text-gray-400 text-sm">5:00 AM - 11:00 PM</p>
+                            <p className="font-bold text-dfw-navy">Open Daily</p>
+                            <p className="text-gray-500 text-sm">5:00 AM - 11:00 PM</p>
                         </div>
                     </div>
                 </div>
@@ -107,7 +107,7 @@ export default function AreasWeServePage() {
             {/* City Grid */}
             <section className="py-24">
                 <div className="container mx-auto px-4">
-                    <h2 className="text-3xl font-header font-bold text-dfw-navy dark:text-white uppercase mb-12 text-center">
+                    <h2 className="text-3xl font-header font-bold text-dfw-navy uppercase mb-12 text-center">
                         Find Indoor Sports Near You
                     </h2>
                     <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -115,21 +115,21 @@ export default function AreasWeServePage() {
                             <Link
                                 key={city.slug}
                                 href={`/areas-we-serve/${city.slug}`}
-                                className="group bg-white dark:bg-white/5 border border-gray-100 dark:border-white/10 rounded-xl p-8 hover:shadow-xl hover:border-dfw-red/30 transition-all duration-300"
+                                className="group bg-white border border-gray-100 rounded-xl p-8 hover:shadow-xl hover:border-dfw-red/30 transition-all duration-300"
                             >
                                 <div className="flex items-start justify-between mb-4">
-                                    <h3 className="text-2xl font-header font-bold text-dfw-navy dark:text-white uppercase group-hover:text-dfw-red transition-colors">
+                                    <h3 className="text-2xl font-header font-bold text-dfw-navy uppercase group-hover:text-dfw-red transition-colors">
                                         {city.name}
                                     </h3>
-                                    <span className="bg-gray-100 dark:bg-white/10 px-3 py-1 rounded-full text-xs font-bold text-gray-500 dark:text-gray-400">
+                                    <span className="bg-gray-100 px-3 py-1 rounded-full text-xs font-bold text-gray-500">
                                         {city.distance}
                                     </span>
                                 </div>
-                                <p className="text-gray-500 dark:text-gray-400 text-sm mb-6">
+                                <p className="text-gray-500 text-sm mb-6">
                                     {city.description}
                                 </p>
                                 <div className="flex items-center justify-between">
-                                    <span className="text-xs text-gray-400 dark:text-gray-500">Population: {city.population}</span>
+                                    <span className="text-xs text-gray-400">Population: {city.population}</span>
                                     <span className="flex items-center gap-2 text-dfw-red text-xs font-bold uppercase group-hover:gap-3 transition-all">
                                         View Details <ArrowRight size={14} />
                                     </span>

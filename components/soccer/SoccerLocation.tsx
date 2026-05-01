@@ -8,7 +8,7 @@ const SoccerLocation: React.FC = () => {
           <div className="flex flex-col md:flex-row items-center gap-12">
              <div className="md:w-1/2">
                 <span className="text-emerald-600 font-mono text-xs font-bold uppercase tracking-widest mb-3 block">Service Area</span>
-                <h2 className="text-3xl font-header font-bold text-[#064E3B] uppercase mb-6">Conveniently Located</h2>
+                <h2 className="text-3xl font-header font-bold text-soccer uppercase mb-6">Conveniently Located</h2>
                 <div className="space-y-6 mb-8">
                    <div>
                       <h4 className="font-bold text-gray-900 text-sm uppercase mb-2 flex items-center gap-2">
@@ -40,7 +40,7 @@ const SoccerLocation: React.FC = () => {
                       href="https://maps.google.com/?q=16230+Three+Wide+Drive+Suite+200,+Fort+Worth,+TX+76177" 
                       target="_blank" 
                       rel="noreferrer"
-                      className="inline-flex items-center gap-2 px-6 py-3 bg-[#064E3B] text-white font-bold uppercase text-xs tracking-widest rounded-sm hover:bg-emerald-700 transition-colors shadow-lg"
+                      className="inline-flex items-center gap-2 px-6 py-3 bg-soccer text-white font-bold uppercase text-xs tracking-widest rounded-sm hover:bg-emerald-700 transition-colors shadow-lg"
                    >
                       <Navigation size={14} /> Get Directions
                    </a>

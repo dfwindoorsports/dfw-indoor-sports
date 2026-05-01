@@ -101,7 +101,7 @@ const HomeHero: React.FC = () => {
 
         {/* Scroll Indicator */}
         <div className="absolute bottom-4 md:bottom-6 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 animate-bounce opacity-60 hidden md:flex">
-          <span className="text-[10px] text-white/50 uppercase tracking-widest">Explore</span>
+          <span className="text-[10px] font-medium text-white/50 uppercase tracking-widest">Explore</span>
           <div className="w-[1px] h-12 bg-gradient-to-b from-white to-transparent"></div>
         </div>
       </div>

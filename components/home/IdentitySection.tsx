@@ -49,17 +49,17 @@ const IdentitySection: React.FC = () => {
 
                <div className="flex flex-col md:flex-row gap-6 md:gap-12 text-center">
                   <div className="group/item">
-                     <p className="text-[10px] text-gray-600 font-mono uppercase tracking-widest mb-1 group-hover/item:text-dfw-red transition-colors">Location</p>
+                     <p className="text-[10px] font-medium text-gray-600 font-mono uppercase tracking-widest mb-1 group-hover/item:text-dfw-red transition-colors">Location</p>
                      <p className="text-sm font-bold text-gray-400 group-hover/item:text-white transition-colors">Fort Worth, Texas</p>
                   </div>
                   <div className="w-px h-8 bg-white/10 hidden md:block"></div>
                   <div className="group/item">
-                     <p className="text-[10px] text-gray-600 font-mono uppercase tracking-widest mb-1 group-hover/item:text-dfw-red transition-colors">Est.</p>
+                     <p className="text-[10px] font-medium text-gray-600 font-mono uppercase tracking-widest mb-1 group-hover/item:text-dfw-red transition-colors">Est.</p>
                      <p className="text-sm font-bold text-gray-400 group-hover/item:text-white transition-colors">2024</p>
                   </div>
                   <div className="w-px h-8 bg-white/10 hidden md:block"></div>
                   <div className="group/item">
-                     <p className="text-[10px] text-gray-600 font-mono uppercase tracking-widest mb-1 group-hover/item:text-dfw-red transition-colors">Area</p>
+                     <p className="text-[10px] font-medium text-gray-600 font-mono uppercase tracking-widest mb-1 group-hover/item:text-dfw-red transition-colors">Area</p>
                      <p className="text-sm font-bold text-gray-400 group-hover/item:text-white transition-colors">50,000 SQ FT</p>
                   </div>
                </div>

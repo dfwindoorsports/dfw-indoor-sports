@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 
 const SportsIntro: React.FC = () => {
   return (
-    <section className="py-24 bg-white dark:bg-[#020408] relative transition-colors duration-300">
+    <section className="py-24 bg-white relative transition-colors duration-300">
        <div className="container mx-auto px-4 md:px-6">
           <div className="flex flex-col lg:flex-row gap-16 lg:gap-24 items-start">
              
@@ -17,13 +17,13 @@ const SportsIntro: React.FC = () => {
              >
                 <div className="inline-flex items-center gap-2 mb-6">
                    <Layers size={16} className="text-dfw-red" />
-                   <span className="text-dfw-navy dark:text-white font-mono text-xs font-bold uppercase tracking-widest">A Place for Everyone</span>
+                   <span className="text-dfw-navy font-mono text-xs font-bold uppercase tracking-widest">A Place for Everyone</span>
                 </div>
-                <h2 className="text-4xl md:text-5xl font-header font-bold text-dfw-navy dark:text-white uppercase leading-[0.95] mb-8">
+                <h2 className="text-4xl md:text-5xl font-header font-bold text-dfw-navy uppercase leading-[0.95] mb-8">
                    One Roof. <br/> <span className="text-gray-400">Endless Energy.</span>
                 </h2>
-                <div className="prose prose-lg text-gray-600 dark:text-gray-400 leading-relaxed mb-10 font-light">
-                   <p className="font-semibold text-dfw-navy dark:text-white">
+                <div className="prose prose-lg text-gray-600 leading-relaxed mb-10 font-light">
+                   <p className="font-semibold text-dfw-navy">
                       We believe that sports are the best way to bring people together. That's why we didn't just build a facility; we built a community hub.
                    </p>
                    <p>
@@ -35,19 +35,19 @@ const SportsIntro: React.FC = () => {
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                   <div className="p-6 bg-gray-50 dark:bg-[#0A111F] border border-gray-100 dark:border-white/10 rounded-sm hover:border-dfw-red/20 transition-colors">
-                      <h4 className="font-bold text-dfw-navy dark:text-white uppercase text-sm mb-2 flex items-center gap-2">
+                   <div className="p-6 bg-gray-50 border border-gray-100 rounded-lg hover:border-dfw-red/20 transition-colors">
+                      <h4 className="font-bold text-dfw-navy uppercase text-sm mb-2 flex items-center gap-2">
                          <ShieldCheck size={16} className="text-dfw-red" /> Safe & Inclusive
                       </h4>
-                      <p className="text-xs text-gray-500 dark:text-gray-400 leading-relaxed">
+                      <p className="text-xs text-gray-500 leading-relaxed">
                          A welcoming environment for all ages and skill levels. Beginners are treated with the same respect as pros.
                       </p>
                    </div>
-                   <div className="p-6 bg-gray-50 dark:bg-[#0A111F] border border-gray-100 dark:border-white/10 rounded-sm hover:border-dfw-red/20 transition-colors">
-                      <h4 className="font-bold text-dfw-navy dark:text-white uppercase text-sm mb-2 flex items-center gap-2">
+                   <div className="p-6 bg-gray-50 border border-gray-100 rounded-lg hover:border-dfw-red/20 transition-colors">
+                      <h4 className="font-bold text-dfw-navy uppercase text-sm mb-2 flex items-center gap-2">
                          <Thermometer size={16} className="text-dfw-red" /> Consistent Comfort
                       </h4>
-                      <p className="text-xs text-gray-500 dark:text-gray-400 leading-relaxed">
+                      <p className="text-xs text-gray-500 leading-relaxed">
                          72°F year-round. Because you shouldn't have to battle the elements to enjoy your game.
                       </p>
                    </div>
@@ -59,7 +59,7 @@ const SportsIntro: React.FC = () => {
                transition={{ duration: 0.6 }}
                className="lg:w-2/5 w-full"
              >
-                <div className="bg-dfw-navy dark:bg-[#0A111F] p-8 rounded-lg shadow-2xl relative overflow-hidden text-white group border border-white/5">
+                <div className="bg-dfw-navy p-8 rounded-lg shadow-2xl relative overflow-hidden text-white group border border-white/5">
                    <div className="absolute top-0 right-0 w-32 h-32 bg-dfw-red/20 rounded-full blur-[50px] pointer-events-none"></div>
                    <div className="absolute inset-0 bg-[url('/textures/graphy.png')] opacity-10"></div>
                    

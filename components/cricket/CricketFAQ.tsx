@@ -6,15 +6,15 @@ import { motion } from 'framer-motion';
 
 const CricketFAQ: React.FC = () => {
   return (
-    <section className="py-24 bg-white dark:bg-[#020408] border-t border-gray-100 dark:border-white/5 transition-colors duration-300">
+    <section className="py-24 bg-white border-t border-gray-100 transition-colors duration-300">
        <div className="container mx-auto px-4 md:px-6 max-w-3xl">
           <motion.h2 
-            className="text-3xl font-header font-bold text-[#006838] dark:text-white uppercase mb-12 text-center"
+            className="text-3xl font-header font-bold text-cricket uppercase mb-12 text-center"
           >
             Cricket Rental FAQ
           </motion.h2>
           
-          <div className="divide-y divide-gray-200 dark:divide-white/10">
+          <div className="divide-y divide-gray-200">
              {[
                 { q: "Do I need to bring my own cricket equipment?", a: "No. We provide basic cricket equipment including balls (leather and synthetic), protective gear (helmets, pads, gloves in all sizes), stumps, and training aids. However, most serious players prefer their own bat for comfort." },
                 { q: "Are cricket lanes available for complete beginners?", a: "Absolutely. Many members start with zero cricket experience. Our staff provides basic safety instruction and equipment orientation. Bowling machines are excellent for beginners." },
@@ -30,13 +30,13 @@ const CricketFAQ: React.FC = () => {
                   transition={{ delay: idx * 0.05 }}
                   className="group py-6 cursor-pointer"
                 >
-                   <summary className="flex justify-between items-center font-bold text-[#006838] dark:text-white uppercase tracking-wide text-xs select-none hover:text-[#CC0000] dark:hover:text-green-400 transition-colors list-none">
+                   <summary className="flex justify-between items-center font-bold text-cricket uppercase tracking-wide text-xs select-none hover:text-dfw-red-700 transition-colors list-none">
                       {item.q}
                       <span className="transition-transform group-open:rotate-180 text-gray-400">
                          <ChevronDown size={16} />
                       </span>
                    </summary>
-                   <div className="pt-4 text-gray-600 dark:text-gray-300 text-sm leading-relaxed animate-fade-in-up pl-4 border-l-2 border-[#CC0000]/10 dark:border-green-500/20 mt-2">
+                   <div className="pt-4 text-gray-600 text-sm leading-relaxed animate-fade-in-up pl-4 border-l-2 border-dfw-red/10 mt-2">
                       {item.a}
                    </div>
                 </motion.details>

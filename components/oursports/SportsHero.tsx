@@ -26,7 +26,7 @@ const SportsHero: React.FC = () => {
                
                animate={{ opacity: 1, y: 0 }}
                transition={{ delay: 0.2 }}
-               className="inline-flex items-center gap-3 px-4 py-1.5 rounded-full bg-gray-800 text-dfw-red font-mono text-[10px] uppercase tracking-[0.25em] mb-4 cursor-default"
+               className="inline-flex items-center gap-3 px-4 py-1.5 rounded-full bg-gray-800 text-dfw-red font-mono text-[10px] font-medium uppercase tracking-[0.25em] mb-4 cursor-default"
             >
                <span className="w-1.5 h-1.5 rounded-full bg-dfw-red"></span>
                Fort Worth's Active Hub
@@ -56,11 +56,11 @@ const SportsHero: React.FC = () => {
                <div className="hidden md:flex gap-6 border-l border-white/10 pl-6">
                   <div>
                      <div className="text-xl font-header font-bold text-white">4</div>
-                     <div className="text-[10px] text-gray-500 uppercase tracking-widest font-mono">Core Sports</div>
+                     <div className="text-[10px] font-medium text-gray-500 uppercase tracking-widest font-mono">Core Sports</div>
                   </div>
                   <div>
                      <div className="text-xl font-header font-bold text-white">1</div>
-                     <div className="text-[10px] text-gray-500 uppercase tracking-widest font-mono">Thriving Community</div>
+                     <div className="text-[10px] font-medium text-gray-500 uppercase tracking-widest font-mono">Thriving Community</div>
                   </div>
                </div>
             </motion.div>

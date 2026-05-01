@@ -5,7 +5,7 @@ import { ChevronRight, Calendar, Info, Check, Trophy, PlayCircle } from 'lucide-
 
 const CricketHero: React.FC = () => {
    return (
-      <div className="relative h-[60vh] min-h-[400px] flex items-center bg-[#006838] overflow-hidden group">
+      <div className="relative h-[60vh] min-h-[400px] flex items-center bg-cricket overflow-hidden group">
          {/* Background Image with Cinematic Zoom and Parallax Feel */}
          <div
             className="absolute inset-0 bg-cover bg-center opacity-50 scale-105 animate-zoom-slow mix-blend-luminosity"
@@ -13,15 +13,15 @@ const CricketHero: React.FC = () => {
          ></div>
 
          {/* Advanced Gradient Overlays for Depth */}
-         <div className="absolute inset-0 bg-gradient-to-r from-[#006838] via-[#006838]/90 to-transparent z-10"></div>
+         <div className="absolute inset-0 bg-gradient-to-r from-cricket via-cricket/90 to-transparent z-10"></div>
          <div className="absolute inset-0 bg-[url('/textures/carbon-fibre.png')] opacity-30 mix-blend-overlay z-10"></div>
-         <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-[#006838] to-transparent z-10"></div>
+         <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-cricket to-transparent z-10"></div>
 
          <div className="container mx-auto px-4 md:px-6 relative z-20 pt-10">
 
             {/* Status Badge */}
-            <div className="inline-flex items-center gap-3 px-4 py-1.5 rounded-full bg-green-800 text-green-100 font-mono text-[10px] uppercase tracking-[0.25em] mb-4 animate-fade-in-up cursor-default">
-               <span className="w-2 h-2 rounded-full bg-[#CC0000]"></span>
+            <div className="inline-flex items-center gap-3 px-4 py-1.5 rounded-full bg-green-800 text-green-100 font-mono text-[10px] font-medium uppercase tracking-[0.25em] mb-4 animate-fade-in-up cursor-default">
+               <span className="w-2 h-2 rounded-full bg-dfw-red-700"></span>
                <span className="font-bold">Live:</span> Lanes Available Now
             </div>
 
@@ -31,7 +31,7 @@ const CricketHero: React.FC = () => {
             </h1>
 
             <div className="flex flex-col md:flex-row items-start gap-4 mb-6 animate-slide-up" style={{ animationDelay: '0.1s' }}>
-               <p className="max-w-xl text-gray-200 text-base md:text-lg font-light leading-relaxed border-l-2 border-[#CC0000] pl-6 backdrop-blur-sm">
+               <p className="max-w-xl text-gray-200 text-base md:text-lg font-light leading-relaxed border-l-2 border-dfw-red pl-6 backdrop-blur-sm">
                   Experience the precision of 22-yard pitches and Australian turf. Automated bowling machines and video analysis included with every session.
                </p>
 
@@ -50,19 +50,19 @@ const CricketHero: React.FC = () => {
 
             {/* 3 Prominent CTAs */}
             <div className="flex flex-row flex-wrap gap-3 animate-slide-up" style={{ animationDelay: '0.2s' }}>
-               <a href="https://book.runswiftapp.com/facilities/dfw-indoor-sports/rentals" target="_blank" rel="noopener noreferrer" className="group relative px-6 py-3 bg-[#CC0000] text-white font-bold uppercase tracking-widest text-xs rounded-sm overflow-hidden shadow-[0_0_40px_rgba(204,0,0,0.4)] transition-all hover:shadow-[0_0_60px_rgba(204,0,0,0.6)] hover:-translate-y-1">
+               <a href="https://book.runswiftapp.com/facilities/dfw-indoor-sports/rentals" target="_blank" rel="noopener noreferrer" className="group relative px-6 py-3 bg-dfw-red-700 text-white font-bold uppercase tracking-widest text-xs rounded-sm overflow-hidden shadow-[0_0_40px_rgba(204,0,0,0.4)] transition-all hover:shadow-[0_0_60px_rgba(204,0,0,0.6)] hover:-translate-y-1">
 
                   <span className="relative flex items-center gap-3">Book Lane Now <ChevronRight size={14} /></span>
                </a>
                <button
                   onClick={() => document.getElementById('showcase')?.scrollIntoView({ behavior: 'smooth' })}
-                  className="px-6 py-3 bg-white text-[#006838] font-bold uppercase tracking-widest text-xs rounded-sm hover:bg-gray-100 transition-all shadow-lg flex items-center gap-2"
+                  className="px-6 py-3 bg-white text-cricket font-bold uppercase tracking-widest text-xs rounded-sm hover:bg-gray-100 transition-all shadow-lg flex items-center gap-2"
                >
                   <PlayCircle size={14} /> View Facilities
                </button>
                <button
                   onClick={() => document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' })}
-                  className="px-6 py-3 border border-white/20 bg-white/5 backdrop-blur-md text-white font-bold uppercase tracking-widest text-xs rounded-sm hover:bg-white hover:text-[#006838] transition-all flex items-center gap-2"
+                  className="px-6 py-3 border border-white/20 bg-white/5 backdrop-blur-md text-white font-bold uppercase tracking-widest text-xs rounded-sm hover:bg-white hover:text-cricket transition-all flex items-center gap-2"
                >
                   <Calendar size={14} /> Memberships
                </button>

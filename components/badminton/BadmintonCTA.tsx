@@ -7,7 +7,7 @@ import Link from 'next/link';
 
 const BadmintonCTA: React.FC = () => {
    return (
-      <section className="py-24 bg-[#1E3A8A] dark:bg-black relative overflow-hidden text-center text-white">
+      <section className="py-24 bg-badminton relative overflow-hidden text-center text-white">
          <div className="absolute inset-0 bg-[url('/textures/carbon-fibre.png')] opacity-20 mix-blend-overlay"></div>
          <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
 
@@ -30,7 +30,7 @@ const BadmintonCTA: React.FC = () => {
                 <a href="https://book.runswiftapp.com/facilities/dfw-indoor-sports/rentals" target="_blank" rel="noopener noreferrer" className="px-10 py-5 bg-blue-500 text-white font-bold uppercase tracking-widest text-sm rounded-sm hover:bg-blue-600 transition-colors shadow-lg">
                    Reserve Court
                 </a>
-               <Link href="/contact" className="px-10 py-5 border border-white/20 text-white font-bold uppercase tracking-widest text-sm rounded-sm hover:bg-white hover:text-[#1E3A8A] transition-colors">
+               <Link href="/contact" className="px-10 py-5 border border-white/20 text-white font-bold uppercase tracking-widest text-sm rounded-sm hover:bg-white hover:text-badminton transition-colors">
                   Schedule Tour
                </Link>
                <Link href="/memberships" className="px-10 py-5 bg-white/10 backdrop-blur-md text-white font-bold uppercase tracking-widest text-sm rounded-sm hover:bg-white/20 transition-colors">

@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 
 const AcademyCoaching: React.FC = () => {
    return (
-      <section className="bg-dfw-navy dark:bg-black py-24 relative overflow-hidden transition-colors duration-300">
+      <section className="bg-dfw-navy py-24 relative overflow-hidden transition-colors duration-300">
          <div className="absolute inset-0 bg-[url('/textures/stardust.png')] opacity-10"></div>
          <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-white/5 to-transparent pointer-events-none"></div>
 
@@ -14,7 +14,7 @@ const AcademyCoaching: React.FC = () => {
                <motion.div
                   className="lg:w-1/2"
                >
-                  <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-white/10 bg-white/5 backdrop-blur-md text-gray-400 font-mono text-[10px] uppercase tracking-[0.25em] mb-6">
+                  <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full border border-white/10 bg-white/5 backdrop-blur-md text-gray-400 font-mono text-[10px] font-medium uppercase tracking-[0.25em] mb-6">
                      <span className="w-1.5 h-1.5 rounded-full bg-blue-500"></span>
                      Mentorship First
                   </div>
@@ -46,14 +46,14 @@ const AcademyCoaching: React.FC = () => {
                         <div className="h-10 w-10 rounded-full bg-white/10 flex items-center justify-center text-white font-bold text-xs border border-white/20 group-hover:border-dfw-red transition-colors">DK</div>
                         <div>
                            <h4 className="text-white font-bold uppercase text-sm mb-0.5 group-hover:text-dfw-red transition-colors">Dhawal Kulkarni</h4>
-                           <p className="text-[10px] text-gray-500 uppercase tracking-wider">Global Mentor</p>
+                           <p className="text-[10px] font-medium text-gray-500 uppercase tracking-wider">Global Mentor</p>
                         </div>
                      </div>
                      <div className="flex items-center gap-4 group cursor-pointer">
                         <div className="h-10 w-10 rounded-full bg-white/10 flex items-center justify-center text-white font-bold text-xs border border-white/20 group-hover:border-dfw-red transition-colors">CS</div>
                         <div>
                            <h4 className="text-white font-bold uppercase text-sm mb-0.5 group-hover:text-dfw-red transition-colors">Chetan Suryawanshi</h4>
-                           <p className="text-[10px] text-gray-500 uppercase tracking-wider">CEO & Co-Founder</p>
+                           <p className="text-[10px] font-medium text-gray-500 uppercase tracking-wider">CEO & Co-Founder</p>
                         </div>
                      </div>
                   </div>
@@ -69,7 +69,7 @@ const AcademyCoaching: React.FC = () => {
                         <div className="absolute inset-0 bg-gradient-to-t from-black/90 to-transparent z-10"></div>
                         <img src="/images/hero/cricket-hero.webp" className="w-full h-full object-cover opacity-80 group-hover:scale-110 transition-transform duration-700" alt="Technical Training" />
                         <div className="absolute bottom-4 left-4 z-20">
-                           <p className="text-dfw-red font-mono text-[10px] uppercase tracking-widest mb-1">Focus Area</p>
+                           <p className="text-dfw-red font-mono text-[10px] font-medium uppercase tracking-widest mb-1">Focus Area</p>
                            <p className="text-white font-bold uppercase text-lg">Technical</p>
                         </div>
                      </div>
@@ -77,7 +77,7 @@ const AcademyCoaching: React.FC = () => {
                         <div className="absolute inset-0 bg-gradient-to-t from-black/90 to-transparent z-10"></div>
                         <img src="/images/sports/athlete.webp" className="w-full h-full object-cover opacity-80 group-hover:scale-110 transition-transform duration-700" alt="Mental Training" />
                         <div className="absolute bottom-4 left-4 z-20">
-                           <p className="text-blue-500 font-mono text-[10px] uppercase tracking-widest mb-1">Focus Area</p>
+                           <p className="text-blue-500 font-mono text-[10px] font-medium uppercase tracking-widest mb-1">Focus Area</p>
                            <p className="text-white font-bold uppercase text-lg">Mental</p>
                         </div>
                      </div>

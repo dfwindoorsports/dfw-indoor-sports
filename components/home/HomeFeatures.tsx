@@ -31,8 +31,8 @@ const HomeFeatures: React.FC = () => {
          link: '/academy',
          linkText: 'Explore Academy',
          color: 'red',
-         bgColor: 'bg-red-50 dark:bg-red-900/30',
-         textColor: 'text-dfw-red dark:text-red-400',
+         bgColor: 'bg-red-50',
+         textColor: 'text-dfw-red',
          hoverBg: 'group-hover:bg-dfw-red'
       },
       {
@@ -43,8 +43,8 @@ const HomeFeatures: React.FC = () => {
          link: '/badminton-courts',
          linkText: 'View Programs',
          color: 'blue',
-         bgColor: 'bg-blue-50 dark:bg-blue-900/30',
-         textColor: 'text-blue-600 dark:text-blue-400',
+         bgColor: 'bg-blue-50',
+         textColor: 'text-blue-600',
          hoverBg: 'group-hover:bg-blue-600'
       },
       {
@@ -55,8 +55,8 @@ const HomeFeatures: React.FC = () => {
          link: '/soccer-fields',
          linkText: 'Soccer Info',
          color: 'green',
-         bgColor: 'bg-green-50 dark:bg-green-900/30',
-         textColor: 'text-green-600 dark:text-green-400',
+         bgColor: 'bg-green-50',
+         textColor: 'text-green-600',
          hoverBg: 'group-hover:bg-green-600'
       },
       {
@@ -67,16 +67,16 @@ const HomeFeatures: React.FC = () => {
          link: '/dodgeball-courts',
          linkText: 'Book Court',
          color: 'orange',
-         bgColor: 'bg-orange-50 dark:bg-orange-900/30',
-         textColor: 'text-orange-500 dark:text-orange-400',
+         bgColor: 'bg-orange-50',
+         textColor: 'text-orange-500',
          hoverBg: 'group-hover:bg-orange-500'
       }
    ];
 
    return (
-      <section className="bg-gray-50 dark:bg-[#050911] transition-colors duration-300 py-24 md:py-32 relative overflow-hidden">
+      <section className="bg-gray-50 transition-colors duration-300 py-24 md:py-32 relative overflow-hidden">
          {/* Texture */}
-         <div className="absolute inset-0 bg-[url('/textures/cubes.png')] opacity-[0.03] dark:opacity-[0.05]"></div>
+         <div className="absolute inset-0 bg-[url('/textures/cubes.png')] opacity-[0.03]"></div>
 
          <div className="container mx-auto px-4 md:px-6 relative z-10">
 
@@ -84,10 +84,10 @@ const HomeFeatures: React.FC = () => {
                className="text-center max-w-3xl mx-auto mb-20"
             >
                <span className="text-dfw-red font-mono text-xs font-bold uppercase tracking-widest mb-4 block">Find Your Passion</span>
-               <h2 className="text-4xl md:text-5xl font-header font-bold text-dfw-navy dark:text-white uppercase leading-tight">
+               <h2 className="text-4xl md:text-5xl font-header font-bold text-dfw-navy uppercase leading-tight">
                   Our Sports
                </h2>
-               <p className="text-gray-500 dark:text-gray-400 mt-4 text-lg font-light">
+               <p className="text-gray-500 mt-4 text-lg font-light">
                   Four distinct ways to move, compete, and connect.
                </p>
             </motion.div>
@@ -105,7 +105,7 @@ const HomeFeatures: React.FC = () => {
                      <motion.div
                         key={sport.name}
                         variants={cardVariants}
-                        className="group relative bg-white dark:bg-white/5 rounded-xl border border-gray-100 dark:border-white/10 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 overflow-hidden h-[400px]"
+                        className="group relative bg-white rounded-xl border border-gray-100 shadow-sm hover:shadow-xl hover:-translate-y-2 transition-all duration-300 overflow-hidden h-[400px]"
                      >
                         {/* Background Image */}
                         <div className="absolute inset-0">

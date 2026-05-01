@@ -23,7 +23,7 @@ const HomePrograms: React.FC = () => {
    };
 
    return (
-      <section className="py-24 bg-white dark:bg-[#020408] border-b border-gray-100 dark:border-white/5 transition-colors duration-300">
+      <section className="py-24 bg-white border-b border-gray-100 transition-colors duration-300">
          <div className="container mx-auto px-4 md:px-6">
 
             {/* Section Banner with Dodgeball Action Image */}
@@ -49,7 +49,7 @@ const HomePrograms: React.FC = () => {
             <motion.div
                className="text-center mb-12 max-w-3xl mx-auto"
             >
-               <p className="text-gray-500 dark:text-gray-400">From beginners to champions, finding your level is the first step.</p>
+               <p className="text-gray-500">From beginners to champions, finding your level is the first step.</p>
             </motion.div>
 
             <motion.div
@@ -61,7 +61,7 @@ const HomePrograms: React.FC = () => {
             >
 
                {/* Youth */}
-               <motion.div variants={cardVariants} className="group relative rounded-xl border border-gray-200 dark:border-white/10 hover:border-green-500/30 dark:hover:border-green-500/30 transition-all duration-300 overflow-hidden h-[480px]">
+               <motion.div variants={cardVariants} className="group relative rounded-xl border border-gray-200 hover:border-green-500/30 transition-all duration-300 overflow-hidden h-[480px]">
                   {/* Background Image */}
                   <div className="absolute inset-0">
                      <OptimizedImage
@@ -95,7 +95,7 @@ const HomePrograms: React.FC = () => {
                </motion.div>
 
                {/* Adult */}
-               <motion.div variants={cardVariants} className="group relative rounded-xl border border-gray-200 dark:border-white/10 hover:border-blue-500/30 dark:hover:border-blue-500/30 transition-all duration-300 overflow-hidden h-[480px]">
+               <motion.div variants={cardVariants} className="group relative rounded-xl border border-gray-200 hover:border-blue-500/30 transition-all duration-300 overflow-hidden h-[480px]">
                   {/* Background Image */}
                   <div className="absolute inset-0">
                      <OptimizedImage
@@ -129,7 +129,7 @@ const HomePrograms: React.FC = () => {
                </motion.div>
 
                {/* Elite */}
-               <motion.div variants={cardVariants} className="group relative rounded-xl border border-dfw-red/30 dark:border-white/10 shadow-xl overflow-hidden h-[480px]">
+               <motion.div variants={cardVariants} className="group relative rounded-xl border border-dfw-red/30 shadow-xl overflow-hidden h-[480px]">
                   {/* Background Image */}
                   <div className="absolute inset-0">
                      <OptimizedImage

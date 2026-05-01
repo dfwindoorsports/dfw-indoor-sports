@@ -227,7 +227,7 @@ const WaiverDocument: React.FC = () => {
                                  required
                                  value={firstName}
                                  onChange={(e) => setFirstName(e.target.value)}
-                                 className="w-full p-3 rounded-sm border border-gray-300 focus:outline-none focus:border-dfw-navy focus:ring-1 focus:ring-dfw-navy bg-white transition-all"
+                                 className="w-full p-3 rounded-lg border border-gray-300 focus:outline-none focus:border-dfw-navy focus:ring-1 focus:ring-dfw-navy bg-white transition-all"
                               />
                            </div>
                            <div>
@@ -237,26 +237,26 @@ const WaiverDocument: React.FC = () => {
                                  required
                                  value={lastName}
                                  onChange={(e) => setLastName(e.target.value)}
-                                 className="w-full p-3 rounded-sm border border-gray-300 focus:outline-none focus:border-dfw-navy focus:ring-1 focus:ring-dfw-navy bg-white transition-all"
+                                 className="w-full p-3 rounded-lg border border-gray-300 focus:outline-none focus:border-dfw-navy focus:ring-1 focus:ring-dfw-navy bg-white transition-all"
                               />
                            </div>
                            <div>
                               <label className="block text-xs font-bold text-gray-500 uppercase tracking-widest mb-2">Date of Birth *</label>
                               <div className="relative">
-                                 <input type="date" required value={dateOfBirth} onChange={(e) => setDateOfBirth(e.target.value)} className="w-full p-3 rounded-sm border border-gray-300 focus:outline-none focus:border-dfw-navy focus:ring-1 focus:ring-dfw-navy bg-white transition-all text-gray-600" />
+                                 <input type="date" required value={dateOfBirth} onChange={(e) => setDateOfBirth(e.target.value)} className="w-full p-3 rounded-lg border border-gray-300 focus:outline-none focus:border-dfw-navy focus:ring-1 focus:ring-dfw-navy bg-white transition-all text-gray-600" />
                               </div>
                            </div>
                            <div>
                               <label className="block text-xs font-bold text-gray-500 uppercase tracking-widest mb-2">Phone Number *</label>
-                              <input type="tel" required value={phone} onChange={(e) => setPhone(e.target.value)} className="w-full p-3 rounded-sm border border-gray-300 focus:outline-none focus:border-dfw-navy focus:ring-1 focus:ring-dfw-navy bg-white transition-all" />
+                              <input type="tel" required value={phone} onChange={(e) => setPhone(e.target.value)} className="w-full p-3 rounded-lg border border-gray-300 focus:outline-none focus:border-dfw-navy focus:ring-1 focus:ring-dfw-navy bg-white transition-all" />
                            </div>
                            <div className="md:col-span-2">
                               <label className="block text-xs font-bold text-gray-500 uppercase tracking-widest mb-2">Email Address *</label>
-                              <input type="email" required value={email} onChange={(e) => setEmail(e.target.value)} className="w-full p-3 rounded-sm border border-gray-300 focus:outline-none focus:border-dfw-navy focus:ring-1 focus:ring-dfw-navy bg-white transition-all" />
+                              <input type="email" required value={email} onChange={(e) => setEmail(e.target.value)} className="w-full p-3 rounded-lg border border-gray-300 focus:outline-none focus:border-dfw-navy focus:ring-1 focus:ring-dfw-navy bg-white transition-all" />
                            </div>
                            <div className="md:col-span-2">
                               <label className="block text-xs font-bold text-gray-500 uppercase tracking-widest mb-2">Address</label>
-                              <input type="text" className="w-full p-3 rounded-sm border border-gray-300 focus:outline-none focus:border-dfw-navy focus:ring-1 focus:ring-dfw-navy bg-white transition-all" placeholder="Street Address, City, State, ZIP" />
+                              <input type="text" className="w-full p-3 rounded-lg border border-gray-300 focus:outline-none focus:border-dfw-navy focus:ring-1 focus:ring-dfw-navy bg-white transition-all" placeholder="Street Address, City, State, ZIP" />
                            </div>
                         </div>
 
@@ -266,11 +266,11 @@ const WaiverDocument: React.FC = () => {
                            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                               <div>
                                  <label className="block text-xs font-bold text-gray-500 uppercase tracking-widest mb-2">Contact Name *</label>
-                                 <input type="text" required value={emergencyContact} onChange={(e) => setEmergencyContact(e.target.value)} className="w-full p-3 rounded-sm border border-gray-300 focus:outline-none focus:border-dfw-navy focus:ring-1 focus:ring-dfw-navy bg-white transition-all" />
+                                 <input type="text" required value={emergencyContact} onChange={(e) => setEmergencyContact(e.target.value)} className="w-full p-3 rounded-lg border border-gray-300 focus:outline-none focus:border-dfw-navy focus:ring-1 focus:ring-dfw-navy bg-white transition-all" />
                               </div>
                               <div>
                                  <label className="block text-xs font-bold text-gray-500 uppercase tracking-widest mb-2">Contact Phone *</label>
-                                 <input type="tel" required value={emergencyPhone} onChange={(e) => setEmergencyPhone(e.target.value)} className="w-full p-3 rounded-sm border border-gray-300 focus:outline-none focus:border-dfw-navy focus:ring-1 focus:ring-dfw-navy bg-white transition-all" />
+                                 <input type="tel" required value={emergencyPhone} onChange={(e) => setEmergencyPhone(e.target.value)} className="w-full p-3 rounded-lg border border-gray-300 focus:outline-none focus:border-dfw-navy focus:ring-1 focus:ring-dfw-navy bg-white transition-all" />
                               </div>
                            </div>
                         </div>
@@ -281,7 +281,7 @@ const WaiverDocument: React.FC = () => {
                               <button
                                  type="button"
                                  onClick={() => setIsMinor(!isMinor)}
-                                 className={`w-6 h-6 rounded-sm border flex items-center justify-center transition-colors ${isMinor ? 'bg-dfw-navy border-dfw-navy text-white' : 'bg-white border-gray-400'}`}
+                                 className={`w-6 h-6 rounded-lg border flex items-center justify-center transition-colors ${isMinor ? 'bg-dfw-navy border-dfw-navy text-white' : 'bg-white border-gray-400'}`}
                               >
                                  {isMinor && <CheckCircle2 size={16} />}
                               </button>
@@ -291,16 +291,16 @@ const WaiverDocument: React.FC = () => {
                            </div>
 
                            {isMinor && (
-                              <div className="bg-white p-6 rounded-sm border border-gray-200 animate-fade-in-up">
+                              <div className="bg-white p-6 rounded-lg border border-gray-200 animate-fade-in-up">
                                  <h4 className="font-header font-bold text-sm text-dfw-navy uppercase mb-4">Parent/Guardian Information</h4>
                                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                                     <div>
                                        <label className="block text-xs font-bold text-gray-500 uppercase tracking-widest mb-2">Guardian Name</label>
-                                       <input type="text" className="w-full p-3 rounded-sm border border-gray-300 bg-gray-50" />
+                                       <input type="text" className="w-full p-3 rounded-lg border border-gray-300 bg-gray-50" />
                                     </div>
                                     <div>
                                        <label className="block text-xs font-bold text-gray-500 uppercase tracking-widest mb-2">Relationship</label>
-                                       <input type="text" className="w-full p-3 rounded-sm border border-gray-300 bg-gray-50" />
+                                       <input type="text" className="w-full p-3 rounded-lg border border-gray-300 bg-gray-50" />
                                     </div>
                                  </div>
                               </div>
@@ -308,12 +308,12 @@ const WaiverDocument: React.FC = () => {
                         </div>
 
                         {/* Agreement & Signature */}
-                        <div className="pt-6 border-t border-gray-300 bg-white p-6 rounded-sm border border-gray-200">
+                        <div className="pt-6 border-t border-gray-300 bg-white p-6 rounded-lg border border-gray-200">
                            <div className="flex items-start gap-4 mb-8">
                               <button
                                  type="button"
                                  onClick={() => setAgreed(!agreed)}
-                                 className={`mt-1 w-6 h-6 shrink-0 rounded-sm border flex items-center justify-center transition-colors ${agreed ? 'bg-dfw-red border-dfw-red text-white' : 'bg-white border-gray-400 hover:border-dfw-red'}`}
+                                 className={`mt-1 w-6 h-6 shrink-0 rounded-lg border flex items-center justify-center transition-colors ${agreed ? 'bg-dfw-red border-dfw-red text-white' : 'bg-white border-gray-400 hover:border-dfw-red'}`}
                               >
                                  {agreed && <CheckCircle2 size={16} />}
                               </button>
@@ -330,9 +330,9 @@ const WaiverDocument: React.FC = () => {
                                  value={signature}
                                  onChange={(e) => setSignature(e.target.value)}
                                  placeholder="e.g. John A. Doe"
-                                 className="w-full p-4 rounded-sm border-2 border-gray-300 focus:outline-none focus:border-dfw-red focus:bg-red-50/10 font-header text-2xl uppercase tracking-wide text-dfw-navy transition-all placeholder:text-gray-300"
+                                 className="w-full p-4 rounded-lg border-2 border-gray-300 focus:outline-none focus:border-dfw-red focus:bg-red-50/10 font-header text-2xl uppercase tracking-wide text-dfw-navy transition-all placeholder:text-gray-300"
                               />
-                              <p className="text-[10px] text-gray-400 mt-2 flex items-center gap-1">
+                              <p className="text-[10px] font-medium text-gray-400 mt-2 flex items-center gap-1">
                                  <CheckCircle2 size={10} /> Your typed name above constitutes a legal electronic signature.
                               </p>
                            </div>

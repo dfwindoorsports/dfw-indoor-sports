@@ -35,7 +35,7 @@ export default function CityHero({ city, distance, heroImage = '/images/hero/spo
                     
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.2 }}
-                    className="inline-flex items-center gap-3 px-4 py-1.5 rounded-full border border-dfw-red/40 bg-dfw-red/10 backdrop-blur-2xl text-dfw-red font-mono text-[10px] uppercase tracking-[0.25em] mb-4 hover:bg-dfw-red/20 transition-colors cursor-default"
+                    className="inline-flex items-center gap-3 px-4 py-1.5 rounded-full border border-dfw-red/40 bg-dfw-red/10 backdrop-blur-2xl text-dfw-red font-mono text-[10px] font-medium uppercase tracking-[0.25em] mb-4 hover:bg-dfw-red/20 transition-colors cursor-default"
                 >
                     <MapPin size={12} />
                     <span>Serving {city}, TX</span>
@@ -66,11 +66,11 @@ export default function CityHero({ city, distance, heroImage = '/images/hero/spo
                     <div className="hidden md:flex gap-6 border-l border-white/10 pl-6">
                         <div>
                             <div className="text-xl font-header font-bold text-white">{distance}</div>
-                            <div className="text-[10px] text-gray-500 uppercase tracking-widest font-mono">Drive Time</div>
+                            <div className="text-[10px] font-medium text-gray-500 uppercase tracking-widest font-mono">Drive Time</div>
                         </div>
                         <div>
                             <div className="text-xl font-header font-bold text-white">5AM-11PM</div>
-                            <div className="text-[10px] text-gray-500 uppercase tracking-widest font-mono">Open Daily</div>
+                            <div className="text-[10px] font-medium text-gray-500 uppercase tracking-widest font-mono">Open Daily</div>
                         </div>
                     </div>
                 </motion.div>

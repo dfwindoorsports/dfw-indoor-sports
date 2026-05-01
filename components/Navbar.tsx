@@ -45,10 +45,10 @@ export default function Navbar() {
     <>
       <nav
         className={`sticky top-0 z-[100] w-full transition-all duration-300 border-b ${isOpen
-          ? 'bg-white dark:bg-dfw-navy border-gray-100 dark:border-white/10'
+          ? 'bg-white border-gray-100'
           : scrolled
-            ? 'bg-white/95 dark:bg-dfw-navy/95 backdrop-blur-xl border-gray-200 dark:border-white/10 shadow-md'
-            : 'bg-white dark:bg-dfw-navy border-gray-100 dark:border-white/10'
+            ? 'bg-white/95 backdrop-blur-xl border-gray-200 shadow-md'
+            : 'bg-white border-gray-100'
           }`}
       >
         <div className="container mx-auto px-4 md:px-6 relative z-[110]">
@@ -67,7 +67,7 @@ export default function Navbar() {
                     {item.children ? (
                       <>
                         <button
-                          className={`relative px-3 py-2 flex items-center gap-1.5 text-[11px] font-bold uppercase tracking-widest transition-colors duration-300 group-hover/menu:text-dfw-red ${pathname?.startsWith(item.href) ? 'text-dfw-navy dark:text-white' : 'text-gray-500 dark:text-gray-400'
+                          className={`relative px-3 py-2 flex items-center gap-1.5 text-[11px] font-bold uppercase tracking-widest transition-colors duration-300 group-hover/menu:text-dfw-red ${pathname?.startsWith(item.href) ? 'text-dfw-navy' : 'text-gray-500'
                             }`}
                         >
                           {item.label}
@@ -77,12 +77,12 @@ export default function Navbar() {
                         </button>
 
                         <div className="absolute top-full left-1/2 -translate-x-1/2 pt-4 w-56 opacity-0 invisible group-hover/menu:opacity-100 group-hover/menu:visible transition-all duration-300 transform translate-y-2 group-hover/menu:translate-y-0">
-                          <div className="bg-white dark:bg-gray-900 border border-gray-100 dark:border-white/10 shadow-xl rounded-sm overflow-hidden p-1">
+                          <div className="bg-white border border-gray-100 shadow-xl rounded-lg overflow-hidden p-1">
                             {item.children.map((child) => (
                               <Link
                                 key={child.label}
                                 href={child.href}
-                                className="block px-4 py-3 text-[10px] font-bold uppercase tracking-widest text-gray-500 dark:text-gray-300 hover:text-dfw-red dark:hover:text-dfw-red hover:bg-gray-50 dark:hover:bg-white/5 transition-all rounded-sm flex items-center justify-between group/item"
+                                className="block px-4 py-3 text-[10px] font-bold uppercase tracking-widest text-gray-500 hover:text-dfw-red hover:bg-gray-50 transition-all rounded-sm flex items-center justify-between group/item"
                               >
                                 <span>{child.label}</span>
                                 <ChevronRight size={10} className="opacity-0 -translate-x-2 group-hover/item:opacity-100 group-hover/item:translate-x-0 transition-all text-dfw-red" />
@@ -94,7 +94,7 @@ export default function Navbar() {
                     ) : (
                       <Link
                         href={item.href}
-                        className={`relative px-3 py-2 block text-[11px] font-bold uppercase tracking-widest transition-colors duration-300 hover:text-dfw-red ${pathname === item.href ? 'text-dfw-navy dark:text-white' : 'text-gray-500 dark:text-gray-400'
+                        className={`relative px-3 py-2 block text-[11px] font-bold uppercase tracking-widest transition-colors duration-300 hover:text-dfw-red ${pathname === item.href ? 'text-dfw-navy' : 'text-gray-500'
                           }`}
                       >
                         {item.label}
@@ -105,10 +105,10 @@ export default function Navbar() {
                 ))}
               </div>
 
-              <div className="pl-6 border-l border-gray-200 dark:border-white/10 flex items-center gap-4">
+              <div className="pl-6 border-l border-gray-200 flex items-center gap-4">
                 <Link
                   href="/contact"
-                  className="group relative inline-flex items-center gap-2 px-5 py-2.5 bg-dfw-navy dark:bg-white dark:text-dfw-navy text-white text-[10px] font-bold uppercase tracking-widest rounded-sm overflow-hidden transition-all hover:bg-dfw-red dark:hover:bg-gray-200 shadow-md"
+                  className="group relative inline-flex items-center gap-2 px-5 py-2.5 bg-dfw-navy text-white text-[10px] font-bold uppercase tracking-widest rounded-sm overflow-hidden transition-all hover:bg-dfw-red shadow-md"
                 >
                   <span className="relative z-10">Contact Us</span>
                   <ArrowRight size={12} className="relative z-10 transition-transform duration-300 group-hover:translate-x-1" />
@@ -119,7 +119,7 @@ export default function Navbar() {
             <div className="lg:hidden flex items-center gap-3 z-50">
               <button
                 onClick={() => setIsOpen(!isOpen)}
-                className="p-2.5 -mr-2 text-dfw-navy dark:text-white hover:text-dfw-red transition-colors focus:outline-none"
+                className="p-2.5 -mr-2 text-dfw-navy hover:text-dfw-red transition-colors focus:outline-none"
                 aria-label="Toggle Menu"
               >
                 {isOpen ? <X size={26} /> : <Menu size={26} />}
@@ -135,9 +135,9 @@ export default function Navbar() {
               animate={{ x: 0 }}
               exit={{ x: '100%' }}
               transition={{ type: "spring", stiffness: 300, damping: 30 }}
-              className="lg:hidden fixed inset-0 z-[90] bg-white dark:bg-dfw-navy"
+              className="lg:hidden fixed inset-0 z-[90] bg-white"
             >
-              <div className="absolute inset-0 bg-[url('/textures/cubes.png')] opacity-[0.03] dark:opacity-[0.05]"></div>
+              <div className="absolute inset-0 bg-[url('/textures/cubes.png')] opacity-[0.03]"></div>
 
               <div className="flex flex-col h-full pt-28 px-6 pb-12 overflow-y-auto relative z-10">
 
@@ -148,7 +148,7 @@ export default function Navbar() {
                       
                       animate={{ opacity: 1, x: 0 }}
                       transition={{ delay: idx * 0.05 + 0.2 }}
-                      className="border-b border-gray-100 dark:border-white/10 last:border-0"
+                      className="border-b border-gray-100 last:border-0"
                     >
                       {item.children ? (
                         <div className="py-3">
@@ -156,13 +156,13 @@ export default function Navbar() {
                             <Link
                               href={item.href}
                               onClick={() => setIsOpen(false)}
-                              className="block font-header font-bold text-xl text-dfw-navy dark:text-white uppercase"
+                              className="block font-header font-bold text-xl text-dfw-navy uppercase"
                             >
                               {item.label}
                             </Link>
                             <button
                               onClick={() => toggleExpanded(item.label)}
-                              className="p-2 text-dfw-navy dark:text-white hover:text-dfw-red transition-colors"
+                              className="p-2 text-dfw-navy hover:text-dfw-red transition-colors"
                               aria-label={`Toggle ${item.label} menu`}
                             >
                               <ChevronDown
@@ -180,13 +180,13 @@ export default function Navbar() {
                                 transition={{ duration: 0.2 }}
                                 className="overflow-hidden"
                               >
-                                <div className="pl-4 border-l-2 border-gray-100 dark:border-white/10 space-y-2 pb-2">
+                                <div className="pl-4 border-l-2 border-gray-100 space-y-2 pb-2">
                                   {item.children.map(child => (
                                     <Link
                                       key={child.label}
                                       href={child.href}
                                       onClick={() => setIsOpen(false)}
-                                      className="block text-xs font-bold text-gray-500 dark:text-gray-400 uppercase tracking-widest hover:text-dfw-red transition-colors py-1"
+                                      className="block text-xs font-bold text-gray-500 uppercase tracking-widest hover:text-dfw-red transition-colors py-1"
                                     >
                                       {child.label}
                                     </Link>
@@ -199,7 +199,7 @@ export default function Navbar() {
                       ) : (
                         <Link
                           href={item.href}
-                          className="block py-3 font-header font-bold text-xl text-dfw-navy dark:text-white uppercase hover:text-dfw-red transition-colors"
+                          className="block py-3 font-header font-bold text-xl text-dfw-navy uppercase hover:text-dfw-red transition-colors"
                           onClick={() => setIsOpen(false)}
                         >
                           {item.label}
@@ -213,7 +213,7 @@ export default function Navbar() {
                   
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.4 }}
-                  className="mt-6 pt-6 border-t border-gray-100 dark:border-white/10"
+                  className="mt-6 pt-6 border-t border-gray-100"
                 >
                   <Link
                     href="/contact"
@@ -223,10 +223,10 @@ export default function Navbar() {
                     Get In Touch <ArrowRight size={14} />
                   </Link>
 
-                  <div className="flex justify-center gap-8 mt-6 text-[10px] font-bold uppercase tracking-widest text-gray-400 dark:text-gray-500">
-                    <a href="https://instagram.com/dfwindoorsports/" target="_blank" rel="noreferrer" className="hover:text-dfw-navy dark:hover:text-white transition-colors">Instagram</a>
-                    <a href="https://facebook.com/dfwindoorsports" target="_blank" rel="noreferrer" className="hover:text-dfw-navy dark:hover:text-white transition-colors">Facebook</a>
-                    <a href="https://twitter.com/dfwindoorsports" target="_blank" rel="noreferrer" className="hover:text-dfw-navy dark:hover:text-white transition-colors">Twitter</a>
+                  <div className="flex justify-center gap-8 mt-6 text-[10px] font-bold uppercase tracking-widest text-gray-400">
+                    <a href="https://instagram.com/dfwindoorsports/" target="_blank" rel="noreferrer" className="hover:text-dfw-navy transition-colors">Instagram</a>
+                    <a href="https://facebook.com/dfwindoorsports" target="_blank" rel="noreferrer" className="hover:text-dfw-navy transition-colors">Facebook</a>
+                    <a href="https://twitter.com/dfwindoorsports" target="_blank" rel="noreferrer" className="hover:text-dfw-navy transition-colors">Twitter</a>
                   </div>
                 </motion.div>
               </div>

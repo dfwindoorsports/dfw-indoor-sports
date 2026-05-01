@@ -6,9 +6,9 @@ import { motion } from 'framer-motion';
 
 const EventsFAQ: React.FC = () => {
   return (
-    <section className="py-24 bg-gray-50 dark:bg-[#0A111F] border-t border-gray-200 dark:border-white/5 transition-colors duration-300">
+    <section className="py-24 bg-gray-50 border-t border-gray-200 transition-colors duration-300">
          <div className="container mx-auto px-4 md:px-6 max-w-3xl">
-            <h2 className="text-3xl font-header font-bold text-dfw-navy dark:text-white uppercase mb-12 text-center">Event Planning FAQ</h2>
+            <h2 className="text-3xl font-header font-bold text-dfw-navy uppercase mb-12 text-center">Event Planning FAQ</h2>
             
             <div className="space-y-3">
                {[
@@ -23,15 +23,15 @@ const EventsFAQ: React.FC = () => {
                   <motion.details 
                      key={idx} 
                      transition={{ delay: idx * 0.05 }}
-                     className="group bg-white dark:bg-white/5 rounded-sm border border-gray-200 dark:border-white/10 overflow-hidden transition-all duration-300 open:shadow-md"
+                     className="group bg-white rounded-lg border border-gray-200 overflow-hidden transition-all duration-300 open:shadow-md"
                   >
-                     <summary className="flex justify-between items-center p-6 cursor-pointer list-none font-bold text-dfw-navy dark:text-white uppercase tracking-wide text-xs select-none hover:bg-gray-50 dark:hover:bg-white/10 transition-colors">
+                     <summary className="flex justify-between items-center p-6 cursor-pointer list-none font-bold text-dfw-navy uppercase tracking-wide text-xs select-none hover:bg-gray-50 transition-colors">
                         {item.q}
                         <span className="transition-transform group-open:rotate-180 text-gray-400">
                            <ChevronDown size={16} />
                         </span>
                      </summary>
-                     <div className="p-6 pt-0 text-gray-600 dark:text-gray-300 text-sm leading-relaxed border-t border-gray-50 dark:border-white/5 mt-2 ml-4 border-l-2 border-dfw-red/20 pl-4">
+                     <div className="p-6 pt-0 text-gray-600 text-sm leading-relaxed border-t border-gray-50 mt-2 ml-4 border-l-2 border-dfw-red/20 pl-4">
                         {item.a}
                      </div>
                   </motion.details>

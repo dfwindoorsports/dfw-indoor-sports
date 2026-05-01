@@ -108,7 +108,7 @@ const FacilitiesGrid: React.FC = () => {
 
               {/* Micro Stat */}
               <div className="hidden lg:block">
-                <div className="text-[10px] font-mono text-gray-400 uppercase tracking-widest mb-1">Total Area</div>
+                <div className="text-[10px] font-medium font-mono text-gray-400 uppercase tracking-widest mb-1">Total Area</div>
                 <div className="text-2xl font-header font-bold text-dfw-navy">50<span className="text-dfw-red text-sm">k</span></div>
               </div>
             </div>
@@ -186,14 +186,14 @@ const FacilitiesGrid: React.FC = () => {
                       </a>
                     ) : (
                       <div className="space-y-3 border-t border-white/10 pt-3">
-                        <div className="flex justify-between items-center text-[10px] font-mono text-gray-400 uppercase tracking-wider">
+                        <div className="flex justify-between items-center text-[10px] font-medium font-mono text-gray-400 uppercase tracking-wider">
                           <span>Capacity</span>
                           <span className="text-white">{item.capacity}</span>
                         </div>
 
                         <div className="flex flex-wrap gap-2">
                           {item.specs.map((spec, i) => (
-                            <span key={i} className="flex items-center gap-1.5 text-[9px] md:text-[10px] font-medium text-gray-300 bg-white/5 px-2 py-1 rounded-sm border border-white/5">
+                            <span key={i} className="flex items-center gap-1.5 text-[9px] md:text-[10px] font-medium text-gray-300 bg-white/5 px-2 py-1 rounded-lg border border-white/5">
                               <CheckCircle2 size={10} className="text-dfw-red" /> {spec}
                             </span>
                           ))}
@@ -207,7 +207,7 @@ const FacilitiesGrid: React.FC = () => {
               {/* Status Indicator Bottom Right (Absolute) */}
               {!item.isContact && (
                 <div className="absolute bottom-5 right-5 md:bottom-6 md:right-6 opacity-0 md:opacity-100 group-hover:opacity-0 transition-opacity duration-300">
-                  <span className="flex items-center gap-1.5 text-[9px] font-mono font-bold text-white/60 uppercase tracking-wider bg-black/20 px-2 py-1 rounded-sm backdrop-blur-sm border border-white/5">
+                  <span className="flex items-center gap-1.5 text-[9px] font-mono font-bold text-white/60 uppercase tracking-wider bg-black/20 px-2 py-1 rounded-lg backdrop-blur-sm border border-white/5">
                     <span className={`w-1.5 h-1.5 rounded-full ${item.status === 'Active' || item.status === 'Open' ? 'bg-green-500' : 'bg-yellow-500'}`}></span>
                     {item.status}
                   </span>

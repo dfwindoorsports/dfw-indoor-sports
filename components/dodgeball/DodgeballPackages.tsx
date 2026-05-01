@@ -7,7 +7,7 @@ import { OptimizedImage } from '@/components/ui/OptimizedImage';
 
 const DodgeballPackages: React.FC = () => {
    return (
-      <section className="py-24 bg-gray-50 dark:bg-[#0A111F] border-t border-gray-200 dark:border-white/5 transition-colors duration-300" id="packages">
+      <section className="py-24 bg-gray-50 border-t border-gray-200 transition-colors duration-300" id="packages">
          <div className="container mx-auto px-4 md:px-6">
 
             {/* Dodgeball Group Party Image */}
@@ -21,7 +21,7 @@ const DodgeballPackages: React.FC = () => {
                      fill
                      className="object-cover"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#4C1D95]/70 via-transparent to-transparent" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-dodgeball/70 via-transparent to-transparent" />
                   <div className="absolute bottom-6 left-6 right-6">
                      <p className="text-white font-header font-bold text-xl md:text-2xl uppercase">Parties & Events That Hit Different</p>
                      <p className="text-white/70 text-xs font-mono uppercase tracking-widest mt-1">Birthdays • Corporate • Private Groups</p>
@@ -33,7 +33,7 @@ const DodgeballPackages: React.FC = () => {
             <div className="mb-24">
                <div className="text-center mb-12">
                   <span className="text-orange-500 font-mono text-xs font-bold uppercase tracking-widest mb-3 block">Celebrations</span>
-                  <h2 className="text-3xl md:text-4xl font-header font-bold text-[#4C1D95] dark:text-white uppercase">Birthday Parties</h2>
+                  <h2 className="text-3xl md:text-4xl font-header font-bold text-dodgeball uppercase">Birthday Parties</h2>
                </div>
 
                <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -45,25 +45,25 @@ const DodgeballPackages: React.FC = () => {
                      <motion.div
                         key={i}
                         transition={{ delay: i * 0.1 }}
-                        className={`bg-white dark:bg-white/5 rounded-lg p-8 border transition-all duration-300 relative overflow-hidden group ${pkg.highlight ? 'border-orange-500 shadow-xl transform md:-translate-y-4' : 'border-gray-200 dark:border-white/10 shadow-sm hover:shadow-md'}`}
+                        className={`bg-white rounded-lg p-8 border transition-all duration-300 relative overflow-hidden group ${pkg.highlight ? 'border-orange-500 shadow-xl transform md:-translate-y-4' : 'border-gray-200 shadow-sm hover:shadow-md'}`}
                      >
                         {pkg.highlight && <div className="absolute top-0 right-0 bg-orange-500 text-white text-[10px] font-bold uppercase px-3 py-1 rounded-bl-lg">Most Popular</div>}
-                        <h3 className="text-xl font-header font-bold text-[#4C1D95] dark:text-white uppercase mb-2">{pkg.name}</h3>
+                        <h3 className="text-xl font-header font-bold text-dodgeball uppercase mb-2">{pkg.name}</h3>
                         <div className="flex items-baseline gap-1 mb-6">
-                           <span className="text-3xl font-bold text-gray-900 dark:text-white">{pkg.price}</span>
-                           <span className="text-xs text-gray-500 dark:text-gray-400">/ {pkg.kids} Kids</span>
+                           <span className="text-3xl font-bold text-gray-900">{pkg.price}</span>
+                           <span className="text-xs text-gray-500">/ {pkg.kids} Kids</span>
                         </div>
-                        <div className="flex items-center gap-2 mb-6 text-sm text-gray-600 dark:text-gray-300 bg-gray-50 dark:bg-white/10 p-2 rounded">
+                        <div className="flex items-center gap-2 mb-6 text-sm text-gray-600 bg-gray-50 p-2 rounded">
                            <Clock size={16} className="text-orange-500" /> {pkg.time} Duration
                         </div>
                         <ul className="space-y-3 mb-8">
                            {pkg.features.map((f, idx) => (
-                              <li key={idx} className="flex gap-3 text-sm text-gray-600 dark:text-gray-300">
+                              <li key={idx} className="flex gap-3 text-sm text-gray-600">
                                  <Check size={16} className="text-green-500 shrink-0" /> {f}
                               </li>
                            ))}
                         </ul>
-                        <button className={`w-full py-3 font-bold uppercase text-xs tracking-widest rounded-sm transition-colors ${pkg.highlight ? 'bg-orange-500 text-white hover:bg-orange-600' : 'border border-[#4C1D95] dark:border-violet-400 text-[#4C1D95] dark:text-violet-400 hover:bg-[#4C1D95] hover:text-white dark:hover:bg-violet-400 dark:hover:text-black'}`}>
+                        <button className={`w-full py-3 font-bold uppercase text-xs tracking-widest rounded-sm transition-colors ${pkg.highlight ? 'bg-orange-500 text-white hover:bg-orange-600' : 'border border-dodgeball text-dodgeball hover:bg-dodgeball hover:text-white'}`}>
                            Select Package
                         </button>
                      </motion.div>
@@ -75,10 +75,10 @@ const DodgeballPackages: React.FC = () => {
             <div id="corporate">
                <div className="text-center mb-12">
                   <span className="text-violet-500 font-mono text-xs font-bold uppercase tracking-widest mb-3 block">Team Building</span>
-                  <h2 className="text-3xl md:text-4xl font-header font-bold text-[#4C1D95] dark:text-white uppercase">Corporate Events</h2>
+                  <h2 className="text-3xl md:text-4xl font-header font-bold text-dodgeball uppercase">Corporate Events</h2>
                </div>
 
-               <div className="bg-[#4C1D95] dark:bg-[#050911] rounded-xl overflow-hidden shadow-2xl relative text-white border border-white/10">
+               <div className="bg-dodgeball rounded-xl overflow-hidden shadow-2xl relative text-white border border-white/10">
                   <div className="absolute inset-0 bg-[url('/textures/carbon-fibre.png')] opacity-20 mix-blend-overlay"></div>
                   <div className="absolute top-0 right-0 w-96 h-96 bg-orange-500/20 rounded-full blur-[100px] pointer-events-none"></div>
 

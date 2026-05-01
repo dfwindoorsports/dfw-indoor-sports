@@ -6,10 +6,10 @@ import { motion } from 'framer-motion';
 
 const AcademyFAQ: React.FC = () => {
   return (
-    <section className="bg-gray-50 dark:bg-[#0A111F] py-24 transition-colors duration-300">
+    <section className="bg-gray-50 py-24 transition-colors duration-300">
        <div className="container mx-auto px-4 md:px-6 max-w-4xl">
           <motion.h2 
-            className="text-3xl md:text-5xl font-header font-bold text-dfw-navy dark:text-white uppercase mb-12 text-center"
+            className="text-3xl md:text-5xl font-header font-bold text-dfw-navy uppercase mb-12 text-center"
           >
             Frequently Asked Questions
           </motion.h2>
@@ -25,15 +25,15 @@ const AcademyFAQ: React.FC = () => {
                 <motion.details 
                   key={idx} 
                   transition={{ delay: idx * 0.1 }}
-                  className="group bg-white dark:bg-white/5 rounded-lg border border-gray-200 dark:border-white/10 overflow-hidden shadow-sm open:shadow-md transition-all duration-300"
+                  className="group bg-white rounded-lg border border-gray-200 overflow-hidden shadow-sm open:shadow-md transition-all duration-300"
                 >
-                   <summary className="flex justify-between items-center p-6 cursor-pointer list-none font-bold text-dfw-navy dark:text-white uppercase tracking-wide text-sm select-none hover:bg-gray-50 dark:hover:bg-white/5 transition-colors">
+                   <summary className="flex justify-between items-center p-6 cursor-pointer list-none font-bold text-dfw-navy uppercase tracking-wide text-sm select-none hover:bg-gray-50 transition-colors">
                       {item.q}
                       <span className="transition-transform group-open:rotate-180 text-gray-400">
                          <ChevronRight size={16} />
                       </span>
                    </summary>
-                   <div className="p-6 pt-0 text-gray-600 dark:text-gray-300 text-sm leading-relaxed border-t border-gray-100 dark:border-white/5 mt-2 ml-4 pl-4 border-l-2 border-dfw-red/20">
+                   <div className="p-6 pt-0 text-gray-600 text-sm leading-relaxed border-t border-gray-100 mt-2 ml-4 pl-4 border-l-2 border-dfw-red/20">
                       {item.a}
                    </div>
                 </motion.details>

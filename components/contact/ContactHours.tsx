@@ -60,7 +60,7 @@ const ContactHours: React.FC = () => {
                          <span className="text-gray-500 font-medium">Saturday - Sunday</span>
                          <span className="font-bold text-dfw-navy font-mono">8:00 AM - 8:00 PM</span>
                       </div>
-                      <p className="text-[10px] text-gray-400 italic text-center pt-3">
+                      <p className="text-[10px] font-medium text-gray-400 italic text-center pt-3">
                          *Voicemails left after hours are returned by 10 AM the next day.
                       </p>
                    </div>

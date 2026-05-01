@@ -48,7 +48,7 @@ export default function CityStats({ stats }: { stats: StatProps[] }) {
                                         </h3>
 
                                         {/* Label */}
-                                        <p className="text-[10px] text-gray-400 uppercase tracking-widest font-mono">
+                                        <p className="text-[10px] font-medium text-gray-400 uppercase tracking-widest font-mono">
                                             {stat.label}
                                         </p>
 

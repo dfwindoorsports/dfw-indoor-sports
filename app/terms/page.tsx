@@ -18,14 +18,14 @@ export default function TermsOfServicePage() {
   ])
 
   return (
-    <div className="bg-white dark:bg-[#020408] min-h-screen pt-24 pb-12 font-sans transition-colors duration-300">
+    <div className="bg-white min-h-screen pt-24 pb-12 font-sans transition-colors duration-300">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
       <div className="container mx-auto px-4 md:px-6 max-w-4xl">
-        <h1 className="text-4xl font-header font-bold text-dfw-navy dark:text-white uppercase mb-8">Terms of Service</h1>
-        <div className="prose prose-lg text-gray-600 dark:text-gray-400">
+        <h1 className="text-4xl font-header font-bold text-dfw-navy uppercase mb-8">Terms of Service</h1>
+        <div className="prose prose-lg text-gray-600">
           <p>Last updated: October 2024</p>
           <p>Please read these Terms of Service (&quot;Terms&quot;, &quot;Terms of Service&quot;) carefully before using the DFW Indoor Sports website and facilities.</p>
           <h3>Conditions of Use</h3>

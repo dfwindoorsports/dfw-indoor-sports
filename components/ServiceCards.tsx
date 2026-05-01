@@ -92,11 +92,11 @@ const ServiceCards: React.FC = () => {
               <div className="grid grid-cols-2 gap-4 border-t border-white/10 pt-6">
                  <div>
                     <span className="block text-2xl font-header font-bold text-white">Live</span>
-                    <span className="text-[10px] uppercase tracking-widest text-gray-500">Stats Tracking</span>
+                    <span className="text-[10px] font-medium uppercase tracking-widest text-gray-500">Stats Tracking</span>
                  </div>
                  <div>
                     <span className="block text-2xl font-header font-bold text-white">Weekly</span>
-                    <span className="text-[10px] uppercase tracking-widest text-gray-500">Matches</span>
+                    <span className="text-[10px] font-medium uppercase tracking-widest text-gray-500">Matches</span>
                  </div>
               </div>
             </div>

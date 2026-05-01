@@ -19,7 +19,7 @@ export default function CityDirections({ city, address, googleMapsLink, directio
     directions: DirectionBlock[]
 }) {
     return (
-        <section className="py-20 bg-gray-50 dark:bg-[#0a111f] relative overflow-hidden">
+        <section className="py-20 bg-gray-50 relative overflow-hidden">
             {/* Subtle overlay */}
             <div className="absolute inset-0 bg-[url('/textures/carbon-fibre.png')] opacity-10 mix-blend-overlay" />
 
@@ -28,14 +28,14 @@ export default function CityDirections({ city, address, googleMapsLink, directio
                     {/* Header */}
                     <div className="text-center mb-12">
                         <motion.span
-                            className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-dfw-red/40 bg-dfw-red/10 backdrop-blur-2xl text-dfw-red font-mono text-[10px] uppercase tracking-[0.25em] mb-4"
+                            className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-dfw-red/40 bg-dfw-red/10 backdrop-blur-2xl text-dfw-red font-mono text-[10px] font-medium uppercase tracking-[0.25em] mb-4"
                         >
                             Getting Here
                         </motion.span>
 
                         <motion.h2
                             transition={{ delay: 0.1 }}
-                            className="text-2xl md:text-4xl font-header font-bold text-dfw-navy dark:text-white uppercase tracking-tighter mb-4"
+                            className="text-2xl md:text-4xl font-header font-bold text-dfw-navy uppercase tracking-tighter mb-4"
                         >
                             Easy Drive from {city}
                         </motion.h2>
@@ -45,7 +45,7 @@ export default function CityDirections({ city, address, googleMapsLink, directio
                             className="inline-flex items-center gap-3 px-4 py-2 bg-white/5 backdrop-blur-md border border-white/10 rounded-full"
                         >
                             <MapPin size={14} className="text-dfw-red" />
-                            <span className="text-sm text-dfw-navy dark:text-white">{address}</span>
+                            <span className="text-sm text-dfw-navy">{address}</span>
                         </motion.div>
                     </div>
 
@@ -57,10 +57,10 @@ export default function CityDirections({ city, address, googleMapsLink, directio
                                 transition={{ delay: idx * 0.1 }}
                                 className="group"
                             >
-                                <div className="bg-white dark:bg-white/5 p-6 rounded-xl border border-gray-100 dark:border-white/10 hover:border-dfw-red/30 transition-colors">
+                                <div className="bg-white p-6 rounded-xl border border-gray-100 hover:border-dfw-red/30 transition-colors">
                                     {/* Header */}
                                     <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6">
-                                        <h3 className="text-lg font-header font-bold text-dfw-navy dark:text-white flex items-center gap-3">
+                                        <h3 className="text-lg font-header font-bold text-dfw-navy flex items-center gap-3">
                                             <span className="w-10 h-10 rounded-lg bg-dfw-red/10 border border-dfw-red/20 flex items-center justify-center">
                                                 <MapPin size={16} className="text-dfw-red" />
                                             </span>
@@ -68,7 +68,7 @@ export default function CityDirections({ city, address, googleMapsLink, directio
                                         </h3>
 
                                         <div className="flex items-center gap-3">
-                                            <span className="px-3 py-1 bg-white/10 border border-white/10 rounded text-xs font-mono text-dfw-navy dark:text-white">
+                                            <span className="px-3 py-1 bg-white/10 border border-white/10 rounded text-xs font-mono text-dfw-navy">
                                                 {dir.distance}
                                             </span>
                                             <span className="px-3 py-1 bg-dfw-red/10 border border-dfw-red/20 rounded text-xs font-mono text-dfw-red font-medium">
@@ -78,11 +78,11 @@ export default function CityDirections({ city, address, googleMapsLink, directio
                                     </div>
 
                                     {/* Steps */}
-                                    <ol className="relative border-l-2 border-gray-200 dark:border-white/10 ml-5 space-y-3">
+                                    <ol className="relative border-l-2 border-gray-200 ml-5 space-y-3">
                                         {dir.steps.map((step, sIdx) => (
                                             <li key={sIdx} className="pl-6 relative">
-                                                <span className="absolute -left-[7px] top-1.5 w-3 h-3 rounded-full bg-white dark:bg-[#0a111f] border-2 border-gray-300 dark:border-white/20" />
-                                                <span className="text-sm text-gray-600 dark:text-gray-400">
+                                                <span className="absolute -left-[7px] top-1.5 w-3 h-3 rounded-full bg-white border-2 border-gray-300" />
+                                                <span className="text-sm text-gray-600">
                                                     {step}
                                                 </span>
                                             </li>
@@ -102,7 +102,7 @@ export default function CityDirections({ city, address, googleMapsLink, directio
                             href={googleMapsLink}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="inline-flex items-center gap-3 px-6 py-3 bg-dfw-navy dark:bg-white text-white dark:text-dfw-navy font-bold uppercase tracking-widest text-xs rounded-sm hover:opacity-90 transition-opacity"
+                            className="inline-flex items-center gap-3 px-6 py-3 bg-dfw-navy text-white font-bold uppercase tracking-widest text-xs rounded-sm hover:opacity-90 transition-opacity"
                         >
                             Open in Google Maps
                             <ArrowUpRight size={14} />

@@ -8,7 +8,7 @@ const CricketInfo: React.FC = () => {
           
           {/* Booking Steps */}
           <div className="mb-24">
-             <h2 className="text-3xl font-header font-bold text-[#006838] uppercase mb-12 text-center">How To Book</h2>
+             <h2 className="text-3xl font-header font-bold text-cricket uppercase mb-12 text-center">How To Book</h2>
              <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
                 {[
                    { icon: UserPlus, title: "1. Create Account", desc: "Sign up in 30 seconds. No credit card required to view availability." },
@@ -16,7 +16,7 @@ const CricketInfo: React.FC = () => {
                    { icon: CreditCard, title: "3. Confirm & Play", desc: "Pay securely online. Receive instant code for facility access." }
                 ].map((step, idx) => (
                    <div key={idx} className="flex flex-col items-center text-center group">
-                      <div className="w-16 h-16 bg-green-50 text-[#006838] rounded-full flex items-center justify-center mb-6 group-hover:bg-[#006838] group-hover:text-white transition-colors duration-500 shadow-sm">
+                      <div className="w-16 h-16 bg-green-50 text-cricket rounded-full flex items-center justify-center mb-6 group-hover:bg-cricket group-hover:text-white transition-colors duration-500 shadow-sm">
                          <step.icon size={28} />
                       </div>
                       <h3 className="text-lg font-bold uppercase text-gray-900 mb-2">{step.title}</h3>
@@ -25,7 +25,7 @@ const CricketInfo: React.FC = () => {
                 ))}
              </div>
              <div className="text-center mt-12">
-                 <a href="https://book.runswiftapp.com/facilities/dfw-indoor-sports/rentals" target="_blank" rel="noopener noreferrer" className="px-8 py-3 bg-[#006838] text-white font-bold uppercase text-xs tracking-widest rounded-sm hover:bg-[#00502a] transition-colors shadow-lg inline-block">
+                 <a href="https://book.runswiftapp.com/facilities/dfw-indoor-sports/rentals" target="_blank" rel="noopener noreferrer" className="px-8 py-3 bg-cricket text-white font-bold uppercase text-xs tracking-widest rounded-sm hover:bg-[#00502a] transition-colors shadow-lg inline-block">
                     Book Online Now
                  </a>
              </div>
@@ -35,7 +35,7 @@ const CricketInfo: React.FC = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
              {/* Location */}
              <div className="bg-gray-50 p-10 rounded-lg border border-gray-200">
-                <h3 className="text-xl font-header font-bold text-[#006838] uppercase mb-4 flex items-center gap-2">
+                <h3 className="text-xl font-header font-bold text-cricket uppercase mb-4 flex items-center gap-2">
                    <MapPin size={20} /> Convenient Access
                 </h3>
                 <p className="text-gray-600 text-sm mb-6 leading-relaxed">
@@ -49,7 +49,7 @@ const CricketInfo: React.FC = () => {
              </div>
 
              {/* Academy Cross-sell */}
-             <div className="bg-[#006838] p-10 rounded-lg text-white relative overflow-hidden group">
+             <div className="bg-cricket p-10 rounded-lg text-white relative overflow-hidden group">
                 <div className="absolute inset-0 bg-[url('/textures/carbon-fibre.png')] opacity-20 mix-blend-overlay"></div>
                 <div className="relative z-10">
                    <h3 className="text-xl font-header font-bold uppercase mb-4">Want Professional Coaching?</h3>

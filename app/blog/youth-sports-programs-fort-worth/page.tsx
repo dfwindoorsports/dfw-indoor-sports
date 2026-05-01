@@ -33,7 +33,7 @@ export default function YouthSportsPage() {
     })
 
     return (
-        <article className="bg-white dark:bg-[#020408] min-h-screen transition-colors duration-300">
+        <article className="bg-white min-h-screen transition-colors duration-300">
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
 
@@ -48,34 +48,34 @@ export default function YouthSportsPage() {
 
             <div className="py-16">
                 <div className="container mx-auto px-4 max-w-4xl">
-                    <div className="prose prose-lg dark:prose-invert max-w-none">
-                        <p className="text-gray-600 dark:text-gray-400 text-lg leading-relaxed mb-8">
+                    <div className="prose prose-lg max-w-none">
+                        <p className="text-gray-600 text-lg leading-relaxed mb-8">
                             Choosing a sports program for your child is about more than just keeping them busy. It's about finding an environment where they build character, learn teamwork, and develop physical skills safely.
                         </p>
 
-                        <h2 className="text-2xl font-bold text-dfw-navy dark:text-white mb-4">What to Look For</h2>
+                        <h2 className="text-2xl font-bold text-dfw-navy mb-4">What to Look For</h2>
                         <ul className="space-y-4 mb-8">
                             {[
                                 { title: "Qualified Coaching", desc: "Look for certified coaches who understand child development, not just the sport." },
                                 { title: "Safe Facilities", desc: "Indoor, climate-controlled environments reduce risk of heat exhaustion and allow year-round consistency." },
                                 { title: "Focus on Fundamentals", desc: "Programs should prioritize skill acquisition over winning at young ages." }
                             ].map((item, i) => (
-                                <li key={i} className="bg-gray-50 dark:bg-white/5 p-4 rounded-lg">
-                                    <strong className="block text-dfw-navy dark:text-white">{item.title}</strong>
-                                    <span className="text-gray-600 dark:text-gray-400">{item.desc}</span>
+                                <li key={i} className="bg-gray-50 p-4 rounded-lg">
+                                    <strong className="block text-dfw-navy">{item.title}</strong>
+                                    <span className="text-gray-600">{item.desc}</span>
                                 </li>
                             ))}
                         </ul>
 
-                        <h2 className="text-2xl font-bold text-dfw-navy dark:text-white mb-4">Top Programs at DFW Indoor Sports</h2>
+                        <h2 className="text-2xl font-bold text-dfw-navy mb-4">Top Programs at DFW Indoor Sports</h2>
                         <div className="grid md:grid-cols-2 gap-6 mb-8">
-                            <div className="border border-gray-200 dark:border-white/10 p-6 rounded-xl">
+                            <div className="border border-gray-200 p-6 rounded-xl">
                                 <h3 className="text-xl font-bold text-dfw-red mb-2">Youth Cricket Academy</h3>
-                                <p className="text-sm text-gray-600 dark:text-gray-400">Ages 6-16. From holding the bat to advanced spin bowling techniques.</p>
+                                <p className="text-sm text-gray-600">Ages 6-16. From holding the bat to advanced spin bowling techniques.</p>
                             </div>
-                            <div className="border border-gray-200 dark:border-white/10 p-6 rounded-xl">
+                            <div className="border border-gray-200 p-6 rounded-xl">
                                 <h3 className="text-xl font-bold text-dfw-red mb-2">Junior Badminton</h3>
-                                <p className="text-sm text-gray-600 dark:text-gray-400">Improve agility and coordination with our fast-paced badminton clinics.</p>
+                                <p className="text-sm text-gray-600">Improve agility and coordination with our fast-paced badminton clinics.</p>
                             </div>
                         </div>
 

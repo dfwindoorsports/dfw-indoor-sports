@@ -6,26 +6,26 @@ import { motion } from 'framer-motion';
 
 const SoccerComparison: React.FC = () => {
   return (
-    <section className="py-24 bg-gray-50 dark:bg-[#0A111F] border-t border-gray-200 dark:border-white/5 transition-colors duration-300">
+    <section className="py-24 bg-gray-50 border-t border-gray-200 transition-colors duration-300">
        <div className="container mx-auto px-4 md:px-6">
           
           {/* Comparison Table */}
           <div className="max-w-5xl mx-auto mb-24">
              <div className="text-center mb-12">
-                <h2 className="text-3xl font-header font-bold text-[#064E3B] dark:text-white uppercase mb-4">The Indoor Advantage</h2>
-                <p className="text-gray-500 dark:text-gray-400">Why top players are moving indoors for technical development.</p>
+                <h2 className="text-3xl font-header font-bold text-soccer uppercase mb-4">The Indoor Advantage</h2>
+                <p className="text-gray-500">Why top players are moving indoors for technical development.</p>
              </div>
              
-             <div className="bg-white dark:bg-white/5 rounded-xl shadow-sm border border-gray-200 dark:border-white/10 overflow-hidden">
+             <div className="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden">
                 <table className="w-full text-left border-collapse">
                    <thead>
-                      <tr className="bg-[#064E3B] dark:bg-emerald-900/80 text-white">
+                      <tr className="bg-soccer text-white">
                          <th className="p-5 md:p-6 text-sm font-bold uppercase tracking-wider">Training Aspect</th>
                          <th className="p-5 md:p-6 text-sm font-bold uppercase tracking-wider bg-black/20 border-x border-white/10">Indoor 6v6</th>
                          <th className="p-5 md:p-6 text-sm font-bold uppercase tracking-wider opacity-70">Outdoor 11v11</th>
                       </tr>
                    </thead>
-                   <tbody className="divide-y divide-gray-100 dark:divide-white/5 text-gray-700 dark:text-gray-300">
+                   <tbody className="divide-y divide-gray-100 text-gray-700">
                       {[
                          { feat: "Touches Per Hour", us: "200+ (High Repetition)", them: "30-50" },
                          { feat: "Decision Speed", us: "Rapid (Tight Space)", them: "Moderate Pace" },
@@ -34,10 +34,10 @@ const SoccerComparison: React.FC = () => {
                          { feat: "Weather Impact", us: "Perfect Every Time", them: "Variable" },
                          { feat: "Field Availability", us: "Reserved, Reliable", them: "Limited, Shared" }
                       ].map((row, i) => (
-                         <tr key={i} className="hover:bg-gray-50 dark:hover:bg-white/5 transition-colors">
-                            <td className="p-5 md:p-6 font-bold text-[#064E3B] dark:text-emerald-400 text-sm">{row.feat}</td>
-                            <td className="p-5 md:p-6 bg-emerald-50/40 dark:bg-emerald-900/20 text-sm font-bold text-gray-800 dark:text-white flex items-center gap-2 border-x border-gray-100 dark:border-white/10">
-                               <Check size={16} className="text-emerald-600 dark:text-emerald-400" /> {row.us}
+                         <tr key={i} className="hover:bg-gray-50 transition-colors">
+                            <td className="p-5 md:p-6 font-bold text-soccer text-sm">{row.feat}</td>
+                            <td className="p-5 md:p-6 bg-emerald-50/40 text-sm font-bold text-gray-800 flex items-center gap-2 border-x border-gray-100">
+                               <Check size={16} className="text-emerald-600" /> {row.us}
                             </td>
                             <td className="p-5 md:p-6 text-sm text-gray-400">
                                {row.them}
@@ -51,7 +51,7 @@ const SoccerComparison: React.FC = () => {
 
           {/* Testimonials */}
           <div>
-             <h2 className="text-3xl font-header font-bold text-[#064E3B] dark:text-white uppercase mb-12 text-center">Player Testimonials</h2>
+             <h2 className="text-3xl font-header font-bold text-soccer uppercase mb-12 text-center">Player Testimonials</h2>
              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                 {[
                    { name: "Carlos Martinez", role: "Youth Club Coach | Arlington, TX", text: "Our U14 club team trains here weekly during off-season. The indoor work transformed our players' first touch and close control. When outdoor season started, opposing coaches asked what we'd done differently.", stars: 5 },
@@ -62,16 +62,16 @@ const SoccerComparison: React.FC = () => {
                    <motion.div 
                      key={i} 
                      transition={{ delay: i * 0.1 }}
-                     className="bg-white dark:bg-white/5 p-8 rounded-lg border border-gray-100 dark:border-white/10 shadow-sm hover:shadow-xl transition-all duration-300 relative group h-full flex flex-col"
+                     className="bg-white p-8 rounded-lg border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-300 relative group h-full flex flex-col"
                    >
-                      <div className="absolute top-0 left-0 w-full h-1 bg-gray-100 dark:bg-white/10 group-hover:bg-emerald-500 transition-colors"></div>
+                      <div className="absolute top-0 left-0 w-full h-1 bg-gray-100 group-hover:bg-emerald-500 transition-colors"></div>
                       <div className="flex text-yellow-400 mb-4 gap-1">
                          {[...Array(t.stars)].map((_, s) => <Star key={s} size={14} fill="currentColor" />)}
                       </div>
-                      <p className="text-gray-600 dark:text-gray-300 text-sm italic mb-6 leading-relaxed flex-grow">"{t.text}"</p>
+                      <p className="text-gray-600 text-sm italic mb-6 leading-relaxed flex-grow">"{t.text}"</p>
                       <div>
-                         <p className="font-bold text-[#064E3B] dark:text-white uppercase text-xs">{t.name}</p>
-                         <p className="text-gray-400 text-[10px] uppercase tracking-widest">{t.role}</p>
+                         <p className="font-bold text-soccer uppercase text-xs">{t.name}</p>
+                         <p className="text-gray-400 text-[10px] font-medium uppercase tracking-widest">{t.role}</p>
                       </div>
                    </motion.div>
                 ))}

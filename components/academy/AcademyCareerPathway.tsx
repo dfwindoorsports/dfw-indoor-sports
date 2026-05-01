@@ -23,7 +23,7 @@ const AcademyCareerPathway: React.FC = () => {
    };
 
    return (
-      <section className="bg-gradient-to-b from-white to-gray-50 dark:from-[#0A111F] dark:to-[#0f172a] py-24 border-y border-gray-200 dark:border-white/5 relative overflow-hidden transition-colors duration-300">
+      <section className="bg-gradient-to-b from-white to-gray-50 py-24 border-y border-gray-200 relative overflow-hidden transition-colors duration-300">
          {/* Background decorative elements */}
          <div className="absolute top-0 left-0 w-full h-full overflow-hidden opacity-30 pointer-events-none">
             <div className="absolute top-20 left-10 w-64 h-64 bg-dfw-red/5 rounded-full blur-3xl"></div>
@@ -40,13 +40,13 @@ const AcademyCareerPathway: React.FC = () => {
                   Roadmap to Excellence
                </motion.div>
                <motion.h2
-                  className="text-4xl md:text-5xl font-header font-bold text-dfw-navy dark:text-white uppercase leading-none mb-6"
+                  className="text-4xl md:text-5xl font-header font-bold text-dfw-navy uppercase leading-none mb-6"
                >
                   Career <span className="text-dfw-red">Pathway</span>
                </motion.h2>
                <motion.p
                   transition={{ delay: 0.1 }}
-                  className="text-gray-500 dark:text-gray-400 text-lg"
+                  className="text-gray-500 text-lg"
                >
                   A structured journey for players and coaches to reach their highest potential, from grassroot beginnings to professional excellence.
                </motion.p>
@@ -61,7 +61,7 @@ const AcademyCareerPathway: React.FC = () => {
                   variants={containerVariants}
                   className="space-y-8 relative"
                >
-                  <motion.div variants={itemVariants} className="bg-white dark:bg-white/5 p-8 rounded-2xl border border-gray-100 dark:border-white/10 shadow-xl dark:shadow-none relative overflow-hidden group">
+                  <motion.div variants={itemVariants} className="bg-white p-8 rounded-2xl border border-gray-100 shadow-xl relative overflow-hidden group">
                      <div className="absolute top-0 left-0 w-1 h-full bg-gradient-to-b from-dfw-red to-orange-500"></div>
                      <div className="absolute -right-10 -top-10 w-40 h-40 bg-dfw-red/5 rounded-full blur-2xl group-hover:bg-dfw-red/10 transition-colors duration-500"></div>
 
@@ -69,9 +69,9 @@ const AcademyCareerPathway: React.FC = () => {
                         <div className="p-3 bg-dfw-red/10 rounded-xl text-dfw-red">
                            <Trophy size={24} />
                         </div>
-                        <h3 className="text-2xl font-header font-bold text-dfw-navy dark:text-white">Players Pathway</h3>
+                        <h3 className="text-2xl font-header font-bold text-dfw-navy">Players Pathway</h3>
                      </div>
-                     <p className="text-gray-600 dark:text-gray-300 leading-relaxed text-sm">
+                     <p className="text-gray-600 leading-relaxed text-sm">
                         The Player Pathway highlights the various levels of cricket that a player can pass through as they progress towards making a career in the game. From grassroots to the Elite Player Group, aiming for State, Premier Clubs, National Teams, or IPL.
                      </p>
                   </motion.div>
@@ -142,17 +142,17 @@ const AcademyCareerPathway: React.FC = () => {
                   variants={containerVariants}
                   className="space-y-8"
                >
-                  <motion.div variants={itemVariants} className="bg-white dark:bg-white/5 p-8 rounded-2xl border border-gray-100 dark:border-white/10 shadow-xl dark:shadow-none relative overflow-hidden group">
+                  <motion.div variants={itemVariants} className="bg-white p-8 rounded-2xl border border-gray-100 shadow-xl relative overflow-hidden group">
                      <div className="absolute top-0 left-0 w-1 h-full bg-gradient-to-b from-blue-400 to-blue-600"></div>
                      <div className="absolute -right-10 -top-10 w-40 h-40 bg-blue-500/5 rounded-full blur-2xl group-hover:bg-blue-500/10 transition-colors duration-500"></div>
 
                      <div className="flex items-center gap-4 mb-4">
-                        <div className="p-3 bg-blue-500/10 rounded-xl text-blue-600 dark:text-blue-400">
+                        <div className="p-3 bg-blue-500/10 rounded-xl text-blue-600">
                            <GraduationCap size={24} />
                         </div>
-                        <h3 className="text-2xl font-header font-bold text-dfw-navy dark:text-white">Coaches Pathway</h3>
+                        <h3 className="text-2xl font-header font-bold text-dfw-navy">Coaches Pathway</h3>
                      </div>
-                     <p className="text-gray-600 dark:text-gray-300 leading-relaxed text-sm">
+                     <p className="text-gray-600 leading-relaxed text-sm">
                         CricKingdom coaches pathway is designed to provide a platform to enhance coaching skills. We promote coaches to travel in India and overseas through exchange programs, tours, and tournaments.
                      </p>
                   </motion.div>
@@ -193,26 +193,26 @@ const AcademyCareerPathway: React.FC = () => {
                className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6"
             >
                {/* Beginners Card */}
-               <motion.div variants={itemVariants} className={`bg-white dark:bg-white/5 rounded-2xl border border-gray-100 dark:border-white/10 p-1 overflow-hidden hover:shadow-xl transition-all duration-300 ${activeLevel && activeLevel !== 'Beginners' ? 'opacity-40 grayscale blur-[1px]' : 'opacity-100 scale-100 ring-2 ring-blue-500/20'}`}>
+               <motion.div variants={itemVariants} className={`bg-white rounded-2xl border border-gray-100 p-1 overflow-hidden hover:shadow-xl transition-all duration-300 ${activeLevel && activeLevel !== 'Beginners' ? 'opacity-40 grayscale blur-[1px]' : 'opacity-100 scale-100 ring-2 ring-blue-500/20'}`}>
                   <div className="h-2 bg-gradient-to-r from-[#42A5F5] to-[#1565C0] rounded-t-xl"></div>
                   <div className="p-6">
                      <div className="flex justify-between items-start mb-4">
-                        <div className="p-2 bg-blue-50 dark:bg-blue-900/20 rounded-lg text-[#1565C0]">
+                        <div className="p-2 bg-blue-50 rounded-lg text-[#1565C0]">
                            <User size={24} />
                         </div>
                         <span className="text-xs font-bold text-gray-400 uppercase tracking-wider">Level 1</span>
                      </div>
-                     <h4 className="text-xl font-header font-bold text-dfw-navy dark:text-white mb-4">Beginners</h4>
+                     <h4 className="text-xl font-header font-bold text-dfw-navy mb-4">Beginners</h4>
 
                      <div className="space-y-4">
-                        <div className="flex items-center gap-3 text-sm text-gray-600 dark:text-gray-300 bg-gray-50 dark:bg-white/5 p-3 rounded-lg">
+                        <div className="flex items-center gap-3 text-sm text-gray-600 bg-gray-50 p-3 rounded-lg">
                            <div className="w-1.5 h-1.5 rounded-full bg-[#1565C0]"></div>
                            Age 5-8 (Soft ball)
                         </div>
 
                         <div className="space-y-2 pl-2">
                            {["Basics skills training", "In-house matches", "Carnivals"].map((item, i) => (
-                              <div key={i} className="flex items-center gap-2 text-xs text-gray-500 dark:text-gray-400">
+                              <div key={i} className="flex items-center gap-2 text-xs text-gray-500">
                                  <ChevronRight size={12} className="text-[#1565C0]" />
                                  {item}
                               </div>
@@ -223,26 +223,26 @@ const AcademyCareerPathway: React.FC = () => {
                </motion.div>
 
                {/* Intermediate Card */}
-               <motion.div variants={itemVariants} className={`bg-white dark:bg-white/5 rounded-2xl border border-gray-100 dark:border-white/10 p-1 overflow-hidden hover:shadow-xl transition-all duration-300 ${activeLevel && activeLevel !== 'Intermediate' ? 'opacity-40 grayscale blur-[1px]' : 'opacity-100 scale-100 ring-2 ring-green-500/20'}`}>
+               <motion.div variants={itemVariants} className={`bg-white rounded-2xl border border-gray-100 p-1 overflow-hidden hover:shadow-xl transition-all duration-300 ${activeLevel && activeLevel !== 'Intermediate' ? 'opacity-40 grayscale blur-[1px]' : 'opacity-100 scale-100 ring-2 ring-green-500/20'}`}>
                   <div className="h-2 bg-gradient-to-r from-[#66BB6A] to-[#2E7D32] rounded-t-xl"></div>
                   <div className="p-6">
                      <div className="flex justify-between items-start mb-4">
-                        <div className="p-2 bg-green-50 dark:bg-green-900/20 rounded-lg text-[#2E7D32]">
+                        <div className="p-2 bg-green-50 rounded-lg text-[#2E7D32]">
                            <Users size={24} />
                         </div>
                         <span className="text-xs font-bold text-gray-400 uppercase tracking-wider">Level 2</span>
                      </div>
-                     <h4 className="text-xl font-header font-bold text-dfw-navy dark:text-white mb-4">Intermediate</h4>
+                     <h4 className="text-xl font-header font-bold text-dfw-navy mb-4">Intermediate</h4>
 
                      <div className="space-y-4">
-                        <div className="flex items-center gap-3 text-sm text-gray-600 dark:text-gray-300 bg-gray-50 dark:bg-white/5 p-3 rounded-lg">
+                        <div className="flex items-center gap-3 text-sm text-gray-600 bg-gray-50 p-3 rounded-lg">
                            <div className="w-1.5 h-1.5 rounded-full bg-[#2E7D32]"></div>
                            Age 9-12 (Hard ball)
                         </div>
 
                         <div className="space-y-2 pl-2">
                            {["Net practice sessions", "Local tournaments", "Domestic & Int. tours"].map((item, i) => (
-                              <div key={i} className="flex items-center gap-2 text-xs text-gray-500 dark:text-gray-400">
+                              <div key={i} className="flex items-center gap-2 text-xs text-gray-500">
                                  <ChevronRight size={12} className="text-[#2E7D32]" />
                                  {item}
                               </div>
@@ -253,26 +253,26 @@ const AcademyCareerPathway: React.FC = () => {
                </motion.div>
 
                {/* Advance Card */}
-               <motion.div variants={itemVariants} className={`bg-white dark:bg-white/5 rounded-2xl border border-gray-100 dark:border-white/10 p-1 overflow-hidden hover:shadow-xl transition-all duration-300 ${activeLevel && activeLevel !== 'Advance' ? 'opacity-40 grayscale blur-[1px]' : 'opacity-100 scale-100 ring-2 ring-orange-500/20'}`}>
+               <motion.div variants={itemVariants} className={`bg-white rounded-2xl border border-gray-100 p-1 overflow-hidden hover:shadow-xl transition-all duration-300 ${activeLevel && activeLevel !== 'Advance' ? 'opacity-40 grayscale blur-[1px]' : 'opacity-100 scale-100 ring-2 ring-orange-500/20'}`}>
                   <div className="h-2 bg-gradient-to-r from-[#FF9800] to-[#EF6C00] rounded-t-xl"></div>
                   <div className="p-6">
                      <div className="flex justify-between items-start mb-4">
-                        <div className="p-2 bg-orange-50 dark:bg-orange-900/20 rounded-lg text-[#EF6C00]">
+                        <div className="p-2 bg-orange-50 rounded-lg text-[#EF6C00]">
                            <Star size={24} />
                         </div>
                         <span className="text-xs font-bold text-gray-400 uppercase tracking-wider">Level 3</span>
                      </div>
-                     <h4 className="text-xl font-header font-bold text-dfw-navy dark:text-white mb-4">Advance</h4>
+                     <h4 className="text-xl font-header font-bold text-dfw-navy mb-4">Advance</h4>
 
                      <div className="space-y-4">
-                        <div className="flex items-center gap-3 text-sm text-gray-600 dark:text-gray-300 bg-gray-50 dark:bg-white/5 p-3 rounded-lg">
+                        <div className="flex items-center gap-3 text-sm text-gray-600 bg-gray-50 p-3 rounded-lg">
                            <div className="w-1.5 h-1.5 rounded-full bg-[#EF6C00]"></div>
                            Age 13 & above
                         </div>
 
                         <div className="space-y-2 pl-2">
                            {["Club representation", "Celebrity coach sessions", "Fitness/Bio-Mechanics"].map((item, i) => (
-                              <div key={i} className="flex items-center gap-2 text-xs text-gray-500 dark:text-gray-400">
+                              <div key={i} className="flex items-center gap-2 text-xs text-gray-500">
                                  <ChevronRight size={12} className="text-[#EF6C00]" />
                                  {item}
                               </div>
@@ -283,26 +283,26 @@ const AcademyCareerPathway: React.FC = () => {
                </motion.div>
 
                {/* Elite Card */}
-               <motion.div variants={itemVariants} className={`bg-white dark:bg-white/5 rounded-2xl border border-gray-100 dark:border-white/10 p-1 overflow-hidden hover:shadow-xl transition-all duration-300 ${activeLevel && activeLevel !== 'Elite' ? 'opacity-40 grayscale blur-[1px]' : 'opacity-100 scale-100 ring-2 ring-red-500/20'}`}>
+               <motion.div variants={itemVariants} className={`bg-white rounded-2xl border border-gray-100 p-1 overflow-hidden hover:shadow-xl transition-all duration-300 ${activeLevel && activeLevel !== 'Elite' ? 'opacity-40 grayscale blur-[1px]' : 'opacity-100 scale-100 ring-2 ring-red-500/20'}`}>
                   <div className="h-2 bg-gradient-to-r from-[#E53935] to-[#C62828] rounded-t-xl"></div>
                   <div className="p-6">
                      <div className="flex justify-between items-start mb-4">
-                        <div className="p-2 bg-red-50 dark:bg-red-900/20 rounded-lg text-[#C62828]">
+                        <div className="p-2 bg-red-50 rounded-lg text-[#C62828]">
                            <Trophy size={24} />
                         </div>
                         <span className="text-xs font-bold text-gray-400 uppercase tracking-wider">Level 4</span>
                      </div>
-                     <h4 className="text-xl font-header font-bold text-dfw-navy dark:text-white mb-4">Elite</h4>
+                     <h4 className="text-xl font-header font-bold text-dfw-navy mb-4">Elite</h4>
 
                      <div className="space-y-4">
-                        <div className="flex items-center gap-3 text-sm text-gray-600 dark:text-gray-300 bg-gray-50 dark:bg-white/5 p-3 rounded-lg">
+                        <div className="flex items-center gap-3 text-sm text-gray-600 bg-gray-50 p-3 rounded-lg">
                            <div className="w-1.5 h-1.5 rounded-full bg-[#C62828]"></div>
                            Professional
                         </div>
 
                         <div className="space-y-2 pl-2">
                            {["State/National Player", "Specialized Sessions", "International Tours"].map((item, i) => (
-                              <div key={i} className="flex items-center gap-2 text-xs text-gray-500 dark:text-gray-400">
+                              <div key={i} className="flex items-center gap-2 text-xs text-gray-500">
                                  <ChevronRight size={12} className="text-[#C62828]" />
                                  {item}
                               </div>

@@ -18,7 +18,7 @@ const About: React.FC = () => {
             <div className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-dfw-red/5 rounded-full blur-[120px]"></div>
 
             <div className="container mx-auto px-4 md:px-6 relative z-10 text-center">
-               <span className="inline-block px-4 py-1.5 rounded-full border border-white/10 bg-white/5 backdrop-blur-md text-gray-300 font-mono text-[10px] uppercase tracking-[0.2em] mb-6 animate-fade-in-up">
+               <span className="inline-block px-4 py-1.5 rounded-full border border-white/10 bg-white/5 backdrop-blur-md text-gray-300 font-mono text-[10px] font-medium uppercase tracking-[0.2em] mb-6 animate-fade-in-up">
                   Since 2024
                </span>
                <h1 className="text-5xl md:text-8xl font-header font-bold text-white uppercase tracking-tight mb-6 md:mb-8 leading-none animate-slide-up" style={{ animationDelay: '0.1s' }}>

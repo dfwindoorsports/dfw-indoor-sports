@@ -10,10 +10,10 @@ const BadmintonEquip: React.FC = () => {
                {/* Left: Text */}
                <div className="md:w-1/2">
                   <div className="inline-flex items-center gap-2 mb-4">
-                     <div className="p-2 bg-blue-100 rounded-full text-[#1E3A8A]"><ShoppingBag size={16} /></div>
-                     <span className="text-[#1E3A8A] font-mono text-xs font-bold uppercase tracking-widest">Pro Shop On-Site</span>
+                     <div className="p-2 bg-blue-100 rounded-full text-badminton"><ShoppingBag size={16} /></div>
+                     <span className="text-badminton font-mono text-xs font-bold uppercase tracking-widest">Pro Shop On-Site</span>
                   </div>
-                  <h2 className="text-3xl md:text-4xl font-header font-bold text-[#1E3A8A] uppercase mb-6">
+                  <h2 className="text-3xl md:text-4xl font-header font-bold text-badminton uppercase mb-6">
                      Gear Up Like A Pro
                   </h2>
                   <p className="text-gray-500 text-sm leading-relaxed mb-8">
@@ -49,7 +49,7 @@ const BadmintonEquip: React.FC = () => {
                {/* Right: Image */}
                <div className="md:w-1/2 relative h-[400px] rounded-lg overflow-hidden shadow-2xl group">
                   <img src="/images/badminton/badminton-equip-rack.webp" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" alt="Badminton Equipment Pro Shop" />
-                  <div className="absolute inset-0 bg-[#1E3A8A]/30 group-hover:bg-transparent transition-colors duration-500"></div>
+                  <div className="absolute inset-0 bg-badminton/30 group-hover:bg-transparent transition-colors duration-500"></div>
                   <div className="absolute bottom-6 left-6">
                      <p className="text-white font-bold uppercase text-xl drop-shadow-md">10% Off For Members</p>
                   </div>

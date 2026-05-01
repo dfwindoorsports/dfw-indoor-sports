@@ -7,9 +7,9 @@ const BadmintonLocation: React.FC = () => {
        <div className="container mx-auto px-4 md:px-6">
           <div className="flex flex-col md:flex-row items-center gap-12">
              <div className="md:w-1/2">
-                <h2 className="text-3xl font-header font-bold text-[#1E3A8A] uppercase mb-6">Worth The Drive</h2>
+                <h2 className="text-3xl font-header font-bold text-badminton uppercase mb-6">Worth The Drive</h2>
                 <p className="text-gray-600 mb-8 leading-relaxed">
-                   "Tried badminton courts closer to home in Frisco. All had low ceilings or poor lighting. 40-minute drive to DFW Indoor Sports worth it for courts that don't compromise my game." <span className="block mt-2 font-bold text-[#1E3A8A]">- Tournament Player</span>
+                   "Tried badminton courts closer to home in Frisco. All had low ceilings or poor lighting. 40-minute drive to DFW Indoor Sports worth it for courts that don't compromise my game." <span className="block mt-2 font-bold text-badminton">- Tournament Player</span>
                 </p>
                 <div className="space-y-4 mb-8">
                    <div>
@@ -25,7 +25,7 @@ const BadmintonLocation: React.FC = () => {
                    href="https://maps.google.com/?q=16230+Three+Wide+Drive+Suite+200,+Fort+Worth,+TX+76177" 
                    target="_blank" 
                    rel="noreferrer"
-                   className="inline-flex items-center gap-2 px-6 py-3 bg-[#1E3A8A] text-white font-bold uppercase text-xs tracking-widest rounded-sm hover:bg-blue-800 transition-colors"
+                   className="inline-flex items-center gap-2 px-6 py-3 bg-badminton text-white font-bold uppercase text-xs tracking-widest rounded-sm hover:bg-blue-800 transition-colors"
                 >
                    <Navigation size={14} /> Get Directions
                 </a>

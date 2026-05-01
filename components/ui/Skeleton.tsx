@@ -12,7 +12,7 @@ interface SkeletonProps {
 export function Skeleton({ className = '' }: SkeletonProps) {
     return (
         <div
-            className={`relative overflow-hidden bg-gray-200 dark:bg-white/10 rounded ${className}`}
+            className={`relative overflow-hidden bg-gray-200 rounded ${className}`}
             aria-hidden="true"
         >
             <div className="absolute inset-0 -translate-x-full animate-[shimmer_2s_infinite] bg-gradient-to-r from-transparent via-white/20 to-transparent" />
@@ -55,13 +55,13 @@ export function SkeletonCard({
     imageHeight?: string
 }) {
     return (
-        <div className={`rounded-2xl border border-gray-100 dark:border-white/10 bg-white dark:bg-white/[0.02] overflow-hidden ${className}`}>
+        <div className={`rounded-2xl border border-gray-100 bg-white overflow-hidden ${className}`}>
             {hasImage && <Skeleton className={`${imageHeight} w-full rounded-none`} />}
             <div className="p-6 space-y-4">
                 <Skeleton className="h-3 w-20" />
                 <Skeleton className="h-6 w-3/4" />
                 <SkeletonText lines={2} />
-                <div className="pt-4 border-t border-gray-100 dark:border-white/5">
+                <div className="pt-4 border-t border-gray-100">
                     <Skeleton className="h-4 w-24" />
                 </div>
             </div>
@@ -74,7 +74,7 @@ export function SkeletonCard({
  */
 export function SkeletonPricingCard({ className = '' }: { className?: string }) {
     return (
-        <div className={`rounded-2xl border border-gray-200 dark:border-white/10 bg-white dark:bg-white/[0.02] p-8 ${className}`}>
+        <div className={`rounded-2xl border border-gray-200 bg-white p-8 ${className}`}>
             <Skeleton className="h-6 w-32 mb-4" />
             <Skeleton className="h-10 w-24 mb-6" />
             <div className="space-y-3 mb-8">
@@ -95,7 +95,7 @@ export function SkeletonPricingCard({ className = '' }: { className?: string }) 
  */
 export function SkeletonProfileCard({ className = '' }: { className?: string }) {
     return (
-        <div className={`rounded-2xl border border-gray-100 dark:border-white/10 bg-white dark:bg-white/[0.02] overflow-hidden ${className}`}>
+        <div className={`rounded-2xl border border-gray-100 bg-white overflow-hidden ${className}`}>
             <Skeleton className="h-64 w-full rounded-none" />
             <div className="p-6 text-center space-y-3">
                 <Skeleton className="h-6 w-32 mx-auto" />

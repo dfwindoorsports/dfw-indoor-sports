@@ -6,37 +6,37 @@ const HomeBottom: React.FC = () => {
    return (
       <>
          {/* News Section */}
-         <section className="py-24 bg-gray-50 dark:bg-[#0A111F] border-t border-gray-200 dark:border-white/5 transition-colors duration-300">
+         <section className="py-24 bg-gray-50 border-t border-gray-200 transition-colors duration-300">
             <div className="container mx-auto px-4 md:px-6">
                <div className="flex justify-between items-end mb-12">
-                  <h2 className="text-3xl font-header font-bold text-dfw-navy dark:text-white uppercase">Latest Updates</h2>
-                  <Link href="/events" className="hidden md:flex items-center gap-2 text-xs font-bold text-dfw-navy dark:text-white uppercase tracking-widest hover:text-dfw-red transition-colors">View All Events <ArrowRight size={14} aria-hidden="true" /></Link>
+                  <h2 className="text-3xl font-header font-bold text-dfw-navy uppercase">Latest Updates</h2>
+                  <Link href="/events" className="hidden md:flex items-center gap-2 text-xs font-bold text-dfw-navy uppercase tracking-widest hover:text-dfw-red transition-colors">View All Events <ArrowRight size={14} aria-hidden="true" /></Link>
                </div>
                <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                  <div className="bg-white dark:bg-white/5 p-6 rounded-lg shadow-sm border border-gray-100 dark:border-white/10 hover:shadow-md transition-all">
+                  <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-all">
                      <div className="text-dfw-red mb-4"><Bell size={20} /></div>
-                     <h3 className="font-bold text-dfw-navy dark:text-white uppercase text-sm mb-2">Academy Enrollment Open</h3>
-                     <p className="text-xs text-gray-500 dark:text-gray-400 mb-4">CricKingdom spring session registration is now live. Limited spots available.</p>
-                     <span className="text-[10px] text-green-600 dark:text-green-400 uppercase font-mono font-bold">Register Now</span>
+                     <h3 className="font-bold text-dfw-navy uppercase text-sm mb-2">Academy Enrollment Open</h3>
+                     <p className="text-xs text-gray-500 mb-4">CricKingdom spring session registration is now live. Limited spots available.</p>
+                     <span className="text-[10px] text-green-600 uppercase font-mono font-bold">Register Now</span>
                   </div>
-                  <div className="bg-white dark:bg-white/5 p-6 rounded-lg shadow-sm border border-gray-100 dark:border-white/10 hover:shadow-md transition-all">
+                  <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-all">
                      <div className="text-blue-600 mb-4"><Trophy size={20} /></div>
-                     <h3 className="font-bold text-dfw-navy dark:text-white uppercase text-sm mb-2">Tournament Results</h3>
-                     <p className="text-xs text-gray-500 dark:text-gray-400 mb-4">Congratulations to the winners of our Winter Badminton Championship.</p>
-                     <span className="text-[10px] text-blue-600 dark:text-blue-400 uppercase font-mono font-bold">Results Posted</span>
+                     <h3 className="font-bold text-dfw-navy uppercase text-sm mb-2">Tournament Results</h3>
+                     <p className="text-xs text-gray-500 mb-4">Congratulations to the winners of our Winter Badminton Championship.</p>
+                     <span className="text-[10px] text-blue-600 uppercase font-mono font-bold">Results Posted</span>
                   </div>
-                  <div className="bg-white dark:bg-white/5 p-6 rounded-lg shadow-sm border border-gray-100 dark:border-white/10 hover:shadow-md transition-all">
+                  <div className="bg-white p-6 rounded-lg shadow-sm border border-gray-100 hover:shadow-md transition-all">
                      <div className="text-green-600 mb-4"><Calendar size={20} /></div>
-                     <h3 className="font-bold text-dfw-navy dark:text-white uppercase text-sm mb-2">New Member Special</h3>
-                     <p className="text-xs text-gray-500 dark:text-gray-400 mb-4">Join in December to get 20% off first month + waived fees.</p>
-                     <span className="text-[10px] text-red-500 dark:text-red-400 uppercase font-mono font-bold">Limited Time</span>
+                     <h3 className="font-bold text-dfw-navy uppercase text-sm mb-2">New Member Special</h3>
+                     <p className="text-xs text-gray-500 mb-4">Join in December to get 20% off first month + waived fees.</p>
+                     <span className="text-[10px] text-red-500 uppercase font-mono font-bold">Limited Time</span>
                   </div>
                </div>
             </div>
          </section>
 
          {/* Final CTA */}
-         <section className="py-32 bg-dfw-navy dark:bg-black relative overflow-hidden text-center">
+         <section className="py-32 bg-dfw-navy relative overflow-hidden text-center">
             <div className="absolute inset-0 bg-[url('/textures/carbon-fibre.png')] opacity-20 mix-blend-overlay"></div>
             <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
 
@@ -45,7 +45,7 @@ const HomeBottom: React.FC = () => {
                <h2 className="text-4xl md:text-7xl font-header font-bold text-white uppercase mb-8">
                   Join The <span className="text-dfw-red">Community</span>
                </h2>
-               <div className="max-w-xl mx-auto bg-white/10 backdrop-blur-md border border-white/20 p-6 rounded-sm mb-10">
+               <div className="max-w-xl mx-auto bg-white/10 backdrop-blur-md border border-white/20 p-6 rounded-lg mb-10">
                   <p className="text-white text-sm font-bold uppercase mb-4">New Member Package</p>
                   <ul className="text-gray-300 text-xs space-y-2 text-left mx-auto max-w-xs">
                      <li className="flex justify-between"><span>Waived Reg. Fee</span> <span className="text-green-400 font-bold">Free</span></li>
@@ -66,7 +66,7 @@ const HomeBottom: React.FC = () => {
 
             {/* Trust Footer Strip */}
             <div className="absolute bottom-0 left-0 w-full border-t border-white/5 bg-black/20 py-4 hidden md:block">
-               <div className="container mx-auto flex justify-center gap-12 text-[10px] font-mono text-gray-500 uppercase tracking-widest">
+               <div className="container mx-auto flex justify-center gap-12 text-[10px] font-medium font-mono text-gray-500 uppercase tracking-widest">
                   <span>✓ Intl Standard Facilities</span>
                   <span>✓ Certified Coaches</span>
                   <span>✓ 500+ Active Members</span>

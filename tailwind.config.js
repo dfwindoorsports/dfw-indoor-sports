@@ -23,7 +23,6 @@ module.exports = {
     'bg-green-600/10',
     'bg-purple-600/10',
   ],
-  darkMode: 'class',
   theme: {
     extend: {
       colors: {
@@ -49,6 +48,35 @@ module.exports = {
         },
         'dfw-surface': '#111827',
         'dfw-border': 'rgba(255, 255, 255, 0.1)',
+        // Sport-semantic tokens (M3: use semantic names, not hex)
+        'cricket': {
+          DEFAULT: '#006838',
+          light: '#E8F5E9',
+          50: '#F0FDF4',
+          600: '#005A30',
+          700: '#004D28',
+        },
+        'badminton': {
+          DEFAULT: '#1E3A8A',
+          light: '#EFF6FF',
+          50: '#EFF6FF',
+          400: '#3B82F6',
+          600: '#1E3A8A',
+        },
+        'soccer': {
+          DEFAULT: '#064E3B',
+          light: '#ECFDF5',
+          50: '#ECFDF5',
+          400: '#34D399',
+          600: '#064E3B',
+        },
+        'dodgeball': {
+          DEFAULT: '#4C1D95',
+          light: '#F5F3FF',
+          50: '#F5F3FF',
+          400: '#A78BFA',
+          600: '#4C1D95',
+        },
       },
       fontFamily: {
         sans: ['var(--font-inter)', 'Inter', 'system-ui', 'sans-serif'],
@@ -74,6 +102,10 @@ module.exports = {
         'headline': '-0.025em',
       },
       boxShadow: {
+        // M3 Elevation levels
+        'elevation-1': '0px 1px 3px 1px rgba(0,0,0,0.15), 0px 1px 2px 0px rgba(0,0,0,0.3)',
+        'elevation-2': '0px 2px 6px 2px rgba(0,0,0,0.15), 0px 1px 2px 0px rgba(0,0,0,0.3)',
+        'elevation-3': '0px 1px 3px 0px rgba(0,0,0,0.3), 0px 4px 8px 3px rgba(0,0,0,0.15)',
         // Luxury shadow scale
         'luxury-sm': '0 2px 8px -2px rgba(0, 0, 0, 0.1)',
         'luxury': '0 8px 30px -12px rgba(0, 0, 0, 0.25)',

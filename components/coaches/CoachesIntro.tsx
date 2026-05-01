@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 
 const CoachesIntro: React.FC = () => {
   return (
-    <section className="py-24 bg-white dark:bg-[#020408] relative transition-colors duration-300">
+    <section className="py-24 bg-white relative transition-colors duration-300">
        <div className="container mx-auto px-4 md:px-6">
           <div className="flex flex-col lg:flex-row gap-16 lg:gap-24 items-start">
              
@@ -16,12 +16,12 @@ const CoachesIntro: React.FC = () => {
              >
                 <div className="inline-flex items-center gap-2 mb-6">
                    <Users size={16} className="text-dfw-red" />
-                   <span className="text-dfw-navy dark:text-white font-mono text-xs font-bold uppercase tracking-widest">The Human Connection</span>
+                   <span className="text-dfw-navy font-mono text-xs font-bold uppercase tracking-widest">The Human Connection</span>
                 </div>
-                <h2 className="text-3xl md:text-5xl font-header font-bold text-dfw-navy dark:text-white uppercase leading-tight mb-8">
+                <h2 className="text-3xl md:text-5xl font-header font-bold text-dfw-navy uppercase leading-tight mb-8">
                    We Coach People, <br/><span className="text-gray-400">Not Just Players.</span>
                 </h2>
-                <div className="prose prose-lg text-gray-600 dark:text-gray-400 leading-relaxed font-light">
+                <div className="prose prose-lg text-gray-600 leading-relaxed font-light">
                    <p>
                       Technical skills are important, but confidence is everything. At DFW Indoor Sports, we believe the best coach is a mentor who understands the individual behind the athlete.
                    </p>
@@ -39,7 +39,7 @@ const CoachesIntro: React.FC = () => {
                    ].map((item, i) => (
                       <div key={i} className="flex items-start gap-3">
                          <CheckCircle2 size={18} className="text-dfw-red shrink-0 mt-1" />
-                         <span className="text-sm font-medium text-dfw-navy dark:text-white">{item}</span>
+                         <span className="text-sm font-medium text-dfw-navy">{item}</span>
                       </div>
                    ))}
                 </div>
@@ -50,7 +50,7 @@ const CoachesIntro: React.FC = () => {
                transition={{ duration: 0.6 }}
                className="lg:w-2/5 w-full"
              >
-                <div className="bg-dfw-navy dark:bg-[#0A111F] p-8 rounded-lg shadow-2xl relative overflow-hidden text-white group border border-white/5">
+                <div className="bg-dfw-navy p-8 rounded-lg shadow-2xl relative overflow-hidden text-white group border border-white/5">
                    <div className="absolute top-0 right-0 w-32 h-32 bg-dfw-red/20 rounded-full blur-[50px] pointer-events-none"></div>
                    <div className="absolute inset-0 bg-[url('/textures/graphy.png')] opacity-10"></div>
                    

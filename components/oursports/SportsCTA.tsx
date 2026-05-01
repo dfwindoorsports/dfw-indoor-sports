@@ -7,7 +7,7 @@ import Link from 'next/link';
 
 const SportsCTA: React.FC = () => {
    return (
-      <section className="py-24 bg-dfw-navy dark:bg-[#0A111F] relative overflow-hidden text-center">
+      <section className="py-24 bg-dfw-navy relative overflow-hidden text-center">
          <div className="absolute inset-0 bg-[url('/textures/stardust.png')] opacity-10"></div>
          <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
 

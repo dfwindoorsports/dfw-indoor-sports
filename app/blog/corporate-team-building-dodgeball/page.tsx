@@ -32,7 +32,7 @@ export default function CorporateDodgeballPage() {
     })
 
     return (
-        <article className="bg-white dark:bg-[#020408] min-h-screen transition-colors duration-300">
+        <article className="bg-white min-h-screen transition-colors duration-300">
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
 
@@ -47,31 +47,31 @@ export default function CorporateDodgeballPage() {
 
             <div className="py-16">
                 <div className="container mx-auto px-4 max-w-4xl">
-                    <div className="prose prose-lg dark:prose-invert max-w-none">
-                        <p className="text-gray-600 dark:text-gray-400 text-lg leading-relaxed mb-8">
+                    <div className="prose prose-lg max-w-none">
+                        <p className="text-gray-600 text-lg leading-relaxed mb-8">
                             The modern workplace can be stressful. Deadlines, meetings, and emails pile up. To build a resilient team, you occasionally need to step away from the screens and do something completely different.
                         </p>
 
-                        <h2 className="text-2xl font-bold text-dfw-navy dark:text-white mb-4">Why Dodgeball?</h2>
+                        <h2 className="text-2xl font-bold text-dfw-navy mb-4">Why Dodgeball?</h2>
                         <div className="grid md:grid-cols-3 gap-6 mb-8">
-                            <div className="bg-gray-50 dark:bg-white/5 p-6 rounded-xl text-center">
+                            <div className="bg-gray-50 p-6 rounded-xl text-center">
                                 <Users className="mx-auto text-dfw-red mb-4" size={32} />
-                                <h3 className="font-bold mb-2 text-dfw-navy dark:text-white">Inclusive</h3>
-                                <p className="text-sm text-gray-600 dark:text-gray-400">Easy rules, no prior skill needed. Everyone can play.</p>
+                                <h3 className="font-bold mb-2 text-dfw-navy">Inclusive</h3>
+                                <p className="text-sm text-gray-600">Easy rules, no prior skill needed. Everyone can play.</p>
                             </div>
-                            <div className="bg-gray-50 dark:bg-white/5 p-6 rounded-xl text-center">
+                            <div className="bg-gray-50 p-6 rounded-xl text-center">
                                 <Briefcase className="mx-auto text-dfw-red mb-4" size={32} />
-                                <h3 className="font-bold mb-2 text-dfw-navy dark:text-white">Stress Relief</h3>
-                                <p className="text-sm text-gray-600 dark:text-gray-400">Physically throwing (soft) objects is a great stress buster.</p>
+                                <h3 className="font-bold mb-2 text-dfw-navy">Stress Relief</h3>
+                                <p className="text-sm text-gray-600">Physically throwing (soft) objects is a great stress buster.</p>
                             </div>
-                            <div className="bg-gray-50 dark:bg-white/5 p-6 rounded-xl text-center">
+                            <div className="bg-gray-50 p-6 rounded-xl text-center">
                                 <Star className="mx-auto text-dfw-red mb-4" size={32} />
-                                <h3 className="font-bold mb-2 text-dfw-navy dark:text-white">Fun First</h3>
-                                <p className="text-sm text-gray-600 dark:text-gray-400">Laughter is guaranteed, which bonds teams instantly.</p>
+                                <h3 className="font-bold mb-2 text-dfw-navy">Fun First</h3>
+                                <p className="text-sm text-gray-600">Laughter is guaranteed, which bonds teams instantly.</p>
                             </div>
                         </div>
 
-                        <p className="text-gray-600 dark:text-gray-400 mb-8">
+                        <p className="text-gray-600 mb-8">
                             At DFW Indoor Sports, we host dozens of corporate events every month. We provide the referees, the equipment, and even organize round-robin tournaments so you can focus on having fun.
                         </p>
 

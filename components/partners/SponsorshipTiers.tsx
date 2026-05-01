@@ -8,17 +8,17 @@ const SponsorshipTiers: React.FC = () => {
   const [activeTab, setActiveTab] = useState<'digital' | 'onsite' | 'full'>('digital');
 
   return (
-    <section className="py-24 bg-white dark:bg-[#020408] transition-colors duration-300" id="benefits">
+    <section className="py-24 bg-white transition-colors duration-300" id="benefits">
        <div className="container mx-auto px-4 md:px-6">
           <div className="text-center mb-16">
              <span className="text-dfw-red font-mono text-xs font-bold uppercase tracking-widest mb-3 block">Opportunities</span>
-             <h2 className="text-4xl md:text-5xl font-header font-bold text-dfw-navy dark:text-white uppercase mb-8">Comprehensive Packages</h2>
+             <h2 className="text-4xl md:text-5xl font-header font-bold text-dfw-navy uppercase mb-8">Comprehensive Packages</h2>
              
              {/* Enhanced Tab Switcher */}
-             <div className="inline-flex bg-gray-100 dark:bg-white/10 p-1.5 rounded-full relative">
+             <div className="inline-flex bg-gray-100 p-1.5 rounded-full relative">
                 {/* Sliding Background */}
                 <motion.div 
-                   className="absolute top-1.5 bottom-1.5 rounded-full bg-white dark:bg-dfw-red shadow-md"
+                   className="absolute top-1.5 bottom-1.5 rounded-full bg-white shadow-md"
                    initial={false}
                    animate={{
                       left: activeTab === 'digital' ? '6px' : activeTab === 'onsite' ? 'calc(33.33% + 4px)' : 'calc(66.66% + 2px)',
@@ -29,19 +29,19 @@ const SponsorshipTiers: React.FC = () => {
 
                 <button 
                    onClick={() => setActiveTab('digital')}
-                   className={`relative z-10 w-24 md:w-40 py-3 text-[10px] md:text-xs font-bold uppercase tracking-widest rounded-full transition-colors ${activeTab === 'digital' ? 'text-dfw-navy dark:text-white' : 'text-gray-500 dark:text-gray-400 hover:text-dfw-navy dark:hover:text-white'}`}
+                   className={`relative z-10 w-24 md:w-40 py-3 text-[10px] md:text-xs font-bold uppercase tracking-widest rounded-full transition-colors ${activeTab === 'digital' ? 'text-dfw-navy' : 'text-gray-500 hover:text-dfw-navy'}`}
                 >
                    Digital
                 </button>
                 <button 
                    onClick={() => setActiveTab('onsite')}
-                   className={`relative z-10 w-24 md:w-40 py-3 text-[10px] md:text-xs font-bold uppercase tracking-widest rounded-full transition-colors ${activeTab === 'onsite' ? 'text-dfw-navy dark:text-white' : 'text-gray-500 dark:text-gray-400 hover:text-dfw-navy dark:hover:text-white'}`}
+                   className={`relative z-10 w-24 md:w-40 py-3 text-[10px] md:text-xs font-bold uppercase tracking-widest rounded-full transition-colors ${activeTab === 'onsite' ? 'text-dfw-navy' : 'text-gray-500 hover:text-dfw-navy'}`}
                 >
                    On-Site
                 </button>
                 <button 
                    onClick={() => setActiveTab('full')}
-                   className={`relative z-10 w-24 md:w-40 py-3 text-[10px] md:text-xs font-bold uppercase tracking-widest rounded-full transition-colors ${activeTab === 'full' ? 'text-dfw-navy dark:text-white' : 'text-gray-500 dark:text-gray-400 hover:text-dfw-navy dark:hover:text-white'}`}
+                   className={`relative z-10 w-24 md:w-40 py-3 text-[10px] md:text-xs font-bold uppercase tracking-widest rounded-full transition-colors ${activeTab === 'full' ? 'text-dfw-navy' : 'text-gray-500 hover:text-dfw-navy'}`}
                 >
                    Full Partner
                 </button>
@@ -60,10 +60,10 @@ const SponsorshipTiers: React.FC = () => {
                      transition={{ duration: 0.4 }}
                    >
                       <div className="flex items-center gap-4 mb-8 justify-center md:justify-start">
-                         <div className="p-3 bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 rounded-lg"><Globe size={24} /></div>
+                         <div className="p-3 bg-blue-50 text-blue-600 rounded-lg"><Globe size={24} /></div>
                          <div>
-                            <h3 className="text-2xl font-header font-bold text-dfw-navy dark:text-white uppercase">Tier 1: Digital Exposure</h3>
-                            <p className="text-sm text-gray-500 dark:text-gray-400">Reach our audience before they even step in the door.</p>
+                            <h3 className="text-2xl font-header font-bold text-dfw-navy uppercase">Tier 1: Digital Exposure</h3>
+                            <p className="text-sm text-gray-500">Reach our audience before they even step in the door.</p>
                          </div>
                       </div>
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -73,11 +73,11 @@ const SponsorshipTiers: React.FC = () => {
                             { title: "Social Media Recognition", desc: "Regular mentions and partner spotlight posts across Instagram, Facebook, and LinkedIn.", val: "66%", label: "Engagement" },
                             { title: "Sponsored Program Highlight", desc: "Recognition on specific program pages (e.g., Cricket Academy) connecting you to niche demographics.", val: "100%", label: "Contextual Relevance" }
                          ].map((item, i) => (
-                            <div key={i} className="p-8 border border-gray-100 dark:border-white/10 rounded-xl bg-white dark:bg-white/5 shadow-sm hover:shadow-xl transition-all group">
-                               <h4 className="font-bold text-dfw-navy dark:text-white mb-2 group-hover:text-blue-600 dark:group-hover:text-blue-400 transition-colors">{item.title}</h4>
-                               <p className="text-sm text-gray-500 dark:text-gray-400 mb-6 leading-relaxed">{item.desc}</p>
-                               <div className="w-full h-1.5 bg-gray-100 dark:bg-white/10 rounded-full overflow-hidden"><div className="h-full bg-blue-500 rounded-full" style={{ width: item.val }}></div></div>
-                               <p className="text-[10px] text-gray-400 mt-2 text-right">{item.label}</p>
+                            <div key={i} className="p-8 border border-gray-100 rounded-xl bg-white shadow-sm hover:shadow-xl transition-all group">
+                               <h4 className="font-bold text-dfw-navy mb-2 group-hover:text-blue-600 transition-colors">{item.title}</h4>
+                               <p className="text-sm text-gray-500 mb-6 leading-relaxed">{item.desc}</p>
+                               <div className="w-full h-1.5 bg-gray-100 rounded-full overflow-hidden"><div className="h-full bg-blue-500 rounded-full" style={{ width: item.val }}></div></div>
+                               <p className="text-[10px] font-medium text-gray-400 mt-2 text-right">{item.label}</p>
                             </div>
                          ))}
                       </div>
@@ -94,10 +94,10 @@ const SponsorshipTiers: React.FC = () => {
                      transition={{ duration: 0.4 }}
                    >
                       <div className="flex items-center gap-4 mb-8 justify-center md:justify-start">
-                         <div className="p-3 bg-green-50 dark:bg-green-900/30 text-green-600 dark:text-green-400 rounded-lg"><Shirt size={24} /></div>
+                         <div className="p-3 bg-green-50 text-green-600 rounded-lg"><Shirt size={24} /></div>
                          <div>
-                            <h3 className="text-2xl font-header font-bold text-dfw-navy dark:text-white uppercase">Tier 2: Physical Presence</h3>
-                            <p className="text-sm text-gray-500 dark:text-gray-400">Engage directly with the community on the ground.</p>
+                            <h3 className="text-2xl font-header font-bold text-dfw-navy uppercase">Tier 2: Physical Presence</h3>
+                            <p className="text-sm text-gray-500">Engage directly with the community on the ground.</p>
                          </div>
                       </div>
                       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -107,12 +107,12 @@ const SponsorshipTiers: React.FC = () => {
                             { title: "Marketing Screens", desc: "Digital ads rotating on internal TVs in lobby, lounge, and pro shop areas.", badge: "Dynamic" },
                             { title: "Facility Banners", desc: "Large-format banners at main entrance. Maximum visibility for every single visitor.", badge: "Premium Spot" }
                          ].map((item, i) => (
-                            <div key={i} className="p-8 border border-gray-100 dark:border-white/10 rounded-xl bg-white dark:bg-white/5 shadow-sm hover:shadow-xl transition-all group">
+                            <div key={i} className="p-8 border border-gray-100 rounded-xl bg-white shadow-sm hover:shadow-xl transition-all group">
                                <div className="flex justify-between items-start mb-4">
-                                  <h4 className="font-bold text-dfw-navy dark:text-white text-lg group-hover:text-green-600 dark:group-hover:text-green-400 transition-colors">{item.title}</h4>
-                                  <span className="text-[10px] font-bold text-green-600 dark:text-green-400 bg-green-50 dark:bg-green-900/30 px-2 py-1 rounded">{item.badge}</span>
+                                  <h4 className="font-bold text-dfw-navy text-lg group-hover:text-green-600 transition-colors">{item.title}</h4>
+                                  <span className="text-[10px] font-bold text-green-600 bg-green-50 px-2 py-1 rounded">{item.badge}</span>
                                </div>
-                               <p className="text-sm text-gray-500 dark:text-gray-400 leading-relaxed">{item.desc}</p>
+                               <p className="text-sm text-gray-500 leading-relaxed">{item.desc}</p>
                             </div>
                          ))}
                       </div>
@@ -129,13 +129,13 @@ const SponsorshipTiers: React.FC = () => {
                      transition={{ duration: 0.4 }}
                    >
                       <div className="flex items-center gap-4 mb-8 justify-center md:justify-start">
-                         <div className="p-3 bg-dfw-navy dark:bg-white/10 text-dfw-red rounded-lg"><Trophy size={24} /></div>
+                         <div className="p-3 bg-dfw-navy text-dfw-red rounded-lg"><Trophy size={24} /></div>
                          <div>
-                            <h3 className="text-2xl font-header font-bold text-dfw-navy dark:text-white uppercase">Tier 3: Full Partnership</h3>
-                            <p className="text-sm text-gray-500 dark:text-gray-400">Amplify your reach with comprehensive integration.</p>
+                            <h3 className="text-2xl font-header font-bold text-dfw-navy uppercase">Tier 3: Full Partnership</h3>
+                            <p className="text-sm text-gray-500">Amplify your reach with comprehensive integration.</p>
                          </div>
                       </div>
-                      <div className="bg-[#050911] dark:bg-[#050911] rounded-2xl p-8 md:p-12 text-white relative overflow-hidden shadow-2xl border border-white/10">
+                      <div className="bg-[#050911] rounded-2xl p-8 md:p-12 text-white relative overflow-hidden shadow-2xl border border-white/10">
                          <div className="absolute inset-0 bg-[url('/textures/carbon-fibre.png')] opacity-20 mix-blend-overlay"></div>
                          <div className="absolute top-0 right-0 w-96 h-96 bg-dfw-red/10 rounded-full blur-[100px] pointer-events-none"></div>
                          

@@ -5,7 +5,7 @@ import { ChevronRight, Calendar, Users, Zap, PlayCircle } from 'lucide-react';
 
 const DodgeballHero: React.FC = () => {
    return (
-      <div className="relative h-[60vh] min-h-[400px] flex items-center bg-[#4C1D95] overflow-hidden group">
+      <div className="relative h-[60vh] min-h-[400px] flex items-center bg-dodgeball overflow-hidden group">
          {/* Background Image with Cinematic Zoom */}
          <div
             className="absolute inset-0 bg-cover bg-center opacity-50 scale-105 animate-zoom-slow mix-blend-luminosity"
@@ -13,14 +13,14 @@ const DodgeballHero: React.FC = () => {
          ></div>
 
          {/* Gradient Overlays */}
-         <div className="absolute inset-0 bg-gradient-to-r from-[#4C1D95] via-[#4C1D95]/90 to-transparent z-10"></div>
+         <div className="absolute inset-0 bg-gradient-to-r from-dodgeball via-dodgeball/90 to-transparent z-10"></div>
          <div className="absolute inset-0 bg-[url('/textures/carbon-fibre.png')] opacity-30 mix-blend-overlay z-10"></div>
-         <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-[#4C1D95] to-transparent z-10"></div>
+         <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-dodgeball to-transparent z-10"></div>
 
          <div className="container mx-auto px-4 md:px-6 relative z-20 pt-10">
 
             {/* Status Badge */}
-            <div className="inline-flex items-center gap-3 px-4 py-1.5 rounded-full bg-violet-800 text-violet-100 font-mono text-[10px] uppercase tracking-[0.25em] mb-4 animate-fade-in-up cursor-default">
+            <div className="inline-flex items-center gap-3 px-4 py-1.5 rounded-full bg-violet-800 text-violet-100 font-mono text-[10px] font-medium uppercase tracking-[0.25em] mb-4 animate-fade-in-up cursor-default">
                <span className="w-2 h-2 rounded-full bg-orange-400"></span>
                <span className="font-bold">Fun Factor:</span> Maximum Adrenaline
             </div>
@@ -56,13 +56,13 @@ const DodgeballHero: React.FC = () => {
                </button>
                <button
                   onClick={() => document.getElementById('packages')?.scrollIntoView({ behavior: 'smooth' })}
-                  className="px-6 py-3 bg-white text-[#4C1D95] font-bold uppercase tracking-widest text-xs rounded-sm hover:bg-gray-100 transition-all shadow-lg flex items-center gap-2"
+                  className="px-6 py-3 bg-white text-dodgeball font-bold uppercase tracking-widest text-xs rounded-sm hover:bg-gray-100 transition-all shadow-lg flex items-center gap-2"
                >
                   <Users size={14} /> Party Packages
                </button>
                <button
                   onClick={() => document.getElementById('corporate')?.scrollIntoView({ behavior: 'smooth' })}
-                  className="px-6 py-3 border border-white/20 bg-white/5 backdrop-blur-md text-white font-bold uppercase tracking-widest text-xs rounded-sm hover:bg-white hover:text-[#4C1D95] transition-all flex items-center gap-2"
+                  className="px-6 py-3 border border-white/20 bg-white/5 backdrop-blur-md text-white font-bold uppercase tracking-widest text-xs rounded-sm hover:bg-white hover:text-dodgeball transition-all flex items-center gap-2"
                >
                   <Zap size={14} /> Corporate Events
                </button>

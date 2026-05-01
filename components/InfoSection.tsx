@@ -58,15 +58,15 @@ const InfoSection: React.FC = () => {
                 <div className="flex-1 border-t md:border-t-0 md:border-l border-gray-200 pt-8 md:pt-0 md:pl-12 flex flex-row md:flex-col justify-between md:justify-center gap-4 md:space-y-10">
                   <div className="group cursor-default">
                     <span className="block text-3xl md:text-5xl font-header font-bold text-dfw-navy mb-1 group-hover:text-dfw-red transition-colors">50k+</span>
-                    <span className="text-[9px] md:text-[10px] font-mono uppercase text-gray-400 tracking-[0.2em]">Square Feet</span>
+                    <span className="text-[9px] md:text-[10px] font-medium font-mono uppercase text-gray-400 tracking-[0.2em]">Square Feet</span>
                   </div>
                   <div className="group cursor-default">
                     <span className="block text-3xl md:text-5xl font-header font-bold text-dfw-navy mb-1 group-hover:text-dfw-red transition-colors">04</span>
-                    <span className="text-[9px] md:text-[10px] font-mono uppercase text-gray-400 tracking-[0.2em]">Disciplines</span>
+                    <span className="text-[9px] md:text-[10px] font-medium font-mono uppercase text-gray-400 tracking-[0.2em]">Disciplines</span>
                   </div>
                   <div className="group cursor-default">
                     <span className="block text-3xl md:text-5xl font-header font-bold text-dfw-navy mb-1 group-hover:text-dfw-red transition-colors">24/7</span>
-                    <span className="text-[9px] md:text-[10px] font-mono uppercase text-gray-400 tracking-[0.2em]">Access</span>
+                    <span className="text-[9px] md:text-[10px] font-medium font-mono uppercase text-gray-400 tracking-[0.2em]">Access</span>
                   </div>
                 </div>
               </div>

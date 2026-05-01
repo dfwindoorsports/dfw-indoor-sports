@@ -6,9 +6,9 @@ import { motion } from 'framer-motion';
 
 const EventsIntro: React.FC = () => {
   return (
-    <section className="py-24 bg-white dark:bg-[#020408] relative transition-colors duration-300">
+    <section className="py-24 bg-white relative transition-colors duration-300">
          {/* Texture */}
-         <div className="absolute inset-0 bg-[url('/textures/cubes.png')] opacity-[0.03] dark:opacity-[0.05]"></div>
+         <div className="absolute inset-0 bg-[url('/textures/cubes.png')] opacity-[0.03]"></div>
 
          <div className="container mx-auto px-4 md:px-6 relative z-10">
             <div className="flex flex-col lg:flex-row gap-16 lg:gap-24 items-start">
@@ -20,16 +20,16 @@ const EventsIntro: React.FC = () => {
                >
                   <div className="inline-flex items-center gap-2 mb-6">
                      <Briefcase size={16} className="text-dfw-red" />
-                     <span className="text-dfw-navy dark:text-white font-mono text-xs font-bold uppercase tracking-widest">The Perfect Venue</span>
+                     <span className="text-dfw-navy font-mono text-xs font-bold uppercase tracking-widest">The Perfect Venue</span>
                   </div>
-                  <h2 className="text-4xl md:text-5xl font-header font-bold text-dfw-navy dark:text-white uppercase leading-[0.95] mb-8">
+                  <h2 className="text-4xl md:text-5xl font-header font-bold text-dfw-navy uppercase leading-[0.95] mb-8">
                      Why DFW Indoor Sports?
                   </h2>
-                  <div className="prose prose-lg text-gray-600 dark:text-gray-400 leading-relaxed mb-10 font-light">
+                  <div className="prose prose-lg text-gray-600 leading-relaxed mb-10 font-light">
                      <p>
                         Forget hotel conference rooms with stale coffee. Skip the generic party venues with minimum effort. 
                      </p>
-                     <p className="font-semibold text-dfw-navy dark:text-white">
+                     <p className="font-semibold text-dfw-navy">
                         We offer something completely different: events built around actual sports, competition, and physical activity.
                      </p>
                      <p>
@@ -38,17 +38,17 @@ const EventsIntro: React.FC = () => {
                   </div>
 
                   <div className="grid grid-cols-1 gap-6 mb-10">
-                     <div className="bg-red-50 dark:bg-red-900/10 p-6 rounded-lg border border-red-100 dark:border-red-900/20">
-                        <h4 className="font-bold text-red-700 dark:text-red-400 uppercase text-sm mb-2">The Traditional Problem</h4>
-                        <ul className="text-xs text-gray-600 dark:text-gray-400 space-y-2 list-disc pl-4">
+                     <div className="bg-red-50 p-6 rounded-lg border border-red-100">
+                        <h4 className="font-bold text-red-700 uppercase text-sm mb-2">The Traditional Problem</h4>
+                        <ul className="text-xs text-gray-600 space-y-2 list-disc pl-4">
                            <li>Kids corralled into limited activity rooms</li>
                            <li>"Trust fall" corporate exercises nobody enjoys</li>
                            <li>Inadequate facilities not designed for real competition</li>
                         </ul>
                      </div>
-                     <div className="bg-green-50 dark:bg-green-900/10 p-6 rounded-lg border border-green-100 dark:border-green-900/20">
-                        <h4 className="font-bold text-green-700 dark:text-green-400 uppercase text-sm mb-2">The DFW Difference</h4>
-                        <ul className="text-xs text-gray-600 dark:text-gray-400 space-y-2 list-disc pl-4">
+                     <div className="bg-green-50 p-6 rounded-lg border border-green-100">
+                        <h4 className="font-bold text-green-700 uppercase text-sm mb-2">The DFW Difference</h4>
+                        <ul className="text-xs text-gray-600 space-y-2 list-disc pl-4">
                            <li>Purpose-built 50,000 sq ft infrastructure</li>
                            <li>Expert coordination by staff who understand sports logistics</li>
                            <li>Authentic competition that builds real bonds</li>
@@ -62,7 +62,7 @@ const EventsIntro: React.FC = () => {
                  transition={{ duration: 0.6 }}
                  className="lg:w-1/2 w-full"
                >
-                  <div className="bg-dfw-navy dark:bg-[#0A111F] p-8 rounded-lg shadow-2xl relative overflow-hidden text-white border border-white/10 group">
+                  <div className="bg-dfw-navy p-8 rounded-lg shadow-2xl relative overflow-hidden text-white border border-white/10 group">
                      {/* Decorative Elements */}
                      <div className="absolute top-0 right-0 w-32 h-32 bg-dfw-red/20 rounded-full blur-[50px] pointer-events-none"></div>
                      <div className="absolute inset-0 bg-[url('/textures/graphy.png')] opacity-10"></div>

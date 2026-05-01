@@ -57,7 +57,7 @@ const HomeParallax: React.FC = () => {
 
                   <div className="relative z-10">
                      <div className="flex items-center gap-3 mb-4 md:mb-6">
-                        <div className="p-2 bg-yellow-500 rounded-sm text-dfw-navy shadow-[0_0_20px_rgba(234,179,8,0.4)]">
+                        <div className="p-2 bg-yellow-500 rounded-lg text-dfw-navy shadow-[0_0_20px_rgba(234,179,8,0.4)]">
                            <Star size={16} className="md:w-5 md:h-5" fill="currentColor" />
                         </div>
                         <span className="text-yellow-500 font-bold uppercase tracking-widest text-[10px] md:text-xs">The Academy</span>

@@ -131,7 +131,7 @@ export default function BlogGrid({ posts }: { posts: BlogPost[] }) {
                         <motion.div
                             className="flex items-center gap-3 mb-10"
                         >
-                            <span className="text-heading font-header text-dfw-navy dark:text-white uppercase">Latest Updates</span>
+                            <span className="text-heading font-header text-dfw-navy uppercase">Latest Updates</span>
                         </motion.div>
 
                         <motion.div
@@ -146,7 +146,7 @@ export default function BlogGrid({ posts }: { posts: BlogPost[] }) {
                                         href={`/blog/${post.slug}`}
                                         className="group block h-full"
                                     >
-                                        <div className="relative h-full bg-white dark:bg-white/[0.02] rounded-2xl border border-gray-100 dark:border-white/[0.06] hover:border-dfw-red-500/30 dark:hover:border-dfw-red-500/30 hover-lift overflow-hidden transition-colors duration-500">
+                                        <div className="relative h-full bg-white rounded-2xl border border-gray-100 hover:border-dfw-red-500/30 hover-lift overflow-hidden transition-colors duration-500">
                                             {/* Image placeholder */}
                                             <div className="h-48 relative overflow-hidden">
                                                 <div className="absolute inset-0 bg-gradient-to-br from-dfw-navy via-dfw-navy/90 to-dfw-red-500/30" />
@@ -163,12 +163,12 @@ export default function BlogGrid({ posts }: { posts: BlogPost[] }) {
                                             {/* Content */}
                                             <div className="p-6 sm:p-8 flex flex-col flex-grow">
                                                 {/* Meta */}
-                                                <div className="flex items-center gap-3 text-caption text-gray-400 dark:text-white/40 mb-4">
+                                                <div className="flex items-center gap-3 text-caption text-gray-400 mb-4">
                                                     <span className="flex items-center gap-1.5">
                                                         <Calendar size={12} />
                                                         {post.date}
                                                     </span>
-                                                    <span className="w-1 h-1 bg-gray-300 dark:bg-white/20 rounded-full" />
+                                                    <span className="w-1 h-1 bg-gray-300 rounded-full" />
                                                     <span className="flex items-center gap-1.5">
                                                         <Clock size={12} />
                                                         {post.readTime}
@@ -176,18 +176,18 @@ export default function BlogGrid({ posts }: { posts: BlogPost[] }) {
                                                 </div>
 
                                                 {/* Title */}
-                                                <h3 className="text-heading font-header text-dfw-navy dark:text-white mb-3 group-hover:text-dfw-red-600 dark:group-hover:text-dfw-red-400 transition-colors duration-300 line-clamp-2">
+                                                <h3 className="text-heading font-header text-dfw-navy mb-3 group-hover:text-dfw-red-600 transition-colors duration-300 line-clamp-2">
                                                     {post.title}
                                                 </h3>
 
                                                 {/* Excerpt */}
-                                                <p className="text-body text-gray-500 dark:text-gray-400 leading-relaxed mb-6 line-clamp-3">
+                                                <p className="text-body text-gray-500 leading-relaxed mb-6 line-clamp-3">
                                                     {post.excerpt}
                                                 </p>
 
                                                 {/* CTA */}
-                                                <div className="mt-auto pt-6 border-t border-gray-100 dark:border-white/5 flex items-center justify-between">
-                                                    <span className="text-overline tracking-luxury text-dfw-navy dark:text-white group-hover:text-dfw-red-500 transition-colors duration-300">
+                                                <div className="mt-auto pt-6 border-t border-gray-100 flex items-center justify-between">
+                                                    <span className="text-overline tracking-luxury text-dfw-navy group-hover:text-dfw-red-500 transition-colors duration-300">
                                                         Read Now
                                                     </span>
                                                     <ArrowRight size={14} className="text-gray-400 group-hover:text-dfw-red-500 group-hover:translate-x-1 transition-all duration-300" />

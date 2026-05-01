@@ -21,7 +21,7 @@ const AcademyExcellence: React.FC = () => {
   };
 
   return (
-    <section className="bg-slate-950 dark:bg-black py-24 relative overflow-hidden border-t border-white/5 transition-colors duration-300">
+    <section className="bg-slate-950 py-24 relative overflow-hidden border-t border-white/5 transition-colors duration-300">
        <div className="absolute inset-0 bg-grid-white opacity-[0.03] pointer-events-none"></div>
        
        <div className="container mx-auto px-4 md:px-6 relative z-10">

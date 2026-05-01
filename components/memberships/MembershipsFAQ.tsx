@@ -6,10 +6,10 @@ import { motion } from 'framer-motion';
 
 const MembershipsFAQ: React.FC = () => {
   return (
-    <section className="py-24 bg-white dark:bg-[#020408] transition-colors duration-300">
+    <section className="py-24 bg-white transition-colors duration-300">
        <div className="container mx-auto px-4 md:px-6 max-w-3xl">
           <motion.h2 
-            className="text-3xl font-header font-bold text-dfw-navy dark:text-white uppercase mb-12 text-center"
+            className="text-3xl font-header font-bold text-dfw-navy uppercase mb-12 text-center"
           >
             Membership FAQ
           </motion.h2>
@@ -23,14 +23,14 @@ const MembershipsFAQ: React.FC = () => {
                 { q: "Is there a registration fee?", a: "Yes, a one-time $20 registration fee applies to all new memberships to cover administrative setup." },
                 { q: "What if the facility is crowded?", a: "Members have priority booking rights (7-14 days in advance). We also cap total memberships to ensure reasonable access." }
              ].map((item, idx) => (
-                <details key={idx} className="group border-b border-gray-100 dark:border-white/10 pb-4">
-                   <summary className="flex justify-between items-center cursor-pointer list-none font-bold text-dfw-navy dark:text-white uppercase tracking-wide text-xs select-none hover:text-dfw-red dark:hover:text-dfw-red transition-colors py-4">
+                <details key={idx} className="group border-b border-gray-100 pb-4">
+                   <summary className="flex justify-between items-center cursor-pointer list-none font-bold text-dfw-navy uppercase tracking-wide text-xs select-none hover:text-dfw-red transition-colors py-4">
                       {item.q}
                       <span className="transition-transform group-open:rotate-180 text-gray-400">
                          <ChevronDown size={16} />
                       </span>
                    </summary>
-                   <div className="pt-2 pb-4 text-gray-500 dark:text-gray-400 text-sm leading-relaxed animate-fade-in-up">
+                   <div className="pt-2 pb-4 text-gray-500 text-sm leading-relaxed animate-fade-in-up">
                       {item.a}
                    </div>
                 </details>

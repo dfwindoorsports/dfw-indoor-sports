@@ -51,11 +51,7 @@ body {
   letter-spacing: -0.01em;
 }
 
-.dark body,
-.dark {
-  background-color: #020408;
-  color: #F3F4F6;
-}
+
 
 /* Premium text selection */
 ::selection {
@@ -421,16 +417,16 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--dfw-navy);
+  background: #F1F5F9;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--dfw-red);
+  background: #CBD5E1;
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #B82020;
+  background: #94A3B8;
 }
 
 /* ─────────────────────────────────────────────────────────────────────────────

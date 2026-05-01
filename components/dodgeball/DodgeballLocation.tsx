@@ -8,7 +8,7 @@ const DodgeballLocation: React.FC = () => {
           <div className="flex flex-col md:flex-row items-center gap-12">
              <div className="md:w-1/2">
                 <span className="text-violet-600 font-mono text-xs font-bold uppercase tracking-widest mb-3 block">Service Area</span>
-                <h2 className="text-3xl font-header font-bold text-[#4C1D95] uppercase mb-6">Centrally Located Fun</h2>
+                <h2 className="text-3xl font-header font-bold text-dodgeball uppercase mb-6">Centrally Located Fun</h2>
                 <div className="space-y-6 mb-8">
                    <div>
                       <h4 className="font-bold text-gray-900 text-sm uppercase mb-2 flex items-center gap-2">
@@ -32,7 +32,7 @@ const DodgeballLocation: React.FC = () => {
                       href="https://maps.google.com/?q=16230+Three+Wide+Drive+Suite+200,+Fort+Worth,+TX+76177" 
                       target="_blank" 
                       rel="noreferrer"
-                      className="inline-flex items-center gap-2 px-6 py-3 bg-[#4C1D95] text-white font-bold uppercase text-xs tracking-widest rounded-sm hover:bg-violet-800 transition-colors shadow-lg"
+                      className="inline-flex items-center gap-2 px-6 py-3 bg-dodgeball text-white font-bold uppercase text-xs tracking-widest rounded-sm hover:bg-violet-800 transition-colors shadow-lg"
                    >
                       <Navigation size={14} /> Get Directions
                    </a>

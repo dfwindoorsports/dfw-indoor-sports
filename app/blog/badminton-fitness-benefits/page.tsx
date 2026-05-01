@@ -88,7 +88,7 @@ export default function BadmintonFitnessBenefitsPage() {
     ]
 
     return (
-        <article className="bg-white dark:bg-[#020408] min-h-screen transition-colors duration-300">
+        <article className="bg-white min-h-screen transition-colors duration-300">
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
 
@@ -130,12 +130,12 @@ export default function BadmintonFitnessBenefitsPage() {
                 <div className="container mx-auto px-4 max-w-4xl">
 
                     {/* Introduction */}
-                    <div className="prose prose-lg dark:prose-invert max-w-none mb-12">
-                        <p className="text-gray-600 dark:text-gray-400 text-lg leading-relaxed">
+                    <div className="prose prose-lg max-w-none mb-12">
+                        <p className="text-gray-600 text-lg leading-relaxed">
                             When people think of fitness, they picture treadmills, weight rooms, or yoga studios.
                             Rarely does badminton come to mind. <strong>That's a mistake.</strong>
                         </p>
-                        <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
+                        <p className="text-gray-600 leading-relaxed">
                             Research consistently shows badminton provides a comprehensive workout that rivals—and
                             often exceeds—traditional gym routines. Here are 10 science-backed benefits.
                         </p>
@@ -144,19 +144,19 @@ export default function BadmintonFitnessBenefitsPage() {
                     {/* Benefits List */}
                     <div className="space-y-12">
                         {benefits.map((benefit, idx) => (
-                            <section key={idx} className="bg-gray-50 dark:bg-white/5 rounded-2xl p-8">
+                            <section key={idx} className="bg-gray-50 rounded-2xl p-8">
                                 <div className="flex items-start gap-4 mb-4">
-                                    <div className="bg-white dark:bg-white/10 p-3 rounded-xl shadow-sm">
+                                    <div className="bg-white p-3 rounded-xl shadow-sm">
                                         {benefit.icon}
                                     </div>
                                     <div>
                                         <span className="text-dfw-red font-mono text-sm font-bold">Benefit #{idx + 1}</span>
-                                        <h2 className="text-xl md:text-2xl font-header font-bold text-dfw-navy dark:text-white">
+                                        <h2 className="text-xl md:text-2xl font-header font-bold text-dfw-navy">
                                             {benefit.title}
                                         </h2>
                                     </div>
                                 </div>
-                                <div className="prose prose-sm dark:prose-invert max-w-none text-gray-600 dark:text-gray-400 whitespace-pre-line">
+                                <div className="prose prose-sm max-w-none text-gray-600 whitespace-pre-line">
                                     {benefit.content}
                                 </div>
                             </section>
@@ -165,7 +165,7 @@ export default function BadmintonFitnessBenefitsPage() {
 
                     {/* How to Get Started */}
                     <section className="mt-16 mb-12">
-                        <h2 className="text-3xl font-header font-bold text-dfw-navy dark:text-white uppercase mb-6">
+                        <h2 className="text-3xl font-header font-bold text-dfw-navy uppercase mb-6">
                             How to Start Playing Badminton in DFW
                         </h2>
                         <div className="grid md:grid-cols-3 gap-6">

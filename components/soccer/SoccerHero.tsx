@@ -5,7 +5,7 @@ import { ChevronRight, Calendar, Users, Check } from 'lucide-react';
 
 const SoccerHero: React.FC = () => {
    return (
-      <div className="relative h-[60vh] min-h-[400px] flex items-center bg-[#064E3B] overflow-hidden group">
+      <div className="relative h-[60vh] min-h-[400px] flex items-center bg-soccer overflow-hidden group">
          {/* Background Image with Cinematic Zoom and Parallax Feel */}
          <div
             className="absolute inset-0 bg-cover bg-center opacity-50 scale-105 animate-zoom-slow mix-blend-luminosity"
@@ -13,14 +13,14 @@ const SoccerHero: React.FC = () => {
          ></div>
 
          {/* Advanced Gradient Overlays for Depth */}
-         <div className="absolute inset-0 bg-gradient-to-r from-[#064E3B] via-[#064E3B]/90 to-transparent z-10"></div>
+         <div className="absolute inset-0 bg-gradient-to-r from-soccer via-soccer/90 to-transparent z-10"></div>
          <div className="absolute inset-0 bg-[url('/textures/carbon-fibre.png')] opacity-30 mix-blend-overlay z-10"></div>
-         <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-[#064E3B] to-transparent z-10"></div>
+         <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-soccer to-transparent z-10"></div>
 
          <div className="container mx-auto px-4 md:px-6 relative z-20 pt-10">
 
             {/* Status Badge */}
-            <div className="inline-flex items-center gap-3 px-4 py-1.5 rounded-full bg-emerald-800 text-emerald-100 font-mono text-[10px] uppercase tracking-[0.25em] mb-4 animate-fade-in-up cursor-default">
+            <div className="inline-flex items-center gap-3 px-4 py-1.5 rounded-full bg-emerald-800 text-emerald-100 font-mono text-[10px] font-medium uppercase tracking-[0.25em] mb-4 animate-fade-in-up cursor-default">
                <span className="w-2 h-2 rounded-full bg-emerald-400"></span>
                <span className="font-bold">Status:</span> Open 5 AM - 11 PM Daily
             </div>
@@ -44,13 +44,13 @@ const SoccerHero: React.FC = () => {
                </a>
                <button
                   onClick={() => document.getElementById('booking-process')?.scrollIntoView({ behavior: 'smooth' })}
-                  className="px-6 py-3 bg-white text-[#064E3B] font-bold uppercase tracking-widest text-xs rounded-sm hover:bg-gray-100 transition-all shadow-lg flex items-center gap-2"
+                  className="px-6 py-3 bg-white text-soccer font-bold uppercase tracking-widest text-xs rounded-sm hover:bg-gray-100 transition-all shadow-lg flex items-center gap-2"
                >
                   <Calendar size={14} /> View Availability
                </button>
                <button
                   onClick={() => document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' })}
-                  className="px-6 py-3 border border-white/20 bg-white/5 backdrop-blur-md text-white font-bold uppercase tracking-widest text-xs rounded-sm hover:bg-white hover:text-[#064E3B] transition-all flex items-center gap-2"
+                  className="px-6 py-3 border border-white/20 bg-white/5 backdrop-blur-md text-white font-bold uppercase tracking-widest text-xs rounded-sm hover:bg-white hover:text-soccer transition-all flex items-center gap-2"
                >
                   <Users size={14} /> Membership Options
                </button>

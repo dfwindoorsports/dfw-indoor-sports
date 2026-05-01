@@ -19,7 +19,7 @@ const ContactHero: React.FC = () => {
 
       <div className="container mx-auto px-4 md:px-6 relative z-20 pt-10">
         {/* Status Badge */}
-        <div className="inline-flex items-center gap-3 px-4 py-2 rounded-full bg-gray-800 text-green-400 font-mono text-[10px] uppercase tracking-[0.25em] mb-4 animate-fade-in-up cursor-default">
+        <div className="inline-flex items-center gap-3 px-4 py-2 rounded-full bg-gray-800 text-green-400 font-mono text-[10px] font-medium uppercase tracking-[0.25em] mb-4 animate-fade-in-up cursor-default">
           <span className="w-2 h-2 rounded-full bg-green-500"></span>
           <span>Support Online</span>
         </div>
