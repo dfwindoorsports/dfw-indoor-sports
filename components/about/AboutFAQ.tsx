@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 
 const AboutFAQ: React.FC = () => {
   return (
-    <section className="bg-white py-24 border-t border-gray-200 transition-colors duration-300">
+    <section aria-label="About frequently asked questions" className="bg-white py-24 border-t border-gray-200 transition-colors duration-300">
        <div className="container mx-auto px-4 md:px-6 max-w-4xl">
           <motion.h2 
             className="text-3xl md:text-5xl font-header font-bold text-dfw-navy uppercase mb-12 text-center"

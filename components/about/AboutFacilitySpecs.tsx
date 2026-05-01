@@ -4,10 +4,11 @@ import React from 'react';
 import { Building2, Thermometer, Lightbulb, Wifi } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { OptimizedImage } from '@/components/ui/OptimizedImage';
+import Image from 'next/image';
 
 const AboutFacilitySpecs: React.FC = () => {
    return (
-      <section className="bg-gray-50 py-24 relative transition-colors duration-300">
+      <section aria-label="Facility specifications" className="bg-gray-50 py-24 relative transition-colors duration-300">
          <div className="absolute left-0 top-0 w-1 h-full bg-gradient-to-b from-dfw-red to-transparent"></div>
          <div className="container mx-auto px-4 md:px-6">
 
@@ -85,7 +86,7 @@ const AboutFacilitySpecs: React.FC = () => {
                      <motion.div
                         className="md:col-span-2 relative h-64 rounded-lg overflow-hidden group border border-white/10"
                      >
-                        <img src="/images/facilities/cricket-lanes.webp" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" alt="Cricket" />
+                        <Image src="/images/facilities/cricket-lanes.webp" fill className="object-cover group-hover:scale-105 transition-transform duration-700" alt="Cricket lanes at DFW Indoor Sports" sizes="(max-width: 768px) 100vw, 66vw" />
                         <div className="absolute inset-0 bg-gradient-to-t from-dfw-navy/90 to-transparent"></div>
                         <div className="absolute bottom-6 left-6 text-white">
                            <h3 className="font-header text-2xl uppercase mb-1">Cricket Complex</h3>
@@ -98,7 +99,7 @@ const AboutFacilitySpecs: React.FC = () => {
                         transition={{ delay: 0.1 }}
                         className="relative h-64 rounded-lg overflow-hidden group border border-white/10"
                      >
-                        <img src="/images/hero/badminton-hero.webp" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" alt="Badminton" />
+                        <Image src="/images/hero/badminton-hero.webp" fill className="object-cover group-hover:scale-105 transition-transform duration-700" alt="Badminton courts at DFW Indoor Sports" sizes="(max-width: 768px) 100vw, 33vw" />
                         <div className="absolute inset-0 bg-gradient-to-t from-dfw-navy/90 to-transparent"></div>
                         <div className="absolute bottom-6 left-6 text-white">
                            <h3 className="font-header text-2xl uppercase mb-1">Badminton Hall</h3>
@@ -111,7 +112,7 @@ const AboutFacilitySpecs: React.FC = () => {
                         transition={{ delay: 0.2 }}
                         className="relative h-64 rounded-lg overflow-hidden group border border-white/10"
                      >
-                        <img src="/images/facilities/lounge.webp" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" alt="Lounge" />
+                        <Image src="/images/facilities/lounge.webp" fill className="object-cover group-hover:scale-105 transition-transform duration-700" alt="Player lounge and recovery area" sizes="(max-width: 768px) 100vw, 33vw" />
                         <div className="absolute inset-0 bg-gradient-to-t from-dfw-navy/90 to-transparent"></div>
                         <div className="absolute bottom-6 left-6 text-white">
                            <h3 className="font-header text-2xl uppercase mb-1">Player Lounge</h3>

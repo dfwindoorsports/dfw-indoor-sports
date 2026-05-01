@@ -18,7 +18,7 @@ const ContactSocial: React.FC = () => {
   };
 
   return (
-    <section className="py-24 bg-[#050911] text-white">
+    <section aria-label="Social media links" className="py-24 bg-[#050911] text-white">
        <div className="container mx-auto px-4 md:px-6">
           <div className="flex flex-col md:flex-row justify-between items-center gap-12">
              
@@ -52,11 +52,11 @@ const ContactSocial: React.FC = () => {
                      value={email}
                      onChange={(e) => setEmail(e.target.value)}
                      placeholder="Email Address" 
-                     className="flex-1 bg-black/20 border border-white/10 rounded-sm px-4 py-2 text-sm text-white focus:outline-none focus:border-dfw-red placeholder:text-gray-600" 
+                     className="flex-1 bg-black/20 border border-white/10 rounded-lg px-4 py-2 text-sm text-white focus:outline-none focus:border-dfw-red placeholder:text-gray-600" 
                    />
                    <button 
                      onClick={handleSubscribe}
-                     className={`px-4 py-2 rounded-sm font-bold uppercase text-xs tracking-wider transition-colors ${subscribed ? 'bg-green-600 text-white' : 'bg-dfw-red hover:bg-red-600 text-white'}`}
+                     className={`px-4 py-2 rounded-lg font-bold uppercase text-xs tracking-wider transition-colors ${subscribed ? 'bg-green-600 text-white' : 'bg-dfw-red hover:bg-red-600 text-white'}`}
                    >
                       {subscribed ? <Check size={16} /> : 'Sign Up'}
                    </button>

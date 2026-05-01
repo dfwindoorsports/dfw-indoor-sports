@@ -1,9 +1,10 @@
 import React from 'react';
 import { ShoppingBag, ArrowRight } from 'lucide-react';
+import Image from 'next/image';
 
 const BadmintonEquip: React.FC = () => {
    return (
-      <section className="bg-gray-50 py-24 border-b border-gray-200">
+      <section aria-label="Badminton equipment and pro shop" className="bg-gray-50 py-24 border-b border-gray-200">
          <div className="container mx-auto px-4 md:px-6">
             <div className="flex flex-col md:flex-row gap-12 items-center">
 
@@ -48,7 +49,7 @@ const BadmintonEquip: React.FC = () => {
 
                {/* Right: Image */}
                <div className="md:w-1/2 relative h-[400px] rounded-lg overflow-hidden shadow-2xl group">
-                  <img src="/images/badminton/badminton-equip-rack.webp" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" alt="Badminton Equipment Pro Shop" />
+                  <Image src="/images/badminton/badminton-equip-rack.webp" fill className="object-cover group-hover:scale-105 transition-transform duration-700" alt="Badminton equipment and pro shop at DFW Indoor Sports" sizes="(max-width: 1024px) 100vw, 50vw" />
                   <div className="absolute inset-0 bg-badminton/30 group-hover:bg-transparent transition-colors duration-500"></div>
                   <div className="absolute bottom-6 left-6">
                      <p className="text-white font-bold uppercase text-xl drop-shadow-md">10% Off For Members</p>

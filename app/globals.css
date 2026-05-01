@@ -5,21 +5,39 @@
 @tailwind utilities;
 
 /* ═══════════════════════════════════════════════════════════════════════════
-   PREMIUM DESIGN SYSTEM — DFW Indoor Sports
+   DESIGN SYSTEM — DFW Indoor Sports
+   Material 3 (Expressive) + Apple HIG Compliant — Light Mode Only
    ═══════════════════════════════════════════════════════════════════════════ */
 
 :root {
+  /* ── M3 Primary ── */
+  --m3-primary: #D62828;
+  --m3-on-primary: #FFFFFF;
+  --m3-primary-container: #FFDAD5;
+  --m3-on-primary-container: #410001;
+
+  /* ── M3 Surface ── */
+  --m3-surface: #FAFAFA;
+  --m3-on-surface: #1C1B1F;
+  --m3-surface-variant: #F5F5F5;
+  --m3-on-surface-variant: #49454F;
+  --m3-outline: #79747E;
+  --m3-outline-variant: #CAC4D0;
+  --m3-surface-container: #F2F2F2;
+  --m3-surface-container-high: #ECECEC;
+  --m3-surface-container-low: #F7F7F7;
+
+  /* ── Spacing tokens (M3 consistent section rhythm) ── */
+  --section-py: clamp(5rem, 8vw, 8rem);
+  --section-py-sm: clamp(3rem, 5vw, 5rem);
+
+  /* ── Brand tokens (retained) ── */
   --dfw-red: #D62828;
   --dfw-red-glow: rgba(214, 40, 40, 0.4);
   --dfw-navy: #0A111F;
   --dfw-navy-light: #141D2E;
-  --dfw-surface: #111827;
-  --dfw-border: rgba(255, 255, 255, 0.08);
-  --dfw-text-primary: #FFFFFF;
-  --dfw-text-secondary: #94A3B8;
-  --dfw-text-muted: #64748B;
 
-  /* Premium easing curves */
+  /* ── Premium easing curves ── */
   --ease-premium: cubic-bezier(0.16, 1, 0.3, 1);
   --ease-bounce: cubic-bezier(0.34, 1.56, 0.64, 1);
   --ease-smooth: cubic-bezier(0.4, 0, 0.2, 1);
@@ -29,9 +47,7 @@
    BASE STYLES
    ───────────────────────────────────────────────────────────────────────────── */
 
-* {
-  scroll-behavior: smooth;
-}
+/* scroll-behavior is set via scroll-smooth class on <html> in layout.tsx */
 
 html {
   -webkit-font-smoothing: antialiased;
@@ -46,8 +62,7 @@ body {
 
 body {
   font-family: 'Inter', system-ui, sans-serif;
-  background-color: #FAFAFA;
-  transition: background-color 0.4s var(--ease-smooth), color 0.4s var(--ease-smooth);
+  background-color: var(--m3-surface);
   letter-spacing: -0.01em;
 }
 
@@ -62,6 +77,25 @@ body {
 ::-moz-selection {
   background: var(--dfw-red);
   color: white;
+}
+
+/* ─────────────────────────────────────────────────────────────────────────────
+   GLOBAL FOCUS STATES — M3 & HIG Accessibility Compliance
+   ───────────────────────────────────────────────────────────────────────────── */
+
+:focus-visible {
+  outline: 2px solid var(--dfw-red);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Override for inputs that already have their own focus treatment */
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 2px var(--dfw-red);
+  border-color: var(--dfw-red);
 }
 
 /* ─────────────────────────────────────────────────────────────────────────────
@@ -94,7 +128,7 @@ body {
     background-clip: text;
   }
 
-  /* Subtle text glow */
+  /* Subtle text glow (dark sections only) */
   .text-glow {
     text-shadow: 0 0 20px var(--dfw-red-glow), 0 0 40px rgba(214, 40, 40, 0.2);
   }
@@ -119,7 +153,7 @@ body {
 }
 
 /* ─────────────────────────────────────────────────────────────────────────────
-   GLASSMORPHISM & SURFACES
+   GLASSMORPHISM & SURFACES (Dark sections only — Hero, Footer, CTA)
    ───────────────────────────────────────────────────────────────────────────── */
 
 .glass-premium {
@@ -421,12 +455,12 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #CBD5E1;
+  background: #94A3B8;
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #94A3B8;
+  background: #64748B;
 }
 
 /* ─────────────────────────────────────────────────────────────────────────────
@@ -443,7 +477,7 @@ body {
   -webkit-mask-image: radial-gradient(ellipse at center, black 50%, transparent 100%);
 }
 
-/* Text stroke for outline effect */
+/* Text stroke for outline effect (dark sections) */
 .text-stroke-sm {
   -webkit-text-stroke: 1px rgba(255, 255, 255, 0.2);
 }

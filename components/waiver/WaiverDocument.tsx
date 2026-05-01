@@ -75,7 +75,7 @@ const WaiverDocument: React.FC = () => {
    };
 
    return (
-      <section className="py-20 bg-gray-50 relative">
+      <section aria-label="Liability waiver form" className="py-20 bg-gray-50 relative">
          {/* Texture */}
          <div className="absolute inset-0 bg-[url('/textures/cubes.png')] opacity-[0.03]"></div>
 
@@ -101,7 +101,7 @@ const WaiverDocument: React.FC = () => {
                   <div className="space-y-12">
 
                      {/* Section 1 */}
-                     <section>
+                     <section aria-label="Facility and activity information">
                         <h4 className="font-header font-bold text-lg text-dfw-navy uppercase border-b border-gray-100 pb-2 mb-4">1. Facility and Activity Information</h4>
                         <p className="mb-4">
                            <strong>Facility:</strong> DFW Indoor Sports, 16230 Three Wide Drive, Suite 200, Fort Worth, Texas 76177.
@@ -112,7 +112,7 @@ const WaiverDocument: React.FC = () => {
                      </section>
 
                      {/* Section 2 */}
-                     <section>
+                     <section aria-label="Acknowledgment of risk">
                         <h4 className="font-header font-bold text-lg text-dfw-navy uppercase border-b border-gray-100 pb-2 mb-4">2. Acknowledgment of Risk</h4>
                         <p className="mb-4">I acknowledge and understand that:</p>
                         <ul className="list-disc pl-5 space-y-2">
@@ -123,7 +123,7 @@ const WaiverDocument: React.FC = () => {
                      </section>
 
                      {/* Section 3 */}
-                     <section>
+                     <section aria-label="Release and waiver of liability">
                         <h4 className="font-header font-bold text-lg text-dfw-navy uppercase border-b border-gray-100 pb-2 mb-4">3. Release and Waiver of Liability</h4>
                         <p className="mb-4">
                            I hereby expressly waive, release, and discharge any and all claims, now known or hereafter known, against <strong>DFW Indoor Sports</strong> and its officers, directors, employees, agents, affiliates, members, successors, and assigns ("Releasees").
@@ -134,7 +134,7 @@ const WaiverDocument: React.FC = () => {
                      </section>
 
                      {/* Section 4 */}
-                     <section>
+                     <section aria-label="Indemnification clause">
                         <h4 className="font-header font-bold text-lg text-dfw-navy uppercase border-b border-gray-100 pb-2 mb-4">4. Indemnification</h4>
                         <p>
                            I agree to defend, indemnify, and hold harmless DFW Indoor Sports against any and all losses, damages, liabilities, deficiencies, claims, actions, judgments, settlements, interest, awards, penalties, fines, costs, or expenses of any kind, including reasonable attorneys' fees, arising out of or resulting from my participation in Activities or violation of this Agreement.
@@ -142,7 +142,7 @@ const WaiverDocument: React.FC = () => {
                      </section>
 
                      {/* Section 5 */}
-                     <section>
+                     <section aria-label="Medical treatment authorization">
                         <h4 className="font-header font-bold text-lg text-dfw-navy uppercase border-b border-gray-100 pb-2 mb-4">5. Medical Treatment Authorization</h4>
                         <p>
                            I authorize DFW Indoor Sports to obtain emergency medical treatment for me if necessary. I understand that I am responsible for all costs associated with medical treatment and that the Company assumes no responsibility for these costs. I verify that I have adequate medical insurance.
@@ -150,7 +150,7 @@ const WaiverDocument: React.FC = () => {
                      </section>
 
                      {/* Section 9 (Abbreviated for UI) */}
-                     <section>
+                     <section aria-label="Code of conduct and media release">
                         <h4 className="font-header font-bold text-lg text-dfw-navy uppercase border-b border-gray-100 pb-2 mb-4">Code of Conduct & Media Release</h4>
                         <p className="mb-4">
                            I agree to follow all facility rules, treat staff/participants with respect, and maintain appropriate conduct. Violation may result in immediate removal without refund.
@@ -161,7 +161,7 @@ const WaiverDocument: React.FC = () => {
                      </section>
 
                      {/* Related Policies Link */}
-                     <section className="mt-8 p-6 bg-gray-50 rounded-lg border border-gray-200">
+                     <section aria-label="Related policies" className="mt-8 p-6 bg-gray-50 rounded-lg border border-gray-200">
                         <h4 className="font-header font-bold text-sm text-dfw-navy uppercase mb-2">Related Policies</h4>
                         <p className="text-sm text-gray-600">
                            For information about cancellations, refunds, and make-up classes, please review our{' '}
@@ -205,11 +205,11 @@ const WaiverDocument: React.FC = () => {
                         <div className="flex flex-col sm:flex-row justify-center gap-4">
                            <button
                               onClick={() => window.print()}
-                              className="px-6 py-3 border border-gray-300 bg-white text-dfw-navy font-bold uppercase text-xs tracking-widest rounded-sm hover:border-dfw-navy transition-colors flex items-center justify-center gap-2"
+                              className="px-6 py-3 border border-gray-300 bg-white text-dfw-navy font-bold uppercase text-xs tracking-widest rounded-lg hover:border-dfw-navy transition-colors flex items-center justify-center gap-2"
                            >
                               <Printer size={16} /> Print Copy
                            </button>
-                           <Link href="/" className="px-6 py-3 bg-dfw-navy text-white font-bold uppercase text-xs tracking-widest rounded-sm hover:bg-dfw-red transition-colors shadow-lg flex items-center justify-center gap-2">
+                           <Link href="/" className="px-6 py-3 bg-dfw-navy text-white font-bold uppercase text-xs tracking-widest rounded-lg hover:bg-dfw-red transition-colors shadow-lg flex items-center justify-center gap-2">
                               Return Home <ArrowRight size={16} />
                            </Link>
                         </div>
@@ -332,7 +332,7 @@ const WaiverDocument: React.FC = () => {
                                  placeholder="e.g. John A. Doe"
                                  className="w-full p-4 rounded-lg border-2 border-gray-300 focus:outline-none focus:border-dfw-red focus:bg-red-50/10 font-header text-2xl uppercase tracking-wide text-dfw-navy transition-all placeholder:text-gray-300"
                               />
-                              <p className="text-[10px] font-medium text-gray-400 mt-2 flex items-center gap-1">
+                              <p className="text-\[11px\] font-medium text-gray-400 mt-2 flex items-center gap-1">
                                  <CheckCircle2 size={10} /> Your typed name above constitutes a legal electronic signature.
                               </p>
                            </div>
@@ -359,7 +359,7 @@ const WaiverDocument: React.FC = () => {
                         <button
                            type="submit"
                            disabled={!agreed || signature.length < 3 || isSubmitting}
-                           className={`w-full py-5 font-bold uppercase tracking-widest text-sm rounded-sm transition-all shadow-lg flex items-center justify-center gap-3 ${agreed && signature.length >= 3 && !isSubmitting ? 'bg-dfw-red text-white hover:bg-red-700 hover:-translate-y-1' : 'bg-gray-300 text-gray-500 cursor-not-allowed'}`}
+                           className={`w-full py-5 font-bold uppercase tracking-widest text-sm rounded-lg transition-all shadow-lg flex items-center justify-center gap-3 ${agreed && signature.length >= 3 && !isSubmitting ? 'bg-dfw-red text-white hover:bg-red-700 hover:-translate-y-1' : 'bg-gray-300 text-gray-500 cursor-not-allowed'}`}
                         >
                            {isSubmitting ? (
                               <><Loader2 size={18} className="animate-spin" /> Processing...</>

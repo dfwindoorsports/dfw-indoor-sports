@@ -12,7 +12,7 @@ const features = [
 
 const CricketOverview: React.FC = () => {
    return (
-      <section className="py-24 bg-white relative">
+      <section aria-label="Cricket overview" className="py-24 bg-white relative">
          <div className="container mx-auto px-4 md:px-6">
             <div className="flex flex-col lg:flex-row gap-16 lg:gap-24 items-start mb-24">
 
@@ -50,34 +50,34 @@ const CricketOverview: React.FC = () => {
                         <li className="flex gap-4 items-start">
                            <div className="mt-1"><DollarSign size={16} className="text-red-500" /></div>
                            <div>
-                              <span className="block font-bold text-green-100 uppercase text-[10px] tracking-widest mb-1">Pricing</span>
+                              <span className="block font-bold text-green-100 uppercase text-\[11px\] tracking-widest mb-1">Pricing</span>
                               <p>View rates on RunSwift</p>
                            </div>
                         </li>
                         <li className="flex gap-4 items-start">
                            <div className="mt-1"><CheckCircle2 size={16} className="text-red-500" /></div>
                            <div>
-                              <span className="block font-bold text-green-100 uppercase text-[10px] tracking-widest mb-1">Included</span>
+                              <span className="block font-bold text-green-100 uppercase text-\[11px\] tracking-widest mb-1">Included</span>
                               <p>Lane, Machine, Balls, Basic Protective Gear</p>
                            </div>
                         </li>
                         <li className="flex gap-4 items-start">
                            <div className="mt-1"><MapPin size={16} className="text-red-500" /></div>
                            <div>
-                              <span className="block font-bold text-green-100 uppercase text-[10px] tracking-widest mb-1">Location</span>
+                              <span className="block font-bold text-green-100 uppercase text-\[11px\] tracking-widest mb-1">Location</span>
                               <p>16230 Three Wide Dr Suite 200, Fort Worth</p>
                            </div>
                         </li>
                         <li className="flex gap-4 items-start">
                            <div className="mt-1"><Clock size={16} className="text-red-500" /></div>
                            <div>
-                              <span className="block font-bold text-green-100 uppercase text-[10px] tracking-widest mb-1">Hours</span>
+                              <span className="block font-bold text-green-100 uppercase text-\[11px\] tracking-widest mb-1">Hours</span>
                               <p>Mon-Sun 5:00 AM - 11:00 PM</p>
                            </div>
                         </li>
                      </ul>
 
-                      <a href="https://book.runswiftapp.com/facilities/dfw-indoor-sports/rentals" target="_blank" rel="noopener noreferrer" className="w-full mt-8 py-3 bg-red-600 text-white font-bold uppercase text-xs tracking-widest rounded-sm hover:bg-red-700 transition-colors shadow-lg relative z-10 block text-center">
+                      <a href="https://book.runswiftapp.com/facilities/dfw-indoor-sports/rentals" target="_blank" rel="noopener noreferrer" className="w-full mt-8 py-3 bg-red-600 text-white font-bold uppercase text-xs tracking-widest rounded-lg hover:bg-red-700 transition-colors shadow-lg relative z-10 block text-center">
                          Check Availability
                       </a>
                   </div>

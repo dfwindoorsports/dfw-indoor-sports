@@ -20,7 +20,7 @@ const DodgeballHero: React.FC = () => {
          <div className="container mx-auto px-4 md:px-6 relative z-20 pt-10">
 
             {/* Status Badge */}
-            <div className="inline-flex items-center gap-3 px-4 py-1.5 rounded-full bg-violet-800 text-violet-100 font-mono text-[10px] font-medium uppercase tracking-[0.25em] mb-4 animate-fade-in-up cursor-default">
+            <div className="inline-flex items-center gap-3 px-4 py-1.5 rounded-full bg-violet-800 text-violet-100 font-mono text-\[11px\] font-medium uppercase tracking-[0.25em] mb-4 animate-fade-in-up cursor-default">
                <span className="w-2 h-2 rounded-full bg-orange-400"></span>
                <span className="font-bold">Fun Factor:</span> Maximum Adrenaline
             </div>
@@ -39,30 +39,30 @@ const DodgeballHero: React.FC = () => {
                <div className="hidden lg:flex gap-6 border-l border-white/10 pl-6">
                   <div>
                      <div className="text-xl font-header font-bold text-white">600</div>
-                     <div className="text-[9px] font-mono text-gray-400 uppercase tracking-widest">Cals/Hour</div>
+                     <div className="text-\[11px\] font-mono text-gray-400 uppercase tracking-widest">Cals/Hour</div>
                   </div>
                   <div>
                      <div className="text-xl font-header font-bold text-white">2<span className="text-sm align-top text-orange-500">min</span></div>
-                     <div className="text-[9px] font-mono text-gray-400 uppercase tracking-widest">Learning Curve</div>
+                     <div className="text-\[11px\] font-mono text-gray-400 uppercase tracking-widest">Learning Curve</div>
                   </div>
                </div>
             </div>
 
             {/* 3 Prominent CTAs */}
             <div className="flex flex-row flex-wrap gap-3 animate-slide-up" style={{ animationDelay: '0.2s' }}>
-               <button className="group relative px-6 py-3 bg-orange-600 text-white font-bold uppercase tracking-widest text-xs rounded-sm overflow-hidden shadow-[0_0_40px_rgba(234,88,12,0.4)] transition-all hover:shadow-[0_0_60px_rgba(234,88,12,0.6)] hover:-translate-y-1">
+               <button className="group relative px-6 py-3 bg-orange-600 text-white font-bold uppercase tracking-widest text-xs rounded-lg overflow-hidden shadow-[0_0_40px_rgba(234,88,12,0.4)] transition-all hover:shadow-[0_0_60px_rgba(234,88,12,0.6)] hover:-translate-y-1">
 
                   <span className="relative flex items-center gap-3">Book Court Now <ChevronRight size={14} /></span>
                </button>
                <button
                   onClick={() => document.getElementById('packages')?.scrollIntoView({ behavior: 'smooth' })}
-                  className="px-6 py-3 bg-white text-dodgeball font-bold uppercase tracking-widest text-xs rounded-sm hover:bg-gray-100 transition-all shadow-lg flex items-center gap-2"
+                  className="px-6 py-3 bg-white text-dodgeball font-bold uppercase tracking-widest text-xs rounded-lg hover:bg-gray-100 transition-all shadow-lg flex items-center gap-2"
                >
                   <Users size={14} /> Party Packages
                </button>
                <button
                   onClick={() => document.getElementById('corporate')?.scrollIntoView({ behavior: 'smooth' })}
-                  className="px-6 py-3 border border-white/20 bg-white/5 backdrop-blur-md text-white font-bold uppercase tracking-widest text-xs rounded-sm hover:bg-white hover:text-dodgeball transition-all flex items-center gap-2"
+                  className="px-6 py-3 border border-white/20 bg-white/5 backdrop-blur-md text-white font-bold uppercase tracking-widest text-xs rounded-lg hover:bg-white hover:text-dodgeball transition-all flex items-center gap-2"
                >
                   <Zap size={14} /> Corporate Events
                </button>

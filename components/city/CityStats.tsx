@@ -18,7 +18,7 @@ interface StatProps {
 
 export default function CityStats({ stats }: { stats: StatProps[] }) {
     return (
-        <section className="relative z-20 -mt-16 pb-16">
+        <section aria-label="Key statistics" className="relative z-20 -mt-16 pb-16">
             <div className="container mx-auto px-4 md:px-6">
                 <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 max-w-5xl mx-auto">
                     {stats.map((stat, index) => {
@@ -48,7 +48,7 @@ export default function CityStats({ stats }: { stats: StatProps[] }) {
                                         </h3>
 
                                         {/* Label */}
-                                        <p className="text-[10px] font-medium text-gray-400 uppercase tracking-widest font-mono">
+                                        <p className="text-\[11px\] font-medium text-gray-400 uppercase tracking-widest font-mono">
                                             {stat.label}
                                         </p>
 

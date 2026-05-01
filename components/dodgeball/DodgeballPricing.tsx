@@ -7,7 +7,7 @@ import Link from 'next/link';
 
 const DodgeballPricing: React.FC = () => {
   return (
-    <section className="py-24 bg-white transition-colors duration-300" id="pricing">
+    <section aria-label="Dodgeball pricing" className="py-24 bg-white transition-colors duration-300" id="pricing">
        <div className="container mx-auto px-4 md:px-6">
           <motion.div 
             className="text-center max-w-3xl mx-auto mb-16"
@@ -48,7 +48,7 @@ const DodgeballPricing: React.FC = () => {
                    <li className="flex gap-3 text-sm text-gray-600"><Check size={16} className="text-violet-600" /> Spectator Seating</li>
                 </ul>
 
-                <a href="https://book.runswiftapp.com/facilities/dfw-indoor-sports/rentals" target="_blank" rel="noopener noreferrer" className="w-full py-4 bg-dodgeball text-white font-bold uppercase text-xs tracking-widest rounded-sm hover:bg-violet-800 transition-colors block text-center">Book Court</a>
+                <a href="https://book.runswiftapp.com/facilities/dfw-indoor-sports/rentals" target="_blank" rel="noopener noreferrer" className="w-full py-4 bg-dodgeball text-white font-bold uppercase text-xs tracking-widest rounded-lg hover:bg-violet-800 transition-colors block text-center">Book Court</a>
              </motion.div>
 
              {/* League */}
@@ -82,7 +82,7 @@ const DodgeballPricing: React.FC = () => {
                    <li className="flex gap-3 text-sm text-gray-600"><Check size={16} className="text-orange-500" /> Team or Individual Sign-up</li>
                 </ul>
 
-                <a href="https://book.runswiftapp.com/facilities/dfw-indoor-sports/rentals" target="_blank" rel="noopener noreferrer" className="w-full py-4 border-2 border-dodgeball text-dodgeball font-bold uppercase text-xs tracking-widest rounded-sm hover:bg-dodgeball hover:text-white transition-colors block text-center">Join League</a>
+                <a href="https://book.runswiftapp.com/facilities/dfw-indoor-sports/rentals" target="_blank" rel="noopener noreferrer" className="w-full py-4 border-2 border-dodgeball text-dodgeball font-bold uppercase text-xs tracking-widest rounded-lg hover:bg-dodgeball hover:text-white transition-colors block text-center">Join League</a>
              </motion.div>
 
           </div>

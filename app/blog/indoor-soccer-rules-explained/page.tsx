@@ -95,7 +95,7 @@ export default function IndoorSoccerRulesPage() {
                         <div className="bg-dfw-navy text-white p-8 rounded-xl mt-12">
                             <h3 className="text-2xl font-bold mb-4">Join a League</h3>
                             <p className="mb-6 text-gray-300">We have men's, women's, and co-ed leagues starting every month.</p>
-                            <Link href="/soccer" className="inline-flex items-center gap-2 bg-dfw-red text-white px-6 py-3 rounded font-bold uppercase hover:bg-red-700 transition-colors">
+                            <Link href="/soccer-fields" className="inline-flex items-center gap-2 bg-dfw-red text-white px-6 py-3 rounded font-bold uppercase hover:bg-red-700 transition-colors">
                                 View Soccer Leagues <ArrowRight size={16} />
                             </Link>
                         </div>

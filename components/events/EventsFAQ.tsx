@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 
 const EventsFAQ: React.FC = () => {
   return (
-    <section className="py-24 bg-gray-50 border-t border-gray-200 transition-colors duration-300">
+    <section aria-label="Event frequently asked questions" className="py-24 bg-gray-50 border-t border-gray-200 transition-colors duration-300">
          <div className="container mx-auto px-4 md:px-6 max-w-3xl">
             <h2 className="text-3xl font-header font-bold text-dfw-navy uppercase mb-12 text-center">Event Planning FAQ</h2>
             

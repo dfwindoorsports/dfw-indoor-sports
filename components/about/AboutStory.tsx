@@ -3,10 +3,11 @@
 import React from 'react';
 import { ShieldCheck, Users, Quote, Heart } from 'lucide-react';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 const AboutStory: React.FC = () => {
   return (
-    <section className="py-24 md:py-32 bg-white relative transition-colors duration-300" id="story">
+    <section aria-label="Our story" className="py-24 md:py-32 bg-white relative transition-colors duration-300" id="story">
        <div className="container mx-auto px-4 md:px-6">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-24">
              
@@ -33,7 +34,7 @@ const AboutStory: React.FC = () => {
                       Cricket players drove hours to find decent nets. Badminton enthusiasts played in multipurpose gyms with drafts and glare. Families wanted a safe place where parents could play while kids trained, but found only fragmented options.
                    </p>
                    <p>
-                      <span className="bg-dfw-red/10 text-dfw-red px-1 rounded-sm">We decided to build the solution.</span> A "third place"—not work, not home, but a sanctuary for sport. A facility designed specifically for serious play, where the turf is professional grade, the lighting is broadcast quality, and the community feels like family.
+                      <span className="bg-dfw-red/10 text-dfw-red px-1 rounded-lg">We decided to build the solution.</span> A "third place"—not work, not home, but a sanctuary for sport. A facility designed specifically for serious play, where the turf is professional grade, the lighting is broadcast quality, and the community feels like family.
                    </p>
                 </div>
 
@@ -63,10 +64,12 @@ const AboutStory: React.FC = () => {
                className="lg:col-span-5 relative"
              >
                 <div className="relative z-10 h-full min-h-[500px] rounded-lg overflow-hidden shadow-2xl group border border-gray-200">
-                   <img 
+                   <Image 
                       src="/images/sports/team-community.webp" 
                       alt="Community gathering at DFW Indoor Sports" 
-                      className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
+                      fill
+                      className="object-cover transition-transform duration-1000 group-hover:scale-105"
+                      sizes="(max-width: 1024px) 100vw, 40vw"
                    />
                    <div className="absolute inset-0 bg-gradient-to-t from-dfw-navy via-dfw-navy/40 to-transparent opacity-90"></div>
                    
@@ -78,7 +81,7 @@ const AboutStory: React.FC = () => {
                          </p>
                          <div className="flex items-center gap-3">
                             <div className="w-10 h-[1px] bg-white/50"></div>
-                            <span className="text-[10px] font-medium font-mono uppercase tracking-widest text-gray-300">Founding Team</span>
+                            <span className="text-\[11px\] font-medium font-mono uppercase tracking-widest text-gray-300">Founding Team</span>
                          </div>
                       </div>
                    </div>

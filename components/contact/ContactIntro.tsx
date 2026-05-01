@@ -4,7 +4,7 @@ import { OptimizedImage } from '@/components/ui/OptimizedImage';
 
 const ContactIntro: React.FC = () => {
    return (
-      <section className="py-24 bg-white relative border-b border-gray-100 overflow-hidden">
+      <section aria-label="Contact introduction" className="py-24 bg-white relative border-b border-gray-100 overflow-hidden">
          {/* Subtle background pattern */}
          <div className="absolute inset-0 bg-[url('/textures/cubes.png')] opacity-[0.03] pointer-events-none"></div>
 
@@ -71,15 +71,15 @@ const ContactIntro: React.FC = () => {
 
                      <div className="grid grid-cols-1 md:grid-cols-2 gap-y-8 gap-x-8 relative z-10">
                         <div className="group/item">
-                           <p className="text-[10px] font-bold text-gray-500 uppercase tracking-widest mb-2 flex items-center gap-2 group-hover/item:text-blue-400 transition-colors"><Clock size={12} /> Operating Hours</p>
+                           <p className="text-\[11px\] font-bold text-gray-500 uppercase tracking-widest mb-2 flex items-center gap-2 group-hover/item:text-blue-400 transition-colors"><Clock size={12} /> Operating Hours</p>
                            <p className="text-base font-bold text-white">Mon-Sun: 5am - 11pm</p>
                         </div>
                         <div className="group/item">
-                           <p className="text-[10px] font-bold text-gray-500 uppercase tracking-widest mb-2 flex items-center gap-2 group-hover/item:text-blue-400 transition-colors"><Mail size={12} /> Email Response</p>
+                           <p className="text-\[11px\] font-bold text-gray-500 uppercase tracking-widest mb-2 flex items-center gap-2 group-hover/item:text-blue-400 transition-colors"><Mail size={12} /> Email Response</p>
                            <p className="text-base font-bold text-white">Within 24 Hours</p>
                         </div>
                         <div className="md:col-span-2 group/item">
-                           <p className="text-[10px] font-bold text-gray-500 uppercase tracking-widest mb-2 flex items-center gap-2 group-hover/item:text-blue-400 transition-colors"><MapPin size={12} /> HQ Location</p>
+                           <p className="text-\[11px\] font-bold text-gray-500 uppercase tracking-widest mb-2 flex items-center gap-2 group-hover/item:text-blue-400 transition-colors"><MapPin size={12} /> HQ Location</p>
                            <p className="text-base font-bold text-white">16230 Three Wide Dr Suite 200, Fort Worth, TX 76177</p>
                         </div>
                      </div>

@@ -22,7 +22,7 @@ const ContactQuickAnswers: React.FC = () => {
   );
 
   return (
-    <section className="py-24 bg-white border-b border-gray-100">
+    <section aria-label="Quick answers" className="py-24 bg-white border-b border-gray-100">
        <div className="container mx-auto px-4 md:px-6">
           <div className="mb-12 flex flex-col md:flex-row md:items-end justify-between gap-6">
              <div className="flex items-center gap-3">
@@ -50,7 +50,7 @@ const ContactQuickAnswers: React.FC = () => {
                 <div key={i} className="p-8 rounded-lg bg-white border border-gray-200 hover:border-dfw-navy/30 hover:shadow-lg transition-all duration-300 group cursor-default">
                    <h3 className="font-header font-bold text-dfw-navy text-sm uppercase mb-3 group-hover:text-dfw-red transition-colors">{item.q}</h3>
                    <p className="text-xs text-gray-500 leading-relaxed mb-6">{item.a}</p>
-                   <Link href={item.href} className="text-[10px] font-bold text-dfw-navy uppercase tracking-widest flex items-center gap-1 group-hover:gap-2 transition-all border-b border-gray-200 pb-1 w-max group-hover:border-dfw-red">
+                   <Link href={item.href} className="text-\[11px\] font-bold text-dfw-navy uppercase tracking-widest flex items-center gap-1 group-hover:gap-2 transition-all border-b border-gray-200 pb-1 w-max group-hover:border-dfw-red">
                       {item.link} <ChevronRight size={10} />
                    </Link>
                 </div>

@@ -7,7 +7,7 @@ import Link from 'next/link';
 
 const DodgeballBooking: React.FC = () => {
    return (
-      <section className="py-24 bg-white transition-colors duration-300" id="booking-process">
+      <section aria-label="Dodgeball booking process" className="py-24 bg-white transition-colors duration-300" id="booking-process">
          <div className="container mx-auto px-4 md:px-6">
             <div className="text-center mb-16">
                <h2 className="text-3xl md:text-5xl font-header font-bold text-dodgeball uppercase mb-6">Three Ways To Play</h2>
@@ -31,7 +31,7 @@ const DodgeballBooking: React.FC = () => {
                      <div className="flex gap-2"><Calendar size={14} className="text-violet-500" /> 2. Select Date/Time</div>
                      <div className="flex gap-2"><CreditCard size={14} className="text-violet-500" /> 3. Secure Payment</div>
                   </div>
-                  <a href="https://book.runswiftapp.com/facilities/dfw-indoor-sports/rentals" target="_blank" rel="noopener noreferrer" className="w-full py-3 bg-dodgeball text-white font-bold uppercase text-xs tracking-widest rounded-sm hover:bg-violet-800 transition-colors block text-center">Book Court</a>
+                  <a href="https://book.runswiftapp.com/facilities/dfw-indoor-sports/rentals" target="_blank" rel="noopener noreferrer" className="w-full py-3 bg-dodgeball text-white font-bold uppercase text-xs tracking-widest rounded-lg hover:bg-violet-800 transition-colors block text-center">Book Court</a>
                </motion.div>
 
                {/* Phone */}
@@ -48,9 +48,9 @@ const DodgeballBooking: React.FC = () => {
                   </p>
                   <div className="mb-8 py-4">
                      <p className="text-2xl font-header font-bold text-gray-800">(817) 938-0808</p>
-                     <p className="text-[10px] font-medium text-gray-400 uppercase tracking-widest mt-1">Mon-Fri 9AM-9PM | Sat-Sun 8AM-10PM</p>
+                     <p className="text-\[11px\] font-medium text-gray-400 uppercase tracking-widest mt-1">Mon-Fri 9AM-9PM | Sat-Sun 8AM-10PM</p>
                   </div>
-                  <a href="tel:8179380808" className="block w-full py-3 border border-dodgeball text-dodgeball font-bold uppercase text-xs tracking-widest rounded-sm hover:bg-dodgeball hover:text-white transition-colors">Click To Call</a>
+                  <a href="tel:8179380808" className="block w-full py-3 border border-dodgeball text-dodgeball font-bold uppercase text-xs tracking-widest rounded-lg hover:bg-dodgeball hover:text-white transition-colors">Click To Call</a>
                </motion.div>
 
                {/* Walk-In */}
@@ -69,7 +69,7 @@ const DodgeballBooking: React.FC = () => {
                      <p className="font-bold text-dodgeball mb-1">16230 Three Wide Dr Suite 200</p>
                      <p>Fort Worth, TX 76177</p>
                   </div>
-                  <button className="w-full py-3 border border-gray-300 text-gray-500 font-bold uppercase text-xs tracking-widest rounded-sm cursor-not-allowed">Check Status</button>
+                  <button className="w-full py-3 border border-gray-300 text-gray-500 font-bold uppercase text-xs tracking-widest rounded-lg cursor-not-allowed">Check Status</button>
                </motion.div>
 
             </div>

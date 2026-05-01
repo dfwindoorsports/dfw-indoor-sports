@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 
 const SportsIntro: React.FC = () => {
   return (
-    <section className="py-24 bg-white relative transition-colors duration-300">
+    <section aria-label="Sports overview" className="py-24 bg-white relative transition-colors duration-300">
        <div className="container mx-auto px-4 md:px-6">
           <div className="flex flex-col lg:flex-row gap-16 lg:gap-24 items-start">
              
@@ -86,7 +86,7 @@ const SportsIntro: React.FC = () => {
 
                    <button 
                       onClick={() => document.getElementById('sports-showcase')?.scrollIntoView({ behavior: 'smooth' })}
-                      className="w-full mt-8 py-3 bg-white/10 border border-white/20 text-white font-bold uppercase text-xs tracking-widest rounded-sm hover:bg-white hover:text-dfw-navy transition-colors relative z-10"
+                      className="w-full mt-8 py-3 bg-white/10 border border-white/20 text-white font-bold uppercase text-xs tracking-widest rounded-lg hover:bg-white hover:text-dfw-navy transition-colors relative z-10"
                    >
                       Explore The Sports
                    </button>

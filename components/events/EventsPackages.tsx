@@ -22,7 +22,7 @@ const EventsPackages: React.FC = () => {
    };
 
    return (
-      <section className="py-24 bg-gray-50 border-y border-gray-200 transition-colors duration-300" id="packages">
+      <section aria-label="Event packages" className="py-24 bg-gray-50 border-y border-gray-200 transition-colors duration-300" id="packages">
          <div className="container mx-auto px-4 md:px-6">
 
             {/* Kids Party Image Banner */}
@@ -86,12 +86,12 @@ const EventsPackages: React.FC = () => {
                   <div className="pt-4 border-t border-gray-100 text-xs text-gray-400 italic mb-6">
                      *Bring your own food, cake & decor
                   </div>
-                  <button className="w-full py-3 border border-dfw-navy text-dfw-navy font-bold uppercase text-xs tracking-widest rounded-sm hover:bg-dfw-navy hover:text-white transition-colors">Select Basic</button>
+                  <button className="w-full py-3 border border-dfw-navy text-dfw-navy font-bold uppercase text-xs tracking-widest rounded-lg hover:bg-dfw-navy hover:text-white transition-colors">Select Basic</button>
                </motion.div>
 
                {/* Deluxe Package - Featured */}
                <motion.div variants={itemVariants} className="bg-dfw-navy rounded-lg border border-dfw-navy p-8 shadow-2xl relative group overflow-hidden transform md:-translate-y-4 z-10">
-                  <div className="absolute top-0 right-0 bg-dfw-red text-white text-[10px] font-bold uppercase px-3 py-1 rounded-bl-lg">Most Popular</div>
+                  <div className="absolute top-0 right-0 bg-dfw-red text-white text-\[11px\] font-bold uppercase px-3 py-1 rounded-bl-lg">Most Popular</div>
                   <div className="absolute inset-0 bg-[url('/textures/carbon-fibre.png')] opacity-20 mix-blend-overlay"></div>
 
                   <h3 className="text-xl font-header font-bold text-white uppercase mb-2 relative z-10">Deluxe Multi-Sport</h3>
@@ -117,7 +117,7 @@ const EventsPackages: React.FC = () => {
                         <Star size={16} className="text-dfw-red" /> Themed Decorations
                      </div>
                   </div>
-                  <button className="w-full py-3 bg-dfw-red text-white font-bold uppercase text-xs tracking-widest rounded-sm hover:bg-red-600 transition-colors relative z-10 shadow-lg">Select Deluxe</button>
+                  <button className="w-full py-3 bg-dfw-red text-white font-bold uppercase text-xs tracking-widest rounded-lg hover:bg-red-600 transition-colors relative z-10 shadow-lg">Select Deluxe</button>
                </motion.div>
 
                {/* Ultimate Package */}
@@ -146,26 +146,26 @@ const EventsPackages: React.FC = () => {
                         <Camera size={16} className="text-green-500" /> Photography & Custom Jersey
                      </div>
                   </div>
-                  <button className="w-full py-3 border border-dfw-navy text-dfw-navy font-bold uppercase text-xs tracking-widest rounded-sm hover:bg-dfw-navy hover:text-white transition-colors">Select Ultimate</button>
+                  <button className="w-full py-3 border border-dfw-navy text-dfw-navy font-bold uppercase text-xs tracking-widest rounded-lg hover:bg-dfw-navy hover:text-white transition-colors">Select Ultimate</button>
                </motion.div>
             </motion.div>
 
             {/* Extras Section - Semantic List */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-16 text-center">
                <div className="bg-white p-4 rounded border border-gray-100">
-                  <p className="text-[10px] font-bold uppercase text-gray-400 mb-1">Extra Kid</p>
+                  <p className="text-\[11px\] font-bold uppercase text-gray-400 mb-1">Extra Kid</p>
                   <p className="text-dfw-navy font-bold">Contact <span className="text-xs font-normal">/ child</span></p>
                </div>
                <div className="bg-white p-4 rounded border border-gray-100">
-                  <p className="text-[10px] font-bold uppercase text-gray-400 mb-1">Extra Time</p>
+                  <p className="text-\[11px\] font-bold uppercase text-gray-400 mb-1">Extra Time</p>
                   <p className="text-dfw-navy font-bold">Contact <span className="text-xs font-normal">/ 30 min</span></p>
                </div>
                <div className="bg-white p-4 rounded border border-gray-100">
-                  <p className="text-[10px] font-bold uppercase text-gray-400 mb-1">Goody Bags</p>
+                  <p className="text-\[11px\] font-bold uppercase text-gray-400 mb-1">Goody Bags</p>
                   <p className="text-dfw-navy font-bold">Contact <span className="text-xs font-normal">/ child</span></p>
                </div>
                <div className="bg-white p-4 rounded border border-gray-100">
-                  <p className="text-[10px] font-bold uppercase text-gray-400 mb-1">Photography</p>
+                  <p className="text-\[11px\] font-bold uppercase text-gray-400 mb-1">Photography</p>
                   <p className="text-dfw-navy font-bold">Contact <span className="text-xs font-normal">/ session</span></p>
                </div>
             </div>

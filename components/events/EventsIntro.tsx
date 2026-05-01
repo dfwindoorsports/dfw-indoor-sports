@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 
 const EventsIntro: React.FC = () => {
   return (
-    <section className="py-24 bg-white relative transition-colors duration-300">
+    <section aria-label="Event venue introduction" className="py-24 bg-white relative transition-colors duration-300">
          {/* Texture */}
          <div className="absolute inset-0 bg-[url('/textures/cubes.png')] opacity-[0.03]"></div>
 

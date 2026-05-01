@@ -35,7 +35,7 @@ export default function CityHero({ city, distance, heroImage = '/images/hero/spo
                     
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 0.2 }}
-                    className="inline-flex items-center gap-3 px-4 py-1.5 rounded-full border border-dfw-red/40 bg-dfw-red/10 backdrop-blur-2xl text-dfw-red font-mono text-[10px] font-medium uppercase tracking-[0.25em] mb-4 hover:bg-dfw-red/20 transition-colors cursor-default"
+                    className="inline-flex items-center gap-3 px-4 py-1.5 rounded-full border border-dfw-red/40 bg-dfw-red/10 backdrop-blur-2xl text-dfw-red font-mono text-\[11px\] font-medium uppercase tracking-[0.25em] mb-4 hover:bg-dfw-red/20 transition-colors cursor-default"
                 >
                     <MapPin size={12} />
                     <span>Serving {city}, TX</span>
@@ -66,11 +66,11 @@ export default function CityHero({ city, distance, heroImage = '/images/hero/spo
                     <div className="hidden md:flex gap-6 border-l border-white/10 pl-6">
                         <div>
                             <div className="text-xl font-header font-bold text-white">{distance}</div>
-                            <div className="text-[10px] font-medium text-gray-500 uppercase tracking-widest font-mono">Drive Time</div>
+                            <div className="text-\[11px\] font-medium text-gray-500 uppercase tracking-widest font-mono">Drive Time</div>
                         </div>
                         <div>
                             <div className="text-xl font-header font-bold text-white">5AM-11PM</div>
-                            <div className="text-[10px] font-medium text-gray-500 uppercase tracking-widest font-mono">Open Daily</div>
+                            <div className="text-\[11px\] font-medium text-gray-500 uppercase tracking-widest font-mono">Open Daily</div>
                         </div>
                     </div>
                 </motion.div>
@@ -84,14 +84,14 @@ export default function CityHero({ city, distance, heroImage = '/images/hero/spo
                 >
                     <Link
                         href="/rentals"
-                        className="group relative px-6 py-3 bg-dfw-red text-white font-bold uppercase tracking-widest text-xs rounded-sm overflow-hidden shadow-[0_0_40px_rgba(214,40,40,0.4)] transition-all hover:shadow-[0_0_60px_rgba(214,40,40,0.6)] hover:-translate-y-1"
+                        className="group relative px-6 py-3 bg-dfw-red text-white font-bold uppercase tracking-widest text-xs rounded-lg overflow-hidden shadow-[0_0_40px_rgba(214,40,40,0.4)] transition-all hover:shadow-[0_0_60px_rgba(214,40,40,0.6)] hover:-translate-y-1"
                     >
 
                         <span className="relative flex items-center gap-3">Book a Court <ChevronRight size={14} /></span>
                     </Link>
                     <Link
                         href="/contact"
-                        className="px-6 py-3 border border-white/20 bg-white/5 backdrop-blur-md text-white font-bold uppercase tracking-widest text-xs rounded-sm hover:bg-white hover:text-dfw-navy transition-all flex items-center gap-3"
+                        className="px-6 py-3 border border-white/20 bg-white/5 backdrop-blur-md text-white font-bold uppercase tracking-widest text-xs rounded-lg hover:bg-white hover:text-dfw-navy transition-all flex items-center gap-3"
                     >
                         <MapPin size={14} /> Get Directions
                     </Link>

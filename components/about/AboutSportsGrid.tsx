@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 
 const AboutSportsGrid: React.FC = () => {
   return (
-    <section className="bg-white py-24 border-b border-gray-100 relative overflow-hidden transition-colors duration-300">
+    <section aria-label="Sports we offer" className="bg-white py-24 border-b border-gray-100 relative overflow-hidden transition-colors duration-300">
        <div className="container mx-auto px-4 md:px-6 relative z-10">
           <motion.div 
             className="text-center max-w-3xl mx-auto mb-16"
@@ -35,7 +35,7 @@ const AboutSportsGrid: React.FC = () => {
                    <div className="relative z-10">
                       <div className="flex justify-between items-start mb-4">
                          <sport.icon size={24} className={sport.featured ? 'text-white' : 'text-dfw-red'} />
-                         <span className={`text-[9px] font-bold uppercase tracking-widest px-2 py-1 rounded-sm ${sport.featured ? 'bg-black/20 text-white' : 'bg-gray-100 text-gray-500'}`}>{sport.sub}</span>
+                         <span className={`text-\[11px\] font-bold uppercase tracking-widest px-2 py-1 rounded-lg ${sport.featured ? 'bg-black/20 text-white' : 'bg-gray-100 text-gray-500'}`}>{sport.sub}</span>
                       </div>
                       <h3 className={`text-xl font-header font-bold uppercase mb-2 ${sport.featured ? 'text-white' : 'text-dfw-navy'}`}>{sport.title}</h3>
                       <p className={`text-xs leading-relaxed ${sport.featured ? 'text-white/80' : 'text-gray-500'}`}>{sport.desc}</p>

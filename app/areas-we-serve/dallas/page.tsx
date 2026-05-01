@@ -10,7 +10,7 @@ import CityTestimonial from '@/components/city/CityTestimonial'
 
 export const metadata: Metadata = createPageMetadata({
     title: 'Indoor Sports Near Dallas TX | Cricket, Badminton, Soccer Courts | 25 Min Drive',
-    description: 'Looking for indoor sports near Dallas? DFW Indoor Sports offers professional cricket lanes, badminton courts, soccer fields & dodgeball just 25 minutes away. Open 5AM-11PM. Memberships from \/mo. Check RunSwift for rental rates. Book online or call (817) 938-0808.',
+    description: 'Looking for indoor sports near Dallas? DFW Indoor Sports offers professional cricket lanes, badminton courts, soccer fields & dodgeball just 25 minutes away. Open 5AM-11PM. Memberships from $70/mo. Check RunSwift for rental rates. Book online or call (817) 938-0808.',
     keywords: [
         'indoor sports near Dallas',
         'Dallas cricket facility',
@@ -37,7 +37,7 @@ const dallasFaqs = [
     },
     {
         question: 'How much does it cost to play?',
-        answer: 'Court rental rates are available on our booking platform. Monthly memberships start at \ for badminton and \ for GOLD (cricket + badminton). Family memberships available at \/mo. Book online through RunSwift or call us.',
+        answer: 'Court rental rates are available on our booking platform. Monthly memberships start at $70/mo for badminton (half-yearly) and $109/mo for GOLD (cricket + badminton). Family memberships available at $129/mo. Book online through RunSwift or call us.',
     },
     {
         question: 'Do I need to bring my own equipment?',

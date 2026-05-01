@@ -3,7 +3,7 @@ import { Trophy, Users, Zap, UserPlus } from 'lucide-react';
 
 const BadmintonPrograms: React.FC = () => {
   return (
-    <section className="bg-white py-24 border-b border-gray-200">
+    <section aria-label="Badminton programs and leagues" className="bg-white py-24 border-b border-gray-200">
        <div className="container mx-auto px-4 md:px-6">
           <div className="text-center mb-16">
              <span className="text-blue-600 font-mono text-xs font-bold uppercase tracking-widest mb-3 block">Community</span>
@@ -22,7 +22,7 @@ const BadmintonPrograms: React.FC = () => {
                 <p className="text-xs text-gray-500 mb-6 h-12 leading-relaxed">Social doubles with rotating partners. Emphasis on fun and meeting people.</p>
                 <div className="text-sm font-bold text-blue-700 border-t border-gray-200 pt-4 flex justify-between items-center">
                    <span>Contact for Pricing</span>
-                   <span className="text-[10px] font-medium uppercase tracking-wider text-gray-400">Waitlist Open</span>
+                   <span className="text-\[11px\] font-medium uppercase tracking-wider text-gray-400">Waitlist Open</span>
                 </div>
              </div>
 
@@ -35,7 +35,7 @@ const BadmintonPrograms: React.FC = () => {
                 <p className="text-xs text-gray-500 mb-6 h-12 leading-relaxed">Organized social sessions. We match you with partners. Tue/Thu/Sat.</p>
                 <div className="text-sm font-bold text-blue-700 border-t border-gray-200 pt-4 flex justify-between items-center">
                    <span>Free for Members</span>
-                   <span className="text-[10px] font-medium uppercase tracking-wider text-gray-400">Weekly</span>
+                   <span className="text-\[11px\] font-medium uppercase tracking-wider text-gray-400">Weekly</span>
                 </div>
              </div>
 
@@ -48,7 +48,7 @@ const BadmintonPrograms: React.FC = () => {
                 <p className="text-xs text-gray-500 mb-6 h-12 leading-relaxed">1-on-1 instruction. Improve grip, footwork, and smash technique.</p>
                 <div className="text-sm font-bold text-blue-700 border-t border-gray-200 pt-4 flex justify-between items-center">
                    <span>Contact for Pricing</span>
-                   <span className="text-[10px] font-medium uppercase tracking-wider text-gray-400">By Appt</span>
+                   <span className="text-\[11px\] font-medium uppercase tracking-wider text-gray-400">By Appt</span>
                 </div>
              </div>
 
@@ -61,7 +61,7 @@ const BadmintonPrograms: React.FC = () => {
                 <p className="text-xs text-gray-500 mb-6 h-12 leading-relaxed">After-school clinics for ages 7-17. Build coordination and confidence.</p>
                 <div className="text-sm font-bold text-blue-700 border-t border-gray-200 pt-4 flex justify-between items-center">
                    <span>Contact for Pricing</span>
-                   <span className="text-[10px] font-medium uppercase tracking-wider text-gray-400">Seasonal</span>
+                   <span className="text-\[11px\] font-medium uppercase tracking-wider text-gray-400">Seasonal</span>
                 </div>
              </div>
 

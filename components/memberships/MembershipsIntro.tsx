@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 
 const MembershipsIntro: React.FC = () => {
   return (
-    <section className="py-24 bg-white relative transition-colors duration-300">
+    <section aria-label="Membership overview" className="py-24 bg-white relative transition-colors duration-300">
        <div className="container mx-auto px-4 md:px-6">
           <div className="flex flex-col lg:flex-row gap-16 lg:gap-24 items-start">
              

@@ -23,14 +23,14 @@ export default function NotFound() {
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Link
             href="/"
-            className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-dfw-red text-white font-bold text-xs uppercase tracking-widest rounded-sm hover:bg-red-700 transition-colors"
+            className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-dfw-red text-white font-bold text-xs uppercase tracking-widest rounded-lg hover:bg-red-700 transition-colors"
           >
             <Home size={16} />
             Go Home
           </Link>
           <Link
             href="/contact"
-            className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-dfw-navy text-white font-bold text-xs uppercase tracking-widest rounded-sm hover:bg-gray-800 transition-colors"
+            className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-dfw-navy text-white font-bold text-xs uppercase tracking-widest rounded-lg hover:bg-gray-800 transition-colors"
           >
             <ArrowLeft size={16} />
             Contact Us

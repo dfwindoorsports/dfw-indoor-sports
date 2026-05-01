@@ -8,7 +8,7 @@ import { OptimizedImage } from '@/components/ui/OptimizedImage';
 
 const SoccerPricing: React.FC = () => {
    return (
-      <section className="py-24 bg-white transition-colors duration-300" id="pricing">
+      <section aria-label="Soccer field pricing" className="py-24 bg-white transition-colors duration-300" id="pricing">
          <div className="container mx-auto px-4 md:px-6">
 
             {/* Soccer Team Game Image */}
@@ -60,7 +60,7 @@ const SoccerPricing: React.FC = () => {
                      <li className="flex gap-3 text-sm text-gray-600"><Check size={16} className="text-emerald-600" /> Goal Systems Included</li>
                      <li className="flex gap-3 text-sm text-gray-600"><Check size={16} className="text-emerald-600" /> Up to 16 Players</li>
                   </ul>
-                  <a href="https://book.runswiftapp.com/facilities/dfw-indoor-sports/rentals" target="_blank" rel="noopener noreferrer" className="w-full py-4 border-2 border-soccer text-soccer font-bold uppercase text-xs tracking-widest rounded-sm hover:bg-soccer hover:text-white transition-colors block text-center">Book Field Now</a>
+                  <a href="https://book.runswiftapp.com/facilities/dfw-indoor-sports/rentals" target="_blank" rel="noopener noreferrer" className="w-full py-4 border-2 border-soccer text-soccer font-bold uppercase text-xs tracking-widest rounded-lg hover:bg-soccer hover:text-white transition-colors block text-center">Book Field Now</a>
                </motion.div>
 
                {/* Membership - Highlighted */}
@@ -68,7 +68,7 @@ const SoccerPricing: React.FC = () => {
                   transition={{ delay: 0.1 }}
                   className="bg-soccer rounded-xl border border-soccer p-8 shadow-2xl relative transform md:-translate-y-6 flex flex-col z-10"
                >
-                  <div className="absolute top-0 right-0 bg-emerald-500 text-white text-[10px] font-bold uppercase px-4 py-1.5 rounded-bl-lg shadow-sm">Best Value</div>
+                  <div className="absolute top-0 right-0 bg-emerald-500 text-white text-\[11px\] font-bold uppercase px-4 py-1.5 rounded-bl-lg shadow-sm">Best Value</div>
                   <div className="absolute inset-0 bg-[url('/textures/carbon-fibre.png')] opacity-10 mix-blend-overlay"></div>
 
                   <div className="mb-4 relative z-10">
@@ -93,7 +93,7 @@ const SoccerPricing: React.FC = () => {
                      <li className="flex gap-3 text-sm text-emerald-50"><Check size={16} className="text-white" /> Open Daily 5AM - 11PM</li>
                      <li className="flex gap-3 text-sm text-emerald-50"><Check size={16} className="text-white" /> 10% Store & Academy Discount</li>
                   </ul>
-                  <Link href="/memberships" className="w-full py-4 bg-emerald-500 text-white font-bold uppercase text-xs tracking-widest rounded-sm hover:bg-emerald-400 transition-colors shadow-lg relative z-10 block text-center">Explore Gold Membership</Link>
+                  <Link href="/memberships" className="w-full py-4 bg-emerald-500 text-white font-bold uppercase text-xs tracking-widest rounded-lg hover:bg-emerald-400 transition-colors shadow-lg relative z-10 block text-center">Explore Gold Membership</Link>
                </motion.div>
 
                {/* Team Package */}
@@ -118,7 +118,7 @@ const SoccerPricing: React.FC = () => {
                      <li className="flex gap-3 text-sm text-gray-600"><Check size={16} className="text-emerald-600" /> Goals & Equipment Included</li>
                      <li className="flex gap-3 text-sm text-gray-600"><Check size={16} className="text-emerald-600" /> Professional Artificial Turf</li>
                   </ul>
-                  <Link href="/contact" className="w-full py-4 border-2 border-gray-200 text-gray-600 font-bold uppercase text-xs tracking-widest rounded-sm hover:border-soccer hover:text-soccer transition-colors flex items-center justify-center gap-2">
+                  <Link href="/contact" className="w-full py-4 border-2 border-gray-200 text-gray-600 font-bold uppercase text-xs tracking-widest rounded-lg hover:border-soccer hover:text-soccer transition-colors flex items-center justify-center gap-2">
                      <Users size={16} /> Request Team Quote
                   </Link>
                </motion.div>
@@ -134,7 +134,7 @@ const SoccerPricing: React.FC = () => {
                      <p><strong className="text-gray-900">Tournaments:</strong> Contact us for tournament pricing and booking details.</p>
                   </div>
                </div>
-               <Link href="/events" className="px-8 py-3 bg-white border border-gray-300 text-gray-700 font-bold uppercase text-xs tracking-widest rounded-sm hover:border-soccer hover:text-soccer transition-colors whitespace-nowrap flex items-center gap-2">
+               <Link href="/events" className="px-8 py-3 bg-white border border-gray-300 text-gray-700 font-bold uppercase text-xs tracking-widest rounded-lg hover:border-soccer hover:text-soccer transition-colors whitespace-nowrap flex items-center gap-2">
                   <Trophy size={14} /> View League Schedule
                </Link>
             </div>

@@ -128,8 +128,17 @@ module.exports = {
         'shimmer': 'linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent)',
       },
       borderRadius: {
-        '4xl': '2rem',
-        '5xl': '2.5rem',
+        'none': '0',
+        'xs': '0.25rem',    /* 4dp  — M3 Extra-small */
+        'sm': '0.5rem',     /* 8dp  — M3 Small */
+        DEFAULT: '0.5rem',  /* 8dp  — M3 Small (base) */
+        'md': '0.75rem',    /* 12dp — M3 Medium */
+        'lg': '1rem',       /* 16dp — M3 Large */
+        'xl': '1.25rem',    /* 20dp — M3 Large-increased */
+        '2xl': '1.75rem',   /* 28dp — M3 Extra-large */
+        '3xl': '2rem',      /* 32dp — M3 Extra-large-increased */
+        '4xl': '3rem',      /* 48dp — M3 Extra-extra-large */
+        'full': '9999px',   /* M3 Full (pill) */
       },
       transitionTimingFunction: {
         'premium': 'cubic-bezier(0.16, 1, 0.3, 1)',

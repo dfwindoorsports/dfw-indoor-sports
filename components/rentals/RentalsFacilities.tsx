@@ -4,10 +4,11 @@ import React from 'react';
 import { CheckCircle2, Activity, Trophy, Users, Star, Target } from 'lucide-react';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 const RentalsFacilities: React.FC = () => {
   return (
-    <section className="py-24 bg-gray-50 border-y border-gray-200 transition-colors duration-300" id="facilities">
+    <section aria-label="Court rental facilities" className="py-24 bg-gray-50 border-y border-gray-200 transition-colors duration-300" id="facilities">
          <div className="container mx-auto px-4 md:px-6">
             <motion.div 
                className="text-center mb-16"
@@ -25,8 +26,8 @@ const RentalsFacilities: React.FC = () => {
                >
                   <div className="grid grid-cols-1 lg:grid-cols-2">
                      <div className="relative min-h-[300px] lg:min-h-full overflow-hidden">
-                        <div className="absolute top-0 left-0 bg-dfw-red text-white text-[10px] font-bold uppercase tracking-widest px-4 py-2 z-20">Most Popular</div>
-                        <img src="/images/facilities/cricket-lanes.webp" className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" alt="Cricket" />
+                        <div className="absolute top-0 left-0 bg-dfw-red text-white text-\[11px\] font-bold uppercase tracking-widest px-4 py-2 z-20">Most Popular</div>
+                        <Image src="/images/facilities/cricket-lanes.webp" fill className="object-cover group-hover:scale-105 transition-transform duration-700" alt="Professional cricket lanes at DFW Indoor Sports" sizes="(max-width: 1024px) 100vw, 50vw" />
                         <div className="absolute inset-0 bg-dfw-navy/20 group-hover:bg-transparent transition-colors"></div>
                      </div>
                      <div className="p-8 lg:p-12">
@@ -59,7 +60,7 @@ const RentalsFacilities: React.FC = () => {
                            </div>
                         </div>
 
-                        <Link href="/cricket-lanes" className="inline-block text-center px-8 py-3 bg-dfw-navy text-white font-bold uppercase text-xs tracking-widest rounded-sm hover:bg-dfw-red transition-colors w-full sm:w-auto">
+                        <Link href="/cricket-lanes" className="inline-block text-center px-8 py-3 bg-dfw-navy text-white font-bold uppercase text-xs tracking-widest rounded-lg hover:bg-dfw-red transition-colors w-full sm:w-auto">
                            Book Cricket Lane
                         </Link>
                      </div>
@@ -102,12 +103,12 @@ const RentalsFacilities: React.FC = () => {
                            </div>
                         </div>
 
-                        <Link href="/badminton-courts" className="inline-block text-center px-8 py-3 border border-blue-600 text-blue-600 font-bold uppercase text-xs tracking-widest rounded-sm hover:bg-blue-600 hover:text-white transition-colors w-full sm:w-auto">
+                        <Link href="/badminton-courts" className="inline-block text-center px-8 py-3 border border-blue-600 text-blue-600 font-bold uppercase text-xs tracking-widest rounded-lg hover:bg-blue-600 hover:text-white transition-colors w-full sm:w-auto">
                            Book Badminton Court
                         </Link>
                      </div>
                      <div className="relative min-h-[300px] lg:min-h-full overflow-hidden order-1 lg:order-2">
-                        <img src="/images/hero/badminton-hero.webp" className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" alt="Badminton" />
+                        <Image src="/images/hero/badminton-hero.webp" fill className="object-cover group-hover:scale-105 transition-transform duration-700" alt="Professional badminton courts at DFW Indoor Sports" sizes="(max-width: 1024px) 100vw, 50vw" />
                         <div className="absolute inset-0 bg-blue-900/10 group-hover:bg-transparent transition-colors"></div>
                      </div>
                   </div>
@@ -130,7 +131,7 @@ const RentalsFacilities: React.FC = () => {
                         <li className="flex items-center gap-2"><CheckCircle2 size={12} className="text-green-500" /> Professional Turf Surface</li>
                         <li className="flex items-center gap-2"><CheckCircle2 size={12} className="text-green-500" /> Regulation Goals</li>
                      </ul>
-                     <Link href="/soccer-fields" className="block w-full py-2 border border-gray-200 text-gray-600 font-bold uppercase text-[10px] tracking-widest rounded-sm hover:bg-green-600 hover:text-white hover:border-green-600 transition-colors text-center">Check Availability</Link>
+                     <Link href="/soccer-fields" className="block w-full py-2 border border-gray-200 text-gray-600 font-bold uppercase text-\[11px\] tracking-widest rounded-lg hover:bg-green-600 hover:text-white hover:border-green-600 transition-colors text-center">Check Availability</Link>
                   </motion.div>
 
                   {/* Dodgeball */}
@@ -148,7 +149,7 @@ const RentalsFacilities: React.FC = () => {
                         <li className="flex items-center gap-2"><CheckCircle2 size={12} className="text-purple-500" /> Balls Included</li>
                         <li className="flex items-center gap-2"><CheckCircle2 size={12} className="text-purple-500" /> Safety Gear Provided</li>
                      </ul>
-                     <Link href="/dodgeball-courts" className="block w-full py-2 border border-gray-200 text-gray-600 font-bold uppercase text-[10px] tracking-widest rounded-sm hover:bg-purple-600 hover:text-white hover:border-purple-600 transition-colors text-center">Check Availability</Link>
+                     <Link href="/dodgeball-courts" className="block w-full py-2 border border-gray-200 text-gray-600 font-bold uppercase text-\[11px\] tracking-widest rounded-lg hover:bg-purple-600 hover:text-white hover:border-purple-600 transition-colors text-center">Check Availability</Link>
                   </motion.div>
                </div>
 

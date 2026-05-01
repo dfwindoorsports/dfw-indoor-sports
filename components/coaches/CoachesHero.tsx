@@ -27,7 +27,7 @@ const CoachesHero: React.FC = () => {
                
                animate={{ opacity: 1, y: 0 }}
                transition={{ delay: 0.2 }}
-               className="inline-flex items-center gap-3 px-4 py-1.5 rounded-full border border-white/10 bg-white/5 backdrop-blur-2xl text-white/80 font-mono text-[10px] font-medium uppercase tracking-[0.3em] mb-4 hover:bg-white/10 transition-colors cursor-default"
+               className="inline-flex items-center gap-3 px-4 py-1.5 rounded-full border border-white/10 bg-white/5 backdrop-blur-2xl text-white/80 font-mono text-\[11px\] font-medium uppercase tracking-[0.3em] mb-4 hover:bg-white/10 transition-colors cursor-default"
             >
                <Heart size={12} className="text-dfw-red fill-current" />
                More Than Instruction
@@ -57,15 +57,15 @@ const CoachesHero: React.FC = () => {
                <div className="flex gap-6 md:gap-8">
                   <div>
                      <div className="text-2xl font-header font-bold text-white">100%</div>
-                     <div className="text-[9px] font-mono text-gray-500 uppercase tracking-widest">Certified</div>
+                     <div className="text-\[11px\] font-mono text-gray-500 uppercase tracking-widest">Certified</div>
                   </div>
                   <div>
                      <div className="text-2xl font-header font-bold text-white">1:6</div>
-                     <div className="text-[9px] font-mono text-gray-500 uppercase tracking-widest">Focus Ratio</div>
+                     <div className="text-\[11px\] font-mono text-gray-500 uppercase tracking-widest">Focus Ratio</div>
                   </div>
                   <div>
                      <div className="text-2xl font-header font-bold text-white">Global</div>
-                     <div className="text-[9px] font-mono text-gray-500 uppercase tracking-widest">Experience</div>
+                     <div className="text-\[11px\] font-mono text-gray-500 uppercase tracking-widest">Experience</div>
                   </div>
                </div>
             </motion.div>
@@ -78,7 +78,7 @@ const CoachesHero: React.FC = () => {
             >
                <button
                   onClick={() => document.getElementById('faculty')?.scrollIntoView({ behavior: 'smooth' })}
-                  className="group relative px-6 py-3 bg-white text-dfw-navy font-bold uppercase tracking-widest text-xs rounded-sm overflow-hidden transition-all hover:bg-gray-100"
+                  className="group relative px-6 py-3 bg-white text-dfw-navy font-bold uppercase tracking-widest text-xs rounded-lg overflow-hidden transition-all hover:bg-gray-100"
                >
                   <div className="absolute inset-0 w-1 bg-dfw-red transition-all duration-300 group-hover:w-full opacity-10"></div>
                   <span className="relative flex items-center gap-3">

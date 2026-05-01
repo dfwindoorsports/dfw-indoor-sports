@@ -7,7 +7,7 @@ import { OptimizedImage } from '@/components/ui/OptimizedImage';
 
 const DodgeballIntro: React.FC = () => {
    return (
-      <section className="py-24 bg-white relative transition-colors duration-300">
+      <section aria-label="Dodgeball court details" className="py-24 bg-white relative transition-colors duration-300">
          {/* Background Noise */}
          <div className="absolute inset-0 bg-[url('/textures/noise.png')] opacity-[0.03]"></div>
 
@@ -63,15 +63,15 @@ const DodgeballIntro: React.FC = () => {
                   <div className="grid grid-cols-3 gap-4 mb-8 text-center">
                      <div className="p-4 bg-gray-50 rounded-lg border border-gray-100">
                         <Heart className="mx-auto text-red-500 mb-2" size={24} />
-                        <p className="text-[10px] font-bold uppercase text-gray-500">Cardio Boost</p>
+                        <p className="text-\[11px\] font-bold uppercase text-gray-500">Cardio Boost</p>
                      </div>
                      <div className="p-4 bg-gray-50 rounded-lg border border-gray-100">
                         <Zap className="mx-auto text-yellow-500 mb-2" size={24} />
-                        <p className="text-[10px] font-bold uppercase text-gray-500">Reflexes</p>
+                        <p className="text-\[11px\] font-bold uppercase text-gray-500">Reflexes</p>
                      </div>
                      <div className="p-4 bg-gray-50 rounded-lg border border-gray-100">
                         <Smile className="mx-auto text-orange-500 mb-2" size={24} />
-                        <p className="text-[10px] font-bold uppercase text-gray-500">Stress Relief</p>
+                        <p className="text-\[11px\] font-bold uppercase text-gray-500">Stress Relief</p>
                      </div>
                   </div>
                </motion.div>
@@ -94,7 +94,7 @@ const DodgeballIntro: React.FC = () => {
                         <li className="flex gap-4 items-start group/item">
                            <div className="mt-1 p-2 bg-white/10 rounded group-hover/item:bg-violet-500 transition-colors"><DollarSign size={16} className="text-white" /></div>
                            <div>
-                              <span className="block font-bold text-violet-200 uppercase text-[10px] tracking-widest mb-1">Pricing</span>
+                              <span className="block font-bold text-violet-200 uppercase text-\[11px\] tracking-widest mb-1">Pricing</span>
                               <p className="font-medium">View rates on RunSwift</p>
                               <p className="text-xs text-gray-400 mt-1">Party packages available</p>
                            </div>
@@ -102,28 +102,28 @@ const DodgeballIntro: React.FC = () => {
                         <li className="flex gap-4 items-start group/item">
                            <div className="mt-1 p-2 bg-white/10 rounded group-hover/item:bg-violet-500 transition-colors"><CheckCircle2 size={16} className="text-white" /></div>
                            <div>
-                              <span className="block font-bold text-violet-200 uppercase text-[10px] tracking-widest mb-1">Included</span>
+                              <span className="block font-bold text-violet-200 uppercase text-\[11px\] tracking-widest mb-1">Included</span>
                               <p className="font-medium">Court, Balls (All Sizes), Safety Gear</p>
                            </div>
                         </li>
                         <li className="flex gap-4 items-start group/item">
                            <div className="mt-1 p-2 bg-white/10 rounded group-hover/item:bg-violet-500 transition-colors"><Shield size={16} className="text-white" /></div>
                            <div>
-                              <span className="block font-bold text-violet-200 uppercase text-[10px] tracking-widest mb-1">Court Spec</span>
+                              <span className="block font-bold text-violet-200 uppercase text-\[11px\] tracking-widest mb-1">Court Spec</span>
                               <p className="font-medium">Regulation 50'x25' with padded zones</p>
                            </div>
                         </li>
                         <li className="flex gap-4 items-start group/item">
                            <div className="mt-1 p-2 bg-white/10 rounded group-hover/item:bg-violet-500 transition-colors"><MapPin size={16} className="text-white" /></div>
                            <div>
-                              <span className="block font-bold text-violet-200 uppercase text-[10px] tracking-widest mb-1">Location</span>
+                              <span className="block font-bold text-violet-200 uppercase text-\[11px\] tracking-widest mb-1">Location</span>
                               <p className="font-medium">16230 Three Wide Dr Suite 200, Fort Worth, TX</p>
                            </div>
                         </li>
                         <li className="flex gap-4 items-start group/item">
                            <div className="mt-1 p-2 bg-white/10 rounded group-hover/item:bg-violet-500 transition-colors"><Clock size={16} className="text-white" /></div>
                            <div>
-                              <span className="block font-bold text-violet-200 uppercase text-[10px] tracking-widest mb-1">Hours</span>
+                              <span className="block font-bold text-violet-200 uppercase text-\[11px\] tracking-widest mb-1">Hours</span>
                               <p className="font-medium">Mon-Sun 5:00 AM - 11:00 PM</p>
                            </div>
                         </li>
@@ -131,7 +131,7 @@ const DodgeballIntro: React.FC = () => {
 
                      <button
                         onClick={() => document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' })}
-                        className="w-full mt-10 py-4 bg-orange-600 text-white font-bold uppercase text-xs tracking-widest rounded-sm hover:bg-orange-500 transition-colors shadow-lg relative z-10 flex items-center justify-center gap-2 group/btn"
+                        className="w-full mt-10 py-4 bg-orange-600 text-white font-bold uppercase text-xs tracking-widest rounded-lg hover:bg-orange-500 transition-colors shadow-lg relative z-10 flex items-center justify-center gap-2 group/btn"
                      >
                         View Booking Options <ArrowRight size={14} className="group-hover/btn:translate-x-1 transition-transform" />
                      </button>

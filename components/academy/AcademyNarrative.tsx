@@ -3,10 +3,11 @@
 import React from 'react';
 import { CheckCircle2, UserCheck, HeartHandshake } from 'lucide-react';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 const AcademyNarrative: React.FC = () => {
   return (
-    <section className="py-24 bg-white relative transition-colors duration-300">
+    <section aria-label="Academy coaching narrative" className="py-24 bg-white relative transition-colors duration-300">
        <div className="container mx-auto px-4 md:px-6">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
              
@@ -17,17 +18,19 @@ const AcademyNarrative: React.FC = () => {
                 {/* Image Composition */}
                 <div className="relative rounded-lg overflow-hidden shadow-2xl group border border-gray-200">
                    <div className="absolute inset-0 bg-dfw-navy/10 mix-blend-multiply z-10 transition-opacity group-hover:opacity-0"></div>
-                   <img 
+                   <Image 
                       src="/images/facilities/bowling-machine.webp" 
-                      alt="Coach mentoring young player" 
-                      className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-1000 ease-out"
+                      alt="Coach mentoring young cricket player at DFW Indoor Sports" 
+                      fill
+                      className="object-cover transform group-hover:scale-105 transition-transform duration-1000 ease-out"
+                      sizes="(max-width: 1024px) 100vw, 50vw"
                    />
                    
                    {/* Floating Stat Card */}
                    <div className="absolute bottom-6 left-6 right-6 bg-white/95 backdrop-blur-xl p-6 rounded-lg border border-white/20 shadow-lg z-20">
                       <div className="flex justify-between items-end">
                          <div>
-                            <p className="text-[10px] font-bold text-gray-400 uppercase tracking-widest mb-1">Our Promise</p>
+                            <p className="text-\[11px\] font-bold text-gray-400 uppercase tracking-widest mb-1">Our Promise</p>
                             <h4 className="text-dfw-navy font-header font-bold text-xl uppercase">Every Player Matters</h4>
                          </div>
                          <div className="h-10 w-10 bg-dfw-red rounded-full flex items-center justify-center text-white shadow-lg">

@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 
 const AboutVision: React.FC = () => {
   return (
-    <section className="bg-[#050911] py-20 relative overflow-hidden">
+    <section aria-label="Our vision" className="bg-[#050911] py-20 relative overflow-hidden">
        <div className="container mx-auto px-4 md:px-6 relative z-10 text-center">
            <motion.span 
              className="text-dfw-red font-mono text-xs font-bold uppercase tracking-widest mb-4 block"
@@ -26,7 +26,7 @@ const AboutVision: React.FC = () => {
                  <motion.div 
                    key={i}
                    transition={{ delay: i * 0.1 }}
-                   className="p-6 border border-white/10 rounded-sm bg-white/5 hover:bg-white/10 transition-colors"
+                   className="p-6 border border-white/10 rounded-lg bg-white/5 hover:bg-white/10 transition-colors"
                  >
                     <h4 className="text-white font-bold uppercase mb-2">{item.title}</h4>
                     <p className="text-xs text-gray-400">{item.desc}</p>

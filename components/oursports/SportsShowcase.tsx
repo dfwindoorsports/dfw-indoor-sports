@@ -108,7 +108,7 @@ const sportsData = [
 
 const SportsShowcase: React.FC = () => {
   return (
-    <section className="bg-gray-50 border-y border-gray-200 transition-colors duration-300" id="sports-showcase">
+    <section aria-label="Sports showcase" className="bg-gray-50 border-y border-gray-200 transition-colors duration-300" id="sports-showcase">
        {sportsData.map((sport, index) => {
           const c = colorClasses[sport.color];
           return (
@@ -131,7 +131,7 @@ const SportsShowcase: React.FC = () => {
 
                     {/* Content */}
                     <div className="lg:w-1/2 w-full">
-                       <div className={`inline-flex items-center gap-2 px-3 py-1 rounded-sm ${c.badgeBg} ${c.badgeText} font-mono text-[10px] font-medium uppercase tracking-widest mb-6`}>
+                       <div className={`inline-flex items-center gap-2 px-3 py-1 rounded-lg ${c.badgeBg} ${c.badgeText} font-mono text-\[11px\] font-medium uppercase tracking-widest mb-6`}>
                           {sport.subtitle}
                        </div>
                        <h3 className="text-4xl md:text-5xl font-header font-bold text-dfw-navy uppercase mb-6">
@@ -165,10 +165,10 @@ const SportsShowcase: React.FC = () => {
                        </div>
 
                        <div className="flex flex-col sm:flex-row gap-4">
-                          <Link href={sport.link} className={`px-8 py-3 ${c.btn} text-white font-bold uppercase tracking-widest text-xs rounded-sm hover:opacity-90 transition-opacity shadow-lg text-center`}>
+                          <Link href={sport.link} className={`px-8 py-3 ${c.btn} text-white font-bold uppercase tracking-widest text-xs rounded-lg hover:opacity-90 transition-opacity shadow-lg text-center`}>
                              Book {sport.title}
                           </Link>
-                          <Link href={sport.link} className="px-8 py-3 border border-gray-300 text-dfw-navy font-bold uppercase tracking-widest text-xs rounded-sm hover:bg-dfw-navy hover:text-white transition-colors flex items-center justify-center gap-2 group">
+                          <Link href={sport.link} className="px-8 py-3 border border-gray-300 text-dfw-navy font-bold uppercase tracking-widest text-xs rounded-lg hover:bg-dfw-navy hover:text-white transition-colors flex items-center justify-center gap-2 group">
                              Learn More <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
                           </Link>
                        </div>

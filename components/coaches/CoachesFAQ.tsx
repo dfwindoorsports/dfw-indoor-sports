@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 
 const CoachesFAQ: React.FC = () => {
   return (
-    <section className="py-24 bg-white transition-colors duration-300">
+    <section aria-label="Coaching frequently asked questions" className="py-24 bg-white transition-colors duration-300">
        <div className="container mx-auto px-4 md:px-6 max-w-4xl">
           <motion.div 
             className="text-center mb-16"

@@ -21,7 +21,7 @@ const AboutValues: React.FC = () => {
   };
 
   return (
-    <section className="py-24 bg-gray-50 border-y border-gray-200 transition-colors duration-300" id="values">
+    <section aria-label="Our values" className="py-24 bg-gray-50 border-y border-gray-200 transition-colors duration-300" id="values">
        <div className="container mx-auto px-4 md:px-6">
           <motion.div 
             className="text-center max-w-3xl mx-auto mb-16"

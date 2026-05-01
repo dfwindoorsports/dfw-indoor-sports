@@ -3,7 +3,7 @@ import { Clock, Briefcase } from 'lucide-react';
 
 const ContactHours: React.FC = () => {
   return (
-    <section className="py-24 bg-gray-50 border-y border-gray-200">
+    <section aria-label="Operating hours" className="py-24 bg-gray-50 border-y border-gray-200">
        <div className="container mx-auto px-4 md:px-6">
           <div className="max-w-5xl mx-auto">
              <div className="text-center mb-16">
@@ -20,7 +20,7 @@ const ContactHours: React.FC = () => {
                       <div className="p-3 bg-green-50 text-green-600 rounded-lg group-hover:bg-green-600 group-hover:text-white transition-colors"><Clock size={24} /></div>
                       <div>
                          <h3 className="font-header font-bold text-xl text-dfw-navy uppercase">Facility Access</h3>
-                         <span className="text-[10px] uppercase font-bold text-green-600 tracking-widest flex items-center gap-1"><span className="w-1.5 h-1.5 rounded-full bg-green-600 animate-pulse"></span> Open Now</span>
+                         <span className="text-\[11px\] uppercase font-bold text-green-600 tracking-widest flex items-center gap-1"><span className="w-1.5 h-1.5 rounded-full bg-green-600 animate-pulse"></span> Open Now</span>
                       </div>
                    </div>
                    
@@ -47,7 +47,7 @@ const ContactHours: React.FC = () => {
                       <div className="p-3 bg-blue-50 text-blue-600 rounded-lg group-hover:bg-blue-600 group-hover:text-white transition-colors"><Briefcase size={24} /></div>
                       <div>
                          <h3 className="font-header font-bold text-xl text-dfw-navy uppercase">Front Desk</h3>
-                         <span className="text-[10px] uppercase font-bold text-gray-400 tracking-widest">Support Staff</span>
+                         <span className="text-\[11px\] uppercase font-bold text-gray-400 tracking-widest">Support Staff</span>
                       </div>
                    </div>
                    
@@ -60,7 +60,7 @@ const ContactHours: React.FC = () => {
                          <span className="text-gray-500 font-medium">Saturday - Sunday</span>
                          <span className="font-bold text-dfw-navy font-mono">8:00 AM - 8:00 PM</span>
                       </div>
-                      <p className="text-[10px] font-medium text-gray-400 italic text-center pt-3">
+                      <p className="text-\[11px\] font-medium text-gray-400 italic text-center pt-3">
                          *Voicemails left after hours are returned by 10 AM the next day.
                       </p>
                    </div>

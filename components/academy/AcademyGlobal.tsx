@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 
 const AcademyGlobal: React.FC = () => {
    return (
-      <section className="bg-white py-24 border-b border-gray-100 transition-colors duration-300">
+      <section aria-label="Academy global partnerships" className="bg-white py-24 border-b border-gray-100 transition-colors duration-300">
          <div className="container mx-auto px-4 md:px-6 text-center">
             <motion.h2
                className="text-3xl font-header font-bold text-dfw-navy uppercase mb-10"

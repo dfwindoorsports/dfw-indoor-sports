@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 import { Phone, Mail, MapPin, Facebook, Instagram, Twitter, ArrowRight, Linkedin, Send, Check } from 'lucide-react'
 import { CONTACT_INFO } from '@/constants'
 import { motion } from 'framer-motion'
@@ -95,7 +96,7 @@ export default function Footer() {
           <motion.div variants={itemVariants} className="lg:col-span-4 space-y-6">
             <div>
               <Link href="/" className="inline-block group mb-4">
-                <img src="/images/dfwlogo.png" alt="DFW Indoor Sports" className="h-12 w-auto" />
+                <Image src="/images/dfwlogo.png" alt="DFW Indoor Sports" width={120} height={48} className="h-12 w-auto" />
               </Link>
               <p className="text-sm leading-relaxed text-gray-500 font-medium max-w-sm">
                 The premier destination for indoor sports in Fort Worth. Engineered for champions, open for everyone.
@@ -108,7 +109,7 @@ export default function Footer() {
                   <MapPin size={14} />
                 </div>
                 <div>
-                  <span className="block text-[10px] font-bold uppercase tracking-widest text-gray-500 mb-0.5 group-hover:text-white transition-colors">Visit HQ</span>
+                  <span className="block text-\[11px\] font-bold uppercase tracking-widest text-gray-500 mb-0.5 group-hover:text-white transition-colors">Visit HQ</span>
                   <p className="text-xs text-gray-300 leading-snug group-hover:text-white transition-colors">
                     16230 Three Wide Drive Suite 200,<br /> Fort Worth, TX 76177
                   </p>
@@ -121,7 +122,7 @@ export default function Footer() {
                     <Phone size={14} />
                   </div>
                   <div>
-                    <span className="block text-[10px] font-bold uppercase tracking-widest text-gray-500 mb-0.5 group-hover:text-white transition-colors">Call Us</span>
+                    <span className="block text-[11px] font-bold uppercase tracking-widest text-gray-500 mb-0.5 group-hover:text-white transition-colors">Call Us</span>
                     <span className="text-xs text-gray-300 group-hover:text-white transition-colors font-mono">
                       {CONTACT_INFO.phone}
                     </span>
@@ -133,7 +134,7 @@ export default function Footer() {
                     <Mail size={14} />
                   </div>
                   <div>
-                    <span className="block text-[10px] font-bold uppercase tracking-widest text-gray-500 mb-0.5 group-hover:text-white transition-colors">Email</span>
+                    <span className="block text-[11px] font-bold uppercase tracking-widest text-gray-500 mb-0.5 group-hover:text-white transition-colors">Email</span>
                     <span className="text-xs text-gray-300 group-hover:text-white transition-colors font-mono break-all">
                       {CONTACT_INFO.email}
                     </span>
@@ -219,7 +220,7 @@ export default function Footer() {
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     placeholder="Enter email"
-                    className="w-full bg-[#050911] border border-white/10 rounded-sm py-2.5 pl-9 pr-10 text-xs text-white placeholder:text-gray-600 focus:outline-none focus:border-dfw-red focus:ring-1 focus:ring-dfw-red/50 transition-all font-mono"
+                    className="w-full bg-[#050911] border border-white/10 rounded-lg py-2.5 pl-9 pr-10 text-xs text-white placeholder:text-gray-600 focus:outline-none focus:border-dfw-red focus:ring-1 focus:ring-dfw-red/50 transition-all font-mono"
                     required
                     disabled={status === 'loading'}
                   />
@@ -227,7 +228,7 @@ export default function Footer() {
                     type="submit"
                     disabled={status === 'loading'}
                     aria-label="Subscribe to newsletter"
-                    className={`absolute right-1 p-1.5 rounded-sm transition-all shadow-md active:scale-95 disabled:opacity-50 ${status === 'success' ? 'bg-green-600 text-white' :
+                    className={`absolute right-1 p-1.5 rounded-lg transition-all shadow-md active:scale-95 disabled:opacity-50 ${status === 'success' ? 'bg-green-600 text-white' :
                       status === 'error' ? 'bg-red-600 text-white' :
                         'bg-dfw-red hover:bg-red-600 text-white'
                       }`}
@@ -254,23 +255,23 @@ export default function Footer() {
                 />
                 {/* Status message */}
                 {message && (
-                  <p className={`text-[10px] font-medium mt-2 ${status === 'success' ? 'text-green-400' : 'text-red-400'}`}>
+                  <p className={`text-\[11px\] font-medium mt-2 ${status === 'success' ? 'text-green-400' : 'text-red-400'}`}>
                     {message}
                   </p>
                 )}
               </form>
 
               <div>
-                <span className="text-[9px] font-bold uppercase tracking-widest text-gray-600 mb-3 block">Follow Us</span>
+                <span className="text-[11px] font-bold uppercase tracking-widest text-gray-600 mb-3 block">Follow Us</span>
                 <div className="flex gap-2">
                   {[
                     { icon: Instagram, href: "https://www.instagram.com/dfwindoorsports", label: "Instagram", color: "hover:text-pink-500 hover:border-pink-500/30" },
                     { icon: Facebook, href: "https://www.facebook.com/dfwindoorsports", label: "Facebook", color: "hover:text-blue-500 hover:border-blue-500/30" },
-                    { icon: Twitter, href: "https://twitter.com/dfwindoorsports", label: "Twitter", color: "hover:text-sky-400 hover:border-sky-400/30" },
+                    { icon: Twitter, href: "https://x.com/dfwindoorsports", label: "X (formerly Twitter)", color: "hover:text-sky-400 hover:border-sky-400/30" },
                     { icon: Linkedin, href: "https://www.linkedin.com/company/dfw-indoor-sports", label: "LinkedIn", color: "hover:text-blue-700 hover:border-blue-700/30" }
                   ].map((Social, i) => (
-                    <a key={i} href={Social.href} aria-label={Social.label} className={`w-8 h-8 flex items-center justify-center rounded-sm bg-white/5 border border-white/5 text-gray-500 ${Social.color} hover:bg-white/10 transition-all duration-300`}>
-                      <Social.icon size={14} />
+                    <a key={i} href={Social.href} aria-label={Social.label} className={`w-11 h-11 flex items-center justify-center rounded-lg bg-white/5 border border-white/5 text-gray-500 ${Social.color} hover:bg-white/10 transition-all duration-300`}>
+                      <Social.icon size={18} />
                     </a>
                   ))}
                 </div>
@@ -288,11 +289,11 @@ export default function Footer() {
           className="border-t border-white/5 pt-8 flex flex-col-reverse md:flex-row justify-between items-center gap-6"
         >
           <div className="flex flex-col md:flex-row items-center gap-4">
-            <p className="text-[10px] font-medium font-mono text-gray-600 uppercase tracking-widest text-center md:text-left">
+            <p className="text-[11px] font-medium font-mono text-gray-600 uppercase tracking-widest text-center md:text-left">
               © {new Date().getFullYear()} DFW Indoor Sports.
             </p>
             <span className="hidden md:block text-gray-800">|</span>
-            <p className="text-[10px] font-medium font-mono text-gray-600 uppercase tracking-widest text-center md:text-left">
+            <p className="text-[11px] font-medium font-mono text-gray-600 uppercase tracking-widest text-center md:text-left">
               Built for Athletes.
             </p>
           </div>
@@ -305,7 +306,7 @@ export default function Footer() {
                     item === 'Privacy Policy' ? '/privacy' :
                       item === 'Terms of Service' ? '/terms' : '#'
               return (
-                <Link key={i} href={path} className="text-[10px] font-medium font-mono text-gray-500 hover:text-white uppercase tracking-widest transition-colors relative group">
+                <Link key={i} href={path} className="text-[11px] font-medium font-mono text-gray-500 hover:text-white uppercase tracking-widest transition-colors relative group">
                   {item}
                   <span className="absolute -bottom-1 left-0 w-0 h-[1px] bg-white transition-all duration-300 group-hover:w-full opacity-30"></span>
                 </Link>

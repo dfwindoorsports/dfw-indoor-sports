@@ -3,7 +3,7 @@ import { ChevronDown } from 'lucide-react';
 
 const ContactFAQ: React.FC = () => {
   return (
-    <section className="py-24 bg-white transition-colors duration-300">
+    <section aria-label="Contact frequently asked questions" className="py-24 bg-white transition-colors duration-300">
        <div className="container mx-auto px-4 md:px-6 max-w-3xl">
           <h2 className="text-3xl font-header font-bold text-dfw-navy uppercase mb-12 text-center">Still Have Questions?</h2>
           

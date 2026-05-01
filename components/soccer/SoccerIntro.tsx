@@ -7,7 +7,7 @@ import { OptimizedImage } from '@/components/ui/OptimizedImage';
 
 const SoccerIntro: React.FC = () => {
    return (
-      <section className="py-24 bg-white relative transition-colors duration-300">
+      <section aria-label="Indoor soccer field details" className="py-24 bg-white relative transition-colors duration-300">
          {/* Background Noise */}
          <div className="absolute inset-0 bg-[url('/textures/noise.png')] opacity-[0.03]"></div>
 
@@ -63,15 +63,15 @@ const SoccerIntro: React.FC = () => {
                   <div className="grid grid-cols-3 gap-4 mb-8 text-center">
                      <div className="p-4 bg-gray-50 rounded-lg border border-gray-100">
                         <Sun className="mx-auto text-orange-500 mb-2" size={24} />
-                        <p className="text-[10px] font-bold uppercase text-gray-500">No Heat Exhaustion</p>
+                        <p className="text-\[11px\] font-bold uppercase text-gray-500">No Heat Exhaustion</p>
                      </div>
                      <div className="p-4 bg-gray-50 rounded-lg border border-gray-100">
                         <CloudRain className="mx-auto text-blue-500 mb-2" size={24} />
-                        <p className="text-[10px] font-bold uppercase text-gray-500">No Rainouts</p>
+                        <p className="text-\[11px\] font-bold uppercase text-gray-500">No Rainouts</p>
                      </div>
                      <div className="p-4 bg-gray-50 rounded-lg border border-gray-100">
                         <Wind className="mx-auto text-gray-500 mb-2" size={24} />
-                        <p className="text-[10px] font-bold uppercase text-gray-500">No Wind Interference</p>
+                        <p className="text-\[11px\] font-bold uppercase text-gray-500">No Wind Interference</p>
                      </div>
                   </div>
                </motion.div>
@@ -94,36 +94,36 @@ const SoccerIntro: React.FC = () => {
                         <li className="flex gap-4 items-start group/item">
                            <div className="mt-1 p-2 bg-white/10 rounded group-hover/item:bg-emerald-500 transition-colors"><DollarSign size={16} className="text-white" /></div>
                            <div>
-                              <span className="block font-bold text-emerald-200 uppercase text-[10px] tracking-widest mb-1">Pricing</span>
+                              <span className="block font-bold text-emerald-200 uppercase text-\[11px\] tracking-widest mb-1">Pricing</span>
                               <p className="font-medium">View rates on RunSwift</p>
-                              <p className="text-xs text-gray-400 mt-1">GOLD membership (Cricket + Badminton) \/mo</p>
+                              <p className="text-xs text-gray-400 mt-1">GOLD membership (Cricket + Badminton) $109/mo</p>
                            </div>
                         </li>
                         <li className="flex gap-4 items-start group/item">
                            <div className="mt-1 p-2 bg-white/10 rounded group-hover/item:bg-emerald-500 transition-colors"><CheckCircle2 size={16} className="text-white" /></div>
                            <div>
-                              <span className="block font-bold text-emerald-200 uppercase text-[10px] tracking-widest mb-1">Field Size</span>
+                              <span className="block font-bold text-emerald-200 uppercase text-\[11px\] tracking-widest mb-1">Field Size</span>
                               <p className="font-medium">Indoor soccer field</p>
                            </div>
                         </li>
                         <li className="flex gap-4 items-start group/item">
                            <div className="mt-1 p-2 bg-white/10 rounded group-hover/item:bg-emerald-500 transition-colors"><Shield size={16} className="text-white" /></div>
                            <div>
-                              <span className="block font-bold text-emerald-200 uppercase text-[10px] tracking-widest mb-1">Surface</span>
+                              <span className="block font-bold text-emerald-200 uppercase text-\[11px\] tracking-widest mb-1">Surface</span>
                               <p className="font-medium">professional artificial turf</p>
                            </div>
                         </li>
                         <li className="flex gap-4 items-start group/item">
                            <div className="mt-1 p-2 bg-white/10 rounded group-hover/item:bg-emerald-500 transition-colors"><MapPin size={16} className="text-white" /></div>
                            <div>
-                              <span className="block font-bold text-emerald-200 uppercase text-[10px] tracking-widest mb-1">Location</span>
+                              <span className="block font-bold text-emerald-200 uppercase text-\[11px\] tracking-widest mb-1">Location</span>
                               <p className="font-medium">16230 Three Wide Dr Suite 200, Fort Worth, TX</p>
                            </div>
                         </li>
                         <li className="flex gap-4 items-start group/item">
                            <div className="mt-1 p-2 bg-white/10 rounded group-hover/item:bg-emerald-500 transition-colors"><Clock size={16} className="text-white" /></div>
                            <div>
-                              <span className="block font-bold text-emerald-200 uppercase text-[10px] tracking-widest mb-1">Hours</span>
+                              <span className="block font-bold text-emerald-200 uppercase text-\[11px\] tracking-widest mb-1">Hours</span>
                               <p className="font-medium">Mon-Sun 5:00 AM - 11:00 PM</p>
                            </div>
                         </li>
@@ -131,7 +131,7 @@ const SoccerIntro: React.FC = () => {
 
                      <a
                         href="https://book.runswiftapp.com/facilities/dfw-indoor-sports/rentals" target="_blank" rel="noopener noreferrer"
-                        className="w-full mt-10 py-4 bg-emerald-500 text-white font-bold uppercase text-xs tracking-widest rounded-sm hover:bg-emerald-400 transition-colors shadow-lg relative z-10 flex items-center justify-center gap-2 group/btn"
+                        className="w-full mt-10 py-4 bg-emerald-500 text-white font-bold uppercase text-xs tracking-widest rounded-lg hover:bg-emerald-400 transition-colors shadow-lg relative z-10 flex items-center justify-center gap-2 group/btn"
                      >
                         Book Field Now <ArrowRight size={14} className="group-hover/btn:translate-x-1 transition-transform" />
                      </a>

@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 
 const CoachesPhilosophy: React.FC = () => {
    return (
-      <section className="bg-[#050911] text-white py-24 md:py-32 relative overflow-hidden">
+      <section aria-label="Coaching philosophy" className="bg-[#050911] text-white py-24 md:py-32 relative overflow-hidden">
          <div className="absolute inset-0 bg-[url('/textures/cubes.png')] opacity-[0.03]"></div>
          <div className="absolute bottom-0 left-0 w-1/3 h-full bg-gradient-to-r from-dfw-red/5 to-transparent pointer-events-none"></div>
 
@@ -31,7 +31,7 @@ const CoachesPhilosophy: React.FC = () => {
                   <motion.div
                      key={i}
                      transition={{ delay: i * 0.1 }}
-                     className="bg-white/5 backdrop-blur-sm border border-white/10 p-8 rounded-sm hover:border-dfw-red/50 hover:bg-white/10 transition-all duration-300 group relative overflow-hidden"
+                     className="bg-white/5 backdrop-blur-sm border border-white/10 p-8 rounded-lg hover:border-dfw-red/50 hover:bg-white/10 transition-all duration-300 group relative overflow-hidden"
                   >
                      <div className="relative z-10">
                         <div className="w-12 h-12 bg-white/5 rounded-lg flex items-center justify-center mb-6 text-dfw-red border border-white/10 shadow-inner group-hover:scale-110 transition-transform">

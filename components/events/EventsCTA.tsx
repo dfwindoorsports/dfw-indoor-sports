@@ -7,7 +7,7 @@ import Link from 'next/link';
 
 const EventsCTA: React.FC = () => {
    return (
-      <section id="planning" className="py-24 bg-dfw-navy relative overflow-hidden text-center transition-colors duration-300">
+      <section aria-label="Plan your event" id="planning" className="py-24 bg-dfw-navy relative overflow-hidden text-center transition-colors duration-300">
          <div className="absolute inset-0 bg-[url('/textures/stardust.png')] opacity-10"></div>
          <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
 

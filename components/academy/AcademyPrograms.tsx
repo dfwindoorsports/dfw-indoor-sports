@@ -4,6 +4,7 @@ import React from 'react';
 import { ArrowRight, CheckCircle2, User, Users, Star, TrendingUp, Trophy } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { OptimizedImage } from '@/components/ui/OptimizedImage';
+import Image from 'next/image';
 
 const AcademyPrograms: React.FC = () => {
    const containerVariants = {
@@ -22,7 +23,7 @@ const AcademyPrograms: React.FC = () => {
    };
 
    return (
-      <section className="bg-gray-50 py-24 border-y border-gray-200 relative overflow-hidden transition-colors duration-300">
+      <section aria-label="Academy training programs" className="bg-gray-50 py-24 border-y border-gray-200 relative overflow-hidden transition-colors duration-300">
          {/* Background Texture */}
          <div className="absolute inset-0 bg-[url('/textures/cubes.png')] opacity-[0.03]"></div>
 
@@ -74,8 +75,8 @@ const AcademyPrograms: React.FC = () => {
                {/* Program 1: Foundation */}
                <motion.div variants={itemVariants} className="group bg-white rounded-lg border border-gray-200 overflow-hidden hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 flex flex-col h-full">
                   <div className="h-48 overflow-hidden relative">
-                     <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-md px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-green-600 rounded-sm z-10 shadow-sm flex items-center gap-2"><Star size={10} /> Ages 5-11</div>
-                     <img src="/images/sports/cricket-training.webp" alt="Youth Cricket Training" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+                     <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-md px-3 py-1 text-\[11px\] font-bold uppercase tracking-widest text-green-600 rounded-lg z-10 shadow-sm flex items-center gap-2"><Star size={10} /> Ages 5-11</div>
+                     <Image src="/images/sports/cricket-training.webp" alt="Youth Cricket Training" fill className="object-cover group-hover:scale-110 transition-transform duration-700" sizes="(max-width: 768px) 100vw, 25vw" />
                      <div className="absolute inset-0 bg-gradient-to-t from-dfw-navy/80 to-transparent opacity-60"></div>
                   </div>
                   <div className="p-6 flex flex-col flex-grow">
@@ -87,18 +88,18 @@ const AcademyPrograms: React.FC = () => {
                         Focus on falling in love with the game. We teach grip, stance, and basic mechanics through fun, high-energy drills.
                      </p>
                      <ul className="space-y-2 mb-6 mt-auto">
-                        <li className="flex items-center gap-2 text-[10px] font-bold text-gray-400 uppercase"><CheckCircle2 size={12} className="text-green-500" /> Soft ball introduction</li>
-                        <li className="flex items-center gap-2 text-[10px] font-bold text-gray-400 uppercase"><CheckCircle2 size={12} className="text-green-500" /> Hand-eye coordination</li>
+                        <li className="flex items-center gap-2 text-\[11px\] font-bold text-gray-400 uppercase"><CheckCircle2 size={12} className="text-green-500" /> Soft ball introduction</li>
+                        <li className="flex items-center gap-2 text-\[11px\] font-bold text-gray-400 uppercase"><CheckCircle2 size={12} className="text-green-500" /> Hand-eye coordination</li>
                      </ul>
-                     <button className="w-full py-3 border border-gray-200 text-dfw-navy text-[10px] font-bold uppercase tracking-widest rounded-sm group-hover:bg-green-600 group-hover:text-white group-hover:border-green-600 transition-colors">Details</button>
+                     <button className="w-full py-3 border border-gray-200 text-dfw-navy text-\[11px\] font-bold uppercase tracking-widest rounded-lg group-hover:bg-green-600 group-hover:text-white group-hover:border-green-600 transition-colors">Details</button>
                   </div>
                </motion.div>
 
                {/* Program 2: Development */}
                <motion.div variants={itemVariants} className="group bg-white rounded-lg border border-gray-200 overflow-hidden hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 flex flex-col h-full">
                   <div className="h-48 overflow-hidden relative">
-                     <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-md px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-blue-600 rounded-sm z-10 shadow-sm flex items-center gap-2"><TrendingUp size={10} /> Ages 12-16</div>
-                     <img src="/images/facilities/bowling-machine.webp" alt="Junior Cricket Development" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+                     <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-md px-3 py-1 text-\[11px\] font-bold uppercase tracking-widest text-blue-600 rounded-lg z-10 shadow-sm flex items-center gap-2"><TrendingUp size={10} /> Ages 12-16</div>
+                     <Image src="/images/facilities/bowling-machine.webp" alt="Junior Cricket Development" fill className="object-cover group-hover:scale-110 transition-transform duration-700" sizes="(max-width: 768px) 100vw, 25vw" />
                      <div className="absolute inset-0 bg-gradient-to-t from-dfw-navy/80 to-transparent opacity-60"></div>
                   </div>
                   <div className="p-6 flex flex-col flex-grow">
@@ -110,10 +111,10 @@ const AcademyPrograms: React.FC = () => {
                         Transitioning to hard ball cricket. Advanced shot selection, bowling variations, and introduction to match strategy.
                      </p>
                      <ul className="space-y-2 mb-6 mt-auto">
-                        <li className="flex items-center gap-2 text-[10px] font-bold text-gray-400 uppercase"><CheckCircle2 size={12} className="text-blue-500" /> Hard ball nets</li>
-                        <li className="flex items-center gap-2 text-[10px] font-bold text-gray-400 uppercase"><CheckCircle2 size={12} className="text-blue-500" /> Game scenarios</li>
+                        <li className="flex items-center gap-2 text-\[11px\] font-bold text-gray-400 uppercase"><CheckCircle2 size={12} className="text-blue-500" /> Hard ball nets</li>
+                        <li className="flex items-center gap-2 text-\[11px\] font-bold text-gray-400 uppercase"><CheckCircle2 size={12} className="text-blue-500" /> Game scenarios</li>
                      </ul>
-                     <button className="w-full py-3 border border-gray-200 text-dfw-navy text-[10px] font-bold uppercase tracking-widest rounded-sm group-hover:bg-blue-600 group-hover:text-white group-hover:border-blue-600 transition-colors">Details</button>
+                     <button className="w-full py-3 border border-gray-200 text-dfw-navy text-\[11px\] font-bold uppercase tracking-widest rounded-lg group-hover:bg-blue-600 group-hover:text-white group-hover:border-blue-600 transition-colors">Details</button>
                   </div>
                </motion.div>
 
@@ -121,8 +122,8 @@ const AcademyPrograms: React.FC = () => {
                <motion.div variants={itemVariants} className="group bg-dfw-navy rounded-lg border border-dfw-navy overflow-hidden hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 relative flex flex-col h-full shadow-lg">
                   <div className="absolute inset-0 bg-[url('/textures/carbon-fibre.png')] opacity-10 mix-blend-overlay"></div>
                   <div className="h-48 overflow-hidden relative">
-                     <div className="absolute top-4 left-4 bg-dfw-red px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-white rounded-sm z-10 shadow-md flex items-center gap-2"><Trophy size={10} /> Invitational</div>
-                     <img src="/images/sports/cricket-training.webp" alt="Elite Cricket Training" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700 grayscale group-hover:grayscale-0" />
+                     <div className="absolute top-4 left-4 bg-dfw-red px-3 py-1 text-\[11px\] font-bold uppercase tracking-widest text-white rounded-lg z-10 shadow-md flex items-center gap-2"><Trophy size={10} /> Invitational</div>
+                     <Image src="/images/sports/cricket-training.webp" alt="Elite Cricket Training" fill className="object-cover group-hover:scale-110 transition-transform duration-700 grayscale group-hover:grayscale-0" sizes="(max-width: 768px) 100vw, 25vw" />
                      <div className="absolute inset-0 bg-gradient-to-t from-dfw-navy via-dfw-navy/50 to-transparent"></div>
                   </div>
                   <div className="p-6 relative z-10 flex flex-col flex-grow">
@@ -134,18 +135,18 @@ const AcademyPrograms: React.FC = () => {
                         Intensive coaching for aspiring pros. Data-driven video analysis, biomechanics correction, and mental conditioning.
                      </p>
                      <ul className="space-y-2 mb-6 mt-auto">
-                        <li className="flex items-center gap-2 text-[10px] font-bold text-gray-500 uppercase"><CheckCircle2 size={12} className="text-dfw-red" /> 1-on-1 Mentorship</li>
-                        <li className="flex items-center gap-2 text-[10px] font-bold text-gray-500 uppercase"><CheckCircle2 size={12} className="text-dfw-red" /> College Recruitment</li>
+                        <li className="flex items-center gap-2 text-\[11px\] font-bold text-gray-500 uppercase"><CheckCircle2 size={12} className="text-dfw-red" /> 1-on-1 Mentorship</li>
+                        <li className="flex items-center gap-2 text-\[11px\] font-bold text-gray-500 uppercase"><CheckCircle2 size={12} className="text-dfw-red" /> College Recruitment</li>
                      </ul>
-                     <button className="w-full py-3 bg-dfw-red border border-dfw-red text-white text-[10px] font-bold uppercase tracking-widest rounded-sm hover:bg-red-600 transition-colors shadow-lg">Apply Now</button>
+                     <button className="w-full py-3 bg-dfw-red border border-dfw-red text-white text-\[11px\] font-bold uppercase tracking-widest rounded-lg hover:bg-red-600 transition-colors shadow-lg">Apply Now</button>
                   </div>
                </motion.div>
 
                {/* Program 4: Adult */}
                <motion.div variants={itemVariants} className="group bg-white rounded-lg border border-gray-200 overflow-hidden hover:shadow-2xl hover:-translate-y-2 transition-all duration-500 flex flex-col h-full">
                   <div className="h-48 overflow-hidden relative">
-                     <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-md px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-orange-500 rounded-sm z-10 shadow-sm flex items-center gap-2"><Users size={10} /> Adults 18+</div>
-                     <img src="/images/hero/cricket-hero.webp" alt="Adult Cricket Training" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+                     <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-md px-3 py-1 text-\[11px\] font-bold uppercase tracking-widest text-orange-500 rounded-lg z-10 shadow-sm flex items-center gap-2"><Users size={10} /> Adults 18+</div>
+                     <Image src="/images/hero/cricket-hero.webp" alt="Adult Cricket Training" fill className="object-cover group-hover:scale-110 transition-transform duration-700" sizes="(max-width: 768px) 100vw, 25vw" />
                      <div className="absolute inset-0 bg-gradient-to-t from-dfw-navy/80 to-transparent opacity-60"></div>
                   </div>
                   <div className="p-6 flex flex-col flex-grow">
@@ -157,10 +158,10 @@ const AcademyPrograms: React.FC = () => {
                         For league players looking to refine their game or enthusiasts wanting a great workout. Evening and weekend sessions.
                      </p>
                      <ul className="space-y-2 mb-6 mt-auto">
-                        <li className="flex items-center gap-2 text-[10px] font-bold text-gray-400 uppercase"><CheckCircle2 size={12} className="text-orange-500" /> Technique Correction</li>
-                        <li className="flex items-center gap-2 text-[10px] font-bold text-gray-400 uppercase"><CheckCircle2 size={12} className="text-orange-500" /> Match Fitness</li>
+                        <li className="flex items-center gap-2 text-\[11px\] font-bold text-gray-400 uppercase"><CheckCircle2 size={12} className="text-orange-500" /> Technique Correction</li>
+                        <li className="flex items-center gap-2 text-\[11px\] font-bold text-gray-400 uppercase"><CheckCircle2 size={12} className="text-orange-500" /> Match Fitness</li>
                      </ul>
-                     <button className="w-full py-3 border border-gray-200 text-dfw-navy text-[10px] font-bold uppercase tracking-widest rounded-sm group-hover:bg-orange-500 group-hover:text-white group-hover:border-orange-500 transition-colors">Details</button>
+                     <button className="w-full py-3 border border-gray-200 text-dfw-navy text-\[11px\] font-bold uppercase tracking-widest rounded-lg group-hover:bg-orange-500 group-hover:text-white group-hover:border-orange-500 transition-colors">Details</button>
                   </div>
                </motion.div>
             </motion.div>

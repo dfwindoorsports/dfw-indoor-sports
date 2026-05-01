@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 
 const CricketComparison: React.FC = () => {
   return (
-    <section className="py-24 bg-gray-50 border-t border-gray-200 transition-colors duration-300">
+    <section aria-label="Cricket facility comparison" className="py-24 bg-gray-50 border-t border-gray-200 transition-colors duration-300">
        <div className="container mx-auto px-4 md:px-6">
           
           {/* Comparison Table */}
@@ -72,7 +72,7 @@ const CricketComparison: React.FC = () => {
                       <p className="text-gray-600 text-sm italic mb-6 leading-relaxed">"{t.text}"</p>
                       <div>
                          <p className="font-bold text-cricket uppercase text-xs">{t.name}</p>
-                         <p className="text-gray-400 text-[10px] font-medium uppercase tracking-widest">{t.role}</p>
+                         <p className="text-gray-400 text-\[11px\] font-medium uppercase tracking-widest">{t.role}</p>
                       </div>
                    </motion.div>
                 ))}

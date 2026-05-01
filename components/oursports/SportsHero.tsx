@@ -26,7 +26,7 @@ const SportsHero: React.FC = () => {
                
                animate={{ opacity: 1, y: 0 }}
                transition={{ delay: 0.2 }}
-               className="inline-flex items-center gap-3 px-4 py-1.5 rounded-full bg-gray-800 text-dfw-red font-mono text-[10px] font-medium uppercase tracking-[0.25em] mb-4 cursor-default"
+               className="inline-flex items-center gap-3 px-4 py-1.5 rounded-full bg-gray-800 text-dfw-red font-mono text-\[11px\] font-medium uppercase tracking-[0.25em] mb-4 cursor-default"
             >
                <span className="w-1.5 h-1.5 rounded-full bg-dfw-red"></span>
                Fort Worth's Active Hub
@@ -56,11 +56,11 @@ const SportsHero: React.FC = () => {
                <div className="hidden md:flex gap-6 border-l border-white/10 pl-6">
                   <div>
                      <div className="text-xl font-header font-bold text-white">4</div>
-                     <div className="text-[10px] font-medium text-gray-500 uppercase tracking-widest font-mono">Core Sports</div>
+                     <div className="text-\[11px\] font-medium text-gray-500 uppercase tracking-widest font-mono">Core Sports</div>
                   </div>
                   <div>
                      <div className="text-xl font-header font-bold text-white">1</div>
-                     <div className="text-[10px] font-medium text-gray-500 uppercase tracking-widest font-mono">Thriving Community</div>
+                     <div className="text-\[11px\] font-medium text-gray-500 uppercase tracking-widest font-mono">Thriving Community</div>
                   </div>
                </div>
             </motion.div>
@@ -73,12 +73,12 @@ const SportsHero: React.FC = () => {
             >
                <button
                   onClick={() => document.getElementById('sports-showcase')?.scrollIntoView({ behavior: 'smooth' })}
-                  className="group relative px-6 py-3 bg-dfw-red text-white font-bold uppercase tracking-widest text-xs rounded-sm overflow-hidden shadow-[0_0_40px_rgba(214,40,40,0.4)] transition-all hover:shadow-[0_0_60px_rgba(214,40,40,0.6)] hover:-translate-y-1"
+                  className="group relative px-6 py-3 bg-dfw-red text-white font-bold uppercase tracking-widest text-xs rounded-lg overflow-hidden shadow-[0_0_40px_rgba(214,40,40,0.4)] transition-all hover:shadow-[0_0_60px_rgba(214,40,40,0.6)] hover:-translate-y-1"
                >
 
                   <span className="relative flex items-center gap-3">Find Your Sport <ChevronRight size={14} /></span>
                </button>
-               <button className="px-6 py-3 border border-white/20 bg-white/5 backdrop-blur-md text-white font-bold uppercase tracking-widest text-xs rounded-sm hover:bg-white hover:text-dfw-navy transition-all flex items-center gap-3">
+               <button className="px-6 py-3 border border-white/20 bg-white/5 backdrop-blur-md text-white font-bold uppercase tracking-widest text-xs rounded-lg hover:bg-white hover:text-dfw-navy transition-all flex items-center gap-3">
                   <Heart size={14} fill="currentColor" className="text-dfw-red" /> Join the Family
                </button>
             </motion.div>

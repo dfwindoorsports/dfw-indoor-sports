@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 const ContactCTA: React.FC = () => {
    return (
-      <section className="py-32 bg-[#020408] relative overflow-hidden text-center">
+      <section aria-label="Contact call to action" className="py-32 bg-[#020408] relative overflow-hidden text-center">
          {/* Background Effects */}
          <div className="absolute inset-0 bg-[url('/textures/carbon-fibre.png')] opacity-20 mix-blend-overlay"></div>
          <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-transparent via-[#020408]/90 to-[#020408] pointer-events-none"></div>

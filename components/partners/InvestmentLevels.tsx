@@ -12,7 +12,7 @@ const InvestmentLevels: React.FC = () => {
   };
 
   return (
-    <section className="py-24 bg-gray-50 border-t border-gray-200 transition-colors duration-300">
+    <section aria-label="Investment levels" className="py-24 bg-gray-50 border-t border-gray-200 transition-colors duration-300">
        <div className="container mx-auto px-4 md:px-6">
           <motion.h2 
             className="text-3xl font-header font-bold text-dfw-navy uppercase mb-12 text-center"
@@ -37,7 +37,7 @@ const InvestmentLevels: React.FC = () => {
                       <li key={i} className="flex gap-3 text-xs text-gray-600"><Check size={14} className="text-gray-400" /> {item}</li>
                    ))}
                 </ul>
-                <Link href="/partners#contact-partners" className="w-full py-3 border border-gray-200 text-gray-600 font-bold uppercase text-[10px] tracking-widest rounded-sm hover:bg-gray-100 transition-colors block text-center">Select Bronze</Link>
+                <Link href="/partners#contact-partners" className="w-full py-3 border border-gray-200 text-gray-600 font-bold uppercase text-\[11px\] tracking-widest rounded-lg hover:bg-gray-100 transition-colors block text-center">Select Bronze</Link>
              </motion.div>
 
              {/* Silver */}
@@ -50,12 +50,12 @@ const InvestmentLevels: React.FC = () => {
                       <li key={i} className="flex gap-3 text-xs text-gray-600"><Check size={14} className="text-dfw-navy" /> {item}</li>
                    ))}
                 </ul>
-                <Link href="/partners#contact-partners" className="w-full py-3 border border-gray-200 text-gray-600 font-bold uppercase text-[10px] tracking-widest rounded-sm hover:bg-gray-100 transition-colors block text-center">Select Silver</Link>
+                <Link href="/partners#contact-partners" className="w-full py-3 border border-gray-200 text-gray-600 font-bold uppercase text-\[11px\] tracking-widest rounded-lg hover:bg-gray-100 transition-colors block text-center">Select Silver</Link>
              </motion.div>
 
              {/* Gold - Highlight */}
              <motion.div variants={itemVariants} className="bg-dfw-navy p-8 rounded-lg border border-dfw-navy shadow-2xl relative transform lg:-translate-y-4 overflow-hidden">
-                <div className="absolute top-0 right-0 bg-gradient-to-r from-dfw-red to-red-600 text-white text-[9px] font-bold uppercase px-3 py-1 rounded-bl-sm shadow-md">Best Value</div>
+                <div className="absolute top-0 right-0 bg-gradient-to-r from-dfw-red to-red-600 text-white text-\[11px\] font-bold uppercase px-3 py-1 rounded-bl-sm shadow-md">Best Value</div>
                 <div className="absolute inset-0 bg-[url('/textures/carbon-fibre.png')] opacity-20 mix-blend-overlay"></div>
                 
                 <h3 className="font-header font-bold text-2xl text-white uppercase mb-2 relative z-10">Gold</h3>
@@ -69,7 +69,7 @@ const InvestmentLevels: React.FC = () => {
                       <li key={i} className="flex gap-3 text-xs text-gray-300"><Check size={14} className="text-dfw-red" /> {item}</li>
                    ))}
                 </ul>
-                <Link href="/partners#contact-partners" className="w-full py-4 bg-dfw-red text-white font-bold uppercase text-[10px] tracking-widest rounded-sm hover:bg-red-600 transition-colors shadow-lg relative z-10 block text-center">Select Gold</Link>
+                <Link href="/partners#contact-partners" className="w-full py-4 bg-dfw-red text-white font-bold uppercase text-\[11px\] tracking-widest rounded-lg hover:bg-red-600 transition-colors shadow-lg relative z-10 block text-center">Select Gold</Link>
              </motion.div>
 
              {/* Platinum */}
@@ -82,7 +82,7 @@ const InvestmentLevels: React.FC = () => {
                       <li key={i} className="flex gap-3 text-xs text-gray-600"><Check size={14} className="text-dfw-navy" /> {item}</li>
                    ))}
                 </ul>
-                <Link href="/partners#contact-partners" className="w-full py-3 border border-gray-200 text-gray-600 font-bold uppercase text-[10px] tracking-widest rounded-sm hover:bg-gray-100 transition-colors block text-center">Contact Us</Link>
+                <Link href="/partners#contact-partners" className="w-full py-3 border border-gray-200 text-gray-600 font-bold uppercase text-\[11px\] tracking-widest rounded-lg hover:bg-gray-100 transition-colors block text-center">Contact Us</Link>
              </motion.div>
 
           </motion.div>

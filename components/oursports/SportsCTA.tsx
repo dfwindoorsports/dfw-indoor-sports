@@ -7,7 +7,7 @@ import Link from 'next/link';
 
 const SportsCTA: React.FC = () => {
    return (
-      <section className="py-24 bg-dfw-navy relative overflow-hidden text-center">
+      <section aria-label="Sports call to action" className="py-24 bg-dfw-navy relative overflow-hidden text-center">
          <div className="absolute inset-0 bg-[url('/textures/stardust.png')] opacity-10"></div>
          <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
 
@@ -33,10 +33,10 @@ const SportsCTA: React.FC = () => {
                transition={{ delay: 0.3 }}
                className="flex flex-col sm:flex-row justify-center gap-4 mb-12"
             >
-               <Link href="/rentals" className="px-10 py-5 bg-dfw-red text-white font-bold uppercase tracking-widest text-sm rounded-sm hover:bg-red-700 transition-colors shadow-[0_0_30px_rgba(214,40,40,0.4)]">
+               <Link href="/rentals" className="px-10 py-5 bg-dfw-red text-white font-bold uppercase tracking-widest text-sm rounded-full hover:bg-red-700 transition-colors shadow-[0_0_30px_rgba(214,40,40,0.4)]">
                   Book A Court
                </Link>
-               <Link href="/contact" className="px-10 py-5 border border-white/20 text-white font-bold uppercase tracking-widest text-sm rounded-sm hover:bg-white hover:text-dfw-navy transition-colors">
+               <Link href="/contact" className="px-10 py-5 border border-white/20 text-white font-bold uppercase tracking-widest text-sm rounded-full hover:bg-white hover:text-dfw-navy transition-colors">
                   Visit Us
                </Link>
             </motion.div>

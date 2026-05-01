@@ -12,7 +12,7 @@ interface TestimonialProps {
 
 export default function CityTestimonial({ quote, author, location }: TestimonialProps) {
     return (
-        <section className="py-20 bg-[#050911] relative overflow-hidden">
+        <section aria-label="Member testimonial" className="py-20 bg-[#050911] relative overflow-hidden">
             {/* Subtle texture */}
             <div className="absolute inset-0 bg-[url('/textures/carbon-fibre.png')] opacity-20 mix-blend-overlay" />
 
@@ -51,7 +51,7 @@ export default function CityTestimonial({ quote, author, location }: Testimonial
                         <div className="text-sm font-bold text-white uppercase tracking-wider">
                             {author}
                         </div>
-                        <div className="text-[10px] font-medium text-gray-500 uppercase tracking-widest font-mono">
+                        <div className="text-\[11px\] font-medium text-gray-500 uppercase tracking-widest font-mono">
                             {location}
                         </div>
                     </motion.div>

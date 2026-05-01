@@ -7,7 +7,7 @@ import Link from 'next/link';
 
 const BadmintonBooking: React.FC = () => {
    return (
-      <section className="py-24 bg-white transition-colors duration-300" id="booking-process">
+      <section aria-label="Badminton booking options" className="py-24 bg-white transition-colors duration-300" id="booking-process">
          <div className="container mx-auto px-4 md:px-6">
             <div className="text-center mb-16">
                <h2 className="text-3xl md:text-5xl font-header font-bold text-badminton uppercase mb-6">Three Ways To Play</h2>
@@ -31,7 +31,7 @@ const BadmintonBooking: React.FC = () => {
                      <div className="flex gap-2"><Calendar size={14} className="text-blue-500" /> 2. Select Time</div>
                      <div className="flex gap-2"><CreditCard size={14} className="text-blue-500" /> 3. Instant Confirm</div>
                   </div>
-                  <a href="https://book.runswiftapp.com/facilities/dfw-indoor-sports/rentals" target="_blank" rel="noopener noreferrer" className="w-full py-3 bg-badminton text-white font-bold uppercase text-xs tracking-widest rounded-sm hover:bg-blue-800 transition-colors block text-center">Reserve Court</a>
+                  <a href="https://book.runswiftapp.com/facilities/dfw-indoor-sports/rentals" target="_blank" rel="noopener noreferrer" className="w-full py-3 bg-badminton text-white font-bold uppercase text-xs tracking-widest rounded-lg hover:bg-blue-800 transition-colors block text-center">Reserve Court</a>
                </motion.div>
 
                {/* Phone */}
@@ -48,9 +48,9 @@ const BadmintonBooking: React.FC = () => {
                   </p>
                   <div className="mb-8 py-4">
                      <p className="text-2xl font-header font-bold text-gray-800">(817) 938-0808</p>
-                     <p className="text-[10px] font-medium text-gray-400 uppercase tracking-widest mt-1">Mon-Sun Support</p>
+                     <p className="text-\[11px\] font-medium text-gray-400 uppercase tracking-widest mt-1">Mon-Sun Support</p>
                   </div>
-                  <a href="tel:8179380808" className="block w-full py-3 border border-badminton text-badminton font-bold uppercase text-xs tracking-widest rounded-sm hover:bg-badminton hover:text-white transition-colors">Click To Call</a>
+                  <a href="tel:8179380808" className="block w-full py-3 border border-badminton text-badminton font-bold uppercase text-xs tracking-widest rounded-lg hover:bg-badminton hover:text-white transition-colors">Click To Call</a>
                </motion.div>
 
                {/* Walk-In */}
@@ -69,7 +69,7 @@ const BadmintonBooking: React.FC = () => {
                      <p className="font-bold text-badminton mb-1">16230 Three Wide Dr Suite 200</p>
                      <p>Fort Worth, TX 76177</p>
                   </div>
-                  <button className="w-full py-3 border border-gray-300 text-gray-500 font-bold uppercase text-xs tracking-widest rounded-sm cursor-not-allowed">Check Live Status</button>
+                  <button className="w-full py-3 border border-gray-300 text-gray-500 font-bold uppercase text-xs tracking-widest rounded-lg cursor-not-allowed">Check Live Status</button>
                </motion.div>
 
             </div>

@@ -80,7 +80,7 @@ export class ErrorBoundary extends Component<Props, State> {
                         <div className="flex flex-col sm:flex-row gap-3 justify-center">
                             <button
                                 onClick={this.handleReset}
-                                className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-dfw-red text-white font-bold uppercase text-xs tracking-widest rounded-sm hover:bg-red-600 transition-colors"
+                                className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-dfw-red text-white font-bold uppercase text-xs tracking-widest rounded-lg hover:bg-red-600 transition-colors"
                             >
                                 <RefreshCw size={14} />
                                 Try Again
@@ -88,7 +88,7 @@ export class ErrorBoundary extends Component<Props, State> {
 
                             <Link
                                 href="/"
-                                className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-white/10 text-white font-bold uppercase text-xs tracking-widest rounded-sm hover:bg-white/20 transition-colors"
+                                className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-white/10 text-white font-bold uppercase text-xs tracking-widest rounded-lg hover:bg-white/20 transition-colors"
                             >
                                 <Home size={14} />
                                 Go Home

@@ -35,10 +35,10 @@ export default function RootLayout({
   })
 
   return (
-    <html lang="en" className="scroll-smooth" suppressHydrationWarning>
+    <html lang="en" className="scroll-smooth">
       <head>
         <link rel="manifest" href="/manifest.json" />
-        <meta name="theme-color" content="#020408" />
+        <meta name="theme-color" content="#FAFAFA" />
         {/* Preload critical LCP image for faster paint */}
         <link
           rel="preload"

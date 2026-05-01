@@ -3,10 +3,11 @@
 import React from 'react';
 import { Activity, Award, Brain, Globe, Users, Target, Quote } from 'lucide-react';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 const CoachesProfiles: React.FC = () => {
   return (
-    <section className="py-24 bg-[#FAFAFA] relative overflow-hidden transition-colors duration-300" id="faculty">
+    <section aria-label="Coaching staff profiles" className="py-24 bg-[#FAFAFA] relative overflow-hidden transition-colors duration-300" id="faculty">
        <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-gray-300 to-transparent"></div>
        <div className="absolute inset-0 bg-[url('/textures/cubes.png')] opacity-[0.03]"></div>
        
@@ -36,10 +37,12 @@ const CoachesProfiles: React.FC = () => {
                    <div className="lg:col-span-5 relative">
                       <div className="relative aspect-[3/4] rounded-lg overflow-hidden shadow-[0_30px_60px_-15px_rgba(0,0,0,0.3)] border border-gray-100">
                          <div className="absolute inset-0 bg-dfw-navy/10 mix-blend-multiply z-10"></div>
-                         <img 
+                         <Image 
                             src="/images/Prashant_Kamble.avif" 
-                            alt="Prashant Kamble" 
-                            className="w-full h-full object-cover filter grayscale contrast-125 group-hover:grayscale-0 transition-all duration-700 ease-in-out" 
+                            alt="Prashant Kamble - Head Coach" 
+                            fill
+                            className="object-cover filter grayscale contrast-125 group-hover:grayscale-0 transition-all duration-700 ease-in-out"
+                            sizes="(max-width: 1024px) 100vw, 40vw"
                          />
                          <div className="absolute bottom-0 left-0 w-full p-6 bg-gradient-to-t from-black/95 via-black/70 to-transparent z-20 text-white">
                             <div className="flex justify-between items-end border-b border-white/20 pb-4 mb-4">
@@ -47,11 +50,11 @@ const CoachesProfiles: React.FC = () => {
                                   <h3 className="text-3xl font-header font-bold uppercase tracking-wide">Prashant Kamble</h3>
                                   <p className="text-dfw-red font-mono text-xs uppercase tracking-widest">Head Coach</p>
                                </div>
-                               <div className="px-2 py-1 border border-white/30 rounded text-[10px] font-bold tracking-widest">CA LEVEL 2</div>
+                               <div className="px-2 py-1 border border-white/30 rounded text-\[11px\] font-bold tracking-widest">CA LEVEL 2</div>
                             </div>
                             <div className="grid grid-cols-2 gap-4 text-xs font-mono text-gray-300">
-                               <div><span className="block text-gray-500 uppercase text-[9px]">Certification</span>Cricket Australia</div>
-                               <div><span className="block text-gray-500 uppercase text-[9px]">Specialty</span>High Performance</div>
+                               <div><span className="block text-gray-500 uppercase text-\[11px\]">Certification</span>Cricket Australia</div>
+                               <div><span className="block text-gray-500 uppercase text-\[11px\]">Specialty</span>High Performance</div>
                             </div>
                          </div>
                       </div>
@@ -59,7 +62,7 @@ const CoachesProfiles: React.FC = () => {
 
                    <div className="lg:col-span-7 pt-8">
                       <div className="flex items-center gap-4 mb-8">
-                         <span className="px-3 py-1 bg-dfw-navy text-white text-[10px] font-bold uppercase tracking-widest rounded-sm border border-transparent">Elite Tier</span>
+                         <span className="px-3 py-1 bg-dfw-navy text-white text-\[11px\] font-bold uppercase tracking-widest rounded-lg border border-transparent">Elite Tier</span>
                          <span className="h-px w-12 bg-gray-300"></span>
                          <span className="text-gray-400 font-mono text-xs uppercase">Since 2009</span>
                       </div>
@@ -79,7 +82,7 @@ const CoachesProfiles: React.FC = () => {
                             <h4 className="text-xs font-bold text-dfw-navy uppercase tracking-widest mb-4 flex items-center gap-2"><Activity size={14} className="text-dfw-red" /> Technical Focus</h4>
                             {[{ label: "Batting Biomechanics", val: "95%" }, { label: "Video Analysis", val: "90%" }, { label: "Youth Psychology", val: "88%" }].map((skill, i) => (
                                <div key={i}>
-                                  <div className="flex justify-between text-[10px] font-bold uppercase text-gray-500 mb-1"><span>{skill.label}</span><span>{skill.val}</span></div>
+                                  <div className="flex justify-between text-\[11px\] font-bold uppercase text-gray-500 mb-1"><span>{skill.label}</span><span>{skill.val}</span></div>
                                   <div className="h-1 bg-gray-100 rounded-full overflow-hidden"><div className="h-full bg-dfw-navy transition-all duration-1000 ease-out group-hover:bg-dfw-red" style={{ width: skill.val }}></div></div>
                                </div>
                             ))}
@@ -105,7 +108,7 @@ const CoachesProfiles: React.FC = () => {
                 <div className="relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-20 items-start">
                    <div className="lg:col-span-7 pt-8 order-2 lg:order-1">
                       <div className="flex items-center gap-4 mb-8">
-                         <span className="px-3 py-1 bg-blue-900 text-white text-[10px] font-bold uppercase tracking-widest rounded-sm">Operations</span>
+                         <span className="px-3 py-1 bg-blue-900 text-white text-\[11px\] font-bold uppercase tracking-widest rounded-lg">Operations</span>
                          <span className="h-px w-12 bg-gray-300"></span>
                          <span className="text-gray-400 font-mono text-xs uppercase">Global Exp</span>
                       </div>
@@ -125,7 +128,7 @@ const CoachesProfiles: React.FC = () => {
                             <h4 className="text-xs font-bold text-dfw-navy uppercase tracking-widest mb-4 flex items-center gap-2"><Brain size={14} className="text-blue-600" /> Strategic Focus</h4>
                             {[{ label: "Tactical Planning", val: "92%" }, { label: "Bowling Development", val: "94%" }, { label: "Operations Mgmt", val: "90%" }].map((skill, i) => (
                                <div key={i}>
-                                  <div className="flex justify-between text-[10px] font-bold uppercase text-gray-500 mb-1"><span>{skill.label}</span><span>{skill.val}</span></div>
+                                  <div className="flex justify-between text-\[11px\] font-bold uppercase text-gray-500 mb-1"><span>{skill.label}</span><span>{skill.val}</span></div>
                                   <div className="h-1 bg-gray-100 rounded-full overflow-hidden"><div className="h-full bg-blue-900 transition-all duration-1000 ease-out group-hover:bg-blue-600" style={{ width: skill.val }}></div></div>
                                </div>
                             ))}
@@ -142,14 +145,14 @@ const CoachesProfiles: React.FC = () => {
                    <div className="lg:col-span-5 relative order-1 lg:order-2">
                       <div className="relative aspect-[3/4] rounded-lg overflow-hidden shadow-[0_30px_60px_-15px_rgba(0,0,0,0.3)] border border-gray-100">
                          <div className="absolute inset-0 bg-blue-900/10 mix-blend-multiply z-10"></div>
-                         <img src="/images/Prem_Ahire.avif" alt="Prem Ahire" className="w-full h-full object-cover filter grayscale contrast-125 group-hover:grayscale-0 transition-all duration-700 ease-in-out" />
+                         <Image src="/images/Prem_Ahire.avif" alt="Prem Ahire - Director of Coaching Operations" fill className="object-cover filter grayscale contrast-125 group-hover:grayscale-0 transition-all duration-700 ease-in-out" sizes="(max-width: 1024px) 100vw, 40vw" />
                          <div className="absolute bottom-0 left-0 w-full p-6 bg-gradient-to-t from-black/95 via-black/70 to-transparent z-20 text-white">
                             <div className="flex justify-between items-end border-b border-white/20 pb-4 mb-4">
                                <div><h3 className="text-3xl font-header font-bold uppercase tracking-wide">Prem Ahire</h3><p className="text-blue-400 font-mono text-xs uppercase tracking-widest">Director of Coaching Operations</p></div>
                             </div>
                             <div className="grid grid-cols-2 gap-4 text-xs font-mono text-gray-300">
-                               <div><span className="block text-gray-500 uppercase text-[9px]">Focus</span>Strategy</div>
-                               <div><span className="block text-gray-500 uppercase text-[9px]">Experience</span>15+ Years</div>
+                               <div><span className="block text-gray-500 uppercase text-\[11px\]">Focus</span>Strategy</div>
+                               <div><span className="block text-gray-500 uppercase text-\[11px\]">Experience</span>15+ Years</div>
                             </div>
                          </div>
                       </div>
@@ -167,22 +170,22 @@ const CoachesProfiles: React.FC = () => {
                    <div className="lg:col-span-5 relative">
                       <div className="relative aspect-[3/4] rounded-lg overflow-hidden shadow-[0_30px_60px_-15px_rgba(0,0,0,0.3)] border border-gray-100">
                          <div className="absolute inset-0 bg-green-900/10 mix-blend-multiply z-10"></div>
-                         <img src="/images/Anjan_Medicherla.avif" alt="Anjan Medicherla" className="w-full h-full object-cover filter grayscale contrast-125 group-hover:grayscale-0 transition-all duration-700 ease-in-out" />
+                         <Image src="/images/Anjan_Medicherla.avif" alt="Anjan Medicherla - CricKingdom Dallas Academy Mentor" fill className="object-cover filter grayscale contrast-125 group-hover:grayscale-0 transition-all duration-700 ease-in-out" sizes="(max-width: 1024px) 100vw, 40vw" />
                          <div className="absolute bottom-0 left-0 w-full p-6 bg-gradient-to-t from-black/95 via-black/70 to-transparent z-20 text-white">
                             <div className="flex justify-between items-end border-b border-white/20 pb-4 mb-4">
                                <div><h3 className="text-3xl font-header font-bold uppercase tracking-wide">Anjan Medicherla</h3><p className="text-green-400 font-mono text-xs uppercase tracking-widest">CricKingdom Dallas Academy Mentor</p></div>
-                               <div className="px-2 py-1 border border-white/30 rounded text-[10px] font-bold tracking-widest">ICC LEVEL 2</div>
+                               <div className="px-2 py-1 border border-white/30 rounded text-\[11px\] font-bold tracking-widest">ICC LEVEL 2</div>
                             </div>
                             <div className="grid grid-cols-2 gap-4 text-xs font-mono text-gray-300">
-                               <div><span className="block text-gray-500 uppercase text-[9px]">Focus</span>Mentorship</div>
-                               <div><span className="block text-gray-500 uppercase text-[9px]">Community</span>DFW Region</div>
+                               <div><span className="block text-gray-500 uppercase text-\[11px\]">Focus</span>Mentorship</div>
+                               <div><span className="block text-gray-500 uppercase text-\[11px\]">Community</span>DFW Region</div>
                             </div>
                          </div>
                       </div>
                    </div>
                    <div className="lg:col-span-7 pt-8">
                       <div className="flex items-center gap-4 mb-8">
-                         <span className="px-3 py-1 bg-green-900 text-white text-[10px] font-bold uppercase tracking-widest rounded-sm">Mentor</span>
+                         <span className="px-3 py-1 bg-green-900 text-white text-\[11px\] font-bold uppercase tracking-widest rounded-lg">Mentor</span>
                          <span className="h-px w-12 bg-gray-300"></span>
                          <span className="text-gray-400 font-mono text-xs uppercase">ICC Certified</span>
                       </div>
@@ -202,7 +205,7 @@ const CoachesProfiles: React.FC = () => {
                             <h4 className="text-xs font-bold text-dfw-navy uppercase tracking-widest mb-4 flex items-center gap-2"><Users size={14} className="text-green-600" /> Mentorship Focus</h4>
                             {[{ label: "Youth Engagement", val: "96%" }, { label: "Community Building", val: "94%" }, { label: "Beginner Instruction", val: "90%" }].map((skill, i) => (
                                <div key={i}>
-                                  <div className="flex justify-between text-[10px] font-bold uppercase text-gray-500 mb-1"><span>{skill.label}</span><span>{skill.val}</span></div>
+                                  <div className="flex justify-between text-\[11px\] font-bold uppercase text-gray-500 mb-1"><span>{skill.label}</span><span>{skill.val}</span></div>
                                   <div className="h-1 bg-gray-100 rounded-full overflow-hidden"><div className="h-full bg-green-900 transition-all duration-1000 ease-out group-hover:bg-green-600" style={{ width: skill.val }}></div></div>
                                </div>
                             ))}

@@ -47,7 +47,7 @@ const ContactForm: React.FC = () => {
    };
 
    return (
-      <section className="py-24 md:py-32 bg-[#050911] text-white relative overflow-hidden" id="contact-form">
+      <section aria-label="Contact form" className="py-24 md:py-32 bg-[#050911] text-white relative overflow-hidden" id="contact-form">
          {/* Background Texture & Gradients */}
          <div className="absolute inset-0 bg-[url('/textures/cubes.png')] opacity-[0.03]"></div>
          <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-dfw-navy/80 to-transparent pointer-events-none"></div>
@@ -77,7 +77,7 @@ const ContactForm: React.FC = () => {
                      <form onSubmit={handleSubmit} className="space-y-8">
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                            <div className="group">
-                              <label className="block text-[10px] font-bold text-gray-500 uppercase tracking-widest mb-2 group-focus-within:text-blue-400 transition-colors">First Name</label>
+                              <label className="block text-\[11px\] font-bold text-gray-500 uppercase tracking-widest mb-2 group-focus-within:text-blue-400 transition-colors">First Name</label>
                               <input
                                  type="text"
                                  name="firstName"
@@ -89,7 +89,7 @@ const ContactForm: React.FC = () => {
                               />
                            </div>
                            <div className="group">
-                              <label className="block text-[10px] font-bold text-gray-500 uppercase tracking-widest mb-2 group-focus-within:text-blue-400 transition-colors">Last Name</label>
+                              <label className="block text-\[11px\] font-bold text-gray-500 uppercase tracking-widest mb-2 group-focus-within:text-blue-400 transition-colors">Last Name</label>
                               <input
                                  type="text"
                                  name="lastName"
@@ -104,7 +104,7 @@ const ContactForm: React.FC = () => {
 
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                            <div className="group">
-                              <label className="block text-[10px] font-bold text-gray-500 uppercase tracking-widest mb-2 group-focus-within:text-blue-400 transition-colors">Email Address</label>
+                              <label className="block text-\[11px\] font-bold text-gray-500 uppercase tracking-widest mb-2 group-focus-within:text-blue-400 transition-colors">Email Address</label>
                               <input
                                  type="email"
                                  name="email"
@@ -116,7 +116,7 @@ const ContactForm: React.FC = () => {
                               />
                            </div>
                            <div className="group">
-                              <label className="block text-[10px] font-bold text-gray-500 uppercase tracking-widest mb-2 group-focus-within:text-blue-400 transition-colors">Phone Number</label>
+                              <label className="block text-\[11px\] font-bold text-gray-500 uppercase tracking-widest mb-2 group-focus-within:text-blue-400 transition-colors">Phone Number</label>
                               <input
                                  type="tel"
                                  name="phone"
@@ -129,7 +129,7 @@ const ContactForm: React.FC = () => {
                         </div>
 
                         <div className="group">
-                           <label className="block text-[10px] font-bold text-gray-500 uppercase tracking-widest mb-2 group-focus-within:text-blue-400 transition-colors">Topic</label>
+                           <label className="block text-\[11px\] font-bold text-gray-500 uppercase tracking-widest mb-2 group-focus-within:text-blue-400 transition-colors">Topic</label>
                            <select
                               name="topic"
                               value={formData.topic}
@@ -146,7 +146,7 @@ const ContactForm: React.FC = () => {
                         </div>
 
                         <div className="group">
-                           <label className="block text-[10px] font-bold text-gray-500 uppercase tracking-widest mb-2 group-focus-within:text-blue-400 transition-colors">Message</label>
+                           <label className="block text-\[11px\] font-bold text-gray-500 uppercase tracking-widest mb-2 group-focus-within:text-blue-400 transition-colors">Message</label>
                            <textarea
                               name="message"
                               required
@@ -181,7 +181,7 @@ const ContactForm: React.FC = () => {
                         <button
                            type="submit"
                            disabled={status === 'submitting'}
-                           className="group relative w-full md:w-auto px-10 py-4 bg-dfw-red text-white font-bold uppercase tracking-widest text-xs rounded-sm overflow-hidden shadow-[0_0_20px_rgba(214,40,40,0.4)] transition-all hover:shadow-[0_0_40px_rgba(214,40,40,0.6)] hover:-translate-y-1 disabled:opacity-50 disabled:cursor-not-allowed"
+                           className="group relative w-full md:w-auto px-10 py-4 bg-dfw-red text-white font-bold uppercase tracking-widest text-xs rounded-lg overflow-hidden shadow-[0_0_20px_rgba(214,40,40,0.4)] transition-all hover:shadow-[0_0_40px_rgba(214,40,40,0.6)] hover:-translate-y-1 disabled:opacity-50 disabled:cursor-not-allowed"
                         >
 
                            <span className="relative flex items-center justify-center gap-3">
@@ -229,7 +229,7 @@ const ContactForm: React.FC = () => {
                      </div>
 
                      <div className="mt-12 bg-white/5 rounded-lg p-6 border border-white/5">
-                        <h4 className="text-dfw-red font-bold uppercase text-[10px] tracking-widest mb-3 flex items-center gap-2"><AlertCircle size={14} /> Tip for Faster Service</h4>
+                        <h4 className="text-dfw-red font-bold uppercase text-\[11px\] tracking-widest mb-3 flex items-center gap-2"><AlertCircle size={14} /> Tip for Faster Service</h4>
                         <p className="text-xs text-gray-400 leading-relaxed">
                            If your inquiry is regarding a court booking occurring <strong>today</strong>, please call the front desk at (817) 938-0808 instead of using this form.
                         </p>

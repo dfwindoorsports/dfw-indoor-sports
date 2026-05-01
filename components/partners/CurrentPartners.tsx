@@ -6,7 +6,7 @@ import Link from 'next/link';
 
 const CurrentPartners: React.FC = () => {
   return (
-    <section className="py-20 bg-[#FAFAFA] border-y border-gray-200 transition-colors duration-300">
+    <section aria-label="Current partners" className="py-20 bg-[#FAFAFA] border-y border-gray-200 transition-colors duration-300">
        <div className="container mx-auto px-4 md:px-6 text-center">
           <motion.div 
           >
@@ -29,7 +29,7 @@ const CurrentPartners: React.FC = () => {
                       <span className="font-header font-bold text-xl text-dfw-navy">CricKingdom</span>
                    </div>
                 </div>
-                <p className="text-[10px] font-bold uppercase tracking-widest text-gray-400 group-hover:text-dfw-red transition-colors">Academy Partner</p>
+                <p className="text-\[11px\] font-bold uppercase tracking-widest text-gray-400 group-hover:text-dfw-red transition-colors">Academy Partner</p>
              </motion.div>
 
              {/* Partner 2: Generic Tech */}
@@ -43,7 +43,7 @@ const CurrentPartners: React.FC = () => {
                       <span className="font-header font-bold text-xl text-gray-700">NEXUS</span>
                    </div>
                 </div>
-                <p className="text-[10px] font-bold uppercase tracking-widest text-gray-400 group-hover:text-dfw-red transition-colors">Tech Sponsor</p>
+                <p className="text-\[11px\] font-bold uppercase tracking-widest text-gray-400 group-hover:text-dfw-red transition-colors">Tech Sponsor</p>
              </motion.div>
 
              {/* Partner 3: Generic Health */}
@@ -58,7 +58,7 @@ const CurrentPartners: React.FC = () => {
                       <span className="font-header font-bold text-xl text-gray-700">VITALITY</span>
                    </div>
                 </div>
-                <p className="text-[10px] font-bold uppercase tracking-widest text-gray-400 group-hover:text-dfw-red transition-colors">Wellness Partner</p>
+                <p className="text-\[11px\] font-bold uppercase tracking-widest text-gray-400 group-hover:text-dfw-red transition-colors">Wellness Partner</p>
              </motion.div>
 
              {/* Partner 4: Generic Gear */}
@@ -71,7 +71,7 @@ const CurrentPartners: React.FC = () => {
                       <span className="font-header font-bold text-xl text-gray-800 tracking-[0.2em]">TITAN</span>
                    </div>
                 </div>
-                <p className="text-[10px] font-bold uppercase tracking-widest text-gray-400 group-hover:text-dfw-red transition-colors">Equipment Supplier</p>
+                <p className="text-\[11px\] font-bold uppercase tracking-widest text-gray-400 group-hover:text-dfw-red transition-colors">Equipment Supplier</p>
              </motion.div>
           </motion.div>
           

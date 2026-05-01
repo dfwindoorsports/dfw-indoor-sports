@@ -19,7 +19,7 @@ export default function CityDirections({ city, address, googleMapsLink, directio
     directions: DirectionBlock[]
 }) {
     return (
-        <section className="py-20 bg-gray-50 relative overflow-hidden">
+        <section aria-label="Directions to DFW Indoor Sports" className="py-20 bg-gray-50 relative overflow-hidden">
             {/* Subtle overlay */}
             <div className="absolute inset-0 bg-[url('/textures/carbon-fibre.png')] opacity-10 mix-blend-overlay" />
 
@@ -28,7 +28,7 @@ export default function CityDirections({ city, address, googleMapsLink, directio
                     {/* Header */}
                     <div className="text-center mb-12">
                         <motion.span
-                            className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-dfw-red/40 bg-dfw-red/10 backdrop-blur-2xl text-dfw-red font-mono text-[10px] font-medium uppercase tracking-[0.25em] mb-4"
+                            className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-dfw-red/40 bg-dfw-red/10 backdrop-blur-2xl text-dfw-red font-mono text-\[11px\] font-medium uppercase tracking-[0.25em] mb-4"
                         >
                             Getting Here
                         </motion.span>
@@ -102,7 +102,7 @@ export default function CityDirections({ city, address, googleMapsLink, directio
                             href={googleMapsLink}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="inline-flex items-center gap-3 px-6 py-3 bg-dfw-navy text-white font-bold uppercase tracking-widest text-xs rounded-sm hover:opacity-90 transition-opacity"
+                            className="inline-flex items-center gap-3 px-6 py-3 bg-dfw-navy text-white font-bold uppercase tracking-widest text-xs rounded-lg hover:opacity-90 transition-opacity"
                         >
                             Open in Google Maps
                             <ArrowUpRight size={14} />

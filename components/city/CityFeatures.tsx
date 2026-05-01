@@ -23,7 +23,7 @@ interface CityFeaturesProps {
 
 export default function CityFeatures({ title, description, features }: CityFeaturesProps) {
     return (
-        <section className="py-20 bg-gray-50 relative overflow-hidden">
+        <section aria-label="Why choose us" className="py-20 bg-gray-50 relative overflow-hidden">
             {/* Subtle overlay */}
             <div className="absolute inset-0 bg-[url('/textures/carbon-fibre.png')] opacity-10 mix-blend-overlay" />
 
@@ -31,7 +31,7 @@ export default function CityFeatures({ title, description, features }: CityFeatu
                 {/* Header */}
                 <div className="max-w-3xl mx-auto text-center mb-12">
                     <motion.span
-                        className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-dfw-red/40 bg-dfw-red/10 backdrop-blur-2xl text-dfw-red font-mono text-[10px] font-medium uppercase tracking-[0.25em] mb-4"
+                        className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-dfw-red/40 bg-dfw-red/10 backdrop-blur-2xl text-dfw-red font-mono text-\[11px\] font-medium uppercase tracking-[0.25em] mb-4"
                     >
                         Why Choose Us
                     </motion.span>

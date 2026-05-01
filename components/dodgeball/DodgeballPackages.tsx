@@ -7,7 +7,7 @@ import { OptimizedImage } from '@/components/ui/OptimizedImage';
 
 const DodgeballPackages: React.FC = () => {
    return (
-      <section className="py-24 bg-gray-50 border-t border-gray-200 transition-colors duration-300" id="packages">
+      <section aria-label="Dodgeball party and event packages" className="py-24 bg-gray-50 border-t border-gray-200 transition-colors duration-300" id="packages">
          <div className="container mx-auto px-4 md:px-6">
 
             {/* Dodgeball Group Party Image */}
@@ -47,7 +47,7 @@ const DodgeballPackages: React.FC = () => {
                         transition={{ delay: i * 0.1 }}
                         className={`bg-white rounded-lg p-8 border transition-all duration-300 relative overflow-hidden group ${pkg.highlight ? 'border-orange-500 shadow-xl transform md:-translate-y-4' : 'border-gray-200 shadow-sm hover:shadow-md'}`}
                      >
-                        {pkg.highlight && <div className="absolute top-0 right-0 bg-orange-500 text-white text-[10px] font-bold uppercase px-3 py-1 rounded-bl-lg">Most Popular</div>}
+                        {pkg.highlight && <div className="absolute top-0 right-0 bg-orange-500 text-white text-\[11px\] font-bold uppercase px-3 py-1 rounded-bl-lg">Most Popular</div>}
                         <h3 className="text-xl font-header font-bold text-dodgeball uppercase mb-2">{pkg.name}</h3>
                         <div className="flex items-baseline gap-1 mb-6">
                            <span className="text-3xl font-bold text-gray-900">{pkg.price}</span>
@@ -63,7 +63,7 @@ const DodgeballPackages: React.FC = () => {
                               </li>
                            ))}
                         </ul>
-                        <button className={`w-full py-3 font-bold uppercase text-xs tracking-widest rounded-sm transition-colors ${pkg.highlight ? 'bg-orange-500 text-white hover:bg-orange-600' : 'border border-dodgeball text-dodgeball hover:bg-dodgeball hover:text-white'}`}>
+                        <button className={`w-full py-3 font-bold uppercase text-xs tracking-widest rounded-lg transition-colors ${pkg.highlight ? 'bg-orange-500 text-white hover:bg-orange-600' : 'border border-dodgeball text-dodgeball hover:bg-dodgeball hover:text-white'}`}>
                            Select Package
                         </button>
                      </motion.div>

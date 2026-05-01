@@ -3,7 +3,7 @@ import { MapPin, Navigation, Car } from 'lucide-react';
 
 const SoccerLocation: React.FC = () => {
   return (
-    <section className="py-20 bg-gray-100 border-t border-gray-200">
+    <section aria-label="Soccer location and directions" className="py-20 bg-gray-100 border-t border-gray-200">
        <div className="container mx-auto px-4 md:px-6">
           <div className="flex flex-col md:flex-row items-center gap-12">
              <div className="md:w-1/2">
@@ -14,7 +14,7 @@ const SoccerLocation: React.FC = () => {
                       <h4 className="font-bold text-gray-900 text-sm uppercase mb-2 flex items-center gap-2">
                          <Car size={16} className="text-emerald-500" /> Close Proximity (10-20 Mins)
                       </h4>
-                      <p className="text-xs text-gray-600 leading-relaxed bg-white p-3 rounded-sm border border-gray-200">
+                      <p className="text-xs text-gray-600 leading-relaxed bg-white p-3 rounded-lg border border-gray-200">
                          Fort Worth • Arlington • Grand Prairie • Irving • Bedford • Euless • Hurst • North Richland Hills • Keller • Southlake • Grapevine • Colleyville
                       </p>
                    </div>
@@ -22,7 +22,7 @@ const SoccerLocation: React.FC = () => {
                       <h4 className="font-bold text-gray-900 text-sm uppercase mb-2 flex items-center gap-2">
                          <Car size={16} className="text-emerald-500" /> Worth the Drive (20-35 Mins)
                       </h4>
-                      <p className="text-xs text-gray-600 leading-relaxed bg-white p-3 rounded-sm border border-gray-200">
+                      <p className="text-xs text-gray-600 leading-relaxed bg-white p-3 rounded-lg border border-gray-200">
                          Dallas (West/Central) • Carrollton • Farmers Branch • Coppell • Flower Mound • Lewisville • Mansfield • Plano (South) • Richardson
                       </p>
                    </div>
@@ -30,7 +30,7 @@ const SoccerLocation: React.FC = () => {
                       <h4 className="font-bold text-gray-900 text-sm uppercase mb-2 flex items-center gap-2">
                          <Car size={16} className="text-emerald-500" /> Extended Service (35-50 Mins)
                       </h4>
-                      <p className="text-xs text-gray-600 leading-relaxed bg-white p-3 rounded-sm border border-gray-200">
+                      <p className="text-xs text-gray-600 leading-relaxed bg-white p-3 rounded-lg border border-gray-200">
                          Frisco • McKinney • Allen • Plano (North) • Denton • Prosper • Celina
                       </p>
                    </div>
@@ -40,7 +40,7 @@ const SoccerLocation: React.FC = () => {
                       href="https://maps.google.com/?q=16230+Three+Wide+Drive+Suite+200,+Fort+Worth,+TX+76177" 
                       target="_blank" 
                       rel="noreferrer"
-                      className="inline-flex items-center gap-2 px-6 py-3 bg-soccer text-white font-bold uppercase text-xs tracking-widest rounded-sm hover:bg-emerald-700 transition-colors shadow-lg"
+                      className="inline-flex items-center gap-2 px-6 py-3 bg-soccer text-white font-bold uppercase text-xs tracking-widest rounded-lg hover:bg-emerald-700 transition-colors shadow-lg"
                    >
                       <Navigation size={14} /> Get Directions
                    </a>

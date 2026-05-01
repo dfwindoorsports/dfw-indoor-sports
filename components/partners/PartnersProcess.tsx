@@ -20,7 +20,7 @@ const PartnersProcess: React.FC = () => {
   };
 
   return (
-    <section className="py-24 bg-white transition-colors duration-300">
+    <section aria-label="Partnership process" className="py-24 bg-white transition-colors duration-300">
        <div className="container mx-auto px-4 md:px-6">
           <motion.div 
             className="text-center mb-16"

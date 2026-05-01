@@ -22,7 +22,7 @@ const EventsCorporate: React.FC = () => {
    };
 
    return (
-      <section className="py-24 bg-[#0A111F] text-white relative overflow-hidden">
+      <section aria-label="Corporate team building events" className="py-24 bg-[#0A111F] text-white relative overflow-hidden">
          <div className="absolute inset-0 bg-[url('/textures/cubes.png')] opacity-[0.05]"></div>
          <div className="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-blue-900/10 to-transparent pointer-events-none"></div>
 
@@ -75,13 +75,13 @@ const EventsCorporate: React.FC = () => {
             >
 
                {/* Team Building */}
-               <motion.div variants={itemVariants} className="group relative bg-white/5 border border-white/10 rounded-sm p-6 hover:bg-white/10 transition-colors duration-300">
+               <motion.div variants={itemVariants} className="group relative bg-white/5 border border-white/10 rounded-lg p-6 hover:bg-white/10 transition-colors duration-300">
                   <div className="absolute top-0 left-0 w-1 h-full bg-blue-500 transform scale-y-0 group-hover:scale-y-100 transition-transform duration-300"></div>
                   <div className="flex justify-between items-start mb-4">
                      <div className="p-2 bg-blue-900/30 text-blue-400 rounded-lg border border-blue-500/20">
                         <Users size={20} />
                      </div>
-                     <span className="text-[10px] font-medium font-mono text-gray-400 uppercase">20-40 People</span>
+                     <span className="text-\[11px\] font-medium font-mono text-gray-400 uppercase">20-40 People</span>
                   </div>
                   <h3 className="text-lg font-header font-bold text-white uppercase mb-2">Team Tournament</h3>
                   <p className="text-gray-400 text-xs leading-relaxed mb-4 h-12">
@@ -91,13 +91,13 @@ const EventsCorporate: React.FC = () => {
                </motion.div>
 
                {/* Executive */}
-               <motion.div variants={itemVariants} className="group relative bg-white/5 border border-white/10 rounded-sm p-6 hover:bg-white/10 transition-colors duration-300">
+               <motion.div variants={itemVariants} className="group relative bg-white/5 border border-white/10 rounded-lg p-6 hover:bg-white/10 transition-colors duration-300">
                   <div className="absolute top-0 left-0 w-1 h-full bg-amber-500 transform scale-y-0 group-hover:scale-y-100 transition-transform duration-300"></div>
                   <div className="flex justify-between items-start mb-4">
                      <div className="p-2 bg-amber-900/30 text-amber-400 rounded-lg border border-amber-500/20">
                         <Briefcase size={20} />
                      </div>
-                     <span className="text-[10px] font-medium font-mono text-gray-400 uppercase">10-25 Execs</span>
+                     <span className="text-\[11px\] font-medium font-mono text-gray-400 uppercase">10-25 Execs</span>
                   </div>
                   <h3 className="text-lg font-header font-bold text-white uppercase mb-2">Executive Off-Site</h3>
                   <p className="text-gray-400 text-xs leading-relaxed mb-4 h-12">
@@ -107,13 +107,13 @@ const EventsCorporate: React.FC = () => {
                </motion.div>
 
                {/* Department Social */}
-               <motion.div variants={itemVariants} className="group relative bg-white/5 border border-white/10 rounded-sm p-6 hover:bg-white/10 transition-colors duration-300">
+               <motion.div variants={itemVariants} className="group relative bg-white/5 border border-white/10 rounded-lg p-6 hover:bg-white/10 transition-colors duration-300">
                   <div className="absolute top-0 left-0 w-1 h-full bg-purple-500 transform scale-y-0 group-hover:scale-y-100 transition-transform duration-300"></div>
                   <div className="flex justify-between items-start mb-4">
                      <div className="p-2 bg-purple-900/30 text-purple-400 rounded-lg border border-purple-500/20">
                         <Heart size={20} />
                      </div>
-                     <span className="text-[10px] font-medium font-mono text-gray-400 uppercase">15-30 People</span>
+                     <span className="text-\[11px\] font-medium font-mono text-gray-400 uppercase">15-30 People</span>
                   </div>
                   <h3 className="text-lg font-header font-bold text-white uppercase mb-2">Dept. Social</h3>
                   <p className="text-gray-400 text-xs leading-relaxed mb-4 h-12">
@@ -123,13 +123,13 @@ const EventsCorporate: React.FC = () => {
                </motion.div>
 
                {/* Sales Incentive */}
-               <motion.div variants={itemVariants} className="group relative bg-white/5 border border-white/10 rounded-sm p-6 hover:bg-white/10 transition-colors duration-300">
+               <motion.div variants={itemVariants} className="group relative bg-white/5 border border-white/10 rounded-lg p-6 hover:bg-white/10 transition-colors duration-300">
                   <div className="absolute top-0 left-0 w-1 h-full bg-green-500 transform scale-y-0 group-hover:scale-y-100 transition-transform duration-300"></div>
                   <div className="flex justify-between items-start mb-4">
                      <div className="p-2 bg-green-900/30 text-green-400 rounded-lg border border-green-500/20">
                         <Zap size={20} />
                      </div>
-                     <span className="text-[10px] font-medium font-mono text-gray-400 uppercase">20-50 People</span>
+                     <span className="text-\[11px\] font-medium font-mono text-gray-400 uppercase">20-50 People</span>
                   </div>
                   <h3 className="text-lg font-header font-bold text-white uppercase mb-2">Sales Kickoff</h3>
                   <p className="text-gray-400 text-xs leading-relaxed mb-4 h-12">

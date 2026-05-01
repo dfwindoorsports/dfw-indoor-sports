@@ -3,7 +3,7 @@ import { ArrowRight, Star, ChevronRight, Trophy } from 'lucide-react';
 
 const ParallaxCTA: React.FC = () => {
    return (
-      <section className="bg-gray-50 py-12 md:py-20 px-4 md:px-6 relative">
+      <section aria-label="Contact and booking" className="bg-gray-50 py-12 md:py-20 px-4 md:px-6 relative">
 
          {/* Floating Island Container */}
          <div className="max-w-[1400px] mx-auto bg-dfw-navy rounded-xl md:rounded-3xl overflow-hidden relative shadow-[0_40px_100px_-20px_rgba(10,17,31,0.6)] border border-white/5 ring-1 ring-white/10">
@@ -23,7 +23,7 @@ const ParallaxCTA: React.FC = () => {
                {/* Left Content - Rentals */}
                <div className="p-8 md:p-20 lg:pr-12 flex flex-col justify-center border-b lg:border-b-0 border-white/10">
                   <div>
-                     <span className="inline-flex items-center gap-2 px-4 py-2 rounded-sm bg-white/5 border border-white/10 text-white text-[10px] font-bold uppercase tracking-widest mb-6 md:mb-8 backdrop-blur-md shadow-inner">
+                     <span className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-white/5 border border-white/10 text-white text-\[11px\] font-bold uppercase tracking-widest mb-6 md:mb-8 backdrop-blur-md shadow-inner">
                         <span className="w-2 h-2 rounded-full bg-dfw-red"></span> Instant Booking
                      </span>
 
@@ -60,7 +60,7 @@ const ParallaxCTA: React.FC = () => {
                         <div className="p-2 bg-yellow-500 rounded-lg text-dfw-navy shadow-[0_0_20px_rgba(234,179,8,0.4)]">
                            <Star size={16} className="md:w-5 md:h-5" fill="currentColor" />
                         </div>
-                        <span className="text-yellow-500 font-bold uppercase tracking-widest text-[10px] md:text-xs">The Academy</span>
+                        <span className="text-yellow-500 font-bold uppercase tracking-widest text-\[11px\] md:text-xs">The Academy</span>
                      </div>
 
                      <h3 className="text-3xl md:text-5xl font-header font-bold text-white uppercase leading-none mb-4 md:mb-6 group-hover:translate-x-2 transition-transform duration-300">
@@ -71,7 +71,7 @@ const ParallaxCTA: React.FC = () => {
                         Train with CA and ICC-certified coaches and elevate your game. Structured programs for all ages.
                      </p>
 
-                     <div className="flex items-center gap-2 text-white font-bold uppercase tracking-widest text-[10px] md:text-xs group-hover:text-yellow-400 transition-colors border-b border-transparent group-hover:border-yellow-400 pb-1 w-max">
+                     <div className="flex items-center gap-2 text-white font-bold uppercase tracking-widest text-\[11px\] md:text-xs group-hover:text-yellow-400 transition-colors border-b border-transparent group-hover:border-yellow-400 pb-1 w-max">
                         View Programs <ChevronRight size={14} className="md:w-4 md:h-4" />
                      </div>
                   </div>

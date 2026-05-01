@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 
 const CoachesCTA: React.FC = () => {
   return (
-    <section className="py-32 bg-[#020408] relative overflow-hidden text-center border-t border-white/5">
+    <section aria-label="Coaching call to action" className="py-32 bg-[#020408] relative overflow-hidden text-center border-t border-white/5">
       <div className="absolute inset-0 bg-[url('/textures/stardust.png')] opacity-10"></div>
       <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-transparent via-dfw-red/5 to-transparent pointer-events-none"></div>
 
@@ -31,10 +31,10 @@ const CoachesCTA: React.FC = () => {
           transition={{ delay: 0.3 }}
           className="flex flex-col sm:flex-row justify-center gap-6"
         >
-          <a href="https://ams-app.skonnect.io/player/register?center__code=C-A144&sport=1" target="_blank" rel="noopener noreferrer" className="px-10 py-5 bg-dfw-red text-white font-bold uppercase tracking-widest text-xs rounded-sm hover:bg-white hover:text-dfw-navy transition-all duration-300 shadow-[0_0_40px_-10px_rgba(214,40,40,0.5)]">
+          <a href="https://ams-app.skonnect.io/player/register?center__code=C-A144&sport=1" target="_blank" rel="noopener noreferrer" className="px-10 py-5 bg-dfw-red text-white font-bold uppercase tracking-widest text-xs rounded-lg hover:bg-white hover:text-dfw-navy transition-all duration-300 shadow-[0_0_40px_-10px_rgba(214,40,40,0.5)]">
             Schedule Consultation
           </a>
-          <a href="/contact" className="px-10 py-5 bg-transparent border border-white/20 text-white font-bold uppercase tracking-widest text-xs rounded-sm hover:bg-white/5 transition-all">
+          <a href="/contact" className="px-10 py-5 bg-transparent border border-white/20 text-white font-bold uppercase tracking-widest text-xs rounded-lg hover:bg-white/5 transition-all">
             Download Prospectus
           </a>
         </motion.div>

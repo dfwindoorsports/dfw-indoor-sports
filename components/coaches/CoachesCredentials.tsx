@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 
 const CoachesCredentials: React.FC = () => {
   return (
-    <section className="py-24 bg-white border-b border-gray-100 transition-colors duration-300">
+    <section aria-label="Coaching credentials" className="py-24 bg-white border-b border-gray-100 transition-colors duration-300">
        <div className="container mx-auto px-4 md:px-6">
           <div className="flex flex-col lg:flex-row gap-16 items-center">
              <motion.div 

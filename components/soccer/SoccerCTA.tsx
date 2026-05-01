@@ -7,7 +7,7 @@ import Link from 'next/link';
 
 const SoccerCTA: React.FC = () => {
    return (
-      <section className="py-24 bg-soccer relative overflow-hidden text-center text-white">
+      <section aria-label="Soccer call to action" className="py-24 bg-soccer relative overflow-hidden text-center text-white">
          <div className="absolute inset-0 bg-[url('/textures/carbon-fibre.png')] opacity-20 mix-blend-overlay"></div>
          <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
 
@@ -27,13 +27,13 @@ const SoccerCTA: React.FC = () => {
                transition={{ delay: 0.2 }}
                className="flex flex-col sm:flex-row justify-center gap-4 mb-12"
             >
-               <a href="https://book.runswiftapp.com/facilities/dfw-indoor-sports/rentals" target="_blank" rel="noopener noreferrer" className="px-10 py-5 bg-emerald-500 text-white font-bold uppercase tracking-widest text-sm rounded-sm hover:bg-emerald-600 transition-colors shadow-lg flex items-center justify-center gap-2">
+               <a href="https://book.runswiftapp.com/facilities/dfw-indoor-sports/rentals" target="_blank" rel="noopener noreferrer" className="px-10 py-5 bg-emerald-500 text-white font-bold uppercase tracking-widest text-sm rounded-full hover:bg-emerald-600 transition-colors shadow-lg flex items-center justify-center gap-2">
                   Book Field Now
                </a>
-               <Link href="/contact" className="px-10 py-5 border border-white/20 text-white font-bold uppercase tracking-widest text-sm rounded-sm hover:bg-white hover:text-soccer transition-colors flex items-center justify-center gap-2">
+               <Link href="/contact" className="px-10 py-5 border border-white/20 text-white font-bold uppercase tracking-widest text-sm rounded-full hover:bg-white hover:text-soccer transition-colors flex items-center justify-center gap-2">
                   <PlayCircle size={16} /> Tour Facility
                </Link>
-               <Link href="/memberships" className="px-10 py-5 bg-white/10 backdrop-blur-md text-white font-bold uppercase tracking-widest text-sm rounded-sm hover:bg-white/20 transition-colors">
+               <Link href="/memberships" className="px-10 py-5 bg-white/10 backdrop-blur-md text-white font-bold uppercase tracking-widest text-sm rounded-full hover:bg-white/20 transition-colors">
                   Start Membership
                </Link>
             </motion.div>

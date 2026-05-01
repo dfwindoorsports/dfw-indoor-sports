@@ -1,9 +1,10 @@
 import React from 'react';
+import Image from 'next/image';
 import { Camera, MapPin, Maximize2 } from 'lucide-react';
 
 const SoccerShowcase: React.FC = () => {
   return (
-    <section className="py-24 bg-[#050911] text-white relative overflow-hidden" id="showcase">
+    <section aria-label="Soccer facility gallery" className="py-24 bg-[#050911] text-white relative overflow-hidden" id="showcase">
        <div className="absolute inset-0 bg-[url('/textures/stardust.png')] opacity-10"></div>
        
        <div className="container mx-auto px-4 md:px-6 relative z-10">
@@ -15,7 +16,7 @@ const SoccerShowcase: React.FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 h-auto md:h-[600px]">
              {/* Main Large Image */}
              <div className="md:col-span-2 md:row-span-2 relative rounded-lg overflow-hidden group cursor-pointer">
-                <img src="/images/hero/soccer-hero.webp" alt="Main Field Overview" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                <Image src="/images/hero/soccer-hero.webp" alt="Main Field Overview" fill className="object-cover transition-transform duration-700 group-hover:scale-105" sizes="(max-width: 768px) 100vw, 66vw" />
                 <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
                    <Maximize2 className="text-white drop-shadow-lg" size={32} />
                 </div>
@@ -26,14 +27,14 @@ const SoccerShowcase: React.FC = () => {
 
              {/* Side Images */}
              <div className="relative rounded-lg overflow-hidden group cursor-pointer">
-                <img src="/images/sports/soccer-turf.webp" alt="Turf Detail" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                <Image src="/images/sports/soccer-turf.webp" alt="Turf Detail" fill className="object-cover transition-transform duration-700 group-hover:scale-105" sizes="(max-width: 768px) 100vw, 33vw" />
                 <div className="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-black/90 to-transparent">
                    <p className="font-bold uppercase tracking-widest text-xs text-emerald-400">Non-Infill Turf Tech</p>
                 </div>
              </div>
              
              <div className="relative rounded-lg overflow-hidden group cursor-pointer">
-                <img src="/images/sports/equipment.webp" alt="Goal System" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                <Image src="/images/sports/equipment.webp" alt="Goal System" fill className="object-cover transition-transform duration-700 group-hover:scale-105" sizes="(max-width: 768px) 100vw, 33vw" />
                 <div className="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-black/90 to-transparent">
                    <p className="font-bold uppercase tracking-widest text-xs text-white">Pro Goal Systems</p>
                 </div>
@@ -41,7 +42,7 @@ const SoccerShowcase: React.FC = () => {
           </div>
 
           <div className="text-center mt-12">
-              <a href="/contact" className="px-8 py-4 border border-white/20 text-white font-bold uppercase tracking-widest text-xs rounded-sm hover:bg-white hover:text-soccer transition-all flex items-center gap-3 mx-auto group">
+              <a href="/contact" className="px-8 py-4 border border-white/20 text-white font-bold uppercase tracking-widest text-xs rounded-lg hover:bg-white hover:text-soccer transition-all flex items-center gap-3 mx-auto group">
                  <Camera size={16} className="group-hover:text-soccer transition-colors" /> Schedule In-Person Tour
               </a>
           </div>

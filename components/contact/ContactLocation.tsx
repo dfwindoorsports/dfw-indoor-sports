@@ -3,7 +3,7 @@ import { MapPin, Navigation, Car, Clock } from 'lucide-react';
 
 const ContactLocation: React.FC = () => {
   return (
-    <section className="py-24 bg-white border-b border-gray-100">
+    <section aria-label="Our location" className="py-24 bg-white border-b border-gray-100">
        <div className="container mx-auto px-4 md:px-6">
           <div className="flex flex-col lg:flex-row gap-16">
              
@@ -36,7 +36,7 @@ const ContactLocation: React.FC = () => {
                       <h4 className="font-bold text-dfw-navy text-xs uppercase mb-3 flex items-center gap-2 tracking-widest">
                          <Clock size={14} className="text-dfw-red" /> Parking Info
                       </h4>
-                      <p className="text-xs text-gray-500 leading-relaxed bg-blue-50 p-3 rounded-sm border border-blue-100">
+                      <p className="text-xs text-gray-500 leading-relaxed bg-blue-50 p-3 rounded-lg border border-blue-100">
                          <strong>200+ Free Spaces.</strong> Dedicated lot. Accessible parking is located immediately in front of the main glass entrance.
                       </p>
                    </div>
@@ -46,7 +46,7 @@ const ContactLocation: React.FC = () => {
                    href="https://maps.google.com/?q=16230+Three+Wide+Drive+Suite+200,+Fort+Worth,+TX+76177" 
                    target="_blank" 
                    rel="noreferrer"
-                   className="w-full py-4 bg-dfw-navy text-white font-bold uppercase tracking-widest text-xs rounded-sm hover:bg-dfw-red transition-colors flex items-center justify-center gap-3 shadow-lg"
+                   className="w-full py-4 bg-dfw-navy text-white font-bold uppercase tracking-widest text-xs rounded-lg hover:bg-dfw-red transition-colors flex items-center justify-center gap-3 shadow-lg"
                 >
                    <Navigation size={16} /> Open in Google Maps
                 </a>

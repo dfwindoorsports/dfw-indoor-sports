@@ -3,7 +3,7 @@ import { MapPin, ArrowRight, UserPlus, Calendar, CreditCard } from 'lucide-react
 
 const CricketInfo: React.FC = () => {
   return (
-    <section className="bg-white py-24">
+    <section aria-label="Cricket information" className="bg-white py-24">
        <div className="container mx-auto px-4 md:px-6">
           
           {/* Booking Steps */}
@@ -25,7 +25,7 @@ const CricketInfo: React.FC = () => {
                 ))}
              </div>
              <div className="text-center mt-12">
-                 <a href="https://book.runswiftapp.com/facilities/dfw-indoor-sports/rentals" target="_blank" rel="noopener noreferrer" className="px-8 py-3 bg-cricket text-white font-bold uppercase text-xs tracking-widest rounded-sm hover:bg-[#00502a] transition-colors shadow-lg inline-block">
+                 <a href="https://book.runswiftapp.com/facilities/dfw-indoor-sports/rentals" target="_blank" rel="noopener noreferrer" className="px-8 py-3 bg-cricket text-white font-bold uppercase text-xs tracking-widest rounded-lg hover:bg-[#00502a] transition-colors shadow-lg inline-block">
                     Book Online Now
                  </a>
              </div>
@@ -41,7 +41,7 @@ const CricketInfo: React.FC = () => {
                 <p className="text-gray-600 text-sm mb-6 leading-relaxed">
                    Centrally located in Fort Worth, accessible within 20-30 minutes from Arlington, Irving, Southlake, and Keller. Ample free parking available.
                 </p>
-                <div className="h-64 bg-gray-200 rounded-sm relative overflow-hidden group">
+                <div className="h-64 bg-gray-200 rounded-lg relative overflow-hidden group">
                    <div className="absolute inset-0 flex items-center justify-center bg-gray-300">
                       <span className="text-gray-500 font-bold uppercase tracking-widest">Map Placeholder</span>
                    </div>

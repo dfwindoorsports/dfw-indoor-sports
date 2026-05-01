@@ -3,7 +3,7 @@ import { MapPin, Navigation } from 'lucide-react';
 
 const BadmintonLocation: React.FC = () => {
   return (
-    <section className="py-20 bg-gray-100 border-t border-gray-200">
+    <section aria-label="Badminton location" className="py-20 bg-gray-100 border-t border-gray-200">
        <div className="container mx-auto px-4 md:px-6">
           <div className="flex flex-col md:flex-row items-center gap-12">
              <div className="md:w-1/2">
@@ -25,7 +25,7 @@ const BadmintonLocation: React.FC = () => {
                    href="https://maps.google.com/?q=16230+Three+Wide+Drive+Suite+200,+Fort+Worth,+TX+76177" 
                    target="_blank" 
                    rel="noreferrer"
-                   className="inline-flex items-center gap-2 px-6 py-3 bg-badminton text-white font-bold uppercase text-xs tracking-widest rounded-sm hover:bg-blue-800 transition-colors"
+                   className="inline-flex items-center gap-2 px-6 py-3 bg-badminton text-white font-bold uppercase text-xs tracking-widest rounded-lg hover:bg-blue-800 transition-colors"
                 >
                    <Navigation size={14} /> Get Directions
                 </a>

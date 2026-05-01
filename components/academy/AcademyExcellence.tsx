@@ -21,7 +21,7 @@ const AcademyExcellence: React.FC = () => {
   };
 
   return (
-    <section className="bg-slate-950 py-24 relative overflow-hidden border-t border-white/5 transition-colors duration-300">
+    <section aria-label="Academy excellence and achievements" className="bg-slate-950 py-24 relative overflow-hidden border-t border-white/5 transition-colors duration-300">
        <div className="absolute inset-0 bg-grid-white opacity-[0.03] pointer-events-none"></div>
        
        <div className="container mx-auto px-4 md:px-6 relative z-10">
@@ -50,7 +50,7 @@ const AcademyExcellence: React.FC = () => {
                 <motion.div 
                   key={i} 
                   variants={itemVariants}
-                  className="bg-slate-900/50 backdrop-blur-sm border border-white/10 p-8 rounded-sm hover:border-dfw-red/50 hover:bg-slate-900 transition-all duration-300 group cursor-default"
+                  className="bg-slate-900/50 backdrop-blur-sm border border-white/10 p-8 rounded-lg hover:border-dfw-red/50 hover:bg-slate-900 transition-all duration-300 group cursor-default"
                 >
                    <div className="text-dfw-red mb-4 group-hover:scale-110 transition-transform duration-300 w-12 h-12 bg-white/5 rounded-full flex items-center justify-center border border-white/5">
                       <item.icon size={24} strokeWidth={1.5} />

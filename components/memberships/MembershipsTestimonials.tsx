@@ -3,7 +3,7 @@ import { Star } from 'lucide-react';
 
 const MembershipsTestimonials: React.FC = () => {
    return (
-      <section className="py-24 bg-white border-b border-gray-200 transition-colors duration-300">
+      <section aria-label="Member testimonials" className="py-24 bg-white border-b border-gray-200 transition-colors duration-300">
          <div className="container mx-auto px-4 md:px-6">
             <h2 className="text-3xl font-header font-bold text-dfw-navy uppercase mb-12 text-center">Real Results</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">

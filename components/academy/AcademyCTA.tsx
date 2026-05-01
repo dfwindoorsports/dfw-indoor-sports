@@ -6,7 +6,7 @@ import Link from 'next/link';
 
 const AcademyCTA: React.FC = () => {
    return (
-      <section className="py-32 bg-dfw-navy relative overflow-hidden text-center transition-colors duration-300">
+      <section aria-label="Academy enrollment call to action" className="py-32 bg-dfw-navy relative overflow-hidden text-center transition-colors duration-300">
          <div className="absolute inset-0 bg-[url('/textures/carbon-fibre.png')] opacity-20"></div>
          <div className="absolute inset-0 bg-gradient-to-r from-dfw-navy via-dfw-navy/90 to-transparent"></div>
          <div className="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-black/50 to-transparent"></div>
@@ -28,10 +28,10 @@ const AcademyCTA: React.FC = () => {
                transition={{ delay: 0.3 }}
                className="flex flex-col sm:flex-row justify-center gap-6"
             >
-                <a href="https://ams-app.skonnect.io/player/register?center__code=C-A144&sport=1" target="_blank" rel="noopener noreferrer" className="px-10 py-5 bg-dfw-red text-white font-bold uppercase tracking-widest text-xs rounded-sm hover:bg-red-700 transition-colors shadow-[0_0_30px_rgba(214,40,40,0.3)] hover:shadow-[0_0_50px_rgba(214,40,40,0.5)] transform hover:-translate-y-1">
+                <a href="https://ams-app.skonnect.io/player/register?center__code=C-A144&sport=1" target="_blank" rel="noopener noreferrer" className="px-10 py-5 bg-dfw-red text-white font-bold uppercase tracking-widest text-xs rounded-lg hover:bg-red-700 transition-colors shadow-[0_0_30px_rgba(214,40,40,0.3)] hover:shadow-[0_0_50px_rgba(214,40,40,0.5)] transform hover:-translate-y-1">
                    Register for Academy
                 </a>
-               <Link href="/contact" className="px-10 py-5 border border-white/20 text-white font-bold uppercase tracking-widest text-xs rounded-sm hover:bg-white hover:text-dfw-navy transition-colors">
+               <Link href="/contact" className="px-10 py-5 border border-white/20 text-white font-bold uppercase tracking-widest text-xs rounded-lg hover:bg-white hover:text-dfw-navy transition-colors">
                   Contact Academy
                </Link>
             </motion.div>

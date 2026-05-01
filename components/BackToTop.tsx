@@ -29,7 +29,7 @@ const BackToTop: React.FC = () => {
   return (
     <button
       onClick={scrollToTop}
-      className={`fixed bottom-6 right-6 md:bottom-10 md:right-10 z-[60] p-3 md:p-4 bg-dfw-red text-white rounded-sm shadow-[0_10px_20px_rgba(214,40,40,0.3)] border border-white/10 hover:bg-red-700 transition-all duration-500 transform hover:-translate-y-1 group ${
+      className={`fixed bottom-6 right-6 md:bottom-10 md:right-10 z-[60] p-3 md:p-4 bg-dfw-red text-white rounded-full shadow-[0_10px_20px_rgba(214,40,40,0.3)] border border-white/10 hover:bg-red-700 transition-all duration-500 transform hover:-translate-y-1 group ${
         isVisible ? 'translate-y-0 opacity-100 visible' : 'translate-y-10 opacity-0 invisible'
       }`}
       aria-label="Back to top"

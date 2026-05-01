@@ -19,7 +19,7 @@ const ContactHero: React.FC = () => {
 
       <div className="container mx-auto px-4 md:px-6 relative z-20 pt-10">
         {/* Status Badge */}
-        <div className="inline-flex items-center gap-3 px-4 py-2 rounded-full bg-gray-800 text-green-400 font-mono text-[10px] font-medium uppercase tracking-[0.25em] mb-4 animate-fade-in-up cursor-default">
+        <div className="inline-flex items-center gap-3 px-4 py-2 rounded-full bg-gray-800 text-green-400 font-mono text-\[11px\] font-medium uppercase tracking-[0.25em] mb-4 animate-fade-in-up cursor-default">
           <span className="w-2 h-2 rounded-full bg-green-500"></span>
           <span>Support Online</span>
         </div>
@@ -36,14 +36,14 @@ const ContactHero: React.FC = () => {
         <div className="flex flex-row flex-wrap gap-4 animate-slide-up">
           <a
             href="tel:8179380808"
-            className="group relative px-6 py-3 bg-white text-dfw-navy font-bold uppercase tracking-widest text-xs rounded-sm overflow-hidden shadow-[0_0_30px_rgba(255,255,255,0.1)] flex items-center justify-center gap-3 transition-transform hover:-translate-y-1"
+            className="group relative px-6 py-3 bg-white text-dfw-navy font-bold uppercase tracking-widest text-xs rounded-lg overflow-hidden shadow-[0_0_30px_rgba(255,255,255,0.1)] flex items-center justify-center gap-3 transition-transform hover:-translate-y-1"
           >
             <Phone size={16} className="text-dfw-red transition-transform group-hover:scale-110" />
             <span>Call (817) 938-0808</span>
           </a>
           <button
             onClick={() => document.getElementById('contact-form')?.scrollIntoView({ behavior: 'smooth' })}
-            className="group px-6 py-3 border border-white/20 bg-white/5 backdrop-blur-md text-white font-bold uppercase tracking-widest text-xs rounded-sm hover:bg-white hover:text-dfw-navy transition-all flex items-center justify-center gap-3"
+            className="group px-6 py-3 border border-white/20 bg-white/5 backdrop-blur-md text-white font-bold uppercase tracking-widest text-xs rounded-lg hover:bg-white hover:text-dfw-navy transition-all flex items-center justify-center gap-3"
           >
             <MessageSquare size={16} className="group-hover:text-dfw-red transition-colors" />
             <span>Send Message</span>

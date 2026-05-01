@@ -13,7 +13,7 @@ const MembershipsPricing: React.FC = () => {
    };
 
    return (
-      <section className="py-24 bg-white relative transition-colors duration-300" id="pricing">
+      <section aria-label="Membership pricing plans" className="py-24 bg-white relative transition-colors duration-300" id="pricing">
          <div className="container mx-auto px-4 md:px-6">
 
             {/* Member Usage Banner */}
@@ -48,7 +48,7 @@ const MembershipsPricing: React.FC = () => {
                      <div className={`w-6 h-6 bg-white rounded-full shadow-md transform transition-transform duration-300 ${billingCycle === 'halfYearly' ? 'translate-x-8' : 'translate-x-0'}`}></div>
                   </button>
                   <span className={`text-xs font-bold uppercase tracking-widest transition-colors ${billingCycle === 'halfYearly' ? 'text-dfw-navy' : 'text-gray-400'}`}>
-                     6-Months <span className="text-green-500 text-[10px] font-medium ml-1">(Best Value)</span>
+                     6-Months <span className="text-green-500 text-\[11px\] font-medium ml-1">(Best Value)</span>
                   </span>
                </div>
              </div>
@@ -69,7 +69,7 @@ const MembershipsPricing: React.FC = () => {
                         ${billingCycle === 'halfYearly' ? '70' : '85'}
                      </span>
                      <span className="text-sm text-gray-500 font-medium">/mo</span>
-                     <p className="text-[10px] font-medium text-gray-400 mt-1">
+                     <p className="text-\[11px\] font-medium text-gray-400 mt-1">
                         {billingCycle === 'halfYearly' ? 'Commit to 6 months. Save $90.' : 'Cancel anytime with 30 days notice.'}
                      </p>
                   </div>
@@ -85,7 +85,7 @@ const MembershipsPricing: React.FC = () => {
                      ))}
                   </ul>
 
-                  <a href="https://book.runswiftapp.com/facilities/dfw-indoor-sports/memberships" target="_blank" rel="noopener noreferrer" className="w-full py-3 border border-dfw-navy text-dfw-navy font-bold uppercase text-xs tracking-widest rounded-sm hover:bg-dfw-navy hover:text-white transition-colors block text-center">
+                  <a href="https://book.runswiftapp.com/facilities/dfw-indoor-sports/memberships" target="_blank" rel="noopener noreferrer" className="w-full py-3 border border-dfw-navy text-dfw-navy font-bold uppercase text-xs tracking-widest rounded-lg hover:bg-dfw-navy hover:text-white transition-colors block text-center">
                      Select Plan
                   </a>
                </motion.div>
@@ -95,7 +95,7 @@ const MembershipsPricing: React.FC = () => {
                   transition={{ delay: 0.1 }}
                   className="bg-dfw-navy rounded-lg border border-dfw-navy p-8 shadow-2xl relative group overflow-hidden xl:-mt-8 xl:mb-8 transform xl:scale-105 z-10"
                >
-                  <div className="absolute top-0 right-0 bg-dfw-red text-white text-[10px] font-bold uppercase px-3 py-1 rounded-bl-lg z-20">Most Popular</div>
+                  <div className="absolute top-0 right-0 bg-dfw-red text-white text-\[11px\] font-bold uppercase px-3 py-1 rounded-bl-lg z-20">Most Popular</div>
                   {/* Background FX */}
                   <div className="absolute inset-0 bg-[url('/textures/carbon-fibre.png')] opacity-20 mix-blend-overlay"></div>
                   <div className="absolute -bottom-20 -right-20 w-64 h-64 bg-dfw-red/20 blur-[80px] rounded-full pointer-events-none"></div>
@@ -109,7 +109,7 @@ const MembershipsPricing: React.FC = () => {
                            ${billingCycle === 'halfYearly' ? '109' : '119'}
                         </span>
                         <span className="text-sm text-gray-400 font-medium">/mo</span>
-                        <p className="text-[10px] font-medium text-gray-500 mt-1">
+                        <p className="text-\[11px\] font-medium text-gray-500 mt-1">
                            {billingCycle === 'halfYearly' ? 'Lock in lowest rate.' : 'Monthly flexibility.'}
                         </p>
                      </div>
@@ -131,7 +131,7 @@ const MembershipsPricing: React.FC = () => {
                         ))}
                      </ul>
 
-                     <a href="https://book.runswiftapp.com/facilities/dfw-indoor-sports/memberships?membershipId=3671" target="_blank" rel="noopener noreferrer" className="w-full py-4 bg-dfw-red text-white font-bold uppercase text-xs tracking-widest rounded-sm hover:bg-red-600 transition-colors shadow-lg block text-center">
+                     <a href="https://book.runswiftapp.com/facilities/dfw-indoor-sports/memberships?membershipId=3671" target="_blank" rel="noopener noreferrer" className="w-full py-4 bg-dfw-red text-white font-bold uppercase text-xs tracking-widest rounded-lg hover:bg-red-600 transition-colors shadow-lg block text-center">
                         Get Gold Access
                      </a>
                   </div>
@@ -151,7 +151,7 @@ const MembershipsPricing: React.FC = () => {
                         $129
                      </span>
                      <span className="text-sm text-gray-500 font-medium">/mo</span>
-                     <p className="text-[10px] font-medium text-gray-400 mt-1">
+                     <p className="text-\[11px\] font-medium text-gray-400 mt-1">
                         Monthly subscription. No long-term commitment.
                      </p>
                   </div>
@@ -167,7 +167,7 @@ const MembershipsPricing: React.FC = () => {
                      ))}
                   </ul>
 
-                  <button className="w-full py-3 border border-dfw-navy text-dfw-navy font-bold uppercase text-xs tracking-widest rounded-sm hover:bg-dfw-navy hover:text-white transition-colors">
+                  <button className="w-full py-3 border border-dfw-navy text-dfw-navy font-bold uppercase text-xs tracking-widest rounded-lg hover:bg-dfw-navy hover:text-white transition-colors">
                      Select Plan
                   </button>
                </motion.div>
@@ -186,7 +186,7 @@ const MembershipsPricing: React.FC = () => {
                         $129
                      </span>
                      <span className="text-sm text-gray-500 font-medium">/mo</span>
-                     <p className="text-[10px] font-medium text-gray-400 mt-1">
+                     <p className="text-\[11px\] font-medium text-gray-400 mt-1">
                         6-month commitment. Covers 4 family members.
                      </p>
                   </div>
@@ -202,7 +202,7 @@ const MembershipsPricing: React.FC = () => {
                      ))}
                   </ul>
 
-                  <a href="https://book.runswiftapp.com/facilities/dfw-indoor-sports/memberships?membershipId=3675" target="_blank" rel="noopener noreferrer" className="w-full py-3 border border-dfw-navy text-dfw-navy font-bold uppercase text-xs tracking-widest rounded-sm hover:bg-dfw-navy hover:text-white transition-colors block text-center">
+                  <a href="https://book.runswiftapp.com/facilities/dfw-indoor-sports/memberships?membershipId=3675" target="_blank" rel="noopener noreferrer" className="w-full py-3 border border-dfw-navy text-dfw-navy font-bold uppercase text-xs tracking-widest rounded-lg hover:bg-dfw-navy hover:text-white transition-colors block text-center">
                      Select Plan
                   </a>
                </motion.div>

@@ -48,7 +48,7 @@ const PartnersCTA: React.FC = () => {
    };
 
    return (
-      <section className="py-24 bg-dfw-navy relative overflow-hidden" id="contact-partners">
+      <section aria-label="Partner with us" className="py-24 bg-dfw-navy relative overflow-hidden" id="contact-partners">
          <div className="absolute inset-0 bg-[url('/textures/carbon-fibre.png')] opacity-20"></div>
          <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
 
@@ -138,7 +138,7 @@ const PartnersCTA: React.FC = () => {
                            </div>
                         )}
 
-                        <button type="submit" disabled={isSubmitting} className="w-full py-4 bg-dfw-red text-white font-bold uppercase tracking-widest text-xs rounded-sm hover:bg-red-700 transition-all shadow-lg flex items-center justify-center gap-2 group disabled:opacity-50 disabled:cursor-not-allowed">
+                        <button type="submit" disabled={isSubmitting} className="w-full py-4 bg-dfw-red text-white font-bold uppercase tracking-widest text-xs rounded-lg hover:bg-red-700 transition-all shadow-lg flex items-center justify-center gap-2 group disabled:opacity-50 disabled:cursor-not-allowed">
                            {isSubmitting ? (
                               <><Loader2 size={14} className="animate-spin" /> Submitting...</>
                            ) : (

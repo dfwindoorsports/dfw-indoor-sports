@@ -7,7 +7,7 @@ import Link from 'next/link';
 
 const SportsCommunity: React.FC = () => {
   return (
-    <section className="bg-gray-50 py-24 border-y border-gray-200 transition-colors duration-300">
+    <section aria-label="Sports community and leagues" className="bg-gray-50 py-24 border-y border-gray-200 transition-colors duration-300">
        <div className="container mx-auto px-4 md:px-6">
           
           <div className="flex flex-col lg:flex-row gap-16">

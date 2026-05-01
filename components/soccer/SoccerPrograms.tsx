@@ -3,7 +3,7 @@ import { Trophy, Users, Zap, UserPlus } from 'lucide-react';
 
 const SoccerPrograms: React.FC = () => {
   return (
-    <section className="bg-white py-24 border-b border-gray-200">
+    <section aria-label="Soccer programs and leagues" className="bg-white py-24 border-b border-gray-200">
        <div className="container mx-auto px-4 md:px-6">
           <div className="text-center mb-16">
              <span className="text-emerald-600 font-mono text-xs font-bold uppercase tracking-widest mb-3 block">Development & Play</span>
@@ -24,7 +24,7 @@ const SoccerPrograms: React.FC = () => {
                 </p>
                 <div className="text-sm font-bold text-emerald-700 border-t border-gray-200 pt-4 flex justify-between items-center">
                    <span>$150-180 / Season</span>
-                   <span className="text-[10px] font-medium uppercase tracking-wider text-gray-400">Rec & Comp</span>
+                   <span className="text-\[11px\] font-medium uppercase tracking-wider text-gray-400">Rec & Comp</span>
                 </div>
              </div>
 
@@ -39,7 +39,7 @@ const SoccerPrograms: React.FC = () => {
                 </p>
                 <div className="text-sm font-bold text-emerald-700 border-t border-gray-200 pt-4 flex justify-between items-center">
                    <span>Contact for Pricing</span>
-                   <span className="text-[10px] font-medium uppercase tracking-wider text-gray-400">Weekly</span>
+                   <span className="text-\[11px\] font-medium uppercase tracking-wider text-gray-400">Weekly</span>
                 </div>
              </div>
 
@@ -54,7 +54,7 @@ const SoccerPrograms: React.FC = () => {
                 </p>
                 <div className="text-sm font-bold text-emerald-700 border-t border-gray-200 pt-4 flex justify-between items-center">
                    <span>Contact for Pricing</span>
-                   <span className="text-[10px] font-medium uppercase tracking-wider text-gray-400">Certified</span>
+                   <span className="text-\[11px\] font-medium uppercase tracking-wider text-gray-400">Certified</span>
                 </div>
              </div>
 
@@ -69,7 +69,7 @@ const SoccerPrograms: React.FC = () => {
                 </p>
                 <div className="text-sm font-bold text-emerald-700 border-t border-gray-200 pt-4 flex justify-between items-center">
                    <span>Custom Quote</span>
-                   <span className="text-[10px] font-medium uppercase tracking-wider text-gray-400">Clubs</span>
+                   <span className="text-\[11px\] font-medium uppercase tracking-wider text-gray-400">Clubs</span>
                 </div>
              </div>
 

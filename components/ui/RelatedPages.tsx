@@ -16,7 +16,7 @@ export default function RelatedPages({ pages, title = 'Related Pages' }: Related
     if (!pages || pages.length === 0) return null
 
     return (
-        <section className="py-12 border-t border-gray-200">
+        <section aria-label="Related pages" className="py-12 border-t border-gray-200">
             <div className="container mx-auto px-4">
                 <h3 className="text-xl font-header font-bold text-dfw-navy uppercase mb-6">
                     {title}

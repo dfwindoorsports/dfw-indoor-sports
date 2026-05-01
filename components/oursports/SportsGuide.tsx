@@ -7,7 +7,7 @@ import Link from 'next/link';
 
 const SportsGuide: React.FC = () => {
   return (
-    <section className="bg-white py-24 transition-colors duration-300">
+    <section aria-label="Sports getting started guide" className="bg-white py-24 transition-colors duration-300">
        <div className="container mx-auto px-4 md:px-6">
           
           {/* Comparison Section */}

@@ -26,7 +26,7 @@ const MembershipsHero: React.FC = () => {
                
                animate={{ opacity: 1, y: 0 }}
                transition={{ delay: 0.2 }}
-               className="inline-flex items-center gap-3 px-4 py-1.5 rounded-full border border-white/10 bg-white/5 backdrop-blur-2xl text-white/90 font-mono text-[10px] font-medium uppercase tracking-[0.3em] mb-4 hover:bg-white/10 transition-colors cursor-default shadow-lg"
+               className="inline-flex items-center gap-3 px-4 py-1.5 rounded-full border border-white/10 bg-white/5 backdrop-blur-2xl text-white/90 font-mono text-\[11px\] font-medium uppercase tracking-[0.3em] mb-4 hover:bg-white/10 transition-colors cursor-default shadow-lg"
             >
                <Heart size={12} className="text-dfw-red fill-current" />
                Your Active Sanctuary
@@ -59,11 +59,11 @@ const MembershipsHero: React.FC = () => {
             >
                <button
                   onClick={() => document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' })}
-                  className="px-6 py-3 bg-white text-dfw-navy font-bold uppercase tracking-widest text-xs rounded-sm hover:bg-gray-100 transition-all shadow-[0_0_30px_rgba(255,255,255,0.2)] flex items-center gap-3 group"
+                  className="px-6 py-3 bg-white text-dfw-navy font-bold uppercase tracking-widest text-xs rounded-lg hover:bg-gray-100 transition-all shadow-[0_0_30px_rgba(255,255,255,0.2)] flex items-center gap-3 group"
                >
                   Find Your Plan <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
                </button>
-               <button className="px-6 py-3 border border-white/20 bg-white/5 backdrop-blur-md text-white font-bold uppercase tracking-widest text-xs rounded-sm hover:bg-white hover:text-dfw-navy transition-all flex items-center gap-3">
+               <button className="px-6 py-3 border border-white/20 bg-white/5 backdrop-blur-md text-white font-bold uppercase tracking-widest text-xs rounded-lg hover:bg-white hover:text-dfw-navy transition-all flex items-center gap-3">
                   <Clock size={14} /> Start 7-Day Trial
                </button>
             </motion.div>

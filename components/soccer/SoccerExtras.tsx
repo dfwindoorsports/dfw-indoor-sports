@@ -3,7 +3,7 @@ import { ShoppingBag, Trophy, ArrowRight, Shirt, Briefcase, Activity, Goal } fro
 
 const SoccerExtras: React.FC = () => {
   return (
-    <section className="bg-white py-24 border-b border-gray-200">
+    <section aria-label="Soccer extras and programs" className="bg-white py-24 border-b border-gray-200">
        <div className="container mx-auto px-4 md:px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
              

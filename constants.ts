@@ -1,43 +1,44 @@
 import { Trophy, Users, Star, Calendar, MapPin, Phone, Mail } from 'lucide-react';
 
 export const NAV_ITEMS = [
-  { label: 'Our Sports', href: '/sports' },
   {
-    label: 'Coaching',
-    href: '/academy',
+    label: 'Sports',
+    href: '/sports',
     children: [
-      { label: 'Academy', href: '/academy' },
-      { label: 'Coaches', href: '/academy/coaches' }
-    ]
-  },
-  { label: 'Memberships', href: '/memberships' },
-  {
-    label: 'Rentals',
-    href: '/rentals',
-    children: [
-      { label: 'Overview', href: '/rentals' },
+      { label: 'All Sports', href: '/sports' },
       { label: 'Cricket Lanes', href: '/cricket-lanes' },
       { label: 'Badminton Courts', href: '/badminton-courts' },
       { label: 'Soccer Fields', href: '/soccer-fields' },
-      { label: 'Dodgeball Courts', href: '/dodgeball-courts' }
+      { label: 'Dodgeball Courts', href: '/dodgeball-courts' },
     ]
   },
   {
-    label: 'Areas We Serve',
-    href: '/areas-we-serve',
+    label: 'Book & Play',
+    href: '/rentals',
     children: [
-      { label: 'All Locations', href: '/areas-we-serve' },
-      { label: 'Dallas', href: '/areas-we-serve/dallas' },
-      { label: 'Arlington', href: '/areas-we-serve/arlington' },
-      { label: 'Plano', href: '/areas-we-serve/plano' },
-      { label: 'Irving', href: '/areas-we-serve/irving' },
-      { label: 'Frisco', href: '/areas-we-serve/frisco' }
+      { label: 'Rentals', href: '/rentals' },
+      { label: 'Memberships', href: '/memberships' },
+      { label: 'Special Events', href: '/events' },
     ]
   },
-  { label: 'Blog', href: '/blog' },
-  { label: 'Special Events', href: '/events' },
-  { label: 'About Us', href: '/about' },
-  { label: 'Partners', href: '/partners' },
+  {
+    label: 'Academy',
+    href: '/academy',
+    children: [
+      { label: 'Programs', href: '/academy' },
+      { label: 'Our Coaches', href: '/academy/coaches' },
+    ]
+  },
+  {
+    label: 'About',
+    href: '/about',
+    children: [
+      { label: 'Our Story', href: '/about' },
+      { label: 'Blog', href: '/blog' },
+      { label: 'Partners', href: '/partners' },
+      { label: 'Areas We Serve', href: '/areas-we-serve' },
+    ]
+  },
 ];
 
 export const MARQUEE_ITEMS = [

@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 
 const PartnersTestimonials: React.FC = () => {
    return (
-      <section className="py-24 bg-[#050911] text-white">
+      <section aria-label="Partner testimonials" className="py-24 bg-[#050911] text-white">
          <div className="container mx-auto px-4 md:px-6">
             <motion.h2
                className="text-3xl font-header font-bold uppercase mb-16 text-center"

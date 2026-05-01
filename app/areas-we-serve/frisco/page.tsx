@@ -46,7 +46,7 @@ const friscoFaqs = [
     },
     {
         question: 'What are your membership options?',
-        answer: 'Monthly memberships start at \ for badminton and \ for GOLD (cricket + badminton). Family Gold membership is \/mo. Rental rates available on our booking platform.',
+        answer: 'Monthly memberships start at $70/mo for badminton (half-yearly) and $109/mo for GOLD (cricket + badminton). Family Gold membership is $129/mo. Rental rates available on our booking platform.',
     },
     {
         question: 'Can I make a day trip from Frisco?',

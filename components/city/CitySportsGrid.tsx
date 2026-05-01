@@ -16,7 +16,7 @@ interface SportCard {
 
 export default function CitySportsGrid({ sports }: { sports: SportCard[] }) {
     return (
-        <section className="py-20 bg-[#050911] relative overflow-hidden">
+        <section aria-label="Available sports" className="py-20 bg-[#050911] relative overflow-hidden">
             {/* Subtle texture */}
             <div className="absolute inset-0 bg-[url('/textures/carbon-fibre.png')] opacity-20 mix-blend-overlay" />
 
@@ -24,7 +24,7 @@ export default function CitySportsGrid({ sports }: { sports: SportCard[] }) {
                 {/* Header */}
                 <div className="text-center mb-12">
                     <motion.span
-                        className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-white/10 bg-white/5 backdrop-blur-2xl text-white/90 font-mono text-[10px] font-medium uppercase tracking-[0.25em] mb-4"
+                        className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-white/10 bg-white/5 backdrop-blur-2xl text-white/90 font-mono text-\[11px\] font-medium uppercase tracking-[0.25em] mb-4"
                     >
                         What We Offer
                     </motion.span>
@@ -77,7 +77,7 @@ export default function CitySportsGrid({ sports }: { sports: SportCard[] }) {
                                         </ul>
 
                                         {/* CTA */}
-                                        <div className="flex items-center gap-2 text-[10px] font-medium uppercase tracking-widest font-mono text-gray-400 group-hover:text-dfw-red transition-colors">
+                                        <div className="flex items-center gap-2 text-\[11px\] font-medium uppercase tracking-widest font-mono text-gray-400 group-hover:text-dfw-red transition-colors">
                                             Learn More
                                             <ArrowRight size={12} className="group-hover:translate-x-1 transition-transform" />
                                         </div>

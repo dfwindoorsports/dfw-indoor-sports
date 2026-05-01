@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 
 const RentalsFAQ: React.FC = () => {
   return (
-    <section className="py-24 bg-white transition-colors duration-300">
+    <section aria-label="Rentals frequently asked questions" className="py-24 bg-white transition-colors duration-300">
          <div className="container mx-auto px-4 md:px-6">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-16">
                

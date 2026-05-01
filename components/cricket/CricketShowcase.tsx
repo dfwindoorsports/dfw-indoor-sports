@@ -1,9 +1,10 @@
 import React from 'react';
+import Image from 'next/image';
 import { Camera, MapPin, Maximize2 } from 'lucide-react';
 
 const CricketShowcase: React.FC = () => {
   return (
-    <section className="py-24 bg-[#050911] text-white relative overflow-hidden" id="showcase">
+    <section aria-label="Cricket facility gallery" className="py-24 bg-[#050911] text-white relative overflow-hidden" id="showcase">
        <div className="absolute inset-0 bg-[url('/textures/stardust.png')] opacity-10"></div>
        
        <div className="container mx-auto px-4 md:px-6 relative z-10">
@@ -15,7 +16,7 @@ const CricketShowcase: React.FC = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 h-auto md:h-[600px]">
              {/* Main Large Image */}
              <div className="md:col-span-2 md:row-span-2 relative rounded-lg overflow-hidden group cursor-pointer">
-                <img src="/images/facilities/cricket-lanes.webp" alt="Main Lanes" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                <Image src="/images/facilities/cricket-lanes.webp" alt="Main Lanes" fill className="object-cover transition-transform duration-700 group-hover:scale-105" sizes="(max-width: 768px) 100vw, 66vw" />
                 <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
                    <Maximize2 className="text-white drop-shadow-lg" size={32} />
                 </div>
@@ -26,14 +27,14 @@ const CricketShowcase: React.FC = () => {
 
              {/* Side Images */}
              <div className="relative rounded-lg overflow-hidden group cursor-pointer">
-                <img src="/images/facilities/bowling-machine.webp" alt="Bowling Machine" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                <Image src="/images/facilities/bowling-machine.webp" alt="Bowling Machine" fill className="object-cover transition-transform duration-700 group-hover:scale-105" sizes="(max-width: 768px) 100vw, 33vw" />
                 <div className="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-black/90 to-transparent">
                    <p className="font-bold uppercase tracking-widest text-xs text-dfw-red-700">Auto-Feed Machines</p>
                 </div>
              </div>
              
              <div className="relative rounded-lg overflow-hidden group cursor-pointer">
-                <img src="/images/hero/cricket-hero.webp" alt="Batsman" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
+                <Image src="/images/hero/cricket-hero.webp" alt="Batsman" fill className="object-cover transition-transform duration-700 group-hover:scale-105" sizes="(max-width: 768px) 100vw, 33vw" />
                 <div className="absolute bottom-0 left-0 w-full p-4 bg-gradient-to-t from-black/90 to-transparent">
                    <p className="font-bold uppercase tracking-widest text-xs text-white">Australian Matting</p>
                 </div>
@@ -41,7 +42,7 @@ const CricketShowcase: React.FC = () => {
           </div>
 
           <div className="text-center mt-12">
-              <a href="/contact" className="px-8 py-4 border border-white/20 text-white font-bold uppercase tracking-widest text-xs rounded-sm hover:bg-white hover:text-cricket transition-all flex items-center gap-3 mx-auto group">
+              <a href="/contact" className="px-8 py-4 border border-white/20 text-white font-bold uppercase tracking-widest text-xs rounded-lg hover:bg-white hover:text-cricket transition-all flex items-center gap-3 mx-auto group">
                  <Camera size={16} className="group-hover:text-cricket transition-colors" /> Schedule In-Person Tour
               </a>
           </div>

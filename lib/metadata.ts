@@ -69,6 +69,7 @@ export const defaultMetadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
+    site: '@dfwindoorsports',
     title: 'DFW Indoor Sports | Premier Multi-Sport Facility in Fort Worth',
     description: BUSINESS_INFO.description,
   },
@@ -159,11 +160,31 @@ export function generateLocalBusinessSchema() {
     areaServed: [
       {
         '@type': 'City',
+        name: 'Fort Worth',
+      },
+      {
+        '@type': 'City',
         name: 'Dallas',
       },
       {
         '@type': 'City',
-        name: 'Fort Worth',
+        name: 'Arlington',
+      },
+      {
+        '@type': 'City',
+        name: 'Plano',
+      },
+      {
+        '@type': 'City',
+        name: 'Frisco',
+      },
+      {
+        '@type': 'City',
+        name: 'Irving',
+      },
+      {
+        '@type': 'City',
+        name: 'Southlake',
       },
       {
         '@type': 'State',

@@ -8,7 +8,7 @@ const SponsorshipTiers: React.FC = () => {
   const [activeTab, setActiveTab] = useState<'digital' | 'onsite' | 'full'>('digital');
 
   return (
-    <section className="py-24 bg-white transition-colors duration-300" id="benefits">
+    <section aria-label="Sponsorship tier benefits" className="py-24 bg-white transition-colors duration-300" id="benefits">
        <div className="container mx-auto px-4 md:px-6">
           <div className="text-center mb-16">
              <span className="text-dfw-red font-mono text-xs font-bold uppercase tracking-widest mb-3 block">Opportunities</span>
@@ -29,19 +29,19 @@ const SponsorshipTiers: React.FC = () => {
 
                 <button 
                    onClick={() => setActiveTab('digital')}
-                   className={`relative z-10 w-24 md:w-40 py-3 text-[10px] md:text-xs font-bold uppercase tracking-widest rounded-full transition-colors ${activeTab === 'digital' ? 'text-dfw-navy' : 'text-gray-500 hover:text-dfw-navy'}`}
+                   className={`relative z-10 w-24 md:w-40 py-3 text-\[11px\] md:text-xs font-bold uppercase tracking-widest rounded-full transition-colors ${activeTab === 'digital' ? 'text-dfw-navy' : 'text-gray-500 hover:text-dfw-navy'}`}
                 >
                    Digital
                 </button>
                 <button 
                    onClick={() => setActiveTab('onsite')}
-                   className={`relative z-10 w-24 md:w-40 py-3 text-[10px] md:text-xs font-bold uppercase tracking-widest rounded-full transition-colors ${activeTab === 'onsite' ? 'text-dfw-navy' : 'text-gray-500 hover:text-dfw-navy'}`}
+                   className={`relative z-10 w-24 md:w-40 py-3 text-\[11px\] md:text-xs font-bold uppercase tracking-widest rounded-full transition-colors ${activeTab === 'onsite' ? 'text-dfw-navy' : 'text-gray-500 hover:text-dfw-navy'}`}
                 >
                    On-Site
                 </button>
                 <button 
                    onClick={() => setActiveTab('full')}
-                   className={`relative z-10 w-24 md:w-40 py-3 text-[10px] md:text-xs font-bold uppercase tracking-widest rounded-full transition-colors ${activeTab === 'full' ? 'text-dfw-navy' : 'text-gray-500 hover:text-dfw-navy'}`}
+                   className={`relative z-10 w-24 md:w-40 py-3 text-\[11px\] md:text-xs font-bold uppercase tracking-widest rounded-full transition-colors ${activeTab === 'full' ? 'text-dfw-navy' : 'text-gray-500 hover:text-dfw-navy'}`}
                 >
                    Full Partner
                 </button>
@@ -77,7 +77,7 @@ const SponsorshipTiers: React.FC = () => {
                                <h4 className="font-bold text-dfw-navy mb-2 group-hover:text-blue-600 transition-colors">{item.title}</h4>
                                <p className="text-sm text-gray-500 mb-6 leading-relaxed">{item.desc}</p>
                                <div className="w-full h-1.5 bg-gray-100 rounded-full overflow-hidden"><div className="h-full bg-blue-500 rounded-full" style={{ width: item.val }}></div></div>
-                               <p className="text-[10px] font-medium text-gray-400 mt-2 text-right">{item.label}</p>
+                               <p className="text-\[11px\] font-medium text-gray-400 mt-2 text-right">{item.label}</p>
                             </div>
                          ))}
                       </div>
@@ -110,7 +110,7 @@ const SponsorshipTiers: React.FC = () => {
                             <div key={i} className="p-8 border border-gray-100 rounded-xl bg-white shadow-sm hover:shadow-xl transition-all group">
                                <div className="flex justify-between items-start mb-4">
                                   <h4 className="font-bold text-dfw-navy text-lg group-hover:text-green-600 transition-colors">{item.title}</h4>
-                                  <span className="text-[10px] font-bold text-green-600 bg-green-50 px-2 py-1 rounded">{item.badge}</span>
+                                  <span className="text-\[11px\] font-bold text-green-600 bg-green-50 px-2 py-1 rounded">{item.badge}</span>
                                </div>
                                <p className="text-sm text-gray-500 leading-relaxed">{item.desc}</p>
                             </div>
@@ -179,7 +179,7 @@ const SponsorshipTiers: React.FC = () => {
                          </div>
                          <div className="mt-12 pt-8 border-t border-white/10 text-center flex flex-col items-center">
                             <p className="text-xs font-mono text-gray-400 uppercase tracking-widest mb-6">Includes ALL Tier 1 & Tier 2 Benefits</p>
-                            <button className="px-10 py-4 bg-dfw-red text-white font-bold uppercase text-xs rounded-sm hover:bg-red-600 transition-all shadow-[0_0_20px_rgba(214,40,40,0.4)]">Request Platinum Proposal</button>
+                            <button className="px-10 py-4 bg-dfw-red text-white font-bold uppercase text-xs rounded-lg hover:bg-red-600 transition-all shadow-[0_0_20px_rgba(214,40,40,0.4)]">Request Platinum Proposal</button>
                          </div>
                       </div>
                    </motion.div>

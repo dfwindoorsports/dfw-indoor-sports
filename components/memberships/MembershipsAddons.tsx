@@ -3,7 +3,7 @@ import { Check } from 'lucide-react';
 
 const MembershipsAddons: React.FC = () => {
   return (
-    <section className="py-20 bg-gray-50 border-t border-gray-200 transition-colors duration-300">
+    <section aria-label="Membership add-ons" className="py-20 bg-gray-50 border-t border-gray-200 transition-colors duration-300">
        <div className="container mx-auto px-4 md:px-6">
           <h2 className="text-3xl font-header font-bold text-dfw-navy uppercase mb-10 text-center">Customize Your Plan</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
@@ -17,7 +17,7 @@ const MembershipsAddons: React.FC = () => {
                    <li className="flex gap-2"><Check size={12} className="text-green-500" /> Full Unlimited Access</li>
                    <li className="flex gap-2"><Check size={12} className="text-green-500" /> Same Benefits as Primary</li>
                 </ul>
-                <a href="https://book.runswiftapp.com/facilities/dfw-indoor-sports/memberships?membershipId=1443" target="_blank" rel="noopener noreferrer" className="block w-full text-center py-2 text-xs font-bold uppercase tracking-widest border border-gray-200 text-dfw-navy rounded-sm hover:bg-dfw-navy hover:text-white transition-colors">
+                <a href="https://book.runswiftapp.com/facilities/dfw-indoor-sports/memberships?membershipId=1443" target="_blank" rel="noopener noreferrer" className="block w-full text-center py-2 text-xs font-bold uppercase tracking-widest border border-gray-200 text-dfw-navy rounded-lg hover:bg-dfw-navy hover:text-white transition-colors">
                    Get Add-On
                 </a>
              </div>
@@ -31,7 +31,7 @@ const MembershipsAddons: React.FC = () => {
                    <li className="flex gap-2"><Check size={12} className="text-green-500" /> Cricket + Badminton Access</li>
                    <li className="flex gap-2"><Check size={12} className="text-green-500" /> Youth Program Access</li>
                 </ul>
-                <a href="https://book.runswiftapp.com/facilities/dfw-indoor-sports/memberships?membershipId=1444" target="_blank" rel="noopener noreferrer" className="block w-full text-center py-2 text-xs font-bold uppercase tracking-widest border border-gray-200 text-dfw-navy rounded-sm hover:bg-dfw-navy hover:text-white transition-colors">
+                <a href="https://book.runswiftapp.com/facilities/dfw-indoor-sports/memberships?membershipId=1444" target="_blank" rel="noopener noreferrer" className="block w-full text-center py-2 text-xs font-bold uppercase tracking-widest border border-gray-200 text-dfw-navy rounded-lg hover:bg-dfw-navy hover:text-white transition-colors">
                    Get Add-On
                 </a>
              </div>
@@ -45,7 +45,7 @@ const MembershipsAddons: React.FC = () => {
                    <li className="flex gap-2"><Check size={12} className="text-green-500" /> Facility Access</li>
                    <li className="flex gap-2"><Check size={12} className="text-green-500" /> Must Accompany Member</li>
                 </ul>
-                <a href="https://book.runswiftapp.com/facilities/dfw-indoor-sports/memberships?membershipId=1445" target="_blank" rel="noopener noreferrer" className="block w-full text-center py-2 text-xs font-bold uppercase tracking-widest border border-gray-200 text-dfw-navy rounded-sm hover:bg-dfw-navy hover:text-white transition-colors">
+                <a href="https://book.runswiftapp.com/facilities/dfw-indoor-sports/memberships?membershipId=1445" target="_blank" rel="noopener noreferrer" className="block w-full text-center py-2 text-xs font-bold uppercase tracking-widest border border-gray-200 text-dfw-navy rounded-lg hover:bg-dfw-navy hover:text-white transition-colors">
                    Get Day Pass
                 </a>
              </div>

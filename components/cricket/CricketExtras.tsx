@@ -4,10 +4,11 @@ import React from 'react';
 import { ShieldCheck, ShoppingBag, Trophy, ArrowRight, Video, Target, Shirt } from 'lucide-react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const CricketExtras: React.FC = () => {
   return (
-    <section className="bg-white py-24 border-t border-gray-200 transition-colors duration-300">
+    <section aria-label="Cricket extras and coaching" className="bg-white py-24 border-t border-gray-200 transition-colors duration-300">
        <div className="container mx-auto px-4 md:px-6">
           
           {/* Academy */}
@@ -21,7 +22,7 @@ const CricketExtras: React.FC = () => {
                 <div className="md:w-1/2">
                    <div className="inline-flex items-center gap-2 mb-4 bg-white/10 px-3 py-1 rounded-full backdrop-blur-md">
                       <ShieldCheck size={14} className="text-dfw-red-700" />
-                      <span className="text-[10px] font-bold uppercase tracking-widest">CricKingdom Academy</span>
+                      <span className="text-\[11px\] font-bold uppercase tracking-widest">CricKingdom Academy</span>
                    </div>
                    <h2 className="text-3xl md:text-5xl font-header font-bold uppercase mb-6">Professional Coaching</h2>
                    <p className="text-green-100 text-lg mb-8 leading-relaxed font-light">
@@ -37,12 +38,12 @@ const CricketExtras: React.FC = () => {
                          <p className="text-xs text-green-200">Competitive match scenarios.</p>
                       </div>
                    </div>
-                   <Link href="/academy" className="px-8 py-3 bg-dfw-red-700 text-white font-bold uppercase text-xs tracking-widest rounded-sm hover:bg-red-700 transition-colors inline-block">View Programs</Link>
+                   <Link href="/academy" className="px-8 py-3 bg-dfw-red-700 text-white font-bold uppercase text-xs tracking-widest rounded-lg hover:bg-red-700 transition-colors inline-block">View Programs</Link>
                 </div>
                 <div className="md:w-1/2 flex justify-center">
                    {/* Placeholder for Coach/Action Image */}
                    <div className="relative w-full max-w-md aspect-[4/3] bg-black/20 rounded-lg border border-white/10 backdrop-blur-sm p-2">
-                      <img src="/images/hero/cricket-hero.webp" className="w-full h-full object-cover rounded" alt="Coaching" />
+                      <Image src="/images/hero/cricket-hero.webp" fill className="object-cover rounded" alt="Professional cricket coaching at DFW Indoor Sports" sizes="(max-width: 768px) 100vw, 50vw" />
                    </div>
                 </div>
              </div>

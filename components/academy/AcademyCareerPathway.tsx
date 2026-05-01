@@ -23,7 +23,7 @@ const AcademyCareerPathway: React.FC = () => {
    };
 
    return (
-      <section className="bg-gradient-to-b from-white to-gray-50 py-24 border-y border-gray-200 relative overflow-hidden transition-colors duration-300">
+      <section aria-label="Career pathway" className="bg-gradient-to-b from-white to-gray-50 py-24 border-y border-gray-200 relative overflow-hidden transition-colors duration-300">
          {/* Background decorative elements */}
          <div className="absolute top-0 left-0 w-full h-full overflow-hidden opacity-30 pointer-events-none">
             <div className="absolute top-20 left-10 w-64 h-64 bg-dfw-red/5 rounded-full blur-3xl"></div>
@@ -34,7 +34,7 @@ const AcademyCareerPathway: React.FC = () => {
 
             <div className="text-center mb-20 max-w-3xl mx-auto">
                <motion.div
-                  className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-dfw-red/10 text-dfw-red text-[10px] font-bold uppercase tracking-widest mb-4"
+                  className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-dfw-red/10 text-dfw-red text-\[11px\] font-bold uppercase tracking-widest mb-4"
                >
                   <Target size={12} />
                   Roadmap to Excellence
@@ -81,7 +81,7 @@ const AcademyCareerPathway: React.FC = () => {
                      <motion.div
                         variants={itemVariants}
                         whileHover={{ scale: 1.05, zIndex: 60 }}
-                        className="w-[20%] h-[70px] bg-gradient-to-b from-[#E53935] to-[#C62828] text-white text-[10px] md:text-xs font-bold flex flex-col items-center justify-center text-center clip-pyramid-top shadow-[0_10px_20px_rgba(198,40,40,0.3)] z-50 mb-[-12px] relative cursor-pointer group"
+                        className="w-[20%] h-[70px] bg-gradient-to-b from-[#E53935] to-[#C62828] text-white text-\[11px\] md:text-xs font-bold flex flex-col items-center justify-center text-center clip-pyramid-top shadow-[0_10px_20px_rgba(198,40,40,0.3)] z-50 mb-[-12px] relative cursor-pointer group"
                         onClick={() => setActiveLevel(activeLevel === 'Elite' ? null : 'Elite')}
                      >
                         <Trophy size={14} className="mb-1 opacity-80 group-hover:opacity-100 transition-opacity" />
@@ -92,7 +92,7 @@ const AcademyCareerPathway: React.FC = () => {
                      <motion.div
                         variants={itemVariants}
                         whileHover={{ scale: 1.05, zIndex: 50 }}
-                        className="w-[35%] h-[75px] bg-gradient-to-b from-[#FF9800] to-[#EF6C00] text-white text-[10px] md:text-xs font-bold flex flex-col items-center justify-center text-center clip-trapezoid shadow-[0_10px_20px_rgba(239,108,0,0.3)] z-40 mb-[-12px] relative cursor-pointer group"
+                        className="w-[35%] h-[75px] bg-gradient-to-b from-[#FF9800] to-[#EF6C00] text-white text-\[11px\] md:text-xs font-bold flex flex-col items-center justify-center text-center clip-trapezoid shadow-[0_10px_20px_rgba(239,108,0,0.3)] z-40 mb-[-12px] relative cursor-pointer group"
                         onClick={() => setActiveLevel(activeLevel === 'Advance' ? null : 'Advance')}
                      >
                         <Star size={14} className="mb-1 opacity-80 group-hover:opacity-100 transition-opacity" />
@@ -103,7 +103,7 @@ const AcademyCareerPathway: React.FC = () => {
                      <motion.div
                         variants={itemVariants}
                         whileHover={{ scale: 1.05, zIndex: 40 }}
-                        className="w-[50%] h-[80px] bg-gradient-to-b from-[#66BB6A] to-[#2E7D32] text-white text-[10px] md:text-xs font-bold flex flex-col items-center justify-center text-center clip-trapezoid shadow-[0_10px_20px_rgba(46,125,50,0.3)] z-30 mb-[-12px] relative cursor-pointer group"
+                        className="w-[50%] h-[80px] bg-gradient-to-b from-[#66BB6A] to-[#2E7D32] text-white text-\[11px\] md:text-xs font-bold flex flex-col items-center justify-center text-center clip-trapezoid shadow-[0_10px_20px_rgba(46,125,50,0.3)] z-30 mb-[-12px] relative cursor-pointer group"
                         onClick={() => setActiveLevel(activeLevel === 'Intermediate' ? null : 'Intermediate')}
                      >
                         <Medal size={14} className="mb-1 opacity-80 group-hover:opacity-100 transition-opacity" />
@@ -114,7 +114,7 @@ const AcademyCareerPathway: React.FC = () => {
                      <motion.div
                         variants={itemVariants}
                         whileHover={{ scale: 1.05, zIndex: 30 }}
-                        className="w-[65%] h-[85px] bg-gradient-to-b from-[#81C784] to-[#43A047] text-white text-[10px] md:text-xs font-bold flex flex-col items-center justify-center text-center clip-trapezoid shadow-[0_10px_20px_rgba(67,160,71,0.3)] z-20 mb-[-12px] relative cursor-pointer group"
+                        className="w-[65%] h-[85px] bg-gradient-to-b from-[#81C784] to-[#43A047] text-white text-\[11px\] md:text-xs font-bold flex flex-col items-center justify-center text-center clip-trapezoid shadow-[0_10px_20px_rgba(67,160,71,0.3)] z-20 mb-[-12px] relative cursor-pointer group"
                         onClick={() => setActiveLevel(activeLevel === 'Intermediate' ? null : 'Intermediate')}
                      >
                         <Users size={14} className="mb-1 opacity-80 group-hover:opacity-100 transition-opacity" />
@@ -125,7 +125,7 @@ const AcademyCareerPathway: React.FC = () => {
                      <motion.div
                         variants={itemVariants}
                         whileHover={{ scale: 1.05, zIndex: 20 }}
-                        className="w-[80%] h-[90px] bg-gradient-to-b from-[#42A5F5] to-[#1565C0] text-white text-[10px] md:text-xs font-bold flex flex-col items-center justify-center text-center clip-trapezoid-bottom shadow-[0_10px_20px_rgba(21,101,192,0.3)] z-10 relative cursor-pointer group"
+                        className="w-[80%] h-[90px] bg-gradient-to-b from-[#42A5F5] to-[#1565C0] text-white text-\[11px\] md:text-xs font-bold flex flex-col items-center justify-center text-center clip-trapezoid-bottom shadow-[0_10px_20px_rgba(21,101,192,0.3)] z-10 relative cursor-pointer group"
                         onClick={() => setActiveLevel(activeLevel === 'Beginners' ? null : 'Beginners')}
                      >
                         <User size={14} className="mb-1 opacity-80 group-hover:opacity-100 transition-opacity" />
@@ -169,7 +169,7 @@ const AcademyCareerPathway: React.FC = () => {
                            key={level.title}
                            variants={itemVariants}
                            whileHover={{ scale: 1.03, x: 0 }}
-                           className={`w-[${level.width}] h-[${level.height}] bg-gradient-to-r ${level.color} text-white text-[10px] md:text-xs font-bold flex items-center justify-between px-6 rounded-lg shadow-lg mb-3 relative overflow-hidden group cursor-pointer`}
+                           className={`w-[${level.width}] h-[${level.height}] bg-gradient-to-r ${level.color} text-white text-\[11px\] md:text-xs font-bold flex items-center justify-between px-6 rounded-lg shadow-lg mb-3 relative overflow-hidden group cursor-pointer`}
                            style={{ width: level.width, height: level.height }}
                         >
                            <div className="absolute inset-0 bg-white/10 translate-x-[-100%] group-hover:translate-x-[100%] transition-transform duration-700"></div>

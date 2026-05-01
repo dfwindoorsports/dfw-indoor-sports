@@ -45,7 +45,7 @@ const features = [
 
 const DodgeballFeatures: React.FC = () => {
   return (
-    <section className="bg-gray-50 py-24 relative overflow-hidden transition-colors duration-300">
+    <section aria-label="Dodgeball facility features" className="bg-gray-50 py-24 relative overflow-hidden transition-colors duration-300">
       {/* Background Texture */}
       <div className="absolute inset-0 bg-[url('/textures/cubes.png')] opacity-[0.04]"></div>
       
@@ -73,7 +73,7 @@ const DodgeballFeatures: React.FC = () => {
                   <div className="w-14 h-14 bg-violet-50 text-violet-700 rounded-lg flex items-center justify-center border border-violet-100 group-hover:bg-violet-600 group-hover:text-white transition-colors duration-300">
                      <feat.icon size={28} strokeWidth={1.5} />
                   </div>
-                  <span className="text-[10px] font-medium font-mono text-gray-300 group-hover:text-violet-500 transition-colors">0{idx + 1}</span>
+                  <span className="text-\[11px\] font-medium font-mono text-gray-300 group-hover:text-violet-500 transition-colors">0{idx + 1}</span>
                </div>
                
                <h3 className="text-xl font-header font-bold text-gray-900 uppercase mb-3 group-hover:text-violet-800 transition-colors">{feat.title}</h3>

@@ -51,7 +51,7 @@ export default function BlogGrid({ posts }: { posts: BlogPost[] }) {
     }
 
     return (
-        <section ref={containerRef} className="relative overflow-hidden">
+        <section aria-label="Blog articles" ref={containerRef} className="relative overflow-hidden">
             {/* Top transition gradient from hero */}
             <div className="h-24 bg-gradient-to-b from-[#020408] to-[#FAFAFA]" />
 

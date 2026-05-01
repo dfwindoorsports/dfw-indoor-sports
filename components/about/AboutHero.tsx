@@ -67,13 +67,13 @@ const AboutHero: React.FC = () => {
         >
           <button
             onClick={() => document.getElementById('story')?.scrollIntoView({ behavior: 'smooth' })}
-            className="px-6 py-3 bg-dfw-red text-white font-bold uppercase tracking-widest text-xs rounded-sm hover:bg-red-700 transition-all shadow-[0_0_30px_rgba(214,40,40,0.3)] flex items-center justify-center gap-3 group"
+            className="px-6 py-3 bg-dfw-red text-white font-bold uppercase tracking-widest text-xs rounded-lg hover:bg-red-700 transition-all shadow-[0_0_30px_rgba(214,40,40,0.3)] flex items-center justify-center gap-3 group"
           >
             Experience Our Facility <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
           </button>
           <button
             onClick={() => document.getElementById('values')?.scrollIntoView({ behavior: 'smooth' })}
-            className="px-6 py-3 bg-white/5 backdrop-blur-md border border-white/10 text-white font-bold uppercase tracking-widest text-xs rounded-sm hover:bg-white hover:text-dfw-navy transition-all flex items-center justify-center gap-3"
+            className="px-6 py-3 bg-white/5 backdrop-blur-md border border-white/10 text-white font-bold uppercase tracking-widest text-xs rounded-lg hover:bg-white hover:text-dfw-navy transition-all flex items-center justify-center gap-3"
           >
             Join Community
           </button>

@@ -46,7 +46,7 @@ const planoFaqs = [
     },
     {
         question: 'Do you offer membership discounts for families?',
-        answer: 'Yes, our Family GOLD Membership (\/mo) is very popular with Plano residents. It covers parents and kids, making it affordable for the whole family to play together.',
+        answer: 'Yes, our Family GOLD Membership ($129/mo) is very popular with Plano residents. It covers parents and kids, making it affordable for the whole family to play together.',
     },
     {
         question: 'What are the best times to visit from Plano?',
