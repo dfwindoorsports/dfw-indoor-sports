@@ -77,14 +77,14 @@ const CricketPricing: React.FC = () => {
                   </div>
                   <div className="mb-8 pb-8 border-b border-green-800 dark:border-white/10 relative z-10">
                      <div className="flex items-baseline gap-1">
-                        <span className="text-6xl font-header font-bold text-white"></span>
+                        <span className="text-6xl font-header font-bold text-white">$129</span>
                         <span className="text-sm text-green-200 font-medium">/mo</span>
                      </div>
                      <p className="text-xs text-green-300/80 mt-2">Monthly subscription</p>
                   </div>
 
                   <div className="bg-white/10 p-3 rounded mb-6 border border-white/10 relative z-10">
-                     <p className="text-xs text-green-100 font-bold flex items-center gap-2"><Star size={12} className="text-yellow-400" /> Or get GOLD (Cricket + Badminton) for \/mo</p>
+                     <p className="text-xs text-green-100 font-bold flex items-center gap-2"><Star size={12} className="text-yellow-400" /> Or get GOLD (Cricket + Badminton) for $109/mo</p>
                   </div>
 
                   <ul className="space-y-4 mb-8 flex-grow relative z-10">
@@ -107,7 +107,7 @@ const CricketPricing: React.FC = () => {
                   </div>
                   <div className="mb-8 pb-8 border-b border-gray-100 dark:border-white/10">
                      <div className="flex items-baseline gap-1">
-                        <span className="text-5xl font-header font-bold text-[#006838] dark:text-green-400"></span>
+                        <span className="text-5xl font-header font-bold text-[#006838] dark:text-green-400">$109</span>
                         <span className="text-sm text-gray-500 dark:text-gray-400 font-medium">/mo</span>
                      </div>
                      <p className="text-xs text-gray-400 mt-2">Half-yearly subscription</p>
