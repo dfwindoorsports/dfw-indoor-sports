@@ -4,7 +4,7 @@ import { OptimizedImage } from '@/components/ui/OptimizedImage';
 
 const ContactIntro: React.FC = () => {
    return (
-      <section aria-label="Contact introduction" className="py-24 bg-white relative border-b border-gray-100 overflow-hidden">
+      <section aria-label="Contact introduction" className="py-24 md:py-32 bg-white relative border-b border-gray-100 overflow-hidden">
          {/* Subtle background pattern */}
          <div className="absolute inset-0 bg-[url('/textures/cubes.png')] opacity-[0.03] pointer-events-none"></div>
 
@@ -58,7 +58,7 @@ const ContactIntro: React.FC = () => {
 
                {/* Right: Quick Answer Box (AEO Optimized) */}
                <div className="lg:w-1/2 w-full">
-                  <div className="bg-[#0A111F] p-10 rounded-xl shadow-2xl relative overflow-hidden group hover:shadow-[0_20px_50px_-12px_rgba(0,0,0,0.5)] transition-shadow duration-500 border border-white/10">
+                  <div className="bg-dfw-navy p-10 rounded-xl shadow-2xl relative overflow-hidden group hover:shadow-[0_20px_50px_-12px_rgba(0,0,0,0.5)] transition-shadow duration-500 border border-white/10">
                      {/* Decorative background */}
                      <div className="absolute top-0 right-0 w-64 h-64 bg-blue-600/10 rounded-full blur-[80px] pointer-events-none group-hover:bg-blue-600/20 transition-colors duration-700"></div>
                      <div className="absolute bottom-0 left-0 w-40 h-40 bg-dfw-red/10 rounded-full blur-[60px] pointer-events-none"></div>

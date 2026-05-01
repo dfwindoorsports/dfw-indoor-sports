@@ -7,7 +7,7 @@ import Link from 'next/link';
 
 const CricketCTA: React.FC = () => {
    return (
-      <section aria-label="Cricket call to action" className="py-24 bg-cricket relative overflow-hidden text-center text-white">
+      <section aria-label="Cricket call to action" className="py-24 md:py-32 bg-cricket relative overflow-hidden text-center text-white">
          <div className="absolute inset-0 bg-[url('/textures/carbon-fibre.png')] opacity-20 mix-blend-overlay"></div>
          <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
 

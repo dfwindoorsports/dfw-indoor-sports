@@ -22,7 +22,7 @@ const ContactQuickAnswers: React.FC = () => {
   );
 
   return (
-    <section aria-label="Quick answers" className="py-24 bg-white border-b border-gray-100">
+    <section aria-label="Quick answers" className="py-24 md:py-32 bg-white border-b border-gray-100">
        <div className="container mx-auto px-4 md:px-6">
           <div className="mb-12 flex flex-col md:flex-row md:items-end justify-between gap-6">
              <div className="flex items-center gap-3">

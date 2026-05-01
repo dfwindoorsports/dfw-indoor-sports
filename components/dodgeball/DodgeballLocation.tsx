@@ -3,7 +3,7 @@ import { MapPin, Navigation, Car } from 'lucide-react';
 
 const DodgeballLocation: React.FC = () => {
   return (
-    <section aria-label="Dodgeball location" className="py-20 bg-white border-t border-gray-200">
+    <section aria-label="Dodgeball location" className="py-24 md:py-32 bg-white border-t border-gray-200">
        <div className="container mx-auto px-4 md:px-6">
           <div className="flex flex-col md:flex-row items-center gap-12">
              <div className="md:w-1/2">

@@ -12,7 +12,7 @@ const features = [
 
 const CricketOverview: React.FC = () => {
    return (
-      <section aria-label="Cricket overview" className="py-24 bg-white relative">
+      <section aria-label="Cricket overview" className="py-24 md:py-32 bg-white relative">
          <div className="container mx-auto px-4 md:px-6">
             <div className="flex flex-col lg:flex-row gap-16 lg:gap-24 items-start mb-24">
 

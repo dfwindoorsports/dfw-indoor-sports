@@ -12,7 +12,7 @@ interface TestimonialProps {
 
 export default function CityTestimonial({ quote, author, location }: TestimonialProps) {
     return (
-        <section aria-label="Member testimonial" className="py-20 bg-[#050911] relative overflow-hidden">
+        <section aria-label="Member testimonial" className="py-24 md:py-32 bg-dfw-navy relative overflow-hidden">
             {/* Subtle texture */}
             <div className="absolute inset-0 bg-[url('/textures/carbon-fibre.png')] opacity-20 mix-blend-overlay" />
 

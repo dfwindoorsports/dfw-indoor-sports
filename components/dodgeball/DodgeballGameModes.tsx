@@ -36,7 +36,7 @@ const modes = [
 
 const DodgeballGameModes: React.FC = () => {
   return (
-    <section aria-label="Dodgeball game modes" className="py-24 bg-dodgeball text-white relative overflow-hidden">
+    <section aria-label="Dodgeball game modes" className="py-24 md:py-32 bg-dodgeball text-white relative overflow-hidden">
        <div className="absolute inset-0 bg-[url('/textures/stardust.png')] opacity-10"></div>
        <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-black/20 to-transparent"></div>
 

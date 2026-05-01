@@ -8,7 +8,7 @@ const SponsorshipTiers: React.FC = () => {
   const [activeTab, setActiveTab] = useState<'digital' | 'onsite' | 'full'>('digital');
 
   return (
-    <section aria-label="Sponsorship tier benefits" className="py-24 bg-white transition-colors duration-300" id="benefits">
+    <section aria-label="Sponsorship tier benefits" className="py-24 md:py-32 bg-white transition-colors duration-300" id="benefits">
        <div className="container mx-auto px-4 md:px-6">
           <div className="text-center mb-16">
              <span className="text-dfw-red font-mono text-xs font-bold uppercase tracking-widest mb-3 block">Opportunities</span>
@@ -135,7 +135,7 @@ const SponsorshipTiers: React.FC = () => {
                             <p className="text-sm text-gray-500">Amplify your reach with comprehensive integration.</p>
                          </div>
                       </div>
-                      <div className="bg-[#050911] rounded-2xl p-8 md:p-12 text-white relative overflow-hidden shadow-2xl border border-white/10">
+                      <div className="bg-dfw-navy rounded-2xl p-8 md:p-12 text-white relative overflow-hidden shadow-2xl border border-white/10">
                          <div className="absolute inset-0 bg-[url('/textures/carbon-fibre.png')] opacity-20 mix-blend-overlay"></div>
                          <div className="absolute top-0 right-0 w-96 h-96 bg-dfw-red/10 rounded-full blur-[100px] pointer-events-none"></div>
                          

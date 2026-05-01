@@ -7,7 +7,7 @@ import { OptimizedImage } from '@/components/ui/OptimizedImage';
 
 const SoccerIntro: React.FC = () => {
    return (
-      <section aria-label="Indoor soccer field details" className="py-24 bg-white relative transition-colors duration-300">
+      <section aria-label="Indoor soccer field details" className="py-24 md:py-32 bg-white relative transition-colors duration-300">
          {/* Background Noise */}
          <div className="absolute inset-0 bg-[url('/textures/noise.png')] opacity-[0.03]"></div>
 

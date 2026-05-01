@@ -3,7 +3,7 @@ import { Mail, ArrowRight } from 'lucide-react';
 
 const ContactTeam: React.FC = () => {
   return (
-    <section aria-label="Our team" className="py-24 bg-white border-t border-gray-200">
+    <section aria-label="Our team" className="py-24 md:py-32 bg-white border-t border-gray-200">
        <div className="container mx-auto px-4 md:px-6">
           <div className="text-center mb-16">
              <h2 className="text-3xl font-header font-bold text-dfw-navy uppercase mb-6">Department Directory</h2>

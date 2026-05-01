@@ -6,7 +6,7 @@ import Link from 'next/link';
 
 const CurrentPartners: React.FC = () => {
   return (
-    <section aria-label="Current partners" className="py-20 bg-[#FAFAFA] border-y border-gray-200 transition-colors duration-300">
+    <section aria-label="Current partners" className="py-24 md:py-32 bg-[#FAFAFA] border-y border-gray-200 transition-colors duration-300">
        <div className="container mx-auto px-4 md:px-6 text-center">
           <motion.div 
           >

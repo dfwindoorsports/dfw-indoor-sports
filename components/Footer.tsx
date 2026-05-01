@@ -71,7 +71,7 @@ export default function Footer() {
   }
 
   return (
-    <footer className="bg-[#050911] text-gray-400 pt-16 md:pt-24 pb-8 relative overflow-hidden font-sans border-t border-white/5">
+    <footer className="bg-dfw-navy text-gray-400 pt-16 md:pt-24 pb-8 relative overflow-hidden font-sans border-t border-white/5">
 
       <div className="absolute top-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-dfw-red/40 to-transparent"></div>
 
@@ -220,7 +220,7 @@ export default function Footer() {
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     placeholder="Enter email"
-                    className="w-full bg-[#050911] border border-white/10 rounded-lg py-2.5 pl-9 pr-10 text-xs text-white placeholder:text-gray-600 focus:outline-none focus:border-dfw-red focus:ring-1 focus:ring-dfw-red/50 transition-all font-mono"
+                    className="w-full bg-dfw-navy border border-white/10 rounded-lg py-2.5 pl-9 pr-10 text-xs text-white placeholder:text-gray-600 focus:outline-none focus:border-dfw-red focus:ring-1 focus:ring-dfw-red/50 transition-all font-mono"
                     required
                     disabled={status === 'loading'}
                   />

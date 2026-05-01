@@ -3,7 +3,7 @@ import { MapPin, Navigation, Car } from 'lucide-react';
 
 const SoccerLocation: React.FC = () => {
   return (
-    <section aria-label="Soccer location and directions" className="py-20 bg-gray-100 border-t border-gray-200">
+    <section aria-label="Soccer location and directions" className="py-24 md:py-32 bg-gray-100 border-t border-gray-200">
        <div className="container mx-auto px-4 md:px-6">
           <div className="flex flex-col md:flex-row items-center gap-12">
              <div className="md:w-1/2">

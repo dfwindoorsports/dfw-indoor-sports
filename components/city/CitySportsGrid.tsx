@@ -16,7 +16,7 @@ interface SportCard {
 
 export default function CitySportsGrid({ sports }: { sports: SportCard[] }) {
     return (
-        <section aria-label="Available sports" className="py-20 bg-[#050911] relative overflow-hidden">
+        <section aria-label="Available sports" className="py-24 md:py-32 bg-dfw-navy relative overflow-hidden">
             {/* Subtle texture */}
             <div className="absolute inset-0 bg-[url('/textures/carbon-fibre.png')] opacity-20 mix-blend-overlay" />
 

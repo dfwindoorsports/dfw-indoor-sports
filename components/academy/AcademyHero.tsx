@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 
 const AcademyHero: React.FC = () => {
    return (
-      <div className="relative h-[60vh] min-h-[400px] flex items-center bg-[#050911] overflow-hidden">
+      <div className="relative h-[60vh] min-h-[400px] flex items-center bg-dfw-navy overflow-hidden">
          {/* Dynamic Background with Parallax Feel */}
          <motion.div
             initial={{ scale: 1.1, opacity: 0 }}

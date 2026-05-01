@@ -4,7 +4,7 @@ import { Camera, MapPin, Maximize2 } from 'lucide-react';
 
 const CricketShowcase: React.FC = () => {
   return (
-    <section aria-label="Cricket facility gallery" className="py-24 bg-[#050911] text-white relative overflow-hidden" id="showcase">
+    <section aria-label="Cricket facility gallery" className="py-24 md:py-32 bg-dfw-navy text-white relative overflow-hidden" id="showcase">
        <div className="absolute inset-0 bg-[url('/textures/stardust.png')] opacity-10"></div>
        
        <div className="container mx-auto px-4 md:px-6 relative z-10">

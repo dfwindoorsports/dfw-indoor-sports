@@ -1,61 +1,93 @@
 'use client'
 
 import React from 'react';
-import { Layers, ShieldCheck, Thermometer } from 'lucide-react';
+import { Layers, ShieldCheck, Thermometer, Clock, Award } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 const SportsIntro: React.FC = () => {
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: { opacity: 1, transition: { staggerChildren: 0.1 } }
+  };
+  const itemVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0 }
+  };
+
   return (
-    <section aria-label="Sports overview" className="py-24 bg-white relative transition-colors duration-300">
+    <section aria-label="Sports overview" className="py-24 md:py-32 bg-white relative">
        <div className="container mx-auto px-4 md:px-6">
           <div className="flex flex-col lg:flex-row gap-16 lg:gap-24 items-start">
              
              {/* Left: Content */}
              <motion.div 
-               transition={{ duration: 0.6 }}
+               initial="hidden"
+               whileInView="visible"
+               viewport={{ once: true }}
+               variants={containerVariants}
                className="lg:w-3/5"
              >
-                <div className="inline-flex items-center gap-2 mb-6">
+                <motion.div variants={itemVariants} className="inline-flex items-center gap-2 mb-6">
                    <Layers size={16} className="text-dfw-red" />
                    <span className="text-dfw-navy font-mono text-xs font-bold uppercase tracking-widest">A Place for Everyone</span>
-                </div>
-                <h2 className="text-4xl md:text-5xl font-header font-bold text-dfw-navy uppercase leading-[0.95] mb-8">
+                </motion.div>
+                <motion.h2 variants={itemVariants} className="text-4xl md:text-5xl font-header font-bold text-dfw-navy uppercase leading-[0.95] mb-8">
                    One Roof. <br/> <span className="text-gray-400">Endless Energy.</span>
-                </h2>
-                <div className="prose prose-lg text-gray-600 leading-relaxed mb-10 font-light">
+                </motion.h2>
+                <motion.div variants={itemVariants} className="prose prose-lg text-gray-600 leading-relaxed mb-10 font-light">
                    <p className="font-semibold text-dfw-navy">
-                      We believe that sports are the best way to bring people together. That's why we didn't just build a facility; we built a community hub.
+                      We believe that sports are the best way to bring people together. That&apos;s why we didn&apos;t just build a facility; we built a community hub.
                    </p>
                    <p>
-                      Whether you're introducing your child to their first team sport, reconnecting with a game you loved in college, or training at an elite level, you belong here.
+                      Whether you&apos;re introducing your child to their first team sport, reconnecting with a game you loved in college, or training at an elite level, you belong here.
                    </p>
                    <p>
-                      We've removed the barriers to play: the Texas heat, the unpredictable rain, and the lack of quality courts. What's left is pure sport—<strong>Cricket, Badminton, Soccer, and Dodgeball</strong>—played in perfect comfort, every single day.
+                      We&apos;ve removed the barriers to play: the Texas heat, the unpredictable rain, and the lack of quality courts. What&apos;s left is pure sport—<strong>Cricket, Badminton, Soccer, and Dodgeball</strong>—played in perfect comfort, every single day.
                    </p>
-                </div>
+                </motion.div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                   <div className="p-6 bg-gray-50 border border-gray-100 rounded-lg hover:border-dfw-red/20 transition-colors">
+                {/* 4 value prop boxes — fills the grid properly */}
+                <motion.div variants={containerVariants} className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                   <motion.div variants={itemVariants} className="p-6 bg-gray-50 border border-gray-100 rounded-lg hover:border-dfw-red/20 transition-colors">
                       <h4 className="font-bold text-dfw-navy uppercase text-sm mb-2 flex items-center gap-2">
                          <ShieldCheck size={16} className="text-dfw-red" /> Safe & Inclusive
                       </h4>
-                      <p className="text-xs text-gray-500 leading-relaxed">
+                      <p className="text-sm text-gray-500 leading-relaxed">
                          A welcoming environment for all ages and skill levels. Beginners are treated with the same respect as pros.
                       </p>
-                   </div>
-                   <div className="p-6 bg-gray-50 border border-gray-100 rounded-lg hover:border-dfw-red/20 transition-colors">
+                   </motion.div>
+                   <motion.div variants={itemVariants} className="p-6 bg-gray-50 border border-gray-100 rounded-lg hover:border-dfw-red/20 transition-colors">
                       <h4 className="font-bold text-dfw-navy uppercase text-sm mb-2 flex items-center gap-2">
-                         <Thermometer size={16} className="text-dfw-red" /> Consistent Comfort
+                         <Thermometer size={16} className="text-dfw-red" /> Climate-Controlled
                       </h4>
-                      <p className="text-xs text-gray-500 leading-relaxed">
-                         72°F year-round. Because you shouldn't have to battle the elements to enjoy your game.
+                      <p className="text-sm text-gray-500 leading-relaxed">
+                         72°F year-round. No Texas heat, no rain delays — perfect playing conditions every single day.
                       </p>
-                   </div>
-                </div>
+                   </motion.div>
+                   <motion.div variants={itemVariants} className="p-6 bg-gray-50 border border-gray-100 rounded-lg hover:border-dfw-red/20 transition-colors">
+                      <h4 className="font-bold text-dfw-navy uppercase text-sm mb-2 flex items-center gap-2">
+                         <Award size={16} className="text-dfw-red" /> Pro Equipment
+                      </h4>
+                      <p className="text-sm text-gray-500 leading-relaxed">
+                         All equipment provided free — bats, rackets, balls, pads, helmets, and bowling machines included with every booking.
+                      </p>
+                   </motion.div>
+                   <motion.div variants={itemVariants} className="p-6 bg-gray-50 border border-gray-100 rounded-lg hover:border-dfw-red/20 transition-colors">
+                      <h4 className="font-bold text-dfw-navy uppercase text-sm mb-2 flex items-center gap-2">
+                         <Clock size={16} className="text-dfw-red" /> Open Early to Late
+                      </h4>
+                      <p className="text-sm text-gray-500 leading-relaxed">
+                         5 AM to 11 PM daily, 365 days a year. Fit your game around your schedule, not the other way around.
+                      </p>
+                   </motion.div>
+                </motion.div>
              </motion.div>
 
              {/* Right: Quick Answer Box (AEO Optimized) */}
              <motion.div 
+               initial={{ opacity: 0, y: 30 }}
+               whileInView={{ opacity: 1, y: 0 }}
+               viewport={{ once: true }}
                transition={{ duration: 0.6 }}
                className="lg:w-2/5 w-full"
              >

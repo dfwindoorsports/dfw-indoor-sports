@@ -7,7 +7,7 @@ import Link from 'next/link';
 
 const AboutCTA: React.FC = () => {
   return (
-    <section aria-label="About call to action" className="py-24 bg-dfw-navy relative overflow-hidden">
+    <section aria-label="About call to action" className="py-24 md:py-32 bg-dfw-navy relative overflow-hidden">
        <div className="absolute inset-0 bg-[url('/textures/stardust.png')] opacity-10"></div>
        <div className="absolute inset-0 bg-gradient-to-r from-dfw-navy via-dfw-navy/90 to-transparent"></div>
        

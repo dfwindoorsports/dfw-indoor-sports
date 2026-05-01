@@ -19,7 +19,7 @@ export default function CityDirections({ city, address, googleMapsLink, directio
     directions: DirectionBlock[]
 }) {
     return (
-        <section aria-label="Directions to DFW Indoor Sports" className="py-20 bg-gray-50 relative overflow-hidden">
+        <section aria-label="Directions to DFW Indoor Sports" className="py-24 md:py-32 bg-gray-50 relative overflow-hidden">
             {/* Subtle overlay */}
             <div className="absolute inset-0 bg-[url('/textures/carbon-fibre.png')] opacity-10 mix-blend-overlay" />
 

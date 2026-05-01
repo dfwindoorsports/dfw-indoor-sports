@@ -22,7 +22,7 @@ const EventsPackages: React.FC = () => {
    };
 
    return (
-      <section aria-label="Event packages" className="py-24 bg-gray-50 border-y border-gray-200 transition-colors duration-300" id="packages">
+      <section aria-label="Event packages" className="py-24 md:py-32 bg-gray-50 border-y border-gray-200 transition-colors duration-300" id="packages">
          <div className="container mx-auto px-4 md:px-6">
 
             {/* Kids Party Image Banner */}

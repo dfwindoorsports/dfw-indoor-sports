@@ -7,7 +7,7 @@ import Link from 'next/link';
 
 const DodgeballCTA: React.FC = () => {
    return (
-      <section aria-label="Dodgeball call to action" className="py-24 bg-dodgeball relative overflow-hidden text-center text-white">
+      <section aria-label="Dodgeball call to action" className="py-24 md:py-32 bg-dodgeball relative overflow-hidden text-center text-white">
          <div className="absolute inset-0 bg-[url('/textures/carbon-fibre.png')] opacity-20 mix-blend-overlay"></div>
          <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
 

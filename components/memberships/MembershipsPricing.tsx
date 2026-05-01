@@ -13,7 +13,7 @@ const MembershipsPricing: React.FC = () => {
    };
 
    return (
-      <section aria-label="Membership pricing plans" className="py-24 bg-white relative transition-colors duration-300" id="pricing">
+      <section aria-label="Membership pricing plans" className="py-24 md:py-32 bg-white relative transition-colors duration-300" id="pricing">
          <div className="container mx-auto px-4 md:px-6">
 
             {/* Member Usage Banner */}

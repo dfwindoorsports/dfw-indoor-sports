@@ -7,7 +7,7 @@ import Link from 'next/link';
 
 const HomeMembership: React.FC = () => {
    return (
-      <section aria-label="Membership plans" className="py-24 md:py-32 bg-[#050911] relative overflow-hidden">
+      <section aria-label="Membership plans" className="py-24 md:py-32 bg-dfw-navy relative overflow-hidden">
          <div className="absolute inset-0 bg-[url('/textures/stardust.png')] opacity-10"></div>
          <div className="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-dfw-red/10 to-transparent pointer-events-none"></div>
 

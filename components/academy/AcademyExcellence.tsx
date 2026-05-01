@@ -21,12 +21,16 @@ const AcademyExcellence: React.FC = () => {
   };
 
   return (
-    <section aria-label="Academy excellence and achievements" className="bg-slate-950 py-24 relative overflow-hidden border-t border-white/5 transition-colors duration-300">
+    <section aria-label="Academy excellence and achievements" className="bg-dfw-navy py-24 md:py-32 relative overflow-hidden border-t border-white/5">
        <div className="absolute inset-0 bg-grid-white opacity-[0.03] pointer-events-none"></div>
        
        <div className="container mx-auto px-4 md:px-6 relative z-10">
           <motion.div 
             className="text-center mb-16"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
           >
              <span className="text-dfw-red font-mono text-xs font-bold uppercase tracking-widest mb-3 block">High Performance Lab</span>
              <h2 className="text-4xl md:text-5xl font-header font-bold text-white uppercase">Centre of Excellence</h2>
@@ -34,9 +38,9 @@ const AcademyExcellence: React.FC = () => {
 
           <motion.div 
             variants={containerVariants}
-            
-            
-            
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
             className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6"
           >
              {[
@@ -50,13 +54,13 @@ const AcademyExcellence: React.FC = () => {
                 <motion.div 
                   key={i} 
                   variants={itemVariants}
-                  className="bg-slate-900/50 backdrop-blur-sm border border-white/10 p-8 rounded-lg hover:border-dfw-red/50 hover:bg-slate-900 transition-all duration-300 group cursor-default"
+                  className="bg-white/5 backdrop-blur-sm border border-white/10 p-8 rounded-lg hover:border-dfw-red/50 hover:bg-white/10 transition-all duration-300 group cursor-default"
                 >
                    <div className="text-dfw-red mb-4 group-hover:scale-110 transition-transform duration-300 w-12 h-12 bg-white/5 rounded-full flex items-center justify-center border border-white/5">
                       <item.icon size={24} strokeWidth={1.5} />
                    </div>
                    <h3 className="text-white font-mono font-bold uppercase text-sm tracking-wider mb-3 group-hover:text-dfw-red transition-colors">{item.title}</h3>
-                   <p className="text-slate-400 text-xs leading-relaxed font-mono">{item.desc}</p>
+                   <p className="text-gray-400 text-sm leading-relaxed">{item.desc}</p>
                 </motion.div>
              ))}
           </motion.div>

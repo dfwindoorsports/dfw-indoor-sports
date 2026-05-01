@@ -75,7 +75,7 @@ const WaiverDocument: React.FC = () => {
    };
 
    return (
-      <section aria-label="Liability waiver form" className="py-20 bg-gray-50 relative">
+      <section aria-label="Liability waiver form" className="py-24 md:py-32 bg-gray-50 relative">
          {/* Texture */}
          <div className="absolute inset-0 bg-[url('/textures/cubes.png')] opacity-[0.03]"></div>
 

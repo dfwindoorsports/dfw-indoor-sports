@@ -8,7 +8,7 @@ import { OptimizedImage } from '@/components/ui/OptimizedImage';
 
 const CricketPricing: React.FC = () => {
    return (
-      <section aria-label="Cricket pricing" className="py-24 bg-white transition-colors duration-300" id="pricing">
+      <section aria-label="Cricket pricing" className="py-24 md:py-32 bg-white transition-colors duration-300" id="pricing">
          <div className="container mx-auto px-4 md:px-6">
 
             {/* Cricket Players Practice Image */}

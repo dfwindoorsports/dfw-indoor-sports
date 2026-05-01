@@ -7,7 +7,7 @@ import Link from 'next/link';
 
 const CricketBooking: React.FC = () => {
    return (
-      <section aria-label="Cricket booking process" className="py-24 bg-white transition-colors duration-300" id="booking-process">
+      <section aria-label="Cricket booking process" className="py-24 md:py-32 bg-white transition-colors duration-300" id="booking-process">
          <div className="container mx-auto px-4 md:px-6">
             <div className="text-center mb-16">
                <h2 className="text-3xl md:text-5xl font-header font-bold text-cricket uppercase mb-6">Three Easy Ways To Book</h2>

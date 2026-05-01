@@ -7,7 +7,7 @@ import Image from 'next/image';
 
 const CoachesProfiles: React.FC = () => {
   return (
-    <section aria-label="Coaching staff profiles" className="py-24 bg-[#FAFAFA] relative overflow-hidden transition-colors duration-300" id="faculty">
+    <section aria-label="Coaching staff profiles" className="py-24 md:py-32 bg-[#FAFAFA] relative overflow-hidden transition-colors duration-300" id="faculty">
        <div className="absolute top-0 left-0 w-full h-px bg-gradient-to-r from-transparent via-gray-300 to-transparent"></div>
        <div className="absolute inset-0 bg-[url('/textures/cubes.png')] opacity-[0.03]"></div>
        
@@ -91,7 +91,7 @@ const CoachesProfiles: React.FC = () => {
                             <h4 className="text-xs font-bold text-dfw-navy uppercase tracking-widest mb-4">Key Achievement</h4>
                             <div className="flex items-start gap-4">
                                <div className="p-2 bg-gray-50 text-dfw-red rounded-lg border border-gray-100"><Award size={20} /></div>
-                               <div><p className="font-bold text-dfw-navy text-sm mb-1">Developed 20+ First Class Cricketers</p><p className="text-xs text-gray-500 leading-relaxed">Through structured pathway programs in Australia and India.</p></div>
+                               <div><p className="font-bold text-dfw-navy text-sm mb-1">Developed 20+ First Class Cricketers</p><p className="text-sm text-gray-500 leading-relaxed">Through structured pathway programs in Australia and India.</p></div>
                             </div>
                          </div>
                       </div>
@@ -137,7 +137,7 @@ const CoachesProfiles: React.FC = () => {
                             <h4 className="text-xs font-bold text-dfw-navy uppercase tracking-widest mb-4">Key Achievement</h4>
                             <div className="flex items-start gap-4">
                                <div className="p-2 bg-gray-50 text-blue-600 rounded-lg border border-gray-100"><Globe size={20} /></div>
-                               <div><p className="font-bold text-dfw-navy text-sm mb-1">Multi-National Experience</p><p className="text-xs text-gray-500 leading-relaxed">Successfully managed academies in 4 different cricket nations.</p></div>
+                               <div><p className="font-bold text-dfw-navy text-sm mb-1">Multi-National Experience</p><p className="text-sm text-gray-500 leading-relaxed">Successfully managed academies in 4 different cricket nations.</p></div>
                             </div>
                          </div>
                       </div>
@@ -214,7 +214,7 @@ const CoachesProfiles: React.FC = () => {
                             <h4 className="text-xs font-bold text-dfw-navy uppercase tracking-widest mb-4">Key Achievement</h4>
                             <div className="flex items-start gap-4">
                                <div className="p-2 bg-gray-50 text-green-600 rounded-lg border border-gray-100"><Target size={20} /></div>
-                               <div><p className="font-bold text-dfw-navy text-sm mb-1">DFW Community Leader</p><p className="text-xs text-gray-500 leading-relaxed">Instrumental in organizing youth leagues across North Texas.</p></div>
+                               <div><p className="font-bold text-dfw-navy text-sm mb-1">DFW Community Leader</p><p className="text-sm text-gray-500 leading-relaxed">Instrumental in organizing youth leagues across North Texas.</p></div>
                             </div>
                          </div>
                       </div>

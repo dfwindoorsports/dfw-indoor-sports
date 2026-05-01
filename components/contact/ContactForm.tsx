@@ -47,7 +47,7 @@ const ContactForm: React.FC = () => {
    };
 
    return (
-      <section aria-label="Contact form" className="py-24 md:py-32 bg-[#050911] text-white relative overflow-hidden" id="contact-form">
+      <section aria-label="Contact form" className="py-24 md:py-32 bg-dfw-navy text-white relative overflow-hidden" id="contact-form">
          {/* Background Texture & Gradients */}
          <div className="absolute inset-0 bg-[url('/textures/cubes.png')] opacity-[0.03]"></div>
          <div className="absolute top-0 right-0 w-1/2 h-full bg-gradient-to-l from-dfw-navy/80 to-transparent pointer-events-none"></div>
@@ -136,12 +136,12 @@ const ContactForm: React.FC = () => {
                               onChange={handleChange}
                               className="w-full bg-white/5 border-b border-white/20 py-3 text-white focus:outline-none focus:border-blue-400 transition-all appearance-none cursor-pointer"
                            >
-                              <option className="bg-[#0A111F]">General Inquiry</option>
-                              <option className="bg-[#0A111F]">Membership & Pricing</option>
-                              <option className="bg-[#0A111F]">Court Booking Issue</option>
-                              <option className="bg-[#0A111F]">Event Planning (Corporate/Party)</option>
-                              <option className="bg-[#0A111F]">Academy / Coaching</option>
-                              <option className="bg-[#0A111F]">Lost & Found</option>
+                              <option className="bg-dfw-navy">General Inquiry</option>
+                              <option className="bg-dfw-navy">Membership & Pricing</option>
+                              <option className="bg-dfw-navy">Court Booking Issue</option>
+                              <option className="bg-dfw-navy">Event Planning (Corporate/Party)</option>
+                              <option className="bg-dfw-navy">Academy / Coaching</option>
+                              <option className="bg-dfw-navy">Lost & Found</option>
                            </select>
                         </div>
 
@@ -204,33 +204,33 @@ const ContactForm: React.FC = () => {
                         <div className="absolute top-4 left-[15px] w-0.5 h-[calc(100%-40px)] bg-gradient-to-b from-green-500 via-blue-500 to-purple-500 opacity-30"></div>
 
                         <div className="flex gap-6 relative group">
-                           <div className="w-8 h-8 rounded-full bg-[#050911] border-2 border-green-500 text-green-500 flex items-center justify-center shrink-0 font-bold text-xs shadow-[0_0_15px_rgba(34,197,94,0.3)] z-10">1</div>
+                           <div className="w-8 h-8 rounded-full bg-dfw-navy border-2 border-green-500 text-green-500 flex items-center justify-center shrink-0 font-bold text-xs shadow-[0_0_15px_rgba(34,197,94,0.3)] z-10">1</div>
                            <div>
                               <h4 className="font-bold text-white text-sm mb-2 group-hover:text-green-400 transition-colors">Submission</h4>
-                              <p className="text-xs text-gray-400 leading-relaxed">Your inquiry is logged instantly. You'll receive an automated confirmation email with a ticket number.</p>
+                              <p className="text-sm text-gray-400 leading-relaxed">Your inquiry is logged instantly. You'll receive an automated confirmation email with a ticket number.</p>
                            </div>
                         </div>
 
                         <div className="flex gap-6 relative group">
-                           <div className="w-8 h-8 rounded-full bg-[#050911] border-2 border-blue-500 text-blue-500 flex items-center justify-center shrink-0 font-bold text-xs shadow-[0_0_15px_rgba(59,130,246,0.3)] z-10">2</div>
+                           <div className="w-8 h-8 rounded-full bg-dfw-navy border-2 border-blue-500 text-blue-500 flex items-center justify-center shrink-0 font-bold text-xs shadow-[0_0_15px_rgba(59,130,246,0.3)] z-10">2</div>
                            <div>
                               <h4 className="font-bold text-white text-sm mb-2 group-hover:text-blue-400 transition-colors">Routing</h4>
-                              <p className="text-xs text-gray-400 leading-relaxed">Our system routes your message to the specific department head (e.g., Coaching Director for academy questions).</p>
+                              <p className="text-sm text-gray-400 leading-relaxed">Our system routes your message to the specific department head (e.g., Coaching Director for academy questions).</p>
                            </div>
                         </div>
 
                         <div className="flex gap-6 relative group">
-                           <div className="w-8 h-8 rounded-full bg-[#050911] border-2 border-purple-500 text-purple-500 flex items-center justify-center shrink-0 font-bold text-xs shadow-[0_0_15px_rgba(168,85,247,0.3)] z-10">3</div>
+                           <div className="w-8 h-8 rounded-full bg-dfw-navy border-2 border-purple-500 text-purple-500 flex items-center justify-center shrink-0 font-bold text-xs shadow-[0_0_15px_rgba(168,85,247,0.3)] z-10">3</div>
                            <div>
                               <h4 className="font-bold text-white text-sm mb-2 group-hover:text-purple-400 transition-colors">Resolution</h4>
-                              <p className="text-xs text-gray-400 leading-relaxed">A real human responds within 24 hours with a personalized answer or solution.</p>
+                              <p className="text-sm text-gray-400 leading-relaxed">A real human responds within 24 hours with a personalized answer or solution.</p>
                            </div>
                         </div>
                      </div>
 
                      <div className="mt-12 bg-white/5 rounded-lg p-6 border border-white/5">
                         <h4 className="text-dfw-red font-bold uppercase text-\[11px\] tracking-widest mb-3 flex items-center gap-2"><AlertCircle size={14} /> Tip for Faster Service</h4>
-                        <p className="text-xs text-gray-400 leading-relaxed">
+                        <p className="text-sm text-gray-400 leading-relaxed">
                            If your inquiry is regarding a court booking occurring <strong>today</strong>, please call the front desk at (817) 938-0808 instead of using this form.
                         </p>
                      </div>

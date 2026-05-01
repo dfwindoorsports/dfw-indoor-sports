@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 
 const MembershipsFAQ: React.FC = () => {
   return (
-    <section aria-label="Membership frequently asked questions" className="py-24 bg-white transition-colors duration-300">
+    <section aria-label="Membership frequently asked questions" className="py-24 md:py-32 bg-white transition-colors duration-300">
        <div className="container mx-auto px-4 md:px-6 max-w-3xl">
           <motion.h2 
             className="text-3xl font-header font-bold text-dfw-navy uppercase mb-12 text-center"

@@ -43,7 +43,7 @@ const AboutStory: React.FC = () => {
                       <h4 className="font-bold text-dfw-navy uppercase text-sm mb-2 flex items-center gap-2">
                          <ShieldCheck size={16} className="text-dfw-red" /> The Standard
                       </h4>
-                      <p className="text-xs text-gray-500 leading-relaxed">
+                      <p className="text-sm text-gray-500 leading-relaxed">
                          To be North Texas's premier multi-sport complex, recognized internationally for facility quality and player development.
                       </p>
                    </div>
@@ -51,7 +51,7 @@ const AboutStory: React.FC = () => {
                       <h4 className="font-bold text-dfw-navy uppercase text-sm mb-2 flex items-center gap-2">
                          <Heart size={16} className="text-dfw-red" /> The Soul
                       </h4>
-                      <p className="text-xs text-gray-500 leading-relaxed">
+                      <p className="text-sm text-gray-500 leading-relaxed">
                          A welcoming community hub where beginners are encouraged, and pros are challenged. Everyone belongs.
                       </p>
                    </div>

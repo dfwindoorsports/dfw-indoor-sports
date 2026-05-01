@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 
 const MembershipsIntro: React.FC = () => {
   return (
-    <section aria-label="Membership overview" className="py-24 bg-white relative transition-colors duration-300">
+    <section aria-label="Membership overview" className="py-24 md:py-32 bg-white relative transition-colors duration-300">
        <div className="container mx-auto px-4 md:px-6">
           <div className="flex flex-col lg:flex-row gap-16 lg:gap-24 items-start">
              
@@ -39,7 +39,7 @@ const MembershipsIntro: React.FC = () => {
                       <h4 className="font-bold text-dfw-navy uppercase text-sm mb-2 flex items-center gap-2">
                          <Target size={16} className="text-dfw-red" /> Priority Access
                       </h4>
-                      <p className="text-xs text-gray-500 leading-relaxed">
+                      <p className="text-sm text-gray-500 leading-relaxed">
                          Don't get stuck on the waitlist. Members get a 14-day advance booking window to secure prime evening spots.
                       </p>
                    </div>
@@ -47,7 +47,7 @@ const MembershipsIntro: React.FC = () => {
                       <h4 className="font-bold text-dfw-navy uppercase text-sm mb-2 flex items-center gap-2">
                          <Users size={16} className="text-dfw-red" /> The Tribe
                       </h4>
-                      <p className="text-xs text-gray-500 leading-relaxed">
+                      <p className="text-sm text-gray-500 leading-relaxed">
                          Exclusive access to member tournaments, social mixers, and a network of players to challenge.
                       </p>
                    </div>

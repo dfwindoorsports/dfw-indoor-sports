@@ -7,7 +7,7 @@ import Link from 'next/link';
 
 const BadmintonBooking: React.FC = () => {
    return (
-      <section aria-label="Badminton booking options" className="py-24 bg-white transition-colors duration-300" id="booking-process">
+      <section aria-label="Badminton booking options" className="py-24 md:py-32 bg-white transition-colors duration-300" id="booking-process">
          <div className="container mx-auto px-4 md:px-6">
             <div className="text-center mb-16">
                <h2 className="text-3xl md:text-5xl font-header font-bold text-badminton uppercase mb-6">Three Ways To Play</h2>

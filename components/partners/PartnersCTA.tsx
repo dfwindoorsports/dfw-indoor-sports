@@ -48,7 +48,7 @@ const PartnersCTA: React.FC = () => {
    };
 
    return (
-      <section aria-label="Partner with us" className="py-24 bg-dfw-navy relative overflow-hidden" id="contact-partners">
+      <section aria-label="Partner with us" className="py-24 md:py-32 bg-dfw-navy relative overflow-hidden" id="contact-partners">
          <div className="absolute inset-0 bg-[url('/textures/carbon-fibre.png')] opacity-20"></div>
          <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
 

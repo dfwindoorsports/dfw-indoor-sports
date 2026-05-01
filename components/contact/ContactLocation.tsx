@@ -3,7 +3,7 @@ import { MapPin, Navigation, Car, Clock } from 'lucide-react';
 
 const ContactLocation: React.FC = () => {
   return (
-    <section aria-label="Our location" className="py-24 bg-white border-b border-gray-100">
+    <section aria-label="Our location" className="py-24 md:py-32 bg-white border-b border-gray-100">
        <div className="container mx-auto px-4 md:px-6">
           <div className="flex flex-col lg:flex-row gap-16">
              

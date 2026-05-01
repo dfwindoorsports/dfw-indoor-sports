@@ -7,7 +7,7 @@ import Link from 'next/link';
 
 const DodgeballPricing: React.FC = () => {
   return (
-    <section aria-label="Dodgeball pricing" className="py-24 bg-white transition-colors duration-300" id="pricing">
+    <section aria-label="Dodgeball pricing" className="py-24 md:py-32 bg-white transition-colors duration-300" id="pricing">
        <div className="container mx-auto px-4 md:px-6">
           <motion.div 
             className="text-center max-w-3xl mx-auto mb-16"

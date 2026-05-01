@@ -7,7 +7,7 @@ import Image from 'next/image';
 
 const AboutHero: React.FC = () => {
   return (
-    <div className="relative h-[60vh] min-h-[400px] flex items-center bg-[#050911] overflow-hidden">
+    <div className="relative h-[60vh] min-h-[400px] flex items-center bg-dfw-navy overflow-hidden">
       {/* Dynamic Background with Parallax Feel */}
       <div className="absolute inset-0 bg-[url('/textures/carbon-fibre.png')] opacity-30 z-10 mix-blend-overlay"></div>
       <motion.div

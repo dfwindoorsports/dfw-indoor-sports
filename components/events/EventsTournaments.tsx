@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 
 const EventsTournaments: React.FC = () => {
   return (
-    <section aria-label="Tournament hosting" className="py-24 bg-white border-b border-gray-200 transition-colors duration-300" id="tournaments">
+    <section aria-label="Tournament hosting" className="py-24 md:py-32 bg-white border-b border-gray-200 transition-colors duration-300" id="tournaments">
          <div className="container mx-auto px-4 md:px-6">
             <div className="flex flex-col lg:flex-row gap-16">
                <motion.div 
@@ -59,7 +59,7 @@ const EventsTournaments: React.FC = () => {
                            </div>
                            <div>
                               <h4 className="font-header font-bold text-dfw-navy uppercase text-sm mb-1">{item.title}</h4>
-                              <p className="text-xs text-gray-500 leading-relaxed">{item.desc}</p>
+                              <p className="text-sm text-gray-500 leading-relaxed">{item.desc}</p>
                            </div>
                         </div>
                      ))}

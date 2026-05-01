@@ -6,7 +6,7 @@ import Link from 'next/link';
 
 const MembershipsCTA: React.FC = () => {
    return (
-      <section aria-label="Membership call to action" className="py-24 bg-dfw-navy relative overflow-hidden text-center transition-colors duration-300">
+      <section aria-label="Membership call to action" className="py-24 md:py-32 bg-dfw-navy relative overflow-hidden text-center transition-colors duration-300">
          <div className="absolute inset-0 bg-[url('/textures/carbon-fibre.png')] opacity-20 mix-blend-overlay"></div>
          <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
 

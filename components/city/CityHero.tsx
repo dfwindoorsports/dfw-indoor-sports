@@ -14,7 +14,7 @@ interface CityHeroProps {
 
 export default function CityHero({ city, distance, heroImage = '/images/hero/sports-action.webp', tagline }: CityHeroProps) {
     return (
-        <div className="relative h-[60vh] min-h-[400px] flex items-center bg-[#050911] overflow-hidden">
+        <div className="relative h-[60vh] min-h-[400px] flex items-center bg-dfw-navy overflow-hidden">
             {/* Dynamic Background with Parallax Feel */}
             <motion.div
                 initial={{ scale: 1.1, opacity: 0 }}
